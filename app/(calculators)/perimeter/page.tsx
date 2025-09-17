@@ -1,4 +1,5 @@
 import PerimeterCalculator from '../../_components/calculators/PerimeterCalculator';
+import CopyIframeButton from '../../_components/ui/CopyIframeButton';
 
 export default function PerimeterPage() {
   return (
@@ -28,7 +29,10 @@ export default function PerimeterPage() {
         the total perimeter for you. No registration required - completely free to use!
       </p>
 
-      <PerimeterCalculator />
+      <div className="flex flex-col items-center space-y-4">
+        <PerimeterCalculator />
+        <CopyIframeButton slug="perimeter" />
+      </div>
 
       <section>
         <h2>How to Calculate Perimeter</h2>

@@ -1,6 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Button from '../ui/Button';
+import Input from '../ui/Input';
+import Card from '../ui/Card';
 
 export default function PerimeterCalculator() {
   const [side1, setSide1] = useState<string>('');
@@ -40,14 +43,13 @@ export default function PerimeterCalculator() {
   };
 
   return (
-    <div>
-      <h2>Perimeter Calculator</h2>
-      <p>Enter the lengths of all four sides to calculate the perimeter:</p>
+    <Card className="max-w-md mx-auto">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Perimeter Calculator</h2>
+      <p className="text-gray-600 mb-6">Enter the lengths of all four sides to calculate the perimeter:</p>
       
-      <div>
-        <label htmlFor="side1">Side 1:</label>
-        <input
-          id="side1"
+      <div className="space-y-4">
+        <Input
+          label="Side 1"
           type="number"
           value={side1}
           onChange={(e) => handleInputChange('side1', e.target.value)}
@@ -55,12 +57,9 @@ export default function PerimeterCalculator() {
           min="0"
           step="0.01"
         />
-      </div>
 
-      <div>
-        <label htmlFor="side2">Side 2:</label>
-        <input
-          id="side2"
+        <Input
+          label="Side 2"
           type="number"
           value={side2}
           onChange={(e) => handleInputChange('side2', e.target.value)}
@@ -68,12 +67,9 @@ export default function PerimeterCalculator() {
           min="0"
           step="0.01"
         />
-      </div>
 
-      <div>
-        <label htmlFor="side3">Side 3:</label>
-        <input
-          id="side3"
+        <Input
+          label="Side 3"
           type="number"
           value={side3}
           onChange={(e) => handleInputChange('side3', e.target.value)}
@@ -81,12 +77,9 @@ export default function PerimeterCalculator() {
           min="0"
           step="0.01"
         />
-      </div>
 
-      <div>
-        <label htmlFor="side4">Side 4:</label>
-        <input
-          id="side4"
+        <Input
+          label="Side 4"
           type="number"
           value={side4}
           onChange={(e) => handleInputChange('side4', e.target.value)}
@@ -94,15 +87,22 @@ export default function PerimeterCalculator() {
           min="0"
           step="0.01"
         />
+
+        <Button 
+          onClick={calculatePerimeter}
+          className="w-full"
+          size="lg"
+        >
+          Calculate Perimeter
+        </Button>
+
+        {result !== null && (
+          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
+            <h3 className="text-lg font-semibold text-blue-900">Result</h3>
+            <p className="text-2xl font-bold text-blue-600">{result} units</p>
+          </div>
+        )}
       </div>
-
-      <button onClick={calculatePerimeter}>
-        Calculate Perimeter
-      </button>
-
-      {result !== null && (
-        <h2>Result: {result} units</h2>
-      )}
-    </div>
+    </Card>
   );
 }
