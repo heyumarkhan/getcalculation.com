@@ -6,7 +6,7 @@ interface VolumeEmbedPageProps {
 
 export default async function VolumeEmbedPage({ searchParams }: VolumeEmbedPageProps) {
   const params = await searchParams;
-  const color = params.color || 'purple';
+  const color = params.color || '#3399CC';
   
   return <VolumeCalculator showTitle={false} primaryColor={color} />;
 }

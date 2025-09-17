@@ -6,7 +6,7 @@ interface PerimeterEmbedPageProps {
 
 export default async function PerimeterEmbedPage({ searchParams }: PerimeterEmbedPageProps) {
   const params = await searchParams;
-  const color = params.color || 'blue';
+  const color = params.color || '#3399CC';
   
   return <PerimeterCalculator showTitle={false} primaryColor={color} />;
 }

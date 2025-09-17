@@ -12,7 +12,7 @@ interface VolumeCalculatorProps {
 
 export default function VolumeCalculator({ 
   showTitle = true, 
-  primaryColor = 'purple' 
+  primaryColor = '#3399CC' 
 }: VolumeCalculatorProps) {
   const [length, setLength] = useState<string>('');
   const [width, setWidth] = useState<string>('');
@@ -44,73 +44,30 @@ export default function VolumeCalculator({
   };
 
   const getColorClasses = (color: string) => {
-    // Check if it's a hex color code
-    if (color.startsWith('#')) {
-      return {
-        button: '',
-        result: '',
-        resultBg: '',
-        resultBorder: '',
-        resultText: '',
-        customStyles: {
-          button: {
-            backgroundColor: color,
-            '--hover-color': color,
-            '--focus-color': color
-          } as React.CSSProperties,
-          result: {
-            color: color
-          } as React.CSSProperties,
-          resultBg: {
-            backgroundColor: `${color}10`, // 10% opacity
-            borderColor: `${color}30` // 30% opacity
-          } as React.CSSProperties,
-          resultText: {
-            color: color
-          } as React.CSSProperties
-        }
-      };
-    }
-
-    // Fallback to predefined colors
-    const colorMap: { [key: string]: { button: string; result: string; resultBg: string; resultBorder: string; resultText: string } } = {
-      blue: {
-        button: 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500',
-        result: 'text-blue-600',
-        resultBg: 'bg-blue-50',
-        resultBorder: 'border-blue-200',
-        resultText: 'text-blue-900'
-      },
-      green: {
-        button: 'bg-green-600 hover:bg-green-700 focus:ring-green-500',
-        result: 'text-green-600',
-        resultBg: 'bg-green-50',
-        resultBorder: 'border-green-200',
-        resultText: 'text-green-900'
-      },
-      purple: {
-        button: 'bg-purple-600 hover:bg-purple-700 focus:ring-purple-500',
-        result: 'text-purple-600',
-        resultBg: 'bg-purple-50',
-        resultBorder: 'border-purple-200',
-        resultText: 'text-purple-900'
-      },
-      red: {
-        button: 'bg-red-600 hover:bg-red-700 focus:ring-red-500',
-        result: 'text-red-600',
-        resultBg: 'bg-red-50',
-        resultBorder: 'border-red-200',
-        resultText: 'text-red-900'
-      },
-      indigo: {
-        button: 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500',
-        result: 'text-indigo-600',
-        resultBg: 'bg-indigo-50',
-        resultBorder: 'border-indigo-200',
-        resultText: 'text-indigo-900'
+    return {
+      button: '',
+      result: '',
+      resultBg: '',
+      resultBorder: '',
+      resultText: '',
+      customStyles: {
+        button: {
+          backgroundColor: color,
+          '--hover-color': color,
+          '--focus-color': color
+        } as React.CSSProperties,
+        result: {
+          color: color
+        } as React.CSSProperties,
+        resultBg: {
+          backgroundColor: `${color}10`, // 10% opacity
+          borderColor: `${color}30` // 30% opacity
+        } as React.CSSProperties,
+        resultText: {
+          color: color
+        } as React.CSSProperties
       }
     };
-    return { ...colorMap[color] || colorMap.purple, customStyles: null };
   };
 
   const colors = getColorClasses(primaryColor);
@@ -118,14 +75,16 @@ export default function VolumeCalculator({
   return (
     <>
       {colors.customStyles && (
-        <style jsx>{`
-          .custom-color-button:hover {
-            background-color: ${primaryColor}dd !important;
-          }
-          .custom-color-button:focus {
-            box-shadow: 0 0 0 3px ${primaryColor}40 !important;
-          }
-        `}</style>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .custom-color-button:hover {
+              background-color: ${primaryColor}dd !important;
+            }
+            .custom-color-button:focus {
+              box-shadow: 0 0 0 3px ${primaryColor}40 !important;
+            }
+          `
+        }} />
       )}
       <Card className="max-w-md mx-auto">
         {showTitle && (
