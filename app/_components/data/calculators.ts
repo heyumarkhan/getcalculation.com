@@ -120,6 +120,17 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/volume',
     icon: '📦',
     color: 'blue'
+  },
+  {
+    id: 'similar-triangles',
+    name: 'Similar Triangles Calculator',
+    description: 'Find missing sides of similar triangles using proportions and scale factors',
+    category: 'Geometry',
+    keywords: ['similar triangles', 'proportions', 'scale factor', 'geometry', 'triangles', 'ratio'],
+    href: '/similar-triangles',
+    embedHref: '/embed/similar-triangles',
+    icon: '🔺',
+    color: 'green'
   }
 ];
 
