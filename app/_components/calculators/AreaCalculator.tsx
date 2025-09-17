@@ -39,6 +39,35 @@ export default function AreaCalculator({
   };
 
   const getColorClasses = (color: string) => {
+    // Check if it's a hex color code
+    if (color.startsWith('#')) {
+      return {
+        button: '',
+        result: '',
+        resultBg: '',
+        resultBorder: '',
+        resultText: '',
+        customStyles: {
+          button: {
+            backgroundColor: color,
+            '--hover-color': color,
+            '--focus-color': color
+          } as React.CSSProperties,
+          result: {
+            color: color
+          } as React.CSSProperties,
+          resultBg: {
+            backgroundColor: `${color}10`, // 10% opacity
+            borderColor: `${color}30` // 30% opacity
+          } as React.CSSProperties,
+          resultText: {
+            color: color
+          } as React.CSSProperties
+        }
+      };
+    }
+
+    // Fallback to predefined colors
     const colorMap: { [key: string]: { button: string; result: string; resultBg: string; resultBorder: string; resultText: string } } = {
       blue: {
         button: 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500',
@@ -76,19 +105,30 @@ export default function AreaCalculator({
         resultText: 'text-indigo-900'
       }
     };
-    return colorMap[color] || colorMap.green;
+    return { ...colorMap[color] || colorMap.green, customStyles: null };
   };
 
   const colors = getColorClasses(primaryColor);
 
   return (
-    <Card className="max-w-md mx-auto">
-      {showTitle && (
-        <>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Area Calculator</h2>
-          <p className="text-gray-600 mb-6">Enter the length and width to calculate the area:</p>
-        </>
+    <>
+      {colors.customStyles && (
+        <style jsx>{`
+          .custom-color-button:hover {
+            background-color: ${primaryColor}dd !important;
+          }
+          .custom-color-button:focus {
+            box-shadow: 0 0 0 3px ${primaryColor}40 !important;
+          }
+        `}</style>
       )}
+      <Card className="max-w-md mx-auto">
+        {showTitle && (
+          <>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Area Calculator</h2>
+            <p className="text-gray-600 mb-6">Enter the length and width to calculate the area:</p>
+          </>
+        )}
       
       <div className="space-y-4">
         <Input
@@ -113,19 +153,34 @@ export default function AreaCalculator({
 
         <Button 
           onClick={calculateArea}
-          className={`w-full ${colors.button}`}
+          className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
+          style={colors.customStyles?.button}
           size="lg"
         >
           Calculate Area
         </Button>
 
         {result !== null && (
-          <div className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}>
-            <h3 className={`text-lg font-semibold ${colors.resultText}`}>Result</h3>
-            <p className={`text-2xl font-bold ${colors.result}`}>{result} square units</p>
+          <div 
+            className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+            style={colors.customStyles?.resultBg}
+          >
+            <h3 
+              className={`text-lg font-semibold ${colors.resultText}`}
+              style={colors.customStyles?.resultText}
+            >
+              Result
+            </h3>
+            <p 
+              className={`text-2xl font-bold ${colors.result}`}
+              style={colors.customStyles?.result}
+            >
+              {result} square units
+            </p>
           </div>
         )}
       </div>
-    </Card>
+      </Card>
+    </>
   );
 }

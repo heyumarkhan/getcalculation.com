@@ -37,6 +37,9 @@ export default function PerimeterPage() {
           <CopyIframeButton slug="perimeter" color="purple" />
           <CopyIframeButton slug="perimeter" color="red" />
           <CopyIframeButton slug="perimeter" color="indigo" />
+          <CopyIframeButton slug="perimeter" color="#000000" />
+          <CopyIframeButton slug="perimeter" color="#ff6b35" />
+          <CopyIframeButton slug="perimeter" color="#2ecc71" />
         </div>
       </div>
 
