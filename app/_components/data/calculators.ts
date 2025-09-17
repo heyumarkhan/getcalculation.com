@@ -109,6 +109,17 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/triangular-prism-surface-area',
     icon: '🔺',
     color: 'purple'
+  },
+  {
+    id: 'volume',
+    name: 'Volume Calculator',
+    description: 'Calculate volume for rectangular prisms and triangular pyramids',
+    category: 'Geometry',
+    keywords: ['volume', 'rectangular prism', 'triangular pyramid', '3d', 'geometry', 'cubic'],
+    href: '/volume',
+    embedHref: '/embed/volume',
+    icon: '📦',
+    color: 'blue'
   }
 ];
 

@@ -10,21 +10,66 @@ interface VolumeCalculatorProps {
   primaryColor?: string;
 }
 
+interface VolumeResult {
+  volume: number;
+  shape: string;
+  formula: string;
+  dimensions: string;
+}
+
 export default function VolumeCalculator({ 
   showTitle = true, 
   primaryColor = '#3399CC' 
 }: VolumeCalculatorProps) {
+  const [selectedShape, setSelectedShape] = useState<'rectangular-prism' | 'triangular-pyramid'>('rectangular-prism');
   const [length, setLength] = useState<string>('');
   const [width, setWidth] = useState<string>('');
   const [height, setHeight] = useState<string>('');
-  const [result, setResult] = useState<number | null>(null);
+  const [baseLength, setBaseLength] = useState<string>('');
+  const [baseHeight, setBaseHeight] = useState<string>('');
+  const [pyramidHeight, setPyramidHeight] = useState<string>('');
+  const [result, setResult] = useState<VolumeResult | null>(null);
 
   const calculateVolume = () => {
-    const l = parseFloat(length) || 0;
-    const w = parseFloat(width) || 0;
-    const h = parseFloat(height) || 0;
-    const volume = l * w * h;
-    setResult(volume);
+    let volume: number;
+    let formula: string;
+    let dimensions: string;
+
+    if (selectedShape === 'rectangular-prism') {
+      const l = parseFloat(length) || 0;
+      const w = parseFloat(width) || 0;
+      const h = parseFloat(height) || 0;
+
+      if (l <= 0 || w <= 0 || h <= 0) {
+        alert('All dimensions must be greater than zero');
+        return;
+      }
+
+      volume = l * w * h;
+      formula = 'V = l × w × h';
+      dimensions = `${l} × ${w} × ${h}`;
+    } else {
+      const base = parseFloat(baseLength) || 0;
+      const baseH = parseFloat(baseHeight) || 0;
+      const pyramidH = parseFloat(pyramidHeight) || 0;
+
+      if (base <= 0 || baseH <= 0 || pyramidH <= 0) {
+        alert('All dimensions must be greater than zero');
+        return;
+      }
+
+      const baseArea = (base * baseH) / 2;
+      volume = (baseArea * pyramidH) / 3;
+      formula = 'V = (1/3) × Base Area × Height';
+      dimensions = `Base: ${base} × ${baseH}, Height: ${pyramidH}`;
+    }
+
+    setResult({
+      volume,
+      shape: selectedShape === 'rectangular-prism' ? 'Rectangular Prism' : 'Triangular Pyramid',
+      formula,
+      dimensions
+    });
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -37,6 +82,15 @@ export default function VolumeCalculator({
         break;
       case 'height':
         setHeight(value);
+        break;
+      case 'baseLength':
+        setBaseLength(value);
+        break;
+      case 'baseHeight':
+        setBaseHeight(value);
+        break;
+      case 'pyramidHeight':
+        setPyramidHeight(value);
         break;
       default:
         break;
@@ -93,40 +147,100 @@ export default function VolumeCalculator({
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Volume Calculator</h2>
-            <p className="text-gray-600 mb-6">Enter the length, width, and height to calculate the volume:</p>
+            <p className="text-gray-600 mb-6">Calculate volume for different 3D shapes:</p>
           </>
         )}
       
       <div className="space-y-4">
-        <Input
-          label="Length"
-          type="number"
-          value={length}
-          onChange={(e) => handleInputChange('length', e.target.value)}
-          placeholder="Enter length"
-          min="0"
-          step="0.01"
-        />
+        {/* Shape Selector */}
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h3 className="text-lg font-semibold text-gray-700 mb-3">Select Shape</h3>
+          <div className="grid grid-cols-2 gap-2">
+            <Button
+              onClick={() => setSelectedShape('rectangular-prism')}
+              variant={selectedShape === 'rectangular-prism' ? 'primary' : 'outline'}
+              className="w-full"
+            >
+              📦 Rectangular Prism
+            </Button>
+            <Button
+              onClick={() => setSelectedShape('triangular-pyramid')}
+              variant={selectedShape === 'triangular-pyramid' ? 'primary' : 'outline'}
+              className="w-full"
+            >
+              🔺 Triangular Pyramid
+            </Button>
+          </div>
+        </div>
 
-        <Input
-          label="Width"
-          type="number"
-          value={width}
-          onChange={(e) => handleInputChange('width', e.target.value)}
-          placeholder="Enter width"
-          min="0"
-          step="0.01"
-        />
-
-        <Input
-          label="Height"
-          type="number"
-          value={height}
-          onChange={(e) => handleInputChange('height', e.target.value)}
-          placeholder="Enter height"
-          min="0"
-          step="0.01"
-        />
+        {/* Input Fields */}
+        {selectedShape === 'rectangular-prism' ? (
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h3 className="text-lg font-semibold text-gray-700 mb-3">Rectangular Prism Dimensions</h3>
+            <div className="space-y-3">
+              <Input
+                label="Length (l)"
+                type="number"
+                value={length}
+                onChange={(e) => handleInputChange('length', e.target.value)}
+                placeholder="Enter length"
+                min="0"
+                step="0.01"
+              />
+              <Input
+                label="Width (w)"
+                type="number"
+                value={width}
+                onChange={(e) => handleInputChange('width', e.target.value)}
+                placeholder="Enter width"
+                min="0"
+                step="0.01"
+              />
+              <Input
+                label="Height (h)"
+                type="number"
+                value={height}
+                onChange={(e) => handleInputChange('height', e.target.value)}
+                placeholder="Enter height"
+                min="0"
+                step="0.01"
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h3 className="text-lg font-semibold text-gray-700 mb-3">Triangular Pyramid Dimensions</h3>
+            <div className="space-y-3">
+              <Input
+                label="Base Length (b)"
+                type="number"
+                value={baseLength}
+                onChange={(e) => handleInputChange('baseLength', e.target.value)}
+                placeholder="Enter base length"
+                min="0"
+                step="0.01"
+              />
+              <Input
+                label="Base Height (h)"
+                type="number"
+                value={baseHeight}
+                onChange={(e) => handleInputChange('baseHeight', e.target.value)}
+                placeholder="Enter base height"
+                min="0"
+                step="0.01"
+              />
+              <Input
+                label="Pyramid Height (H)"
+                type="number"
+                value={pyramidHeight}
+                onChange={(e) => handleInputChange('pyramidHeight', e.target.value)}
+                placeholder="Enter pyramid height"
+                min="0"
+                step="0.01"
+              />
+            </div>
+          </div>
+        )}
 
         <Button 
           onClick={calculateVolume}
@@ -143,17 +257,32 @@ export default function VolumeCalculator({
             style={colors.customStyles?.resultBg}
           >
             <h3 
-              className={`text-lg font-semibold ${colors.resultText}`}
+              className={`text-lg font-semibold ${colors.resultText} mb-4`}
               style={colors.customStyles?.resultText}
             >
-              Result
+              Volume Result
             </h3>
-            <p 
-              className={`text-2xl font-bold ${colors.result}`}
-              style={colors.customStyles?.result}
-            >
-              {result} cubic units
-            </p>
+            <div className="space-y-3 text-sm">
+              <div className="bg-white p-3 rounded border">
+                <p className="font-semibold text-gray-700 mb-1">Shape:</p>
+                <p className="font-mono">{result.shape}</p>
+              </div>
+              
+              <div className="bg-white p-3 rounded border">
+                <p className="font-semibold text-gray-700 mb-1">Volume:</p>
+                <p className="font-mono text-2xl font-bold">{result.volume.toFixed(4)} cubic units</p>
+              </div>
+              
+              <div className="bg-white p-3 rounded border">
+                <p className="font-semibold text-gray-700 mb-1">Formula Used:</p>
+                <p className="font-mono text-lg">{result.formula}</p>
+              </div>
+              
+              <div className="bg-white p-3 rounded border">
+                <p className="font-semibold text-gray-700 mb-1">Dimensions:</p>
+                <p className="font-mono">{result.dimensions}</p>
+              </div>
+            </div>
           </div>
         )}
       </div>
