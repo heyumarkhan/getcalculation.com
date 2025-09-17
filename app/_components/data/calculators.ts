@@ -131,6 +131,17 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/similar-triangles',
     icon: '🔺',
     color: 'green'
+  },
+  {
+    id: 'herons-formula',
+    name: 'Heron\'s Formula Calculator',
+    description: 'Calculate triangle area using Heron\'s formula when you know all three side lengths',
+    category: 'Geometry',
+    keywords: ['herons formula', 'triangle area', 'geometry', 'sides', 'semi-perimeter', 'triangle'],
+    href: '/herons-formula',
+    embedHref: '/embed/herons-formula',
+    icon: '📐',
+    color: 'purple'
   }
 ];
 
