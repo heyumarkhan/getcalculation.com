@@ -86,20 +86,7 @@ export default function StandardFormToSlopeCalculator({
   const colors = getColorClasses(primaryColor);
 
   return (
-    <>
-      {colors.customStyles && (
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            .custom-color-button:hover {
-              background-color: ${primaryColor}dd !important;
-            }
-            .custom-color-button:focus {
-              box-shadow: 0 0 0 3px ${primaryColor}40 !important;
-            }
-          `
-        }} />
-      )}
-      <Card className="max-w-md mx-auto">
+    <Card className="max-w-md mx-auto">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Standard Form to Slope Intercept Form</h2>
@@ -141,7 +128,7 @@ export default function StandardFormToSlopeCalculator({
 
           <Button 
             onClick={calculateSlopeIntercept}
-            className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
+            className="w-full"
             style={colors.customStyles?.button}
             size="lg"
           >
@@ -195,6 +182,5 @@ export default function StandardFormToSlopeCalculator({
           )}
         </div>
       </Card>
-    </>
   );
 }
