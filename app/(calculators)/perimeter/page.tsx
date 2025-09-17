@@ -34,19 +34,8 @@ export default function PerimeterPage() {
         
         <div className="text-center">
           <CopyIframeButton slug="perimeter" />
-          <p className="text-sm text-gray-600 mt-2">Copy the default embed code</p>
         </div>
 
-        <div className="text-center">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Or try different colors:</h3>
-          <div className="flex flex-wrap gap-2 justify-center">
-            <CopyIframeButton slug="perimeter" color="000000" />
-            <CopyIframeButton slug="perimeter" color="ff6b35" />
-            <CopyIframeButton slug="perimeter" color="2ecc71" />
-            <CopyIframeButton slug="perimeter" color="e74c3c" />
-            <CopyIframeButton slug="perimeter" color="9b59b6" />
-          </div>
-        </div>
       </div>
 
       <section>
