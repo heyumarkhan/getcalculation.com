@@ -7,7 +7,7 @@ export default function PerimeterPage() {
       
       <p>
         Calculate the perimeter of any four-sided shape instantly with our free online perimeter calculator. 
-        Whether you're working with rectangles, squares, or any quadrilateral, our tool provides accurate 
+        Whether you&apos;re working with rectangles, squares, or any quadrilateral, our tool provides accurate 
         perimeter calculations in seconds.
       </p>
 
@@ -24,7 +24,7 @@ export default function PerimeterPage() {
       </ul>
 
       <p>
-        Simply enter the length of each side in the calculator below, and we'll instantly calculate 
+        Simply enter the length of each side in the calculator below, and we&apos;ll instantly calculate 
         the total perimeter for you. No registration required - completely free to use!
       </p>
 
@@ -47,7 +47,7 @@ export default function PerimeterPage() {
       <section>
         <h2>Common Perimeter Calculations</h2>
         <p>
-          <strong>Square:</strong> If all four sides are equal (let's say 6 units each), 
+          <strong>Square:</strong> If all four sides are equal (let&apos;s say 6 units each), 
           the perimeter is 6 + 6 + 6 + 6 = 24 units, or simply 4 × 6 = 24 units.
         </p>
         <p>
