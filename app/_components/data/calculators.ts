@@ -54,6 +54,39 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/standard-form-to-slope-intercept',
     icon: '📈',
     color: 'orange'
+  },
+  {
+    id: 'midpoint',
+    name: 'Midpoint Calculator',
+    description: 'Calculate the midpoint between two points on a coordinate plane',
+    category: 'Geometry',
+    keywords: ['midpoint', 'coordinates', 'geometry', 'point', 'center', 'distance'],
+    href: '/midpoint',
+    embedHref: '/embed/midpoint',
+    icon: '📍',
+    color: 'blue'
+  },
+  {
+    id: 'line-segment-length',
+    name: 'Line Segment Length Calculator',
+    description: 'Calculate the distance between two points using the distance formula',
+    category: 'Geometry',
+    keywords: ['line segment', 'distance', 'coordinates', 'geometry', 'length', 'pythagorean'],
+    href: '/line-segment-length',
+    embedHref: '/embed/line-segment-length',
+    icon: '📏',
+    color: 'green'
+  },
+  {
+    id: 'parabola',
+    name: 'Parabola Calculator',
+    description: 'Find vertex, focus, directrix, and other properties of a parabola from its equation',
+    category: 'Algebra',
+    keywords: ['parabola', 'vertex', 'focus', 'directrix', 'quadratic', 'conic sections'],
+    href: '/parabola',
+    embedHref: '/embed/parabola',
+    icon: '📈',
+    color: 'purple'
   }
 ];
 
