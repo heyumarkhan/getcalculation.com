@@ -47,6 +47,12 @@ export default function CopyIframeButton({ slug, className = '', color }: CopyIf
     }
   };
   
+  const getButtonText = () => {
+    if (copied) return '✓ Copied!';
+    if (color) return `📋 Copy ${color.toUpperCase()}`;
+    return '📋 Copy Embed Code';
+  };
+
   return (
     <Button
       onClick={handleCopy}
@@ -54,7 +60,7 @@ export default function CopyIframeButton({ slug, className = '', color }: CopyIf
       size="sm"
       className={className}
     >
-      {copied ? '✓ Copied!' : '📋 Copy Embed Code'}
+      {getButtonText()}
     </Button>
   );
 }
