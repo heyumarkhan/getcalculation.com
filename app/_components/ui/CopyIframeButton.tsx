@@ -6,9 +6,10 @@ import Button from './Button';
 interface CopyIframeButtonProps {
   slug: string;
   className?: string;
+  color?: string;
 }
 
-export default function CopyIframeButton({ slug, className = '' }: CopyIframeButtonProps) {
+export default function CopyIframeButton({ slug, className = '', color }: CopyIframeButtonProps) {
   const [copied, setCopied] = useState(false);
   
   const getEmbedUrl = () => {
@@ -18,7 +19,8 @@ export default function CopyIframeButton({ slug, className = '' }: CopyIframeBut
       ? `${window.location.protocol}//${window.location.host}`
       : 'https://your-site.netlify.app';
     
-    return `${baseUrl}/embed/${slug}`;
+    const url = `${baseUrl}/embed/${slug}`;
+    return color ? `${url}?color=${color}` : url;
   };
   
   const getIframeCode = () => {

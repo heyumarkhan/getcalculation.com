@@ -31,7 +31,13 @@ export default function PerimeterPage() {
 
       <div className="flex flex-col items-center space-y-4">
         <PerimeterCalculator />
-        <CopyIframeButton slug="perimeter" />
+        <div className="flex flex-wrap gap-2 justify-center">
+          <CopyIframeButton slug="perimeter" />
+          <CopyIframeButton slug="perimeter" color="green" />
+          <CopyIframeButton slug="perimeter" color="purple" />
+          <CopyIframeButton slug="perimeter" color="red" />
+          <CopyIframeButton slug="perimeter" color="indigo" />
+        </div>
       </div>
 
       <section>

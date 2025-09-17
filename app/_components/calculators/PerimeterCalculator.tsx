@@ -5,7 +5,15 @@ import Button from '../ui/Button';
 import Input from '../ui/Input';
 import Card from '../ui/Card';
 
-export default function PerimeterCalculator() {
+interface PerimeterCalculatorProps {
+  showTitle?: boolean;
+  primaryColor?: string;
+}
+
+export default function PerimeterCalculator({ 
+  showTitle = true, 
+  primaryColor = 'blue' 
+}: PerimeterCalculatorProps) {
   const [side1, setSide1] = useState<string>('');
   const [side2, setSide2] = useState<string>('');
   const [side3, setSide3] = useState<string>('');
@@ -42,10 +50,57 @@ export default function PerimeterCalculator() {
     }
   };
 
+  const getColorClasses = (color: string) => {
+    const colorMap: { [key: string]: { button: string; result: string; resultBg: string; resultBorder: string; resultText: string } } = {
+      blue: {
+        button: 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500',
+        result: 'text-blue-600',
+        resultBg: 'bg-blue-50',
+        resultBorder: 'border-blue-200',
+        resultText: 'text-blue-900'
+      },
+      green: {
+        button: 'bg-green-600 hover:bg-green-700 focus:ring-green-500',
+        result: 'text-green-600',
+        resultBg: 'bg-green-50',
+        resultBorder: 'border-green-200',
+        resultText: 'text-green-900'
+      },
+      purple: {
+        button: 'bg-purple-600 hover:bg-purple-700 focus:ring-purple-500',
+        result: 'text-purple-600',
+        resultBg: 'bg-purple-50',
+        resultBorder: 'border-purple-200',
+        resultText: 'text-purple-900'
+      },
+      red: {
+        button: 'bg-red-600 hover:bg-red-700 focus:ring-red-500',
+        result: 'text-red-600',
+        resultBg: 'bg-red-50',
+        resultBorder: 'border-red-200',
+        resultText: 'text-red-900'
+      },
+      indigo: {
+        button: 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500',
+        result: 'text-indigo-600',
+        resultBg: 'bg-indigo-50',
+        resultBorder: 'border-indigo-200',
+        resultText: 'text-indigo-900'
+      }
+    };
+    return colorMap[color] || colorMap.blue;
+  };
+
+  const colors = getColorClasses(primaryColor);
+
   return (
     <Card className="max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Perimeter Calculator</h2>
-      <p className="text-gray-600 mb-6">Enter the lengths of all four sides to calculate the perimeter:</p>
+      {showTitle && (
+        <>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Perimeter Calculator</h2>
+          <p className="text-gray-600 mb-6">Enter the lengths of all four sides to calculate the perimeter:</p>
+        </>
+      )}
       
       <div className="space-y-4">
         <Input
@@ -90,16 +145,16 @@ export default function PerimeterCalculator() {
 
         <Button 
           onClick={calculatePerimeter}
-          className="w-full"
+          className={`w-full ${colors.button}`}
           size="lg"
         >
           Calculate Perimeter
         </Button>
 
         {result !== null && (
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
-            <h3 className="text-lg font-semibold text-blue-900">Result</h3>
-            <p className="text-2xl font-bold text-blue-600">{result} units</p>
+          <div className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}>
+            <h3 className={`text-lg font-semibold ${colors.resultText}`}>Result</h3>
+            <p className={`text-2xl font-bold ${colors.result}`}>{result} units</p>
           </div>
         )}
       </div>
