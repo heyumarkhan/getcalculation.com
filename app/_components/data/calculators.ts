@@ -87,6 +87,28 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/parabola',
     icon: '📈',
     color: 'purple'
+  },
+  {
+    id: 'slope',
+    name: 'Slope (Gradient) Calculator',
+    description: 'Calculate the slope of a line between two points or from coordinates',
+    category: 'Algebra',
+    keywords: ['slope', 'gradient', 'line', 'coordinates', 'algebra', 'linear'],
+    href: '/slope',
+    embedHref: '/embed/slope',
+    icon: '📊',
+    color: 'orange'
+  },
+  {
+    id: 'triangular-prism-surface-area',
+    name: 'Triangular Prism Surface Area Calculator',
+    description: 'Calculate the surface area of a triangular prism from its dimensions',
+    category: 'Geometry',
+    keywords: ['triangular prism', 'surface area', 'geometry', '3d', 'volume', 'prism'],
+    href: '/triangular-prism-surface-area',
+    embedHref: '/embed/triangular-prism-surface-area',
+    icon: '🔺',
+    color: 'purple'
   }
 ];
 
