@@ -142,6 +142,17 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/herons-formula',
     icon: '📐',
     color: 'purple'
+  },
+  {
+    id: 'diamond-problem',
+    name: 'Diamond Problem Solver',
+    description: 'Find two numbers that add to a given sum and multiply to a given product',
+    category: 'Algebra',
+    keywords: ['diamond problem', 'algebra', 'quadratic', 'sum', 'product', 'factoring', 'solving'],
+    href: '/diamond-problem',
+    embedHref: '/embed/diamond-problem',
+    icon: '💎',
+    color: 'pink'
   }
 ];
 
