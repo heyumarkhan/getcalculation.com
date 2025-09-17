@@ -153,6 +153,17 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/diamond-problem',
     icon: '💎',
     color: 'pink'
+  },
+  {
+    id: 'cross-multiplication',
+    name: 'Cross Multiplication Calculator',
+    description: 'Solve proportions using cross multiplication to find missing values in ratios',
+    category: 'Algebra',
+    keywords: ['cross multiplication', 'proportions', 'ratios', 'algebra', 'fractions', 'solving'],
+    href: '/cross-multiplication',
+    embedHref: '/embed/cross-multiplication',
+    icon: '✖️',
+    color: 'orange'
   }
 ];
 
