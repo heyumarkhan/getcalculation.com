@@ -39,6 +39,9 @@ export default function AreaCalculator({
   };
 
   const getColorClasses = (color: string) => {
+    // Add # if it's missing
+    const hexColor = color.startsWith('#') ? color : `#${color}`;
+    
     return {
       button: '',
       result: '',
@@ -47,19 +50,19 @@ export default function AreaCalculator({
       resultText: '',
       customStyles: {
         button: {
-          backgroundColor: color,
-          '--hover-color': color,
-          '--focus-color': color
+          backgroundColor: hexColor,
+          '--hover-color': hexColor,
+          '--focus-color': hexColor
         } as React.CSSProperties,
         result: {
-          color: color
+          color: hexColor
         } as React.CSSProperties,
         resultBg: {
-          backgroundColor: `${color}10`, // 10% opacity
-          borderColor: `${color}30` // 30% opacity
+          backgroundColor: `${hexColor}10`, // 10% opacity
+          borderColor: `${hexColor}30` // 30% opacity
         } as React.CSSProperties,
         resultText: {
-          color: color
+          color: hexColor
         } as React.CSSProperties
       }
     };
