@@ -33,8 +33,17 @@ export default function SimilarTrianglesCalculator({
     const t2s1 = parseFloat(triangle2Side1) || 0;
     const t2s2 = parseFloat(triangle2Side2) || 0;
 
-    if (t1s1 <= 0 || t1s2 <= 0 || t2s1 <= 0 || t2s2 <= 0) {
-      alert('All sides must be greater than zero');
+    // Check if we have the minimum required inputs (3 out of 4)
+    const inputs = [t1s1, t1s2, t2s1, t2s2];
+    const validInputs = inputs.filter(val => val > 0);
+    
+    if (validInputs.length < 3) {
+      alert('Please enter at least 3 sides (leave one empty to calculate)');
+      return;
+    }
+
+    if (t1s1 <= 0 || t1s2 <= 0 || t2s1 <= 0) {
+      alert('Triangle 1 sides and Triangle 2 Side A are required');
       return;
     }
 
@@ -44,8 +53,8 @@ export default function SimilarTrianglesCalculator({
     // Calculate missing side using proportion
     const missingSide = t1s2 * scaleFactor;
     
-    // Create proportion string
-    const proportion = `${t1s1}/${t1s2} = ${t2s1}/${missingSide.toFixed(4)}`;
+    // Create proportion string (correct format)
+    const proportion = `${t1s1}/${t2s1} = ${t1s2}/${missingSide.toFixed(4)}`;
     
     // Create calculation string
     const calculation = `${t1s2} × (${t2s1}/${t1s1}) = ${missingSide.toFixed(4)}`;
@@ -171,11 +180,11 @@ export default function SimilarTrianglesCalculator({
               step="0.01"
             />
             <Input
-              label="Side B (missing side - will be calculated)"
+              label="Side B (leave empty to calculate)"
               type="number"
               value={triangle2Side2}
               onChange={(e) => handleInputChange('triangle2Side2', e.target.value)}
-              placeholder="Enter known side B (optional)"
+              placeholder="Leave empty to calculate missing side"
               min="0"
               step="0.01"
             />
