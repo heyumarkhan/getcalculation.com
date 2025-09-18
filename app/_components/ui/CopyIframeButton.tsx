@@ -25,7 +25,7 @@ export default function CopyIframeButton({ slug, className = '', color }: CopyIf
   
   const getIframeCode = () => {
     const embedUrl = getEmbedUrl();
-    return `<iframe src="${embedUrl}" width="100%" height="400" frameborder="0" title="Calculator"></iframe>`;
+    return `<iframe src="${embedUrl}" width="100%" height="100%" frameborder="0" title="Calculator" style="background: transparent;"></iframe>`;
   };
   
   const handleCopy = async () => {

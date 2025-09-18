@@ -138,7 +138,7 @@ export default function CalculatorGrid() {
                     className="w-full"
                     onClick={(e) => {
                       e.stopPropagation();
-                      const embedCode = `<iframe src="${window.location.origin}${calculator.embedHref}" width="400" height="300" frameborder="0"></iframe>`;
+                      const embedCode = `<iframe src="${window.location.origin}${calculator.embedHref}" width="100%" height="100%" frameborder="0" style="background: transparent;"></iframe>`;
                       navigator.clipboard.writeText(embedCode);
                     }}
                   >
