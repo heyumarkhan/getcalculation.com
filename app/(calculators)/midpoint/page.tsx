@@ -123,9 +123,6 @@ export default function MidpointPage() {
         <p>
           Understanding and calculating the midpoint is a vital skill that bridges the gap between abstract mathematics and the tangible world. From simple geometry problems to complex engineering designs, finding the center point between two locations is fundamental to countless applications.
         </p>
-        <p className="font-semibold mt-4">
-          Ready to get started? Use our free Midpoint Calculator at the top of this page and ensure your coordinate calculations are perfect every time!
-        </p>
       </SEOSection>
     </CalculatorPageTemplate>
   );

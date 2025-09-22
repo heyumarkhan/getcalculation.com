@@ -36,19 +36,24 @@ export function SEOSection({
 
 export function SEOList({ 
   items, 
+  ordered = false,
   className = '' 
 }: { 
   items: string[]; 
+  ordered?: boolean;
   className?: string; 
 }) {
+  const ListComponent = ordered ? 'ol' : 'ul';
+  const listStyleClass = ordered ? 'list-decimal' : 'list-disc';
+  
   return (
-    <ul className={`list-disc list-inside space-y-2 text-gray-700 ${className}`}>
+    <ListComponent className={`${listStyleClass} list-inside space-y-2 text-gray-700 ${className}`}>
       {items.map((item, index) => (
         <li key={index} className="leading-relaxed">
           {item}
         </li>
       ))}
-    </ul>
+    </ListComponent>
   );
 }
 
