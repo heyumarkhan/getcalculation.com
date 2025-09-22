@@ -1,6 +1,6 @@
 import HeronsFormulaCalculator from '../../_components/calculators/HeronsFormulaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
 import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function HeronsFormulaPage() {
@@ -89,7 +89,7 @@ export default function HeronsFormulaPage() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">Step 2: Apply Heron's Formula to Find the Area (A)</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Step 2: Apply Heron&apos;s Formula to Find the Area (A)</h4>
             <p>
               Now we plug the semi-perimeter (s=14) and the side lengths into the area formula:
             </p>

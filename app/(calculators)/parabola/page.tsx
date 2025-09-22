@@ -1,6 +1,6 @@
 import ParabolaCalculator from '../../_components/calculators/ParabolaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
 import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function ParabolaPage() {
@@ -22,10 +22,10 @@ export default function ParabolaPage() {
     >
       <SEOSection title="Parabola Calculator: Find Vertex, Focus & Directrix Instantly">
         <p>
-          From the graceful arc of a thrown ball to the precise curve of a satellite dish, parabolas are one of nature's most fundamental and useful shapes. This iconic U-shaped curve is a cornerstone of algebra and geometry, with profound applications in physics, engineering, and astronomy. However, extracting the key features of a parabola—its vertex, focus, and directrix—from an equation can be a complex and time-consuming process.
+          From the graceful arc of a thrown ball to the precise curve of a satellite dish, parabolas are one of nature&apos;s most fundamental and useful shapes. This iconic U-shaped curve is a cornerstone of algebra and geometry, with profound applications in physics, engineering, and astronomy. However, extracting the key features of a parabola—its vertex, focus, and directrix—from an equation can be a complex and time-consuming process.
         </p>
         <p>
-          That's where our <strong>Parabola Calculator</strong> comes in. This powerful tool is designed to serve as an instant <strong>parabola solver</strong>, taking any standard or general form equation and providing a complete analysis of its properties. Whether you're a student trying to master conic sections, a teacher creating examples, or a professional needing quick calculations, this guide will not only show you how to use our calculator but also help you master the concepts behind it. We'll dive deep into the formulas, explore the definitions, and make this essential mathematical concept intuitive and accessible.
+          That&apos;s where our <strong>Parabola Calculator</strong> comes in. This powerful tool is designed to serve as an instant <strong>parabola solver</strong>, taking any standard or general form equation and providing a complete analysis of its properties. Whether you&apos;re a student trying to master conic sections, a teacher creating examples, or a professional needing quick calculations, this guide will not only show you how to use our calculator but also help you master the concepts behind it. We&apos;ll dive deep into the formulas, explore the definitions, and make this essential mathematical concept intuitive and accessible.
         </p>
       </SEOSection>
 
@@ -37,17 +37,17 @@ export default function ParabolaPage() {
           "<strong>Select the Parabola's Orientation:</strong> First, choose whether the parabola opens vertically (up or down, like y = x²) or horizontally (left or right, like x = y²). This is determined by which variable is squared in the equation.",
           "<strong>Choose Your Equation Format:</strong> You can enter the equation in several common forms: Vertex Form (y = a(x-h)² + k), Standard Form ((x-h)² = 4p(y-k)), or General Form (y = Ax² + Bx + C).",
           "<strong>Enter the Values:</strong> Input the coefficients from your equation into the corresponding fields. For example, in the equation y = 2x² - 8x + 5, you would enter A=2, B=-8, and C=5.",
-          "<strong>Calculate:</strong> Click the 'Calculate' button. The <strong>Parabola Calculator</strong> will instantly process the information and display a comprehensive list of the parabola's properties."
+          "<strong>Calculate:</strong> Click the &apos;Calculate&apos; button. The <strong>Parabola Calculator</strong> will instantly process the information and display a comprehensive list of the parabola&apos;s properties."
         ]} ordered={true} />
       </SEOSection>
 
       <SEOSection title="Understanding Your Results: A Full Breakdown">
         <p>
-          The calculator provides more than just numbers; it gives you a complete analytical profile of your parabola. Here's what each output value represents:
+          The calculator provides more than just numbers; it gives you a complete analytical profile of your parabola. Here&apos;s what each output value represents:
         </p>
         <SEOList items={[
-          "<strong>Vertex (h, k):</strong> This is the turning point of the parabola. It's the highest or lowest point on a vertical parabola or the rightmost/leftmost point on a horizontal one.",
-          "<strong>Focus (x, y):</strong> A special point inside the curve. All rays parallel to the parabola's axis of symmetry reflect off the curve and pass through this single point.",
+          "<strong>Vertex (h, k):</strong> This is the turning point of the parabola. It&apos;s the highest or lowest point on a vertical parabola or the rightmost/leftmost point on a horizontal one.",
+          "<strong>Focus (x, y):</strong> A special point inside the curve. All rays parallel to the parabola&apos;s axis of symmetry reflect off the curve and pass through this single point.",
           "<strong>Directrix:</strong> A straight line outside the parabola. A parabola is geometrically defined as the set of all points that are an equal distance from the focus and the directrix.",
           "<strong>Axis of Symmetry:</strong> A line that divides the parabola into two perfectly symmetrical mirror images. It passes directly through the vertex and the focus.",
           "<strong>Focal Length (p):</strong> The distance from the vertex to the focus. Its sign determines the direction the parabola opens.",
@@ -57,7 +57,7 @@ export default function ParabolaPage() {
 
       <SEOSection title="The Equations of a Parabola">
         <p>
-          To truly understand how our <strong>Parabola Calculator</strong> works, it's essential to understand the equations that govern its shape and properties.
+          To truly understand how our <strong>Parabola Calculator</strong> works, it&apos;s essential to understand the equations that govern its shape and properties.
         </p>
         <div className="space-y-6">
           <div>
@@ -66,7 +66,7 @@ export default function ParabolaPage() {
               "<strong>Vertex Form:</strong> y = a(x-h)² + k",
               "<strong>Standard (Conic) Form:</strong> (x-h)² = 4p(y-k)"
             ]} />
-            <p>In both forms, the vertex is at (h, k). The relationship between 'a' and the focal length 'p' is p = 1/(4a).</p>
+            <p>In both forms, the vertex is at (h, k). The relationship between &apos;a&apos; and the focal length &apos;p&apos; is p = 1/(4a).</p>
           </div>
           
           <div>
@@ -75,16 +75,16 @@ export default function ParabolaPage() {
               "<strong>Vertex Form:</strong> x = a(y-k)² + h",
               "<strong>Standard (Conic) Form:</strong> (y-k)² = 4p(x-h)"
             ]} />
-            <p>The vertex is at (h, k). If 'a' or 'p' is positive, it opens right; if negative, it opens left.</p>
+            <p>The vertex is at (h, k). If &apos;a&apos; or &apos;p&apos; is positive, it opens right; if negative, it opens left.</p>
           </div>
         </div>
       </SEOSection>
       
       <SEOSection title="How to Find the Properties of a Parabola (Manual Calculation)">
-        <p>Let's walk through the process for the equation <strong>y = 2x² - 12x + 16</strong>.</p>
+        <p>Let&apos;s walk through the process for the equation <strong>y = 2x² - 12x + 16</strong>.</p>
         <SEOList items={[
           "<strong>Convert to Vertex Form:</strong> By completing the square, we rearrange the equation to y = 2(x - 3)² - 2.",
-          "<strong>Identify the Vertex and Find 'p':</strong> From the vertex form, we can see the Vertex is (3, -2). We calculate the focal length 'p' using the formula p = 1/(4a) = 1/(4*2) = 1/8.",
+          "<strong>Identify the Vertex and Find &apos;p&apos;:</strong> From the vertex form, we can see the Vertex is (3, -2). We calculate the focal length &apos;p&apos; using the formula p = 1/(4a) = 1/(4*2) = 1/8.",
           "<strong>Calculate Focus, Directrix, and Axis of Symmetry:</strong>",
           "  • <strong>Focus:</strong> (h, k + p) = (3, -2 + 1/8) = (3, -1.875)",
           "  • <strong>Directrix:</strong> y = k - p = -2 - 1/8 = -2.125",
@@ -127,10 +127,10 @@ export default function ParabolaPage() {
 
       <SEOSection title="Conclusion">
         <p>
-          The parabola is a simple curve with incredibly deep and powerful properties. While the manual calculations can be a great way to learn, our <strong>Parabola Calculator</strong> provides a reliable and instantaneous method for finding the vertex, focus, directrix, and more. By using this tool, you can spend less time on tedious algebra and more time understanding and applying the concepts. Whether you're plotting a trajectory or designing an antenna, this <strong>parabola solver</strong> is an essential resource for your mathematical toolkit.
+          The parabola is a simple curve with incredibly deep and powerful properties. While the manual calculations can be a great way to learn, our <strong>Parabola Calculator</strong> provides a reliable and instantaneous method for finding the vertex, focus, directrix, and more. By using this tool, you can spend less time on tedious algebra and more time understanding and applying the concepts. Whether you&apos;re plotting a trajectory or designing an antenna, this <strong>parabola solver</strong> is an essential resource for your mathematical toolkit.
         </p>
         <p>
-          After finding the key points of your parabola, why not take your analysis a step further? You can calculate the exact distance between the vertex and the focus using our {createInternalLink('lineSegment')} to verify the focal length 'p'.
+          After finding the key points of your parabola, why not take your analysis a step further? You can calculate the exact distance between the vertex and the focus using our {createInternalLink('lineSegment')} to verify the focal length &apos;p&apos;.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

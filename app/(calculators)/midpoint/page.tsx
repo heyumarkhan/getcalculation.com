@@ -55,7 +55,7 @@ export default function MidpointPage() {
           description="This formula averages the x-coordinates and y-coordinates separately to find the center point."
         />
         <p>
-          Let's break down each component:
+          Let&apos;s break down each component:
         </p>
         <SEOList items={[
           "M: The symbol for the midpoint coordinates.",
@@ -71,7 +71,7 @@ export default function MidpointPage() {
 
       <SEOSection title="How to Find the Midpoint Between Two Points: A Worked Example">
         <p>
-          While our midpoint calculator is the fastest method, it's essential to know how to perform the calculation manually. Let's work through an example.
+          While our midpoint calculator is the fastest method, it&apos;s essential to know how to perform the calculation manually. Let&apos;s work through an example.
         </p>
         <SEOExample
           title="Problem: Find the midpoint between Point A (3, 8) and Point B (9, 2)."
@@ -83,7 +83,7 @@ export default function MidpointPage() {
 
       <SEOSection title="Why is Calculating the Midpoint Important? Applications in the Real World">
         <p>
-          The concept of midpoint transcends the classroom. It's a practical tool used across numerous professional fields to find center points and balance locations.
+          The concept of midpoint transcends the classroom. It&apos;s a practical tool used across numerous professional fields to find center points and balance locations.
         </p>
         <SEOList items={[
           "Geometry and Mathematics: Used to find the center of a circle, construct perpendicular bisectors, and determine the medians of a triangle. The properties of the line connecting two points, such as its steepness, are also crucial. You can easily find this using our <a href='https://getcalculation.com/slope' className='text-blue-600 hover:underline'>Slope Calculator</a>.",

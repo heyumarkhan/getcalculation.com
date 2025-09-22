@@ -94,13 +94,13 @@ export default function VolumePage() {
               "<strong>h</strong> is the Height of the prism"
             ]} />
             <p>
-              <strong>Derivation:</strong> You can think of this formula as first calculating the <strong>area</strong> of the base (l × w). This gives you a two-dimensional measurement. Then, you "extrude" or stretch that area upwards by the height (h), filling the entire three-dimensional space. To learn more about two-dimensional calculations, check out our <a href="https://getcalculation.com/area" className="text-blue-600 hover:text-blue-800 underline">Area Calculator</a>.
+              <strong>Derivation:</strong> You can think of this formula as first calculating the <strong>area</strong> of the base (l × w). This gives you a two-dimensional measurement. Then, you &quot;extrude&quot; or stretch that area upwards by the height (h), filling the entire three-dimensional space. To learn more about two-dimensional calculations, check out our <a href="https://getcalculation.com/area" className="text-blue-600 hover:text-blue-800 underline">Area Calculator</a>.
             </p>
           </div>
           
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Formula for the Volume of a Triangular Pyramid</h3>
-            <p>The formula for a triangular pyramid is a bit more complex. It's based on the area of its base and its height. The complete formula that our <strong>volume calculator</strong> uses is:</p>
+            <p>The formula for a triangular pyramid is a bit more complex. It&apos;s based on the area of its base and its height. The complete formula that our <strong>volume calculator</strong> uses is:</p>
             <SEOFormula 
               formula="V = (1/6) × b × h_b × h"
               description="Where V is Volume, b is base length, h_b is base height, and h is pyramid height"
@@ -155,7 +155,7 @@ export default function VolumePage() {
           "<strong>Internal vs. External Volume:</strong> The calculator provides the total volume enclosed by the outer dimensions. It does not account for the thickness of the material of the container.",
           "<strong>Measurement Accuracy:</strong> The accuracy of the calculated volume is entirely dependent on the accuracy of your input measurements. Small errors can lead to significant errors in the final volume."
         ]} />
-        <p>The shape's perimeter, for instance, is a different calculation altogether, which you can explore with our <a href="https://getcalculation.com/perimeter" className="text-blue-600 hover:text-blue-800 underline">Perimeter Calculator</a>.</p>
+        <p>The shape&apos;s perimeter, for instance, is a different calculation altogether, which you can explore with our <a href="https://getcalculation.com/perimeter" className="text-blue-600 hover:text-blue-800 underline">Perimeter Calculator</a>.</p>
       </SEOSection>
 
       <SEOSection title="Frequently Asked Questions (FAQ)">

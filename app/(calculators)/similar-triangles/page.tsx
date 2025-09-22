@@ -1,6 +1,6 @@
 import SimilarTrianglesCalculator from '../../_components/calculators/SimilarTrianglesCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
 import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function SimilarTrianglesPage() {
@@ -64,14 +64,14 @@ export default function SimilarTrianglesPage() {
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-3">The Core Principle: Proportionality</h3>
             <p>
-              When two triangles, ΔABC and ΔA'B'C', are similar, the ratio of their corresponding sides is constant. This constant is the scale factor, denoted by k. If the sides of ΔABC are a, b, c and the corresponding sides of ΔA'B'C' are a', b', c', the relationship can be expressed with the following formula:
+              When two triangles, ΔABC and ΔA&apos;B&apos;C&apos;, are similar, the ratio of their corresponding sides is constant. This constant is the scale factor, denoted by k. If the sides of ΔABC are a, b, c and the corresponding sides of ΔA&apos;B&apos;C&apos; are a&apos;, b&apos;, c&apos;, the relationship can be expressed with the following formula:
             </p>
             <SEOFormula 
               formula="a'/a = b'/b = c'/c = k"
               description="The ratio of corresponding sides in similar triangles equals the scale factor k"
             />
             <p>
-              This simple set of equations is the engine behind our calculator. To find the missing sides, we find the scale factor k = a'/a and then solve for the other sides: b' = k × b and c' = k × c.
+              This simple set of equations is the engine behind our calculator. To find the missing sides, we find the scale factor k = a&apos;/a and then solve for the other sides: b&apos; = k × b and c&apos; = k × c.
             </p>
           </div>
           

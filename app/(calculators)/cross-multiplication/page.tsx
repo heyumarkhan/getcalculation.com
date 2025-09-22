@@ -1,7 +1,7 @@
 import CrossMultiplicationCalculator from '../../_components/calculators/CrossMultiplicationCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
-import SEOInternalLink, { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function CrossMultiplicationPage() {
   return (
@@ -22,7 +22,7 @@ export default function CrossMultiplicationPage() {
     >
       <SEOSection title="Cross Multiplication Calculator: Solve Proportions Instantly">
         <p>
-          Navigating the world of mathematics often involves understanding the relationships between different numbers. Whether you're a student tackling an algebra assignment, a chef scaling a recipe, a model builder working with blueprints, or simply trying to make sense of everyday comparisons, you'll frequently encounter proportions. The core challenge with proportions is often finding a missing value—and that's where the powerful technique of cross multiplication comes in.
+          Navigating the world of mathematics often involves understanding the relationships between different numbers. Whether you&apos;re a student tackling an algebra assignment, a chef scaling a recipe, a model builder working with blueprints, or simply trying to make sense of everyday comparisons, you&apos;ll frequently encounter proportions. The core challenge with proportions is often finding a missing value—and that&apos;s where the powerful technique of cross multiplication comes in.
         </p>
         <p>
           Our <strong>Cross Multiplication Calculator</strong> is a simple yet powerful tool designed to eliminate the guesswork and manual calculations from this process. It provides you with an instant and accurate solution, helping you solve for the unknown variable in a proportional relationship. This article will not only guide you on how to use our calculator but will also delve deep into the <strong>cross multiplication method</strong>, explain the principles behind it, walk through practical examples, and answer your most common questions. Whether you need to <strong>solve proportions</strong> for a homework problem or use it as a quick <strong>ratio calculator</strong> for a real-world task, this comprehensive guide has you covered.
@@ -31,35 +31,35 @@ export default function CrossMultiplicationPage() {
 
       <SEOSection title="How to Use the Cross Multiplication Calculator">
         <p>
-          Using our tool is incredibly straightforward. The calculator is designed to solve for an unknown variable (often denoted as 'x') in a proportion of the form A/B = C/D. You need to know three of the four values to find the fourth.
+          Using our tool is incredibly straightforward. The calculator is designed to solve for an unknown variable (often denoted as &apos;x&apos;) in a proportion of the form A/B = C/D. You need to know three of the four values to find the fourth.
         </p>
-        <p>Here's a simple step-by-step guide:</p>
+        <p>Here&apos;s a simple step-by-step guide:</p>
         <SEOList items={[
           "<strong>Identify Your Values:</strong> Look at your proportion and identify the values for A, B, C, and D. One of these will be your unknown variable (x).",
           "<strong>Input the Known Values:</strong> Enter the three numbers you know into their corresponding fields in the calculator. For instance, if you are trying to solve 2/5 = x/20, you would enter 2 for A, 5 for B, and 20 for D.",
           "<strong>Leave the Unknown Blank:</strong> The calculator is designed to solve for the value that is left empty or marked as the unknown.",
-          "<strong>Calculate:</strong> Click the \"Calculate\" button.",
+          "<strong>Calculate:</strong> Click the &quot;Calculate&quot; button.",
           "<strong>Get Your Result:</strong> The <strong>Cross Multiplication Calculator</strong> will instantly process the information and display the value for the unknown variable, completing the proportion."
         ]} ordered={true} />
         <p>
-          This tool is perfect for quickly checking your work, solving complex proportions with decimals or large numbers, or getting a fast answer when you're on the go.
+          This tool is perfect for quickly checking your work, solving complex proportions with decimals or large numbers, or getting a fast answer when you&apos;re on the go.
         </p>
       </SEOSection>
       <SEOSection title="Interpreting the Results">
         <p>
-          The number our <strong>Cross Multiplication Calculator</strong> provides is the value that makes the two ratios equivalent. For example, if you solve the proportion 2/4 = x/10, the calculator will give you the answer '5' for x.
+          The number our <strong>Cross Multiplication Calculator</strong> provides is the value that makes the two ratios equivalent. For example, if you solve the proportion 2/4 = x/10, the calculator will give you the answer &apos;5&apos; for x.
         </p>
         <p>
           What does this mean? It means that the relationship, or ratio, between 2 and 4 is the same as the relationship between 5 and 10. In both cases, the first number is half of the second number. So, 2/4 is equivalent to 5/10. The result confirms the proportional balance between the two fractions.
         </p>
         <p>
-          Understanding this is key. The calculator doesn't just give you a number; it gives you the missing piece that makes the mathematical statement true. This is the fundamental principle used to <strong>solve proportions</strong> and ensure that two ratios are in perfect balance.
+          Understanding this is key. The calculator doesn&apos;t just give you a number; it gives you the missing piece that makes the mathematical statement true. This is the fundamental principle used to <strong>solve proportions</strong> and ensure that two ratios are in perfect balance.
         </p>
       </SEOSection>
 
       <SEOSection title="The Formula Behind the Cross Multiplication Method">
         <p>
-          The <strong>cross multiplication method</strong> is a cornerstone of algebra for solving equations involving fractions. It's a simple trick that helps you get rid of the denominators in an equation, making it much easier to solve.
+          The <strong>cross multiplication method</strong> is a cornerstone of algebra for solving equations involving fractions. It&apos;s a simple trick that helps you get rid of the denominators in an equation, making it much easier to solve.
         </p>
         
         <h3 className="text-lg font-semibold text-gray-900 mb-3">The Basic Proportion</h3>
@@ -74,15 +74,15 @@ export default function CrossMultiplicationPage() {
         <SEOList items={[
           "A and C are the numerators (the top numbers of the fractions).",
           "B and D are the denominators (the bottom numbers of the fractions).",
-          "A and D are known as the \"extremes.\"",
-          "B and C are known as the \"means.\""
+          "A and D are known as the &quot;extremes.&quot;",
+          "B and C are known as the &quot;means.&quot;"
         ]} />
         
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">The \"Cross\" Action</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">The &quot;Cross&quot; Action</h3>
         <p>
-          The name "cross multiplication" comes from the visual path you follow when multiplying. You multiply the numerator of the first fraction by the denominator of the second fraction, and the numerator of the second fraction by the denominator of the first.
+          The name &quot;cross multiplication&quot; comes from the visual path you follow when multiplying. You multiply the numerator of the first fraction by the denominator of the second fraction, and the numerator of the second fraction by the denominator of the first.
         </p>
-        <p>This action looks like an "X" or a cross over the equals sign:</p>
+        <p>This action looks like an &quot;X&quot; or a cross over the equals sign:</p>
         <SEOList items={[
           "Multiply A by D.",
           "Multiply B by C."
@@ -92,7 +92,7 @@ export default function CrossMultiplicationPage() {
           formula="A × D = B × C"
           description="Cross multiplication formula - the core principle"
         />
-        <p>This is the core formula of the <strong>cross multiplication method</strong>. It's based on the mathematical principle that if two fractions are equal, their cross-products are also equal.</p>
+        <p>This is the core formula of the <strong>cross multiplication method</strong>. It&apos;s based on the mathematical principle that if two fractions are equal, their cross-products are also equal.</p>
         
         <h3 className="text-lg font-semibold text-gray-900 mb-3">Solving for Any Variable</h3>
         <p>
@@ -109,14 +109,14 @@ export default function CrossMultiplicationPage() {
         </p>
       </SEOSection>
       <SEOSection title="A Practical Worked Example">
-        <p>Let's apply the <strong>cross multiplication method</strong> to a real-world scenario to see how it works.</p>
+        <p>Let&apos;s apply the <strong>cross multiplication method</strong> to a real-world scenario to see how it works.</p>
         <p>
           <strong>Scenario:</strong> You are an architect working on a scale model of a building. The scale of the model is 1:80. This means that for every 1 inch on the model, the actual building is 80 inches tall. You need to find out how tall a window should be on the model if its real-life height is 120 inches.
         </p>
         
         <h4 className="text-lg font-semibold text-gray-900 mb-3">Step 1: Set up the proportion</h4>
         <p>
-          First, we set up our two ratios. The first ratio is the scale of the model, and the second is the ratio of the window heights. Let 'x' be the unknown height of the window on the model.
+          First, we set up our two ratios. The first ratio is the scale of the model, and the second is the ratio of the window heights. Let &apos;x&apos; be the unknown height of the window on the model.
         </p>
         <SEOList items={[
           "Ratio 1 (Scale): 1 inch (model) / 80 inches (real)",
@@ -154,12 +154,12 @@ export default function CrossMultiplicationPage() {
           <strong>Conclusion:</strong> The window on your scale model should be 1.5 inches tall.
         </p>
         <p>
-          You can verify this result by inputting A=1, B=80, and D=120 into our <strong>Cross Multiplication Calculator</strong> to solve for C (our 'x' in this case). The result will be 1.5.
+          You can verify this result by inputting A=1, B=80, and D=120 into our <strong>Cross Multiplication Calculator</strong> to solve for C (our &apos;x&apos; in this case). The result will be 1.5.
         </p>
       </SEOSection>
       <SEOSection title="Why is This Calculation Important?">
         <p>
-          Cross multiplication is more than just a classroom exercise; it's a practical mathematical tool used across numerous fields and in everyday life. Understanding how to <strong>solve proportions</strong> is a fundamental skill.
+          Cross multiplication is more than just a classroom exercise; it&apos;s a practical mathematical tool used across numerous fields and in everyday life. Understanding how to <strong>solve proportions</strong> is a fundamental skill.
         </p>
         
         <h3 className="text-lg font-semibold text-gray-900 mb-3">Real-World Applications</h3>
@@ -180,12 +180,12 @@ export default function CrossMultiplicationPage() {
 
       <SEOSection title="Understanding the Limitations">
         <p>
-          While the <strong>cross multiplication method</strong> is incredibly useful, it's important to know its limitations to avoid applying it incorrectly.
+          While the <strong>cross multiplication method</strong> is incredibly useful, it&apos;s important to know its limitations to avoid applying it incorrectly.
         </p>
         <SEOList items={[
           "<strong>Only for Proportions:</strong> This method works only when you are comparing two equal ratios (i.e., a proportion). You cannot use it to multiply or divide two fractions that are not stated to be equal. For example, you cannot use it to solve (A/B) × (C/D). This is a common mistake among students.",
-          "<strong>Requires Proportional Relationships:</strong> The method is only valid if the underlying relationship between the quantities is truly proportional. For example, the relationship between hours worked and pay earned (at a fixed hourly rate) is proportional. However, the relationship between a person's age and their height is not, so you couldn't use cross multiplication to predict someone's future height.",
-          "<strong>Risk of Oversimplification:</strong> For very complex equations with multiple terms in the numerator or denominator, simply cross-multiplying might not be the most efficient first step. It's a tool for a specific job, not a one-size-fits-all solution for all algebraic problems."
+          "<strong>Requires Proportional Relationships:</strong> The method is only valid if the underlying relationship between the quantities is truly proportional. For example, the relationship between hours worked and pay earned (at a fixed hourly rate) is proportional. However, the relationship between a person&apos;s age and their height is not, so you couldn&apos;t use cross multiplication to predict someone&apos;s future height.",
+          "<strong>Risk of Oversimplification:</strong> For very complex equations with multiple terms in the numerator or denominator, simply cross-multiplying might not be the most efficient first step. It&apos;s a tool for a specific job, not a one-size-fits-all solution for all algebraic problems."
         ]} ordered={true} />
         <p>
           Our <strong>Cross Multiplication Calculator</strong> is specifically designed for proportions, ensuring you are using the method in the context where it applies correctly.
@@ -226,7 +226,7 @@ export default function CrossMultiplicationPage() {
           The ability to <strong>solve proportions</strong> is an essential skill, and the <strong>cross multiplication method</strong> is the most efficient way to do it. It bridges the gap between abstract algebra and tangible, real-world problems, making it a valuable tool for students, professionals, and hobbyists alike. While the manual process is straightforward, having a fast and reliable tool can save time and prevent errors.
         </p>
         <p>
-          Our <strong>Cross Multiplication Calculator</strong> is designed to be that tool. It provides instant, accurate answers, allowing you to focus on setting up your problem correctly rather than getting bogged down in the arithmetic. It's more than just a <strong>ratio calculator</strong>; it's a problem-solving companion.
+          Our <strong>Cross Multiplication Calculator</strong> is designed to be that tool. It provides instant, accurate answers, allowing you to focus on setting up your problem correctly rather than getting bogged down in the arithmetic. It&apos;s more than just a <strong>ratio calculator</strong>; it&apos;s a problem-solving companion.
         </p>
         <p>
           Have another proportion to solve? Bookmark this page for quick access, or explore our other algebraic tools like the {createInternalLink('diamondProblem')} to sharpen your math skills and tackle even more complex challenges!

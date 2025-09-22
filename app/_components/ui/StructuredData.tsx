@@ -2,7 +2,7 @@ import React from 'react';
 
 interface StructuredDataProps {
   type: 'calculator' | 'howto' | 'faq';
-  data: any;
+  data: Record<string, unknown>;
 }
 
 export default function StructuredData({ type, data }: StructuredDataProps) {
@@ -47,7 +47,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          "mainEntity": data.questions?.map((q: any) => ({
+          "mainEntity": (data.questions as Array<{question: string; answer: string}>)?.map((q) => ({
             "@type": "Question",
             "name": q.question,
             "acceptedAnswer": {

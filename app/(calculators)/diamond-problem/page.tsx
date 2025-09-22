@@ -1,6 +1,6 @@
 import DiamondProblemCalculator from '../../_components/calculators/DiamondProblemCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
 import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function DiamondProblemPage() {
@@ -22,10 +22,10 @@ export default function DiamondProblemPage() {
     >
       <SEOSection title="Diamond Problem Solver: Instantly Find Two Numbers from Sum & Product">
         <p>
-          Staring at a quadratic equation and trying to factor it can feel like a puzzle. One of the most effective tools for solving this puzzle is the "diamond method." Whether you're a student just diving into algebra or a professional needing a quick refresher, understanding this technique is crucial. Our <strong>Diamond Problem Solver</strong> is designed to give you an instant answer, but more importantly, to help you grasp the concepts behind it. This powerful tool eliminates the guesswork, providing the two correct numbers from a given sum and product, streamlining your path to the solution.
+          Staring at a quadratic equation and trying to factor it can feel like a puzzle. One of the most effective tools for solving this puzzle is the &quot;diamond method.&quot; Whether you&apos;re a student just diving into algebra or a professional needing a quick refresher, understanding this technique is crucial. Our <strong>Diamond Problem Solver</strong> is designed to give you an instant answer, but more importantly, to help you grasp the concepts behind it. This powerful tool eliminates the guesswork, providing the two correct numbers from a given sum and product, streamlining your path to the solution.
         </p>
         <p>
-          The diamond problem, sometimes called the "diamond method" or "X-puzzle," is a visual technique used in mathematics, primarily to help with factoring quadratic trinomials. It’s a foundational skill that paves the way for solving more complex equations. While the manual process is excellent for learning, having a reliable <strong>diamond problem solver</strong> at your fingertips can save time and verify your work. This article will not only guide you on how to use our calculator but also delve deep into the formula, provide a worked example, and explain why this mathematical concept is so important. Get ready to master this essential algebraic tool with our intuitive <strong>diamond solver</strong>.
+          The diamond problem, sometimes called the &quot;diamond method&quot; or &quot;X-puzzle,&quot; is a visual technique used in mathematics, primarily to help with factoring quadratic trinomials. It&apos;s a foundational skill that paves the way for solving more complex equations. While the manual process is excellent for learning, having a reliable <strong>diamond problem solver</strong> at your fingertips can save time and verify your work. This article will not only guide you on how to use our calculator but also delve deep into the formula, provide a worked example, and explain why this mathematical concept is so important. Get ready to master this essential algebraic tool with our intuitive <strong>diamond solver</strong>.
         </p>
       </SEOSection>
 
@@ -37,10 +37,10 @@ export default function DiamondProblemPage() {
           "<strong>Locate the Input Fields:</strong> At the top of the calculator, you will see two fields. The top field is labeled \"Sum (Top Number),\" and the bottom field is labeled \"Product (Bottom Number).\" These correspond to the top and bottom sections of the diamond diagram.",
           "<strong>Enter Your Given Values:</strong> Type the sum of the two numbers into the \"Sum (Top Number)\" field. Then, type the product of the two numbers into the \"Product (Bottom Number)\" field. You can use positive numbers, negative numbers, and even decimals.",
           "<strong>Calculate the Solution:</strong> Click the \"Calculate\" button. The <strong>diamond problem solver</strong> will instantly process your input.",
-          "<strong>View Your Results:</strong> The calculator will display the two unknown numbers in the designated \"Left Number\" and \"Right Number\" fields. These are the two numbers that, when added together, equal your sum, and when multiplied together, equal your product. If no real solution exists, the calculator will indicate that."
+          "<strong>View Your Results:</strong> The calculator will display the two unknown numbers in the designated &quot;Left Number&quot; and &quot;Right Number&quot; fields. These are the two numbers that, when added together, equal your sum, and when multiplied together, equal your product. If no real solution exists, the calculator will indicate that."
         ]} ordered={true} />
         <p>
-          Using this <strong>diamond problem calculator</strong> is an excellent way to check your homework or quickly find factors when you're stuck.
+          Using this <strong>diamond problem calculator</strong> is an excellent way to check your homework or quickly find factors when you&apos;re stuck.
         </p>
         <p>
            <br />
@@ -53,18 +53,18 @@ export default function DiamondProblemPage() {
           The two numbers provided by the <strong>diamond problem solver</strong> are more than just a simple answer; they are the key to unlocking the next step in your algebraic problem, which is typically factoring a quadratic equation.
         </p>
         <p>
-          A quadratic equation is expressed in the form ax² + bx + c = 0. The diamond problem is most commonly used in a factoring method known as the "AC method," where you need to find two numbers that multiply to equal a · c (the product) and add up to equal b (the sum).
+          A quadratic equation is expressed in the form ax² + bx + c = 0. The diamond problem is most commonly used in a factoring method known as the &quot;AC method,&quot; where you need to find two numbers that multiply to equal a · c (the product) and add up to equal b (the sum).
         </p>
         <SEOList items={[
-          "<strong>The 'Product' (Bottom Number):</strong> This is the result of multiplying the 'a' coefficient and the 'c' constant from your quadratic equation (a · c).",
-          "<strong>The 'Sum' (Top Number):</strong> This is the 'b' coefficient from your quadratic equation.",
-          "<strong>The 'Side Numbers' (Your Results):</strong> These are the two magic numbers that satisfy the conditions. Let's call them m and n."
+          "<strong>The &apos;Product&apos; (Bottom Number):</strong> This is the result of multiplying the &apos;a&apos; coefficient and the &apos;c&apos; constant from your quadratic equation (a · c).",
+          "<strong>The &apos;Sum&apos; (Top Number):</strong> This is the &apos;b&apos; coefficient from your quadratic equation.",
+          "<strong>The &apos;Side Numbers&apos; (Your Results):</strong> These are the two magic numbers that satisfy the conditions. Let&apos;s call them m and n."
         ]} />
         <p>
-          Once you have these two numbers (m and n), you can rewrite the middle term (bx) of your quadratic equation as the sum of these two numbers (mx + nx). The equation then becomes ax² + mx + nx + c = 0. From here, you can use the "factoring by grouping" method to find the final factors of the equation.
+          Once you have these two numbers (m and n), you can rewrite the middle term (bx) of your quadratic equation as the sum of these two numbers (mx + nx). The equation then becomes ax² + mx + nx + c = 0. From here, you can use the &quot;factoring by grouping&quot; method to find the final factors of the equation.
         </p>
         <p>
-          So, when our <strong>diamond solver</strong> gives you two numbers, it's handing you the exact components needed to break down a complex trinomial into simpler, factorable groups.
+          So, when our <strong>diamond solver</strong> gives you two numbers, it&apos;s handing you the exact components needed to break down a complex trinomial into simpler, factorable groups.
         </p>
       </SEOSection>
 
@@ -72,7 +72,7 @@ export default function DiamondProblemPage() {
         <p>
           While the visual of a diamond is helpful, the core of this tool is a solid mathematical foundation based on a system of two equations. Understanding this formula empowers you to solve the problem manually and appreciate how our <strong>diamond problem solver</strong> works.
         </p>
-        <p>Let's define our variables:</p>
+        <p>Let&apos;s define our variables:</p>
         <SEOList items={[
           "Let S be the given sum (the top number).",
           "Let P be the given product (the bottom number).",
@@ -83,7 +83,7 @@ export default function DiamondProblemPage() {
           "x + y = S (The sum of the two numbers is S)",
           "x · y = P (The product of the two numbers is P)"
         ]} ordered={true} />
-        <p>To solve for x and y, we can use the substitution method. First, we isolate one variable in the first equation. Let's solve for y:</p>
+        <p>To solve for x and y, we can use the substitution method. First, we isolate one variable in the first equation. Let&apos;s solve for y:</p>
         <div className="space-y-3">
           <p className="bg-gray-100 px-3 py-2 rounded font-mono text-sm">y = S - x</p>
           <p>Now, we substitute this expression for y into the second equation:</p>
@@ -95,12 +95,12 @@ export default function DiamondProblemPage() {
           <p>To find the value of x, we can use the powerful quadratic formula: x = (-b ± √(b² - 4ac)) / 2a. In our equation (x² - Sx + P = 0), the coefficients are a = 1, b = -S, and c = P. Substituting these into the quadratic formula gives us the formula our <strong>diamond problem solver</strong> uses:</p>
           <p className="bg-gray-100 px-3 py-2 rounded font-mono text-sm font-bold">x = (S ± √(S² - 4P)) / 2</p>
         </div>
-        <p>The 'plus-minus' symbol (±) indicates that there are two possible solutions for x. These two solutions are, in fact, our two desired numbers, x and y.</p>
+        <p>The &apos;plus-minus&apos; symbol (±) indicates that there are two possible solutions for x. These two solutions are, in fact, our two desired numbers, x and y.</p>
       </SEOSection>
 
       <SEOSection title="Worked Example: Solving the Diamond Problem Manually">
         <p>
-          To truly understand the process, let's walk through an example. Imagine you are asked to find two numbers whose sum is 11 and whose product is 30.
+          To truly understand the process, let&apos;s walk through an example. Imagine you are asked to find two numbers whose sum is 11 and whose product is 30.
         </p>
         <h3 className="text-xl font-semibold text-gray-900 mb-3">Method 1: The Intuitive Approach (Trial and Error)</h3>
         <SEOList items={[
@@ -110,7 +110,7 @@ export default function DiamondProblemPage() {
         ]} ordered={true} />
         <p>Therefore, the two numbers are 5 and 6.</p>
         <h3 className="text-xl font-semibold text-gray-900 mb-3">Method 2: The Formulaic Approach</h3>
-        <p>Let's use the formula we derived, x² - Sx + P = 0.</p>
+        <p>Let&apos;s use the formula we derived, x² - Sx + P = 0.</p>
         <SEOList items={[
           "<strong>Substitute S=11 and P=30 into the equation:</strong> x² - 11x + 30 = 0",
           "<strong>Use the quadratic formula to solve for x:</strong> x = (11 ± √((-11)² - 4*1*30)) / 2*1",

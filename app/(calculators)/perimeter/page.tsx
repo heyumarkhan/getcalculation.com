@@ -116,7 +116,7 @@ export default function PerimeterPage() {
       </SEOSection>
 
       <SEOSection title="Limitations and Considerations">
-        <p>While our calculator is a powerful tool, it's important to be aware of a few real-world considerations:</p>
+        <p>While our calculator is a powerful tool, it&apos;s important to be aware of a few real-world considerations:</p>
         <SEOList items={[
           "Measurement Accuracy: The calculator's output is only as accurate as the input you provide. Always double-check your initial measurements.",
           "Irregular Shapes: For shapes with curves (other than a circle), simple formulas won't work and may require more advanced techniques.",

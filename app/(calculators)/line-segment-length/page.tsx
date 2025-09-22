@@ -1,6 +1,6 @@
 import LineSegmentCalculator from '../../_components/calculators/LineSegmentCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
 
 export default function LineSegmentLengthPage() {
   return (

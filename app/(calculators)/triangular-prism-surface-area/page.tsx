@@ -1,6 +1,6 @@
 import TriangularPrismCalculator from '../../_components/calculators/TriangularPrismCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
 
 export default function TriangularPrismSurfaceAreaPage() {
   return (
@@ -58,7 +58,7 @@ export default function TriangularPrismSurfaceAreaPage() {
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">Calculating the Base Area (A_base):</h4>
             <p>
-              Because our calculator allows you to input the three side lengths of the triangular base, it uses <strong>Heron's Formula</strong> to find the area. First, we calculate the semi-perimeter (s): <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">s = (a + b + c) / 2</code>. Then, we apply Heron's Formula to find the area: <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">A_base = √[s(s-a)(s-b)(s-c)]</code>.
+              Because our calculator allows you to input the three side lengths of the triangular base, it uses <strong>Heron&apos;s Formula</strong> to find the area. First, we calculate the semi-perimeter (s): <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">s = (a + b + c) / 2</code>. Then, we apply Heron&apos;s Formula to find the area: <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">A_base = √[s(s-a)(s-b)(s-c)]</code>.
             </p>
           </div>
           

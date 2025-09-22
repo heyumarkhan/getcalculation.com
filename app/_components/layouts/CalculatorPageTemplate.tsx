@@ -1,6 +1,6 @@
 import React from 'react';
 import CopyIframeButton from '../ui/CopyIframeButton';
-import StructuredData, { generateCalculatorStructuredData } from '../ui/StructuredData';
+import { generateCalculatorStructuredData } from '../ui/StructuredData';
 import RelatedCalculators, { getRelatedCalculators } from '../ui/RelatedCalculators';
 import Breadcrumb, { generateCalculatorBreadcrumb } from '../ui/Breadcrumb';
 

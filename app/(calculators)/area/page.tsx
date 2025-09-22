@@ -22,10 +22,10 @@ export default function AreaPage() {
     >
       <SEOSection title="Understanding Area: The Foundation of Your Project">
         <p>
-          Understanding how to find the area of a space is a fundamental skill that applies to countless real-world situations, from mapping out a new garden to determining how much paint you'll need for a bedroom renovation. Whether you're a student tackling geometry, a homeowner planning a project, or a professional in a field like construction or real estate, knowing how to accurately calculate area is essential. This guide will walk you through everything you need to know about how to <strong>find the area</strong>, breaking down the formulas and methods for various shapes.
+          Understanding how to find the area of a space is a fundamental skill that applies to countless real-world situations, from mapping out a new garden to determining how much paint you&apos;ll need for a bedroom renovation. Whether you&apos;re a student tackling geometry, a homeowner planning a project, or a professional in a field like construction or real estate, knowing how to accurately calculate area is essential. This guide will walk you through everything you need to know about how to <strong>find the area</strong>, breaking down the formulas and methods for various shapes.
         </p>
         <p>
-          At its core, &quot;area&quot; is the measure of the total two-dimensional space a shape occupies. It tells you the amount of surface enclosed within a boundary. While this might sound complex, the process to <strong>find the area</strong> of common shapes like squares and rectangles is incredibly straightforward, especially with our easy-to-use Area Calculator at the top of the page. This article will not only show you how to use our tool but also empower you with the knowledge to understand the calculations behind it. We'll explore the formulas, provide practical examples, and clarify common points of confusion, such as the difference between area and perimeter.
+          At its core, &quot;area&quot; is the measure of the total two-dimensional space a shape occupies. It tells you the amount of surface enclosed within a boundary. While this might sound complex, the process to <strong>find the area</strong> of common shapes like squares and rectangles is incredibly straightforward, especially with our easy-to-use Area Calculator at the top of the page. This article will not only show you how to use our tool but also empower you with the knowledge to understand the calculations behind it. We&apos;ll explore the formulas, provide practical examples, and clarify common points of confusion, such as the difference between area and perimeter.
         </p>
       </SEOSection>
       
@@ -35,7 +35,7 @@ export default function AreaPage() {
         </p>
         <ol>
           <li><strong>Select the Shape:</strong> Begin by choosing the shape you want to calculate. Our primary calculator is set up for rectangles and squares.</li>
-          <li><strong>Enter the Dimensions:</strong> Input the required measurements into the designated fields. For a rectangle, you will need to enter the 'Length' and the 'Width'. For a square, you only need to enter the length of one 'Side'.</li>
+          <li><strong>Enter the Dimensions:</strong> Input the required measurements into the designated fields. For a rectangle, you will need to enter the &apos;Length&apos; and the &apos;Width&apos;. For a square, you only need to enter the length of one &apos;Side&apos;.</li>
           <li><strong>Calculate:</strong> Click the &quot;Calculate&quot; button. The calculator will instantly process the information and display the total area.</li>
         </ol>
       </SEOSection>
@@ -59,19 +59,21 @@ export default function AreaPage() {
 
       <SEOSection title="The Core Concept: How to Find Area of a Shape">
         <p>
-          Before diving into specific formulas, let's solidify our understanding of what area is. Imagine you are tiling a floor. The area of the room is the total number of tiles needed to cover it completely without any overlap. Learning <strong>how to find area of a shape</strong> is simply the process of using its dimensions to determine that total coverage.
+          Before diving into specific formulas, let&apos;s solidify our understanding of what area is. Imagine you are tiling a floor. The area of the room is the total number of tiles needed to cover it completely without any overlap. Learning <strong>how to find area of a shape</strong> is simply the process of using its dimensions to determine that total coverage.
         </p>
         
         <h3>Units of Area</h3>
         <p>Area is always expressed in square units. The most common units include:</p>
-        <SEOList items={["Square inches ($in^2$)", "Square feet ($ft^2$)", "Square yards ($yd^2$)", "Square meters ($m^2$)", "Square kilometers ($km^2$)", "Acres (for large plots of land)", "Hectares (another unit for land)"]} />
+        <SEOList items={["Square inches (in²)", "Square feet (ft²)", "Square yards (yd²)", "Square meters (m²)", "Square kilometers (km²)", "Acres (for large plots of land)", "Hectares (another unit for land)"]} />
 
         <h3>How to Find the Area of a Rectangle</h3>
         <p>
           A rectangle is a four-sided shape with four right angles where opposite sides are equal in length. The formula to <strong>find the area</strong> of a rectangle is:
         </p>
-        <p className="text-center font-bold">$$Area = Length \times Width$$</p>
-        <p><strong>Worked Example:</strong> Let's say you want to buy a rug for a living room that is 15 feet long and 10 feet wide.</p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center">
+          <p className="font-mono text-lg font-bold">Area = Length × Width</p>
+        </div>
+        <p><strong>Worked Example:</strong> Let&apos;s say you want to buy a rug for a living room that is 15 feet long and 10 feet wide.</p>
         <ul>
           <li><strong>Length (L):</strong> 15 feet</li>
           <li><strong>Width (W):</strong> 10 feet</li>
@@ -82,7 +84,9 @@ export default function AreaPage() {
         <p>
           A square is a special rectangle where all four sides are equal. The formula to <strong>find the area</strong> of a square is:
         </p>
-        <p className="text-center font-bold">$$Area = Side \times Side = Side^2$$</p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center">
+          <p className="font-mono text-lg font-bold">Area = Side × Side = Side²</p>
+        </div>
         <p><strong>Worked Example:</strong> Imagine you have a square garden plot, and one side measures 8 meters.</p>
         <ul>
           <li><strong>Side (S):</strong> 8 meters</li>
@@ -98,7 +102,7 @@ export default function AreaPage() {
         <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Area of a Triangle</h4>
         <div className="bg-gray-50 p-4 rounded-lg mb-4">
           <p className="font-mono text-center text-lg mb-2">Area = ½ × Base × Height</p>
-          <p className="text-gray-600">For triangles where you only know the side lengths, our guide on <a href="https://getcalculation.com/herons-formula" className="text-blue-600 hover:text-blue-800 underline">Heron's Formula</a> provides a powerful alternative.</p>
+          <p className="text-gray-600">For triangles where you only know the side lengths, our guide on <a href="https://getcalculation.com/herons-formula" className="text-blue-600 hover:text-blue-800 underline">Heron&apos;s Formula</a> provides a powerful alternative.</p>
         </div>
         
         <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Area of a Circle</h4>
@@ -123,7 +127,7 @@ export default function AreaPage() {
       </SEOSection>
 
       <SEOSection title="Area vs. Perimeter: A Common Point of Confusion">
-        <p>It's easy to mix up area and perimeter, but they measure two very different things.</p>
+        <p>It&apos;s easy to mix up area and perimeter, but they measure two very different things.</p>
         <ul>
           <li><strong>Area</strong> is the measure of the space <em>inside</em> a shape. Think of it as the grass in a yard.</li>
           <li><strong>Perimeter</strong> is the distance <em>around</em> the outside of a shape. Think of it as the fence surrounding the yard.</li>
