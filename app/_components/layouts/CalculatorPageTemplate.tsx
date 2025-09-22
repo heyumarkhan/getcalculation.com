@@ -35,15 +35,8 @@ export default function CalculatorPageTemplate({
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* SEO Content Section */}
-          <div className="lg:col-span-2">
-            <div className="prose prose-lg max-w-none">
-              {children}
-            </div>
-          </div>
-
-          {/* Calculator Section */}
-          <div className="lg:col-span-1">
+          {/* Calculator Section - First on mobile, sidebar on desktop */}
+          <div className="lg:col-span-1 order-1 lg:order-2">
             <div>
                 
                 {calculator}
@@ -59,6 +52,13 @@ export default function CalculatorPageTemplate({
                     <CopyIframeButton slug={slug} />
                   </div>
                 </div>
+            </div>
+          </div>
+
+          {/* SEO Content Section - Second on mobile, main content on desktop */}
+          <div className="lg:col-span-2 order-2 lg:order-1">
+            <div className="prose prose-lg max-w-none">
+              {children}
             </div>
           </div>
         </div>

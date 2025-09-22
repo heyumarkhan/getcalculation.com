@@ -154,9 +154,6 @@ export default function PerimeterPage() {
         <p>
             Understanding and calculating perimeter is a vital skill that bridges the gap between abstract mathematics and the tangible world. From simple home DIYs to large-scale construction, getting the boundary measurements right is the first step toward a successful project.
         </p>
-        <p className="font-semibold mt-4">
-            Ready to get started on your project? Bookmark our free Perimeter Calculator and ensure your measurements are perfect every time!
-        </p>
       </SEOSection>
     </CalculatorPageTemplate>
   );

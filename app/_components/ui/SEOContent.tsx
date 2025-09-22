@@ -49,9 +49,7 @@ export function SEOList({
   return (
     <ListComponent className={`${listStyleClass} list-inside space-y-2 text-gray-700 ${className}`}>
       {items.map((item, index) => (
-        <li key={index} className="leading-relaxed">
-          {item}
-        </li>
+        <li key={index} className="leading-relaxed" dangerouslySetInnerHTML={{ __html: item }} />
       ))}
     </ListComponent>
   );
