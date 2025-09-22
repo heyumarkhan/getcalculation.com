@@ -1,6 +1,6 @@
 import StandardFormToSlopeCalculator from '../../_components/calculators/StandardFormToSlopeCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOExample } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
 
 export default function StandardFormToSlopeInterceptPage() {
   return (
@@ -86,6 +86,35 @@ export default function StandardFormToSlopeInterceptPage() {
           "Works with decimal coefficients",
           "Completely free and no registration required",
           "Mobile-friendly and easy to use"
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "What is the difference between standard form and slope intercept form?",
+            answer: "Standard form is written as Ax + By = C, while slope intercept form is y = mx + b. Standard form is useful for finding intercepts, while slope intercept form makes it easy to identify the slope and y-intercept directly."
+          },
+          {
+            question: "Can all linear equations be converted from standard form to slope intercept form?",
+            answer: "Most linear equations can be converted, but vertical lines (where B = 0) cannot be written in slope intercept form because they have an undefined slope. For example, x = 5 is a vertical line that cannot be expressed as y = mx + b."
+          },
+          {
+            question: "What if the coefficient B is negative in standard form?",
+            answer: "If B is negative, the conversion process remains the same. For example, 2x - 3y = 6 becomes y = (2/3)x - 2. The negative B simply affects the signs in the final slope intercept form."
+          },
+          {
+            question: "How do I know if my conversion is correct?",
+            answer: "You can verify your conversion by checking that both forms represent the same line. Pick any point that satisfies the original equation and verify it also satisfies the converted equation. Our calculator handles this verification automatically."
+          },
+          {
+            question: "What should I do if I get fractions in my slope intercept form?",
+            answer: "Fractions are perfectly normal and often unavoidable in slope intercept form. For example, 3x + 4y = 12 becomes y = -0.75x + 3. You can leave them as decimals or convert to fractions like y = (-3/4)x + 3."
+          },
+          {
+            question: "Can I convert from slope intercept form back to standard form?",
+            answer: "Yes, you can convert back by rearranging the equation. For y = 2x + 3, you would subtract 2x from both sides to get -2x + y = 3, or multiply by -1 to get 2x - y = -3."
+          }
         ]} />
       </SEOSection>
     </CalculatorPageTemplate>
