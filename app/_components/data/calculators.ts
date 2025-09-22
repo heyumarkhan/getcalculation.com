@@ -34,17 +34,6 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
-    id: 'volume',
-    name: 'Volume Calculator',
-    description: 'Calculate the volume of cubes, cylinders, and rectangular prisms',
-    category: 'Geometry',
-    keywords: ['volume', 'cube', 'cylinder', 'prism', '3d', 'space'],
-    href: '/volume',
-    embedHref: '/embed/volume',
-    icon: '📦',
-    color: 'purple'
-  },
-  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
