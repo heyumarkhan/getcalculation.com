@@ -1,6 +1,6 @@
 import PerimeterCalculator from '../../_components/calculators/PerimeterCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
 
 export default function PerimeterPage() {
   return (
@@ -126,28 +126,28 @@ export default function PerimeterPage() {
       </SEOSection>
 
       <SEOSection title="Frequently Asked Questions (FAQ)">
-        <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold">What is perimeter in simple terms?</h4>
-            <p>Perimeter is the total length of the path that encloses a two-dimensional shape. If you were to walk along the very edge of a field, the total distance you walked would be its perimeter.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">How do you find the perimeter of a shape?</h4>
-            <p>The most direct way to <strong>find perimeter</strong> is to add the lengths of all its sides together. For common shapes like squares and rectangles, you can use simplified formulas. The easiest method is to use a reliable online <strong>perimeter calculator</strong>.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">Can you find the perimeter if you don't know all the sides?</h4>
-            <p>Yes, for certain regular shapes. For a square, you only need one side. For a rectangle, you only need the length and the width. For a regular polygon (where all sides are equal), you only need the length of one side and the number of sides.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">Is circumference the same as perimeter?</h4>
-            <p>Yes, circumference is the special term used for the perimeter of a circle. It measures the total distance around the circle.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">How is perimeter different from area?</h4>
-            <p>Perimeter measures the length of the outer boundary (a 1D measure), while area measures the total space contained within that boundary (a 2D measure). For example, a 10x10 foot room has a perimeter of 40 feet (for baseboards) and an area of 100 square feet (for flooring).</p>
-          </div>
-        </div>
+        <SEOFAQ questions={[
+          {
+            question: "What is perimeter in simple terms?",
+            answer: "Perimeter is the total length of the path that encloses a two-dimensional shape. If you were to walk along the very edge of a field, the total distance you walked would be its perimeter."
+          },
+          {
+            question: "How do you find the perimeter of a shape?",
+            answer: "The most direct way to find perimeter is to add the lengths of all its sides together. For common shapes like squares and rectangles, you can use simplified formulas. The easiest method is to use a reliable online perimeter calculator."
+          },
+          {
+            question: "Can you find the perimeter if you don't know all the sides?",
+            answer: "Yes, for certain regular shapes. For a square, you only need one side. For a rectangle, you only need the length and the width. For a regular polygon (where all sides are equal), you only need the length of one side and the number of sides."
+          },
+          {
+            question: "Is circumference the same as perimeter?",
+            answer: "Yes, circumference is the special term used for the perimeter of a circle. It measures the total distance around the circle."
+          },
+          {
+            question: "How is perimeter different from area?",
+            answer: "Perimeter measures the length of the outer boundary (a 1D measure), while area measures the total space contained within that boundary (a 2D measure). For example, a 10x10 foot room has a perimeter of 40 feet (for baseboards) and an area of 100 square feet (for flooring)."
+          }
+        ]} />
       </SEOSection>
 
       <SEOSection title="Final Thoughts">

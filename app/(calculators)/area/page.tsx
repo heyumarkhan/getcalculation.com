@@ -1,6 +1,6 @@
 import AreaCalculator from '../../_components/calculators/AreaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList } from '../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
 
 export default function AreaPage() {
   return (
@@ -129,16 +129,28 @@ export default function AreaPage() {
       </SEOSection>
 
       <SEOSection title="Frequently Asked Questions (FAQ)">
-        <p><strong>1. What is the standard unit of area?</strong></p>
-        <p>The standard international (SI) unit of area is the square meter (m²). However, other units like square feet (ft²), square yards (yd²), and acres are commonly used, especially in the United States.</p>
-        <p><strong>2. Can area be negative?</strong></p>
-        <p>In standard geometry, area represents a physical quantity of space and is always a positive value. You cannot have a negative amount of space.</p>
-        <p><strong>3. How do you find the area of an L-shaped room?</strong></p>
-        <p>You can divide the L-shape into two separate rectangles. Calculate the area of each rectangle using the standard Length × Width formula. Then, simply add the two areas together to get the total area of the room.</p>
-        <p><strong>4. What&apos;s the difference between area and surface area?</strong></p>
-        <p>Area refers to the space inside a flat, 2D shape. Surface area is the sum of the areas of all the outside surfaces of a 3D object. You find the <em>area</em> of a square, but you find the <em>surface area</em> of a cube.</p>
-        <p><strong>5. Does doubling the side length of a square double its area?</strong></p>
-        <p>No, it quadruples the area. This is a common mistake. For a square with a side of 3 meters, the area is 3² = 9 m². If you double the side to 6 meters, the area becomes 6² = 36 m².</p>
+        <SEOFAQ questions={[
+          {
+            question: "What is the standard unit of area?",
+            answer: "The standard international (SI) unit of area is the square meter (m²). However, other units like square feet (ft²), square yards (yd²), and acres are commonly used, especially in the United States."
+          },
+          {
+            question: "Can area be negative?",
+            answer: "In standard geometry, area represents a physical quantity of space and is always a positive value. You cannot have a negative amount of space."
+          },
+          {
+            question: "How do you find the area of an L-shaped room?",
+            answer: "You can divide the L-shape into two separate rectangles. Calculate the area of each rectangle using the standard Length × Width formula. Then, simply add the two areas together to get the total area of the room."
+          },
+          {
+            question: "What's the difference between area and surface area?",
+            answer: "Area refers to the space inside a flat, 2D shape. Surface area is the sum of the areas of all the outside surfaces of a 3D object. You find the area of a square, but you find the surface area of a cube."
+          },
+          {
+            question: "Does doubling the side length of a square double its area?",
+            answer: "No, it quadruples the area. This is a common mistake. For a square with a side of 3 meters, the area is 3² = 9 m². If you double the side to 6 meters, the area becomes 6² = 36 m²."
+          }
+        ]} />
       </SEOSection>
 
       <SEOSection title="Conclusion">

@@ -104,6 +104,29 @@ export function SEOExample({
   );
 }
 
+export function SEOFAQ({ 
+  questions, 
+  className = '' 
+}: { 
+  questions: Array<{ question: string; answer: string }>; 
+  className?: string; 
+}) {
+  return (
+    <div className={`space-y-6 ${className}`}>
+      {questions.map((faq, index) => (
+        <div key={index} className="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3 border-b border-gray-300 pb-2">
+            {faq.question}
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 
 
 
