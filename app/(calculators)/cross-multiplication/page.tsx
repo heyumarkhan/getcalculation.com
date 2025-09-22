@@ -1,6 +1,7 @@
 import CrossMultiplicationCalculator from '../../_components/calculators/CrossMultiplicationCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import SEOInternalLink, { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function CrossMultiplicationPage() {
   return (
@@ -9,6 +10,15 @@ export default function CrossMultiplicationPage() {
       description="Solve proportions instantly using cross multiplication! Find missing values in ratios, solve equations, and work with fractions. Perfect for algebra homework, chemistry calculations, and mathematical problem solving."
       calculator={<CrossMultiplicationCalculator />}
       slug="cross-multiplication"
+      category="Algebra"
+      features={[
+        "Solve proportions instantly",
+        "Find missing values in ratios",
+        "Step-by-step calculations",
+        "Works with decimals and fractions",
+        "Automatic verification",
+        "Mobile-friendly interface"
+      ]}
     >
       <SEOSection title="Cross Multiplication Calculator: Solve Proportions Instantly">
         <p>
@@ -164,7 +174,7 @@ export default function CrossMultiplicationPage() {
         
         <h3 className="text-lg font-semibold text-gray-900 mb-3">A Foundational Mathematical Concept</h3>
         <p>
-          Beyond its practical uses, cross multiplication is a key building block in mathematics. It provides a bridge from basic arithmetic with fractions to more complex algebra. For instance, the concept of a constant rate of change, or <strong>slope</strong>, in a linear equation is fundamentally a ratio (rise over run). Understanding how to manipulate these ratios is essential for mastering topics like linear algebra. To learn more about how this applies to graphing, you might find our <a href="https://getcalculation.com/slope" className="text-blue-600 hover:text-blue-800 underline">Slope Calculator</a> a useful resource. Similarly, converting equations from one form to another, like from <a href="https://getcalculation.com/standard-form-to-slope-intercept" className="text-blue-600 hover:text-blue-800 underline">standard form to slope-intercept form</a>, often involves similar algebraic manipulations to isolate variables.
+          Beyond its practical uses, cross multiplication is a key building block in mathematics. It provides a bridge from basic arithmetic with fractions to more complex algebra. For instance, the concept of a constant rate of change, or <strong>slope</strong>, in a linear equation is fundamentally a ratio (rise over run). Understanding how to manipulate these ratios is essential for mastering topics like linear algebra. To learn more about how this applies to graphing, you might find our {createInternalLink('slope')} a useful resource. Similarly, converting equations from one form to another, like from {createInternalLink('standardForm', 'standard form to slope-intercept form')}, often involves similar algebraic manipulations to isolate variables.
         </p>
       </SEOSection>
 
@@ -219,7 +229,7 @@ export default function CrossMultiplicationPage() {
           Our <strong>Cross Multiplication Calculator</strong> is designed to be that tool. It provides instant, accurate answers, allowing you to focus on setting up your problem correctly rather than getting bogged down in the arithmetic. It's more than just a <strong>ratio calculator</strong>; it's a problem-solving companion.
         </p>
         <p>
-          Have another proportion to solve? Bookmark this page for quick access, or explore our other algebraic tools like the <a href="https://getcalculation.com/diamond-problem" className="text-blue-600 hover:text-blue-800 underline">Diamond Problem Calculator</a> to sharpen your math skills and tackle even more complex challenges!
+          Have another proportion to solve? Bookmark this page for quick access, or explore our other algebraic tools like the {createInternalLink('diamondProblem')} to sharpen your math skills and tackle even more complex challenges!
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

@@ -1,6 +1,7 @@
 import AreaCalculator from '../../_components/calculators/AreaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function AreaPage() {
   return (
@@ -9,6 +10,15 @@ export default function AreaPage() {
       description="Learn how to find the area of any shape with our ultimate guide and easy-to-use Area Calculator. Get formulas, examples, and instant calculations for squares, rectangles, and more."
       calculator={<AreaCalculator />}
       slug="area"
+      category="Geometry"
+      features={[
+        "Calculate area of multiple shapes",
+        "Square, rectangle, triangle, circle",
+        "Step-by-step calculations",
+        "Visual shape recognition",
+        "Mobile-friendly interface",
+        "Free to use"
+      ]}
     >
       <SEOSection title="Understanding Area: The Foundation of Your Project">
         <p>
@@ -156,6 +166,9 @@ export default function AreaPage() {
       <SEOSection title="Conclusion">
         <p>
           Mastering <strong>how to find area</strong> is a skill that demystifies the world around you, allowing you to plan projects, understand property dimensions, and solve everyday problems with confidence. From the simple rectangle in your home to more complex shapes, the fundamental principles of area calculation remain consistent and accessible.
+        </p>
+        <p>
+          Ready to explore more geometric calculations? Check out our {createInternalLink('volume')} for 3D shapes, or use our {createInternalLink('perimeter')} to calculate the distance around shapes.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

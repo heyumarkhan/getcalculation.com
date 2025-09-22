@@ -1,6 +1,7 @@
 import SlopeCalculator from '../../_components/calculators/SlopeCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function SlopePage() {
   return (
@@ -9,6 +10,15 @@ export default function SlopePage() {
       description="Calculate the slope of a line between two points instantly with our free online slope calculator. Perfect for algebra homework, geometry problems, and any task requiring slope calculations."
       calculator={<SlopeCalculator />}
       slug="slope"
+      category="Algebra"
+      features={[
+        "Calculate slope between two points",
+        "Step-by-step calculations",
+        "Works with any coordinate system",
+        "Shows rise over run",
+        "Mobile-friendly interface",
+        "Free to use"
+      ]}
     >
       <SEOSection title="How to Use Our Slope Calculator">
         <p>
@@ -118,6 +128,15 @@ export default function SlopePage() {
             answer: "Slope (m) is a critical component of a line's equation. The most common form is the slope-intercept form, y = mx + b, where m is the slope and b is the y-intercept. If you have the slope and a single point, you can determine the line's full equation."
           }
         ]} />
+      </SEOSection>
+
+      <SEOSection title="Conclusion">
+        <p>
+          Understanding slope is fundamental to mastering linear relationships in mathematics. Whether you're working on algebra homework, analyzing data trends, or solving real-world problems, our <strong>Slope Calculator</strong> provides the precision and speed you need.
+        </p>
+        <p>
+          Ready to explore more algebraic concepts? Check out our {createInternalLink('parabola')} to work with quadratic functions, or use our {createInternalLink('standardForm')} to convert between different equation forms.
+        </p>
       </SEOSection>
 
     </CalculatorPageTemplate>

@@ -1,6 +1,7 @@
 import SimilarTrianglesCalculator from '../../_components/calculators/SimilarTrianglesCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function SimilarTrianglesPage() {
   return (
@@ -9,6 +10,15 @@ export default function SimilarTrianglesPage() {
       description="Calculate missing sides of similar triangles instantly with our free online similar triangles calculator. Perfect for geometry homework, engineering projects, and any task requiring triangle proportion calculations."
       calculator={<SimilarTrianglesCalculator />}
       slug="similar-triangles"
+      category="Geometry"
+      features={[
+        "Find missing sides using proportions",
+        "Calculate scale factors",
+        "Step-by-step solutions",
+        "Works with any triangle type",
+        "Automatic verification",
+        "Mobile-friendly interface"
+      ]}
     >
       <SEOSection title="Understanding Similar Triangles">
         <p>
@@ -134,6 +144,9 @@ export default function SimilarTrianglesPage() {
       <SEOSection title="Conclusion">
         <p>
           Understanding the properties of similar triangles is a cornerstone of geometry that unlocks the ability to solve a wide array of practical problems. Our <strong>Similar Triangles Calculator</strong> is designed to streamline this process, removing the potential for manual error and providing instant, accurate results. Whether you are a student, teacher, designer, or engineer, this tool can serve as a reliable companion for all your geometric calculations.
+        </p>
+        <p>
+          Ready to explore more triangle calculations? Check out our {createInternalLink('heronsFormula')} to find triangle areas, or use our {createInternalLink('area')} for other geometric shapes.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

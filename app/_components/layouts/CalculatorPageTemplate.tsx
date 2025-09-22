@@ -1,5 +1,8 @@
 import React from 'react';
 import CopyIframeButton from '../ui/CopyIframeButton';
+import StructuredData, { generateCalculatorStructuredData } from '../ui/StructuredData';
+import RelatedCalculators, { getRelatedCalculators } from '../ui/RelatedCalculators';
+import Breadcrumb, { generateCalculatorBreadcrumb } from '../ui/Breadcrumb';
 
 interface CalculatorPageTemplateProps {
   title: string;
@@ -7,6 +10,9 @@ interface CalculatorPageTemplateProps {
   calculator: React.ReactNode;
   slug: string;
   children: React.ReactNode; // SEO content sections
+  category?: string; // For related calculators
+  features?: string[]; // For structured data
+  showRelatedCalculators?: boolean;
 }
 
 export default function CalculatorPageTemplate({
@@ -14,10 +20,43 @@ export default function CalculatorPageTemplate({
   description,
   calculator,
   slug,
-  children
+  children,
+  category,
+  features = [],
+  showRelatedCalculators = true
 }: CalculatorPageTemplateProps) {
+  // Generate structured data
+  const structuredData = generateCalculatorStructuredData({
+    name: title,
+    description: description,
+    url: `https://getcalculation.com/${slug}`,
+    features: features.length > 0 ? features : [
+      "Instant calculations",
+      "Step-by-step solutions", 
+      "Mobile-friendly interface",
+      "No registration required",
+      "Free to use"
+    ]
+  });
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData, null, 2)
+        }}
+      />
+      
+      <div className="min-h-screen bg-gray-50">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <Breadcrumb items={generateCalculatorBreadcrumb(title, category)} />
+        </div>
+      </div>
+
       {/* Hero Section */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -59,6 +98,15 @@ export default function CalculatorPageTemplate({
           <div className="lg:col-span-2 order-2 lg:order-1">
             <div className="prose prose-lg max-w-none">
               {children}
+              
+              {/* Related Calculators */}
+              {showRelatedCalculators && (
+                <RelatedCalculators
+                  currentSlug={slug}
+                  calculators={getRelatedCalculators(slug, category, 6)}
+                  title="Related Calculators"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -103,7 +151,8 @@ export default function CalculatorPageTemplate({
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/embed/',
+      disallow: ['/private/', '/admin/'],
     },
     sitemap: 'https://getcalculation.com/sitemap.xml',
   }

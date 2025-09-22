@@ -1,6 +1,7 @@
 import VolumeCalculator from '../../_components/calculators/VolumeCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function VolumePage() {
   return (
@@ -9,6 +10,15 @@ export default function VolumePage() {
       description="Our intuitive Volume Calculator provides precise measurements for rectangular prisms (boxes) and triangular pyramids. Learn the formulas, see examples, and understand the importance of volume in shipping, construction, and DIY projects."
       calculator={<VolumeCalculator />}
       slug="volume"
+      category="Geometry"
+      features={[
+        "Calculate volume of rectangular prisms",
+        "Calculate volume of triangular pyramids",
+        "Step-by-step calculations",
+        "Real-world applications",
+        "Mobile-friendly interface",
+        "Free to use"
+      ]}
     >
       <SEOSection title="The Ultimate Volume Calculator: Find Volume of Common 3D Shapes">
         <p>
@@ -181,7 +191,7 @@ export default function VolumePage() {
           This guide has walked you through not only how to use our powerful <strong>Volume Calculator</strong> but also the fundamental formulas for calculating the <strong>volume of a box</strong> and a triangular pyramid. By learning <strong>how to find volume</strong> manually, you gain a deeper appreciation for the spatial mathematics that governs the world around us.
         </p>
         <p>
-          <strong>Ready to get started on your next project?</strong> Don&apos;t let complex calculations slow you down. Use our Area and Perimeter calculators to plan your project&apos;s footprint and boundaries with the same ease and accuracy.
+          <strong>Ready to get started on your next project?</strong> Don&apos;t let complex calculations slow you down. Use our {createInternalLink('area')} and {createInternalLink('perimeter')} calculators to plan your project&apos;s footprint and boundaries with the same ease and accuracy.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

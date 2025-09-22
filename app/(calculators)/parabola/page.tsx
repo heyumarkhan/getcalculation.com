@@ -1,15 +1,25 @@
 import ParabolaCalculator from '../../_components/calculators/ParabolaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function ParabolaPage() {
   return (
-    <CalculatorPageTemplate
-      title="Parabola Calculator - Find Vertex, Focus, Directrix & Properties"
-      description="Calculate all properties of a parabola from its quadratic equation instantly with our free online parabola calculator. Find vertex, focus, directrix, axis of symmetry, and more for any parabola equation."
-      calculator={<ParabolaCalculator />}
-      slug="parabola"
-    >
+    <CalculatorPageTemplate
+      title="Parabola Calculator - Find Vertex, Focus, Directrix & Properties"
+      description="Calculate all properties of a parabola from its quadratic equation instantly with our free online parabola calculator. Find vertex, focus, directrix, axis of symmetry, and more for any parabola equation."
+      calculator={<ParabolaCalculator />}
+      slug="parabola"
+      category="Algebra"
+      features={[
+        "Find vertex, focus, and directrix",
+        "Calculate axis of symmetry",
+        "Determine opening direction",
+        "Step-by-step calculations",
+        "Works with any quadratic equation",
+        "Mobile-friendly interface"
+      ]}
+    >
       <SEOSection title="Parabola Calculator: Find Vertex, Focus & Directrix Instantly">
         <p>
           From the graceful arc of a thrown ball to the precise curve of a satellite dish, parabolas are one of nature's most fundamental and useful shapes. This iconic U-shaped curve is a cornerstone of algebra and geometry, with profound applications in physics, engineering, and astronomy. However, extracting the key features of a parabola—its vertex, focus, and directrix—from an equation can be a complex and time-consuming process.
@@ -120,7 +130,7 @@ export default function ParabolaPage() {
           The parabola is a simple curve with incredibly deep and powerful properties. While the manual calculations can be a great way to learn, our <strong>Parabola Calculator</strong> provides a reliable and instantaneous method for finding the vertex, focus, directrix, and more. By using this tool, you can spend less time on tedious algebra and more time understanding and applying the concepts. Whether you're plotting a trajectory or designing an antenna, this <strong>parabola solver</strong> is an essential resource for your mathematical toolkit.
         </p>
         <p>
-          After finding the key points of your parabola, why not take your analysis a step further? You can calculate the exact distance between the vertex and the focus using our <a href="https://getcalculation.com/line-segment-length" className="text-blue-600 hover:text-blue-800 underline">Line Segment Length Calculator</a> to verify the focal length 'p'.
+          After finding the key points of your parabola, why not take your analysis a step further? You can calculate the exact distance between the vertex and the focus using our {createInternalLink('lineSegment')} to verify the focal length 'p'.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

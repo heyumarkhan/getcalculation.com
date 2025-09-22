@@ -1,6 +1,7 @@
 import DiamondProblemCalculator from '../../_components/calculators/DiamondProblemCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function DiamondProblemPage() {
   return (
@@ -9,6 +10,15 @@ export default function DiamondProblemPage() {
       description="Solve the classic diamond problem instantly! Find two numbers that add to a given sum and multiply to a given product. Perfect for algebra homework, factoring practice, and mathematical problem solving."
       calculator={<DiamondProblemCalculator />}
       slug="diamond-problem"
+      category="Algebra"
+      features={[
+        "Find two numbers from sum and product",
+        "Perfect for factoring quadratics",
+        "Step-by-step solutions",
+        "Works with integers and decimals",
+        "Automatic verification",
+        "Mobile-friendly interface"
+      ]}
     >
       <SEOSection title="Diamond Problem Solver: Instantly Find Two Numbers from Sum & Product">
         <p>
@@ -115,7 +125,7 @@ export default function DiamondProblemPage() {
 
       <SEOSection title="Why is the Diamond Problem Important?">
         <SEOList items={[
-          "<strong>Foundation of Factoring Quadratics:</strong> Its primary application is in factoring quadratic trinomials (ax² + bx + c). This is essential for finding the roots of a quadratic equation, which correspond to the x-intercepts of a <a href=\"https://getcalculation.com/parabola\" className=\"text-blue-600 hover:text-blue-800 underline\">parabola</a>, the graph of a quadratic function.",
+          "<strong>Foundation of Factoring Quadratics:</strong> Its primary application is in factoring quadratic trinomials (ax² + bx + c). This is essential for finding the roots of a quadratic equation, which correspond to the x-intercepts of a parabola, the graph of a quadratic function.",
           "<strong>Enhances Number Sense and Logical Reasoning:</strong> Regularly solving these puzzles sharpens your mental math skills. It trains your brain to think systematically: to take two conditions (sum and product) and work backward to find the inputs.",
           "<strong>Gateway to Advanced Mathematical Concepts:</strong> The principles are directly related to Vieta's formulas, which describe the relationship between the coefficients of a polynomial and the sums and products of its roots, a key concept in pre-calculus and calculus.",
           "<strong>Applications in Real-World Problem Solving:</strong> The underlying logic is frequently used in fields like engineering, finance, and computer science, where professionals often need to find variables that satisfy multiple constraints."
@@ -160,7 +170,7 @@ export default function DiamondProblemPage() {
           The diamond problem is a simple yet profoundly useful tool in algebra. It provides a structured method for tackling the often-tricky task of factoring quadratic equations. Our <strong>Diamond Problem Solver</strong> is here to make that process even easier. Use it to build your confidence, save valuable time, and focus on understanding the broader concepts at play.
         </p>
         <p>
-          Ready to tackle your next mathematical challenge? Use your newfound factoring skills to explore the beautiful curves of a <a href="https://getcalculation.com/parabola" className="text-blue-600 hover:text-blue-800 underline">parabola</a>, or strengthen your foundation in linear equations by learning to calculate <a href="https://getcalculation.com/slope" className="text-blue-600 hover:text-blue-800 underline">slope</a>.
+          Ready to tackle your next mathematical challenge? Use your newfound factoring skills to explore the beautiful curves of a {createInternalLink('parabola')}, or strengthen your foundation in linear equations by learning to calculate {createInternalLink('slope')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

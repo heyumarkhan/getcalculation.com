@@ -1,6 +1,7 @@
 import HeronsFormulaCalculator from '../../_components/calculators/HeronsFormulaCalculator';
 import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import { createInternalLink } from '../../_components/ui/SEOInternalLink';
 
 export default function HeronsFormulaPage() {
   return (
@@ -9,6 +10,15 @@ export default function HeronsFormulaPage() {
       description="Calculate the area of any triangle instantly using Heron's formula when you know all three side lengths. Perfect for geometry homework, engineering projects, and any task requiring triangle area calculations."
       calculator={<HeronsFormulaCalculator />}
       slug="herons-formula"
+      category="Geometry"
+      features={[
+        "Calculate triangle area from side lengths",
+        "No height or angle required",
+        "Works for any triangle type",
+        "Automatic triangle validity checking",
+        "Step-by-step calculations",
+        "Mobile-friendly interface"
+      ]}
     >
       <SEOSection title="Calculate Triangle Area Without the Height">
         <p>
@@ -157,6 +167,9 @@ export default function HeronsFormulaPage() {
       <SEOSection title="Conclusion">
         <p>
           The ability to calculate the <strong>area of a triangle by Heron&apos;s formula</strong> is a timeless piece of mathematical knowledge, and our <strong>Heron&apos;s Formula Calculator</strong> makes this process effortless. Whether you&apos;re a student working on a geometry problem, a homeowner planning a project, or a professional in need of a quick and reliable area calculation, this tool provides an instant and accurate answer. By requiring only the three side lengths, it removes the complexity of finding heights or angles, saving you time and ensuring precision.
+        </p>
+        <p>
+          Ready to explore more geometric calculations? Check out our {createInternalLink('area')} for other shape areas, or use our {createInternalLink('similarTriangles')} to work with proportional relationships in triangles.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
