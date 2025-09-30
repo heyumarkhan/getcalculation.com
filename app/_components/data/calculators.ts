@@ -251,6 +251,30 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/average-rate-of-change',
     icon: '📈',
     color: 'purple'
+  },
+  {
+    id: 'quotient',
+    name: 'Quotient Calculator',
+    description: 'Calculate the quotient and remainder when dividing two numbers with step-by-step results',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['quotient', 'division', 'remainder', 'dividend', 'divisor', 'algebra', 'arithmetic', 'long division'],
+    href: '/math/quotient',
+    embedHref: '/embed/math/quotient',
+    icon: '➗',
+    color: 'blue'
+  },
+  {
+    id: 'volume-of-hemisphere',
+    name: 'Volume of Hemisphere Calculator',
+    description: 'Calculate the volume of a hemisphere using the radius with step-by-step calculations',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['hemisphere volume', 'sphere volume', 'radius', 'geometry', '3d shapes', 'volume formula', 'semicircle'],
+    href: '/math/volume-of-hemisphere',
+    embedHref: '/embed/math/volume-of-hemisphere',
+    icon: '🌗',
+    color: 'purple'
   }
 ];
 
