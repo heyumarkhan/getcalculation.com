@@ -191,6 +191,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/exponential-function',
     icon: '📈',
     color: 'green'
+  },
+  {
+    id: 'standard-notation',
+    name: 'Standard Notation Calculator',
+    description: 'Convert between scientific notation and standard form, expand and simplify numbers',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['standard notation', 'scientific notation', 'expanded form', 'number conversion', 'decimal', 'exponent', 'algebra'],
+    href: '/math/standard-notation',
+    embedHref: '/embed/math/standard-notation',
+    icon: '🔢',
+    color: 'purple'
   }
 ];
 
