@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/midpoint', priority: 0.7 },
     { slug: 'math/triangular-prism-surface-area', priority: 0.7 },
     { slug: 'math/standard-form-to-slope-intercept', priority: 0.7 },
+    { slug: 'math/exponential-function', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 

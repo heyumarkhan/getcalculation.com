@@ -179,6 +179,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/velocity-calculator',
     icon: '🏃',
     color: 'blue'
+  },
+  {
+    id: 'exponential-function',
+    name: 'Exponential Function Calculator',
+    description: 'Calculate exponential functions, growth, decay, and compound interest',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['exponential', 'function', 'growth', 'decay', 'compound interest', 'e', 'logarithm', 'algebra'],
+    href: '/math/exponential-function',
+    embedHref: '/embed/math/exponential-function',
+    icon: '📈',
+    color: 'green'
   }
 ];
 
