@@ -203,6 +203,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/standard-notation',
     icon: '🔢',
     color: 'purple'
+  },
+  {
+    id: 'round-to-nearest-cent',
+    name: 'Round to Nearest Cent Calculator',
+    description: 'Round decimal numbers to the nearest cent (2 decimal places) for currency calculations',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['round to nearest cent', 'currency rounding', 'decimal rounding', 'money calculations', 'financial math', 'rounding rules'],
+    href: '/math/round-to-nearest-cent',
+    embedHref: '/embed/math/round-to-nearest-cent',
+    icon: '💰',
+    color: 'green'
   }
 ];
 

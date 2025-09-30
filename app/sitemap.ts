@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/standard-form-to-slope-intercept', priority: 0.7 },
     { slug: 'math/exponential-function', priority: 0.8 },
     { slug: 'math/standard-notation', priority: 0.8 },
+    { slug: 'math/round-to-nearest-cent', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 
