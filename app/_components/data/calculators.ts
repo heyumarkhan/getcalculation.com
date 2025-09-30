@@ -275,6 +275,30 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/volume-of-hemisphere',
     icon: '🌗',
     color: 'purple'
+  },
+  {
+    id: 'least-squares-regression',
+    name: 'Least Squares Regression Calculator',
+    description: 'Calculate linear regression using least squares method. Find best-fit line, correlation coefficient, and make predictions',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['least squares regression', 'linear regression', 'correlation coefficient', 'r-squared', 'best fit line', 'statistics', 'prediction', 'data analysis'],
+    href: '/math/least-squares-regression',
+    embedHref: '/embed/math/least-squares-regression',
+    icon: '📊',
+    color: 'blue'
+  },
+  {
+    id: 'binomial-coefficient',
+    name: 'Binomial Coefficient Calculator',
+    description: 'Calculate binomial coefficients C(n,k) for combinations. Find the number of ways to choose k items from n items',
+    category: 'Combinatorics',
+    subject: 'math',
+    keywords: ['binomial coefficient', 'combinations', 'factorial', 'combinatorics', 'C(n,k)', 'choose', 'counting', 'permutations'],
+    href: '/math/binomial-coefficient',
+    embedHref: '/embed/math/binomial-coefficient',
+    icon: '🔢',
+    color: 'purple'
   }
 ];
 

@@ -39,7 +39,9 @@ export const INTERNAL_LINKS = {
   lineSegment: { href: '/math/line-segment-length', title: 'Line Segment Length Calculator' },
   midpoint: { href: '/math/midpoint', title: 'Midpoint Calculator' },
   triangularPrism: { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
-  standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' }
+  standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' },
+  averageRateOfChange: { href: '/math/average-rate-of-change', title: 'Average Rate of Change Calculator' },
+  binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' }
 } as const;
 
 // Helper function to create internal links
