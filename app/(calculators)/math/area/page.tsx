@@ -1,7 +1,7 @@
-import AreaCalculator from '../../_components/calculators/AreaCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import AreaCalculator from '../../../_components/calculators/AreaCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function AreaPage() {
   return (
@@ -9,7 +9,7 @@ export default function AreaPage() {
       title="Area Calculator: How to Find the Area of a Square, Rectangle & More"
       description="Learn how to find the area of any shape with our ultimate guide and easy-to-use Area Calculator. Get formulas, examples, and instant calculations for squares, rectangles, and more."
       calculator={<AreaCalculator />}
-      slug="area"
+      slug="math/area"
       category="Geometry"
       features={[
         "Calculate area of multiple shapes",

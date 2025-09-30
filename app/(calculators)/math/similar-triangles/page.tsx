@@ -1,7 +1,7 @@
-import SimilarTrianglesCalculator from '../../_components/calculators/SimilarTrianglesCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import SimilarTrianglesCalculator from '../../../_components/calculators/SimilarTrianglesCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function SimilarTrianglesPage() {
   return (
@@ -9,7 +9,7 @@ export default function SimilarTrianglesPage() {
       title="Similar Triangles Calculator - Find Missing Sides Using Proportions"
       description="Calculate missing sides of similar triangles instantly with our free online similar triangles calculator. Perfect for geometry homework, engineering projects, and any task requiring triangle proportion calculations."
       calculator={<SimilarTrianglesCalculator />}
-      slug="similar-triangles"
+      slug="math/similar-triangles"
       category="Geometry"
       features={[
         "Find missing sides using proportions",

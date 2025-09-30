@@ -1,7 +1,7 @@
-import VolumeCalculator from '../../_components/calculators/VolumeCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import VolumeCalculator from '../../../_components/calculators/VolumeCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function VolumePage() {
   return (
@@ -9,7 +9,7 @@ export default function VolumePage() {
       title="The Ultimate Volume Calculator: Find Volume of Common 3D Shapes"
       description="Our intuitive Volume Calculator provides precise measurements for rectangular prisms (boxes) and triangular pyramids. Learn the formulas, see examples, and understand the importance of volume in shipping, construction, and DIY projects."
       calculator={<VolumeCalculator />}
-      slug="volume"
+      slug="math/volume"
       category="Geometry"
       features={[
         "Calculate volume of rectangular prisms",

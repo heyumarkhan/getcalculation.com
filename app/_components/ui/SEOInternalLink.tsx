@@ -27,19 +27,19 @@ export default function SEOInternalLink({
 
 // Predefined internal links for common calculator references
 export const INTERNAL_LINKS = {
-  area: { href: '/area', title: 'Area Calculator' },
-  volume: { href: '/volume', title: 'Volume Calculator' },
-  perimeter: { href: '/perimeter', title: 'Perimeter Calculator' },
-  slope: { href: '/slope', title: 'Slope Calculator' },
-  parabola: { href: '/parabola', title: 'Parabola Calculator' },
-  diamondProblem: { href: '/diamond-problem', title: 'Diamond Problem Solver' },
-  crossMultiplication: { href: '/cross-multiplication', title: 'Cross Multiplication Calculator' },
-  heronsFormula: { href: '/herons-formula', title: 'Heron\'s Formula Calculator' },
-  similarTriangles: { href: '/similar-triangles', title: 'Similar Triangles Calculator' },
-  lineSegment: { href: '/line-segment-length', title: 'Line Segment Length Calculator' },
-  midpoint: { href: '/midpoint', title: 'Midpoint Calculator' },
-  triangularPrism: { href: '/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
-  standardForm: { href: '/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' }
+  area: { href: '/math/area', title: 'Area Calculator' },
+  volume: { href: '/math/volume', title: 'Volume Calculator' },
+  perimeter: { href: '/math/perimeter', title: 'Perimeter Calculator' },
+  slope: { href: '/math/slope', title: 'Slope Calculator' },
+  parabola: { href: '/math/parabola', title: 'Parabola Calculator' },
+  diamondProblem: { href: '/math/diamond-problem', title: 'Diamond Problem Solver' },
+  crossMultiplication: { href: '/math/cross-multiplication', title: 'Cross Multiplication Calculator' },
+  heronsFormula: { href: '/math/herons-formula', title: 'Heron\'s Formula Calculator' },
+  similarTriangles: { href: '/math/similar-triangles', title: 'Similar Triangles Calculator' },
+  lineSegment: { href: '/math/line-segment-length', title: 'Line Segment Length Calculator' },
+  midpoint: { href: '/math/midpoint', title: 'Midpoint Calculator' },
+  triangularPrism: { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
+  standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' }
 } as const;
 
 // Helper function to create internal links

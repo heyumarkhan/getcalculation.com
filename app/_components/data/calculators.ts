@@ -3,6 +3,7 @@ export interface Calculator {
   name: string;
   description: string;
   category: string;
+  subject: string; // 'math', 'physics', etc.
   keywords: string[];
   href: string;
   embedHref: string;
@@ -16,9 +17,10 @@ export const calculators: Calculator[] = [
     name: 'Perimeter Calculator',
     description: 'Calculate the perimeter of rectangles, squares, and other polygons',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['perimeter', 'rectangle', 'square', 'polygon', 'length', 'width'],
-    href: '/perimeter',
-    embedHref: '/embed/perimeter',
+    href: '/math/perimeter',
+    embedHref: '/embed/math/perimeter',
     icon: '📐',
     color: 'blue'
   },
@@ -27,9 +29,10 @@ export const calculators: Calculator[] = [
     name: 'Area Calculator',
     description: 'Calculate the area of rectangles, squares, circles, and triangles',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['area', 'rectangle', 'square', 'circle', 'triangle', 'surface'],
-    href: '/area',
-    embedHref: '/embed/area',
+    href: '/math/area',
+    embedHref: '/embed/math/area',
     icon: '🔲',
     color: 'green'
   },
@@ -38,9 +41,10 @@ export const calculators: Calculator[] = [
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
     category: 'Algebra',
+    subject: 'math',
     keywords: ['standard form', 'slope intercept', 'linear equation', 'algebra', 'graphing'],
-    href: '/standard-form-to-slope-intercept',
-    embedHref: '/embed/standard-form-to-slope-intercept',
+    href: '/math/standard-form-to-slope-intercept',
+    embedHref: '/embed/math/standard-form-to-slope-intercept',
     icon: '📈',
     color: 'orange'
   },
@@ -49,9 +53,10 @@ export const calculators: Calculator[] = [
     name: 'Midpoint Calculator',
     description: 'Calculate the midpoint between two points on a coordinate plane',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['midpoint', 'coordinates', 'geometry', 'point', 'center', 'distance'],
-    href: '/midpoint',
-    embedHref: '/embed/midpoint',
+    href: '/math/midpoint',
+    embedHref: '/embed/math/midpoint',
     icon: '📍',
     color: 'blue'
   },
@@ -60,9 +65,10 @@ export const calculators: Calculator[] = [
     name: 'Line Segment Length Calculator',
     description: 'Calculate the distance between two points using the distance formula',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['line segment', 'distance', 'coordinates', 'geometry', 'length', 'pythagorean'],
-    href: '/line-segment-length',
-    embedHref: '/embed/line-segment-length',
+    href: '/math/line-segment-length',
+    embedHref: '/embed/math/line-segment-length',
     icon: '📏',
     color: 'green'
   },
@@ -71,9 +77,10 @@ export const calculators: Calculator[] = [
     name: 'Parabola Calculator',
     description: 'Find vertex, focus, directrix, and other properties of a parabola from its equation',
     category: 'Algebra',
+    subject: 'math',
     keywords: ['parabola', 'vertex', 'focus', 'directrix', 'quadratic', 'conic sections'],
-    href: '/parabola',
-    embedHref: '/embed/parabola',
+    href: '/math/parabola',
+    embedHref: '/embed/math/parabola',
     icon: '📈',
     color: 'purple'
   },
@@ -82,9 +89,10 @@ export const calculators: Calculator[] = [
     name: 'Slope (Gradient) Calculator',
     description: 'Calculate the slope of a line between two points or from coordinates',
     category: 'Algebra',
+    subject: 'math',
     keywords: ['slope', 'gradient', 'line', 'coordinates', 'algebra', 'linear'],
-    href: '/slope',
-    embedHref: '/embed/slope',
+    href: '/math/slope',
+    embedHref: '/embed/math/slope',
     icon: '📊',
     color: 'orange'
   },
@@ -93,9 +101,10 @@ export const calculators: Calculator[] = [
     name: 'Triangular Prism Surface Area Calculator',
     description: 'Calculate the surface area of a triangular prism from its dimensions',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['triangular prism', 'surface area', 'geometry', '3d', 'volume', 'prism'],
-    href: '/triangular-prism-surface-area',
-    embedHref: '/embed/triangular-prism-surface-area',
+    href: '/math/triangular-prism-surface-area',
+    embedHref: '/embed/math/triangular-prism-surface-area',
     icon: '🔺',
     color: 'purple'
   },
@@ -104,9 +113,10 @@ export const calculators: Calculator[] = [
     name: 'Volume Calculator',
     description: 'Calculate volume for rectangular prisms and triangular pyramids',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['volume', 'rectangular prism', 'triangular pyramid', '3d', 'geometry', 'cubic'],
-    href: '/volume',
-    embedHref: '/embed/volume',
+    href: '/math/volume',
+    embedHref: '/embed/math/volume',
     icon: '📦',
     color: 'blue'
   },
@@ -115,9 +125,10 @@ export const calculators: Calculator[] = [
     name: 'Similar Triangles Calculator',
     description: 'Find missing sides of similar triangles using proportions and scale factors',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['similar triangles', 'proportions', 'scale factor', 'geometry', 'triangles', 'ratio'],
-    href: '/similar-triangles',
-    embedHref: '/embed/similar-triangles',
+    href: '/math/similar-triangles',
+    embedHref: '/embed/math/similar-triangles',
     icon: '🔺',
     color: 'green'
   },
@@ -126,9 +137,10 @@ export const calculators: Calculator[] = [
     name: 'Heron\'s Formula Calculator',
     description: 'Calculate triangle area using Heron\'s formula when you know all three side lengths',
     category: 'Geometry',
+    subject: 'math',
     keywords: ['herons formula', 'triangle area', 'geometry', 'sides', 'semi-perimeter', 'triangle'],
-    href: '/herons-formula',
-    embedHref: '/embed/herons-formula',
+    href: '/math/herons-formula',
+    embedHref: '/embed/math/herons-formula',
     icon: '📐',
     color: 'purple'
   },
@@ -137,9 +149,10 @@ export const calculators: Calculator[] = [
     name: 'Diamond Problem Solver',
     description: 'Find two numbers that add to a given sum and multiply to a given product',
     category: 'Algebra',
+    subject: 'math',
     keywords: ['diamond problem', 'algebra', 'quadratic', 'sum', 'product', 'factoring', 'solving'],
-    href: '/diamond-problem',
-    embedHref: '/embed/diamond-problem',
+    href: '/math/diamond-problem',
+    embedHref: '/embed/math/diamond-problem',
     icon: '💎',
     color: 'pink'
   },
@@ -148,12 +161,31 @@ export const calculators: Calculator[] = [
     name: 'Cross Multiplication Calculator',
     description: 'Solve proportions using cross multiplication to find missing values in ratios',
     category: 'Algebra',
+    subject: 'math',
     keywords: ['cross multiplication', 'proportions', 'ratios', 'algebra', 'fractions', 'solving'],
-    href: '/cross-multiplication',
-    embedHref: '/embed/cross-multiplication',
+    href: '/math/cross-multiplication',
+    embedHref: '/embed/math/cross-multiplication',
     icon: '✖️',
     color: 'orange'
+  },
+  {
+    id: 'velocity-calculator',
+    name: 'Velocity Calculator',
+    description: 'Calculate velocity, speed, distance, and time using physics formulas',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['velocity', 'speed', 'distance', 'time', 'physics', 'kinematics', 'motion'],
+    href: '/physics/velocity-calculator',
+    embedHref: '/embed/physics/velocity-calculator',
+    icon: '🏃',
+    color: 'blue'
   }
+];
+
+export const subjects = [
+  'All',
+  'Math',
+  'Physics'
 ];
 
 export const categories = [
@@ -162,5 +194,6 @@ export const categories = [
   'Algebra',
   'Trigonometry',
   'Statistics',
-  'Calculus'
+  'Calculus',
+  'Kinematics'
 ];

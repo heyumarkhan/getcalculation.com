@@ -1,6 +1,6 @@
-import StandardFormToSlopeCalculator from '../../_components/calculators/StandardFormToSlopeCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import StandardFormToSlopeCalculator from '../../../_components/calculators/StandardFormToSlopeCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
 
 export default function StandardFormToSlopeInterceptPage() {
   return (
@@ -8,7 +8,7 @@ export default function StandardFormToSlopeInterceptPage() {
       title="Standard Form to Slope Intercept Form Calculator - Convert Linear Equations"
       description="Convert linear equations from standard form (Ax + By = C) to slope intercept form (y = mx + b) instantly with our free online calculator. Whether you're working on algebra homework, graphing linear functions, or studying coordinate geometry, our tool provides accurate conversions in seconds."
       calculator={<StandardFormToSlopeCalculator />}
-      slug="standard-form-to-slope-intercept"
+      slug="math/standard-form-to-slope-intercept"
     >
       <SEOSection title="What is Standard Form to Slope Intercept Conversion?">
         <p>

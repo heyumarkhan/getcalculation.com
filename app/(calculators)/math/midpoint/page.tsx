@@ -1,6 +1,6 @@
-import MidpointCalculator from '../../_components/calculators/MidpointCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
+import MidpointCalculator from '../../../_components/calculators/MidpointCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
 
 export default function MidpointPage() {
   return (
@@ -8,7 +8,7 @@ export default function MidpointPage() {
       title="Midpoint Calculator - Find the Center Point Between Two Coordinates"
       description="Calculate the midpoint between two points on a coordinate plane instantly with our free online midpoint calculator. Perfect for geometry homework, engineering projects, and any task requiring coordinate calculations."
       calculator={<MidpointCalculator />}
-      slug="midpoint"
+      slug="math/midpoint"
     >
       <SEOSection title="Understanding Midpoint: The Foundation of Coordinate Geometry">
         <p>

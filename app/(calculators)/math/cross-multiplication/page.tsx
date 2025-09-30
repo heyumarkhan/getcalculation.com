@@ -1,7 +1,7 @@
-import CrossMultiplicationCalculator from '../../_components/calculators/CrossMultiplicationCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import CrossMultiplicationCalculator from '../../../_components/calculators/CrossMultiplicationCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function CrossMultiplicationPage() {
   return (
@@ -9,7 +9,7 @@ export default function CrossMultiplicationPage() {
       title="Cross Multiplication Calculator - Solve Proportions and Ratios"
       description="Solve proportions instantly using cross multiplication! Find missing values in ratios, solve equations, and work with fractions. Perfect for algebra homework, chemistry calculations, and mathematical problem solving."
       calculator={<CrossMultiplicationCalculator />}
-      slug="cross-multiplication"
+      slug="math/cross-multiplication"
       category="Algebra"
       features={[
         "Solve proportions instantly",

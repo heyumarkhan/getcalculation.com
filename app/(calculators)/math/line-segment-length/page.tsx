@@ -1,6 +1,6 @@
-import LineSegmentCalculator from '../../_components/calculators/LineSegmentCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
+import LineSegmentCalculator from '../../../_components/calculators/LineSegmentCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
 
 export default function LineSegmentLengthPage() {
   return (
@@ -8,7 +8,7 @@ export default function LineSegmentLengthPage() {
       title="Line Segment Length Calculator - Find Distance Between Two Points"
       description="Calculate the length of a line segment between two points instantly with our free online distance calculator. Perfect for geometry homework, engineering projects, and any task requiring distance calculations on a coordinate plane."
       calculator={<LineSegmentCalculator />}
-      slug="line-segment-length"
+      slug="math/line-segment-length"
     >
       <SEOSection title="Find the Distance Between Two Points Instantly">
         <p>

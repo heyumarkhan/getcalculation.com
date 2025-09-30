@@ -1,7 +1,7 @@
-import SlopeCalculator from '../../_components/calculators/SlopeCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import SlopeCalculator from '../../../_components/calculators/SlopeCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function SlopePage() {
   return (
@@ -9,7 +9,7 @@ export default function SlopePage() {
       title="Slope (Gradient) Calculator - Find Line Slope Between Two Points"
       description="Calculate the slope of a line between two points instantly with our free online slope calculator. Perfect for algebra homework, geometry problems, and any task requiring slope calculations."
       calculator={<SlopeCalculator />}
-      slug="slope"
+      slug="math/slope"
       category="Algebra"
       features={[
         "Calculate slope between two points",

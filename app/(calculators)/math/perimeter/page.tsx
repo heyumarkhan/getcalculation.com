@@ -1,6 +1,6 @@
-import PerimeterCalculator from '../../_components/calculators/PerimeterCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
+import PerimeterCalculator from '../../../_components/calculators/PerimeterCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
 
 export default function PerimeterPage() {
   return (
@@ -8,7 +8,7 @@ export default function PerimeterPage() {
       title="Perimeter Calculator - Calculate Rectangle, Square & Quadrilateral Perimeters"
       description="Use our free perimeter calculator to instantly find the perimeter of squares, rectangles, triangles, and other shapes. Get accurate results for your construction, landscaping, or DIY project."
       calculator={<PerimeterCalculator />}
-      slug="perimeter"
+      slug="math/perimeter"
     >
       <SEOSection title="Understanding Perimeter: The Foundation of Your Project">
         <p>

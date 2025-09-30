@@ -59,79 +59,79 @@ export const CALCULATOR_DATA: Calculator[] = [
   {
     title: "Area Calculator",
     description: "Calculate the area of various geometric shapes including rectangles, triangles, circles, and more.",
-    slug: "area",
+    slug: "math/area",
     category: "Geometry"
   },
   {
     title: "Volume Calculator",
     description: "Find the volume of 3D shapes like rectangular prisms, cylinders, spheres, and triangular prisms.",
-    slug: "volume",
+    slug: "math/volume",
     category: "Geometry"
   },
   {
     title: "Perimeter Calculator",
     description: "Calculate the perimeter of polygons and other geometric shapes quickly and accurately.",
-    slug: "perimeter",
+    slug: "math/perimeter",
     category: "Geometry"
   },
   {
     title: "Slope Calculator",
     description: "Find the slope of a line using two points or from a linear equation in various forms.",
-    slug: "slope",
+    slug: "math/slope",
     category: "Algebra"
   },
   {
     title: "Parabola Calculator",
     description: "Calculate parabola properties including vertex, focus, directrix, and axis of symmetry.",
-    slug: "parabola",
+    slug: "math/parabola",
     category: "Algebra"
   },
   {
     title: "Diamond Problem Solver",
     description: "Solve the classic diamond problem to find two numbers from their sum and product.",
-    slug: "diamond-problem",
+    slug: "math/diamond-problem",
     category: "Algebra"
   },
   {
     title: "Cross Multiplication Calculator",
     description: "Solve proportions and ratios instantly using cross multiplication method.",
-    slug: "cross-multiplication",
+    slug: "math/cross-multiplication",
     category: "Algebra"
   },
   {
     title: "Heron's Formula Calculator",
     description: "Calculate triangle area using Heron's formula when you know all three side lengths.",
-    slug: "herons-formula",
+    slug: "math/herons-formula",
     category: "Geometry"
   },
   {
     title: "Similar Triangles Calculator",
     description: "Find missing sides and angles in similar triangles using proportional relationships.",
-    slug: "similar-triangles",
+    slug: "math/similar-triangles",
     category: "Geometry"
   },
   {
     title: "Line Segment Length Calculator",
     description: "Calculate the distance between two points in 2D or 3D space using the distance formula.",
-    slug: "line-segment-length",
+    slug: "math/line-segment-length",
     category: "Geometry"
   },
   {
     title: "Midpoint Calculator",
     description: "Find the midpoint of a line segment between two points in 2D or 3D space.",
-    slug: "midpoint",
+    slug: "math/midpoint",
     category: "Geometry"
   },
   {
     title: "Triangular Prism Surface Area Calculator",
     description: "Calculate the surface area of triangular prisms with different base types.",
-    slug: "triangular-prism-surface-area",
+    slug: "math/triangular-prism-surface-area",
     category: "Geometry"
   },
   {
     title: "Standard Form to Slope Intercept Calculator",
     description: "Convert linear equations from standard form to slope-intercept form instantly.",
-    slug: "standard-form-to-slope-intercept",
+    slug: "math/standard-form-to-slope-intercept",
     category: "Algebra"
   }
 ];

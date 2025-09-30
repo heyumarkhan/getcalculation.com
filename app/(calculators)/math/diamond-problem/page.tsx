@@ -1,7 +1,7 @@
-import DiamondProblemCalculator from '../../_components/calculators/DiamondProblemCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import DiamondProblemCalculator from '../../../_components/calculators/DiamondProblemCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function DiamondProblemPage() {
   return (
@@ -9,7 +9,7 @@ export default function DiamondProblemPage() {
       title="Diamond Problem Solver - Find Two Numbers from Sum and Product"
       description="Solve the classic diamond problem instantly! Find two numbers that add to a given sum and multiply to a given product. Perfect for algebra homework, factoring practice, and mathematical problem solving."
       calculator={<DiamondProblemCalculator />}
-      slug="diamond-problem"
+      slug="math/diamond-problem"
       category="Algebra"
       features={[
         "Find two numbers from sum and product",

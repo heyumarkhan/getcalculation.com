@@ -1,7 +1,7 @@
-import HeronsFormulaCalculator from '../../_components/calculators/HeronsFormulaCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import HeronsFormulaCalculator from '../../../_components/calculators/HeronsFormulaCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function HeronsFormulaPage() {
   return (
@@ -9,7 +9,7 @@ export default function HeronsFormulaPage() {
       title="Heron's Formula Calculator - Calculate Triangle Area from Side Lengths"
       description="Calculate the area of any triangle instantly using Heron's formula when you know all three side lengths. Perfect for geometry homework, engineering projects, and any task requiring triangle area calculations."
       calculator={<HeronsFormulaCalculator />}
-      slug="herons-formula"
+      slug="math/herons-formula"
       category="Geometry"
       features={[
         "Calculate triangle area from side lengths",

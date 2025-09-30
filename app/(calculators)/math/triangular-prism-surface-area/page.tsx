@@ -1,6 +1,6 @@
-import TriangularPrismCalculator from '../../_components/calculators/TriangularPrismCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../_components/ui/SEOContent';
+import TriangularPrismCalculator from '../../../_components/calculators/TriangularPrismCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFormula, SEOFAQ } from '../../../_components/ui/SEOContent';
 
 export default function TriangularPrismSurfaceAreaPage() {
   return (
@@ -8,7 +8,7 @@ export default function TriangularPrismSurfaceAreaPage() {
       title="Triangular Prism Surface Area Calculator - Find Total Surface Area"
       description="Calculate the surface area of a triangular prism instantly with our free online calculator. Perfect for geometry homework, engineering projects, and any task requiring 3D surface area calculations."
       calculator={<TriangularPrismCalculator />}
-      slug="triangular-prism-surface-area"
+      slug="math/triangular-prism-surface-area"
     >
       <SEOSection title="Fast and Accurate Triangular Prism Calculations">
         <p>

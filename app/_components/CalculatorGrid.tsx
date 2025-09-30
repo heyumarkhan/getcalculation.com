@@ -2,11 +2,15 @@
 
 import { useState, useMemo } from 'react';
 import { calculators, categories } from './data/calculators';
+
+interface CalculatorGridProps {
+  subject?: string; // 'math', 'physics', etc.
+}
 import Card from './ui/Card';
 import Input from './ui/Input';
 import Button from './ui/Button';
 
-export default function CalculatorGrid() {
+export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -19,10 +23,11 @@ export default function CalculatorGrid() {
                            );
       
       const matchesCategory = selectedCategory === 'All' || calculator.category === selectedCategory;
+      const matchesSubject = !subject || calculator.subject === subject;
       
-      return matchesSearch && matchesCategory;
+      return matchesSearch && matchesCategory && matchesSubject;
     });
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, subject]);
 
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
@@ -30,7 +35,8 @@ export default function CalculatorGrid() {
       'Algebra': 'bg-green-100 text-green-800 border-green-200',
       'Trigonometry': 'bg-purple-100 text-purple-800 border-purple-200',
       'Statistics': 'bg-orange-100 text-orange-800 border-orange-200',
-      'Calculus': 'bg-red-100 text-red-800 border-red-200'
+      'Calculus': 'bg-red-100 text-red-800 border-red-200',
+      'Kinematics': 'bg-cyan-100 text-cyan-800 border-cyan-200'
     };
     return colors[category] || 'bg-gray-100 text-gray-800 border-gray-200';
   };
@@ -50,10 +56,10 @@ export default function CalculatorGrid() {
       {/* Search Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Math Calculators
+          {subject ? `${subject.charAt(0).toUpperCase() + subject.slice(1)} Calculators` : 'Math Calculators'}
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          Find the perfect calculator for your math problems
+          Find the perfect calculator for your {subject || 'math'} problems
         </p>
         
         {/* Search Input */}

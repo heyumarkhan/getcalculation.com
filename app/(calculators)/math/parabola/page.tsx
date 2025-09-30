@@ -1,7 +1,7 @@
-import ParabolaCalculator from '../../_components/calculators/ParabolaCalculator';
-import CalculatorPageTemplate from '../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFAQ } from '../../_components/ui/SEOContent';
-import { createInternalLink } from '../../_components/ui/SEOInternalLink';
+import ParabolaCalculator from '../../../_components/calculators/ParabolaCalculator';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function ParabolaPage() {
   return (
@@ -9,7 +9,7 @@ export default function ParabolaPage() {
       title="Parabola Calculator - Find Vertex, Focus, Directrix & Properties"
       description="Calculate all properties of a parabola from its quadratic equation instantly with our free online parabola calculator. Find vertex, focus, directrix, axis of symmetry, and more for any parabola equation."
       calculator={<ParabolaCalculator />}
-      slug="parabola"
+      slug="math/parabola"
       category="Algebra"
       features={[
         "Find vertex, focus, and directrix",
