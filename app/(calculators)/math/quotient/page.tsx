@@ -64,7 +64,7 @@ export default function QuotientPage() {
           <li><strong>Dividend:</strong> 17 (the total)</li>
           <li><strong>Divisor:</strong> 5 (how many groups)</li>
           <li><strong>Quotient:</strong> 3 (how many in each group)</li>
-          <li><strong>Remainder:</strong> 2 (what's left over)</li>
+          <li><strong>Remainder:</strong> 2 (what&apos;s left over)</li>
         </ul>
       </SEOSection>
 
