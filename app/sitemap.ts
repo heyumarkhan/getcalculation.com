@@ -21,6 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/exponential-function', priority: 0.8 },
     { slug: 'math/standard-notation', priority: 0.8 },
     { slug: 'math/round-to-nearest-cent', priority: 0.8 },
+    { slug: 'math/inverse-modulo', priority: 0.7 },
+    { slug: 'math/triangular-pyramid-volume', priority: 0.7 },
+    { slug: 'math/average-rate-of-change', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 

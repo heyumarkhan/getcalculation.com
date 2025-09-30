@@ -215,6 +215,42 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/round-to-nearest-cent',
     icon: '💰',
     color: 'green'
+  },
+  {
+    id: 'inverse-modulo',
+    name: 'Inverse Modulo Calculator',
+    description: 'Calculate the modular multiplicative inverse of a number modulo n using the extended Euclidean algorithm',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['inverse modulo', 'modular inverse', 'extended euclidean algorithm', 'number theory', 'cryptography', 'discrete mathematics'],
+    href: '/math/inverse-modulo',
+    embedHref: '/embed/math/inverse-modulo',
+    icon: '🔄',
+    color: 'blue'
+  },
+  {
+    id: 'triangular-pyramid-volume',
+    name: 'Triangular Pyramid Volume Calculator',
+    description: 'Calculate the volume of a triangular pyramid (tetrahedron) from base area and height or side lengths',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['triangular pyramid', 'tetrahedron', 'volume', 'geometry', '3d shapes', 'pyramid volume', 'triangular base'],
+    href: '/math/triangular-pyramid-volume',
+    embedHref: '/embed/math/triangular-pyramid-volume',
+    icon: '🔺',
+    color: 'orange'
+  },
+  {
+    id: 'average-rate-of-change',
+    name: 'Average Rate of Change Calculator',
+    description: 'Calculate the average rate of change of a function between two points using the slope formula',
+    category: 'Calculus',
+    subject: 'math',
+    keywords: ['average rate of change', 'slope', 'calculus', 'derivative', 'function', 'change rate', 'secant line'],
+    href: '/math/average-rate-of-change',
+    embedHref: '/embed/math/average-rate-of-change',
+    icon: '📈',
+    color: 'purple'
   }
 ];
 
