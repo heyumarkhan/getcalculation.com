@@ -71,44 +71,40 @@ export default function CalculatorPageTemplate({
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Calculator Section - First on mobile, sidebar on desktop */}
-          <div className="lg:col-span-1 order-1 lg:order-2">
-            <div>
-                
-                {calculator}
-                
-                <div className="mt-6 pt-6 border-t border-gray-200">
-                  <div className="text-center">
-                    <h3 className="text-lg font-medium text-gray-900 mb-3">
-                      Embed This Calculator
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      Copy the code below to embed this calculator on your website
-                    </p>
-                    <CopyIframeButton slug={slug} />
-                  </div>
-                </div>
+      {/* Calculator Section - Full Width */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-2xl mx-auto">
+            {calculator}
+            
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <div className="text-center">
+                <h3 className="text-lg font-medium text-gray-900 mb-3">
+                  Embed This Calculator
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Copy the code below to embed this calculator on your website
+                </p>
+                <CopyIframeButton slug={slug} />
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* SEO Content Section - Second on mobile, main content on desktop */}
-          <div className="lg:col-span-2 order-2 lg:order-1">
-            <div className="prose prose-lg max-w-none">
-              {children}
-              
-              {/* Related Calculators */}
-              {showRelatedCalculators && (
-                <RelatedCalculators
-                  currentSlug={slug}
-                  calculators={getRelatedCalculators(slug, category, 6)}
-                  title="Related Calculators"
-                />
-              )}
-            </div>
-          </div>
+      {/* SEO Content Section */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="prose prose-lg max-w-none">
+          {children}
+          
+          {/* Related Calculators */}
+          {showRelatedCalculators && (
+            <RelatedCalculators
+              currentSlug={slug}
+              calculators={getRelatedCalculators(slug, category, 6)}
+              title="Related Calculators"
+            />
+          )}
         </div>
       </div>
 

@@ -168,19 +168,18 @@ export default function DiamondProblemCalculator({
           <div className="space-y-3">
             <Input
               label="Sum (a + b)"
-              type="number"
+              type="text"
               value={sum}
               onChange={(e) => handleInputChange('sum', e.target.value)}
               placeholder="Enter the sum of two numbers"
-              step="0.01"
+              autoFocus
             />
             <Input
               label="Product (a × b)"
-              type="number"
+              type="text"
               value={product}
               onChange={(e) => handleInputChange('product', e.target.value)}
               placeholder="Enter the product of two numbers"
-              step="0.01"
             />
           </div>
         </div>

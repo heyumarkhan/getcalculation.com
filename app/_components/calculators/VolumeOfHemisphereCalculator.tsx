@@ -106,12 +106,11 @@ export default function VolumeOfHemisphereCalculator({
       <div className="space-y-4">
         <Input
           label="Radius (r)"
-          type="number"
+          type="text"
           value={radius}
           onChange={(e) => handleInputChange('radius', e.target.value)}
           placeholder="Enter radius"
-          min="0"
-          step="0.01"
+          autoFocus
         />
 
         <Button 

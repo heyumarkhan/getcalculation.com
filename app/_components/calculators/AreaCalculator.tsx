@@ -95,22 +95,19 @@ export default function AreaCalculator({
       <div className="space-y-4">
         <Input
           label="Length"
-          type="number"
+          type="text"
           value={length}
           onChange={(e) => handleInputChange('length', e.target.value)}
           placeholder="Enter length"
-          min="0"
-          step="0.01"
+          autoFocus
         />
 
         <Input
           label="Width"
-          type="number"
+          type="text"
           value={width}
           onChange={(e) => handleInputChange('width', e.target.value)}
           placeholder="Enter width"
-          min="0"
-          step="0.01"
         />
 
         <Button 

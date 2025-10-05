@@ -169,19 +169,18 @@ export default function SlopeCalculator({
           <div className="grid grid-cols-2 gap-3">
             <Input
               label="x₁"
-              type="number"
+              type="text"
               value={x1}
               onChange={(e) => handleInputChange('x1', e.target.value)}
               placeholder="x coordinate"
-              step="0.01"
+              autoFocus
             />
             <Input
               label="y₁"
-              type="number"
+              type="text"
               value={y1}
               onChange={(e) => handleInputChange('y1', e.target.value)}
               placeholder="y coordinate"
-              step="0.01"
             />
           </div>
         </div>
@@ -192,19 +191,17 @@ export default function SlopeCalculator({
           <div className="grid grid-cols-2 gap-3">
             <Input
               label="x₂"
-              type="number"
+              type="text"
               value={x2}
               onChange={(e) => handleInputChange('x2', e.target.value)}
               placeholder="x coordinate"
-              step="0.01"
             />
             <Input
               label="y₂"
-              type="number"
+              type="text"
               value={y2}
               onChange={(e) => handleInputChange('y2', e.target.value)}
               placeholder="y coordinate"
-              step="0.01"
             />
           </div>
         </div>

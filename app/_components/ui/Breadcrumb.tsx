@@ -53,14 +53,48 @@ export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
 // Helper function to generate breadcrumb for calculator pages
 export function generateCalculatorBreadcrumb(calculatorName: string, category?: string) {
   const items: BreadcrumbItem[] = [
-    { label: 'Home', href: '/' },
-    { label: 'Calculators', href: '/calculators' }
+    { label: 'Home', href: '/' }
   ];
   
+  // Determine the subject based on the category
+  let subject = 'Math'; // Default to Math
+  let subjectHref = '/math';
+  
   if (category) {
-    items.push({ label: category, href: `/calculators/${category.toLowerCase()}` });
+    // Map categories to subjects - easily extensible for future categories
+    const categoryToSubject: { [key: string]: { subject: string; href: string } } = {
+      // Math Categories
+      'Geometry': { subject: 'Math', href: '/math' },
+      'Algebra': { subject: 'Math', href: '/math' },
+      'Statistics': { subject: 'Math', href: '/math' },
+      'Calculus': { subject: 'Math', href: '/math' },
+      'Combinatorics': { subject: 'Math', href: '/math' },
+      'Trigonometry': { subject: 'Math', href: '/math' },
+      
+      // Physics Categories
+      'Kinematics': { subject: 'Physics', href: '/physics' },
+      'Mechanics': { subject: 'Physics', href: '/physics' },
+      'Thermodynamics': { subject: 'Physics', href: '/physics' },
+      'Electromagnetism': { subject: 'Physics', href: '/physics' },
+      'Optics': { subject: 'Physics', href: '/physics' },
+      'Quantum Mechanics': { subject: 'Physics', href: '/physics' },
+      'Waves': { subject: 'Physics', href: '/physics' },
+      'Fluid Mechanics': { subject: 'Physics', href: '/physics' },
+      
+      // Future Categories - easily add new subjects here
+      'Chemistry': { subject: 'Chemistry', href: '/chemistry' },
+      'Biology': { subject: 'Biology', href: '/biology' },
+      'Engineering': { subject: 'Engineering', href: '/engineering' },
+      'Finance': { subject: 'Finance', href: '/finance' },
+      'Computer Science': { subject: 'Computer Science', href: '/computer-science' }
+    };
+    
+    const subjectInfo = categoryToSubject[category] || { subject: 'Math', href: '/math' };
+    subject = subjectInfo.subject;
+    subjectHref = subjectInfo.href;
   }
   
+  items.push({ label: subject, href: subjectHref });
   items.push({ label: calculatorName });
   
   return items;

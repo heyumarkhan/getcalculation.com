@@ -47,6 +47,43 @@ Add your calculator to the `calculators` array:
 }
 ```
 
+#### 🧭 **Important: Breadcrumb Category Mapping**
+
+When setting the `category` field, ensure it maps correctly to the breadcrumb navigation system. The category determines which subject appears in the breadcrumb (e.g., "Home > Math > Calculator Name").
+
+**Current Category Mappings:**
+
+**Math Categories:**
+- `Geometry` → "Home > Math > Calculator Name"
+- `Algebra` → "Home > Math > Calculator Name"
+- `Statistics` → "Home > Math > Calculator Name"
+- `Calculus` → "Home > Math > Calculator Name"
+- `Combinatorics` → "Home > Math > Calculator Name"
+- `Trigonometry` → "Home > Math > Calculator Name"
+
+**Physics Categories:**
+- `Kinematics` → "Home > Physics > Calculator Name"
+- `Mechanics` → "Home > Physics > Calculator Name"
+- `Thermodynamics` → "Home > Physics > Calculator Name"
+- `Electromagnetism` → "Home > Physics > Calculator Name"
+- `Optics` → "Home > Physics > Calculator Name"
+- `Quantum Mechanics` → "Home > Physics > Calculator Name"
+- `Waves` → "Home > Physics > Calculator Name"
+- `Fluid Mechanics` → "Home > Physics > Calculator Name"
+
+**Adding New Categories:**
+
+If you need to add a new category that doesn't exist, update the `categoryToSubject` mapping in `app/_components/ui/Breadcrumb.tsx`:
+
+```typescript
+// Add your new category mapping
+'Your New Category': { subject: 'Your Subject', href: '/your-subject' }
+```
+
+**Examples:**
+- For a Chemistry calculator: `category: 'Chemistry'` → "Home > Chemistry > Calculator Name"
+- For a Finance calculator: `category: 'Finance'` → "Home > Finance > Calculator Name"
+
 ### Step 2: Create Calculator Component
 
 **File:** `app/_components/calculators/YourCalculatorNameCalculator.tsx`
@@ -357,9 +394,54 @@ Before writing content, research keywords:
 - [ ] Color customization works in embed
 - [ ] SEO content renders properly
 - [ ] Internal links work correctly
+- [ ] **Breadcrumb navigation displays correctly** (e.g., "Home > Math > Calculator Name")
 - [ ] Mobile responsiveness
 - [ ] Page loading speed
 - [ ] Structured data validation
+
+## 🧭 Breadcrumb System Management
+
+### Checking Existing Categories
+
+Before adding a new calculator, check if your category already exists in the breadcrumb system:
+
+1. **Check `app/_components/ui/Breadcrumb.tsx`** - Look at the `categoryToSubject` mapping
+2. **Verify the mapping** - Ensure your category maps to the correct subject
+3. **Test the breadcrumb** - Visit your calculator page to verify the breadcrumb displays correctly
+
+### Adding New Categories
+
+If you need to add a new category that doesn't exist in the breadcrumb system:
+
+1. **Open `app/_components/ui/Breadcrumb.tsx`**
+2. **Find the `categoryToSubject` object**
+3. **Add your new category mapping:**
+
+```typescript
+const categoryToSubject: { [key: string]: { subject: string; href: string } } = {
+  // ... existing categories ...
+  
+  // Add your new category
+  'Your New Category': { subject: 'Your Subject', href: '/your-subject' }
+};
+```
+
+4. **Update the calculator configuration** to use the new category
+5. **Test the breadcrumb** to ensure it displays correctly
+
+### Common Category Examples
+
+**For Math Calculators:**
+- Use existing categories: `Geometry`, `Algebra`, `Statistics`, `Calculus`, `Combinatorics`, `Trigonometry`
+- All map to "Home > Math > Calculator Name"
+
+**For Physics Calculators:**
+- Use existing categories: `Kinematics`, `Mechanics`, `Thermodynamics`, `Electromagnetism`, `Optics`, `Quantum Mechanics`, `Waves`, `Fluid Mechanics`
+- All map to "Home > Physics > Calculator Name"
+
+**For New Subjects:**
+- Add to both `calculators.ts` (category field) and `Breadcrumb.tsx` (categoryToSubject mapping)
+- Ensure the subject page exists (e.g., `/chemistry`, `/finance`)
 
 ## 🔧 Troubleshooting
 
@@ -380,6 +462,16 @@ Before writing content, research keywords:
 4. **Internal links broken**
    - Use `createInternalLink()` function
    - Verify calculator IDs exist
+
+5. **Breadcrumb shows wrong subject**
+   - Check `categoryToSubject` mapping in `Breadcrumb.tsx`
+   - Verify category name matches exactly (case-sensitive)
+   - Ensure the category exists in the mapping
+
+6. **Breadcrumb shows "Home > Math" for physics calculator**
+   - Add the category to `categoryToSubject` mapping
+   - Map it to the correct subject (e.g., Physics)
+   - Update the calculator configuration if needed
 
 ## 📚 Additional Resources
 

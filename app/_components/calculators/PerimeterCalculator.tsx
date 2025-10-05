@@ -107,42 +107,35 @@ export default function PerimeterCalculator({
       <div className="space-y-4">
         <Input
           label="Side 1"
-          type="number"
+          type="text"
           value={side1}
           onChange={(e) => handleInputChange('side1', e.target.value)}
           placeholder="Enter length"
-          min="0"
-          step="0.01"
+          autoFocus
         />
 
         <Input
           label="Side 2"
-          type="number"
+          type="text"
           value={side2}
           onChange={(e) => handleInputChange('side2', e.target.value)}
           placeholder="Enter length"
-          min="0"
-          step="0.01"
         />
 
         <Input
           label="Side 3"
-          type="number"
+          type="text"
           value={side3}
           onChange={(e) => handleInputChange('side3', e.target.value)}
           placeholder="Enter length"
-          min="0"
-          step="0.01"
         />
 
         <Input
           label="Side 4"
-          type="number"
+          type="text"
           value={side4}
           onChange={(e) => handleInputChange('side4', e.target.value)}
           placeholder="Enter length"
-          min="0"
-          step="0.01"
         />
 
         <Button 

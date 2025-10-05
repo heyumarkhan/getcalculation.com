@@ -60,11 +60,11 @@ export default function TriangularPyramidVolumeCalculator() {
                 </label>
                 <Input
                   id="baseLength"
-                  type="number"
-                  step="any"
+                  type="text"
                   value={baseLength}
                   onChange={(e) => setBaseLength(e.target.value)}
                   placeholder="Enter base length"
+                  autoFocus
                 />
               </div>
               <div>
@@ -73,8 +73,7 @@ export default function TriangularPyramidVolumeCalculator() {
                 </label>
                 <Input
                   id="baseWidth"
-                  type="number"
-                  step="any"
+                  type="text"
                   value={baseWidth}
                   onChange={(e) => setBaseWidth(e.target.value)}
                   placeholder="Enter base width"
@@ -88,8 +87,7 @@ export default function TriangularPyramidVolumeCalculator() {
               </label>
               <Input
                 id="height"
-                type="number"
-                step="any"
+                type="text"
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
                 placeholder="Enter pyramid height"

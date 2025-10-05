@@ -143,11 +143,11 @@ export default function RoundToNearestCentCalculator() {
             Amount to Round
           </label>
           <Input
-            type="number"
-            step="0.01"
+            type="text"
             placeholder="Enter amount (e.g., 1.234)"
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            autoFocus
           />
         </div>
 

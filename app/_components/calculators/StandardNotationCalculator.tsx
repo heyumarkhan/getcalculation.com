@@ -208,6 +208,7 @@ export default function StandardNotationCalculator() {
             placeholder={getInputPlaceholder()}
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            autoFocus
           />
         </div>
 

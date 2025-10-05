@@ -152,27 +152,25 @@ export default function ParabolaCalculator({
           <div className="space-y-3">
             <Input
               label="a (coefficient of x²)"
-              type="number"
+              type="text"
               value={a}
               onChange={(e) => handleInputChange('a', e.target.value)}
               placeholder="Enter coefficient a"
-              step="0.01"
+              autoFocus
             />
             <Input
               label="b (coefficient of x)"
-              type="number"
+              type="text"
               value={b}
               onChange={(e) => handleInputChange('b', e.target.value)}
               placeholder="Enter coefficient b"
-              step="0.01"
             />
             <Input
               label="c (constant term)"
-              type="number"
+              type="text"
               value={c}
               onChange={(e) => handleInputChange('c', e.target.value)}
               placeholder="Enter constant c"
-              step="0.01"
             />
           </div>
         </div>

@@ -180,30 +180,25 @@ export default function VolumeCalculator({
             <div className="space-y-3">
               <Input
                 label="Length (l)"
-                type="number"
+                type="text"
                 value={length}
                 onChange={(e) => handleInputChange('length', e.target.value)}
                 placeholder="Enter length"
-                min="0"
-                step="0.01"
+                autoFocus
               />
               <Input
                 label="Width (w)"
-                type="number"
+                type="text"
                 value={width}
                 onChange={(e) => handleInputChange('width', e.target.value)}
                 placeholder="Enter width"
-                min="0"
-                step="0.01"
               />
               <Input
                 label="Height (h)"
-                type="number"
+                type="text"
                 value={height}
                 onChange={(e) => handleInputChange('height', e.target.value)}
                 placeholder="Enter height"
-                min="0"
-                step="0.01"
               />
             </div>
           </div>
@@ -213,30 +208,24 @@ export default function VolumeCalculator({
             <div className="space-y-3">
               <Input
                 label="Base Length (b)"
-                type="number"
+                type="text"
                 value={baseLength}
                 onChange={(e) => handleInputChange('baseLength', e.target.value)}
                 placeholder="Enter base length"
-                min="0"
-                step="0.01"
               />
               <Input
                 label="Base Height (h)"
-                type="number"
+                type="text"
                 value={baseHeight}
                 onChange={(e) => handleInputChange('baseHeight', e.target.value)}
                 placeholder="Enter base height"
-                min="0"
-                step="0.01"
               />
               <Input
                 label="Pyramid Height (H)"
-                type="number"
+                type="text"
                 value={pyramidHeight}
                 onChange={(e) => handleInputChange('pyramidHeight', e.target.value)}
                 placeholder="Enter pyramid height"
-                min="0"
-                step="0.01"
               />
             </div>
           </div>

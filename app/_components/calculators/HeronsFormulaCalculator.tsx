@@ -140,30 +140,25 @@ export default function HeronsFormulaCalculator({
           <div className="space-y-3">
             <Input
               label="Side A"
-              type="number"
+              type="text"
               value={sideA}
               onChange={(e) => handleInputChange('sideA', e.target.value)}
               placeholder="Enter length of side A"
-              min="0"
-              step="0.01"
+              autoFocus
             />
             <Input
               label="Side B"
-              type="number"
+              type="text"
               value={sideB}
               onChange={(e) => handleInputChange('sideB', e.target.value)}
               placeholder="Enter length of side B"
-              min="0"
-              step="0.01"
             />
             <Input
               label="Side C"
-              type="number"
+              type="text"
               value={sideC}
               onChange={(e) => handleInputChange('sideC', e.target.value)}
               placeholder="Enter length of side C"
-              min="0"
-              step="0.01"
             />
           </div>
         </div>

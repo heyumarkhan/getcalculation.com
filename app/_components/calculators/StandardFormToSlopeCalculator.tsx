@@ -101,29 +101,27 @@ export default function StandardFormToSlopeCalculator({
 
           <Input
             label="A (coefficient of x)"
-            type="number"
+            type="text"
             value={a}
             onChange={(e) => setA(e.target.value)}
             placeholder="Enter A"
-            step="0.01"
+            autoFocus
           />
 
           <Input
             label="B (coefficient of y)"
-            type="number"
+            type="text"
             value={b}
             onChange={(e) => setB(e.target.value)}
             placeholder="Enter B"
-            step="0.01"
           />
 
           <Input
             label="C (constant)"
-            type="number"
+            type="text"
             value={c}
             onChange={(e) => setC(e.target.value)}
             placeholder="Enter C"
-            step="0.01"
           />
 
           <Button 

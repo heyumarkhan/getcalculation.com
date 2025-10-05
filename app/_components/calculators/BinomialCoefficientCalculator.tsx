@@ -163,21 +163,18 @@ export default function BinomialCoefficientCalculator({
             <div className="grid grid-cols-2 gap-4">
               <Input
                 label="n (total items)"
-                type="number"
+                type="text"
                 value={n}
                 onChange={(e) => setN(e.target.value)}
                 placeholder="Enter n"
-                min="0"
-                step="1"
+                autoFocus
               />
               <Input
                 label="k (items to choose)"
-                type="number"
+                type="text"
                 value={k}
                 onChange={(e) => setK(e.target.value)}
                 placeholder="Enter k"
-                min="0"
-                step="1"
               />
             </div>
             <p className="text-sm text-gray-600 mt-2">

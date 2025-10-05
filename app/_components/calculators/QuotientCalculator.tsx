@@ -116,20 +116,19 @@ export default function QuotientCalculator({
       <div className="space-y-4">
         <Input
           label="Dividend"
-          type="number"
+          type="text"
           value={dividend}
           onChange={(e) => handleInputChange('dividend', e.target.value)}
           placeholder="Enter dividend"
-          step="0.01"
+          autoFocus
         />
 
         <Input
           label="Divisor"
-          type="number"
+          type="text"
           value={divisor}
           onChange={(e) => handleInputChange('divisor', e.target.value)}
           placeholder="Enter divisor"
-          step="0.01"
         />
 
         <Button 
