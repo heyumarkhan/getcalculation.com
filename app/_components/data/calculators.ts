@@ -455,6 +455,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/average',
     icon: '📈',
     color: 'green'
+  },
+  {
+    id: 'decimal-to-percent',
+    name: 'Decimal to Percent Calculator',
+    description: 'Convert between decimals, percentages, and fractions with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['decimal to percent calculator', 'percent to decimal calculator', 'fraction to percent calculator', 'percent to fraction calculator', 'decimal converter', 'math calculator'],
+    href: '/math/decimal-to-percent',
+    embedHref: '/embed/math/decimal-to-percent',
+    icon: '🔄',
+    color: 'blue'
   }
 ];
 
