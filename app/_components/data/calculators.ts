@@ -359,6 +359,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/gcf',
     icon: '🔢',
     color: 'green'
+  },
+  {
+    id: 'triangle-45-45-90',
+    name: '45-45-90 Triangle Calculator',
+    description: 'Calculate sides, area, and perimeter of a 45-45-90 triangle (isosceles right triangle) with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['45-45-90 triangle', 'isosceles right triangle', 'special right triangle', 'geometry', 'trigonometry', 'pythagorean theorem', 'triangle calculator'],
+    href: '/math/triangle-45-45-90',
+    embedHref: '/embed/math/triangle-45-45-90',
+    icon: '📐',
+    color: 'blue'
   }
 ];
 
