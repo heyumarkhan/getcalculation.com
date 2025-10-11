@@ -43,7 +43,9 @@ export const INTERNAL_LINKS = {
   averageRateOfChange: { href: '/math/average-rate-of-change', title: 'Average Rate of Change Calculator' },
   binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' },
   exponentialFunction: { href: '/math/exponential-function', title: 'Exponential Function Calculator' },
-  leastSquaresRegression: { href: '/math/least-squares-regression', title: 'Least Squares Regression Calculator' }
+  leastSquaresRegression: { href: '/math/least-squares-regression', title: 'Least Squares Regression Calculator' },
+  quotient: { href: '/math/quotient', title: 'Quotient Calculator' },
+  sumOfSeries: { href: '/math/sum-of-series', title: 'Sum of Series Calculator' }
 } as const;
 
 // Helper function to create internal links
