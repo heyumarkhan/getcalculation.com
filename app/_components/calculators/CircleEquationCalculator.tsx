@@ -76,7 +76,7 @@ export default function CircleEquationCalculator({
 
   const calculateCircleEquation = () => {
     let center: { x: number; y: number };
-    let radius: number;
+    let radiusVal: number;
 
     if (inputType === 'center_radius') {
       // Check if fields are empty
@@ -87,7 +87,7 @@ export default function CircleEquationCalculator({
 
       const centerXVal = parseFloat(centerX);
       const centerYVal = parseFloat(centerY);
-      const radiusVal = parseFloat(radius);
+      radiusVal = parseFloat(radius);
 
       // Validation
       if (isNaN(centerXVal) || isNaN(centerYVal) || isNaN(radiusVal)) {
@@ -101,7 +101,7 @@ export default function CircleEquationCalculator({
       }
 
       center = { x: centerXVal, y: centerYVal };
-      radius = radiusVal;
+      radiusVal = radiusVal;
     } else {
       // Check if fields are empty
       if (!x1 || !y1 || !x2 || !y2 || !x3 || !y3 || !x1.trim() || !y1.trim() || !x2.trim() || !y2.trim() || !x3.trim() || !y3.trim()) {
@@ -129,7 +129,7 @@ export default function CircleEquationCalculator({
           { x: x3Val, y: y3Val }
         );
         center = circleData.center;
-        radius = circleData.radius;
+        radiusVal = circleData.radius;
       } catch (error) {
         alert(error instanceof Error ? error.message : 'Error calculating circle');
         return;
@@ -137,20 +137,20 @@ export default function CircleEquationCalculator({
     }
 
     // Standard form: (x - h)² + (y - k)² = r²
-    const standardForm = `(x - ${center.x})² + (y - ${center.y})² = ${radius}²`;
+    const standardForm = `(x - ${center.x})² + (y - ${center.y})² = ${radiusVal}²`;
 
     // General form: x² + y² + Dx + Ey + F = 0
     // Where D = -2h, E = -2k, F = h² + k² - r²
     const D = -2 * center.x;
     const E = -2 * center.y;
-    const F = center.x * center.x + center.y * center.y - radius * radius;
+    const F = center.x * center.x + center.y * center.y - radiusVal * radiusVal;
     const generalForm = `x² + y² + ${D}x + ${E}y + ${F} = 0`;
 
     // Calculate additional properties
-    const diameter = 2 * radius;
-    const circumference = 2 * Math.PI * radius;
-    const area = Math.PI * radius * radius;
-    const isUnitCircle = Math.abs(radius - 1) < 1e-10 && Math.abs(center.x) < 1e-10 && Math.abs(center.y) < 1e-10;
+    const diameter = 2 * radiusVal;
+    const circumference = 2 * Math.PI * radiusVal;
+    const area = Math.PI * radiusVal * radiusVal;
+    const isUnitCircle = Math.abs(radiusVal - 1) < 1e-10 && Math.abs(center.x) < 1e-10 && Math.abs(center.y) < 1e-10;
     const isOriginCircle = Math.abs(center.x) < 1e-10 && Math.abs(center.y) < 1e-10;
 
     // Generate explanation
@@ -158,24 +158,24 @@ export default function CircleEquationCalculator({
     if (isUnitCircle) {
       explanation = `This is the unit circle centered at the origin with radius 1. It&apos;s fundamental in trigonometry and calculus.`;
     } else if (isOriginCircle) {
-      explanation = `This circle is centered at the origin (0, 0) with radius ${radius}.`;
+      explanation = `This circle is centered at the origin (0, 0) with radius ${radiusVal}.`;
     } else {
-      explanation = `This circle is centered at (${center.x}, ${center.y}) with radius ${radius}.`;
+      explanation = `This circle is centered at (${center.x}, ${center.y}) with radius ${radiusVal}.`;
     }
 
     // Generate step-by-step calculation
     const steps: string[] = [];
     
     if (inputType === 'center_radius') {
-      steps.push(`Given: Center (${center.x}, ${center.y}) and radius r = ${radius}`);
+      steps.push(`Given: Center (${center.x}, ${center.y}) and radius r = ${radiusVal}`);
       steps.push(`Step 1: Standard form of a circle is (x - h)² + (y - k)² = r²`);
-      steps.push(`Step 2: Substitute center (h, k) = (${center.x}, ${center.y}) and r = ${radius}`);
-      steps.push(`Step 3: Standard form: (x - ${center.x})² + (y - ${center.y})² = ${radius}²`);
+      steps.push(`Step 2: Substitute center (h, k) = (${center.x}, ${center.y}) and r = ${radiusVal}`);
+      steps.push(`Step 3: Standard form: (x - ${center.x})² + (y - ${center.y})² = ${radiusVal}²`);
       
       steps.push(`Step 4: To find general form, expand the standard form:`);
-      steps.push(`Step 5: (x - ${center.x})² + (y - ${center.y})² = ${radius}²`);
-      steps.push(`Step 6: x² - ${2 * center.x}x + ${center.x}² + y² - ${2 * center.y}y + ${center.y}² = ${radius}²`);
-      steps.push(`Step 7: x² + y² - ${2 * center.x}x - ${2 * center.y}y + ${center.x}² + ${center.y}² - ${radius}² = 0`);
+      steps.push(`Step 5: (x - ${center.x})² + (y - ${center.y})² = ${radiusVal}²`);
+      steps.push(`Step 6: x² - ${2 * center.x}x + ${center.x}² + y² - ${2 * center.y}y + ${center.y}² = ${radiusVal}²`);
+      steps.push(`Step 7: x² + y² - ${2 * center.x}x - ${2 * center.y}y + ${center.x}² + ${center.y}² - ${radiusVal}² = 0`);
       steps.push(`Step 8: General form: x² + y² + ${D}x + ${E}y + ${F} = 0`);
     } else {
       steps.push(`Given: Three points (${x1}, ${y1}), (${x2}, ${y2}), (${x3}, ${y3})`);
@@ -183,13 +183,13 @@ export default function CircleEquationCalculator({
       steps.push(`Step 2: Calculate center using determinant method`);
       steps.push(`Step 3: Center: (${center.x.toFixed(6)}, ${center.y.toFixed(6)})`);
       steps.push(`Step 4: Calculate radius using distance formula`);
-      steps.push(`Step 5: r = √[(x₁ - h)² + (y₁ - k)²] = ${radius.toFixed(6)}`);
-      steps.push(`Step 6: Standard form: (x - ${center.x.toFixed(6)})² + (y - ${center.y.toFixed(6)})² = ${radius.toFixed(6)}²`);
+      steps.push(`Step 5: r = √[(x₁ - h)² + (y₁ - k)²] = ${radiusVal.toFixed(6)}`);
+      steps.push(`Step 6: Standard form: (x - ${center.x.toFixed(6)})² + (y - ${center.y.toFixed(6)})² = ${radiusVal.toFixed(6)}²`);
     }
 
     setResult({
       center,
-      radius,
+      radius: radiusVal,
       standardForm,
       generalForm,
       inputType,
