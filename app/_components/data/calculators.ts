@@ -383,6 +383,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/geometric-sequence',
     icon: '📊',
     color: 'purple'
+  },
+  {
+    id: 'point-slope-form',
+    name: 'Point Slope Form Calculator',
+    description: 'Convert between point-slope form, slope-intercept form, and standard form of linear equations with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['point slope form', 'slope intercept form', 'standard form', 'linear equation', 'slope', 'algebra', 'graphing', 'line equation'],
+    href: '/math/point-slope-form',
+    embedHref: '/embed/math/point-slope-form',
+    icon: '📈',
+    color: 'orange'
   }
 ];
 
