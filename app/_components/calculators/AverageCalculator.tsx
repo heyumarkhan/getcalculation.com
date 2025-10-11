@@ -50,7 +50,7 @@ export default function AverageCalculator({
     let calculation = '';
     let explanation = '';
     let steps: string[] = [];
-    let weightArray: number[] = [];
+    const weightArray: number[] = [];
 
     const sum = numberArray.reduce((acc, num) => acc + num, 0);
     const count = numberArray.length;
