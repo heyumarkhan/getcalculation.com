@@ -151,8 +151,7 @@ export default function PythagoreanTheoremPage() {
       </SEOSection>
 
       <SEOFAQ
-        title="Frequently Asked Questions"
-        faqs={[
+        questions={[
           {
             question: "What is the Pythagorean theorem?",
             answer: "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a² + b² = c²."
