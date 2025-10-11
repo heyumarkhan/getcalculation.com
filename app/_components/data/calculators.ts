@@ -299,6 +299,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/binomial-coefficient',
     icon: '🔢',
     color: 'purple'
+  },
+  {
+    id: 'greater-than-or-less-than',
+    name: 'Greater Than Or Less Than Calculator',
+    description: 'Compare two numbers to determine which is greater, less than, or equal to the other',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['greater than', 'less than', 'equal to', 'comparison', 'inequality', 'algebra', 'numbers', 'compare'],
+    href: '/math/greater-than-or-less-than',
+    embedHref: '/embed/math/greater-than-or-less-than',
+    icon: '⚖️',
+    color: 'orange'
   }
 ];
 
@@ -315,5 +327,6 @@ export const categories = [
   'Trigonometry',
   'Statistics',
   'Calculus',
-  'Kinematics'
+  'Kinematics',
+  'Combinatorics'
 ];
