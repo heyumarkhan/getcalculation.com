@@ -143,10 +143,10 @@ export default function PythagoreanTheoremPage() {
           Explore these related geometry calculators to solve more triangle and geometric problems:
         </p>
         <SEOList items={[
-          createInternalLink('triangle-45-45-90', '45-45-90 Triangle Calculator'),
-          createInternalLink('area', 'Area Calculator'),
-          createInternalLink('perimeter', 'Perimeter Calculator'),
-          createInternalLink('circle-equation', 'Equation of a Circle Calculator')
+          `Our ${createInternalLink('triangle-45-45-90', '45-45-90 Triangle Calculator')} for special right triangles`,
+          `Our ${createInternalLink('area')} for calculating triangle areas`,
+          `Our ${createInternalLink('perimeter')} for triangle perimeters`,
+          `Our ${createInternalLink('circle-equation')} for circle geometry`
         ]} />
       </SEOSection>
 
