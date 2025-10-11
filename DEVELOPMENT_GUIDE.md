@@ -382,7 +382,7 @@ The sitemap automatically includes new calculators from the `calculators.ts` con
 
 ### JSX Entity Escaping
 
-When writing JSX content, you must properly escape special characters to avoid build errors:
+When writing JSX content, you must properly escape special characters to avoid build errors. This is a **CRITICAL** requirement that causes build failures if not handled correctly.
 
 #### Required Escaping
 
@@ -424,22 +424,72 @@ When writing JSX content, you must properly escape special characters to avoid b
 
 #### Common Entity Escapes
 
-| Character | Entity Code | Usage |
-|-----------|-------------|-------|
-| `'` | `&apos;` | Apostrophes in contractions |
-| `"` | `&quot;` | Quotation marks in text |
-| `<` | `&lt;` | Less-than symbols |
-| `>` | `&gt;` | Greater-than symbols |
-| `&` | `&amp;` | Ampersands (when not in HTML entities) |
+| Character | Entity Code | Usage | Common in Math |
+|-----------|-------------|-------|----------------|
+| `'` | `&apos;` | Apostrophes in contractions | "don't", "can't" |
+| `"` | `&quot;` | Quotation marks in text | "Enter values" |
+| `<` | `&lt;` | Less-than symbols | "r < 1", "x < 5" |
+| `>` | `&gt;` | Greater-than symbols | "n > 10", "y > 0" |
+| `&` | `&amp;` | Ampersands (when not in HTML entities) | "A & B" |
+
+#### Mathematical Expression Escaping
+
+**Common mathematical expressions that need escaping:**
+
+```jsx
+// ❌ Wrong - will cause build errors
+<p>For |r| < 1, the series converges</p>
+<p>When n > 0, the formula applies</p>
+<p>If x < y, then z = x + y</p>
+<p>For values where 0 < r < 1</p>
+
+// ✅ Correct - properly escaped
+<p>For |r| &lt; 1, the series converges</p>
+<p>When n &gt; 0, the formula applies</p>
+<p>If x &lt; y, then z = x + y</p>
+<p>For values where 0 &lt; r &lt; 1</p>
+```
 
 #### Build Error Prevention
 
 The linter will catch unescaped entities and fail the build with errors like:
 ```
+Error: Expected '</', got 'numeric literal (1, 1)'
 Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
 ```
 
 **Always escape these characters in JSX content to ensure successful builds!**
+
+#### Quick Reference for Calculator Development
+
+When writing calculator pages, watch out for these common patterns:
+
+```jsx
+// ❌ Common mistakes in calculator content
+<p>For values where r < 1</p>
+<p>When n > 10</p>
+<p>If x < y < z</p>
+<p>Here's the formula</p>
+<p>Enter "values" here</p>
+
+// ✅ Correctly escaped
+<p>For values where r &lt; 1</p>
+<p>When n &gt; 10</p>
+<p>If x &lt; y &lt; z</p>
+<p>Here&apos;s the formula</p>
+<p>Enter &quot;values&quot; here</p>
+```
+
+#### SEO Content Escaping Checklist
+
+Before committing calculator pages, check for:
+
+- [ ] All apostrophes escaped with `&apos;`
+- [ ] All quotation marks escaped with `&quot;`
+- [ ] All less-than symbols escaped with `&lt;`
+- [ ] All greater-than symbols escaped with `&gt;`
+- [ ] Mathematical inequalities properly escaped
+- [ ] No build errors when running `npm run build`
 
 ### Keyword Research
 
@@ -533,6 +583,95 @@ const categoryToSubject: { [key: string]: { subject: string; href: string } } = 
    - Add the category to `categoryToSubject` mapping
    - Map it to the correct subject (e.g., Physics)
    - Update the calculator configuration if needed
+
+### Common Build Errors
+
+#### JSX Entity Escaping Errors
+
+**Error:** `Expected '</', got 'numeric literal (1, 1)'`
+```bash
+Error: Expected '</', got 'numeric literal (1, 1)'
+./app/(calculators)/math/your-calculator/page.tsx
+```
+
+**Cause:** Unescaped `<` characters in mathematical expressions
+**Solution:** Replace `<` with `&lt;` in JSX content
+
+```jsx
+// ❌ Wrong
+<p>For values where r < 1</p>
+
+// ✅ Correct
+<p>For values where r &lt; 1</p>
+```
+
+**Error:** `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`
+```bash
+Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+```
+
+**Cause:** Unescaped apostrophes in contractions
+**Solution:** Replace `'` with `&apos;` in JSX content
+
+```jsx
+// ❌ Wrong
+<p>Here's the formula</p>
+
+// ✅ Correct
+<p>Here&apos;s the formula</p>
+```
+
+#### Missing Internal Link Errors
+
+**Error:** `Cannot read properties of undefined (reading 'href')`
+```bash
+Runtime TypeError
+Cannot read properties of undefined (reading 'href')
+app\_components\ui\SEOInternalLink.tsx (56:33) @ createInternalLink
+```
+
+**Cause:** Using `createInternalLink()` with a key that doesn't exist in `INTERNAL_LINKS`
+**Solution:** Add the missing link to `app/_components/ui/SEOInternalLink.tsx`
+
+```typescript
+// Add missing link to INTERNAL_LINKS object
+export const INTERNAL_LINKS = {
+  // ... existing links ...
+  'your-missing-link': { href: '/math/your-calculator', title: 'Your Calculator' }
+} as const;
+```
+
+#### TypeScript Errors
+
+**Error:** `Property 'X' does not exist on type 'Y'`
+**Cause:** Type mismatches or missing type definitions
+**Solution:** Check TypeScript interfaces and ensure proper typing
+
+#### Import/Export Errors
+
+**Error:** `Module not found: Can't resolve '@/app/_components/...'`
+**Cause:** Incorrect import paths
+**Solution:** Use relative imports instead of absolute paths
+
+```typescript
+// ❌ Wrong
+import YourCalculator from '@/app/_components/calculators/YourCalculator';
+
+// ✅ Correct
+import YourCalculator from '../../../_components/calculators/YourCalculator';
+```
+
+### Build Error Prevention Checklist
+
+Before committing any calculator changes:
+
+- [ ] Run `npm run build` to check for build errors
+- [ ] Check for unescaped characters in JSX content
+- [ ] Verify all `createInternalLink()` keys exist in `INTERNAL_LINKS`
+- [ ] Test calculator functionality manually
+- [ ] Verify embed page works
+- [ ] Check breadcrumb navigation
+- [ ] Ensure mobile responsiveness
 
 ## 📚 Additional Resources
 
