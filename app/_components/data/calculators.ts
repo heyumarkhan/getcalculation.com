@@ -299,18 +299,6 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/binomial-coefficient',
     icon: '🔢',
     color: 'purple'
-  },
-  {
-    id: 'greater-than-or-less-than',
-    name: 'Greater Than Or Less Than Calculator',
-    description: 'Compare two numbers to determine which is greater, less than, or equal using inequality symbols',
-    category: 'Algebra',
-    subject: 'math',
-    keywords: ['greater than', 'less than', 'equal to', 'inequality', 'comparison', 'algebra', 'symbols', 'number comparison'],
-    href: '/math/greater-than-or-less-than',
-    embedHref: '/embed/math/greater-than-or-less-than',
-    icon: '⚖️',
-    color: 'green'
   }
 ];
 

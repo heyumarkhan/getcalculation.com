@@ -389,21 +389,6 @@ Before writing content, research keywords:
 
 ## 🧪 Testing Checklist
 
-### **Automated Testing (Required)**
-- [ ] **Run automated tests**: `npm run test:single your-calculator-id`
-- [ ] **All test cases pass** - No failures in automated test suite
-- [ ] **Test coverage above 80%** - Run `npm run test:coverage`
-- [ ] **Edge cases tested** - Zero, negative, large numbers, invalid inputs
-- [ ] **Error handling verified** - Proper error messages for invalid inputs
-
-### **Manual Testing (Recommended)**
-- [ ] **Generate manual test cases**: `npm run test:manual your-calculator-id`
-- [ ] **Test all input combinations** from manual test cases
-- [ ] **Verify UI elements** - Buttons, inputs, results display correctly
-- [ ] **Test responsive design** - Mobile, tablet, desktop views
-- [ ] **Check accessibility** - Screen reader compatibility, keyboard navigation
-
-### **Integration Testing**
 - [ ] Calculator functionality works correctly
 - [ ] Embed version works without title
 - [ ] Color customization works in embed
@@ -413,13 +398,6 @@ Before writing content, research keywords:
 - [ ] Mobile responsiveness
 - [ ] Page loading speed
 - [ ] Structured data validation
-
-### **Pre-Deployment Testing**
-- [ ] **Run full test suite**: `npm run test:all`
-- [ ] **No console errors** in browser developer tools
-- [ ] **Cross-browser testing** - Chrome, Firefox, Safari, Edge
-- [ ] **Performance testing** - Page load times under 3 seconds
-- [ ] **SEO validation** - Meta tags, structured data, sitemap
 
 ## 🧭 Breadcrumb System Management
 
@@ -495,95 +473,12 @@ const categoryToSubject: { [key: string]: { subject: string; href: string } } = 
    - Map it to the correct subject (e.g., Physics)
    - Update the calculator configuration if needed
 
-## 🧪 Testing Your Calculator
-
-### **Quick Testing Commands**
-
-```bash
-# Test specific calculator
-npm run test:single your-calculator-id
-
-# Test all calculators
-npm run test:all
-
-# Generate manual test cases
-npm run test:manual your-calculator-id
-
-# Run tests with coverage
-npm run test:coverage
-```
-
-### **Test Data Available**
-
-Each calculator comes with **8-10 comprehensive test cases** covering:
-- ✅ **Basic functionality** - Normal use cases
-- ✅ **Edge cases** - Zero, negative, large numbers
-- ✅ **Error handling** - Invalid inputs, division by zero
-- ✅ **Different number types** - Integers, decimals, fractions
-- ✅ **Special scenarios** - Boundary conditions
-
-### **Testing Workflow**
-
-1. **Add Test Data** (if new calculator)
-   ```typescript
-   // Add to tests/testData.ts
-   export const yourCalculatorTests: CalculatorTestSuite = {
-     calculatorId: 'your-calculator',
-     calculatorName: 'Your Calculator',
-     testCases: [
-       {
-         name: 'Basic Test',
-         inputs: { input1: '10', input2: '5' },
-         expectedOutput: { result: 15 },
-         description: 'Test basic functionality'
-       }
-     ]
-   };
-   ```
-
-2. **Create Test File**
-   ```typescript
-   // Create tests/__tests__/YourCalculator.test.tsx
-   import YourCalculator from '../../app/_components/calculators/YourCalculator';
-   
-   describe('YourCalculator', () => {
-     it('passes all test cases', async () => {
-       const testRunner = new CalculatorTestRunner('your-calculator', YourCalculator);
-       const results = await testRunner.runAllTests();
-       expect(results.failed).toBe(0);
-     });
-   });
-   ```
-
-3. **Run Tests**
-   ```bash
-   npm run test:single your-calculator
-   ```
-
-### **Test Examples**
-
-**Greater Than Or Less Than Calculator:**
-- `15 > 8` ✅
-- `5 < 12` ✅  
-- `7 = 7` ✅
-- `3.7 > 3.14` ✅
-- `-5 > -10` ✅
-
-**Area Calculator:**
-- Rectangle: `10 × 5 = 50` ✅
-- Square: `6² = 36` ✅
-- Circle: `π × 4² ≈ 50.27` ✅
-- Triangle: `(8 × 6) ÷ 2 = 24` ✅
-
-See [TESTING_GUIDE.md](./TESTING_GUIDE.md) for complete testing documentation.
-
 ## 📚 Additional Resources
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
 - [SEO Best Practices](https://developers.google.com/search/docs)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs)
-- [Testing Guide](./TESTING_GUIDE.md) - Complete testing documentation
 
 ## 🤝 Contributing
 
