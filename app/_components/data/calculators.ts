@@ -311,6 +311,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/greater-than-or-less-than',
     icon: '⚖️',
     color: 'orange'
+  },
+  {
+    id: 'sum-of-series',
+    name: 'Sum of Series Calculator',
+    description: 'Calculate the sum of arithmetic, geometric, and custom series with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['sum of series', 'arithmetic series', 'geometric series', 'series sum', 'sequence', 'algebra', 'calculus', 'mathematical series'],
+    href: '/math/sum-of-series',
+    embedHref: '/embed/math/sum-of-series',
+    icon: '∑',
+    color: 'purple'
   }
 ];
 

@@ -41,7 +41,9 @@ export const INTERNAL_LINKS = {
   triangularPrism: { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
   standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' },
   averageRateOfChange: { href: '/math/average-rate-of-change', title: 'Average Rate of Change Calculator' },
-  binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' }
+  binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' },
+  exponentialFunction: { href: '/math/exponential-function', title: 'Exponential Function Calculator' },
+  leastSquaresRegression: { href: '/math/least-squares-regression', title: 'Least Squares Regression Calculator' }
 } as const;
 
 // Helper function to create internal links
