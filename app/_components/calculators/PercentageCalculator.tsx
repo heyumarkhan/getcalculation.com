@@ -160,16 +160,6 @@ export default function PercentageCalculator({
     });
   };
 
-  const getCalculationTypeLabel = (type: string) => {
-    const labels: { [key: string]: string } = {
-      'percentage_of': 'What percentage is X of Y?',
-      'percentage_change': 'Percentage change from X to Y',
-      'percentage_increase': 'Percentage increase from X to Y',
-      'percentage_decrease': 'Percentage decrease from X to Y',
-      'find_percentage': 'What is X% of Y?'
-    };
-    return labels[type] || type;
-  };
 
   const getInputLabels = () => {
     const labels: { [key: string]: { label1: string; label2: string; placeholder1: string; placeholder2: string } } = {
@@ -250,7 +240,7 @@ export default function PercentageCalculator({
               ].map((type) => (
                 <Button
                   key={type.value}
-                  onClick={() => setCalculationType(type.value as any)}
+                  onClick={() => setCalculationType(type.value as 'percentage_of' | 'percentage_change' | 'percentage_increase' | 'percentage_decrease' | 'find_percentage')}
                   variant={calculationType === type.value ? "primary" : "outline"}
                   size="sm"
                   className={`text-sm ${calculationType === type.value ? 'bg-blue-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}
