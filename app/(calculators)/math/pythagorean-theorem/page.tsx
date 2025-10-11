@@ -1,9 +1,7 @@
 import { Metadata } from 'next';
 import PythagoreanTheoremCalculator from '../../../_components/calculators/PythagoreanTheoremCalculator';
-import CalculatorPageTemplate from '../../../_components/ui/CalculatorPageTemplate';
-import SEOSection from '../../../_components/ui/SEOSection';
-import SEOList from '../../../_components/ui/SEOList';
-import SEOFAQ from '../../../_components/ui/SEOFAQ';
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
 import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export const metadata: Metadata = {
@@ -20,10 +18,22 @@ export const metadata: Metadata = {
 export default function PythagoreanTheoremPage() {
   return (
     <CalculatorPageTemplate
-      title="Pythagorean Theorem Calculator"
-      description="Calculate the length of any side of a right triangle using the Pythagorean theorem with step-by-step solutions"
+      title="Pythagorean Theorem Calculator - Find Missing Side of Right Triangle"
+      description="Calculate the length of any side of a right triangle using the Pythagorean theorem. Step-by-step solutions, triangle properties, and angle calculations."
+      calculator={<PythagoreanTheoremCalculator />}
+      slug="math/pythagorean-theorem"
+      category="Geometry"
+      features={[
+        "Calculate any missing side of a right triangle",
+        "Verify if three sides form a right triangle",
+        "Step-by-step solutions with detailed explanations",
+        "Triangle properties (area, perimeter, angles)",
+        "Triangle classification (isosceles, scalene, etc.)",
+        "Special triangle recognition (45-45-90, 3-4-5, etc.)",
+        "Mobile-friendly interface",
+        "Free to use"
+      ]}
     >
-      <PythagoreanTheoremCalculator />
       
       <SEOSection title="Understanding the Pythagorean Theorem">
         <p>
