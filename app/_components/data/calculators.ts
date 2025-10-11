@@ -407,6 +407,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/circle-equation',
     icon: '⭕',
     color: 'blue'
+  },
+  {
+    id: 'pythagorean-theorem',
+    name: 'Pythagorean Theorem Calculator',
+    description: 'Calculate the length of any side of a right triangle using the Pythagorean theorem with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['pythagorean theorem', 'right triangle', 'hypotenuse', 'legs', 'geometry', 'triangle', 'a² + b² = c²', 'distance formula'],
+    href: '/math/pythagorean-theorem',
+    embedHref: '/embed/math/pythagorean-theorem',
+    icon: '🔺',
+    color: 'red'
   }
 ];
 
