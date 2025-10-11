@@ -1,6 +1,6 @@
 import GreaterThanOrLessThanCalculator from '../../../_components/calculators/GreaterThanOrLessThanCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
-import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { SEOSection, SEOList, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
 import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function GreaterThanOrLessThanPage() {
@@ -35,22 +35,22 @@ export default function GreaterThanOrLessThanPage() {
 
       <SEOSection title="Understanding Comparison Symbols: What Do They Mean?">
         <p>
-          Mathematical comparison symbols are fundamental to understanding relationships between numbers. Here's what each symbol means:
+          Mathematical comparison symbols are fundamental to understanding relationships between numbers. Here&apos;s what each symbol means:
         </p>
         
         <h3>Greater Than Symbol (&gt;)</h3>
         <p>
-          The greater than symbol (&gt;) indicates that the number on the left is larger than the number on the right. For example, 7 &gt; 3 means "7 is greater than 3." In real-world terms, this could represent comparing temperatures, prices, or any measurable quantity where one value exceeds another.
+          The greater than symbol (&gt;) indicates that the number on the left is larger than the number on the right. For example, 7 &gt; 3 means &quot;7 is greater than 3.&quot; In real-world terms, this could represent comparing temperatures, prices, or any measurable quantity where one value exceeds another.
         </p>
         
         <h3>Less Than Symbol (&lt;)</h3>
         <p>
-          The less than symbol (&lt;) indicates that the number on the left is smaller than the number on the right. For example, 2 &lt; 8 means "2 is less than 8." This is commonly used when comparing quantities, distances, or any values where one is smaller than another.
+          The less than symbol (&lt;) indicates that the number on the left is smaller than the number on the right. For example, 2 &lt; 8 means &quot;2 is less than 8.&quot; This is commonly used when comparing quantities, distances, or any values where one is smaller than another.
         </p>
         
         <h3>Equal To Symbol (=)</h3>
         <p>
-          The equal to symbol (=) indicates that both numbers have the same value. For example, 5 = 5 means "5 is equal to 5." This represents perfect equality between two quantities.
+          The equal to symbol (=) indicates that both numbers have the same value. For example, 5 = 5 means &quot;5 is equal to 5.&quot; This represents perfect equality between two quantities.
         </p>
 
         <h3>Additional Comparison Symbols</h3>
@@ -66,7 +66,7 @@ export default function GreaterThanOrLessThanPage() {
 
       <SEOSection title="The Mathematics Behind Number Comparison">
         <p>
-          Number comparison is based on the fundamental properties of the real number system. When we compare two numbers, we're determining their relative positions on the number line.
+          Number comparison is based on the fundamental properties of the real number system. When we compare two numbers, we&apos;re determining their relative positions on the number line.
         </p>
         
         <h3>Number Line Concept</h3>
@@ -94,7 +94,7 @@ export default function GreaterThanOrLessThanPage() {
 
       <SEOSection title="Step-by-Step Example: Comparing Numbers">
         <p>
-          Let's work through an example to understand how number comparison works in practice.
+          Let&apos;s work through an example to understand how number comparison works in practice.
         </p>
         <SEOExample
           title="Problem: Compare 3.7 and 3.65"
@@ -159,7 +159,7 @@ export default function GreaterThanOrLessThanPage() {
 
       <SEOSection title="Conclusion">
         <p>
-          Number comparison is a fundamental mathematical skill that forms the foundation for more advanced mathematical concepts. Whether you're working on basic arithmetic, algebra problems, or real-world decision making, our <strong>Greater Than Or Less Than Calculator</strong> provides instant, accurate comparisons with clear explanations.
+          Number comparison is a fundamental mathematical skill that forms the foundation for more advanced mathematical concepts. Whether you&apos;re working on basic arithmetic, algebra problems, or real-world decision making, our <strong>Greater Than Or Less Than Calculator</strong> provides instant, accurate comparisons with clear explanations.
         </p>
         <p>
           Ready to explore more mathematical concepts? Check out our {createInternalLink('slope')} calculator for linear relationships, or use our {createInternalLink('diamondProblem')} solver for algebraic factoring problems.
