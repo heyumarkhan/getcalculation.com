@@ -419,6 +419,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/pythagorean-theorem',
     icon: '🔺',
     color: 'red'
+  },
+  {
+    id: 'arc-length',
+    name: 'Arc Length Calculator',
+    description: 'Calculate the length of an arc using radius and central angle with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['arc length', 'circle', 'radius', 'central angle', 'geometry', 'circumference', 'sector', 'arc formula'],
+    href: '/math/arc-length',
+    embedHref: '/embed/math/arc-length',
+    icon: '🔄',
+    color: 'blue'
   }
 ];
 
