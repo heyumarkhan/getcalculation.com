@@ -83,7 +83,7 @@ export default function GeometricSequencePage() {
         <h3>Common Ratio Behavior</h3>
         <SEOList items={[
           "If |r| > 1: Sequence diverges (grows without bound)",
-          "If |r| < 1: Sequence converges to 0",
+          "If |r| &lt; 1: Sequence converges to 0",
           "If r = 1: Sequence is constant",
           "If r = -1: Sequence alternates between two values"
         ]} />
@@ -91,14 +91,14 @@ export default function GeometricSequencePage() {
         <h3>Sequence Types</h3>
         <SEOList items={[
           "Increasing: r > 1",
-          "Decreasing: 0 < r < 1",
-          "Alternating: r < 0",
+          "Decreasing: 0 &lt; r &lt; 1",
+          "Alternating: r &lt; 0",
           "Constant: r = 1"
         ]} />
         
         <h3>Sum Convergence</h3>
         <p>
-          For an infinite geometric series with |r| < 1:
+          For an infinite geometric series with |r| &lt; 1:
         </p>
         <div className="bg-gray-50 p-4 rounded-lg mb-4">
           <p className="font-mono text-center">S_∞ = a₁ / (1 - r)</p>
@@ -168,7 +168,7 @@ export default function GeometricSequencePage() {
       <SEOSection title="Advanced Geometric Sequence Concepts">
         <h3>Infinite Geometric Series</h3>
         <p>
-          When |r| < 1, the infinite sum converges to a finite value.
+          When |r| &lt; 1, the infinite sum converges to a finite value.
         </p>
         
         <h3>Geometric Mean</h3>
@@ -215,7 +215,7 @@ export default function GeometricSequencePage() {
           },
           {
             question: "What is the sum of an infinite geometric series?",
-            answer: "For |r| < 1, the infinite sum is S_∞ = a₁ / (1 - r). If |r| ≥ 1, the series diverges and has no finite sum."
+            answer: "For |r| &lt; 1, the infinite sum is S_∞ = a₁ / (1 - r). If |r| ≥ 1, the series diverges and has no finite sum."
           },
           {
             question: "Can a geometric sequence have a zero term?",
