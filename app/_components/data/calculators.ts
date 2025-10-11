@@ -335,6 +335,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/proportion',
     icon: '⚖️',
     color: 'green'
+  },
+  {
+    id: 'semicircle-area',
+    name: 'Semicircle Area Calculator',
+    description: 'Calculate the area of a semicircle using radius, diameter, or circumference with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['semicircle area', 'half circle area', 'radius', 'diameter', 'circumference', 'geometry', 'circle area', 'mathematical shapes'],
+    href: '/math/semicircle-area',
+    embedHref: '/embed/math/semicircle-area',
+    icon: '🌗',
+    color: 'blue'
   }
 ];
 
