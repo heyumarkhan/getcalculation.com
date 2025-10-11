@@ -29,12 +29,11 @@ export default function SumOfSeriesCalculator({
   const calculateSum = () => {
     const a = parseFloat(firstTerm) || 0;
     const n = parseInt(numberOfTerms) || 0;
-    const l = parseFloat(lastTerm) || 0;
     const d = parseFloat(commonDifference) || 0;
     const r = parseFloat(commonRatio) || 0;
     
     let sum = 0;
-    let steps: string[] = [];
+    const steps: string[] = [];
 
     if (seriesType === 'arithmetic') {
       if (n > 0) {
