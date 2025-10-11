@@ -371,6 +371,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/triangle-45-45-90',
     icon: '📐',
     color: 'blue'
+  },
+  {
+    id: 'geometric-sequence',
+    name: 'Geometric Sequence Calculator',
+    description: 'Calculate the nth term and sum of a geometric sequence with step-by-step solutions and sequence visualization',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['geometric sequence', 'geometric series', 'common ratio', 'nth term', 'sequence sum', 'algebra', 'mathematical sequences', 'series calculator'],
+    href: '/math/geometric-sequence',
+    embedHref: '/embed/math/geometric-sequence',
+    icon: '📊',
+    color: 'purple'
   }
 ];
 
