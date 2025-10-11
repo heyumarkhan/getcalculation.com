@@ -431,6 +431,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/arc-length',
     icon: '🔄',
     color: 'blue'
+  },
+  {
+    id: 'percentage',
+    name: 'Percentage Calculator',
+    description: 'Calculate percentages, percentage changes, and percentage relationships with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['percentage calculator', 'percentage change', 'percentage increase', 'percentage decrease', 'percentage of', 'math calculator', 'algebra'],
+    href: '/math/percentage',
+    embedHref: '/embed/math/percentage',
+    icon: '📊',
+    color: 'purple'
   }
 ];
 
