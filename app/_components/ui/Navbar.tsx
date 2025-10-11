@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -10,9 +11,19 @@ export default function Navbar() {
               href="/" 
               className="flex items-center hover:opacity-80 transition-opacity"
             >
-              <div className="font-bold text-2xl">
-                <span className="text-blue-600">Get</span>
-                <span className="text-green-600">Calculation</span>
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/logo-icon.png"
+                  alt="GetCalculation Logo"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                  priority
+                />
+                <div className="font-bold text-2xl">
+                  <span style={{ color: '#820ecc' }}>Get</span>
+                  <span style={{ color: '#820ecc' }}>Calculation</span>
+                </div>
               </div>
             </Link>
           </div>
