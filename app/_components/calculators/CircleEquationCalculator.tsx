@@ -79,6 +79,12 @@ export default function CircleEquationCalculator({
     let radius: number;
 
     if (inputType === 'center_radius') {
+      // Check if fields are empty
+      if (!centerX.trim() || !centerY.trim() || !radius.trim()) {
+        alert('Please fill in all fields');
+        return;
+      }
+
       const centerXVal = parseFloat(centerX);
       const centerYVal = parseFloat(centerY);
       const radiusVal = parseFloat(radius);
@@ -97,6 +103,12 @@ export default function CircleEquationCalculator({
       center = { x: centerXVal, y: centerYVal };
       radius = radiusVal;
     } else {
+      // Check if fields are empty
+      if (!x1.trim() || !y1.trim() || !x2.trim() || !y2.trim() || !x3.trim() || !y3.trim()) {
+        alert('Please fill in all fields');
+        return;
+      }
+
       const x1Val = parseFloat(x1);
       const y1Val = parseFloat(y1);
       const x2Val = parseFloat(x2);
