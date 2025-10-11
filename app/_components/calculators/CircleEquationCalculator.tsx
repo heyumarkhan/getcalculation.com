@@ -80,7 +80,7 @@ export default function CircleEquationCalculator({
 
     if (inputType === 'center_radius') {
       // Check if fields are empty
-      if (!centerX.trim() || !centerY.trim() || !radius.trim()) {
+      if (!centerX || !centerY || !radius || !centerX.trim() || !centerY.trim() || !radius.trim()) {
         alert('Please fill in all fields');
         return;
       }
@@ -104,7 +104,7 @@ export default function CircleEquationCalculator({
       radius = radiusVal;
     } else {
       // Check if fields are empty
-      if (!x1.trim() || !y1.trim() || !x2.trim() || !y2.trim() || !x3.trim() || !y3.trim()) {
+      if (!x1 || !y1 || !x2 || !y2 || !x3 || !y3 || !x1.trim() || !y1.trim() || !x2.trim() || !y2.trim() || !x3.trim() || !y3.trim()) {
         alert('Please fill in all fields');
         return;
       }
