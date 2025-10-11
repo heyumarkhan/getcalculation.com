@@ -347,6 +347,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/semicircle-area',
     icon: '🌗',
     color: 'blue'
+  },
+  {
+    id: 'gcf',
+    name: 'GCF Calculator - Greatest Common Factor',
+    description: 'Find the greatest common factor of two or more numbers using the Euclidean algorithm with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['gcf', 'greatest common factor', 'gcd', 'highest common factor', 'euclidean algorithm', 'factors', 'divisibility', 'number theory'],
+    href: '/math/gcf',
+    embedHref: '/embed/math/gcf',
+    icon: '🔢',
+    color: 'green'
   }
 ];
 
