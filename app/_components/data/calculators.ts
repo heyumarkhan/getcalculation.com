@@ -443,6 +443,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/percentage',
     icon: '📊',
     color: 'purple'
+  },
+  {
+    id: 'average',
+    name: 'Average Calculator',
+    description: 'Calculate arithmetic, geometric, harmonic, and weighted averages with step-by-step solutions',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['average calculator', 'arithmetic mean', 'geometric mean', 'harmonic mean', 'weighted average', 'math calculator', 'statistics'],
+    href: '/math/average',
+    embedHref: '/embed/math/average',
+    icon: '📈',
+    color: 'green'
   }
 ];
 
