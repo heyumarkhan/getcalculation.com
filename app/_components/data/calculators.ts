@@ -323,6 +323,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/sum-of-series',
     icon: '∑',
     color: 'purple'
+  },
+  {
+    id: 'proportion',
+    name: 'Proportion Calculator',
+    description: 'Solve proportions, check if ratios are proportional, or calculate scale factors with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['proportion calculator', 'ratio calculator', 'scale factor', 'cross multiplication', 'algebra', 'mathematical proportions', 'solving proportions'],
+    href: '/math/proportion',
+    embedHref: '/embed/math/proportion',
+    icon: '⚖️',
+    color: 'green'
   }
 ];
 
