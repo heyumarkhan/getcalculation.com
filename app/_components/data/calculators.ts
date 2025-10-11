@@ -395,6 +395,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/point-slope-form',
     icon: '📈',
     color: 'orange'
+  },
+  {
+    id: 'circle-equation',
+    name: 'Equation of a Circle Calculator',
+    description: 'Find the equation of a circle from center and radius, or from three points on the circle with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['circle equation', 'equation of circle', 'standard form', 'general form', 'center radius', 'three points', 'geometry', 'conic sections'],
+    href: '/math/circle-equation',
+    embedHref: '/embed/math/circle-equation',
+    icon: '⭕',
+    color: 'blue'
   }
 ];
 
