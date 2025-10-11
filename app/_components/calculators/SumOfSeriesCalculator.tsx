@@ -21,7 +21,6 @@ export default function SumOfSeriesCalculator({
   const [commonDifference, setCommonDifference] = useState<string>('');
   const [commonRatio, setCommonRatio] = useState<string>('');
   const [numberOfTerms, setNumberOfTerms] = useState<string>('');
-  const [lastTerm, setLastTerm] = useState<string>('');
   const [customTerms, setCustomTerms] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
   const [calculationSteps, setCalculationSteps] = useState<string[]>([]);
@@ -91,9 +90,6 @@ export default function SumOfSeriesCalculator({
         break;
       case 'numberOfTerms':
         setNumberOfTerms(value);
-        break;
-      case 'lastTerm':
-        setLastTerm(value);
         break;
       case 'customTerms':
         setCustomTerms(value);

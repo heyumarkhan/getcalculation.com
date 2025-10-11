@@ -34,7 +34,7 @@ export default function ArcLengthPage() {
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Arc Length?</h2>
           <p className="text-lg text-gray-700 mb-4">
-            Arc length is the distance along the curved line of a circle between two points. It's a fundamental concept in geometry and trigonometry, used in various applications from engineering to computer graphics.
+            Arc length is the distance along the curved line of a circle between two points. It&apos;s a fundamental concept in geometry and trigonometry, used in various applications from engineering to computer graphics.
           </p>
           <p className="text-lg text-gray-700 mb-4">
             The arc length formula is: <strong>s = r × θ</strong>, where:
@@ -51,7 +51,7 @@ export default function ArcLengthPage() {
           <div className="space-y-4">
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Step 1: Enter the Radius</h3>
-              <p className="text-blue-800">Input the radius of the circle. The radius is the distance from the center to any point on the circle's edge.</p>
+              <p className="text-blue-800">Input the radius of the circle. The radius is the distance from the center to any point on the circle&apos;s edge.</p>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
               <h3 className="text-xl font-semibold text-green-900 mb-2">Step 2: Enter the Central Angle</h3>

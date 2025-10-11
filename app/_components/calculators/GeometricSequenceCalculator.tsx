@@ -59,14 +59,11 @@ export default function GeometricSequenceCalculator({
 
     // Calculate sum: S_n = a_1 * (1 - r^n) / (1 - r) for r ≠ 1
     let sum: number;
-    let sumFormula: string;
     
     if (r === 1) {
       sum = a1 * n;
-      sumFormula = `S_n = a_1 × n = ${a1} × ${n} = ${sum}`;
     } else {
       sum = a1 * (1 - Math.pow(r, n)) / (1 - r);
-      sumFormula = `S_n = a_1 × (1 - r^n) / (1 - r) = ${a1} × (1 - ${r}^${n}) / (1 - ${r}) = ${sum.toFixed(6)}`;
     }
 
     // Generate sequence (first 10 terms or up to n)
