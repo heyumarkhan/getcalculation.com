@@ -46,7 +46,8 @@ export const INTERNAL_LINKS = {
   leastSquaresRegression: { href: '/math/least-squares-regression', title: 'Least Squares Regression Calculator' },
   quotient: { href: '/math/quotient', title: 'Quotient Calculator' },
   sumOfSeries: { href: '/math/sum-of-series', title: 'Sum of Series Calculator' },
-  volumeOfHemisphere: { href: '/math/volume-of-hemisphere', title: 'Volume of Hemisphere Calculator' }
+  volumeOfHemisphere: { href: '/math/volume-of-hemisphere', title: 'Volume of Hemisphere Calculator' },
+  proportion: { href: '/math/proportion', title: 'Proportion Calculator' }
 } as const;
 
 // Helper function to create internal links
