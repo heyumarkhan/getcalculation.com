@@ -22,7 +22,7 @@ export default function SumOfSeriesPage() {
     >
       <SEOSection title="Understanding Series: The Foundation of Mathematical Sequences">
         <p>
-          A series is the sum of the terms of a sequence, and understanding how to calculate the <strong>sum of series</strong> is fundamental in mathematics, particularly in algebra and calculus. Whether you're working with arithmetic progressions, geometric sequences, or custom number patterns, our Sum of Series Calculator provides instant, accurate results with detailed step-by-step solutions.
+          A series is the sum of the terms of a sequence, and understanding how to calculate the <strong>sum of series</strong> is fundamental in mathematics, particularly in algebra and calculus. Whether you&apos;re working with arithmetic progressions, geometric sequences, or custom number patterns, our Sum of Series Calculator provides instant, accurate results with detailed step-by-step solutions.
         </p>
         <p>
           Series calculations appear in countless real-world applications, from financial mathematics (compound interest, loan payments) to physics (wave analysis, signal processing) and computer science (algorithm analysis, data structures). This comprehensive guide will walk you through different types of series, their formulas, and practical applications, making complex mathematical concepts accessible and understandable.
@@ -31,7 +31,7 @@ export default function SumOfSeriesPage() {
       
       <SEOSection title="How to Use Our Sum of Series Calculator">
         <p>
-          Our calculator supports three types of series calculations. Here's how to use each one:
+          Our calculator supports three types of series calculations. Here&apos;s how to use each one:
         </p>
         <ol>
           <li><strong>Arithmetic Series:</strong> Enter the first term, common difference, and number of terms. The calculator will use the formula S = n/2 × (2a + (n-1)d).</li>
@@ -115,7 +115,7 @@ export default function SumOfSeriesPage() {
         
         <h4>Example: Custom Series</h4>
         <p>Calculate the sum of: 2, 5, 8, 11, 14, 17, 20</p>
-        <p>Simply enter "2, 5, 8, 11, 14, 17, 20" in the custom series field, and the calculator will return the sum: 77</p>
+        <p>Simply enter &quot;2, 5, 8, 11, 14, 17, 20&quot; in the custom series field, and the calculator will return the sum: 77</p>
       </SEOSection>
 
       <SEOSection title="Practical Applications of Series Calculations">
@@ -234,7 +234,7 @@ export default function SumOfSeriesPage() {
 
       <SEOSection title="Conclusion">
         <p>
-          Mastering series calculations opens doors to advanced mathematics and countless practical applications. Whether you're a student learning algebra, a professional working with data, or someone solving everyday problems, understanding how to calculate the <strong>sum of series</strong> is an invaluable skill.
+          Mastering series calculations opens doors to advanced mathematics and countless practical applications. Whether you&apos;re a student learning algebra, a professional working with data, or someone solving everyday problems, understanding how to calculate the <strong>sum of series</strong> is an invaluable skill.
         </p>
         <p>
           Our Sum of Series Calculator makes these calculations accessible and educational, providing not just answers but the reasoning behind them. Start exploring different series types today and discover the power of mathematical sequences in solving real-world problems.

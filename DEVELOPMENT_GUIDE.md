@@ -380,6 +380,67 @@ The sitemap automatically includes new calculators from the `calculators.ts` con
    - Include contextual links within content
    - Add links in FAQ answers
 
+### JSX Entity Escaping
+
+When writing JSX content, you must properly escape special characters to avoid build errors:
+
+#### Required Escaping
+
+**Apostrophes (`'`):**
+```jsx
+// ❌ Wrong - will cause build error
+<p>Here's how to use the calculator</p>
+
+// ✅ Correct - properly escaped
+<p>Here&apos;s how to use the calculator</p>
+```
+
+**Quotes (`"`):**
+```jsx
+// ❌ Wrong - will cause build error
+<p>Enter "2, 5, 8" in the field</p>
+
+// ✅ Correct - properly escaped
+<p>Enter &quot;2, 5, 8&quot; in the field</p>
+```
+
+**Less-than symbols (`<`):**
+```jsx
+// ❌ Wrong - will cause build error
+<p>For values where r < 1</p>
+
+// ✅ Correct - properly escaped
+<p>For values where r &lt; 1</p>
+```
+
+**Greater-than symbols (`>`):**
+```jsx
+// ❌ Wrong - will cause build error
+<p>For values where n > 10</p>
+
+// ✅ Correct - properly escaped
+<p>For values where n &gt; 10</p>
+```
+
+#### Common Entity Escapes
+
+| Character | Entity Code | Usage |
+|-----------|-------------|-------|
+| `'` | `&apos;` | Apostrophes in contractions |
+| `"` | `&quot;` | Quotation marks in text |
+| `<` | `&lt;` | Less-than symbols |
+| `>` | `&gt;` | Greater-than symbols |
+| `&` | `&amp;` | Ampersands (when not in HTML entities) |
+
+#### Build Error Prevention
+
+The linter will catch unescaped entities and fail the build with errors like:
+```
+Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+```
+
+**Always escape these characters in JSX content to ensure successful builds!**
+
 ### Keyword Research
 
 Before writing content, research keywords:
