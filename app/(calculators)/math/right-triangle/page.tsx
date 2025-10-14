@@ -199,7 +199,7 @@ export default function RightTrianglePage() {
           Understanding right triangles is essential for geometry, trigonometry, and many real-world applications. Our <strong>Right Triangle Calculator</strong> makes it easy to solve for any missing values using proven mathematical methods.
         </p>
         <p>
-          Ready to explore more geometric concepts? Check out our {createInternalLink('area')} calculator for other shapes, or use our {createInternalLink('trigonometry')} calculator for advanced trigonometric functions.
+          Ready to explore more geometric concepts? Check out our {createInternalLink('area')} calculator for other shapes, or use our {createInternalLink('slope')} calculator for linear relationships.
         </p>
       </SEOSection>
 
