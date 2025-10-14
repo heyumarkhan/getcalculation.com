@@ -183,7 +183,7 @@ export default function TrigonometryPage() {
           Understanding trigonometry is essential for success in mathematics, science, and engineering. Our <strong>Trigonometry Calculator</strong> provides instant access to all six trigonometric functions, making it easier to solve problems and verify calculations.
         </p>
         <p>
-          Ready to explore more mathematical concepts? Check out our {createInternalLink('pythagorean-theorem')} for right triangle calculations, or use our {createInternalLink('slope')} calculator for linear relationships.
+          Ready to explore more mathematical concepts? Check out our {createInternalLink('slope')} calculator for linear relationships, or use our {createInternalLink('area')} calculator for geometric calculations.
         </p>
       </SEOSection>
 
