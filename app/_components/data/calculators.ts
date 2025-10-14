@@ -491,6 +491,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/right-triangle',
     icon: '🔺',
     color: 'green'
+  },
+  {
+    id: 'significant-figures',
+    name: 'Significant Figures Calculator - Sig Fig',
+    description: 'Calculate significant figures, round numbers, and perform arithmetic operations while maintaining proper precision',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['significant figures calculator', 'sig fig calculator', 'rounding numbers', 'precision', 'scientific notation', 'measurement accuracy', 'chemistry', 'physics'],
+    href: '/math/significant-figures',
+    embedHref: '/embed/math/significant-figures',
+    icon: '🔢',
+    color: 'orange'
   }
 ];
 
