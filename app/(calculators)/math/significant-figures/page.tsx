@@ -209,7 +209,7 @@ export default function SignificantFiguresPage() {
           Mastering significant figures is essential for accurate scientific work. Our <strong>Significant Figures Calculator</strong> makes it easy to count, round, and perform calculations while maintaining proper precision.
         </p>
         <p>
-          Ready to explore more mathematical concepts? Check out our {createInternalLink('standard-notation')} calculator for number formatting, or use our {createInternalLink('average')} calculator for statistical calculations.
+          Ready to explore more mathematical concepts? Check out our {createInternalLink('slope')} calculator for linear relationships, or use our {createInternalLink('area')} calculator for geometric calculations.
         </p>
       </SEOSection>
 

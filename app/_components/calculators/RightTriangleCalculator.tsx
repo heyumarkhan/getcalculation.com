@@ -96,8 +96,6 @@ export default function RightTriangleCalculator({
 
     // Case 2: One side and one angle provided (trigonometry)
     if (sidesProvided === 1 && anglesProvided === 1) {
-      const side = Math.max(a, b, c);
-      const angle = Math.max(angleAValue, angleBValue);
       
       if (a > 0 && angleAValue > 0) {
         finalSideA = a;
@@ -129,7 +127,6 @@ export default function RightTriangleCalculator({
         }
       } else if (c > 0 && (angleAValue > 0 || angleBValue > 0)) {
         finalSideC = c;
-        const angle = angleAValue > 0 ? angleAValue : angleBValue;
         if (angleAValue > 0) {
           finalAngleA = angleAValue;
           finalSideA = c * Math.sin((angleAValue * Math.PI) / 180);

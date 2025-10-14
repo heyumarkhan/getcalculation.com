@@ -253,7 +253,7 @@ export default function SignificantFiguresCalculator({
                 name="operation"
                 value="count"
                 checked={operation === 'count'}
-                onChange={(e) => setOperation(e.target.value as any)}
+                onChange={(e) => setOperation(e.target.value as 'count' | 'round' | 'add' | 'multiply')}
                 className="mr-2"
               />
               Count Sig Figs
@@ -264,7 +264,7 @@ export default function SignificantFiguresCalculator({
                 name="operation"
                 value="round"
                 checked={operation === 'round'}
-                onChange={(e) => setOperation(e.target.value as any)}
+                onChange={(e) => setOperation(e.target.value as 'count' | 'round' | 'add' | 'multiply')}
                 className="mr-2"
               />
               Round to Sig Figs
@@ -275,7 +275,7 @@ export default function SignificantFiguresCalculator({
                 name="operation"
                 value="add"
                 checked={operation === 'add'}
-                onChange={(e) => setOperation(e.target.value as any)}
+                onChange={(e) => setOperation(e.target.value as 'count' | 'round' | 'add' | 'multiply')}
                 className="mr-2"
               />
               Add Numbers
@@ -286,7 +286,7 @@ export default function SignificantFiguresCalculator({
                 name="operation"
                 value="multiply"
                 checked={operation === 'multiply'}
-                onChange={(e) => setOperation(e.target.value as any)}
+                onChange={(e) => setOperation(e.target.value as 'count' | 'round' | 'add' | 'multiply')}
                 className="mr-2"
               />
               Multiply Numbers
