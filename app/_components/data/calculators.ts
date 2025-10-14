@@ -467,6 +467,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/decimal-to-percent',
     icon: '🔄',
     color: 'blue'
+  },
+  {
+    id: 'trigonometry',
+    name: 'Trigonometry Calculator',
+    description: 'Calculate all six trigonometric functions (sin, cos, tan, csc, sec, cot) for any angle in degrees or radians',
+    category: 'Trigonometry',
+    subject: 'math',
+    keywords: ['trigonometry calculator', 'sin cos tan', 'trigonometric functions', 'angle calculator', 'sine cosine tangent', 'csc sec cot', 'radians degrees'],
+    href: '/math/trigonometry',
+    embedHref: '/embed/math/trigonometry',
+    icon: '📐',
+    color: 'purple'
   }
 ];
 
