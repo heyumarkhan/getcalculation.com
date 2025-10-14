@@ -202,7 +202,7 @@ export default function DoublingTimePage() {
           Understanding doubling time is crucial for planning and analysis in many fields. Our <strong>Doubling Time Calculator</strong> makes it easy to calculate how long it takes for quantities to double at any growth rate.
         </p>
         <p>
-          Ready to explore more mathematical concepts? Check out our {createInternalLink('exponentialFunction')} calculator for exponential functions, or use our {createInternalLink('average')} calculator for statistical analysis.
+          Ready to explore more mathematical concepts? Check out our {createInternalLink('slope')} calculator for linear relationships, or use our {createInternalLink('area')} calculator for geometric calculations.
         </p>
       </SEOSection>
 
