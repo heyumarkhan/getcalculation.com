@@ -479,6 +479,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/trigonometry',
     icon: '📐',
     color: 'purple'
+  },
+  {
+    id: 'right-triangle',
+    name: 'Right Triangle Side and Angle Calculator',
+    description: 'Calculate missing sides and angles in right triangles using Pythagorean theorem and trigonometry',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['right triangle calculator', 'pythagorean theorem', 'triangle sides', 'triangle angles', 'hypotenuse', 'legs', 'trigonometry', 'geometry'],
+    href: '/math/right-triangle',
+    embedHref: '/embed/math/right-triangle',
+    icon: '🔺',
+    color: 'green'
   }
 ];
 
