@@ -93,7 +93,7 @@ export default function TrigonometryCalculator({
       csc,
       sec,
       cot,
-      angleRadians,
+      angleRadians: angleInRadians,
       quadrant,
       referenceAngle
     });

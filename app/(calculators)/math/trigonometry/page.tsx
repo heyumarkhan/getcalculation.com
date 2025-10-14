@@ -23,7 +23,7 @@ export default function TrigonometryPage() {
     >
       <SEOSection title="How to Use Our Trigonometry Calculator">
         <p>
-          Our trigonometry calculator makes it easy to find all six trigonometric functions for any angle. Simply enter your angle value and choose whether it's in degrees or radians.
+          Our trigonometry calculator makes it easy to find all six trigonometric functions for any angle. Simply enter your angle value and choose whether it&apos;s in degrees or radians.
         </p>
         <SEOList items={[
           "Enter Angle: Input your angle value in the angle field.",
@@ -64,7 +64,7 @@ export default function TrigonometryPage() {
           "Quadrant IV (270° to 360°): Only cosine and secant are positive."
         ]} />
         <p>
-          This is often remembered with the acronym "All Students Take Calculus" (ASTC) or "All Silver Tea Cups" (ASTC).
+          This is often remembered with the acronym &quot;All Students Take Calculus&quot; (ASTC) or &quot;All Silver Tea Cups&quot; (ASTC).
         </p>
       </SEOSection>
 
