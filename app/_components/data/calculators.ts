@@ -503,6 +503,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/significant-figures',
     icon: '🔢',
     color: 'orange'
+  },
+  {
+    id: 'doubling-time',
+    name: 'Doubling Time Calculator',
+    description: 'Calculate how long it takes for a quantity to double at a given growth rate using Rule of 70 or natural logarithm',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['doubling time calculator', 'rule of 70', 'exponential growth', 'population growth', 'investment doubling', 'compound interest', 'growth rate', 'bacterial growth'],
+    href: '/math/doubling-time',
+    embedHref: '/embed/math/doubling-time',
+    icon: '📈',
+    color: 'red'
   }
 ];
 
