@@ -229,6 +229,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'inverse-variation',
+    name: 'Inverse Variation Calculator',
+    description: 'Solve inverse variation problems of the form y = k / x. Solve for y, k, or x given two values.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['inverse variation', 'direct variation', 'y = k/x', 'variation', 'algebra', 'ratios'],
+    href: '/math/inverse-variation',
+    embedHref: '/embed/math/inverse-variation',
+    icon: '↔️',
+    color: 'green'
+  },
+  {
     id: 'triangular-pyramid-volume',
     name: 'Triangular Pyramid Volume Calculator',
     description: 'Calculate the volume of a triangular pyramid (tetrahedron) from base area and height or side lengths',
