@@ -16,6 +16,16 @@ export default function InverseVariationCalculator() {
   const [steps, setSteps] = useState<string[]>([]);
   const [error, setError] = useState<string>('');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculate = () => {
     setError('');
     setResult(null);

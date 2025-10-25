@@ -31,6 +31,16 @@ export default function AverageCalculator({
   const [weights, setWeights] = useState<string>('');
   const [result, setResult] = useState<AverageResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateAverage = () => {
     const numberArray = numbers.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
     
@@ -316,7 +326,7 @@ export default function AverageCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Average:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.average.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.average)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Count:</span>
@@ -324,7 +334,7 @@ export default function AverageCalculator({
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Sum:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.sum.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.sum)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="font-medium text-gray-700 text-lg">Type:</span>

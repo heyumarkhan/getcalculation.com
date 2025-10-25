@@ -20,6 +20,16 @@ export default function InverseModuloCalculator() {
   const [steps, setSteps] = useState<string[]>([]);
   const [error, setError] = useState('');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const extendedGCD = (a: number, b: number): ExtendedGCDResult => {
     const steps: string[] = [];
     let oldR = a, r = b;

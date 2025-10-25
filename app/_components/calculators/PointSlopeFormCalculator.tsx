@@ -35,6 +35,16 @@ export default function PointSlopeFormCalculator({
   const [slope, setSlope] = useState<string>('');
   const [result, setResult] = useState<PointSlopeResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculatePointSlopeForm = () => {
     const x1Val = parseFloat(x1);
     const y1Val = parseFloat(y1);
@@ -251,11 +261,11 @@ export default function PointSlopeFormCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Point</p>
-                    <p className="font-mono text-lg font-bold text-blue-600">({result.point.x}, {result.point.y})</p>
+                    <p className="font-mono text-lg font-bold text-blue-600">({formatValue(result.point.x)}, {formatValue(result.point.y)})</p>
                   </div>
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Slope</p>
-                    <p className="font-mono text-lg font-bold text-green-600">{result.slope}</p>
+                    <p className="font-mono text-lg font-bold text-green-600">{formatValue(result.slope)}</p>
                   </div>
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Line Type</p>
@@ -288,8 +298,8 @@ export default function PointSlopeFormCalculator({
                   <p className="font-semibold text-gray-700 mb-2">Graph Information:</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <p><strong>Y-intercept:</strong> (0, {result.graphInfo.yIntercept.toFixed(6)})</p>
-                      <p><strong>X-intercept:</strong> ({result.graphInfo.xIntercept.toFixed(6)}, 0)</p>
+                      <p><strong>Y-intercept:</strong> (0, {formatValue(result.graphInfo.yIntercept)})</p>
+                      <p><strong>X-intercept:</strong> ({formatValue(result.graphInfo.xIntercept)}, 0)</p>
                     </div>
                     <div>
                       <p><strong>Slope direction:</strong> {result.slope > 0 ? 'Rising' : result.slope < 0 ? 'Falling' : 'Horizontal'}</p>

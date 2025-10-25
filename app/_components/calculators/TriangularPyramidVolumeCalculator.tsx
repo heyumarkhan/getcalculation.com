@@ -12,6 +12,16 @@ export default function TriangularPyramidVolumeCalculator() {
   const [result, setResult] = useState<number | null>(null);
   const [error, setError] = useState<string>('');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculate = () => {
     setError('');
     
@@ -113,11 +123,11 @@ export default function TriangularPyramidVolumeCalculator() {
               <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                 <h3 className="text-lg font-semibold text-green-800 mb-2">Result</h3>
                 <div className="text-2xl font-bold text-green-900">
-                  Volume = {result.toFixed(6)} cubic units
+                  Volume = {formatValue(result)} cubic units
                 </div>
                 <div className="mt-2 text-sm text-green-700">
-                  <div>Base Area = (1/2) × {baseLength} × {baseWidth} = {(parseFloat(baseLength) * parseFloat(baseWidth) / 2).toFixed(6)}</div>
-                  <div>Volume = (1/3) × {(parseFloat(baseLength) * parseFloat(baseWidth) / 2).toFixed(6)} × {height} = {result.toFixed(6)}</div>
+                  <div>Base Area = (1/2) × {baseLength} × {baseWidth} = {formatValue(parseFloat(baseLength) * parseFloat(baseWidth) / 2)}</div>
+                  <div>Volume = (1/3) × {formatValue(parseFloat(baseLength) * parseFloat(baseWidth) / 2)} × {height} = {formatValue(result)}</div>
                 </div>
               </div>
             )}

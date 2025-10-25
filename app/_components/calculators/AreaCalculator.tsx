@@ -18,6 +18,16 @@ export default function AreaCalculator({
   const [width, setWidth] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateArea = () => {
     const l = parseFloat(length) || 0;
     const w = parseFloat(width) || 0;
@@ -157,7 +167,7 @@ export default function AreaCalculator({
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">Area:</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{result} square units</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result)} square units</span>
                     </div>
                   </div>
                 </div>

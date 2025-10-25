@@ -35,6 +35,16 @@ export default function SignificantFiguresCalculator({
   const [operation, setOperation] = useState<'count' | 'round' | 'add' | 'multiply'>('count');
   const [secondNumber, setSecondNumber] = useState<string>('');
   const [result, setResult] = useState<SigFigResult | null>(null);
+
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
   const [operationResult, setOperationResult] = useState<SigFigOperationResult | null>(null);
 
   const countSignificantFigures = (num: string): number => {

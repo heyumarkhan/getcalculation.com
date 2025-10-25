@@ -16,6 +16,16 @@ export default function VolumeOfHemisphereCalculator({
 }: VolumeOfHemisphereCalculatorProps) {
   const [radius, setRadius] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
+
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
   const [error, setError] = useState<string>('');
 
   const calculateVolume = () => {

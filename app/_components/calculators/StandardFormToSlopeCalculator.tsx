@@ -19,6 +19,16 @@ export default function StandardFormToSlopeCalculator({
   const [c, setC] = useState<string>('');
   const [result, setResult] = useState<{ slope: number; yIntercept: number; equation: string } | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateSlopeIntercept = () => {
     const aValue = parseFloat(a) || 0;
     const bValue = parseFloat(b) || 0;
@@ -158,11 +168,11 @@ export default function StandardFormToSlopeCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Slope:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope === Infinity ? 'Undefined' : result.slope.toFixed(2)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope === Infinity ? 'Undefined' : formatValue(result.slope)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Y-intercept:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.yIntercept.toFixed(2)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.yIntercept)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="font-medium text-gray-700 text-lg">Equation:</span>

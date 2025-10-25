@@ -11,6 +11,16 @@ export default function StandardNotationCalculator() {
   const [calculation, setCalculation] = useState('');
   const [conversionType, setConversionType] = useState<'scientific-to-standard' | 'standard-to-scientific' | 'expanded-form'>('scientific-to-standard');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const convertScientificToStandard = (scientificNotation: string) => {
     // Match scientific notation pattern: number x 10^exponent or numbere+exponent
     const match = scientificNotation.match(/^(-?\d+(?:\.\d+)?)\s*[x×]\s*10\^?(-?\d+)$|^(-?\d+(?:\.\d+)?)e([+-]?\d+)$/i);
@@ -52,8 +62,8 @@ export default function StandardNotationCalculator() {
     const base = num / Math.pow(10, exponent);
     
     return {
-      result: `${base.toFixed(6).replace(/\.?0+$/, '')} × 10^${exponent}`,
-      calculation: `${num} = ${base.toFixed(6).replace(/\.?0+$/, '')} × 10^${exponent}`
+      result: `${formatValue(base)} × 10^${exponent}`,
+      calculation: `${num} = ${formatValue(base)} × 10^${exponent}`
     };
   };
 

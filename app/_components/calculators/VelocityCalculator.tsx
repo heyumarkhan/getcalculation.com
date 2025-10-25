@@ -44,6 +44,16 @@ export default function VelocityCalculator() {
   const [result, setResult] = useState<{ value: number; unit: string } | null>(null);
   const [calculation, setCalculation] = useState('');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const convertToBaseUnits = (value: number, unit: string, type: 'distance' | 'time' | 'velocity') => {
     if (type === 'distance') {
       return value * distanceUnits[unit as keyof typeof distanceUnits].factor;
@@ -225,7 +235,7 @@ export default function VelocityCalculator() {
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <h3 className="text-lg font-semibold text-blue-900 mb-2">Result</h3>
             <p className="text-2xl font-bold text-blue-700">
-              {result.value.toFixed(2)} {result.unit}
+              {formatValue(result.value)} {result.unit}
             </p>
             {calculation && (
               <p className="text-sm text-blue-600 mt-2 font-mono">

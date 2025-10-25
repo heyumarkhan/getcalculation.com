@@ -20,6 +20,16 @@ export default function MidpointCalculator({
   const [y2, setY2] = useState<string>('');
   const [result, setResult] = useState<{x: number, y: number} | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateMidpoint = () => {
     const x1Val = parseFloat(x1) || 0;
     const y1Val = parseFloat(y1) || 0;
@@ -189,11 +199,11 @@ export default function MidpointCalculator({
                 className={`text-2xl font-bold ${colors.result}`}
                 style={colors.customStyles?.result}
               >
-                ({result.x}, {result.y})
+                ({formatValue(result.x)}, {formatValue(result.y)})
               </p>
               <div className="mt-3 text-sm text-gray-600">
-                <p><strong>x-coordinate:</strong> {result.x}</p>
-                <p><strong>y-coordinate:</strong> {result.y}</p>
+                <p><strong>x-coordinate:</strong> {formatValue(result.x)}</p>
+                <p><strong>y-coordinate:</strong> {formatValue(result.y)}</p>
               </div>
             </div>
           </div>

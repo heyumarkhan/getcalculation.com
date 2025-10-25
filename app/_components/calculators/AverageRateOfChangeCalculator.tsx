@@ -11,6 +11,16 @@ export default function AverageRateOfChangeCalculator() {
   const [x2, setX2] = useState<string>('');
   const [y2, setY2] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
+
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
   const [error, setError] = useState<string>('');
 
   const calculate = () => {

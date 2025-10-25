@@ -25,6 +25,16 @@ export default function SumOfSeriesCalculator({
   const [result, setResult] = useState<number | null>(null);
   const [calculationSteps, setCalculationSteps] = useState<string[]>([]);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateSum = () => {
     const a = parseFloat(firstTerm) || 0;
     const n = parseInt(numberOfTerms) || 0;
@@ -296,7 +306,7 @@ export default function SumOfSeriesCalculator({
                 className={`text-2xl font-bold ${colors.result} mb-4`}
                 style={colors.customStyles?.result}
               >
-                Sum = {result}
+                Sum = {formatValue(result)}
               </p>
               
               {calculationSteps.length > 0 && (

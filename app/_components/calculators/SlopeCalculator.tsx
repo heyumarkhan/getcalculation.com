@@ -28,6 +28,16 @@ export default function SlopeCalculator({
   const [y2, setY2] = useState<string>('');
   const [result, setResult] = useState<SlopeResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateSlope = () => {
     const x1Val = parseFloat(x1) || 0;
     const y1Val = parseFloat(y1) || 0;
@@ -253,11 +263,11 @@ export default function SlopeCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Slope:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.slope)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Angle:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.angle.toFixed(2)}°</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.angle)}°</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Direction:</span>

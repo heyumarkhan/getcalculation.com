@@ -29,6 +29,16 @@ export default function PercentageCalculator({
   const [value2, setValue2] = useState<string>('');
   const [result, setResult] = useState<PercentageResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculatePercentage = () => {
     const v1 = parseFloat(value1);
     const v2 = parseFloat(value2);

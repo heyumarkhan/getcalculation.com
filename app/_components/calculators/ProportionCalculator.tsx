@@ -22,6 +22,16 @@ export default function ProportionCalculator({
   const [c, setC] = useState<string>('');
   const [d, setD] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
+
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
   const [calculationSteps, setCalculationSteps] = useState<string[]>([]);
   const [isProportional, setIsProportional] = useState<boolean | null>(null);
 

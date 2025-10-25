@@ -27,6 +27,16 @@ export default function TriangularPrismCalculator({
   const [prismHeight, setPrismHeight] = useState<string>('');
   const [result, setResult] = useState<TriangularPrismResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateSurfaceArea = () => {
     const base = parseFloat(baseLength) || 0;
     const h = parseFloat(height) || 0;
@@ -208,27 +218,27 @@ export default function TriangularPrismCalculator({
             <div className="space-y-3 text-sm">
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Base Area:</p>
-                <p className="font-mono text-lg font-bold">{result.baseArea.toFixed(4)} square units</p>
+                <p className="font-mono text-lg font-bold">{formatValue(result.baseArea)} square units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Lateral Surface Area:</p>
-                <p className="font-mono text-lg font-bold">{result.lateralArea.toFixed(4)} square units</p>
+                <p className="font-mono text-lg font-bold">{formatValue(result.lateralArea)} square units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Total Surface Area:</p>
-                <p className="font-mono text-xl font-bold">{result.totalSurfaceArea.toFixed(4)} square units</p>
+                <p className="font-mono text-xl font-bold">{formatValue(result.totalSurfaceArea)} square units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Base Perimeter:</p>
-                <p className="font-mono">{result.basePerimeter.toFixed(4)} units</p>
+                <p className="font-mono">{formatValue(result.basePerimeter)} units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Volume (Bonus):</p>
-                <p className="font-mono">{result.volume.toFixed(4)} cubic units</p>
+                <p className="font-mono">{formatValue(result.volume)} cubic units</p>
               </div>
             </div>
           </div>

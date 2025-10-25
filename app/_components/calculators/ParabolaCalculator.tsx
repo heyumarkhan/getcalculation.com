@@ -29,6 +29,16 @@ export default function ParabolaCalculator({
   const [c, setC] = useState<string>('');
   const [result, setResult] = useState<ParabolaResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateParabola = () => {
     const aVal = parseFloat(a) || 0;
     const bVal = parseFloat(b) || 0;
@@ -217,12 +227,12 @@ export default function ParabolaCalculator({
               <div className="grid grid-cols-1 gap-3">
                 <div className="bg-white p-3 rounded border">
                   <p className="font-semibold text-gray-700 mb-1">Vertex:</p>
-                  <p className="font-mono">({result.vertex.x.toFixed(4)}, {result.vertex.y.toFixed(4)})</p>
+                  <p className="font-mono">({formatValue(result.vertex.x)}, {formatValue(result.vertex.y)})</p>
                 </div>
                 
                 <div className="bg-white p-3 rounded border">
                   <p className="font-semibold text-gray-700 mb-1">Focus:</p>
-                  <p className="font-mono">({result.focus.x.toFixed(4)}, {result.focus.y.toFixed(4)})</p>
+                  <p className="font-mono">({formatValue(result.focus.x)}, {formatValue(result.focus.y)})</p>
                 </div>
                 
                 <div className="bg-white p-3 rounded border">
@@ -242,7 +252,7 @@ export default function ParabolaCalculator({
                 
                 <div className="bg-white p-3 rounded border">
                   <p className="font-semibold text-gray-700 mb-1">Distance p (vertex to focus):</p>
-                  <p className="font-mono">{result.p.toFixed(4)}</p>
+                  <p className="font-mono">{formatValue(result.p)}</p>
                 </div>
               </div>
             </div>

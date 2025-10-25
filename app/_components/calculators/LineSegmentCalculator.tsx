@@ -20,6 +20,16 @@ export default function LineSegmentCalculator({
   const [y2, setY2] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateDistance = () => {
     const x1Val = parseFloat(x1) || 0;
     const y1Val = parseFloat(y1) || 0;
@@ -190,11 +200,11 @@ export default function LineSegmentCalculator({
                 className={`text-3xl font-bold ${colors.result}`}
                 style={colors.customStyles?.result}
               >
-                {result.toFixed(6)} units
+                {formatValue(result)} units
               </p>
               <div className="mt-3 text-sm text-gray-600">
                 <p><strong>Exact value:</strong> {result}</p>
-                <p><strong>Rounded (2 decimals):</strong> {result.toFixed(2)} units</p>
+                <p><strong>Rounded (2 decimals):</strong> {formatValue(result)} units</p>
               </div>
             </div>
           </div>

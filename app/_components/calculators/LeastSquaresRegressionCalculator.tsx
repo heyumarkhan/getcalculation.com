@@ -39,6 +39,16 @@ export default function LeastSquaresRegressionCalculator({
   const [predictionX, setPredictionX] = useState<string>('');
   const [result, setResult] = useState<RegressionResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateRegression = () => {
     if (dataPoints.length < 2) {
       alert('Please enter at least 2 data points');
@@ -309,19 +319,19 @@ export default function LeastSquaresRegressionCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Slope:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.slope)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Intercept:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.intercept.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.intercept)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Correlation:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.correlation.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.correlation)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">R-squared:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{(result.rSquared * 100).toFixed(2)}%</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.rSquared * 100)}%</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="font-medium text-gray-700 text-lg">Equation:</span>

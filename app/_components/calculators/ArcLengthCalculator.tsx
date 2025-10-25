@@ -29,6 +29,16 @@ export default function ArcLengthCalculator({
   const [centralAngle, setCentralAngle] = useState<string>('');
   const [result, setResult] = useState<ArcLengthResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateArcLength = () => {
     // Check if fields are empty
     if (!radius || !centralAngle || !radius.trim() || !centralAngle.trim()) {
@@ -199,15 +209,15 @@ export default function ArcLengthCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Radius</p>
-                    <p className="text-lg font-semibold">{result.radius.toFixed(6)} units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.radius)} units</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Central Angle</p>
-                    <p className="text-lg font-semibold">{result.centralAngle.toFixed(2)}°</p>
+                    <p className="text-lg font-semibold">{formatValue(result.centralAngle)}°</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Arc Length</p>
-                    <p className="text-lg font-semibold">{result.arcLength.toFixed(6)} units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.arcLength)} units</p>
                   </div>
                 </div>
 
@@ -222,11 +232,11 @@ export default function ArcLengthCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <p className="text-sm text-gray-600">Sector Area</p>
-                    <p className="text-lg font-semibold">{result.sectorArea.toFixed(6)} square units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.sectorArea)} square units</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Chord Length</p>
-                    <p className="text-lg font-semibold">{result.chordLength.toFixed(6)} units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.chordLength)} units</p>
                   </div>
                 </div>
               </div>

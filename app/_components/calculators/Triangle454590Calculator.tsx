@@ -36,6 +36,16 @@ export default function Triangle454590Calculator({
   const [inputType, setInputType] = useState<'leg' | 'hypotenuse'>('leg');
   const [result, setResult] = useState<TriangleResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateTriangle = () => {
     const value = parseFloat(inputValue);
 
@@ -241,19 +251,19 @@ export default function Triangle454590Calculator({
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Leg</p>
-                    <p className="font-mono text-xl font-bold text-blue-600">{result.leg.toFixed(6)}</p>
+                    <p className="font-mono text-xl font-bold text-blue-600">{formatValue(result.leg)}</p>
                   </div>
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Hypotenuse</p>
-                    <p className="font-mono text-xl font-bold text-green-600">{result.hypotenuse.toFixed(6)}</p>
+                    <p className="font-mono text-xl font-bold text-green-600">{formatValue(result.hypotenuse)}</p>
                   </div>
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Area</p>
-                    <p className="font-mono text-xl font-bold text-purple-600">{result.area.toFixed(6)}</p>
+                    <p className="font-mono text-xl font-bold text-purple-600">{formatValue(result.area)}</p>
                   </div>
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Perimeter</p>
-                    <p className="font-mono text-xl font-bold text-orange-600">{result.perimeter.toFixed(6)}</p>
+                    <p className="font-mono text-xl font-bold text-orange-600">{formatValue(result.perimeter)}</p>
                   </div>
                 </div>
                 

@@ -28,6 +28,16 @@ export default function DoublingTimeCalculator({
   const [timeUnit, setTimeUnit] = useState<'years' | 'months' | 'days' | 'hours'>('years');
   const [result, setResult] = useState<DoublingTimeResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateDoublingTime = () => {
     const rate = parseFloat(growthRate);
     
@@ -311,7 +321,7 @@ export default function DoublingTimeCalculator({
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Doubling Time:</p>
-                <p className="font-mono text-xl font-bold text-red-600">{result.doublingTime.toFixed(2)} {timeUnit}</p>
+                <p className="font-mono text-xl font-bold text-red-600">{formatValue(result.doublingTime)} {timeUnit}</p>
               </div>
             </div>
 

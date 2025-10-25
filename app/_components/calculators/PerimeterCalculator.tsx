@@ -20,6 +20,16 @@ export default function PerimeterCalculator({
   const [side4, setSide4] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculatePerimeter = () => {
     const s1 = parseFloat(side1) || 0;
     const s2 = parseFloat(side2) || 0;
@@ -175,7 +185,7 @@ export default function PerimeterCalculator({
               className={`text-2xl font-bold ${colors.result}`}
               style={colors.customStyles?.result}
             >
-              {result} units
+              {formatValue(result)} units
             </p>
           </div>
         )}

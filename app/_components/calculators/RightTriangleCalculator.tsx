@@ -34,6 +34,16 @@ export default function RightTriangleCalculator({
   const [angleB, setAngleB] = useState<string>('');
   const [result, setResult] = useState<RightTriangleResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateRightTriangle = () => {
     const a = parseFloat(sideA) || 0;
     const b = parseFloat(sideB) || 0;
@@ -348,23 +358,23 @@ export default function RightTriangleCalculator({
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Side A (leg):</p>
-                <p className="font-mono text-xl font-bold">{result.sideA.toFixed(6)}</p>
+                <p className="font-mono text-xl font-bold">{formatValue(result.sideA)}</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Side B (leg):</p>
-                <p className="font-mono text-xl font-bold">{result.sideB.toFixed(6)}</p>
+                <p className="font-mono text-xl font-bold">{formatValue(result.sideB)}</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Side C (hypotenuse):</p>
-                <p className="font-mono text-xl font-bold">{result.sideC.toFixed(6)}</p>
+                <p className="font-mono text-xl font-bold">{formatValue(result.sideC)}</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Angle A:</p>
-                <p className="font-mono text-lg">{result.angleA.toFixed(2)}°</p>
+                <p className="font-mono text-lg">{formatValue(result.angleA)}°</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Angle B:</p>
-                <p className="font-mono text-lg">{result.angleB.toFixed(2)}°</p>
+                <p className="font-mono text-lg">{formatValue(result.angleB)}°</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Angle C:</p>
@@ -376,11 +386,11 @@ export default function RightTriangleCalculator({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Area:</p>
-                <p className="font-mono text-lg font-bold">{result.area.toFixed(6)} square units</p>
+                <p className="font-mono text-lg font-bold">{formatValue(result.area)} square units</p>
               </div>
               <div className="bg-white p-4 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Perimeter:</p>
-                <p className="font-mono text-lg font-bold">{result.perimeter.toFixed(6)} units</p>
+                <p className="font-mono text-lg font-bold">{formatValue(result.perimeter)} units</p>
               </div>
             </div>
 

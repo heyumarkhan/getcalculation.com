@@ -44,6 +44,16 @@ export default function PythagoreanTheoremCalculator({
   const [sideC, setSideC] = useState<string>('');
   const [result, setResult] = useState<PythagoreanResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculatePythagorean = () => {
     // Check if fields are empty
     if (!sideA || !sideB || !sideC || !sideA.trim() || !sideB.trim() || !sideC.trim()) {
@@ -318,15 +328,15 @@ export default function PythagoreanTheoremCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Side A</p>
-                    <p className="text-lg font-semibold">{result.sideA.toFixed(6)}</p>
+                    <p className="text-lg font-semibold">{formatValue(result.sideA)}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Side B</p>
-                    <p className="text-lg font-semibold">{result.sideB.toFixed(6)}</p>
+                    <p className="text-lg font-semibold">{formatValue(result.sideB)}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Hypotenuse C</p>
-                    <p className="text-lg font-semibold">{result.sideC.toFixed(6)}</p>
+                    <p className="text-lg font-semibold">{formatValue(result.sideC)}</p>
                   </div>
                 </div>
 
@@ -341,19 +351,19 @@ export default function PythagoreanTheoremCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <p className="text-sm text-gray-600">Area</p>
-                    <p className="text-lg font-semibold">{result.properties.area.toFixed(6)} square units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.properties.area)} square units</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Perimeter</p>
-                    <p className="text-lg font-semibold">{result.properties.perimeter.toFixed(6)} units</p>
+                    <p className="text-lg font-semibold">{formatValue(result.properties.perimeter)} units</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Angle A</p>
-                    <p className="text-lg font-semibold">{result.properties.angles.angleA.toFixed(2)}°</p>
+                    <p className="text-lg font-semibold">{formatValue(result.properties.angles.angleA)}°</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Angle B</p>
-                    <p className="text-lg font-semibold">{result.properties.angles.angleB.toFixed(2)}°</p>
+                    <p className="text-lg font-semibold">{formatValue(result.properties.angles.angleB)}°</p>
                   </div>
                 </div>
               </div>

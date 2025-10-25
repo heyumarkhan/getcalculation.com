@@ -28,6 +28,16 @@ export default function DiamondProblemCalculator({
   const [product, setProduct] = useState<string>('');
   const [result, setResult] = useState<DiamondProblemResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const solveDiamondProblem = () => {
     const s = parseFloat(sum) || 0;
     const p = parseFloat(product) || 0;
@@ -218,19 +228,19 @@ export default function DiamondProblemCalculator({
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">Number 1:</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{result.number1.toFixed(4)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.number1)}</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">Number 2:</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{result.number2.toFixed(4)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.number2)}</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">Sum:</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{(result.number1 + result.number2).toFixed(4)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.number1 + result.number2)}</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="font-medium text-gray-700 text-lg">Product:</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{(result.number1 * result.number2).toFixed(4)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.number1 * result.number2)}</span>
                     </div>
                   </div>
                 </div>

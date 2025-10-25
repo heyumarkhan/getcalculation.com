@@ -27,6 +27,16 @@ export default function HeronsFormulaCalculator({
   const [sideC, setSideC] = useState<string>('');
   const [result, setResult] = useState<HeronsFormulaResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateArea = () => {
     const a = parseFloat(sideA) || 0;
     const b = parseFloat(sideB) || 0;
@@ -199,12 +209,12 @@ export default function HeronsFormulaCalculator({
             <div className="space-y-3 text-sm">
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Triangle Area:</p>
-                <p className="font-mono text-2xl font-bold">{result.area.toFixed(4)} square units</p>
+                <p className="font-mono text-2xl font-bold">{formatValue(result.area)} square units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Semi-perimeter (s):</p>
-                <p className="font-mono text-lg">{result.semiPerimeter.toFixed(4)} units</p>
+                <p className="font-mono text-lg">{formatValue(result.semiPerimeter)} units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">

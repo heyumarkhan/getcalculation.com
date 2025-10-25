@@ -6,7 +6,7 @@ import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function DiamondProblemPage() {
   return (
     <CalculatorPageTemplate
-      title="Diamond Problem Solver - Find Two Numbers from Sum and Product"
+      title="Diamond Problem Solver"
       description="Solve the classic diamond problem instantly! Find two numbers that add to a given sum and multiply to a given product. Perfect for algebra homework, factoring practice, and mathematical problem solving."
       calculator={<DiamondProblemCalculator />}
       slug="math/diamond-problem"

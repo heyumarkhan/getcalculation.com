@@ -26,6 +26,16 @@ export default function GCFCalculator({
   const [numbers, setNumbers] = useState<string>('');
   const [result, setResult] = useState<GCFResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   // Function to find all factors of a number
   const findFactors = (num: number): number[] => {
     const factors: number[] = [];

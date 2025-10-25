@@ -11,6 +11,16 @@ export default function RoundToNearestCentCalculator() {
   const [calculation, setCalculation] = useState('');
   const [roundingType, setRoundingType] = useState<'nearest' | 'up' | 'down'>('nearest');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const roundToNearestCent = (number: number) => {
     return Math.round(number * 100) / 100;
   };
@@ -59,8 +69,8 @@ export default function RoundToNearestCentCalculator() {
         roundingMethod = 'Round to nearest cent';
     }
 
-    setResult(roundedValue.toFixed(2));
-    setCalculation(`${roundingMethod}: ${num} → $${roundedValue.toFixed(2)}`);
+    setResult(formatValue(roundedValue));
+    setCalculation(`${roundingMethod}: ${num} → $${formatValue(roundedValue)}`);
   };
 
   const clearAll = () => {

@@ -20,6 +20,16 @@ export default function QuotientCalculator({
   const [remainder, setRemainder] = useState<number | null>(null);
   const [error, setError] = useState<string>('');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateQuotient = () => {
     setError('');
     const dividendNum = parseFloat(dividend);
@@ -177,7 +187,7 @@ export default function QuotientCalculator({
                   className={`text-xl font-bold ${colors.result}`}
                   style={colors.customStyles?.result}
                 >
-                  {result.toFixed(6).replace(/\.?0+$/, '')}
+                  {formatValue(result)}
                 </span>
               </p>
               {remainder !== null && remainder !== 0 && (
@@ -187,13 +197,13 @@ export default function QuotientCalculator({
                     className={`text-xl font-bold ${colors.result}`}
                     style={colors.customStyles?.result}
                   >
-                    {remainder.toFixed(6).replace(/\.?0+$/, '')}
+                    {formatValue(remainder)}
                   </span>
                 </p>
               )}
               <p className="text-sm text-gray-600 mt-2">
-                {parseFloat(dividend)} ÷ {parseFloat(divisor)} = {result.toFixed(6).replace(/\.?0+$/, '')}
-                {remainder !== null && remainder !== 0 && ` with remainder ${remainder.toFixed(6).replace(/\.?0+$/, '')}`}
+                {parseFloat(dividend)} ÷ {parseFloat(divisor)} = {formatValue(result)}
+                {remainder !== null && remainder !== 0 && ` with remainder ${formatValue(remainder)}`}
               </p>
             </div>
           </div>

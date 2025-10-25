@@ -35,6 +35,16 @@ export default function CrossMultiplicationCalculator({
   const [d, setD] = useState<string>('');
   const [result, setResult] = useState<CrossMultiplicationResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const solveCrossMultiplication = () => {
     const aVal = parseFloat(a) || 0;
     const bVal = parseFloat(b) || 0;
@@ -286,7 +296,7 @@ export default function CrossMultiplicationCalculator({
             <div className="space-y-3 text-sm">
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Missing Value:</p>
-                <p className="font-mono text-2xl font-bold">{result.missingValue.toFixed(4)}</p>
+                <p className="font-mono text-2xl font-bold">{formatValue(result.missingValue)}</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
@@ -297,13 +307,13 @@ export default function CrossMultiplicationCalculator({
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Cross Products (Verification):</p>
                 <p className="font-mono">
-                  a × d = {result.values.a} × {result.values.d} = {result.crossProduct1.toFixed(4)}
+                  a × d = {result.values.a} × {result.values.d} = {formatValue(result.crossProduct1)}
                 </p>
                 <p className="font-mono">
-                  b × c = {result.values.b} × {result.values.c} = {result.crossProduct2.toFixed(4)}
+                  b × c = {result.values.b} × {result.values.c} = {formatValue(result.crossProduct2)}
                 </p>
                 <p className="font-semibold text-green-600">
-                  ✓ Cross products are equal: {result.crossProduct1.toFixed(4)} = {result.crossProduct2.toFixed(4)}
+                  ✓ Cross products are equal: {formatValue(result.crossProduct1)} = {formatValue(result.crossProduct2)}
                 </p>
               </div>
               

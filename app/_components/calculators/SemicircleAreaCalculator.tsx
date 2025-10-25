@@ -19,6 +19,16 @@ export default function SemicircleAreaCalculator({
   const [inputType, setInputType] = useState<InputType>('radius');
   const [inputValue, setInputValue] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
+
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
   const [calculationSteps, setCalculationSteps] = useState<string[]>([]);
 
   const calculateArea = () => {

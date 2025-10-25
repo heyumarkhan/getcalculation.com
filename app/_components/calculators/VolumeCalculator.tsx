@@ -30,6 +30,16 @@ export default function VolumeCalculator({
   const [pyramidHeight, setPyramidHeight] = useState<string>('');
   const [result, setResult] = useState<VolumeResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateVolume = () => {
     let volume: number;
     let formula: string;
@@ -272,7 +282,7 @@ export default function VolumeCalculator({
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Volume:</p>
-                <p className="font-mono text-2xl font-bold">{result.volume.toFixed(4)} cubic units</p>
+                <p className="font-mono text-2xl font-bold">{formatValue(result.volume)} cubic units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">

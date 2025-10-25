@@ -28,6 +28,16 @@ export default function GreaterThanOrLessThanCalculator({
   const [secondNumber, setSecondNumber] = useState<string>('');
   const [result, setResult] = useState<ComparisonResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const compareNumbers = () => {
     const first = parseFloat(firstNumber);
     const second = parseFloat(secondNumber);
@@ -214,7 +224,7 @@ export default function GreaterThanOrLessThanCalculator({
                 {!result.isEqual && (
                   <div className="bg-white p-3 rounded border">
                     <p className="font-semibold text-gray-700 mb-1">Difference:</p>
-                    <p className="font-mono text-lg">{result.difference.toFixed(6)}</p>
+                    <p className="font-mono text-lg">{formatValue(result.difference)}</p>
                   </div>
                 )}
                 

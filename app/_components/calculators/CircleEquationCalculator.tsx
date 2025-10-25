@@ -48,6 +48,16 @@ export default function CircleEquationCalculator({
   
   const [result, setResult] = useState<CircleEquationResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   // Function to calculate circle from three points
   const calculateCircleFromThreePoints = (p1: {x: number, y: number}, p2: {x: number, y: number}, p3: {x: number, y: number}) => {
     // Check if points are collinear
@@ -433,23 +443,23 @@ export default function CircleEquationCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Center:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">({result.center.x.toFixed(6)}, {result.center.y.toFixed(6)})</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">({formatValue(result.center.x)}, {formatValue(result.center.y)})</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Radius:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.radius.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.radius)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Diameter:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.graphInfo.diameter.toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.graphInfo.diameter)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Area:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{(result.graphInfo.area * Math.PI).toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.graphInfo.area * Math.PI)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="font-medium text-gray-700 text-lg">Circumference:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{(result.graphInfo.circumference * Math.PI).toFixed(6)}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.graphInfo.circumference * Math.PI)}</span>
                       </div>
                     </div>
                   </div>

@@ -27,6 +27,16 @@ export default function SimilarTrianglesCalculator({
   const [triangle2Side2, setTriangle2Side2] = useState<string>('');
   const [result, setResult] = useState<SimilarTrianglesResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateSimilarTriangles = () => {
     const t1s1 = parseFloat(triangle1Side1) || 0;
     const t1s2 = parseFloat(triangle1Side2) || 0;
@@ -227,12 +237,12 @@ export default function SimilarTrianglesCalculator({
             <div className="space-y-3 text-sm">
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Missing Side B:</p>
-                <p className="font-mono text-2xl font-bold">{result.missingSide.toFixed(4)} units</p>
+                <p className="font-mono text-2xl font-bold">{formatValue(result.missingSide)} units</p>
               </div>
               
               <div className="bg-white p-3 rounded border">
                 <p className="font-semibold text-gray-700 mb-1">Scale Factor:</p>
-                <p className="font-mono text-lg">{result.scaleFactor.toFixed(4)}</p>
+                <p className="font-mono text-lg">{formatValue(result.scaleFactor)}</p>
               </div>
               
               <div className="bg-white p-3 rounded border">

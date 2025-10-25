@@ -12,6 +12,16 @@ export default function ExponentialFunctionCalculator() {
   const [calculation, setCalculation] = useState('');
   const [functionType, setFunctionType] = useState<'basic' | 'growth' | 'decay' | 'compound'>('basic');
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateExponential = () => {
     const b = parseFloat(base);
     const exp = parseFloat(exponent);
@@ -19,7 +29,7 @@ export default function ExponentialFunctionCalculator() {
     if (base && exponent) {
       const calculatedResult = Math.pow(b, exp);
       setResult(calculatedResult);
-      setCalculation(`${b}^${exp} = ${calculatedResult.toFixed(6)}`);
+      setCalculation(`${b}^${exp} = ${formatValue(calculatedResult)}`);
     } else {
       setResult(null);
       setCalculation('');
@@ -34,7 +44,7 @@ export default function ExponentialFunctionCalculator() {
     if (base && exponent) {
       const calculatedResult = initial * Math.pow(1 + rate, time);
       setResult(calculatedResult);
-      setCalculation(`Growth: ${initial} × (1 + ${rate})^${time} = ${calculatedResult.toFixed(6)}`);
+      setCalculation(`Growth: ${initial} × (1 + ${rate})^${time} = ${formatValue(calculatedResult)}`);
     }
   };
 
@@ -46,7 +56,7 @@ export default function ExponentialFunctionCalculator() {
     if (base && exponent) {
       const calculatedResult = initial * Math.pow(1 - rate, time);
       setResult(calculatedResult);
-      setCalculation(`Decay: ${initial} × (1 - ${rate})^${time} = ${calculatedResult.toFixed(6)}`);
+      setCalculation(`Decay: ${initial} × (1 - ${rate})^${time} = ${formatValue(calculatedResult)}`);
     }
   };
 
@@ -59,7 +69,7 @@ export default function ExponentialFunctionCalculator() {
     if (base && exponent) {
       const calculatedResult = principal * Math.pow(1 + rate / n, n * time);
       setResult(calculatedResult);
-      setCalculation(`Compound Interest: ${principal} × (1 + ${rate}/${n})^(${n} × ${time}) = ${calculatedResult.toFixed(6)}`);
+      setCalculation(`Compound Interest: ${principal} × (1 + ${rate}/${n})^(${n} × ${time}) = ${formatValue(calculatedResult)}`);
     }
   };
 
@@ -184,7 +194,7 @@ export default function ExponentialFunctionCalculator() {
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <h3 className="text-lg font-semibold text-blue-900 mb-2">Result</h3>
             <p className="text-2xl font-bold text-blue-700">
-              {result.toFixed(6)}
+              {formatValue(result)}
             </p>
             {calculation && (
               <p className="text-sm text-blue-600 mt-2 font-mono">

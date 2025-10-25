@@ -30,6 +30,16 @@ export default function DecimalToPercentCalculator({
   const [denominator, setDenominator] = useState<string>('');
   const [result, setResult] = useState<DecimalToPercentResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateConversion = () => {
     let decimal = 0;
     let percent = 0;
@@ -325,11 +335,11 @@ export default function DecimalToPercentCalculator({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Decimal</p>
-                    <p className="text-lg font-semibold">{result.decimal.toFixed(6)}</p>
+                    <p className="text-lg font-semibold">{formatValue(result.decimal)}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Percentage</p>
-                    <p className="text-lg font-semibold">{result.percent.toFixed(2)}%</p>
+                    <p className="text-lg font-semibold">{formatValue(result.percent)}%</p>
                   </div>
                   <div className="text-center">
                     <p className="text-sm text-gray-600">Fraction</p>

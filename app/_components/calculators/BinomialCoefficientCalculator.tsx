@@ -28,6 +28,16 @@ export default function BinomialCoefficientCalculator({
   const [k, setK] = useState<string>('');
   const [result, setResult] = useState<BinomialResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   // Function to calculate factorial
   const factorial = (num: number): number => {
     if (num < 0) return 0;
@@ -229,19 +239,19 @@ export default function BinomialCoefficientCalculator({
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">Coefficient:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.coefficient}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.coefficient)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">n!:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.factorialN}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.factorialN)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
                         <span className="font-medium text-gray-700 text-lg">k!:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.factorialK}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.factorialK)}</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="font-medium text-gray-700 text-lg">(n-k)!:</span>
-                        <span className="font-mono font-bold text-xl text-gray-900">{result.factorialNK}</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{formatValue(result.factorialNK)}</span>
                       </div>
                     </div>
                   </div>

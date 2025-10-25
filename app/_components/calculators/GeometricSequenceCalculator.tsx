@@ -33,6 +33,16 @@ export default function GeometricSequenceCalculator({
   const [calculationType, setCalculationType] = useState<'nth_term' | 'sum' | 'both'>('both');
   const [result, setResult] = useState<GeometricSequenceResult | null>(null);
 
+  const formatValue = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    return value.toFixed(4);
+  };
+
   const calculateGeometricSequence = () => {
     const a1 = parseFloat(firstTerm);
     const r = parseFloat(commonRatio);
@@ -271,20 +281,20 @@ export default function GeometricSequenceCalculator({
                   {calculationType === 'nth_term' || calculationType === 'both' ? (
                     <div className="bg-white p-4 rounded border text-center">
                       <p className="font-semibold text-gray-700 mb-1">Nth Term</p>
-                      <p className="font-mono text-xl font-bold text-blue-600">{result.nthTerm.toFixed(6)}</p>
+                      <p className="font-mono text-xl font-bold text-blue-600">{formatValue(result.nthTerm)}</p>
                     </div>
                   ) : null}
                   
                   {calculationType === 'sum' || calculationType === 'both' ? (
                     <div className="bg-white p-4 rounded border text-center">
                       <p className="font-semibold text-gray-700 mb-1">Sum of First {result.termNumber} Terms</p>
-                      <p className="font-mono text-xl font-bold text-green-600">{result.sum.toFixed(6)}</p>
+                      <p className="font-mono text-xl font-bold text-green-600">{formatValue(result.sum)}</p>
                     </div>
                   ) : null}
                   
                   <div className="bg-white p-4 rounded border text-center">
                     <p className="font-semibold text-gray-700 mb-1">Common Ratio</p>
-                    <p className="font-mono text-xl font-bold text-purple-600">{result.commonRatio}</p>
+                    <p className="font-mono text-xl font-bold text-purple-600">{formatValue(result.commonRatio)}</p>
                   </div>
                 </div>
                 
@@ -293,7 +303,7 @@ export default function GeometricSequenceCalculator({
                   <p className="font-mono text-sm">
                     {result.sequence.map((term, index) => (
                       <span key={index}>
-                        {term.toFixed(6)}
+                        {formatValue(term)}
                         {index < result.sequence.length - 1 ? ', ' : ''}
                       </span>
                     ))}
@@ -332,8 +342,8 @@ export default function GeometricSequenceCalculator({
                 <div className="bg-blue-50 p-4 rounded border border-blue-200">
                   <p className="font-semibold text-blue-800 mb-2">Key Properties:</p>
                   <div className="text-blue-700 text-sm space-y-1">
-                    <p>• First term: {result.firstTerm}</p>
-                    <p>• Common ratio: {result.commonRatio}</p>
+                    <p>• First term: {formatValue(result.firstTerm)}</p>
+                    <p>• Common ratio: {formatValue(result.commonRatio)}</p>
                     <p>• Sequence type: {result.commonRatio > 1 ? 'Increasing' : result.commonRatio > 0 && result.commonRatio < 1 ? 'Decreasing' : 'Alternating'}</p>
                     <p>• Convergence: {Math.abs(result.commonRatio) < 1 ? 'Converges to 0' : 'Diverges'}</p>
                   </div>
