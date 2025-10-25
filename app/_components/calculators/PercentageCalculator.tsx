@@ -242,7 +242,7 @@ export default function PercentageCalculator({
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
           {/* Calculator Form - Left Side */}
           <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
-          {/* Calculation Type Selection */}
+            {/* Calculation Type Selection */}
           <div className="bg-gray-50 p-4 rounded-lg">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">Select Calculation Type</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -290,12 +290,11 @@ export default function PercentageCalculator({
             </div>
           </div>
 
-          {/* Calculate Button */}
-          <div className="flex justify-center">
             <Button
               onClick={calculatePercentage}
-              className="custom-color-button"
+              className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
               style={colors.customStyles?.button}
+              size="lg"
             >
               Calculate
             </Button>

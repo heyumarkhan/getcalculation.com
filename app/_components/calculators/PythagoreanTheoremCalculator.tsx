@@ -403,7 +403,7 @@ export default function PythagoreanTheoremCalculator({
             </div>
           )}
         </div>
-      </Card>
+      </div>
     </>
   );
 }
