@@ -134,6 +134,19 @@ export default function ParabolaCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}

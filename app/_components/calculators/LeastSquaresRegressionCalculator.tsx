@@ -188,10 +188,23 @@ export default function LeastSquaresRegressionCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}
-      <Card className="max-w-2xl mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Least Squares Regression Calculator</h2>
@@ -199,7 +212,9 @@ export default function LeastSquaresRegressionCalculator({
           </>
         )}
       
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          {/* Calculator Form - Left Side */}
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
           {/* Data Points */}
           <div className="bg-gray-50 p-4 rounded-lg">
             <div className="flex justify-between items-center mb-4">
@@ -268,68 +283,66 @@ export default function LeastSquaresRegressionCalculator({
             style={colors.customStyles?.button}
             size="lg"
           >
-            Calculate Regression
+            Calculate
           </Button>
+          </div>
 
-          {result !== null && (
+          {/* Vertical Divider */}
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          {/* Results Section - Right Side */}
+          <div>
             <div 
-              className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+              className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
               style={colors.customStyles?.resultBg}
             >
               <h3 
                 className={`text-lg font-semibold ${colors.resultText} mb-4`}
                 style={colors.customStyles?.resultText}
               >
-                Regression Analysis
+                Regression Results
               </h3>
-              <div className="space-y-3 text-sm">
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">Regression Equation:</p>
-                  <p className="font-mono text-lg font-bold">{result.equation}</p>
+              
+              {result !== null ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Slope:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Intercept:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.intercept.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Correlation:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.correlation.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">R-squared:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{(result.rSquared * 100).toFixed(2)}%</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="font-medium text-gray-700 text-lg">Equation:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.equation}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white p-3 rounded border">
-                    <p className="font-semibold text-gray-700 mb-1">Slope (m):</p>
-                    <p className="font-mono text-xl font-bold">{result.slope.toFixed(6)}</p>
-                  </div>
-                  
-                  <div className="bg-white p-3 rounded border">
-                    <p className="font-semibold text-gray-700 mb-1">Intercept (b):</p>
-                    <p className="font-mono text-xl font-bold">{result.intercept.toFixed(6)}</p>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">📊</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter data points to see regression analysis</p>
                   </div>
                 </div>
-                
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white p-3 rounded border">
-                    <p className="font-semibold text-gray-700 mb-1">Correlation (r):</p>
-                    <p className="font-mono text-lg">{result.correlation.toFixed(6)}</p>
-                  </div>
-                  
-                  <div className="bg-white p-3 rounded border">
-                    <p className="font-semibold text-gray-700 mb-1">R-squared (r²):</p>
-                    <p className="font-mono text-lg">{(result.rSquared * 100).toFixed(2)}%</p>
-                  </div>
-                </div>
-                
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">Interpretation:</p>
-                  <p className="font-mono">{result.interpretation}</p>
-                </div>
-                
-                {result.prediction !== undefined && (
-                  <div className="bg-white p-3 rounded border">
-                    <p className="font-semibold text-gray-700 mb-1">
-                      Prediction for x = {predictionX}:
-                    </p>
-                    <p className="font-mono text-lg font-bold">y = {result.prediction.toFixed(6)}</p>
-                  </div>
-                )}
-              </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
-      </Card>
+      </div>
     </>
   );
 }

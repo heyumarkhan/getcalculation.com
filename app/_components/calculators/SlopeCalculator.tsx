@@ -151,10 +151,23 @@ export default function SlopeCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}
-      <Card className="max-w-md mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Slope (Gradient) Calculator</h2>
@@ -162,7 +175,9 @@ export default function SlopeCalculator({
           </>
         )}
       
-      <div className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          {/* Calculator Form - Left Side */}
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
         {/* Point 1 */}
         <div className="bg-gray-50 p-4 rounded-lg">
           <h3 className="text-lg font-semibold text-gray-700 mb-3">Point 1 (x₁, y₁)</h3>
@@ -212,50 +227,62 @@ export default function SlopeCalculator({
           style={colors.customStyles?.button}
           size="lg"
         >
-          Calculate Slope
+          Calculate
         </Button>
+          </div>
 
-        {result !== null && (
-          <div 
-            className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
-            style={colors.customStyles?.resultBg}
-          >
-            <h3 
-              className={`text-lg font-semibold ${colors.resultText} mb-4`}
-              style={colors.customStyles?.resultText}
+          {/* Vertical Divider */}
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          {/* Results Section - Right Side */}
+          <div>
+            <div 
+              className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
+              style={colors.customStyles?.resultBg}
             >
-              Slope Analysis
-            </h3>
-            <div className="space-y-3 text-sm">
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Slope (m):</p>
-                <p className="font-mono text-xl font-bold">{result.slope.toFixed(6)}</p>
-              </div>
+              <h3 
+                className={`text-lg font-semibold ${colors.resultText} mb-4`}
+                style={colors.customStyles?.resultText}
+              >
+                Slope Results
+              </h3>
               
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Angle:</p>
-                <p className="font-mono">{result.angle.toFixed(2)}°</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Direction:</p>
-                <p className="font-mono">{result.direction}</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Interpretation:</p>
-                <p className="font-mono">{result.interpretation}</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Line Equation:</p>
-                <p className="font-mono text-lg">{result.equation}</p>
-              </div>
+              {result !== null ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Slope:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Angle:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.angle.toFixed(2)}°</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Direction:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.direction}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="font-medium text-gray-700 text-lg">Equation:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.equation}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">📈</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter two points to calculate the slope</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
-        )}
+        </div>
       </div>
-      </Card>
     </>
   );
 }

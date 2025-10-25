@@ -86,7 +86,7 @@ export default function StandardFormToSlopeCalculator({
   const colors = getColorClasses(primaryColor);
 
   return (
-    <Card className="max-w-md mx-auto">
+    <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Standard Form to Slope Intercept Form</h2>
@@ -94,7 +94,9 @@ export default function StandardFormToSlopeCalculator({
           </>
         )}
         
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          {/* Calculator Form - Left Side */}
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
           <div className="text-center mb-4">
             <p className="text-sm text-gray-600">Enter coefficients for: Ax + By = C</p>
           </div>
@@ -130,55 +132,57 @@ export default function StandardFormToSlopeCalculator({
             style={colors.customStyles?.button}
             size="lg"
           >
-            Convert to Slope Intercept Form
+            Calculate
           </Button>
+          </div>
 
-          {result !== null && (
+          {/* Vertical Divider */}
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          {/* Results Section - Right Side */}
+          <div>
             <div 
-              className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+              className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
               style={colors.customStyles?.resultBg}
             >
               <h3 
-                className={`text-lg font-semibold ${colors.resultText} mb-3`}
+                className={`text-lg font-semibold ${colors.resultText} mb-4`}
                 style={colors.customStyles?.resultText}
               >
-                Result
+                Conversion Results
               </h3>
               
-              <div className="space-y-2">
-                <div>
-                  <span className="font-medium text-gray-700">Slope (m): </span>
-                  <span 
-                    className={`font-bold ${colors.result}`}
-                    style={colors.customStyles?.result}
-                  >
-                    {result.slope === Infinity ? 'Undefined' : result.slope.toFixed(2)}
-                  </span>
+              {result !== null ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Slope:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.slope === Infinity ? 'Undefined' : result.slope.toFixed(2)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Y-intercept:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.yIntercept.toFixed(2)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="font-medium text-gray-700 text-lg">Equation:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.equation}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
-                <div>
-                  <span className="font-medium text-gray-700">Y-intercept (b): </span>
-                  <span 
-                    className={`font-bold ${colors.result}`}
-                    style={colors.customStyles?.result}
-                  >
-                    {result.yIntercept.toFixed(2)}
-                  </span>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">📐</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter coefficients to convert standard form to slope-intercept form</p>
+                  </div>
                 </div>
-                
-                <div className="pt-2 border-t border-gray-200">
-                  <span className="font-medium text-gray-700">Equation: </span>
-                  <span 
-                    className={`font-bold text-lg ${colors.result}`}
-                    style={colors.customStyles?.result}
-                  >
-                    {result.equation}
-                  </span>
-                </div>
-              </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
-      </Card>
+      </div>
   );
 }

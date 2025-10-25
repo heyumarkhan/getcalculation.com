@@ -204,10 +204,23 @@ export default function AverageCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}
-      <Card className="max-w-4xl mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Average Calculator</h2>
@@ -215,155 +228,124 @@ export default function AverageCalculator({
           </>
         )}
 
-        <div className="space-y-6">
-          {/* Calculation Type Selection */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">Select Average Type</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {[
-                { value: 'arithmetic', label: 'Arithmetic Mean (Simple Average)' },
-                { value: 'geometric', label: 'Geometric Mean' },
-                { value: 'harmonic', label: 'Harmonic Mean' },
-                { value: 'weighted', label: 'Weighted Average' }
-              ].map((type) => (
-                <Button
-                  key={type.value}
-                  onClick={() => setCalculationType(type.value as 'arithmetic' | 'geometric' | 'harmonic' | 'weighted')}
-                  variant={calculationType === type.value ? "primary" : "outline"}
-                  size="sm"
-                  className={`text-sm ${calculationType === type.value ? 'bg-blue-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}
-                >
-                  {type.label}
-                </Button>
-              ))}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          {/* Calculator Form - Left Side */}
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
+            {/* Calculation Type Selection */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-700 mb-4">Select Average Type</h3>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  { value: 'arithmetic', label: 'Arithmetic Mean' },
+                  { value: 'geometric', label: 'Geometric Mean' },
+                  { value: 'harmonic', label: 'Harmonic Mean' },
+                  { value: 'weighted', label: 'Weighted Average' }
+                ].map((type) => (
+                  <Button
+                    key={type.value}
+                    onClick={() => setCalculationType(type.value as 'arithmetic' | 'geometric' | 'harmonic' | 'weighted')}
+                    variant={calculationType === type.value ? "primary" : "outline"}
+                    size="sm"
+                    className={`text-sm ${calculationType === type.value ? 'bg-[#820ECC] text-white' : 'text-gray-700 hover:bg-gray-100'}`}
+                  >
+                    {type.label}
+                  </Button>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Input Fields */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">Enter Numbers</h3>
-            <div className="space-y-4">
-              <Input
-                label="Numbers (comma-separated)"
-                type="text"
-                value={numbers}
-                onChange={(e) => setNumbers(e.target.value)}
-                placeholder="e.g., 10, 20, 30, 40"
-                autoFocus
-              />
-              {calculationType === 'weighted' && (
+            {/* Input Fields */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-700 mb-4">Enter Numbers</h3>
+              <div className="space-y-4">
                 <Input
-                  label="Weights (comma-separated)"
+                  label="Numbers (comma-separated)"
                   type="text"
-                  value={weights}
-                  onChange={(e) => setWeights(e.target.value)}
-                  placeholder="e.g., 1, 2, 3, 4"
+                  value={numbers}
+                  onChange={(e) => setNumbers(e.target.value)}
+                  placeholder="e.g., 10, 20, 30, 40"
+                  autoFocus
                 />
-              )}
+                {calculationType === 'weighted' && (
+                  <Input
+                    label="Weights (comma-separated)"
+                    type="text"
+                    value={weights}
+                    onChange={(e) => setWeights(e.target.value)}
+                    placeholder="e.g., 1, 2, 3, 4"
+                  />
+                )}
+              </div>
+              <p className="text-sm text-gray-600 mt-2">
+                {calculationType === 'arithmetic' && 'Enter numbers separated by commas (e.g., 10, 20, 30)'}
+                {calculationType === 'geometric' && 'Enter positive numbers separated by commas (e.g., 2, 8, 32)'}
+                {calculationType === 'harmonic' && 'Enter positive numbers separated by commas (e.g., 2, 3, 6)'}
+                {calculationType === 'weighted' && 'Enter numbers and their corresponding weights separated by commas'}
+              </p>
             </div>
-            <p className="text-sm text-gray-600 mt-2">
-              {calculationType === 'arithmetic' && 'Enter numbers separated by commas (e.g., 10, 20, 30)'}
-              {calculationType === 'geometric' && 'Enter positive numbers separated by commas (e.g., 2, 8, 32)'}
-              {calculationType === 'harmonic' && 'Enter positive numbers separated by commas (e.g., 2, 3, 6)'}
-              {calculationType === 'weighted' && 'Enter numbers and their corresponding weights separated by commas'}
-            </p>
-          </div>
 
-          {/* Calculate Button */}
-          <div className="flex justify-center">
             <Button
               onClick={calculateAverage}
-              className="custom-color-button"
+              className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
               style={colors.customStyles?.button}
+              size="lg"
             >
-              Calculate Average
+              Calculate
             </Button>
           </div>
 
-          {/* Results */}
-          {result && (
-            <div className="space-y-6">
-              {/* Main Result */}
-              <div
-                className="p-6 rounded-lg border-2"
-                style={colors.customStyles?.resultBg}
+          {/* Vertical Divider */}
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          {/* Results Section - Right Side */}
+          <div>
+            <div 
+              className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
+              style={colors.customStyles?.resultBg}
+            >
+              <h3 
+                className={`text-lg font-semibold ${colors.resultText} mb-4`}
+                style={colors.customStyles?.resultText}
               >
-                <h3 className="text-xl font-bold mb-4" style={colors.customStyles?.result}>
-                  {getCalculationTypeLabel(result.type)} Result
-                </h3>
-
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                  <div className="text-center">
-                    <p className="text-sm text-gray-600">Count</p>
-                    <p className="text-lg font-semibold">{result.count}</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm text-gray-600">Sum</p>
-                    <p className="text-lg font-semibold">{result.sum.toFixed(6)}</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm text-gray-600">Average</p>
-                    <p className="text-lg font-semibold">{result.average.toFixed(6)}</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm text-gray-600">Type</p>
-                    <p className="text-lg font-semibold">{getCalculationTypeLabel(result.type)}</p>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded border">
-                  <p className="font-mono text-sm">{result.calculation}</p>
-                </div>
-              </div>
-
-              {/* Explanation */}
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold text-blue-700 mb-2">Explanation</h4>
-                <p className="text-blue-800">{result.explanation}</p>
-              </div>
-
-              {/* Step-by-Step Solution */}
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold text-gray-700 mb-3">Step-by-Step Solution</h4>
-                <ol className="space-y-2">
-                  {result.steps.map((step, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="bg-gray-200 text-gray-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">
-                        {index + 1}
-                      </span>
-                      <span className="text-gray-700">{step}</span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-
-              {/* Numbers Display */}
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold text-gray-700 mb-3">Input Numbers</h4>
-                <div className="flex flex-wrap gap-2">
-                  {result.numbers.map((num, index) => (
-                    <span key={index} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-                      {num}
-                    </span>
-                  ))}
-                </div>
-                {result.weights && (
-                  <div className="mt-3">
-                    <h5 className="text-md font-semibold text-gray-700 mb-2">Weights</h5>
-                    <div className="flex flex-wrap gap-2">
-                      {result.weights.map((weight, index) => (
-                        <span key={index} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
-                          {weight}
-                        </span>
-                      ))}
+                Average Results
+              </h3>
+              
+              {result ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Average:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.average.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Count:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.count}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Sum:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.sum.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="font-medium text-gray-700 text-lg">Type:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{getCalculationTypeLabel(result.type)}</span>
+                      </div>
                     </div>
                   </div>
-                )}
-              </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">📊</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter numbers to calculate the average</p>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
-      </Card>
+      </div>
     </>
   );
 }

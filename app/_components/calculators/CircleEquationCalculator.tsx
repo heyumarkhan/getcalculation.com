@@ -247,10 +247,23 @@ export default function CircleEquationCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}
-      <Card className="max-w-4xl mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Equation of a Circle Calculator</h2>
@@ -258,7 +271,9 @@ export default function CircleEquationCalculator({
           </>
         )}
       
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          {/* Calculator Form - Left Side */}
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
           {/* Input Type Selection */}
           <div className="bg-gray-50 p-4 rounded-lg">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">Choose Input Method</h3>
@@ -392,12 +407,17 @@ export default function CircleEquationCalculator({
             style={colors.customStyles?.button}
             size="lg"
           >
-            Calculate Circle Equation
+            Calculate
           </Button>
+          </div>
 
-          {result !== null && (
+          {/* Vertical Divider */}
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          {/* Results Section - Right Side */}
+          <div>
             <div 
-              className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+              className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
               style={colors.customStyles?.resultBg}
             >
               <h3 
@@ -406,83 +426,47 @@ export default function CircleEquationCalculator({
               >
                 Circle Equation Results
               </h3>
-              <div className="space-y-4 text-sm">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="bg-white p-4 rounded border text-center">
-                    <p className="font-semibold text-gray-700 mb-1">Center</p>
-                    <p className="font-mono text-lg font-bold text-blue-600">({result.center.x.toFixed(6)}, {result.center.y.toFixed(6)})</p>
-                  </div>
-                  <div className="bg-white p-4 rounded border text-center">
-                    <p className="font-semibold text-gray-700 mb-1">Radius</p>
-                    <p className="font-mono text-lg font-bold text-green-600">{result.radius.toFixed(6)}</p>
-                  </div>
-                  <div className="bg-white p-4 rounded border text-center">
-                    <p className="font-semibold text-gray-700 mb-1">Diameter</p>
-                    <p className="font-mono text-lg font-bold text-purple-600">{result.graphInfo.diameter.toFixed(6)}</p>
-                  </div>
-                </div>
-                
-                <div className="bg-white p-4 rounded border">
-                  <p className="font-semibold text-gray-700 mb-3">Equation Forms:</p>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-semibold text-gray-600 mb-1">Standard Form:</p>
-                      <p className="font-mono text-lg bg-gray-50 p-2 rounded">{result.standardForm}</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-600 mb-1">General Form:</p>
-                      <p className="font-mono text-lg bg-gray-50 p-2 rounded">{result.generalForm}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded border">
-                  <p className="font-semibold text-gray-700 mb-2">Circle Properties:</p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p><strong>Area:</strong> {result.graphInfo.area.toFixed(6)}π ≈ {(result.graphInfo.area * Math.PI).toFixed(6)}</p>
-                      <p><strong>Circumference:</strong> {result.graphInfo.circumference.toFixed(6)}π ≈ {(result.graphInfo.circumference * Math.PI).toFixed(6)}</p>
-                    </div>
-                    <div>
-                      <p><strong>Special Circle:</strong> {result.graphInfo.isUnitCircle ? 'Unit Circle' : result.graphInfo.isOriginCircle ? 'Origin Circle' : 'Regular Circle'}</p>
-                      <p><strong>Type:</strong> {result.inputType === 'center_radius' ? 'Given center and radius' : 'From three points'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded border">
-                  <p className="font-semibold text-gray-700 mb-2">Explanation:</p>
-                  <p className="text-gray-800">{result.explanation}</p>
-                </div>
-
-                <div className="bg-white p-4 rounded border">
-                  <p className="font-semibold text-gray-700 mb-3">Step-by-Step Calculation:</p>
-                  <div className="space-y-2">
-                    {result.steps.map((step, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded font-mono">
-                          {index + 1}
-                        </span>
-                        <p className="font-mono text-sm">{step}</p>
+              
+              {result !== null ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Center:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">({result.center.x.toFixed(6)}, {result.center.y.toFixed(6)})</span>
                       </div>
-                    ))}
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Radius:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.radius.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Diameter:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{result.graphInfo.diameter.toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="font-medium text-gray-700 text-lg">Area:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{(result.graphInfo.area * Math.PI).toFixed(6)}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="font-medium text-gray-700 text-lg">Circumference:</span>
+                        <span className="font-mono font-bold text-xl text-gray-900">{(result.graphInfo.circumference * Math.PI).toFixed(6)}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div className="bg-blue-50 p-4 rounded border border-blue-200">
-                  <p className="font-semibold text-blue-800 mb-2">Key Relationships:</p>
-                  <div className="text-blue-700 text-sm space-y-1">
-                    <p>• Standard form: (x - h)² + (y - k)² = r²</p>
-                    <p>• General form: x² + y² + Dx + Ey + F = 0</p>
-                    <p>• Center: (h, k) = (-D/2, -E/2)</p>
-                    <p>• Radius: r = √(h² + k² - F)</p>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">⭕</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter circle parameters to see equation and properties</p>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
-      </Card>
+      </div>
     </>
   );
 }

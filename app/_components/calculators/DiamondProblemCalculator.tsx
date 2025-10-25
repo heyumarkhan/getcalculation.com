@@ -153,7 +153,7 @@ export default function DiamondProblemCalculator({
           `
         }} />
       )}
-      <Card className="max-w-md mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Diamond Problem Solver</h2>
@@ -161,7 +161,9 @@ export default function DiamondProblemCalculator({
           </>
         )}
       
-      <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+        {/* Calculator Form - Left Side */}
+        <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
         {/* Diamond Problem Inputs */}
         <div className="bg-gray-50 p-4 rounded-lg">
           <h3 className="text-lg font-semibold text-gray-700 mb-3">Diamond Problem Values</h3>
@@ -190,12 +192,17 @@ export default function DiamondProblemCalculator({
           style={colors.customStyles?.button}
           size="lg"
         >
-          Solve Diamond Problem
+          Calculate
         </Button>
+        </div>
 
-        {result !== null && (
+        {/* Vertical Divider */}
+        <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+        {/* Results Section - Right Side */}
+        <div>
           <div 
-            className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+            className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
             style={colors.customStyles?.resultBg}
           >
             <h3 
@@ -204,38 +211,43 @@ export default function DiamondProblemCalculator({
             >
               Diamond Problem Solution
             </h3>
-            <div className="space-y-3 text-sm">
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">The Two Numbers:</p>
-                <p className="font-mono text-2xl font-bold">
-                  {result.number1.toFixed(4)} and {result.number2.toFixed(4)}
-                </p>
+            
+            {result !== null ? (
+              <div className="animate-fadeIn">
+                <div className="bg-white rounded-lg border p-6">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">Number 1:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{result.number1.toFixed(4)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">Number 2:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{result.number2.toFixed(4)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">Sum:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{(result.number1 + result.number2).toFixed(4)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="font-medium text-gray-700 text-lg">Product:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{(result.number1 * result.number2).toFixed(4)}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Verification:</p>
-                <p className="font-mono">
-                  Sum: {result.number1.toFixed(4)} + {result.number2.toFixed(4)} = {(result.number1 + result.number2).toFixed(4)}
-                </p>
-                <p className="font-mono">
-                  Product: {result.number1.toFixed(4)} × {result.number2.toFixed(4)} = {(result.number1 * result.number2).toFixed(4)}
-                </p>
+            ) : (
+              <div className="flex items-center justify-center h-full min-h-[300px]">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-4">💎</div>
+                  <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                  <p className="text-sm">Enter sum and product to find the two numbers</p>
+                </div>
               </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Method Used:</p>
-                <p className="font-mono">{result.method}</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Calculation:</p>
-                <p className="font-mono text-xs break-all">{result.calculation}</p>
-              </div>
-            </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
-      </Card>
+      </div>
     </>
   );
 }

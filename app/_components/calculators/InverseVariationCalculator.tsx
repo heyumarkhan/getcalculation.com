@@ -92,13 +92,15 @@ export default function InverseVariationCalculator() {
   ];
 
   return (
-    <Card className="max-w-2xl mx-auto p-6">
+    <div className="w-full">
       <div className="text-center mb-4">
         <h2 className="text-2xl font-bold text-gray-900">Inverse Variation Calculator</h2>
         <p className="text-gray-600">Solve y = k / x (inverse variation). Solve for y, k, or x.</p>
       </div>
 
-      <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+        {/* Calculator Form - Left Side */}
+        <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
 
         <div className="grid grid-cols-3 gap-2">
           <button onClick={() => setMode('solve-for-y')} className={`p-2 rounded ${mode === 'solve-for-y' ? 'bg-blue-100 border-blue-300' : 'bg-gray-50 border-gray-200'}`}>Solve for y</button>
@@ -136,9 +138,45 @@ export default function InverseVariationCalculator() {
             ))}
           </div>
         </div>
-      </div>
-    </Card>
-  );
+        </div>
 
-}
+        {/* Vertical Divider */}
+        <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+        {/* Results Section - Right Side */}
+        <div>
+          <div className="p-4 bg-gray-50 border border-gray-200 rounded-md min-h-[400px] transition-all duration-300">
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">
+              Inverse Variation Results
+            </h3>
+            
+            {result !== null ? (
+              <div className="animate-fadeIn">
+                <div className="bg-white rounded-lg border p-6">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">Result:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{result}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="font-medium text-gray-700 text-lg">Mode:</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{mode.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-center justify-center h-full min-h-[300px]">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-4">📊</div>
+                  <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                  <p className="text-sm">Enter values to solve inverse variation equation</p>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
