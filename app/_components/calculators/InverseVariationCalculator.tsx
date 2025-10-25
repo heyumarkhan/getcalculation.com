@@ -179,4 +179,5 @@ export default function InverseVariationCalculator() {
       </div>
     </div>
   );
+}
 
