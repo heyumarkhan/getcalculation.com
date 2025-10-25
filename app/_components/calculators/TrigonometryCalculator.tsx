@@ -162,10 +162,23 @@ export default function TrigonometryCalculator({
             .custom-color-button:focus {
               box-shadow: 0 0 0 3px ${primaryColor}40 !important;
             }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
           `
         }} />
       )}
-      <Card className="max-w-2xl mx-auto">
+      <div className="w-full">
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Trigonometry Calculator</h2>
@@ -173,61 +186,68 @@ export default function TrigonometryCalculator({
           </>
         )}
       
-      <div className="space-y-4">
-        {/* Angle Input */}
-        <div className="bg-gray-50 p-4 rounded-lg">
-          <h3 className="text-lg font-semibold text-gray-700 mb-3">Angle Input</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Input
-              label="Angle"
-              type="text"
-              value={angle}
-              onChange={(e) => handleInputChange('angle', e.target.value)}
-              placeholder="Enter angle value"
-              autoFocus
-            />
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Angle Type</label>
-              <div className="flex space-x-4">
-                <label className="flex items-center">
-                  <input
-                    type="radio"
-                    name="angleType"
-                    value="degrees"
-                    checked={angleType === 'degrees'}
-                    onChange={(e) => setAngleType(e.target.value as 'degrees' | 'radians')}
-                    className="mr-2"
-                  />
-                  Degrees
-                </label>
-                <label className="flex items-center">
-                  <input
-                    type="radio"
-                    name="angleType"
-                    value="radians"
-                    checked={angleType === 'radians'}
-                    onChange={(e) => setAngleType(e.target.value as 'degrees' | 'radians')}
-                    className="mr-2"
-                  />
-                  Radians
-                </label>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+        {/* Calculator Form - Left Side */}
+        <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
+          {/* Angle Input */}
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h3 className="text-lg font-semibold text-gray-700 mb-3">Angle Input</h3>
+            <div className="grid grid-cols-1 gap-4">
+              <Input
+                label="Angle"
+                type="text"
+                value={angle}
+                onChange={(e) => handleInputChange('angle', e.target.value)}
+                placeholder="Enter angle value"
+                autoFocus
+              />
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Angle Type</label>
+                <div className="flex space-x-4">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="angleType"
+                      value="degrees"
+                      checked={angleType === 'degrees'}
+                      onChange={(e) => setAngleType(e.target.value as 'degrees' | 'radians')}
+                      className="mr-2"
+                    />
+                    Degrees
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="angleType"
+                      value="radians"
+                      checked={angleType === 'radians'}
+                      onChange={(e) => setAngleType(e.target.value as 'degrees' | 'radians')}
+                      className="mr-2"
+                    />
+                    Radians
+                  </label>
+                </div>
               </div>
             </div>
           </div>
+
+          <Button 
+            onClick={calculateTrigonometry}
+            className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
+            style={colors.customStyles?.button}
+            size="lg"
+          >
+            Calculate
+          </Button>
         </div>
 
-        <Button 
-          onClick={calculateTrigonometry}
-          className={`w-full ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
-          style={colors.customStyles?.button}
-          size="lg"
-        >
-          Calculate Trigonometric Functions
-        </Button>
+        {/* Vertical Divider */}
+        <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
 
-        {result !== null && (
+        {/* Results Section - Right Side */}
+        <div>
           <div 
-            className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md`}
+            className={`p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-md min-h-[400px] transition-all duration-300`}
             style={colors.customStyles?.resultBg}
           >
             <h3 
@@ -236,61 +256,51 @@ export default function TrigonometryCalculator({
             >
               Trigonometric Results
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Basic Functions */}
-              <div className="space-y-3">
-                <h4 className="font-semibold text-gray-700 mb-2">Basic Functions</h4>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">sin(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.sin)}</p>
-                </div>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">cos(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.cos)}</p>
-                </div>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">tan(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.tan)}</p>
-                </div>
-              </div>
-
-              {/* Reciprocal Functions */}
-              <div className="space-y-3">
-                <h4 className="font-semibold text-gray-700 mb-2">Reciprocal Functions</h4>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">csc(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.csc)}</p>
-                </div>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">sec(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.sec)}</p>
-                </div>
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-semibold text-gray-700 mb-1">cot(θ):</p>
-                  <p className="font-mono text-lg font-bold">{formatTrigValue(result.cot)}</p>
+            
+            {result !== null ? (
+              <div className="animate-fadeIn">
+                <div className="bg-white rounded-lg border p-6">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">sin(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.sin)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">cos(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.cos)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">tan(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.tan)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">csc(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.csc)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700 text-lg">sec(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.sec)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="font-medium text-gray-700 text-lg">cot(θ):</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.cot)}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Additional Information */}
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Angle in Radians:</p>
-                <p className="font-mono">{result.angleRadians.toFixed(6)}</p>
+            ) : (
+              <div className="flex items-center justify-center h-full min-h-[300px]">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-4">📐</div>
+                  <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                  <p className="text-sm">Enter an angle and click calculate to see all trigonometric functions</p>
+                </div>
               </div>
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Quadrant:</p>
-                <p className="font-mono">{result.quadrant}</p>
-              </div>
-              <div className="bg-white p-3 rounded border">
-                <p className="font-semibold text-gray-700 mb-1">Reference Angle:</p>
-                <p className="font-mono">{result.referenceAngle.toFixed(2)}°</p>
-              </div>
-            </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
-      </Card>
+      </div>
     </>
   );
 }

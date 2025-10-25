@@ -73,27 +73,29 @@ export default function CalculatorPageTemplate({
 
       {/* Calculator Section - Full Width */}
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="max-w-2xl mx-auto">
-            {calculator}
-            
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <div className="text-center">
-                <h3 className="text-lg font-medium text-gray-900 mb-3">
-                  Embed This Calculator
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  Copy the code below to embed this calculator on your website
-                </p>
-                <CopyIframeButton slug={slug} />
-              </div>
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 py-12">
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 lg:col-span-8 lg:col-start-3">
+              {calculator}
+            </div>
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-gray-200">
+            <div className="text-center">
+              <h3 className="text-lg font-medium text-gray-900 mb-3">
+                Embed This Calculator
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Copy the code below to embed this calculator on your website
+              </p>
+              <CopyIframeButton slug={slug} />
             </div>
           </div>
         </div>
       </div>
 
       {/* SEO Content Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
           {children}
           
@@ -110,7 +112,7 @@ export default function CalculatorPageTemplate({
 
       {/* Additional Features Section */}
       <div className="bg-white border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 py-12">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Why Choose Our Calculator?
