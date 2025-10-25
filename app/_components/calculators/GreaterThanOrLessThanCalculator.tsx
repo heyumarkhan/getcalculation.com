@@ -22,7 +22,7 @@ interface ComparisonResult {
 
 export default function GreaterThanOrLessThanCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: GreaterThanOrLessThanCalculatorProps) {
   const [firstNumber, setFirstNumber] = useState<string>('');
   const [secondNumber, setSecondNumber] = useState<string>('');

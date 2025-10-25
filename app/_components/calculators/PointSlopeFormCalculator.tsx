@@ -28,7 +28,7 @@ interface PointSlopeResult {
 
 export default function PointSlopeFormCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: PointSlopeFormCalculatorProps) {
   const [x1, setX1] = useState<string>('');
   const [y1, setY1] = useState<string>('');

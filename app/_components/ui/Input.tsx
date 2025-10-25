@@ -20,7 +20,7 @@ export default function Input({
   const baseClasses = 'block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-0 transition-colors';
   const errorClasses = error 
     ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
-    : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500';
+    : 'border-gray-300 focus:ring-[#820ECC]/20 focus:border-[#820ECC]';
   
   const inputClasses = `${baseClasses} ${errorClasses} ${className}`;
   

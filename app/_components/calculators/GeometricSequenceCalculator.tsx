@@ -25,7 +25,7 @@ interface GeometricSequenceResult {
 
 export default function GeometricSequenceCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: GeometricSequenceCalculatorProps) {
   const [firstTerm, setFirstTerm] = useState<string>('');
   const [commonRatio, setCommonRatio] = useState<string>('');

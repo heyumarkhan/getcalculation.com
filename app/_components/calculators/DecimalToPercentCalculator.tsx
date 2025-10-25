@@ -22,7 +22,7 @@ interface DecimalToPercentResult {
 
 export default function DecimalToPercentCalculator({
   showTitle = true,
-  primaryColor = '#3399CC'
+  primaryColor = '#820ECC'
 }: DecimalToPercentCalculatorProps) {
   const [calculationType, setCalculationType] = useState<'decimal_to_percent' | 'percent_to_decimal' | 'fraction_to_percent' | 'percent_to_fraction'>('decimal_to_percent');
   const [inputValue, setInputValue] = useState<string>('');

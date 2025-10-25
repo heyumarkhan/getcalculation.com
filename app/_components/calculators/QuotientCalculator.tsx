@@ -12,7 +12,7 @@ interface QuotientCalculatorProps {
 
 export default function QuotientCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: QuotientCalculatorProps) {
   const [dividend, setDividend] = useState<string>('');
   const [divisor, setDivisor] = useState<string>('');

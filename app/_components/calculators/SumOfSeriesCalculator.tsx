@@ -14,7 +14,7 @@ type SeriesType = 'arithmetic' | 'geometric' | 'custom';
 
 export default function SumOfSeriesCalculator({ 
   showTitle = true, 
-  primaryColor = '#8B5CF6' 
+  primaryColor = '#820ECC' 
 }: SumOfSeriesCalculatorProps) {
   const [seriesType, setSeriesType] = useState<SeriesType>('arithmetic');
   const [firstTerm, setFirstTerm] = useState<string>('');

@@ -29,7 +29,7 @@ interface CircleEquationResult {
 
 export default function CircleEquationCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: CircleEquationCalculatorProps) {
   const [inputType, setInputType] = useState<'center_radius' | 'three_points'>('center_radius');
   

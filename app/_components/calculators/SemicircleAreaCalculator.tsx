@@ -14,7 +14,7 @@ type InputType = 'radius' | 'diameter' | 'circumference';
 
 export default function SemicircleAreaCalculator({ 
   showTitle = true, 
-  primaryColor = '#3B82F6' 
+  primaryColor = '#820ECC' 
 }: SemicircleAreaCalculatorProps) {
   const [inputType, setInputType] = useState<InputType>('radius');
   const [inputValue, setInputValue] = useState<string>('');

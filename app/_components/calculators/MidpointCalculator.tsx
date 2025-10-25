@@ -12,7 +12,7 @@ interface MidpointCalculatorProps {
 
 export default function MidpointCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: MidpointCalculatorProps) {
   const [x1, setX1] = useState<string>('');
   const [y1, setY1] = useState<string>('');

@@ -12,7 +12,7 @@ interface AreaCalculatorProps {
 
 export default function AreaCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: AreaCalculatorProps) {
   const [length, setLength] = useState<string>('');
   const [width, setWidth] = useState<string>('');

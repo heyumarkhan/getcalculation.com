@@ -12,7 +12,7 @@ interface StandardFormToSlopeCalculatorProps {
 
 export default function StandardFormToSlopeCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: StandardFormToSlopeCalculatorProps) {
   const [a, setA] = useState<string>('');
   const [b, setB] = useState<string>('');

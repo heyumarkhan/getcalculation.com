@@ -37,7 +37,7 @@ interface PythagoreanResult {
 
 export default function PythagoreanTheoremCalculator({ 
   showTitle = true, 
-  primaryColor = '#DC2626' 
+  primaryColor = '#820ECC' 
 }: PythagoreanTheoremCalculatorProps) {
   const [sideA, setSideA] = useState<string>('');
   const [sideB, setSideB] = useState<string>('');

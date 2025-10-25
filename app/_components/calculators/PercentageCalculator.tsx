@@ -22,7 +22,7 @@ interface PercentageResult {
 
 export default function PercentageCalculator({
   showTitle = true,
-  primaryColor = '#3399CC'
+  primaryColor = '#820ECC'
 }: PercentageCalculatorProps) {
   const [calculationType, setCalculationType] = useState<'percentage_of' | 'percentage_change' | 'percentage_increase' | 'percentage_decrease' | 'find_percentage'>('percentage_of');
   const [value1, setValue1] = useState<string>('');

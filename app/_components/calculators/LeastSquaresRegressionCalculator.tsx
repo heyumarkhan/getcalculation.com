@@ -27,7 +27,7 @@ interface RegressionResult {
 
 export default function LeastSquaresRegressionCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: LeastSquaresRegressionCalculatorProps) {
   const [dataPoints, setDataPoints] = useState<DataPoint[]>([
     { x: 1, y: 2 },

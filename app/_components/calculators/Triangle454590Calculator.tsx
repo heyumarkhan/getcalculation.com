@@ -30,7 +30,7 @@ interface TriangleResult {
 
 export default function Triangle454590Calculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: Triangle454590CalculatorProps) {
   const [inputValue, setInputValue] = useState<string>('');
   const [inputType, setInputType] = useState<'leg' | 'hypotenuse'>('leg');

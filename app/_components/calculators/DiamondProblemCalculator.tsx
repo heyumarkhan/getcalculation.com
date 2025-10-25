@@ -22,7 +22,7 @@ interface DiamondProblemResult {
 
 export default function DiamondProblemCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: DiamondProblemCalculatorProps) {
   const [sum, setSum] = useState<string>('');
   const [product, setProduct] = useState<string>('');

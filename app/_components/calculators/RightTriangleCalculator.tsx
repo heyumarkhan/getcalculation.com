@@ -25,7 +25,7 @@ interface RightTriangleResult {
 
 export default function RightTriangleCalculator({ 
   showTitle = true, 
-  primaryColor = '#10B981' 
+  primaryColor = '#820ECC' 
 }: RightTriangleCalculatorProps) {
   const [sideA, setSideA] = useState<string>('');
   const [sideB, setSideB] = useState<string>('');

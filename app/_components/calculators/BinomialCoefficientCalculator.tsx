@@ -22,7 +22,7 @@ interface BinomialResult {
 
 export default function BinomialCoefficientCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: BinomialCoefficientCalculatorProps) {
   const [n, setN] = useState<string>('');
   const [k, setK] = useState<string>('');

@@ -27,7 +27,7 @@ interface CrossMultiplicationResult {
 
 export default function CrossMultiplicationCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: CrossMultiplicationCalculatorProps) {
   const [a, setA] = useState<string>('');
   const [b, setB] = useState<string>('');

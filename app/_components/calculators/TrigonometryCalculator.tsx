@@ -24,7 +24,7 @@ interface TrigonometryResult {
 
 export default function TrigonometryCalculator({ 
   showTitle = true, 
-  primaryColor = '#8B5CF6' 
+  primaryColor = '#820ECC' 
 }: TrigonometryCalculatorProps) {
   const [angle, setAngle] = useState<string>('');
   const [angleType, setAngleType] = useState<'degrees' | 'radians'>('degrees');

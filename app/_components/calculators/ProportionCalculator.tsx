@@ -14,7 +14,7 @@ type ProportionType = 'solve-for-x' | 'check-proportion' | 'scale-factor';
 
 export default function ProportionCalculator({ 
   showTitle = true, 
-  primaryColor = '#10B981' 
+  primaryColor = '#820ECC' 
 }: ProportionCalculatorProps) {
   const [proportionType, setProportionType] = useState<ProportionType>('solve-for-x');
   const [a, setA] = useState<string>('');

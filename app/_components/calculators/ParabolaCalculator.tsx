@@ -22,7 +22,7 @@ interface ParabolaResult {
 
 export default function ParabolaCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: ParabolaCalculatorProps) {
   const [a, setA] = useState<string>('');
   const [b, setB] = useState<string>('');

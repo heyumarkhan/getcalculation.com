@@ -12,7 +12,7 @@ interface VolumeOfHemisphereCalculatorProps {
 
 export default function VolumeOfHemisphereCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: VolumeOfHemisphereCalculatorProps) {
   const [radius, setRadius] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);

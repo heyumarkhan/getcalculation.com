@@ -23,7 +23,7 @@ interface ArcLengthResult {
 
 export default function ArcLengthCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: ArcLengthCalculatorProps) {
   const [radius, setRadius] = useState<string>('');
   const [centralAngle, setCentralAngle] = useState<string>('');

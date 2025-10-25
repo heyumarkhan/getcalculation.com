@@ -28,7 +28,7 @@ interface SigFigOperationResult {
 
 export default function SignificantFiguresCalculator({ 
   showTitle = true, 
-  primaryColor = '#F59E0B' 
+  primaryColor = '#820ECC' 
 }: SignificantFiguresCalculatorProps) {
   const [input, setInput] = useState<string>('');
   const [targetSigFigs, setTargetSigFigs] = useState<string>('');

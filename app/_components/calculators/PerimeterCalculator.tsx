@@ -12,7 +12,7 @@ interface PerimeterCalculatorProps {
 
 export default function PerimeterCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: PerimeterCalculatorProps) {
   const [side1, setSide1] = useState<string>('');
   const [side2, setSide2] = useState<string>('');

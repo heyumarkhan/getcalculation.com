@@ -19,7 +19,7 @@ interface SimilarTrianglesResult {
 
 export default function SimilarTrianglesCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: SimilarTrianglesCalculatorProps) {
   const [triangle1Side1, setTriangle1Side1] = useState<string>('');
   const [triangle1Side2, setTriangle1Side2] = useState<string>('');

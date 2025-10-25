@@ -20,7 +20,7 @@ interface TriangularPrismResult {
 
 export default function TriangularPrismCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: TriangularPrismCalculatorProps) {
   const [baseLength, setBaseLength] = useState<string>('');
   const [height, setHeight] = useState<string>('');

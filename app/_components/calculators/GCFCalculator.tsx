@@ -21,7 +21,7 @@ interface GCFResult {
 
 export default function GCFCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: GCFCalculatorProps) {
   const [numbers, setNumbers] = useState<string>('');
   const [result, setResult] = useState<GCFResult | null>(null);

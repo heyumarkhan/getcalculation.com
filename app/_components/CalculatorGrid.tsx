@@ -83,7 +83,7 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
               size="sm"
               className={`px-4 py-2 ${
                 selectedCategory === category 
-                  ? 'bg-blue-600 text-white' 
+                  ? 'bg-[#820ECC] text-white' 
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
@@ -113,7 +113,7 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
                 <div className="text-4xl mb-4">{calculator.icon}</div>
                 
                 {/* Title */}
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#820ECC] transition-colors">
                   {calculator.name}
                 </h3>
                 

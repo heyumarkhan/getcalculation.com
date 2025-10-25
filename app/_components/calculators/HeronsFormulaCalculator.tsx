@@ -20,7 +20,7 @@ interface HeronsFormulaResult {
 
 export default function HeronsFormulaCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: HeronsFormulaCalculatorProps) {
   const [sideA, setSideA] = useState<string>('');
   const [sideB, setSideB] = useState<string>('');

@@ -21,7 +21,7 @@ interface DoublingTimeResult {
 
 export default function DoublingTimeCalculator({ 
   showTitle = true, 
-  primaryColor = '#EF4444' 
+  primaryColor = '#820ECC' 
 }: DoublingTimeCalculatorProps) {
   const [growthRate, setGrowthRate] = useState<string>('');
   const [rateType, setRateType] = useState<'percentage' | 'decimal'>('percentage');

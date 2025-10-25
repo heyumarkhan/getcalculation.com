@@ -34,7 +34,7 @@ export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
             {item.href ? (
               <Link
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600"
+                className="text-sm font-medium text-gray-700 hover:text-[#820ECC]"
               >
                 {item.label}
               </Link>

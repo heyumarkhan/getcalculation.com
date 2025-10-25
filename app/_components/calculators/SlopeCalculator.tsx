@@ -20,7 +20,7 @@ interface SlopeResult {
 
 export default function SlopeCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: SlopeCalculatorProps) {
   const [x1, setX1] = useState<string>('');
   const [y1, setY1] = useState<string>('');

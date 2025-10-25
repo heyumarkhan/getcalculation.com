@@ -24,7 +24,7 @@ interface AverageResult {
 
 export default function AverageCalculator({
   showTitle = true,
-  primaryColor = '#3399CC'
+  primaryColor = '#820ECC'
 }: AverageCalculatorProps) {
   const [calculationType, setCalculationType] = useState<'arithmetic' | 'geometric' | 'harmonic' | 'weighted'>('arithmetic');
   const [numbers, setNumbers] = useState<string>('');

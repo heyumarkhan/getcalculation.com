@@ -19,7 +19,7 @@ interface VolumeResult {
 
 export default function VolumeCalculator({ 
   showTitle = true, 
-  primaryColor = '#3399CC' 
+  primaryColor = '#820ECC' 
 }: VolumeCalculatorProps) {
   const [selectedShape, setSelectedShape] = useState<'rectangular-prism' | 'triangular-pyramid'>('rectangular-prism');
   const [length, setLength] = useState<string>('');
