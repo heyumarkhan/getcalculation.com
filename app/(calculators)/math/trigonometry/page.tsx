@@ -6,8 +6,8 @@ import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function TrigonometryPage() {
   return (
     <CalculatorPageTemplate
-      title="Trigonometry Calculator - Calculate Sin, Cos, Tan, Csc, Sec, Cot"
-      description="Calculate all six trigonometric functions instantly with our free online trigonometry calculator. Perfect for math homework, engineering calculations, and any task requiring trigonometric values."
+      title="Trigonometry Calculator"
+      description="Calculate all six trigonometric functions instantly with our free online trigonometry calculator."
       calculator={<TrigonometryCalculator />}
       slug="math/trigonometry"
       category="Trigonometry"

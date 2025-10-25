@@ -151,6 +151,17 @@ export default function TrigonometryCalculator({
     return value.toFixed(6);
   };
 
+  const formatTrigValueLimited = (value: number): string => {
+    if (Math.abs(value) === Infinity) {
+      return '∞';
+    }
+    if (Math.abs(value) < 0.0001) {
+      return '0';
+    }
+    
+    return value.toFixed(4);
+  };
+
   return (
     <>
       {colors.customStyles && (
@@ -263,27 +274,39 @@ export default function TrigonometryCalculator({
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">sin(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.sin)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.sin)}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">cos(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.cos)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.cos)}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">tan(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.tan)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.tan)}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">csc(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.csc)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.csc)}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="font-medium text-gray-700 text-lg">sec(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.sec)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.sec)}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="font-medium text-gray-700 text-lg">cot(θ):</span>
-                      <span className="font-mono font-bold text-xl text-gray-900">{formatTrigValue(result.cot)}</span>
+                      <span className="font-mono font-bold text-xl text-gray-900">
+                        {formatTrigValueLimited(result.cot)}
+                      </span>
                     </div>
                   </div>
                 </div>
