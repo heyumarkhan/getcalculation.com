@@ -505,6 +505,18 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
+    id: 'isosceles-triangle',
+    name: 'Isosceles Triangle Calculator',
+    description: 'Calculate all properties of an isosceles triangle including sides, angles, area, perimeter, and height with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['isosceles triangle', 'triangle calculator', 'isosceles triangle calculator', 'triangle area', 'triangle height', 'base angles', 'vertex angle', 'geometry', 'triangle properties'],
+    href: '/math/isosceles-triangle',
+    embedHref: '/embed/math/isosceles-triangle',
+    icon: '🔺',
+    color: 'purple'
+  },
+  {
     id: 'significant-figures',
     name: 'Significant Figures Calculator - Sig Fig',
     description: 'Calculate significant figures, round numbers, and perform arithmetic operations while maintaining proper precision',

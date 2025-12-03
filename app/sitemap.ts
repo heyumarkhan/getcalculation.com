@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/average-rate-of-change', priority: 0.8 },
     { slug: 'math/least-squares-regression', priority: 0.8 },
     { slug: 'math/binomial-coefficient', priority: 0.8 },
+    { slug: 'math/isosceles-triangle', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 
