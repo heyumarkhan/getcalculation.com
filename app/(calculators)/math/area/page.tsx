@@ -172,7 +172,7 @@ export default function AreaPage() {
           Mastering <strong>how to find area</strong> is a skill that demystifies the world around you, allowing you to plan projects, understand property dimensions, and solve everyday problems with confidence. From the simple rectangle in your home to more complex shapes, the fundamental principles of area calculation remain consistent and accessible.
         </p>
         <p>
-          Ready to explore more geometric calculations? Check out our {createInternalLink('volume')} for 3D shapes, or use our {createInternalLink('perimeter')} to calculate the distance around shapes.
+          Are you ready to explore more geometric calculations? Check out our {createInternalLink('volume')} for 3D shapes, or use our {createInternalLink('perimeter')} to calculate the distance around shapes.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
