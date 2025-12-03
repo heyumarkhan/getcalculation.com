@@ -141,7 +141,7 @@ export default function BinomialCoefficientPage() {
           It&apos;s important to understand the difference between combinations and permutations:
         </p>
         
-        <h3>Combinations (Binomial Coefficients)</h3>
+        <h3>Combinations (Binomial Coefficients)...</h3>
         <p>
           Order doesn&apos;t matter. C(n,k) counts the number of ways to choose k items from n items.
         </p>
