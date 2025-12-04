@@ -539,6 +539,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/doubling-time',
     icon: '📈',
     color: 'red'
+  },
+  {
+    id: 'log',
+    name: 'Log Calculator',
+    description: 'Calculate natural logarithm (ln), common logarithm (log₁₀), or logarithm with any custom base with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['log calculator', 'logarithm calculator', 'natural log', 'ln calculator', 'common log', 'log base 10', 'custom base logarithm', 'logarithmic function', 'exponential inverse'],
+    href: '/math/log',
+    embedHref: '/embed/math/log',
+    icon: '📊',
+    color: 'purple'
   }
 ];
 
