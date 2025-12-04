@@ -206,7 +206,7 @@ export default function LogPage() {
           Mastering <strong>logarithm calculations</strong> is essential for anyone working with exponential relationships, whether in mathematics, science, engineering, or finance. Our Log Calculator provides instant, accurate results for natural logarithms, common logarithms, and logarithms with any custom base, making complex calculations simple and accessible.
         </p>
         <p>
-          Ready to explore more mathematical tools? Check out our {createInternalLink('exponential-function')} to work with exponential functions, or use our {createInternalLink('trigonometry')} for trigonometric calculations. For more advanced topics, explore our {createInternalLink('average-rate-of-change')} calculator for calculus applications.
+          Ready to explore more mathematical tools? Check out our {createInternalLink('exponentialFunction')} to work with exponential functions, or use our {createInternalLink('trigonometry')} for trigonometric calculations. For more advanced topics, explore our {createInternalLink('averageRateOfChange')} calculator for calculus applications.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
