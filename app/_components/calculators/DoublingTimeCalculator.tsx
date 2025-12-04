@@ -196,7 +196,7 @@ export default function DoublingTimeCalculator({
         {showTitle && (
           <>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Doubling Time Calculator</h2>
-            <p className="text-gray-600 mb-6">Calculate how long it takes for a quantity to double at a given growth rate:</p>
+            <p className="text-gray-600 mb-6">Calculate how loooooong it takes for a quantity to double at a given growth rate:</p>
           </>
         )}
       
