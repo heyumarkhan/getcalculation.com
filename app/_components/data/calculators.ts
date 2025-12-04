@@ -551,6 +551,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/log',
     icon: '📊',
     color: 'purple'
+  },
+  {
+    id: 'golden-ratio',
+    name: 'Golden Ratio Calculator',
+    description: 'Calculate the golden ratio (φ), multiply or divide by φ, or find golden rectangle dimensions with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['golden ratio calculator', 'phi calculator', 'golden ratio', 'golden rectangle', 'divine proportion', 'fibonacci ratio', 'φ calculator', 'golden section', 'mathematical constant'],
+    href: '/math/golden-ratio',
+    embedHref: '/embed/math/golden-ratio',
+    icon: '✨',
+    color: 'pink'
   }
 ];
 
