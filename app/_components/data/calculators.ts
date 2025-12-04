@@ -539,6 +539,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/doubling-time',
     icon: '📈',
     color: 'red'
+  },
+  {
+    id: 'golden-ratio',
+    name: 'Golden Ratio Calculator',
+    description: 'Calculate the golden ratio (φ), find golden ratio segments, and check if numbers follow the golden ratio with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['golden ratio calculator', 'phi calculator', 'golden ratio', 'divine proportion', 'golden ratio segments', 'phi constant', 'golden ratio formula', 'mathematical constant'],
+    href: '/math/golden-ratio',
+    embedHref: '/embed/math/golden-ratio',
+    icon: '✨',
+    color: 'purple'
   }
 ];
 
