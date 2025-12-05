@@ -575,6 +575,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/hexagon',
     icon: '⬡',
     color: 'blue'
+  },
+  {
+    id: 'slope-intercept-form',
+    name: 'Slope Intercept Form Calculator',
+    description: 'Work with slope-intercept form (y = mx + b) equations. Find slope, y-intercept, convert to other forms, and graph information with step-by-step solutions',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['slope intercept form calculator', 'y = mx + b calculator', 'slope intercept form', 'find slope and y intercept', 'convert to slope intercept form', 'linear equation calculator', 'graphing calculator', 'algebra calculator'],
+    href: '/math/slope-intercept-form',
+    embedHref: '/embed/math/slope-intercept-form',
+    icon: '📈',
+    color: 'orange'
   }
 ];
 
