@@ -563,6 +563,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/golden-ratio',
     icon: '✨',
     color: 'pink'
+  },
+  {
+    id: 'hexagon',
+    name: 'Hexagon Calculator',
+    description: 'Calculate area, perimeter, side length, apothem, and diagonal of a regular hexagon with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['hexagon calculator', 'hexagon area', 'hexagon perimeter', 'regular hexagon', 'hexagon apothem', 'hexagon diagonal', 'hexagon side length', 'polygon calculator', 'geometry calculator'],
+    href: '/math/hexagon',
+    embedHref: '/embed/math/hexagon',
+    icon: '⬡',
+    color: 'blue'
   }
 ];
 
