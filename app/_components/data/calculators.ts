@@ -587,6 +587,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/slope-intercept-form',
     icon: '📈',
     color: 'orange'
+  },
+  {
+    id: 'equilateral-triangle',
+    name: 'Equilateral Triangle Calculator',
+    description: 'Calculate area, perimeter, height, and side length of an equilateral triangle with step-by-step solutions. All sides equal, all angles 60°',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['equilateral triangle calculator', 'equilateral triangle area', 'equilateral triangle perimeter', 'equilateral triangle height', 'regular triangle', 'triangle calculator', 'geometry calculator', 'triangle properties'],
+    href: '/math/equilateral-triangle',
+    embedHref: '/embed/math/equilateral-triangle',
+    icon: '🔺',
+    color: 'green'
   }
 ];
 
