@@ -53,7 +53,8 @@ export const INTERNAL_LINKS = {
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   'herons-formula': { href: '/math/herons-formula', title: 'Heron\'s Formula Calculator' },
   'pythagorean-theorem': { href: '/math/pythagorean-theorem', title: 'Pythagorean Theorem Calculator' },
-  trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' }
+  trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' },
+  'arc-length': { href: '/math/arc-length', title: 'Arc Length Calculator' }
 } as const;
 
 // Helper function to create internal links
