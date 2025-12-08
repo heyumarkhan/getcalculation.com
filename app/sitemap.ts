@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/hexagon', priority: 0.8 },
     { slug: 'math/slope-intercept-form', priority: 0.8 },
     { slug: 'math/equilateral-triangle', priority: 0.8 },
+    { slug: 'math/circumference', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 

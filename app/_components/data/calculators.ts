@@ -361,6 +361,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'circumference',
+    name: 'Circumference Calculator',
+    description: 'Calculate the circumference of a circle using radius or diameter with step-by-step solutions and formulas',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['circumference calculator', 'circle circumference', 'circumference formula', '2πr', 'πd', 'radius', 'diameter', 'circle calculator', 'geometry calculator', 'perimeter of circle'],
+    href: '/math/circumference',
+    embedHref: '/embed/math/circumference',
+    icon: '⭕',
+    color: 'purple'
+  },
+  {
     id: 'gcf',
     name: 'GCF Calculator - Greatest Common Factor',
     description: 'Find the greatest common factor of two or more numbers using the Euclidean algorithm with step-by-step solutions',
