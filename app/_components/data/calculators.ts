@@ -37,6 +37,18 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
+    id: 'circumference',
+    name: 'Circumference Calculator',
+    description: 'Calculate the circumference of a circle using radius or diameter',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['circumference', 'circle', 'radius', 'diameter', 'perimeter', 'pi', 'geometry'],
+    href: '/math/circumference',
+    embedHref: '/embed/math/circumference',
+    icon: '⭕',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',

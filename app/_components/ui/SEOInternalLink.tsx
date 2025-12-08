@@ -28,6 +28,7 @@ export default function SEOInternalLink({
 // Predefined internal links for common calculator references
 export const INTERNAL_LINKS = {
   area: { href: '/math/area', title: 'Area Calculator' },
+  circumference: { href: '/math/circumference', title: 'Circumference Calculator' },
   volume: { href: '/math/volume', title: 'Volume Calculator' },
   perimeter: { href: '/math/perimeter', title: 'Perimeter Calculator' },
   slope: { href: '/math/slope', title: 'Slope Calculator' },
