@@ -589,6 +589,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'octagon',
+    name: 'Octagon Calculator',
+    description: 'Calculate area, perimeter, side length, apothem, and diagonal of a regular octagon with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['octagon calculator', 'octagon area', 'octagon perimeter', 'regular octagon', 'octagon apothem', 'octagon diagonal', 'octagon side length', 'polygon calculator', 'geometry calculator', 'stop sign shape'],
+    href: '/math/octagon',
+    embedHref: '/embed/math/octagon',
+    icon: '⯄',
+    color: 'purple'
+  },
+  {
     id: 'slope-intercept-form',
     name: 'Slope Intercept Form Calculator',
     description: 'Work with slope-intercept form (y = mx + b) equations. Find slope, y-intercept, convert to other forms, and graph information with step-by-step solutions',
