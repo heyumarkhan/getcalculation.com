@@ -599,18 +599,6 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/equilateral-triangle',
     icon: '🔺',
     color: 'green'
-  },
-  {
-    id: 'circumference',
-    name: 'Circumference Calculator',
-    description: 'Calculate the circumference of a circle using radius or diameter with step-by-step solutions and formula explanations',
-    category: 'Geometry',
-    subject: 'math',
-    keywords: ['circumference calculator', 'circle circumference', 'circumference formula', '2πr', 'πd', 'circle calculator', 'radius diameter', 'circle perimeter', 'geometry calculator', 'circumference of circle'],
-    href: '/math/circumference',
-    embedHref: '/embed/math/circumference',
-    icon: '⭕',
-    color: 'purple'
   }
 ];
 
