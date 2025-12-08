@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Define all your calculator pages
   const calculators = [
     { slug: 'math/area', priority: 0.8 },
+    { slug: 'math/circumference', priority: 0.8 },
     { slug: 'math/volume', priority: 0.8 },
     { slug: 'math/perimeter', priority: 0.8 },
     { slug: 'math/slope', priority: 0.8 },
