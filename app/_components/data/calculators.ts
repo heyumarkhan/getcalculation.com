@@ -683,6 +683,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/time-percentage',
     icon: '⏱️',
     color: 'orange'
+  },
+  {
+    id: 'fraction',
+    name: 'Fraction Calculator',
+    description: 'Add, subtract, multiply, divide, and simplify fractions instantly. Free online fraction calculator with step-by-step calculations and decimal conversions.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['fraction calculator', 'add fractions', 'subtract fractions', 'multiply fractions', 'divide fractions', 'simplify fractions', 'fraction operations', 'fraction to decimal', 'decimal to fraction', 'math calculator'],
+    href: '/math/fraction',
+    embedHref: '/embed/math/fraction',
+    icon: '🔢',
+    color: 'blue'
   }
 ];
 
