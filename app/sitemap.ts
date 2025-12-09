@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/equilateral-triangle', priority: 0.8 },
     { slug: 'math/multiplication', priority: 0.8 },
     { slug: 'math/sinh', priority: 0.8 },
+    { slug: 'math/cylinder-volume', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 

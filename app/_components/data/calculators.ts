@@ -647,6 +647,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/sinh',
     icon: '📐',
     color: 'purple'
+  },
+  {
+    id: 'cylinder-volume',
+    name: 'Cylinder Volume Calculator',
+    description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['cylinder volume calculator', 'volume of cylinder', 'cylinder volume formula', 'calculate cylinder volume', 'cylinder calculator', 'circular cylinder volume', 'geometry calculator', '3d volume calculator'],
+    href: '/math/cylinder-volume',
+    embedHref: '/embed/math/cylinder-volume',
+    icon: '🔵',
+    color: 'blue'
   }
 ];
 
