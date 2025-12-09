@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/sinh', priority: 0.8 },
     { slug: 'math/cylinder-volume', priority: 0.8 },
     { slug: 'math/mean', priority: 0.8 },
+    { slug: 'math/time-percentage', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 
