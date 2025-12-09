@@ -635,6 +635,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/multiplication',
     icon: '✖️',
     color: 'purple'
+  },
+  {
+    id: 'sinh',
+    name: 'Sinh Calculator',
+    description: 'Calculate the hyperbolic sine (sinh) of any number instantly. Free online sinh calculator with step-by-step calculations and explanations.',
+    category: 'Trigonometry',
+    subject: 'math',
+    keywords: ['sinh calculator', 'hyperbolic sine calculator', 'sinh function', 'hyperbolic sine', 'sinh(x)', 'hyperbolic functions', 'trigonometry calculator', 'math calculator'],
+    href: '/math/sinh',
+    embedHref: '/embed/math/sinh',
+    icon: '📐',
+    color: 'purple'
   }
 ];
 
