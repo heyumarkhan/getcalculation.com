@@ -623,6 +623,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/equilateral-triangle',
     icon: '🔺',
     color: 'green'
+  },
+  {
+    id: 'multiplication',
+    name: 'Multiplication Calculator',
+    description: 'Multiply two or more numbers instantly with our free online multiplication calculator. Get accurate results with step-by-step calculations.',
+    category: 'Arithmetic',
+    subject: 'math',
+    keywords: ['multiplication calculator', 'multiply numbers', 'product calculator', 'multiplication table', 'multiply', 'times calculator', 'math calculator', 'arithmetic calculator'],
+    href: '/math/multiplication',
+    embedHref: '/embed/math/multiplication',
+    icon: '✖️',
+    color: 'purple'
   }
 ];
 
