@@ -659,6 +659,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/cylinder-volume',
     icon: '🔵',
     color: 'blue'
+  },
+  {
+    id: 'mean',
+    name: 'Mean Calculator',
+    description: 'Calculate the arithmetic mean (average) of a set of numbers instantly. Free online mean calculator with step-by-step calculations and explanations.',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['mean calculator', 'arithmetic mean calculator', 'calculate mean', 'mean formula', 'average calculator', 'statistics calculator', 'math calculator', 'data analysis'],
+    href: '/math/mean',
+    embedHref: '/embed/math/mean',
+    icon: '📊',
+    color: 'purple'
   }
 ];
 
