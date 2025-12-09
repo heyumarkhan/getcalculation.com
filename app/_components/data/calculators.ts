@@ -671,6 +671,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/mean',
     icon: '📊',
     color: 'purple'
+  },
+  {
+    id: 'time-percentage',
+    name: 'Time Percentage Calculator',
+    description: 'Calculate what percentage one time period is of another. Free online time percentage calculator with support for hours, minutes, and seconds.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['time percentage calculator', 'calculate time percentage', 'time as percentage', 'percentage of time', 'time percentage formula', 'hours percentage', 'minutes percentage', 'time calculator'],
+    href: '/math/time-percentage',
+    embedHref: '/embed/math/time-percentage',
+    icon: '⏱️',
+    color: 'orange'
   }
 ];
 

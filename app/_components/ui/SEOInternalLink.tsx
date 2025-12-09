@@ -50,6 +50,7 @@ export const INTERNAL_LINKS = {
   volumeOfHemisphere: { href: '/math/volume-of-hemisphere', title: 'Volume of Hemisphere Calculator' },
   proportion: { href: '/math/proportion', title: 'Proportion Calculator' },
   average: { href: '/math/average', title: 'Average Calculator' },
+  percentage: { href: '/math/percentage', title: 'Percentage Calculator' },
   'triangle-45-45-90': { href: '/math/triangle-45-45-90', title: '45-45-90 Triangle Calculator' },
   'circle-equation': { href: '/math/circle-equation', title: 'Equation of a Circle Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
