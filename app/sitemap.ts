@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/error-function', priority: 0.8 },
     { slug: 'math/lagrange-error-bound', priority: 0.8 },
     { slug: 'math/percent-error', priority: 0.8 },
+    { slug: 'math/percentage-difference', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 

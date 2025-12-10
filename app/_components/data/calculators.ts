@@ -709,6 +709,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'percentage-difference',
+    name: 'Percentage Difference Calculator',
+    description: 'Calculate the percentage difference between two values when comparing experimental results. Find relative difference between measurements',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['percentage difference', 'percent difference', 'relative difference', 'comparison calculator', 'experimental comparison', 'measurement comparison', 'difference calculator', 'statistics'],
+    href: '/math/percentage-difference',
+    embedHref: '/embed/math/percentage-difference',
+    icon: '📊',
+    color: 'purple'
+  },
+  {
     id: 'cylinder-volume',
     name: 'Cylinder Volume Calculator',
     description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',

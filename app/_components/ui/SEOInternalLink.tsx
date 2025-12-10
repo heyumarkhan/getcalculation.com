@@ -62,7 +62,8 @@ export const INTERNAL_LINKS = {
   trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' },
   remainder: { href: '/math/remainder', title: 'Remainder Calculator' },
   inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' },
-  log: { href: '/math/log', title: 'Log Calculator' }
+  log: { href: '/math/log', title: 'Log Calculator' },
+  'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' }
 } as const;
 
 // Helper function to create internal links
