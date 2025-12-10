@@ -697,6 +697,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'percent-error',
+    name: 'Percent Error Calculator',
+    description: 'Calculate the percent error between measured and true values. Find accuracy of measurements and experimental results',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['percent error', 'percentage error', 'error calculation', 'measurement error', 'experimental error', 'accuracy', 'precision', 'statistics', 'error analysis'],
+    href: '/math/percent-error',
+    embedHref: '/embed/math/percent-error',
+    icon: '📊',
+    color: 'purple'
+  },
+  {
     id: 'cylinder-volume',
     name: 'Cylinder Volume Calculator',
     description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',
