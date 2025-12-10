@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/mean', priority: 0.8 },
     { slug: 'math/time-percentage', priority: 0.8 },
     { slug: 'math/fraction', priority: 0.8 },
+    { slug: 'math/remainder', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 
