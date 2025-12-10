@@ -59,7 +59,9 @@ export const INTERNAL_LINKS = {
   octagon: { href: '/math/octagon', title: 'Octagon Calculator' },
   'herons-formula': { href: '/math/herons-formula', title: 'Heron\'s Formula Calculator' },
   'pythagorean-theorem': { href: '/math/pythagorean-theorem', title: 'Pythagorean Theorem Calculator' },
-  trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' }
+  trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' },
+  remainder: { href: '/math/remainder', title: 'Remainder Calculator' },
+  inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' }
 } as const;
 
 // Helper function to create internal links

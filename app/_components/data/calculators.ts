@@ -301,6 +301,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'chinese-remainder-theorem',
+    name: 'Chinese Remainder Theorem Calculator',
+    description: 'Solve systems of simultaneous congruences using the Chinese Remainder Theorem algorithm',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['chinese remainder theorem', 'crt', 'simultaneous congruences', 'modular arithmetic', 'congruence system', 'number theory', 'algebra', 'modulo'],
+    href: '/math/chinese-remainder-theorem',
+    embedHref: '/embed/math/chinese-remainder-theorem',
+    icon: '🧮',
+    color: 'purple'
+  },
+  {
     id: 'volume-of-hemisphere',
     name: 'Volume of Hemisphere Calculator',
     description: 'Calculate the volume of a hemisphere using the radius with step-by-step calculations',
