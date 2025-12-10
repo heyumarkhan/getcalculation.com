@@ -61,7 +61,8 @@ export const INTERNAL_LINKS = {
   'pythagorean-theorem': { href: '/math/pythagorean-theorem', title: 'Pythagorean Theorem Calculator' },
   trigonometry: { href: '/math/trigonometry', title: 'Trigonometry Calculator' },
   remainder: { href: '/math/remainder', title: 'Remainder Calculator' },
-  inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' }
+  inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' },
+  log: { href: '/math/log', title: 'Log Calculator' }
 } as const;
 
 // Helper function to create internal links

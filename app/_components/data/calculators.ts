@@ -673,6 +673,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'error-function',
+    name: 'Error Function Calculator',
+    description: 'Calculate the error function (erf) and complementary error function (erfc) of any number with high precision',
+    category: 'Statistics',
+    subject: 'math',
+    keywords: ['error function', 'erf calculator', 'erfc calculator', 'complementary error function', 'gaussian error function', 'normal distribution', 'probability', 'statistics', 'special functions'],
+    href: '/math/error-function',
+    embedHref: '/embed/math/error-function',
+    icon: '📊',
+    color: 'purple'
+  },
+  {
     id: 'cylinder-volume',
     name: 'Cylinder Volume Calculator',
     description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',
