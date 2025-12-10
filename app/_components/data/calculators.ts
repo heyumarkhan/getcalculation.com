@@ -289,6 +289,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'remainder',
+    name: 'Remainder Calculator',
+    description: 'Calculate the remainder when dividing two numbers using modulo operation',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['remainder', 'modulo', 'mod', 'division', 'dividend', 'divisor', 'algebra', 'arithmetic', 'modular arithmetic'],
+    href: '/math/remainder',
+    embedHref: '/embed/math/remainder',
+    icon: '🔢',
+    color: 'purple'
+  },
+  {
     id: 'volume-of-hemisphere',
     name: 'Volume of Hemisphere Calculator',
     description: 'Calculate the volume of a hemisphere using the radius with step-by-step calculations',
