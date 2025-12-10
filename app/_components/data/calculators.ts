@@ -685,6 +685,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'lagrange-error-bound',
+    name: 'Lagrange Error Bound Calculator',
+    description: 'Calculate the error bound for Taylor polynomial approximations using Lagrange remainder formula',
+    category: 'Calculus',
+    subject: 'math',
+    keywords: ['lagrange error bound', 'taylor series error', 'taylor polynomial error', 'lagrange remainder', 'taylor remainder', 'calculus', 'approximation error', 'taylor series calculator'],
+    href: '/math/lagrange-error-bound',
+    embedHref: '/embed/math/lagrange-error-bound',
+    icon: '📐',
+    color: 'purple'
+  },
+  {
     id: 'cylinder-volume',
     name: 'Cylinder Volume Calculator',
     description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',

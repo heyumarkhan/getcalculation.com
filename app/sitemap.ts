@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/remainder', priority: 0.8 },
     { slug: 'math/chinese-remainder-theorem', priority: 0.8 },
     { slug: 'math/error-function', priority: 0.8 },
+    { slug: 'math/lagrange-error-bound', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 }
   ]
 
