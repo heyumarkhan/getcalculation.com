@@ -60,6 +60,7 @@ export const INTERNAL_LINKS = {
   'area-of-a-circle': { href: '/math/area-of-a-circle', title: 'Area of a Circle Calculator' },
   'distance-formula': { href: '/math/distance-formula', title: 'Distance Formula Calculator' },
   'angle-between-two-vectors': { href: '/math/angle-between-two-vectors', title: 'Angle Between Two Vectors Calculator' },
+  'diagonal-of-rectangle': { href: '/math/diagonal-of-rectangle', title: 'Diagonal of a Rectangle Calculator' },
   'sphere-volume': { href: '/math/sphere-volume', title: 'Sphere Volume Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   hexagon: { href: '/math/hexagon', title: 'Hexagon Calculator' },

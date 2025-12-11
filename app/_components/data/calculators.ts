@@ -109,6 +109,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'diagonal-of-rectangle',
+    name: 'Diagonal of a Rectangle Calculator',
+    description: 'Calculate the diagonal length of a rectangle using length and width with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['diagonal of rectangle', 'rectangle diagonal', 'diagonal calculator', 'rectangle diagonal formula', 'calculate rectangle diagonal', 'diagonal length', 'pythagorean theorem', 'rectangle calculator', 'diagonal measurement'],
+    href: '/math/diagonal-of-rectangle',
+    embedHref: '/embed/math/diagonal-of-rectangle',
+    icon: '📐',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
