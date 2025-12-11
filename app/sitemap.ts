@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/angle-between-two-vectors', priority: 0.8 },
     { slug: 'math/direction-of-vector', priority: 0.8 },
     { slug: 'math/diagonal-of-rectangle', priority: 0.8 },
+    { slug: 'math/polygon', priority: 0.8 },
     { slug: 'math/sphere-volume', priority: 0.8 },
     { slug: 'math/volume', priority: 0.8 },
     { slug: 'math/perimeter', priority: 0.8 },
