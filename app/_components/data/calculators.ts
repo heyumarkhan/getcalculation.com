@@ -121,6 +121,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'polygon',
+    name: 'Polygon Calculator',
+    description: 'Calculate area, perimeter, interior angles, exterior angles, apothem, and all properties of regular polygons',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['polygon calculator', 'regular polygon', 'polygon area', 'polygon perimeter', 'polygon angles', 'apothem calculator', 'polygon properties', 'n-sided polygon', 'polygon formula', 'calculate polygon'],
+    href: '/math/polygon',
+    embedHref: '/embed/math/polygon',
+    icon: '🔷',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
