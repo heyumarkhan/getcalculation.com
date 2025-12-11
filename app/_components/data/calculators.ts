@@ -97,6 +97,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'direction-of-vector',
+    name: 'Direction of the Vector Calculator',
+    description: 'Calculate the direction (angle) of a vector in 2D or 3D space using atan2 or direction angles',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['direction of vector', 'vector direction', 'vector angle', 'atan2', 'direction angles', 'vector direction calculator', 'calculate vector direction', 'vector orientation', 'direction cosines'],
+    href: '/math/direction-of-vector',
+    embedHref: '/embed/math/direction-of-vector',
+    icon: '🧭',
+    color: 'blue'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
