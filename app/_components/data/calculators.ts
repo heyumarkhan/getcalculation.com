@@ -49,6 +49,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'radius-of-a-circle',
+    name: 'Radius of a Circle Calculator',
+    description: 'Calculate the radius of a circle from diameter, circumference, or area',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['radius', 'circle radius', 'radius calculator', 'diameter', 'circumference', 'area', 'circle', 'geometry', 'radius formula', 'find radius'],
+    href: '/math/radius-of-a-circle',
+    embedHref: '/embed/math/radius-of-a-circle',
+    icon: '🔵',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
