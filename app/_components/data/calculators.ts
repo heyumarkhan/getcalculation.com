@@ -373,6 +373,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'sphere-volume',
+    name: 'Sphere Volume Calculator',
+    description: 'Calculate the volume of a sphere using radius or diameter with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['sphere volume', 'sphere volume calculator', 'volume of sphere', 'sphere volume formula', 'calculate sphere volume', '4/3πr³', 'sphere calculator', '3d volume'],
+    href: '/math/sphere-volume',
+    embedHref: '/embed/math/sphere-volume',
+    icon: '🔵',
+    color: 'blue'
+  },
+  {
     id: 'least-squares-regression',
     name: 'Least Squares Regression Calculator',
     description: 'Calculate linear regression using least squares method. Find best-fit line, correlation coefficient, and make predictions',
