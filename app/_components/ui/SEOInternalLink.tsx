@@ -55,6 +55,8 @@ export const INTERNAL_LINKS = {
   'triangle-45-45-90': { href: '/math/triangle-45-45-90', title: '45-45-90 Triangle Calculator' },
   'circle-equation': { href: '/math/circle-equation', title: 'Equation of a Circle Calculator' },
   'radius-of-a-circle': { href: '/math/radius-of-a-circle', title: 'Radius of a Circle Calculator' },
+  'area-of-a-circle': { href: '/math/area-of-a-circle', title: 'Area of a Circle Calculator' },
+  'distance-formula': { href: '/math/distance-formula', title: 'Distance Formula Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   hexagon: { href: '/math/hexagon', title: 'Hexagon Calculator' },
   octagon: { href: '/math/octagon', title: 'Octagon Calculator' },

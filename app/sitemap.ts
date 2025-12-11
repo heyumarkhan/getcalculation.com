@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/radius-of-a-circle', priority: 0.8 },
     { slug: 'math/area-of-a-circle', priority: 0.8 },
     { slug: 'math/distance-formula', priority: 0.8 },
+    { slug: 'math/angle-between-two-vectors', priority: 0.8 },
     { slug: 'math/volume', priority: 0.8 },
     { slug: 'math/perimeter', priority: 0.8 },
     { slug: 'math/slope', priority: 0.8 },

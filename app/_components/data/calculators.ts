@@ -85,6 +85,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'angle-between-two-vectors',
+    name: 'Angle Between Two Vectors Calculator',
+    description: 'Calculate the angle between two vectors in 2D or 3D space using the dot product formula',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['angle between vectors', 'vector angle', 'dot product', 'vector calculator', 'angle calculator', 'vector angle calculator', 'calculate vector angle', 'angle between two vectors calculator', 'dot product angle'],
+    href: '/math/angle-between-two-vectors',
+    embedHref: '/embed/math/angle-between-two-vectors',
+    icon: '📐',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
