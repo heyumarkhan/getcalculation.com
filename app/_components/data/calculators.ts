@@ -61,6 +61,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'area-of-a-circle',
+    name: 'Area of a Circle Calculator',
+    description: 'Calculate the area of a circle using radius, diameter, or circumference',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['area of a circle', 'circle area', 'circle area calculator', 'area calculator', 'circle area formula', 'calculate circle area', 'πr²', 'pi r squared', 'circle surface area'],
+    href: '/math/area-of-a-circle',
+    embedHref: '/embed/math/area-of-a-circle',
+    icon: '⭕',
+    color: 'green'
+  },
+  {
     id: 'distance-formula',
     name: 'Distance Formula Calculator',
     description: 'Calculate the distance between two points using the distance formula with step-by-step solutions',
