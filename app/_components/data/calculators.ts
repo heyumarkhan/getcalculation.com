@@ -61,6 +61,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'distance-formula',
+    name: 'Distance Formula Calculator',
+    description: 'Calculate the distance between two points using the distance formula with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['distance formula', 'distance calculator', 'distance between two points', 'coordinate geometry', 'pythagorean theorem', 'distance formula calculator', 'calculate distance', 'point distance', 'coordinate distance'],
+    href: '/math/distance-formula',
+    embedHref: '/embed/math/distance-formula',
+    icon: '📐',
+    color: 'blue'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
