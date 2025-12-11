@@ -54,6 +54,7 @@ export const INTERNAL_LINKS = {
   multiplication: { href: '/math/multiplication', title: 'Multiplication Calculator' },
   'triangle-45-45-90': { href: '/math/triangle-45-45-90', title: '45-45-90 Triangle Calculator' },
   'circle-equation': { href: '/math/circle-equation', title: 'Equation of a Circle Calculator' },
+  'radius-of-a-circle': { href: '/math/radius-of-a-circle', title: 'Radius of a Circle Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   hexagon: { href: '/math/hexagon', title: 'Hexagon Calculator' },
   octagon: { href: '/math/octagon', title: 'Octagon Calculator' },
