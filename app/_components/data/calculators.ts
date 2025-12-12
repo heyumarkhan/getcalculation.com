@@ -157,6 +157,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'percentage-change',
+    name: 'Percentage Change Calculator',
+    description: 'Calculate percentage change from old value to new value with step-by-step solutions. Determine percentage increase or decrease.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['percentage change calculator', 'percent change', 'percentage increase', 'percentage decrease', 'calculate percentage change', 'percent change formula', 'percentage change formula', 'calculate percent change', 'percentage growth', 'percentage decline'],
+    href: '/math/percentage-change',
+    embedHref: '/embed/math/percentage-change',
+    icon: '📈',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
