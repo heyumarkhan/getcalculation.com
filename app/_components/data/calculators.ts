@@ -133,6 +133,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'rectangular-prism',
+    name: 'Rectangular Prism Calculator',
+    description: 'Calculate volume, surface area, lateral surface area, and diagonal of a rectangular prism (cuboid) with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['rectangular prism calculator', 'cuboid calculator', 'rectangular prism volume', 'rectangular prism surface area', 'prism calculator', 'cuboid volume', 'box calculator', 'rectangular prism diagonal', 'calculate rectangular prism', '3d shape calculator'],
+    href: '/math/rectangular-prism',
+    embedHref: '/embed/math/rectangular-prism',
+    icon: '📦',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
