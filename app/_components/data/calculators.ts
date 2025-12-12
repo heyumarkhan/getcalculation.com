@@ -157,6 +157,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'triangle-angle',
+    name: 'Triangle Angle Calculator',
+    description: 'Calculate missing angles and sides of triangles using angle sum theorem, Law of Cosines, and Law of Sines with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['triangle angle calculator', 'triangle angles', 'find triangle angle', 'law of cosines', 'law of sines', 'triangle angle sum', 'calculate triangle angles', 'sss triangle', 'sas triangle', 'asa triangle', 'triangle calculator'],
+    href: '/math/triangle-angle',
+    embedHref: '/embed/math/triangle-angle',
+    icon: '🔺',
+    color: 'purple'
+  },
+  {
     id: 'percentage-change',
     name: 'Percentage Change Calculator',
     description: 'Calculate percentage change from old value to new value with step-by-step solutions. Determine percentage increase or decrease.',

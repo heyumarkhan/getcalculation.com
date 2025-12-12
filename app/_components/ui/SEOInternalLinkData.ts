@@ -41,6 +41,8 @@ export const INTERNAL_LINKS = {
   'polygon': { href: '/math/polygon', title: 'Polygon Calculator' },
   'rectangular-prism': { href: '/math/rectangular-prism', title: 'Rectangular Prism Calculator' },
   'hypotenuse': { href: '/math/hypotenuse', title: 'Hypotenuse Calculator' },
+  'triangle-angle': { href: '/math/triangle-angle', title: 'Triangle Angle Calculator' },
+  'isosceles-triangle': { href: '/math/isosceles-triangle', title: 'Isosceles Triangle Calculator' },
   'percentage-change': { href: '/math/percentage-change', title: 'Percentage Change Calculator' },
   'percentage-difference': { href: '/math/percentage-difference', title: 'Percentage Difference Calculator' },
   'sphere-volume': { href: '/math/sphere-volume', title: 'Sphere Volume Calculator' },
