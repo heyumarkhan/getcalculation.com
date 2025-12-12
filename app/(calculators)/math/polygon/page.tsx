@@ -1,7 +1,8 @@
 import PolygonCalculator from '../../../_components/calculators/PolygonCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFormula, SEOExample, SEOFAQ } from '../../../_components/ui/SEOContent';
-import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
+import { createInternalLinkHTML } from '../../../_components/ui/SEOInternalLinkData';
+import Link from 'next/link';
 
 export default function PolygonPage() {
   return (
@@ -239,11 +240,11 @@ export default function PolygonPage() {
           If you're working with polygons and geometry, you might find these related calculators helpful:
         </p>
         <SEOList items={[
-          `Our ${createInternalLink('area', 'Area Calculator')} can calculate areas of various geometric shapes including polygons.`,
-          `The ${createInternalLink('perimeter', 'Perimeter Calculator')} helps you find perimeters of polygons and other shapes.`,
-          `Our ${createInternalLink('hexagon', 'Hexagon Calculator')} is specialized for calculating hexagon properties.`,
-          `The ${createInternalLink('equilateral-triangle', 'Equilateral Triangle Calculator')} helps with triangle calculations.`,
-          `Our ${createInternalLink('pythagorean-theorem', 'Pythagorean Theorem Calculator')} is useful for right triangle calculations within polygons.`
+          `Our ${createInternalLinkHTML('area', 'Area Calculator')} can calculate areas of various geometric shapes including polygons.`,
+          `The ${createInternalLinkHTML('perimeter', 'Perimeter Calculator')} helps you find perimeters of polygons and other shapes.`,
+          `Our ${createInternalLinkHTML('hexagon', 'Hexagon Calculator')} is specialized for calculating hexagon properties.`,
+          `The ${createInternalLinkHTML('equilateral-triangle', 'Equilateral Triangle Calculator')} helps with triangle calculations.`,
+          `Our ${createInternalLinkHTML('pythagorean-theorem', 'Pythagorean Theorem Calculator')} is useful for right triangle calculations within polygons.`
         ]} />
       </SEOSection>
 
@@ -255,7 +256,7 @@ export default function PolygonPage() {
           The formulas for regular polygons elegantly connect the number of sides, side length, apothem, area, perimeter, and angles through geometric and trigonometric relationships. With our calculator, you can focus on solving your problems rather than getting bogged down in manual calculations. Remember, these formulas apply specifically to regular polygons where all sides and angles are equal.
         </p>
         <p>
-          Ready to explore more geometry? Use our {createInternalLink('area', 'Area Calculator')} to calculate areas of various shapes, our {createInternalLink('perimeter', 'Perimeter Calculator')} to find perimeters, or check out our specialized calculators like the {createInternalLink('hexagon', 'Hexagon Calculator')} for hexagon-specific calculations.
+          Ready to explore more geometry? Use our <Link href="/math/area" className="text-blue-600 hover:text-blue-800 underline">Area Calculator</Link> to calculate areas of various shapes, our <Link href="/math/perimeter" className="text-blue-600 hover:text-blue-800 underline">Perimeter Calculator</Link> to find perimeters, or check out our specialized calculators like the <Link href="/math/hexagon" className="text-blue-600 hover:text-blue-800 underline">Hexagon Calculator</Link> for hexagon-specific calculations.
         </p>
       </SEOSection>
 
