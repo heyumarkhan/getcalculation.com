@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/diagonal-of-rectangle', priority: 0.8 },
     { slug: 'math/polygon', priority: 0.8 },
     { slug: 'math/rectangular-prism', priority: 0.8 },
+    { slug: 'math/hypotenuse', priority: 0.8 },
     { slug: 'math/sphere-volume', priority: 0.8 },
     { slug: 'math/volume', priority: 0.8 },
     { slug: 'math/perimeter', priority: 0.8 },

@@ -64,6 +64,7 @@ export const INTERNAL_LINKS = {
   'diagonal-of-rectangle': { href: '/math/diagonal-of-rectangle', title: 'Diagonal of a Rectangle Calculator' },
   'polygon': { href: '/math/polygon', title: 'Polygon Calculator' },
   'rectangular-prism': { href: '/math/rectangular-prism', title: 'Rectangular Prism Calculator' },
+  'hypotenuse': { href: '/math/hypotenuse', title: 'Hypotenuse Calculator' },
   'sphere-volume': { href: '/math/sphere-volume', title: 'Sphere Volume Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   'equilateral-triangle': { href: '/math/equilateral-triangle', title: 'Equilateral Triangle Calculator' },

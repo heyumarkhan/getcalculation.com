@@ -145,6 +145,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'hypotenuse',
+    name: 'Hypotenuse Calculator',
+    description: 'Calculate the hypotenuse of a right triangle using the Pythagorean theorem with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['hypotenuse calculator', 'pythagorean theorem', 'right triangle calculator', 'calculate hypotenuse', 'hypotenuse formula', 'pythagorean theorem calculator', 'find hypotenuse', 'right triangle hypotenuse', 'triangle calculator', 'geometry calculator'],
+    href: '/math/hypotenuse',
+    embedHref: '/embed/math/hypotenuse',
+    icon: '🔺',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
