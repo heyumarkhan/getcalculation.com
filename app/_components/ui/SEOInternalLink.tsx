@@ -37,6 +37,9 @@ export const INTERNAL_LINKS = {
   crossMultiplication: { href: '/math/cross-multiplication', title: 'Cross Multiplication Calculator' },
   heronsFormula: { href: '/math/herons-formula', title: 'Heron\'s Formula Calculator' },
   similarTriangles: { href: '/math/similar-triangles', title: 'Similar Triangles Calculator' },
+  'similar-triangles': { href: '/math/similar-triangles', title: 'Similar Triangles Calculator' },
+  isoscelesTriangle: { href: '/math/isosceles-triangle', title: 'Isosceles Triangle Calculator' },
+  'isosceles-triangle': { href: '/math/isosceles-triangle', title: 'Isosceles Triangle Calculator' },
   lineSegment: { href: '/math/line-segment-length', title: 'Line Segment Length Calculator' },
   midpoint: { href: '/math/midpoint', title: 'Midpoint Calculator' },
   triangularPrism: { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
@@ -68,6 +71,7 @@ export const INTERNAL_LINKS = {
   'sphere-volume': { href: '/math/sphere-volume', title: 'Sphere Volume Calculator' },
   'right-triangle': { href: '/math/right-triangle', title: 'Right Triangle Calculator' },
   'equilateral-triangle': { href: '/math/equilateral-triangle', title: 'Equilateral Triangle Calculator' },
+  'triangle-angle': { href: '/math/triangle-angle', title: 'Triangle Angle Calculator' },
   hexagon: { href: '/math/hexagon', title: 'Hexagon Calculator' },
   octagon: { href: '/math/octagon', title: 'Octagon Calculator' },
   'herons-formula': { href: '/math/herons-formula', title: 'Heron\'s Formula Calculator' },
@@ -79,12 +83,27 @@ export const INTERNAL_LINKS = {
   'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' }
 } as const;
 
-// Helper function to create internal links
+// Helper function to create internal links (returns React component)
 export function createInternalLink(key: keyof typeof INTERNAL_LINKS, text?: string) {
   const link = INTERNAL_LINKS[key];
+  if (!link) {
+    console.warn(`Internal link key "${String(key)}" not found in INTERNAL_LINKS`);
+    return <span>{text || String(key)}</span>;
+  }
   return (
     <SEOInternalLink href={link.href} title={link.title}>
       {text || link.title}
     </SEOInternalLink>
   );
+}
+
+// Helper function to create internal link HTML string for use in SEOList
+export function createInternalLinkHTML(key: keyof typeof INTERNAL_LINKS, text?: string): string {
+  const link = INTERNAL_LINKS[key];
+  if (!link) {
+    console.warn(`Internal link key "${String(key)}" not found in INTERNAL_LINKS`);
+    return text || String(key);
+  }
+  const linkText = text || link.title;
+  return `<a href="${link.href}" title="${link.title}" class="text-blue-600 hover:text-blue-800 underline">${linkText}</a>`;
 }

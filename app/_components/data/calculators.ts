@@ -157,6 +157,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'triangle-angle',
+    name: 'Triangle Angle Calculator',
+    description: 'Calculate all angles of a triangle using multiple methods: Law of Cosines, Law of Sines, coordinates, or area formula. Supports SSS, SAS, SSA, ASA, AAS cases, coordinate-based calculation, and area-based calculation with step-by-step solutions.',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['triangle angle calculator', 'calculate triangle angles', 'law of cosines', 'law of sines', 'triangle angles', 'SSS triangle', 'SAS triangle', 'SSA triangle', 'ASA triangle', 'AAS triangle', 'find triangle angles', 'triangle angle finder', 'geometry calculator', 'triangle calculator', 'coordinate triangle', 'triangle from coordinates', 'area triangle calculator'],
+    href: '/math/triangle-angle',
+    embedHref: '/embed/math/triangle-angle',
+    icon: '📐',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
