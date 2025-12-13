@@ -169,6 +169,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'twos-complement',
+    name: 'Two\'s Complement Calculator',
+    description: 'Convert between decimal numbers and two\'s complement binary representation instantly. Free two\'s complement calculator with step-by-step solutions for 4-bit, 8-bit, 16-bit, and 32-bit signed integers.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['two\'s complement calculator', 'twos complement calculator', '2s complement calculator', 'two\'s complement binary', 'signed binary calculator', 'binary to decimal', 'decimal to binary', 'two\'s complement converter', 'signed integer calculator', 'binary representation', 'computer science calculator', 'number system calculator'],
+    href: '/math/twos-complement',
+    embedHref: '/embed/math/twos-complement',
+    icon: '🔢',
+    color: 'purple'
+  },
+  {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope Intercept',
     description: 'Convert linear equations from Ax + By = C to y = mx + b format',
