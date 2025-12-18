@@ -80,7 +80,10 @@ export const INTERNAL_LINKS = {
   remainder: { href: '/math/remainder', title: 'Remainder Calculator' },
   inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' },
   log: { href: '/math/log', title: 'Log Calculator' },
-  'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' }
+  'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' },
+  // Physics calculators
+  'velocity-calculator': { href: '/physics/velocity-calculator', title: 'Velocity Calculator' },
+  'watt-calculator': { href: '/physics/watt-calculator', title: 'Watt Calculator' }
 } as const;
 
 // Helper function to create internal links (returns React component)

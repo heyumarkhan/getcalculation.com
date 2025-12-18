@@ -2,17 +2,41 @@
 
 import { useState, useMemo } from 'react';
 import { calculators, categories } from './data/calculators';
-
-interface CalculatorGridProps {
-  subject?: string; // 'math', 'physics', etc.
-}
+import { useRouter } from 'next/navigation';
 import Card from './ui/Card';
 import Input from './ui/Input';
 import Button from './ui/Button';
 
+interface CalculatorGridProps {
+  subject?: string; // 'math', 'physics', etc.
+}
+
 export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+
+  // Get available major subjects (Math, Physics, etc.)
+  const majorSubjects = useMemo(() => {
+    const subjectSet = new Set(calculators.map(c => c.subject));
+    return Array.from(subjectSet).map(s => ({
+      name: s.charAt(0).toUpperCase() + s.slice(1),
+      value: s,
+      href: `/${s}`,
+      count: calculators.filter(c => c.subject === s).length
+    }));
+  }, []);
+
+  // Get subcategories for current subject
+  const subjectCategories = useMemo(() => {
+    if (!subject) return [];
+    const categorySet = new Set(
+      calculators
+        .filter(c => c.subject === subject)
+        .map(c => c.category)
+    );
+    return ['All', ...Array.from(categorySet)];
+  }, [subject]);
 
   const filteredCalculators = useMemo(() => {
     return calculators.filter(calculator => {
@@ -31,12 +55,22 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
 
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
+      // Math Categories
       'Geometry': 'bg-blue-100 text-blue-800 border-blue-200',
       'Algebra': 'bg-green-100 text-green-800 border-green-200',
       'Trigonometry': 'bg-purple-100 text-purple-800 border-purple-200',
       'Statistics': 'bg-orange-100 text-orange-800 border-orange-200',
       'Calculus': 'bg-red-100 text-red-800 border-red-200',
-      'Kinematics': 'bg-cyan-100 text-cyan-800 border-cyan-200'
+      'Combinatorics': 'bg-pink-100 text-pink-800 border-pink-200',
+      // Physics Categories
+      'Kinematics': 'bg-cyan-100 text-cyan-800 border-cyan-200',
+      'Mechanics': 'bg-indigo-100 text-indigo-800 border-indigo-200',
+      'Thermodynamics': 'bg-red-100 text-red-800 border-red-200',
+      'Electromagnetism': 'bg-yellow-100 text-yellow-800 border-yellow-200',
+      'Optics': 'bg-purple-100 text-purple-800 border-purple-200',
+      'Quantum Mechanics': 'bg-pink-100 text-pink-800 border-pink-200',
+      'Waves': 'bg-teal-100 text-teal-800 border-teal-200',
+      'Fluid Mechanics': 'bg-blue-100 text-blue-800 border-blue-200'
     };
     return colors[category] || 'bg-gray-100 text-gray-800 border-gray-200';
   };
@@ -56,10 +90,14 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
       {/* Search Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          {subject ? `${subject.charAt(0).toUpperCase() + subject.slice(1)} Calculators` : 'Math Calculators'}
+          {subject 
+            ? `${subject.charAt(0).toUpperCase() + subject.slice(1)} Calculators` 
+            : 'Free Online Calculators & Tools'}
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          Find the perfect calculator for your {subject || 'math'} problems
+          {subject 
+            ? `Find the perfect calculator for your ${subject} problems`
+            : 'Discover calculators and tools for math, physics, and more'}
         </p>
         
         {/* Search Input */}
@@ -73,23 +111,40 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
           />
         </div>
 
-        {/* Category Filter */}
+        {/* Category/Subject Filter */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              variant={selectedCategory === category ? "primary" : "outline"}
-              size="sm"
-              className={`px-4 py-2 ${
-                selectedCategory === category 
-                  ? 'bg-[#820ECC] text-white' 
-                  : 'text-gray-700 hover:bg-gray-100'
-              }`}
-            >
-              {category}
-            </Button>
-          ))}
+          {!subject ? (
+            // Show major categories (Math, Physics) on home page
+            majorSubjects.map((subjectItem) => (
+              <Button
+                key={subjectItem.value}
+                onClick={() => router.push(subjectItem.href)}
+                variant="primary"
+                size="lg"
+                className="px-6 py-3 text-base font-semibold"
+                style={{ backgroundColor: '#820ECC' }}
+              >
+                {subjectItem.name} ({subjectItem.count})
+              </Button>
+            ))
+          ) : (
+            // Show subcategories on subject pages
+            subjectCategories.map((category) => (
+              <Button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                variant={selectedCategory === category ? "primary" : "outline"}
+                size="sm"
+                className={`px-4 py-2 ${
+                  selectedCategory === category 
+                    ? 'bg-[#820ECC] text-white' 
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                {category}
+              </Button>
+            ))
+          )}
         </div>
 
         {/* Results Count */}

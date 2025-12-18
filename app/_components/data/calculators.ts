@@ -313,6 +313,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'watt-calculator',
+    name: 'Watt Calculator',
+    description: 'Calculate electrical power, voltage, current, and resistance using P = V × I, P = V²/R, and P = I²R formulas',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['watt calculator', 'power calculator', 'electrical power', 'voltage', 'current', 'resistance', 'ohms law', 'electricity', 'physics', 'electromagnetism', 'watts', 'volts', 'amperes'],
+    href: '/physics/watt-calculator',
+    embedHref: '/embed/physics/watt-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
