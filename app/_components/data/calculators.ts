@@ -899,6 +899,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/fraction',
     icon: '🔢',
     color: 'blue'
+  },
+  {
+    id: 'twos-complement',
+    name: 'Two\'s Complement Calculator',
+    description: 'Convert between decimal and two\'s complement binary representation. Calculate two\'s complement for signed integers with step-by-step solutions for 8-bit, 16-bit, and 32-bit formats.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['two\'s complement calculator', 'twos complement', 'two\'s complement binary', 'signed binary calculator', 'binary to decimal signed', 'decimal to two\'s complement', 'two\'s complement converter', 'signed integer calculator', 'binary arithmetic', 'two\'s complement representation', 'negative binary', 'signed number calculator'],
+    href: '/math/twos-complement',
+    embedHref: '/embed/math/twos-complement',
+    icon: '🔢',
+    color: 'purple'
   }
 ];
 
