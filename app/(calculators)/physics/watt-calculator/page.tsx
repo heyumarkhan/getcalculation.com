@@ -8,7 +8,7 @@ export default function WattCalculatorPage() {
     <CalculatorPageTemplate
       title="Watt Calculator: Calculate Electrical Power, Voltage, Current & Resistance"
       description="Free online watt calculator to calculate electrical power (watts), voltage (volts), current (amperes), and resistance (ohms). Use formulas P = V × I, P = V²/R, and P = I²R with step-by-step solutions."
-      calculator={<WattCalculator />}
+      calculator={<WattCalculator primaryColor="#820ECC" />}
       slug="physics/watt-calculator"
       category="Electromagnetism"
       features={[
