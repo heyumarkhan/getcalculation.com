@@ -337,6 +337,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'wet-bulb-calculator',
+    name: 'Wet Bulb Calculator',
+    description: 'Calculate wet bulb temperature from dry bulb temperature and relative humidity using psychrometric formulas. Essential for HVAC, meteorology, and thermal comfort analysis.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['wet bulb calculator', 'wet bulb temperature', 'dry bulb temperature', 'relative humidity', 'psychrometric calculator', 'thermodynamics', 'HVAC calculator', 'humidity calculator', 'temperature calculator', 'dew point', 'heat index', 'thermal comfort', 'air conditioning', 'meteorology', 'psychrometrics'],
+    href: '/physics/wet-bulb-calculator',
+    embedHref: '/embed/physics/wet-bulb-calculator',
+    icon: '🌡️',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
