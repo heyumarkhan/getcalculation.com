@@ -83,6 +83,7 @@ export const INTERNAL_LINKS = {
   'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' },
   // Physics calculators
   'velocity-calculator': { href: '/physics/velocity-calculator', title: 'Velocity Calculator' },
+  'acceleration-calculator': { href: '/physics/acceleration-calculator', title: 'Acceleration Calculator' },
   'watt-calculator': { href: '/physics/watt-calculator', title: 'Watt Calculator' }
 } as const;
 

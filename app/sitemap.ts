@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'math/percentage-difference', priority: 0.8 },
     { slug: 'math/twos-complement', priority: 0.8 },
     { slug: 'physics/velocity-calculator', priority: 0.8 },
+    { slug: 'physics/acceleration-calculator', priority: 0.8 },
     { slug: 'physics/watt-calculator', priority: 0.8 }
   ]
 
