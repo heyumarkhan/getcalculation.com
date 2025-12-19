@@ -313,6 +313,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'acceleration-calculator',
+    name: 'Acceleration Calculator',
+    description: 'Calculate acceleration, initial velocity, final velocity, and time using the formula a = (v - u) / t. Free online physics calculator for kinematics problems.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['acceleration calculator', 'calculate acceleration', 'acceleration formula', 'kinematics calculator', 'physics calculator', 'velocity acceleration', 'acceleration physics', 'motion calculator', 'constant acceleration', 'acceleration time', 'initial velocity', 'final velocity', 'acceleration equation', 'physics kinematics', 'acceleration units'],
+    href: '/physics/acceleration-calculator',
+    embedHref: '/embed/physics/acceleration-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'watt-calculator',
     name: 'Watt Calculator',
     description: 'Calculate electrical power, voltage, current, and resistance using P = V × I, P = V²/R, and P = I²R formulas',
