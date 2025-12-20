@@ -385,6 +385,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'torque-calculator',
+    name: 'Torque Calculator',
+    description: 'Calculate torque, force, or lever arm distance using τ = F × r. Free online mechanics calculator for physics and engineering with multiple unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['torque calculator', 'calculate torque', 'torque formula', 'torque equation', 'τ = Fr', 'rotational force', 'moment calculator', 'lever arm calculator', 'mechanics calculator', 'physics calculator', 'torque units', 'N·m', 'lb·ft', 'pound-feet', 'newton-meters', 'rotational mechanics', 'angular force', 'torque physics', 'force distance', 'lever calculator', 'torque calculation'],
+    href: '/physics/torque-calculator',
+    embedHref: '/embed/physics/torque-calculator',
+    icon: '⚙️',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
