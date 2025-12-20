@@ -361,6 +361,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'specific-heat-calculator',
+    name: 'Specific Heat Calculator',
+    description: 'Calculate heat energy, mass, specific heat capacity, or temperature change using Q = m × c × ΔT. Free online thermodynamics calculator for physics and engineering.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['specific heat calculator', 'heat capacity calculator', 'heat energy calculator', 'specific heat capacity', 'heat transfer calculator', 'thermodynamics calculator', 'Q = mcΔT', 'heat equation', 'thermal energy', 'specific heat formula', 'calculate specific heat', 'heat capacity formula', 'thermal physics', 'calorimetry calculator', 'heat energy formula', 'specific heat capacity formula', 'temperature change calculator', 'physics calculator', 'thermodynamics', 'heat calculation', 'thermal calculation'],
+    href: '/physics/specific-heat-calculator',
+    embedHref: '/embed/physics/specific-heat-calculator',
+    icon: '🌡️',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
