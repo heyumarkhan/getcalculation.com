@@ -349,6 +349,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'density-mass-volume-calculator',
+    name: 'Density Mass Volume Calculator',
+    description: 'Calculate density, mass, or volume using the formula ρ = m/V. Free online physics calculator for material properties, fluid mechanics, and engineering calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['density calculator', 'mass calculator', 'volume calculator', 'density mass volume', 'density formula', 'mass density', 'volume density', 'physics calculator', 'material density', 'fluid density', 'density equation', 'calculate density', 'find density', 'density units', 'kg/m³', 'g/cm³', 'density physics', 'mechanics calculator', 'material properties', 'density mass volume formula', 'ρ = m/V'],
+    href: '/physics/density-mass-volume-calculator',
+    embedHref: '/embed/physics/density-mass-volume-calculator',
+    icon: '⚖️',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
