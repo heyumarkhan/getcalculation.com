@@ -397,6 +397,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'power-to-weight-ratio-calculator',
+    name: 'Power-to-Weight Ratio Calculator',
+    description: 'Calculate power, weight, or power-to-weight ratio using P/W = Power / Weight. Free online mechanics calculator for automotive, aerospace, and engineering applications.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['power to weight ratio calculator', 'power-to-weight ratio', 'power weight ratio', 'P/W ratio calculator', 'calculate power to weight ratio', 'power per weight', 'performance ratio calculator', 'automotive calculator', 'hp per lb', 'watts per kg', 'power density', 'specific power', 'power-to-weight', 'P/W formula', 'mechanics calculator', 'physics calculator', 'vehicle performance', 'engine performance', 'power weight ratio formula'],
+    href: '/physics/power-to-weight-ratio-calculator',
+    embedHref: '/embed/physics/power-to-weight-ratio-calculator',
+    icon: '🚗',
+    color: 'orange'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
