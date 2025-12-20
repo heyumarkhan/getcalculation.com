@@ -373,6 +373,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'flow-rate-calculator',
+    name: 'Flow Rate Calculator',
+    description: 'Calculate volumetric flow rate, area, velocity, volume, or time using Q = A × v or Q = V/t. Free online fluid mechanics calculator for physics and engineering.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['flow rate calculator', 'volumetric flow rate', 'flow rate formula', 'fluid flow calculator', 'flow velocity calculator', 'Q = Av', 'flow rate equation', 'fluid mechanics calculator', 'volume flow rate', 'calculate flow rate', 'flow rate units', 'm³/s', 'L/s', 'gal/min', 'flow velocity', 'cross-sectional area', 'fluid dynamics', 'pipe flow', 'flow measurement', 'fluid flow rate', 'flow rate physics'],
+    href: '/physics/flow-rate-calculator',
+    embedHref: '/embed/physics/flow-rate-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
