@@ -421,6 +421,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'relative-humidity-calculator',
+    name: 'Relative Humidity Calculator',
+    description: 'Calculate relative humidity, dry bulb temperature, or dew point temperature using psychrometric formulas. Free online thermodynamics calculator for HVAC, meteorology, and environmental analysis.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['relative humidity calculator', 'calculate relative humidity', 'humidity calculator', 'RH calculator', 'dew point calculator', 'dry bulb temperature', 'psychrometric calculator', 'humidity formula', 'relative humidity formula', 'RH formula', 'humidity percentage', 'dew point temperature', 'thermodynamics calculator', 'HVAC calculator', 'meteorology calculator', 'air humidity', 'moisture calculator', 'vapor pressure', 'saturation vapor pressure', 'humidity physics'],
+    href: '/physics/relative-humidity-calculator',
+    embedHref: '/embed/physics/relative-humidity-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
