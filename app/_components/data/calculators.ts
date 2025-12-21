@@ -409,6 +409,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'wavelength-calculator',
+    name: 'Wavelength Calculator',
+    description: 'Calculate wavelength, velocity, or frequency using λ = v/f or λ = c/f for electromagnetic waves. Free online waves calculator for physics and engineering.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['wavelength calculator', 'calculate wavelength', 'wavelength formula', 'λ = v/f', 'wavelength frequency', 'wave calculator', 'electromagnetic waves', 'light wavelength', 'sound wavelength', 'frequency wavelength', 'wave velocity', 'speed of light', 'wavelength equation', 'wave physics', 'optics calculator', 'waves calculator', 'physics calculator', 'wavelength units', 'nm wavelength', 'wavelength frequency calculator'],
+    href: '/physics/wavelength-calculator',
+    embedHref: '/embed/physics/wavelength-calculator',
+    icon: '🌊',
+    color: 'blue'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
