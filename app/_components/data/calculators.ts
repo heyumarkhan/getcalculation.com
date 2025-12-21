@@ -433,6 +433,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'gravitational-force-calculator',
+    name: 'Gravitational Force Calculator',
+    description: 'Calculate gravitational force, mass, or distance using F = G × (m₁ × m₂) / r². Free online mechanics calculator for physics and astronomy with Newton\'s law of universal gravitation.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['gravitational force calculator', 'calculate gravitational force', 'gravity calculator', 'Newton\'s law of gravitation', 'universal gravitation', 'F = Gm1m2/r²', 'gravitational force formula', 'gravity formula', 'law of universal gravitation calculator', 'gravitational constant', 'gravitational force equation', 'physics calculator', 'mechanics calculator', 'gravity force', 'gravitational attraction', 'mass gravity', 'distance gravity', 'gravitational force physics', 'Newton gravity'],
+    href: '/physics/gravitational-force-calculator',
+    embedHref: '/embed/physics/gravitational-force-calculator',
+    icon: '🌍',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
