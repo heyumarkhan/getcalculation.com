@@ -66,7 +66,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/flow-rate-calculator', priority: 0.8 },
     { slug: 'physics/torque-calculator', priority: 0.8 },
     { slug: 'physics/power-to-weight-ratio-calculator', priority: 0.8 },
-    { slug: 'physics/wavelength-calculator', priority: 0.8 }
+    { slug: 'physics/wavelength-calculator', priority: 0.8 },
+    { slug: 'physics/relative-humidity-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries
