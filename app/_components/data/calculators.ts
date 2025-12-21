@@ -457,6 +457,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'charles-law-calculator',
+    name: 'Charles\'s Law Calculator',
+    description: 'Calculate volume or temperature using Charles\'s Law: V₁/T₁ = V₂/T₂. Free online thermodynamics calculator for ideal gas law calculations with temperature and volume relationships.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['charles law calculator', 'charles\'s law calculator', 'charles law formula', 'V1/T1 = V2/T2', 'gas law calculator', 'volume temperature relationship', 'ideal gas law', 'thermodynamics calculator', 'charles law equation', 'gas volume calculator', 'temperature volume calculator', 'charles law physics', 'gas laws', 'volume temperature calculator', 'charles law formula calculator', 'calculate volume charles law', 'calculate temperature charles law', 'thermodynamics', 'gas physics calculator'],
+    href: '/physics/charles-law-calculator',
+    embedHref: '/embed/physics/charles-law-calculator',
+    icon: '🌡️',
+    color: 'red'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
