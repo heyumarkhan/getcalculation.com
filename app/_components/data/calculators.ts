@@ -445,6 +445,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'gear-ratio-calculator',
+    name: 'Gear Ratio Calculator',
+    description: 'Calculate gear ratio from number of teeth or speeds using GR = Driven/Driving or GR = Input Speed/Output Speed. Free online mechanics calculator for mechanical engineering and physics.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['gear ratio calculator', 'calculate gear ratio', 'gear ratio formula', 'gear calculator', 'mechanical gear ratio', 'gear ratio equation', 'driving gear', 'driven gear', 'gear teeth calculator', 'speed ratio calculator', 'mechanical advantage', 'gear reduction', 'transmission ratio', 'gear ratio physics', 'mechanics calculator', 'engineering calculator', 'gear ratio calculation', 'rpm gear ratio', 'angular velocity gear'],
+    href: '/physics/gear-ratio-calculator',
+    embedHref: '/embed/physics/gear-ratio-calculator',
+    icon: '⚙️',
+    color: 'orange'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
