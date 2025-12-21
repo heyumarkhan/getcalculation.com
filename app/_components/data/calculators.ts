@@ -469,6 +469,18 @@ export const calculators: Calculator[] = [
     color: 'red'
   },
   {
+    id: 'potential-energy-calculator',
+    name: 'Potential Energy Calculator',
+    description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['potential energy calculator', 'calculate potential energy', 'PE = mgh', 'gravitational potential energy', 'potential energy formula', 'mgh calculator', 'potential energy equation', 'height energy calculator', 'gravity potential energy', 'mechanics calculator', 'physics calculator', 'energy calculator', 'potential energy physics', 'gravitational energy', 'PE formula', 'calculate PE', 'potential energy calculation', 'mgh formula', 'energy height calculator'],
+    href: '/physics/potential-energy-calculator',
+    embedHref: '/embed/physics/potential-energy-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest',
