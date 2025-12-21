@@ -68,7 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/power-to-weight-ratio-calculator', priority: 0.8 },
     { slug: 'physics/wavelength-calculator', priority: 0.8 },
     { slug: 'physics/relative-humidity-calculator', priority: 0.8 },
-    { slug: 'physics/gravitational-force-calculator', priority: 0.8 }
+    { slug: 'physics/gravitational-force-calculator', priority: 0.8 },
+    { slug: 'physics/gear-ratio-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries
