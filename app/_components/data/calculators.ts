@@ -577,6 +577,18 @@ export const calculators: Calculator[] = [
     color: 'indigo'
   },
   {
+    id: 'hp-to-amps-calculator',
+    name: 'HP to Amps Calculator',
+    description: 'Convert horsepower to amperes using I = (hp × 746) / (V × efficiency). Free online motor current calculator for sizing circuit breakers and wire gauges.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['hp to amps calculator', 'horsepower to amps calculator', 'hp to amperes', 'motor current calculator', 'calculate amps from hp', 'horsepower amps conversion', 'motor amps calculator', 'electrical motor calculator', 'hp amps formula', 'I = hp × 746 / V', 'motor current calculation', 'circuit breaker sizing', 'wire gauge calculator', 'motor power calculator', 'electrical engineering calculator', 'hp to watts to amps', 'motor efficiency calculator', 'electrical calculator', 'hp amps voltage', 'motor sizing calculator'],
+    href: '/physics/hp-to-amps-calculator',
+    embedHref: '/embed/physics/hp-to-amps-calculator',
+    icon: '⚙️',
+    color: 'orange'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
