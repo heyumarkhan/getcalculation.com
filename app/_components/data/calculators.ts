@@ -565,6 +565,18 @@ export const calculators: Calculator[] = [
     color: 'yellow'
   },
   {
+    id: 'wavelength-to-frequency-calculator',
+    name: 'Wavelength to Frequency Calculator',
+    description: 'Convert between wavelength and frequency using f = c/λ for electromagnetic waves or f = v/λ for general waves. Free online wave calculator with support for multiple units.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['wavelength to frequency calculator', 'frequency to wavelength calculator', 'wavelength frequency converter', 'calculate frequency from wavelength', 'calculate wavelength from frequency', 'f = c/λ', 'wavelength frequency formula', 'electromagnetic wave calculator', 'light frequency calculator', 'radio frequency calculator', 'wave calculator', 'wavelength calculator', 'frequency calculator', 'c = λf', 'wave equation calculator', 'electromagnetic spectrum calculator', 'photon energy calculator', 'wave physics calculator', 'wavelength frequency relationship', 'light wavelength frequency'],
+    href: '/physics/wavelength-to-frequency-calculator',
+    embedHref: '/embed/physics/wavelength-to-frequency-calculator',
+    icon: '〰️',
+    color: 'indigo'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
