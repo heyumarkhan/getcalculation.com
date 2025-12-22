@@ -481,6 +481,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'ideal-gas-law-calculator',
+    name: 'Ideal Gas Law Calculator',
+    description: 'Calculate pressure, volume, moles, or temperature using the ideal gas law: PV = nRT. Free online thermodynamics calculator for physics, chemistry, and engineering with multiple unit support.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['ideal gas law calculator', 'PV = nRT calculator', 'ideal gas law', 'gas law calculator', 'PV nRT calculator', 'ideal gas equation', 'gas law formula', 'calculate pressure volume temperature moles', 'ideal gas law formula', 'thermodynamics calculator', 'gas physics calculator', 'chemistry calculator', 'ideal gas constant', 'gas law equation', 'PV equals nRT', 'ideal gas law physics', 'gas calculations', 'molar volume calculator', 'gas pressure calculator', 'ideal gas thermodynamics'],
+    href: '/physics/ideal-gas-law-calculator',
+    embedHref: '/embed/physics/ideal-gas-law-calculator',
+    icon: '💨',
+    color: 'blue'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',

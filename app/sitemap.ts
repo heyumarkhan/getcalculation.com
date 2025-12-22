@@ -72,7 +72,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/gear-ratio-calculator', priority: 0.8 },
     { slug: 'physics/charles-law-calculator', priority: 0.8 },
     { slug: 'physics/potential-energy-calculator', priority: 0.8 },
-    { slug: 'physics/enthalpy-calculator', priority: 0.8 }
+    { slug: 'physics/enthalpy-calculator', priority: 0.8 },
+    { slug: 'physics/ideal-gas-law-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries
