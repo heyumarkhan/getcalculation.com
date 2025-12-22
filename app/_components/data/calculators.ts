@@ -613,6 +613,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'coulombs-law-calculator',
+    name: 'Coulomb\'s Law Calculator',
+    description: 'Calculate electrostatic force using F = k × (q₁ × q₂) / r². Free online electrostatics calculator for charge interactions and electric force calculations.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['coulombs law calculator', 'coulomb law calculator', 'electrostatic force calculator', 'electric force calculator', 'F = kq1q2/r2', 'coulomb force calculator', 'charge force calculator', 'electrostatics calculator', 'electric charge calculator', 'coulomb constant calculator', 'electrostatic interaction', 'electric field calculator', 'charge interaction calculator', 'physics calculator', 'electromagnetism calculator', 'coulomb law formula', 'electrostatic force formula', 'electric force formula', 'charge distance calculator', 'coulomb calculator'],
+    href: '/physics/coulombs-law-calculator',
+    embedHref: '/embed/physics/coulombs-law-calculator',
+    icon: '⚡',
+    color: 'blue'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
