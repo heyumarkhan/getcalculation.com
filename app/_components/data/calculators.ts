@@ -601,6 +601,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'impulse-momentum-calculator',
+    name: 'Impulse and Momentum Calculator',
+    description: 'Calculate impulse (J = F×t) and momentum (p = m×v) with impulse-momentum theorem. Free online mechanics calculator for collision analysis and force-time relationships.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['impulse momentum calculator', 'impulse calculator', 'momentum calculator', 'J = F×t', 'p = m×v', 'impulse momentum theorem', 'change in momentum calculator', 'collision calculator', 'force time calculator', 'momentum physics calculator', 'impulse physics', 'momentum formula', 'impulse formula', 'physics mechanics calculator', 'momentum change calculator', 'impulse momentum relationship', 'physics calculator', 'mechanics calculator', 'collision analysis', 'momentum impulse'],
+    href: '/physics/impulse-momentum-calculator',
+    embedHref: '/embed/physics/impulse-momentum-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
