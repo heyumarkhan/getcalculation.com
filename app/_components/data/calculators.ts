@@ -505,6 +505,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'wire-size-calculator',
+    name: 'Wire Size Calculator',
+    description: 'Calculate wire gauge (AWG), maximum current capacity, or voltage drop for electrical wiring. Free online electrical engineering calculator with support for copper and aluminum wires.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['wire size calculator', 'AWG calculator', 'wire gauge calculator', 'calculate wire size', 'wire size AWG', 'electrical wire calculator', 'voltage drop calculator', 'wire current capacity', 'AWG wire size', 'wire gauge size', 'electrical wire sizing', 'wire diameter calculator', 'copper wire calculator', 'aluminum wire calculator', 'wire resistance calculator', 'electrical calculator', 'wire ampacity calculator', 'wire size for current', 'voltage drop wire size', 'electrical engineering calculator'],
+    href: '/physics/wire-size-calculator',
+    embedHref: '/embed/physics/wire-size-calculator',
+    icon: '🔌',
+    color: 'orange'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
