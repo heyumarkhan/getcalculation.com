@@ -493,6 +493,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'frequency-calculator',
+    name: 'Frequency Calculator',
+    description: 'Calculate frequency from period (f = 1/T), wavelength and velocity (f = v/λ), or electromagnetic waves (f = c/λ). Free online waves calculator for physics and engineering.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['frequency calculator', 'calculate frequency', 'frequency formula', 'f = 1/T', 'frequency period calculator', 'frequency wavelength calculator', 'f = v/λ', 'frequency velocity wavelength', 'frequency waves calculator', 'hertz calculator', 'wave frequency', 'electromagnetic frequency', 'frequency physics', 'waves calculator', 'frequency equation', 'calculate frequency from period', 'frequency wavelength velocity', 'frequency speed of light', 'frequency calculator physics', 'wave frequency formula'],
+    href: '/physics/frequency-calculator',
+    embedHref: '/embed/physics/frequency-calculator',
+    icon: '📡',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
