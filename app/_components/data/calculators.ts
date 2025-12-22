@@ -517,6 +517,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'parallel-resistor-calculator',
+    name: 'Parallel Resistor Calculator',
+    description: 'Calculate equivalent resistance for resistors connected in parallel. Free online electrical circuit calculator with support for multiple resistors using 1/R_total = 1/R₁ + 1/R₂ + ...',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['parallel resistor calculator', 'parallel resistance calculator', 'resistors in parallel', 'calculate parallel resistance', 'equivalent resistance parallel', 'parallel circuit calculator', '1/R total formula', 'parallel resistor formula', 'resistor parallel calculator', 'parallel resistance formula', 'electrical circuit calculator', 'resistance in parallel', 'parallel resistors', 'equivalent resistance calculator', 'parallel circuit resistance', 'resistor calculator', 'parallel resistor equation', 'calculate parallel resistors', 'parallel resistance equation', 'circuit resistance calculator'],
+    href: '/physics/parallel-resistor-calculator',
+    embedHref: '/embed/physics/parallel-resistor-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
