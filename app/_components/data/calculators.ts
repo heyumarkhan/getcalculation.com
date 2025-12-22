@@ -469,6 +469,18 @@ export const calculators: Calculator[] = [
     color: 'red'
   },
   {
+    id: 'enthalpy-calculator',
+    name: 'Enthalpy Calculator',
+    description: 'Calculate enthalpy change using multiple methods: ΔH = ΔU + PΔV, ΔH = Q (at constant pressure), or ΔH = m × c × ΔT. Free online thermodynamics calculator for physics, chemistry, and engineering.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['enthalpy calculator', 'calculate enthalpy', 'enthalpy change calculator', 'ΔH calculator', 'enthalpy formula', 'enthalpy change formula', 'ΔH = ΔU + PΔV', 'enthalpy thermodynamics', 'heat content calculator', 'enthalpy calculation', 'thermodynamics calculator', 'enthalpy physics', 'enthalpy chemistry', 'enthalpy change', 'calculate ΔH', 'enthalpy energy', 'enthalpy equation', 'H = U + PV', 'enthalpy thermodynamics calculator', 'enthalpy heat transfer', 'constant pressure enthalpy', 'specific heat enthalpy'],
+    href: '/physics/enthalpy-calculator',
+    embedHref: '/embed/physics/enthalpy-calculator',
+    icon: '🔥',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
