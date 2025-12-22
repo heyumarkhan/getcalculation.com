@@ -541,6 +541,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'reynolds-number-calculator',
+    name: 'Reynolds Number Calculator',
+    description: 'Calculate Reynolds number or any variable using Re = (ρ × v × D) / μ. Free online fluid mechanics calculator with flow regime determination (laminar, transitional, turbulent).',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['reynolds number calculator', 'calculate reynolds number', 'reynolds number formula', 'Re = ρvD/μ', 'fluid mechanics calculator', 'reynolds number equation', 'laminar flow calculator', 'turbulent flow calculator', 'flow regime calculator', 'reynolds number Re', 'calculate flow regime', 'fluid flow calculator', 'reynolds number physics', 'reynolds number formula calculator', 'fluid dynamics calculator', 'reynolds number calculation', 'pipe flow calculator', 'reynolds number engineering', 'fluid mechanics reynolds number'],
+    href: '/physics/reynolds-number-calculator',
+    embedHref: '/embed/physics/reynolds-number-calculator',
+    icon: '🌊',
+    color: 'cyan'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
