@@ -589,6 +589,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'friction-loss-calculator',
+    name: 'Friction Loss Calculator',
+    description: 'Calculate head loss and pressure drop in pipes using Darcy-Weisbach or Hazen-Williams equations. Free online fluid mechanics calculator for pipe sizing and pump selection.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['friction loss calculator', 'head loss calculator', 'pressure drop calculator', 'pipe friction calculator', 'darcy weisbach calculator', 'hazen williams calculator', 'pipe head loss', 'friction loss in pipes', 'pressure loss calculator', 'fluid mechanics calculator', 'pipe flow calculator', 'pump sizing calculator', 'pipe sizing calculator', 'friction factor calculator', 'hydraulic head loss', 'pipe pressure drop', 'fluid friction calculator', 'pipe flow resistance', 'head loss formula', 'pressure drop formula'],
+    href: '/physics/friction-loss-calculator',
+    embedHref: '/embed/physics/friction-loss-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
