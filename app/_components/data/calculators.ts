@@ -553,6 +553,18 @@ export const calculators: Calculator[] = [
     color: 'cyan'
   },
   {
+    id: 'watt-hour-calculator',
+    name: 'Watt-hour Calculator',
+    description: 'Calculate energy (watt-hours), power, or time using E = P × t. Free online energy calculator with support for multiple units including kWh, Wh, Joules, and BTU.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['watt hour calculator', 'watt-hour calculator', 'calculate watt hours', 'energy calculator', 'E = P × t', 'power time calculator', 'energy consumption calculator', 'kWh calculator', 'watt hour formula', 'energy power time', 'calculate energy from power', 'calculate power from energy', 'calculate time from energy', 'battery capacity calculator', 'electrical energy calculator', 'energy formula calculator', 'power consumption calculator', 'watt hour equation', 'energy calculation', 'physics energy calculator'],
+    href: '/physics/watt-hour-calculator',
+    embedHref: '/embed/physics/watt-hour-calculator',
+    icon: '⚡',
+    color: 'yellow'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
