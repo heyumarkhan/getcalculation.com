@@ -529,6 +529,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'force-calculator',
+    name: 'Force Calculator',
+    description: 'Calculate force, mass, or acceleration using Newton\'s second law: F = m × a. Free online physics calculator for mechanics problems with comprehensive unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['force calculator', 'calculate force', 'force formula', 'F = ma', 'Newton\'s second law calculator', 'force mass acceleration', 'calculate force from mass and acceleration', 'force physics calculator', 'mechanics calculator', 'Newton force calculator', 'force equation', 'F = m × a', 'force calculation', 'physics force calculator', 'calculate acceleration from force', 'calculate mass from force', 'force mass acceleration calculator', 'Newton\'s law calculator', 'force physics', 'mechanics force calculator'],
+    href: '/physics/force-calculator',
+    embedHref: '/embed/physics/force-calculator',
+    icon: '💪',
+    color: 'blue'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',

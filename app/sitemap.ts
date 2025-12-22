@@ -76,7 +76,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/ideal-gas-law-calculator', priority: 0.8 },
     { slug: 'physics/frequency-calculator', priority: 0.8 },
     { slug: 'physics/wire-size-calculator', priority: 0.8 },
-    { slug: 'physics/parallel-resistor-calculator', priority: 0.8 }
+    { slug: 'physics/parallel-resistor-calculator', priority: 0.8 },
+    { slug: 'physics/force-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries
