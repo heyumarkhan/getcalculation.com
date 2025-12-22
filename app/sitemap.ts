@@ -84,7 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/hp-to-amps-calculator', priority: 0.8 },
     { slug: 'physics/friction-loss-calculator', priority: 0.8 },
     { slug: 'physics/impulse-momentum-calculator', priority: 0.8 },
-    { slug: 'physics/coulombs-law-calculator', priority: 0.8 }
+    { slug: 'physics/coulombs-law-calculator', priority: 0.8 },
+    { slug: 'physics/time-dilation-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries

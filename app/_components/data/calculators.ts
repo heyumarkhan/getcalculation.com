@@ -625,6 +625,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'time-dilation-calculator',
+    name: 'Time Dilation Calculator',
+    description: 'Calculate time dilation using special relativity: Δt = Δt₀ / √(1 - v²/c²). Free online relativity calculator for proper time, dilated time, and velocity calculations.',
+    category: 'Relativity',
+    subject: 'physics',
+    keywords: ['time dilation calculator', 'relativity calculator', 'special relativity calculator', 'time dilation formula', 'Δt = Δt₀/√(1-v²/c²)', 'lorentz factor calculator', 'proper time calculator', 'dilated time calculator', 'relativistic time calculator', 'time dilation physics', 'special relativity time', 'einstein time dilation', 'relativistic effects calculator', 'physics calculator', 'relativity physics', 'time dilation equation', 'lorentz transformation', 'gamma factor calculator', 'relativistic velocity calculator', 'time dilation effect'],
+    href: '/physics/time-dilation-calculator',
+    embedHref: '/embed/physics/time-dilation-calculator',
+    icon: '⏱️',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h. Free online mechanics calculator for physics and engineering with multiple unit support.',
