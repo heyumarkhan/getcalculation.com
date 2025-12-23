@@ -385,6 +385,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'pipe-flow-calculator',
+    name: 'Pipe Flow Calculator',
+    description: 'Calculate pipe flow rate, velocity, diameter, or cross-sectional area using Q = A × v = π × (D/2)² × v. Free online fluid mechanics calculator for plumbing, HVAC, and engineering.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['pipe flow calculator', 'pipe flow rate calculator', 'calculate pipe flow', 'pipe velocity calculator', 'pipe diameter calculator', 'pipe flow formula', 'Q = A×v', 'pipe flow rate', 'pipe velocity', 'pipe sizing calculator', 'fluid flow calculator', 'pipe flow rate formula', 'circular pipe flow', 'pipe flow velocity', 'pipe diameter sizing', 'flow rate pipe', 'pipe flow calculations', 'fluid mechanics calculator', 'pipe flow engineering', 'hydraulic calculator'],
+    href: '/physics/pipe-flow-calculator',
+    embedHref: '/embed/physics/pipe-flow-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'torque-calculator',
     name: 'Torque Calculator',
     description: 'Calculate torque, force, or lever arm distance using τ = F × r. Free online mechanics calculator for physics and engineering with multiple unit support.',
