@@ -649,6 +649,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'terminal-velocity-calculator',
+    name: 'Terminal Velocity Calculator',
+    description: 'Calculate terminal velocity, mass, cross-sectional area, or drag coefficient using v = √(2mg/(ρAC_d)). Free online fluid mechanics calculator for physics and engineering with drag force calculations.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['terminal velocity calculator', 'calculate terminal velocity', 'terminal velocity formula', 'falling object velocity', 'drag force calculator', 'terminal velocity physics', 'skydiving terminal velocity', 'terminal velocity equation', 'v = sqrt(2mg/(rhoACd))', 'terminal velocity calculation', 'maximum falling speed', 'drag coefficient calculator', 'air resistance calculator', 'fluid mechanics calculator', 'terminal velocity skydiver', 'parachute terminal velocity', 'falling object physics', 'terminal velocity air resistance', 'drag force terminal velocity'],
+    href: '/physics/terminal-velocity-calculator',
+    embedHref: '/embed/physics/terminal-velocity-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'earth-curvature-calculator',
     name: 'Earth Curvature Calculator',
     description: 'Calculate Earth\'s curvature drop, distance to horizon, or hidden object height using precise formulas. Free online physics calculator for geography, astronomy, and engineering with accurate Earth radius calculations.',
