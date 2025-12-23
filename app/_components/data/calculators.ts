@@ -325,6 +325,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'magnitude-of-acceleration-calculator',
+    name: 'Magnitude of Acceleration Calculator',
+    description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['magnitude of acceleration calculator', 'acceleration magnitude calculator', 'calculate acceleration magnitude', '|a| calculator', 'acceleration absolute value', 'magnitude acceleration formula', 'acceleration magnitude formula', '|a| = |Δv|/Δt', 'acceleration from force', 'acceleration components', 'acceleration vector magnitude', 'kinematics calculator', 'physics calculator', 'acceleration magnitude physics', 'absolute acceleration', 'acceleration magnitude calculation', 'vector magnitude calculator', 'acceleration kinematics', 'motion magnitude calculator'],
+    href: '/physics/magnitude-of-acceleration-calculator',
+    embedHref: '/embed/physics/magnitude-of-acceleration-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'watt-calculator',
     name: 'Watt Calculator',
     description: 'Calculate electrical power, voltage, current, and resistance using P = V × I, P = V²/R, and P = I²R formulas',
