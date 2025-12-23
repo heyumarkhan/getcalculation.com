@@ -613,6 +613,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'earth-curvature-calculator',
+    name: 'Earth Curvature Calculator',
+    description: 'Calculate Earth\'s curvature drop, distance to horizon, or hidden object height using precise formulas. Free online physics calculator for geography, astronomy, and engineering with accurate Earth radius calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['earth curvature calculator', 'earth curvature', 'curvature calculator', 'calculate earth curvature', 'horizon distance calculator', 'curvature drop calculator', 'distance to horizon', 'earth curve calculator', 'hidden height calculator', 'earth radius calculator', 'curvature formula', 'horizon calculation', 'earth curvature formula', 'drop calculator', 'curvature at distance', 'physics calculator', 'geography calculator', 'navigation calculator', 'earth shape calculator', 'spherical earth calculator'],
+    href: '/physics/earth-curvature-calculator',
+    embedHref: '/embed/physics/earth-curvature-calculator',
+    icon: '🌍',
+    color: 'green'
+  },
+  {
     id: 'impulse-momentum-calculator',
     name: 'Impulse and Momentum Calculator',
     description: 'Calculate impulse (J = F×t) and momentum (p = m×v) with impulse-momentum theorem. Free online mechanics calculator for collision analysis and force-time relationships.',
