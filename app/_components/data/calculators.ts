@@ -601,6 +601,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'water-viscosity-calculator',
+    name: 'Water Viscosity Calculator',
+    description: 'Calculate dynamic and kinematic viscosity of water at any temperature using μ = A × 10^(B/(T - C)). Free online fluid mechanics calculator for physics and engineering with temperature-dependent viscosity calculations.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['water viscosity calculator', 'water viscosity', 'dynamic viscosity calculator', 'kinematic viscosity calculator', 'water viscosity temperature', 'calculate water viscosity', 'viscosity of water', 'water viscosity formula', 'water viscosity by temperature', 'fluid viscosity calculator', 'water viscosity at temperature', 'dynamic viscosity water', 'kinematic viscosity water', 'water viscosity table', 'temperature dependent viscosity', 'water viscosity physics', 'fluid mechanics calculator', 'viscosity temperature relationship', 'water properties calculator', 'water viscosity equation'],
+    href: '/physics/water-viscosity-calculator',
+    embedHref: '/embed/physics/water-viscosity-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'impulse-momentum-calculator',
     name: 'Impulse and Momentum Calculator',
     description: 'Calculate impulse (J = F×t) and momentum (p = m×v) with impulse-momentum theorem. Free online mechanics calculator for collision analysis and force-time relationships.',
