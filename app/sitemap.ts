@@ -74,6 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/potential-energy-calculator', priority: 0.8 },
     { slug: 'physics/enthalpy-calculator', priority: 0.8 },
     { slug: 'physics/ideal-gas-law-calculator', priority: 0.8 },
+    { slug: 'physics/air-density-calculator', priority: 0.8 },
     { slug: 'physics/frequency-calculator', priority: 0.8 },
     { slug: 'physics/wire-size-calculator', priority: 0.8 },
     { slug: 'physics/parallel-resistor-calculator', priority: 0.8 },
