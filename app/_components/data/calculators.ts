@@ -493,6 +493,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'air-density-calculator',
+    name: 'Air Density Calculator',
+    description: 'Calculate air density, pressure, or temperature using the ideal gas law ρ = P/(R×T). Free online thermodynamics calculator for aviation, meteorology, HVAC, and engineering with multiple unit support.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['air density calculator', 'calculate air density', 'air density formula', 'density of air calculator', 'air density temperature pressure', 'ρ = P/(R×T)', 'atmospheric density calculator', 'air density at altitude', 'air density aviation', 'air density thermodynamics', 'calculate air density from temperature', 'air density pressure temperature', 'density altitude calculator', 'air density physics', 'thermodynamics calculator', 'air properties calculator', 'atmospheric properties', 'air density engineering', 'ideal gas law density', 'air density formula calculator'],
+    href: '/physics/air-density-calculator',
+    embedHref: '/embed/physics/air-density-calculator',
+    icon: '💨',
+    color: 'blue'
+  },
+  {
     id: 'frequency-calculator',
     name: 'Frequency Calculator',
     description: 'Calculate frequency from period (f = 1/T), wavelength and velocity (f = v/λ), or electromagnetic waves (f = c/λ). Free online waves calculator for physics and engineering.',
