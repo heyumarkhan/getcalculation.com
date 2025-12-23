@@ -85,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/friction-loss-calculator', priority: 0.8 },
     { slug: 'physics/water-viscosity-calculator', priority: 0.8 },
     { slug: 'physics/earth-curvature-calculator', priority: 0.8 },
+    { slug: 'physics/kinetic-energy-calculator', priority: 0.8 },
     { slug: 'physics/impulse-momentum-calculator', priority: 0.8 },
     { slug: 'physics/coulombs-law-calculator', priority: 0.8 },
     { slug: 'physics/time-dilation-calculator', priority: 0.8 }

@@ -625,6 +625,18 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
+    id: 'kinetic-energy-calculator',
+    name: 'Kinetic Energy Calculator',
+    description: 'Calculate kinetic energy, mass, or velocity using KE = ½mv². Free online mechanics calculator for physics and engineering with multiple unit support and step-by-step solutions.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['kinetic energy calculator', 'calculate kinetic energy', 'KE = ½mv²', 'kinetic energy formula', 'KE formula', 'kinetic energy equation', 'energy of motion calculator', 'KE calculator', 'kinetic energy physics', 'mechanics calculator', 'energy calculator', 'motion energy calculator', 'KE = 1/2mv2', 'calculate KE', 'kinetic energy mass velocity', 'physics energy calculator', 'work energy calculator', 'collision energy calculator', 'kinetic energy calculation', 'energy of motion'],
+    href: '/physics/kinetic-energy-calculator',
+    embedHref: '/embed/physics/kinetic-energy-calculator',
+    icon: '⚡',
+    color: 'orange'
+  },
+  {
     id: 'impulse-momentum-calculator',
     name: 'Impulse and Momentum Calculator',
     description: 'Calculate impulse (J = F×t) and momentum (p = m×v) with impulse-momentum theorem. Free online mechanics calculator for collision analysis and force-time relationships.',
