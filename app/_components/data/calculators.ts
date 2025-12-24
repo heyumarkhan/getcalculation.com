@@ -373,6 +373,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'specific-gravity-calculator',
+    name: 'Specific Gravity Calculator',
+    description: 'Calculate specific gravity (relative density) using substance density and reference density. Free online physics calculator for material properties, fluid mechanics, and engineering with multiple reference options.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['specific gravity calculator', 'calculate specific gravity', 'specific gravity formula', 'relative density calculator', 'SG calculator', 'SG = ρ/ρ_ref', 'specific gravity physics', 'density ratio calculator', 'relative density formula', 'calculate relative density', 'specific gravity units', 'material specific gravity', 'fluid specific gravity', 'specific gravity equation', 'SG calculation', 'physics calculator', 'fluid mechanics calculator', 'material properties calculator', 'specific gravity water', 'density ratio', 'specific gravity temperature'],
+    href: '/physics/specific-gravity-calculator',
+    embedHref: '/embed/physics/specific-gravity-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'specific-heat-calculator',
     name: 'Specific Heat Calculator',
     description: 'Calculate heat energy, mass, specific heat capacity, or temperature change using Q = m × c × ΔT. Free online thermodynamics calculator for physics and engineering.',

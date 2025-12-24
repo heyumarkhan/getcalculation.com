@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/watt-calculator', priority: 0.8 },
     { slug: 'physics/wet-bulb-calculator', priority: 0.8 },
     { slug: 'physics/density-mass-volume-calculator', priority: 0.8 },
+    { slug: 'physics/specific-gravity-calculator', priority: 0.8 },
     { slug: 'physics/specific-heat-calculator', priority: 0.8 },
     { slug: 'physics/flow-rate-calculator', priority: 0.8 },
     { slug: 'physics/pipe-flow-calculator', priority: 0.8 },
