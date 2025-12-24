@@ -577,6 +577,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'resonant-frequency-calculator',
+    name: 'Resonant Frequency Calculator',
+    description: 'Calculate resonant frequency for LC circuits (f = 1/(2π√(LC))) or mechanical systems (f = (1/(2π))√(k/m)). Free online physics calculator for electronics and mechanics.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['resonant frequency calculator', 'calculate resonant frequency', 'resonant frequency formula', 'LC circuit calculator', 'f = 1/(2π√(LC))', 'mechanical resonance calculator', 'natural frequency calculator', 'resonance frequency', 'LC resonant frequency', 'spring mass frequency', 'f = (1/(2π))√(k/m)', 'resonant frequency LC', 'resonant frequency mechanical', 'electronics calculator', 'resonance calculator', 'LC circuit resonance', 'mechanical resonance', 'natural frequency formula', 'resonant frequency physics', 'oscillation frequency calculator'],
+    href: '/physics/resonant-frequency-calculator',
+    embedHref: '/embed/physics/resonant-frequency-calculator',
+    icon: '🔊',
+    color: 'purple'
+  },
+  {
     id: 'wire-size-calculator',
     name: 'Wire Size Calculator',
     description: 'Calculate wire gauge (AWG), maximum current capacity, or voltage drop for electrical wiring. Free online electrical engineering calculator with support for copper and aluminum wires.',
