@@ -589,6 +589,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'tension-calculator',
+    name: 'Tension Calculator',
+    description: 'Calculate tension in ropes, cables, and strings using mass/acceleration (T = m(g ± a)) or force (T = F). Free online mechanics calculator for physics problems with multiple calculation methods.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['tension calculator', 'calculate tension', 'tension formula', 'tension in rope calculator', 'tension physics calculator', 'T = mg', 'T = m(g + a)', 'tension force calculator', 'rope tension calculator', 'cable tension calculator', 'string tension calculator', 'tension equation', 'calculate tension from mass', 'tension acceleration calculator', 'mechanics calculator', 'physics calculator', 'tension force', 'tension calculation', 'tension physics', 'tension in cables', 'tension in strings', 'elevator tension calculator', 'pulley tension calculator'],
+    href: '/physics/tension-calculator',
+    embedHref: '/embed/physics/tension-calculator',
+    icon: '🔗',
+    color: 'purple'
+  },
+  {
     id: 'reynolds-number-calculator',
     name: 'Reynolds Number Calculator',
     description: 'Calculate Reynolds number or any variable using Re = (ρ × v × D) / μ. Free online fluid mechanics calculator with flow regime determination (laminar, transitional, turbulent).',
