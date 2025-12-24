@@ -94,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
     { slug: 'physics/watt-hour-calculator', priority: 0.8 },
     { slug: 'physics/wavelength-to-frequency-calculator', priority: 0.8 },
+    { slug: 'physics/lightning-distance-calculator', priority: 0.8 },
     { slug: 'physics/hp-to-amps-calculator', priority: 0.8 },
     { slug: 'physics/friction-loss-calculator', priority: 0.8 },
     { slug: 'physics/water-viscosity-calculator', priority: 0.8 },
