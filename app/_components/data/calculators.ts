@@ -421,6 +421,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'angular-velocity-calculator',
+    name: 'Angular Velocity Calculator',
+    description: 'Calculate angular velocity using angle/time (ω = θ/t), frequency (ω = 2πf), or linear velocity/radius (ω = v/r). Free online mechanics calculator for rotational motion and circular motion.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['angular velocity calculator', 'calculate angular velocity', 'angular velocity formula', 'rotational speed calculator', 'angular speed calculator', 'ω = θ/t', 'ω = 2πf', 'ω = v/r', 'rad/s calculator', 'rpm to rad/s', 'rotational motion calculator', 'circular motion calculator', 'angular velocity physics', 'rotational mechanics', 'angular velocity units', 'radians per second', 'angular velocity equation', 'mechanics calculator', 'physics calculator', 'rotational dynamics', 'angular velocity conversion'],
+    href: '/physics/angular-velocity-calculator',
+    embedHref: '/embed/physics/angular-velocity-calculator',
+    icon: '🔄',
+    color: 'purple'
+  },
+  {
     id: 'power-to-weight-ratio-calculator',
     name: 'Power-to-Weight Ratio Calculator',
     description: 'Calculate power, weight, or power-to-weight ratio using P/W = Power / Weight. Free online mechanics calculator for automotive, aerospace, and engineering applications.',
