@@ -349,6 +349,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'arrow-speed-calculator',
+    name: 'Arrow Speed Calculator',
+    description: 'Calculate arrow speed from distance/time or kinetic energy/mass. Free online physics calculator for archery using v = d/t or v = √(2KE/m) with multiple unit support.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['arrow speed calculator', 'calculate arrow speed', 'arrow velocity calculator', 'arrow speed formula', 'v = d/t', 'v = √(2KE/m)', 'archery calculator', 'arrow speed fps', 'arrow speed m/s', 'arrow kinetic energy', 'arrow velocity', 'bow arrow speed', 'projectile speed calculator', 'ballistics calculator', 'archery physics', 'arrow speed measurement', 'chronograph calculator', 'arrow speed equation', 'kinematics calculator', 'physics calculator', 'arrow ballistics'],
+    href: '/physics/arrow-speed-calculator',
+    embedHref: '/embed/physics/arrow-speed-calculator',
+    icon: '🏹',
+    color: 'green'
+  },
+  {
     id: 'magnitude-of-acceleration-calculator',
     name: 'Magnitude of Acceleration Calculator',
     description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
