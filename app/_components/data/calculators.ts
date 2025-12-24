@@ -385,6 +385,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'g-force-calculator',
+    name: 'G Force Calculator',
+    description: 'Calculate G-force from acceleration (G = a/g) or circular motion (G = v²/(r×g)). Free online physics calculator for aviation, motorsports, and engineering.',
+    category: 'Dynamics',
+    subject: 'physics',
+    keywords: ['g force calculator', 'calculate g force', 'g force formula', 'G = a/g', 'G = v²/(r×g)', 'gravitational force calculator', 'acceleration g force', 'circular motion g force', 'aviation g force', 'fighter jet g force', 'centripetal g force', 'g force physics', 'dynamics calculator', 'physics calculator', 'acceleration relative to gravity', 'g force calculation', 'standard gravity calculator', 'g force aviation', 'g force motorsports', 'human g force tolerance', 'g force engineering'],
+    href: '/physics/g-force-calculator',
+    embedHref: '/embed/physics/g-force-calculator',
+    icon: '🚀',
+    color: 'red'
+  },
+  {
     id: 'watt-calculator',
     name: 'Watt Calculator',
     description: 'Calculate electrical power, voltage, current, and resistance using P = V × I, P = V²/R, and P = I²R formulas',
