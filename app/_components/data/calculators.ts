@@ -637,6 +637,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'net-force-calculator',
+    name: 'Net Force Calculator',
+    description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['net force calculator', 'calculate net force', 'resultant force calculator', 'net force formula', 'F_net = √(Fx² + Fy²)', 'net force magnitude', 'net force direction', 'vector force calculator', 'force components calculator', 'resultant force formula', 'net force physics', 'force vector addition', 'calculate resultant force', 'net force equation', 'force magnitude calculator', 'force direction calculator', 'mechanics calculator', 'physics calculator', 'net force calculation', 'vector sum of forces'],
+    href: '/physics/net-force-calculator',
+    embedHref: '/embed/physics/net-force-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'tension-calculator',
     name: 'Tension Calculator',
     description: 'Calculate tension in ropes, cables, and strings using mass/acceleration (T = m(g ± a)) or force (T = F). Free online mechanics calculator for physics problems with multiple calculation methods.',

@@ -86,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/wire-size-calculator', priority: 0.8 },
     { slug: 'physics/parallel-resistor-calculator', priority: 0.8 },
     { slug: 'physics/force-calculator', priority: 0.8 },
+    { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
     { slug: 'physics/watt-hour-calculator', priority: 0.8 },
