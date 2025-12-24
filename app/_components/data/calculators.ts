@@ -325,6 +325,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'free-fall-calculator',
+    name: 'Free Fall Calculator',
+    description: 'Calculate free fall motion: velocity, time, and height using gravity acceleration. Free online physics calculator for kinematics problems with step-by-step solutions.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['free fall calculator', 'calculate free fall', 'free fall formula', 'free fall physics', 'gravity calculator', 'falling object calculator', 'v = v₀ + gt', 'h = (1/2)gt²', 'free fall velocity', 'free fall time', 'free fall height', 'kinematics calculator', 'physics calculator', 'motion under gravity', 'free fall equation', 'gravity motion', 'falling object physics', 'free fall acceleration', 'free fall distance', 'free fall kinematics'],
+    href: '/physics/free-fall-calculator',
+    embedHref: '/embed/physics/free-fall-calculator',
+    icon: '⬇️',
+    color: 'blue'
+  },
+  {
     id: 'magnitude-of-acceleration-calculator',
     name: 'Magnitude of Acceleration Calculator',
     description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
