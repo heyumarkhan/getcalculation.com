@@ -114,11 +114,6 @@ export default function PhotonEnergyCalculator() {
         setCalculation(`E = hf = (6.626 × 10⁻³⁴ J·s) × ${formatValue(f)} ${frequencyUnit} = ${formatValue(EResult)} ${energyUnit}`);
       } else if (!frequency) {
         // Calculate frequency: f = E/h
-        if (PLANCK_CONSTANT === 0) {
-          setResult(null);
-          setCalculation('Error: Invalid calculation');
-          return;
-        }
         const fCalculated = EBase / PLANCK_CONSTANT;
         const fResult = convertFromBase(fCalculated, frequencyUnit, 'frequency');
         setResult({ value: fResult, unit: frequencyUnit, type: 'frequency' });
