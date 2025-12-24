@@ -361,6 +361,18 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
+    id: 'stopping-distance-calculator',
+    name: 'Stopping Distance Calculator',
+    description: 'Calculate stopping distance including reaction distance and braking distance. Free online physics calculator for vehicle safety using d = v×t + v²/(2a).',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['stopping distance calculator', 'calculate stopping distance', 'stopping distance formula', 'reaction distance calculator', 'braking distance calculator', 'vehicle stopping distance', 'd = v×t + v²/(2a)', 'car stopping distance', 'braking distance formula', 'reaction distance formula', 'total stopping distance', 'safe following distance', 'vehicle safety calculator', 'kinematics calculator', 'physics calculator', 'traffic safety calculator', 'braking distance physics', 'reaction time calculator', 'stopping distance equation', 'vehicle deceleration'],
+    href: '/physics/stopping-distance-calculator',
+    embedHref: '/embed/physics/stopping-distance-calculator',
+    icon: '🛑',
+    color: 'red'
+  },
+  {
     id: 'magnitude-of-acceleration-calculator',
     name: 'Magnitude of Acceleration Calculator',
     description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
