@@ -517,6 +517,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'belt-length-calculator',
+    name: 'Belt Length Calculator',
+    description: 'Calculate belt length for open belt drive systems using center distance and pulley sizes. Free online mechanical engineering calculator with formula L = 2C + π(R₁ + R₂) + (R₁ - R₂)²/C.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['belt length calculator', 'calculate belt length', 'belt length formula', 'pulley belt calculator', 'belt drive calculator', 'L = 2C + π(R₁ + R₂)', 'belt length equation', 'open belt calculator', 'pulley system calculator', 'belt drive length', 'mechanical belt calculator', 'belt sizing calculator', 'pulley belt length', 'belt drive design', 'mechanics calculator', 'engineering calculator', 'belt length calculation', 'conveyor belt length', 'timing belt length', 'V-belt length calculator'],
+    href: '/physics/belt-length-calculator',
+    embedHref: '/embed/physics/belt-length-calculator',
+    icon: '🔗',
+    color: 'blue'
+  },
+  {
     id: 'charles-law-calculator',
     name: 'Charles\'s Law Calculator',
     description: 'Calculate volume or temperature using Charles\'s Law: V₁/T₁ = V₂/T₂. Free online thermodynamics calculator for ideal gas law calculations with temperature and volume relationships.',
