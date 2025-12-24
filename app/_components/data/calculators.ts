@@ -733,6 +733,18 @@ export const calculators: Calculator[] = [
     color: 'indigo'
   },
   {
+    id: 'lightning-distance-calculator',
+    name: 'Lightning Distance Calculator',
+    description: 'Calculate distance to lightning strike from time delay between flash and thunder. Free online physics calculator using d = v × t with speed of sound calculations.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['lightning distance calculator', 'calculate lightning distance', 'lightning distance formula', 'thunder distance calculator', 'lightning strike distance', 'd = v × t', 'lightning flash thunder', 'storm distance calculator', 'lightning calculator', 'thunder delay calculator', 'lightning safety calculator', 'speed of sound calculator', 'lightning distance physics', 'weather calculator', 'storm distance', 'lightning time delay', 'thunder time calculator', 'lightning distance equation', 'waves calculator', 'physics calculator', 'sound speed calculator'],
+    href: '/physics/lightning-distance-calculator',
+    embedHref: '/embed/physics/lightning-distance-calculator',
+    icon: '⚡',
+    color: 'yellow'
+  },
+  {
     id: 'hp-to-amps-calculator',
     name: 'HP to Amps Calculator',
     description: 'Convert horsepower to amperes using I = (hp × 746) / (V × efficiency). Free online motor current calculator for sizing circuit breakers and wire gauges.',
