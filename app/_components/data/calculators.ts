@@ -733,6 +733,18 @@ export const calculators: Calculator[] = [
     color: 'indigo'
   },
   {
+    id: 'photon-energy-calculator',
+    name: 'Photon Energy Calculator',
+    description: 'Calculate photon energy from frequency (E = hf) or wavelength (E = hc/λ). Free online quantum physics calculator with Planck\'s constant and speed of light.',
+    category: 'Quantum Physics',
+    subject: 'physics',
+    keywords: ['photon energy calculator', 'calculate photon energy', 'photon energy formula', 'E = hf', 'E = hc/λ', 'photon energy wavelength', 'photon energy frequency', 'Planck constant calculator', 'quantum energy calculator', 'photon calculator', 'light energy calculator', 'photon energy eV', 'photon energy joules', 'quantum physics calculator', 'photon energy equation', 'Planck\'s constant calculator', 'photon energy from wavelength', 'photon energy from frequency', 'electromagnetic energy calculator', 'quantum mechanics calculator', 'photon energy physics'],
+    href: '/physics/photon-energy-calculator',
+    embedHref: '/embed/physics/photon-energy-calculator',
+    icon: '⚛️',
+    color: 'purple'
+  },
+  {
     id: 'lightning-distance-calculator',
     name: 'Lightning Distance Calculator',
     description: 'Calculate distance to lightning strike from time delay between flash and thunder. Free online physics calculator using d = v × t with speed of sound calculations.',
