@@ -337,6 +337,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'projectile-motion-calculator',
+    name: 'Projectile Motion Calculator',
+    description: 'Calculate projectile motion parameters: range, maximum height, time of flight, and velocity components. Free online physics calculator using R = (v₀²sin(2θ))/g and h = (v₀²sin²(θ))/(2g).',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['projectile motion calculator', 'calculate projectile motion', 'projectile motion formula', 'range calculator', 'maximum height calculator', 'time of flight calculator', 'R = (v₀²sin(2θ))/g', 'h = (v₀²sin²(θ))/(2g)', 'projectile trajectory', 'ballistics calculator', 'launch angle calculator', 'projectile range', 'projectile height', 'kinematics calculator', 'physics calculator', 'trajectory calculator', 'projectile motion physics', 'launch velocity calculator', 'projectile motion equation', 'ballistic motion'],
+    href: '/physics/projectile-motion-calculator',
+    embedHref: '/embed/physics/projectile-motion-calculator',
+    icon: '🚀',
+    color: 'purple'
+  },
+  {
     id: 'magnitude-of-acceleration-calculator',
     name: 'Magnitude of Acceleration Calculator',
     description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
