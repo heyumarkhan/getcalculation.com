@@ -112,6 +112,7 @@ export const INTERNAL_LINKS = {
   'parallel-resistor-calculator': { href: '/physics/parallel-resistor-calculator', title: 'Parallel Resistor Calculator' },
   'force-calculator': { href: '/physics/force-calculator', title: 'Force Calculator' },
   'centrifugal-force-calculator': { href: '/physics/centrifugal-force-calculator', title: 'Centrifugal Force Calculator' },
+  'wind-load-calculator': { href: '/physics/wind-load-calculator', title: 'Wind Load Calculator' },
   'reynolds-number-calculator': { href: '/physics/reynolds-number-calculator', title: 'Reynolds Number Calculator' },
   'watt-hour-calculator': { href: '/physics/watt-hour-calculator', title: 'Watt-hour Calculator' },
   'wavelength-to-frequency-calculator': { href: '/physics/wavelength-to-frequency-calculator', title: 'Wavelength to Frequency Calculator' },

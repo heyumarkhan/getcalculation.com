@@ -793,6 +793,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'wind-load-calculator',
+    name: 'Wind Load Calculator',
+    description: 'Calculate wind load, wind velocity, area, or drag coefficient using F = 0.5 × ρ × v² × A × Cd. Free online physics calculator for structural engineering, building design, and wind force calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['wind load calculator', 'calculate wind load', 'wind force calculator', 'wind load formula', 'F = 0.5 × ρ × v² × A × Cd', 'structural wind load', 'building wind load calculator', 'wind pressure calculator', 'drag coefficient calculator', 'wind load engineering', 'wind force on structures', 'structural engineering calculator', 'wind load calculation', 'wind velocity calculator', 'aerodynamic force calculator', 'wind load design', 'building codes wind load', 'wind load physics', 'wind load equation', 'structural wind force'],
+    href: '/physics/wind-load-calculator',
+    embedHref: '/embed/physics/wind-load-calculator',
+    icon: '💨',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
