@@ -601,6 +601,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'efficiency-calculator',
+    name: 'Efficiency Calculator',
+    description: 'Calculate efficiency percentage, output, or input for any system or process. Free online efficiency calculator for engines, machines, energy systems, and more. Works with energy, power, and work calculations.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['efficiency calculator', 'calculate efficiency', 'efficiency formula', 'energy efficiency calculator', 'thermal efficiency calculator', 'mechanical efficiency calculator', 'efficiency percentage calculator', 'output input efficiency', 'system efficiency calculator', 'engine efficiency calculator', 'efficiency calculation', 'efficiency physics', 'efficiency thermodynamics', 'calculate output from efficiency', 'calculate input from efficiency', 'energy conversion efficiency', 'efficiency percentage', 'work efficiency calculator', 'power efficiency calculator', 'efficiency ratio calculator'],
+    href: '/physics/efficiency-calculator',
+    embedHref: '/embed/physics/efficiency-calculator',
+    icon: '⚡',
+    color: 'green'
+  },
+  {
     id: 'ideal-gas-law-calculator',
     name: 'Ideal Gas Law Calculator',
     description: 'Calculate pressure, volume, moles, or temperature using the ideal gas law: PV = nRT. Free online thermodynamics calculator for physics, chemistry, and engineering with multiple unit support.',
