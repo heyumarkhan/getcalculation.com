@@ -98,6 +98,7 @@ export const INTERNAL_LINKS = {
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
   'potential-energy-calculator': { href: '/physics/potential-energy-calculator', title: 'Potential Energy Calculator' },
   'enthalpy-calculator': { href: '/physics/enthalpy-calculator', title: 'Enthalpy Calculator' },
+  'efficiency-calculator': { href: '/physics/efficiency-calculator', title: 'Efficiency Calculator' },
   'ideal-gas-law-calculator': { href: '/physics/ideal-gas-law-calculator', title: 'Ideal Gas Law Calculator' },
   'frequency-calculator': { href: '/physics/frequency-calculator', title: 'Frequency Calculator' },
   'wire-size-calculator': { href: '/physics/wire-size-calculator', title: 'Wire Size Calculator' },
