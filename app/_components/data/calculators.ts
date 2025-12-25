@@ -829,6 +829,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'antenna-length-calculator',
+    name: 'Antenna Length Calculator',
+    description: 'Calculate antenna length from frequency or frequency from antenna length for half-wave dipole, quarter-wave monopole, and full-wave antennas. Free online RF calculator for antenna design.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['antenna length calculator', 'calculate antenna length', 'antenna length from frequency', 'half-wave dipole calculator', 'quarter-wave monopole calculator', 'antenna length formula', 'antenna design calculator', 'RF antenna calculator', 'dipole antenna length', 'monopole antenna length', 'antenna frequency calculator', 'antenna length MHz', '468 divided by frequency', 'antenna length calculation', 'radio antenna calculator', 'ham radio antenna calculator', 'wire antenna calculator', 'antenna tuning calculator', 'antenna resonant frequency', 'velocity factor antenna', 'antenna wavelength calculator', 'antenna length feet', 'antenna length meters'],
+    href: '/physics/antenna-length-calculator',
+    embedHref: '/embed/physics/antenna-length-calculator',
+    icon: '📡',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
