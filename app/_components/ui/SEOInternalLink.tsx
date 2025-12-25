@@ -101,6 +101,7 @@ export const INTERNAL_LINKS = {
   'ideal-gas-law-calculator': { href: '/physics/ideal-gas-law-calculator', title: 'Ideal Gas Law Calculator' },
   'frequency-calculator': { href: '/physics/frequency-calculator', title: 'Frequency Calculator' },
   'wire-size-calculator': { href: '/physics/wire-size-calculator', title: 'Wire Size Calculator' },
+  'dc-wire-size-calculator': { href: '/physics/dc-wire-size-calculator', title: 'DC Wire Size Calculator' },
   'parallel-resistor-calculator': { href: '/physics/parallel-resistor-calculator', title: 'Parallel Resistor Calculator' },
   'force-calculator': { href: '/physics/force-calculator', title: 'Force Calculator' },
   'reynolds-number-calculator': { href: '/physics/reynolds-number-calculator', title: 'Reynolds Number Calculator' },

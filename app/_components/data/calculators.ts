@@ -661,6 +661,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'dc-wire-size-calculator',
+    name: 'DC Wire Size Calculator',
+    description: 'Calculate wire gauge (AWG), maximum current capacity, or voltage drop for DC electrical circuits. Free online DC wire size calculator with support for copper and aluminum wires. Perfect for solar panels, batteries, and DC power systems.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['dc wire size calculator', 'DC wire gauge calculator', 'DC AWG calculator', 'calculate DC wire size', 'DC wire sizing', 'DC voltage drop calculator', 'solar panel wire size calculator', 'battery wire size calculator', '12V wire size calculator', '24V wire size calculator', 'DC current capacity calculator', 'DC wire ampacity', 'automotive wire size calculator', 'DC electrical calculator', 'low voltage wire size', 'DC circuit wire sizing', 'DC wire resistance calculator', 'DC power wire calculator', 'solar wire size', 'battery bank wire size'],
+    href: '/physics/dc-wire-size-calculator',
+    embedHref: '/embed/physics/dc-wire-size-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'parallel-resistor-calculator',
     name: 'Parallel Resistor Calculator',
     description: 'Calculate equivalent resistance for resistors connected in parallel. Free online electrical circuit calculator with support for multiple resistors using 1/R_total = 1/R₁ + 1/R₂ + ...',

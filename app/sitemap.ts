@@ -88,6 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/frequency-calculator', priority: 0.8 },
     { slug: 'physics/resonant-frequency-calculator', priority: 0.8 },
     { slug: 'physics/wire-size-calculator', priority: 0.8 },
+    { slug: 'physics/dc-wire-size-calculator', priority: 0.8 },
     { slug: 'physics/parallel-resistor-calculator', priority: 0.8 },
     { slug: 'physics/force-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
