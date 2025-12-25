@@ -421,6 +421,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'contact-lens-vertex-calculator',
+    name: 'Contact Lens Vertex Calculator',
+    description: 'Calculate contact lens power from spectacle power using vertex distance formula. Free online contact lens vertex calculator for optometry, converting spectacle lens power to contact lens power with vertex distance compensation.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['contact lens vertex calculator', 'vertex distance calculator', 'spectacle to contact lens conversion', 'contact lens power calculator', 'vertex distance formula', 'convert spectacle power to contact lens', 'contact lens prescription calculator', 'optometry calculator', 'lens power conversion', 'vertex distance conversion', 'Fc = Fs / (1 - d × Fs)', 'contact lens fitting calculator', 'spectacle power calculator', 'diopter conversion calculator', 'contact lens prescription conversion', 'optical vertex calculator', 'lens vertex distance', 'optics calculator', 'vision correction calculator', 'prescription conversion calculator'],
+    href: '/physics/contact-lens-vertex-calculator',
+    embedHref: '/embed/physics/contact-lens-vertex-calculator',
+    icon: '👁️',
+    color: 'blue'
+  },
+  {
     id: 'wet-bulb-calculator',
     name: 'Wet Bulb Calculator',
     description: 'Calculate wet bulb temperature from dry bulb temperature and relative humidity using psychrometric formulas. Essential for HVAC, meteorology, and thermal comfort analysis.',
