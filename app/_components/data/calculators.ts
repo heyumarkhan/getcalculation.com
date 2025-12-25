@@ -853,6 +853,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'capacitance-calculator',
+    name: 'Capacitance Calculator',
+    description: 'Calculate capacitance, charge, or voltage using C = Q/V. Free online physics calculator for capacitors, electronics, and electrical circuits with comprehensive unit support.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['capacitance calculator', 'calculate capacitance', 'capacitor calculator', 'capacitance formula', 'C = Q/V', 'capacitor charge calculator', 'capacitor voltage calculator', 'capacitance charge voltage', 'calculate capacitor charge', 'calculate capacitor voltage', 'capacitor energy calculator', 'capacitance calculation', 'capacitor formula', 'capacitor charge formula', 'electronics calculator', 'electrical circuit calculator', 'capacitance unit converter', 'farad calculator', 'microfarad calculator', 'nanofarad calculator', 'picofarad calculator', 'capacitor calculations'],
+    href: '/physics/capacitance-calculator',
+    embedHref: '/embed/physics/capacitance-calculator',
+    icon: '⚡',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
