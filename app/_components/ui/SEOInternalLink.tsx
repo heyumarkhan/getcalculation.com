@@ -102,6 +102,7 @@ export const INTERNAL_LINKS = {
   'dipole-calculator': { href: '/physics/dipole-calculator', title: 'Dipole Calculator' },
   'antenna-length-calculator': { href: '/physics/antenna-length-calculator', title: 'Antenna Length Calculator' },
   'wavelength-to-energy-calculator': { href: '/physics/wavelength-to-energy-calculator', title: 'Wavelength to Energy Calculator' },
+  'capacitance-calculator': { href: '/physics/capacitance-calculator', title: 'Capacitance Calculator' },
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
