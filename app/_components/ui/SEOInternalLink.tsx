@@ -86,6 +86,7 @@ export const INTERNAL_LINKS = {
   'acceleration-calculator': { href: '/physics/acceleration-calculator', title: 'Acceleration Calculator' },
   'watt-calculator': { href: '/physics/watt-calculator', title: 'Watt Calculator' },
   'electrical-power-calculator': { href: '/physics/electrical-power-calculator', title: 'Electrical Power Calculator' },
+  'power-factor-calculator': { href: '/physics/power-factor-calculator', title: 'Power Factor Calculator' },
   'contact-lens-vertex-calculator': { href: '/physics/contact-lens-vertex-calculator', title: 'Contact Lens Vertex Calculator' },
   'wet-bulb-calculator': { href: '/physics/wet-bulb-calculator', title: 'Wet Bulb Calculator' },
   'density-mass-volume-calculator': { href: '/physics/density-mass-volume-calculator', title: 'Density Mass Volume Calculator' },
