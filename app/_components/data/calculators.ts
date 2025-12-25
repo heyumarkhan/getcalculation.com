@@ -409,6 +409,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'electrical-power-calculator',
+    name: 'Electrical Power Calculator',
+    description: 'Calculate electrical power, voltage, current, or resistance using electrical power formulas P = V × I, P = V²/R, and P = I²R. Free online electrical power calculator for circuit design and energy calculations.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['electrical power calculator', 'calculate electrical power', 'electrical power formula', 'P = VI calculator', 'P = V²/R calculator', 'P = I²R calculator', 'electrical power equation', 'power voltage current calculator', 'electrical power calculation', 'electrical engineering calculator', 'circuit power calculator', 'electrical power physics', 'electrical power formula calculator', 'calculate power from voltage current', 'electrical power watts calculator', 'electrical power resistance calculator', 'DC power calculator', 'AC power calculator', 'electrical power consumption calculator', 'electrical power rating calculator'],
+    href: '/physics/electrical-power-calculator',
+    embedHref: '/embed/physics/electrical-power-calculator',
+    icon: '🔋',
+    color: 'orange'
+  },
+  {
     id: 'wet-bulb-calculator',
     name: 'Wet Bulb Calculator',
     description: 'Calculate wet bulb temperature from dry bulb temperature and relative humidity using psychrometric formulas. Essential for HVAC, meteorology, and thermal comfort analysis.',
