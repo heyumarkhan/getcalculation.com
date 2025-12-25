@@ -805,6 +805,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'absolute-humidity-calculator',
+    name: 'Absolute Humidity Calculator',
+    description: 'Calculate absolute humidity, temperature, or relative humidity using psychrometric formulas. Free online physics calculator for HVAC, meteorology, and atmospheric science.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['absolute humidity calculator', 'calculate absolute humidity', 'absolute humidity formula', 'AH = (RH/100) × (e_s × M_w) / (R × T)', 'psychrometric calculator', 'humidity calculator', 'absolute humidity from temperature', 'absolute humidity from relative humidity', 'water vapor density calculator', 'atmospheric humidity calculator', 'HVAC humidity calculator', 'moisture content calculator', 'absolute humidity g/m³', 'absolute humidity calculation', 'humidity physics calculator', 'psychrometric calculations', 'atmospheric science calculator', 'indoor air quality calculator', 'absolute humidity equation'],
+    href: '/physics/absolute-humidity-calculator',
+    embedHref: '/embed/physics/absolute-humidity-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
