@@ -103,6 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/absolute-humidity-calculator', priority: 0.8 },
     { slug: 'physics/dipole-calculator', priority: 0.8 },
     { slug: 'physics/antenna-length-calculator', priority: 0.8 },
+    { slug: 'physics/wavelength-to-energy-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
