@@ -469,6 +469,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'volume-to-mass-calculator',
+    name: 'Volume to Mass Calculator',
+    description: 'Calculate mass from volume and density, or volume from mass and density using m = ρ × V. Free online physics calculator for material properties, chemistry, and engineering calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['volume to mass calculator', 'convert volume to mass', 'mass from volume calculator', 'volume mass conversion', 'm = ρ × V', 'density mass volume calculator', 'convert volume to weight', 'calculate mass from volume', 'volume to weight converter', 'density converter', 'mass volume calculator', 'physics calculator', 'material density calculator', 'chemistry calculator', 'engineering calculator', 'volume mass density', 'calculate weight from volume', 'material properties calculator', 'volume mass conversion formula', 'density calculation'],
+    href: '/physics/volume-to-mass-calculator',
+    embedHref: '/embed/physics/volume-to-mass-calculator',
+    icon: '📦',
+    color: 'blue'
+  },
+  {
     id: 'specific-gravity-calculator',
     name: 'Specific Gravity Calculator',
     description: 'Calculate specific gravity (relative density) using substance density and reference density. Free online physics calculator for material properties, fluid mechanics, and engineering with multiple reference options.',

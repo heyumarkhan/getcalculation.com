@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/contact-lens-vertex-calculator', priority: 0.8 },
     { slug: 'physics/wet-bulb-calculator', priority: 0.8 },
     { slug: 'physics/density-mass-volume-calculator', priority: 0.8 },
+    { slug: 'physics/volume-to-mass-calculator', priority: 0.8 },
     { slug: 'physics/specific-gravity-calculator', priority: 0.8 },
     { slug: 'physics/buoyancy-calculator', priority: 0.8 },
     { slug: 'physics/specific-heat-calculator', priority: 0.8 },
