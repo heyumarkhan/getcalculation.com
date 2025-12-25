@@ -421,6 +421,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'power-factor-calculator',
+    name: 'Power Factor Calculator',
+    description: 'Calculate power factor (PF), real power (active power), or apparent power in AC circuits using PF = P/S. Free online electrical calculator for power factor correction, energy efficiency, and electrical engineering.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['power factor calculator', 'calculate power factor', 'power factor formula', 'PF calculator', 'power factor correction calculator', 'real power calculator', 'apparent power calculator', 'active power calculator', 'AC power calculator', 'power factor correction', 'PF = P/S', 'electrical power factor', 'energy efficiency calculator', 'reactive power', 'phase angle calculator', 'volt-amperes calculator', 'electrical engineering calculator', 'power factor improvement', 'electrical efficiency', 'AC circuit calculator'],
+    href: '/physics/power-factor-calculator',
+    embedHref: '/embed/physics/power-factor-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'contact-lens-vertex-calculator',
     name: 'Contact Lens Vertex Calculator',
     description: 'Calculate contact lens power from spectacle power using vertex distance formula. Free online contact lens vertex calculator for optometry, converting spectacle lens power to contact lens power with vertex distance compensation.',
