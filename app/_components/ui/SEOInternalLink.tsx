@@ -99,6 +99,7 @@ export const INTERNAL_LINKS = {
   'wavelength-calculator': { href: '/physics/wavelength-calculator', title: 'Wavelength Calculator' },
   'relative-humidity-calculator': { href: '/physics/relative-humidity-calculator', title: 'Relative Humidity Calculator' },
   'absolute-humidity-calculator': { href: '/physics/absolute-humidity-calculator', title: 'Absolute Humidity Calculator' },
+  'dipole-calculator': { href: '/physics/dipole-calculator', title: 'Dipole Calculator' },
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
