@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/gear-ratio-calculator', priority: 0.8 },
     { slug: 'physics/belt-length-calculator', priority: 0.8 },
     { slug: 'physics/charles-law-calculator', priority: 0.8 },
+    { slug: 'physics/boyles-law-calculator', priority: 0.8 },
     { slug: 'physics/potential-energy-calculator', priority: 0.8 },
     { slug: 'physics/enthalpy-calculator', priority: 0.8 },
     { slug: 'physics/efficiency-calculator', priority: 0.8 },

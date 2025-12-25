@@ -589,6 +589,18 @@ export const calculators: Calculator[] = [
     color: 'red'
   },
   {
+    id: 'boyles-law-calculator',
+    name: 'Boyle\'s Law Calculator',
+    description: 'Calculate pressure or volume using Boyle\'s Law: P₁V₁ = P₂V₂. Free online thermodynamics calculator for ideal gas law calculations with pressure and volume relationships at constant temperature.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['boyles law calculator', 'boyle\'s law calculator', 'boyles law formula', 'P1V1 = P2V2', 'pressure volume calculator', 'gas law calculator', 'boyles law pressure volume', 'ideal gas law', 'thermodynamics calculator', 'boyles law equation', 'gas pressure calculator', 'gas volume calculator', 'boyles law physics', 'gas laws', 'pressure volume relationship', 'boyles law formula calculator', 'calculate pressure boyles law', 'calculate volume boyles law', 'thermodynamics', 'gas physics calculator', 'inverse pressure volume relationship'],
+    href: '/physics/boyles-law-calculator',
+    embedHref: '/embed/physics/boyles-law-calculator',
+    icon: '🔬',
+    color: 'blue'
+  },
+  {
     id: 'enthalpy-calculator',
     name: 'Enthalpy Calculator',
     description: 'Calculate enthalpy change using multiple methods: ΔH = ΔU + PΔV, ΔH = Q (at constant pressure), or ΔH = m × c × ΔT. Free online thermodynamics calculator for physics, chemistry, and engineering.',

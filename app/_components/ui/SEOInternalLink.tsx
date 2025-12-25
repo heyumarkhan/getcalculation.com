@@ -96,6 +96,7 @@ export const INTERNAL_LINKS = {
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
+  'boyles-law-calculator': { href: '/physics/boyles-law-calculator', title: 'Boyle\'s Law Calculator' },
   'potential-energy-calculator': { href: '/physics/potential-energy-calculator', title: 'Potential Energy Calculator' },
   'enthalpy-calculator': { href: '/physics/enthalpy-calculator', title: 'Enthalpy Calculator' },
   'efficiency-calculator': { href: '/physics/efficiency-calculator', title: 'Efficiency Calculator' },
