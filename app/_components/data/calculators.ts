@@ -817,6 +817,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'dipole-calculator',
+    name: 'Dipole Calculator',
+    description: 'Calculate electric dipole moment, charge, or distance between charges using p = q × d. Free online physics calculator for electrostatics, molecular physics, and electromagnetism.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['dipole calculator', 'dipole moment calculator', 'calculate dipole moment', 'electric dipole calculator', 'dipole moment formula', 'p = q × d', 'molecular dipole calculator', 'dipole moment calculation', 'electric dipole moment', 'dipole moment physics', 'dipole moment chemistry', 'Debye calculator', 'dipole moment units', 'charge separation calculator', 'dipole moment C·m', 'dipole moment Debye', 'electric dipole formula', 'dipole moment equation', 'calculate charge from dipole', 'calculate distance from dipole', 'electrostatics calculator', 'molecular polarity calculator'],
+    href: '/physics/dipole-calculator',
+    embedHref: '/embed/physics/dipole-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
