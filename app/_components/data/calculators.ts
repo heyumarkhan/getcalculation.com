@@ -769,6 +769,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'centrifugal-force-calculator',
+    name: 'Centrifugal Force Calculator',
+    description: 'Calculate centrifugal force, mass, velocity, or radius using F = m × v²/r. Free online physics calculator for circular motion, rotating systems, and centrifugal force calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['centrifugal force calculator', 'calculate centrifugal force', 'centrifugal force formula', 'F = mv²/r', 'circular motion calculator', 'rotating force calculator', 'centrifugal force equation', 'centripetal force calculator', 'rotating systems calculator', 'circular motion force', 'F = m×v²/r', 'centrifugal force physics', 'rotating reference frame', 'fictitious force calculator', 'circular path force', 'mechanics calculator', 'physics calculator', 'rotational dynamics', 'centrifugal force calculation', 'circular motion physics'],
+    href: '/physics/centrifugal-force-calculator',
+    embedHref: '/embed/physics/centrifugal-force-calculator',
+    icon: '🌀',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
