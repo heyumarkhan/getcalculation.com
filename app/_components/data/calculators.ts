@@ -841,6 +841,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'wavelength-to-energy-calculator',
+    name: 'Wavelength to Energy Calculator',
+    description: 'Convert between photon wavelength and energy using E = hc/λ. Free online physics calculator for quantum mechanics, spectroscopy, and electromagnetic radiation calculations.',
+    category: 'Quantum Mechanics',
+    subject: 'physics',
+    keywords: ['wavelength to energy calculator', 'energy to wavelength calculator', 'photon energy calculator', 'wavelength energy conversion', 'E = hc/λ', 'photon wavelength to energy', 'convert wavelength to energy', 'photon energy formula', 'Planck constant calculator', 'wavelength energy relationship', 'quantum energy calculator', 'spectroscopy calculator', 'photon energy eV', 'wavelength to eV calculator', 'photon wavelength calculator', 'electromagnetic energy calculator', 'light energy calculator', 'quantum mechanics calculator', 'wavelength energy formula', 'hc over lambda', 'photon energy wavelength', 'wavelength energy conversion calculator'],
+    href: '/physics/wavelength-to-energy-calculator',
+    embedHref: '/embed/physics/wavelength-to-energy-calculator',
+    icon: '⚛️',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
