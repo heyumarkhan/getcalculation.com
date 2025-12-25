@@ -469,6 +469,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'buoyancy-calculator',
+    name: 'Buoyancy Calculator',
+    description: 'Calculate buoyant force, fluid density, or displaced volume using Archimedes\' principle (F_b = ρ × V × g). Free online buoyancy calculator for physics, engineering, and fluid mechanics calculations.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['buoyancy calculator', 'buoyant force calculator', 'archimedes principle calculator', 'calculate buoyant force', 'buoyancy formula', 'F_b = ρ × V × g', 'buoyant force formula', 'archimedes principle formula', 'fluid mechanics calculator', 'buoyancy physics', 'calculate buoyancy', 'displaced volume calculator', 'floating calculator', 'sink or float calculator', 'buoyant force equation', 'buoyancy calculation', 'archimedes calculator', 'fluid density calculator', 'physics buoyancy', 'engineering buoyancy calculator'],
+    href: '/physics/buoyancy-calculator',
+    embedHref: '/embed/physics/buoyancy-calculator',
+    icon: '🏊',
+    color: 'green'
+  },
+  {
     id: 'specific-heat-calculator',
     name: 'Specific Heat Calculator',
     description: 'Calculate heat energy, mass, specific heat capacity, or temperature change using Q = m × c × ΔT. Free online thermodynamics calculator for physics and engineering.',

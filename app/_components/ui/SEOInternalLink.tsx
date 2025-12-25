@@ -89,6 +89,7 @@ export const INTERNAL_LINKS = {
   'contact-lens-vertex-calculator': { href: '/physics/contact-lens-vertex-calculator', title: 'Contact Lens Vertex Calculator' },
   'wet-bulb-calculator': { href: '/physics/wet-bulb-calculator', title: 'Wet Bulb Calculator' },
   'density-mass-volume-calculator': { href: '/physics/density-mass-volume-calculator', title: 'Density Mass Volume Calculator' },
+  'buoyancy-calculator': { href: '/physics/buoyancy-calculator', title: 'Buoyancy Calculator' },
   'specific-heat-calculator': { href: '/physics/specific-heat-calculator', title: 'Specific Heat Calculator' },
   'flow-rate-calculator': { href: '/physics/flow-rate-calculator', title: 'Flow Rate Calculator' },
   'torque-calculator': { href: '/physics/torque-calculator', title: 'Torque Calculator' },
