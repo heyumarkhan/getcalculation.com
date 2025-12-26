@@ -877,6 +877,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'schwarzschild-radius-calculator',
+    name: 'Schwarzschild Radius Calculator',
+    description: 'Calculate Schwarzschild radius or mass using Rs = 2GM/c². Free online physics calculator for black holes, event horizons, general relativity, and astrophysics with comprehensive unit support.',
+    category: 'Quantum Mechanics',
+    subject: 'physics',
+    keywords: ['schwarzschild radius calculator', 'black hole radius calculator', 'event horizon calculator', 'schwarzschild radius formula', 'Rs = 2GM/c²', 'calculate schwarzschild radius', 'black hole event horizon', 'schwarzschild radius of sun', 'schwarzschild radius of earth', 'calculate black hole mass', 'event horizon radius', 'general relativity calculator', 'astrophysics calculator', 'black hole calculator', 'schwarzschild metric calculator', 'gravitational radius calculator', 'black hole size calculator', 'event horizon size', 'schwarzschild radius equation', 'black hole physics calculator', 'general relativity physics', 'astrophysics radius calculator'],
+    href: '/physics/schwarzschild-radius-calculator',
+    embedHref: '/embed/physics/schwarzschild-radius-calculator',
+    icon: '🌌',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
