@@ -108,6 +108,7 @@ export const INTERNAL_LINKS = {
   'drag-equation-calculator': { href: '/physics/drag-equation-calculator', title: 'Drag Equation Calculator' },
   'maximum-height-calculator-for-projectile-motion': { href: '/physics/maximum-height-calculator-for-projectile-motion', title: 'Maximum Height Calculator for Projectile Motion' },
   'mechanical-advantage-calculator': { href: '/physics/mechanical-advantage-calculator', title: 'Mechanical Advantage Calculator' },
+  'btu-to-tons-converter': { href: '/physics/btu-to-tons-converter', title: 'BTU to Tons Converter' },
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
