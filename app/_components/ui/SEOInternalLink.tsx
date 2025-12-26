@@ -111,6 +111,7 @@ export const INTERNAL_LINKS = {
   'btu-to-tons-converter': { href: '/physics/btu-to-tons-converter', title: 'BTU to Tons Converter' },
   'keplers-third-law-calculator': { href: '/physics/keplers-third-law-calculator', title: "Kepler's Third Law Calculator" },
   'section-modulus-calculator': { href: '/physics/section-modulus-calculator', title: 'Section Modulus Calculator' },
+  'inverse-square-law-calculator': { href: '/physics/inverse-square-law-calculator', title: 'Inverse Square Law Calculator' },
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },

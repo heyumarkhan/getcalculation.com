@@ -961,6 +961,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'inverse-square-law-calculator',
+    name: 'Inverse Square Law Calculator',
+    description: 'Calculate intensity, distance, or source strength using the inverse square law: I = k/r². Free online physics calculator for light, sound, radiation, and electromagnetic fields.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['inverse square law calculator', 'calculate intensity', 'inverse square law formula', 'I = k/r²', 'light intensity calculator', 'sound intensity calculator', 'radiation intensity calculator', 'intensity distance calculator', 'source strength calculator', 'inverse square law physics', 'light intensity distance', 'sound level distance calculator', 'radiation distance calculator', 'electromagnetic field calculator', 'photography light calculator', 'acoustics calculator', 'radiation safety calculator', 'intensity formula', 'distance intensity relationship', 'physics calculator'],
+    href: '/physics/inverse-square-law-calculator',
+    embedHref: '/embed/physics/inverse-square-law-calculator',
+    icon: '📡',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
