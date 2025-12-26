@@ -114,6 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/keplers-third-law-calculator', priority: 0.8 },
     { slug: 'physics/section-modulus-calculator', priority: 0.8 },
     { slug: 'physics/inverse-square-law-calculator', priority: 0.8 },
+    { slug: 'physics/displacement-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
