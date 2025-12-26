@@ -925,6 +925,18 @@ export const calculators: Calculator[] = [
     color: 'green'
   },
   {
+    id: 'btu-to-tons-converter',
+    name: 'BTU to Tons Converter',
+    description: 'Convert between BTU (British Thermal Units) and tons of refrigeration instantly. Free online unit converter for HVAC, refrigeration, and cooling capacity calculations.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['btu to tons converter', 'tons to btu converter', 'btu to tons', 'tons to btu', 'btu tons conversion', 'refrigeration ton calculator', 'cooling capacity converter', 'hvac unit converter', 'btu converter', 'tons of refrigeration calculator', 'air conditioning capacity converter', 'cooling ton calculator', 'btu to tons calculator', 'tons to btu calculator', 'refrigeration capacity converter', 'hvac calculator', 'cooling capacity calculator', 'btu tons conversion factor', '12000 btu to tons', 'btu to refrigeration tons', 'tons refrigeration to btu', 'cooling capacity btu tons'],
+    href: '/physics/btu-to-tons-converter',
+    embedHref: '/embed/physics/btu-to-tons-converter',
+    icon: '❄️',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
