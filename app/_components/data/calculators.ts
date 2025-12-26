@@ -889,6 +889,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'drag-equation-calculator',
+    name: 'Drag Equation Calculator',
+    description: 'Calculate drag force, velocity, area, drag coefficient, or density using F = 0.5 × ρ × v² × A × Cd. Free online physics calculator for fluid dynamics, aerodynamics, and engineering.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['drag equation calculator', 'drag force calculator', 'drag coefficient calculator', 'drag equation formula', 'F = 0.5 × ρ × v² × A × Cd', 'calculate drag force', 'fluid dynamics calculator', 'aerodynamics calculator', 'drag force formula', 'air resistance calculator', 'drag coefficient formula', 'calculate drag coefficient', 'velocity drag calculator', 'area drag calculator', 'density drag calculator', 'fluid resistance calculator', 'aerodynamic drag calculator', 'drag equation physics', 'drag force equation', 'fluid mechanics calculator', 'drag calculation', 'aerodynamic force calculator'],
+    href: '/physics/drag-equation-calculator',
+    embedHref: '/embed/physics/drag-equation-calculator',
+    icon: '🌊',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',

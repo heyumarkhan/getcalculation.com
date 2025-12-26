@@ -107,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/capacitance-calculator', priority: 0.8 },
     { slug: 'physics/ohms-law-resistance-calculator', priority: 0.8 },
     { slug: 'physics/schwarzschild-radius-calculator', priority: 0.8 },
+    { slug: 'physics/drag-equation-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
