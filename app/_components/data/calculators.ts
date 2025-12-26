@@ -901,6 +901,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'maximum-height-calculator-for-projectile-motion',
+    name: 'Maximum Height Calculator for Projectile Motion',
+    description: 'Calculate maximum height, initial velocity, or launch angle for projectile motion using h_max = (v₀² × sin²(θ)) / (2g). Free online physics calculator for kinematics and projectile motion problems.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['maximum height calculator', 'projectile motion calculator', 'maximum height formula', 'h_max = (v₀² × sin²(θ)) / (2g)', 'calculate maximum height', 'projectile height calculator', 'launch angle calculator', 'initial velocity calculator', 'kinematics calculator', 'projectile motion maximum height', 'calculate projectile height', 'maximum height physics', 'projectile trajectory calculator', 'ballistics calculator', 'projectile motion formula', 'maximum altitude calculator', 'trajectory height calculator', 'projectile motion height', 'kinematics height calculator', 'physics projectile calculator', 'maximum height equation', 'projectile motion equations'],
+    href: '/physics/maximum-height-calculator-for-projectile-motion',
+    embedHref: '/embed/physics/maximum-height-calculator-for-projectile-motion',
+    icon: '🚀',
+    color: 'orange'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
