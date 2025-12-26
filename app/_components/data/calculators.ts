@@ -865,6 +865,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'ohms-law-resistance-calculator',
+    name: "Ohm's Law Resistance Calculator",
+    description: "Calculate resistance, voltage, or current using Ohm's Law: V = I × R. Free online physics calculator for electrical circuits, electronics, and engineering with comprehensive unit support.",
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ["ohms law calculator", "ohms law resistance calculator", "calculate resistance", "resistance calculator", "ohms law formula", "V = I × R", "calculate resistance from voltage and current", "voltage current resistance calculator", "ohms law equation", "resistance formula", "calculate voltage from current and resistance", "calculate current from voltage and resistance", "electrical resistance calculator", "circuit resistance calculator", "ohms law solver", "resistance unit converter", "ohm calculator", "kΩ calculator", "MΩ calculator", "electrical circuit calculator", "electronics calculator", "ohms law problems", "resistance calculation"],
+    href: '/physics/ohms-law-resistance-calculator',
+    embedHref: '/embed/physics/ohms-law-resistance-calculator',
+    icon: '⚡',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
