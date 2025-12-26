@@ -973,6 +973,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'displacement-calculator',
+    name: 'Displacement Calculator',
+    description: 'Calculate displacement from initial and final positions, velocity, acceleration, and time. Free online physics calculator for kinematics, motion analysis, and physics problems.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['displacement calculator', 'calculate displacement', 'displacement formula', 'Δx = x - x₀', 's = v₀t + (1/2)at²', 'displacement physics', 'position calculator', 'motion calculator', 'kinematics calculator', 'displacement from velocity', 'displacement from acceleration', 'change in position calculator', 'displacement vs distance', 'vector displacement', 'physics displacement', 'motion analysis calculator', 'displacement equation', 'calculate change in position', 'displacement kinematics', 'physics calculator'],
+    href: '/physics/displacement-calculator',
+    embedHref: '/embed/physics/displacement-calculator',
+    icon: '📍',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
