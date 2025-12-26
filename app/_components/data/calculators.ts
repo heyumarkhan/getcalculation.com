@@ -937,6 +937,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'keplers-third-law-calculator',
+    name: "Kepler's Third Law Calculator",
+    description: "Calculate orbital period, semi-major axis, or mass using Kepler's Third Law: T² = (4π²/GM) × a³. Free online physics calculator for orbital mechanics, planetary motion, and astrophysics.",
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ["kepler's third law calculator", "kepler third law calculator", "orbital period calculator", "semi-major axis calculator", "orbital mechanics calculator", "kepler's law calculator", "T² = (4π²/GM) × a³", "calculate orbital period", "calculate semi-major axis", "calculate orbital mass", "planetary motion calculator", "orbital period formula", "kepler's law formula", "orbital mechanics", "planetary orbits calculator", "satellite orbit calculator", "exoplanet calculator", "binary star calculator", "orbital period from distance", "orbital distance from period", "astrophysics calculator"],
+    href: '/physics/keplers-third-law-calculator',
+    embedHref: '/embed/physics/keplers-third-law-calculator',
+    icon: '🌍',
+    color: 'purple'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
