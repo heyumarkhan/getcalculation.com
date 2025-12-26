@@ -445,6 +445,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'speed-of-light-calculator',
+    name: 'Speed of Light Calculator',
+    description: 'Calculate distance traveled by light or time for light to travel a distance using the speed of light constant (c = 299,792,458 m/s). Free online physics calculator for optics, relativity, and electromagnetic calculations.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['speed of light calculator', 'light speed calculator', 'calculate light distance', 'light travel time calculator', 'speed of light formula', 'c = 299792458 m/s', 'light distance calculator', 'light time calculator', 'speed of light constant', 'light year calculator', 'light second calculator', 'electromagnetic speed calculator', 'optics calculator', 'relativity calculator', 'light propagation calculator', 'calculate distance light travels', 'light speed distance', 'light speed time', 'physics calculator', 'electromagnetic radiation calculator', 'speed of light units', 'light speed conversion'],
+    href: '/physics/speed-of-light-calculator',
+    embedHref: '/embed/physics/speed-of-light-calculator',
+    icon: '💫',
+    color: 'purple'
+  },
+  {
     id: 'wet-bulb-calculator',
     name: 'Wet Bulb Calculator',
     description: 'Calculate wet bulb temperature from dry bulb temperature and relative humidity using psychrometric formulas. Essential for HVAC, meteorology, and thermal comfort analysis.',
