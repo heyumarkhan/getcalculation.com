@@ -949,6 +949,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'section-modulus-calculator',
+    name: 'Section Modulus Calculator',
+    description: 'Calculate section modulus (Z) or dimensions for rectangular and circular cross-sections. Free online physics calculator for structural engineering, beam design, and stress analysis.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['section modulus calculator', 'calculate section modulus', 'section modulus formula', 'Z = (b × h²) / 6', 'section modulus rectangle', 'section modulus circle', 'beam design calculator', 'bending stress calculator', 'structural engineering calculator', 'cross-section calculator', 'moment of inertia calculator', 'beam sizing calculator', 'section modulus Z', 'rectangular section modulus', 'circular section modulus', 'structural design calculator', 'stress analysis calculator', 'beam analysis calculator', 'engineering calculator', 'mechanics calculator'],
+    href: '/physics/section-modulus-calculator',
+    embedHref: '/embed/physics/section-modulus-calculator',
+    icon: '🏗️',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
