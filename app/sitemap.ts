@@ -105,6 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/antenna-length-calculator', priority: 0.8 },
     { slug: 'physics/wavelength-to-energy-calculator', priority: 0.8 },
     { slug: 'physics/capacitance-calculator', priority: 0.8 },
+    { slug: 'physics/ohms-law-resistance-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
