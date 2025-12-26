@@ -104,6 +104,7 @@ export const INTERNAL_LINKS = {
   'wavelength-to-energy-calculator': { href: '/physics/wavelength-to-energy-calculator', title: 'Wavelength to Energy Calculator' },
   'capacitance-calculator': { href: '/physics/capacitance-calculator', title: 'Capacitance Calculator' },
   'ohms-law-resistance-calculator': { href: '/physics/ohms-law-resistance-calculator', title: "Ohm's Law Resistance Calculator" },
+  'schwarzschild-radius-calculator': { href: '/physics/schwarzschild-radius-calculator', title: 'Schwarzschild Radius Calculator' },
   'gravitational-force-calculator': { href: '/physics/gravitational-force-calculator', title: 'Gravitational Force Calculator' },
   'gear-ratio-calculator': { href: '/physics/gear-ratio-calculator', title: 'Gear Ratio Calculator' },
   'charles-law-calculator': { href: '/physics/charles-law-calculator', title: 'Charles\'s Law Calculator' },
