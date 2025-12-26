@@ -973,6 +973,7 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+ {
     id: 'speed-of-light-calculator',
     name: 'Speed of Light Calculator',
     description: 'Calculate distance, time, frequency, and wavelength using the speed of light (c = 299,792,458 m/s). Free online physics calculator for optics, astronomy, telecommunications, and electromagnetic wave calculations.',
@@ -982,6 +983,9 @@ export const calculators: Calculator[] = [
     href: '/physics/speed-of-light-calculator',
     embedHref: '/embed/physics/speed-of-light-calculator',
     icon: '⚡',
+    color: 'blue'
+  },
+  {
     color: 'blue'
   },
   {
