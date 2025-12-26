@@ -913,6 +913,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'mechanical-advantage-calculator',
+    name: 'Mechanical Advantage Calculator',
+    description: 'Calculate mechanical advantage, output force, input force, or distances using MA = F_out/F_in = D_in/D_out. Free online physics calculator for simple machines, levers, pulleys, and engineering.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['mechanical advantage calculator', 'calculate mechanical advantage', 'mechanical advantage formula', 'MA = F_out/F_in', 'simple machine calculator', 'lever calculator', 'pulley calculator', 'mechanical advantage formula', 'force multiplier calculator', 'calculate output force', 'calculate input force', 'simple machines calculator', 'lever mechanical advantage', 'pulley mechanical advantage', 'inclined plane calculator', 'mechanical advantage physics', 'simple machine physics', 'MA calculator', 'mechanical advantage equation', 'force advantage calculator', 'mechanics calculator', 'simple machines physics'],
+    href: '/physics/mechanical-advantage-calculator',
+    embedHref: '/embed/physics/mechanical-advantage-calculator',
+    icon: '⚙️',
+    color: 'green'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
