@@ -973,6 +973,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'speed-of-light-calculator',
+    name: 'Speed of Light Calculator',
+    description: 'Calculate distance, time, frequency, and wavelength using the speed of light (c = 299,792,458 m/s). Free online physics calculator for optics, astronomy, telecommunications, and electromagnetic wave calculations.',
+    category: 'Optics & Waves',
+    subject: 'physics',
+    keywords: ['speed of light calculator', 'calculate distance from time', 'speed of light formula', 'c = 299792458 m/s', 'light year calculator', 'light travel time calculator', 'frequency wavelength calculator', 'c = fλ', 'speed of light constant', 'light distance calculator', 'astronomical unit calculator', 'light second calculator', 'electromagnetic wave calculator', 'optics calculator', 'telecommunications calculator', 'relativity calculator', 'photon frequency calculator', 'wavelength frequency converter', 'speed of light physics', 'physics calculator'],
+    href: '/physics/speed-of-light-calculator',
+    embedHref: '/embed/physics/speed-of-light-calculator',
+    icon: '⚡',
+    color: 'blue'
+  },
+  {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
     description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = √(Fx² + Fy²).',
