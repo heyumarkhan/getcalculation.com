@@ -95,6 +95,7 @@ export const INTERNAL_LINKS = {
   'specific-heat-calculator': { href: '/physics/specific-heat-calculator', title: 'Specific Heat Calculator' },
   'calorimetry-calculator': { href: '/physics/calorimetry-calculator', title: 'Calorimetry Calculator' },
   'flow-rate-calculator': { href: '/physics/flow-rate-calculator', title: 'Flow Rate Calculator' },
+  'hydraulic-radius-calculator': { href: '/physics/hydraulic-radius-calculator', title: 'Hydraulic Radius Calculator' },
   'torque-calculator': { href: '/physics/torque-calculator', title: 'Torque Calculator' },
   'power-to-weight-ratio-calculator': { href: '/physics/power-to-weight-ratio-calculator', title: 'Power-to-Weight Ratio Calculator' },
   'wavelength-calculator': { href: '/physics/wavelength-calculator', title: 'Wavelength Calculator' },

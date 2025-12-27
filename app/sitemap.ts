@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/calorimetry-calculator', priority: 0.8 },
     { slug: 'physics/flow-rate-calculator', priority: 0.8 },
     { slug: 'physics/pipe-flow-calculator', priority: 0.8 },
+    { slug: 'physics/hydraulic-radius-calculator', priority: 0.8 },
     { slug: 'physics/torque-calculator', priority: 0.8 },
     { slug: 'physics/angular-velocity-calculator', priority: 0.8 },
     { slug: 'physics/power-to-weight-ratio-calculator', priority: 0.8 },

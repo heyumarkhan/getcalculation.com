@@ -589,6 +589,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'hydraulic-radius-calculator',
+    name: 'Hydraulic Radius Calculator',
+    description: 'Calculate hydraulic radius, cross-sectional area, or wetted perimeter using R = A / P. Free online fluid mechanics calculator for open channel flow, Manning equation, and engineering with comprehensive unit support.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['hydraulic radius calculator', 'calculate hydraulic radius', 'R = A/P calculator', 'hydraulic radius formula', 'wetted perimeter calculator', 'open channel flow calculator', 'manning equation calculator', 'hydraulic radius equation', 'R = A/P', 'calculate wetted perimeter', 'cross-sectional area calculator', 'channel flow calculator', 'hydraulic radius physics calculator', 'fluid mechanics calculator', 'open channel hydraulics', 'drainage calculator', 'canal flow calculator', 'hydraulic radius calculation', 'wetted perimeter formula', 'channel design calculator', 'hydraulic engineering calculator', 'flow efficiency calculator', 'manning formula calculator'],
+    href: '/physics/hydraulic-radius-calculator',
+    embedHref: '/embed/physics/hydraulic-radius-calculator',
+    icon: '🌊',
+    color: 'blue'
+  },
+  {
     id: 'torque-calculator',
     name: 'Torque Calculator',
     description: 'Calculate torque, force, or lever arm distance using τ = F × r. Free online mechanics calculator for physics and engineering with multiple unit support.',
