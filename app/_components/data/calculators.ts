@@ -1057,6 +1057,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'hookes-law-calculator',
+    name: 'Hooke\'s Law Calculator',
+    description: 'Calculate force, spring constant, or displacement using Hooke\'s Law: F = k × x. Free online physics calculator for elastic materials and springs with comprehensive unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['hookes law calculator', 'Hooke\'s law calculator', 'calculate hookes law', 'F = kx calculator', 'spring constant calculator', 'spring force calculator', 'elastic force calculator', 'hookes law formula', 'F = k × x', 'spring constant formula', 'calculate spring constant', 'calculate force from spring', 'spring displacement calculator', 'elasticity calculator', 'mechanics calculator', 'physics calculator', 'hookes law physics', 'spring physics calculator', 'elastic materials calculator', 'restoring force calculator', 'spring stiffness calculator', 'hookes law equation', 'spring constant from force', 'displacement from force', 'elastic limit calculator'],
+    href: '/physics/hookes-law-calculator',
+    embedHref: '/embed/physics/hookes-law-calculator',
+    icon: '🪀',
+    color: 'purple'
+  },
+  {
     id: 'engine-displacement-calculator',
     name: 'Engine Displacement Calculator',
     description: 'Calculate engine displacement (engine size) from bore, stroke, and number of cylinders using V = π × (Bore/2)² × Stroke × Cylinders. Free online automotive calculator with support for cc, liters, and cubic inches.',
