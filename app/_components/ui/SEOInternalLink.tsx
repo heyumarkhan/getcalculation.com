@@ -147,6 +147,7 @@ export const INTERNAL_LINKS = {
   'free-fall-calculator': { href: '/physics/free-fall-calculator', title: 'Free Fall Calculator' },
   'projectile-motion-calculator': { href: '/physics/projectile-motion-calculator', title: 'Projectile Motion Calculator' },
   'kinetic-energy-calculator': { href: '/physics/kinetic-energy-calculator', title: 'Kinetic Energy Calculator' },
+  'impact-energy-calculator': { href: '/physics/impact-energy-calculator', title: 'Impact Energy Calculator' },
   'arrow-speed-calculator': { href: '/physics/arrow-speed-calculator', title: 'Arrow Speed Calculator' },
   'water-viscosity-calculator': { href: '/physics/water-viscosity-calculator', title: 'Water Viscosity Calculator' },
   'water-density-calculator': { href: '/physics/water-density-calculator', title: 'Water Density Calculator' },
