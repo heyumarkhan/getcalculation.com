@@ -1032,6 +1032,19 @@ export const calculators: Calculator[] = [
     icon: '🚗',
     color: 'purple'
   },
+  {
+    id: 'conservation-of-momentum-calculator',
+    name: 'Conservation of Momentum Calculator',
+    description: 'Calculate final velocities or masses in collisions using conservation of momentum. Free online physics calculator for elastic and inelastic collisions using m₁v₁ᵢ + m₂v₂ᵢ = m₁v₁f + m₂v₂f.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['conservation of momentum calculator', 'momentum calculator', 'collision calculator', 'calculate final velocity', 'momentum conservation', 'elastic collision calculator', 'inelastic collision calculator', 'conservation of momentum formula', 'm₁v₁ᵢ + m₂v₂ᵢ = m₁v₁f + m₂v₂f', 'collision physics calculator', 'momentum physics', 'final velocity calculator', 'collision velocity calculator', 'physics collision calculator', 'momentum conservation physics', 'calculate momentum', 'two object collision', 'mechanics calculator', 'physics calculator', 'collision analysis calculator'],
+    href: '/physics/conservation-of-momentum-calculator',
+    embedHref: '/embed/physics/conservation-of-momentum-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+
 
   {
     id: 'reynolds-number-calculator',
