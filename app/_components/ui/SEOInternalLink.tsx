@@ -93,6 +93,7 @@ export const INTERNAL_LINKS = {
   'volume-to-mass-calculator': { href: '/physics/volume-to-mass-calculator', title: 'Volume to Mass Calculator' },
   'buoyancy-calculator': { href: '/physics/buoyancy-calculator', title: 'Buoyancy Calculator' },
   'specific-heat-calculator': { href: '/physics/specific-heat-calculator', title: 'Specific Heat Calculator' },
+  'calorimetry-calculator': { href: '/physics/calorimetry-calculator', title: 'Calorimetry Calculator' },
   'flow-rate-calculator': { href: '/physics/flow-rate-calculator', title: 'Flow Rate Calculator' },
   'torque-calculator': { href: '/physics/torque-calculator', title: 'Torque Calculator' },
   'power-to-weight-ratio-calculator': { href: '/physics/power-to-weight-ratio-calculator', title: 'Power-to-Weight Ratio Calculator' },
