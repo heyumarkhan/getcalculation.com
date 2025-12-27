@@ -1,4 +1,4 @@
-export interface Calculator {
+﻿export interface Calculator {
   id: string;
   name: string;
   description: string;
@@ -1263,6 +1263,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/kinetic-energy-calculator',
     icon: '⚡',
     color: 'orange'
+  },
+  {
+    id: 'impact-energy-calculator',
+    name: 'Impact Energy Calculator',
+    description: 'Calculate impact energy, mass, or velocity using E = (1/2) × m × v². Free online physics calculator for collisions, safety analysis, and engineering with comprehensive unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['impact energy calculator', 'calculate impact energy', 'E = ½mv² calculator', 'impact energy formula', 'collision energy calculator', 'impact energy physics calculator', 'impact velocity calculator', 'crash energy calculator', 'impact force calculator', 'collision calculator', 'impact energy equation', 'E = 1/2mv2 calculator', 'calculate impact energy from velocity', 'impact energy from mass and velocity', 'safety analysis calculator', 'crash test calculator', 'impact physics calculator', 'collision energy formula', 'impact energy calculation', 'energy of impact calculator', 'impact kinetic energy calculator', 'automotive impact calculator', 'material impact calculator'],
+    href: '/physics/impact-energy-calculator',
+    embedHref: '/embed/physics/impact-energy-calculator',
+    icon: '💥',
+    color: 'red'
   },
   {
     id: 'impulse-momentum-calculator',
