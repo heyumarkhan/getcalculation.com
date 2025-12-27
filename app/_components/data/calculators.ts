@@ -349,6 +349,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'horizontal-projectile-motion-calculator',
+    name: 'Horizontal Projectile Motion Calculator',
+    description: 'Calculate horizontal projectile motion parameters: range, time of flight, and final velocity. Free online physics calculator using t = √(2h/g) and R = v₀ × t for horizontally launched projectiles.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['horizontal projectile motion calculator', 'horizontal projectile calculator', 'calculate horizontal projectile motion', 'horizontal projectile motion formula', 'horizontal projectile range calculator', 'horizontal projectile time of flight', 'horizontal launch calculator', 'projectile motion horizontal velocity', 'horizontal projectile physics', 'calculate range horizontal projectile', 'horizontal projectile motion equation', 'horizontal projectile distance calculator', 'horizontal projectile motion t = sqrt(2h/g)', 'horizontal projectile R = v0*t', 'horizontal projectile motion calculator online', 'horizontal projectile motion physics calculator', 'horizontal projectile final velocity', 'horizontal projectile motion examples', 'horizontal launch physics calculator', 'horizontal projectile motion kinematics', 'horizontal projectile motion range formula', 'horizontal projectile motion time formula', 'horizontal projectile calculator free', 'horizontal projectile motion step by step'],
+    href: '/physics/horizontal-projectile-motion-calculator',
+    embedHref: '/embed/physics/horizontal-projectile-motion-calculator',
+    icon: '🚀',
+    color: 'purple'
+  },
+  {
     id: 'arrow-speed-calculator',
     name: 'Arrow Speed Calculator',
     description: 'Calculate arrow speed from distance/time or kinetic energy/mass. Free online physics calculator for archery using v = d/t or v = √(2KE/m) with multiple unit support.',

@@ -152,7 +152,8 @@ export const INTERNAL_LINKS = {
   'watts-to-amps-calculator': { href: '/physics/watts-to-amps-calculator', title: 'Watts to Amps Calculator' },
   'conservation-of-momentum-calculator': { href: '/physics/conservation-of-momentum-calculator', title: 'Conservation of Momentum Calculator' },
   'dew-point-calculator': { href: '/physics/dew-point-calculator', title: 'Dew Point Calculator' },
-  'orbital-period-calculator': { href: '/physics/orbital-period-calculator', title: 'Orbital Period Calculator' }
+  'orbital-period-calculator': { href: '/physics/orbital-period-calculator', title: 'Orbital Period Calculator' },
+  'horizontal-projectile-motion-calculator': { href: '/physics/horizontal-projectile-motion-calculator', title: 'Horizontal Projectile Motion Calculator' }
 } as const;
 
 // Helper function to create internal links (returns React component)
