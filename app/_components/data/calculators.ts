@@ -553,6 +553,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'calorimetry-calculator',
+    name: 'Calorimetry Calculator',
+    description: 'Calculate heat energy, mass, specific heat, or temperature change using calorimetry formula Q = m × c × ΔT. Free online physics calculator for thermodynamics and chemistry with comprehensive unit support.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['calorimetry calculator', 'calorimetry formula', 'heat transfer calculator', 'Q = mcΔT calculator', 'calorimetry equation', 'heat energy calculator', 'calorimetry physics calculator', 'calculate heat transfer', 'calorimetry chemistry calculator', 'heat of reaction calculator', 'enthalpy calculator', 'thermal energy calculator', 'calorimetry experiment calculator', 'heat capacity calculator', 'temperature change calculator', 'calorimetry calculation', 'heat transfer formula', 'calorimetry thermodynamics', 'physics calculator', 'thermodynamics calculator', 'heat measurement calculator', 'calorimetry lab calculator', 'chemical calorimetry calculator', 'heat flow calculator'],
+    href: '/physics/calorimetry-calculator',
+    embedHref: '/embed/physics/calorimetry-calculator',
+    icon: '🔥',
+    color: 'purple'
+  },
+  {
     id: 'flow-rate-calculator',
     name: 'Flow Rate Calculator',
     description: 'Calculate volumetric flow rate, area, velocity, volume, or time using Q = A × v or Q = V/t. Free online fluid mechanics calculator for physics and engineering.',

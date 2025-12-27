@@ -75,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/specific-gravity-calculator', priority: 0.8 },
     { slug: 'physics/buoyancy-calculator', priority: 0.8 },
     { slug: 'physics/specific-heat-calculator', priority: 0.8 },
+    { slug: 'physics/calorimetry-calculator', priority: 0.8 },
     { slug: 'physics/flow-rate-calculator', priority: 0.8 },
     { slug: 'physics/pipe-flow-calculator', priority: 0.8 },
     { slug: 'physics/torque-calculator', priority: 0.8 },
