@@ -1021,6 +1021,19 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'engine-displacement-calculator',
+    name: 'Engine Displacement Calculator',
+    description: 'Calculate engine displacement (engine size) from bore, stroke, and number of cylinders using V = π × (Bore/2)² × Stroke × Cylinders. Free online automotive calculator with support for cc, liters, and cubic inches.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['engine displacement calculator', 'calculate engine displacement', 'engine size calculator', 'displacement calculator', 'engine cc calculator', 'bore stroke calculator', 'cylinder displacement calculator', 'engine displacement formula', 'V = π × (Bore/2)² × Stroke × Cylinders', 'calculate engine size', 'engine volume calculator', 'automotive calculator', 'engine displacement cc', 'engine displacement liters', 'engine displacement cubic inches', 'engine bore stroke calculator', 'engine capacity calculator', 'motor displacement calculator', 'engine displacement physics', 'mechanics calculator', 'automotive engineering calculator', 'engine specs calculator', 'cylinder volume calculator'],
+    href: '/physics/engine-displacement-calculator',
+    embedHref: '/embed/physics/engine-displacement-calculator',
+    icon: '🚗',
+    color: 'purple'
+  },
+
+  {
     id: 'reynolds-number-calculator',
     name: 'Reynolds Number Calculator',
     description: 'Calculate Reynolds number or any variable using Re = (ρ × v × D) / μ. Free online fluid mechanics calculator with flow regime determination (laminar, transitional, turbulent).',
