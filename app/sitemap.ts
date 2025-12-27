@@ -117,6 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/displacement-calculator', priority: 0.8 },
     { slug: 'physics/net-force-calculator', priority: 0.8 },
     { slug: 'physics/tension-calculator', priority: 0.8 },
+    { slug: 'physics/hookes-law-calculator', priority: 0.8 },
     { slug: 'physics/reynolds-number-calculator', priority: 0.8 },
     { slug: 'physics/watt-hour-calculator', priority: 0.8 },
     { slug: 'physics/wavelength-to-frequency-calculator', priority: 0.8 },
