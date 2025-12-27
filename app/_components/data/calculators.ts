@@ -973,6 +973,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'orbital-period-calculator',
+    name: 'Orbital Period Calculator',
+    description: 'Calculate orbital period from semi-major axis and mass using Kepler\'s Third Law: T = √[(4π²/GM) × a³]. Free online physics calculator for orbital mechanics, planetary motion, and astrophysics with comprehensive unit support.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['orbital period calculator', 'calculate orbital period', 'orbital period formula', 'orbital period from semi-major axis', 'orbital period from mass', 'kepler third law calculator', 'orbital period kepler', 'calculate orbital period from distance', 'orbital period from radius', 'orbital period physics', 'orbital period astronomy', 'orbital period formula calculator', 'orbital period equation', 'orbital period calculation', 'satellite orbital period', 'planet orbital period', 'orbital period calculator online', 'orbital period from semi-major axis calculator', 'orbital mechanics calculator', 'orbital period kepler law', 'orbital period T squared', 'orbital period semi-major axis', 'orbital period mass', 'orbital period gravitational constant', 'orbital period astrophysics'],
+    href: '/physics/orbital-period-calculator',
+    embedHref: '/embed/physics/orbital-period-calculator',
+    icon: '🪐',
+    color: 'purple'
+  },
+  {
     id: 'section-modulus-calculator',
     name: 'Section Modulus Calculator',
     description: 'Calculate section modulus (Z) or dimensions for rectangular and circular cross-sections. Free online physics calculator for structural engineering, beam design, and stress analysis.',
