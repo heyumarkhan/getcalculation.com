@@ -273,7 +273,7 @@ export default function OrbitalPeriodCalculator({
           <div className={`mt-6 p-4 ${getResultColor()} border rounded-lg`}>
             <h3 className={`text-lg font-semibold ${getResultTextColor()} mb-2`}>Orbital Period</h3>
             <p className={`text-2xl font-bold ${getResultTextColor()}`}>
-              {formatValue(result.value)} {timeUnits[result.unit as keyof typeof timeUnits].name}
+              {formatValue(result.value)} {timeUnits[result.unit as keyof typeof timeUnits]?.name || result.unit}
             </p>
             {calculation && (
               <div className={`text-sm ${getResultTextColor()}/80 mt-3 font-mono whitespace-pre-line`}>
