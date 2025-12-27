@@ -469,6 +469,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'dew-point-calculator',
+    name: 'Dew Point Calculator',
+    description: 'Calculate dew point temperature from air temperature and relative humidity using the Magnus formula. Free online thermodynamics calculator for HVAC, meteorology, weather forecasting, and environmental analysis.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['dew point calculator', 'calculate dew point', 'dew point temperature', 'dew point from humidity', 'dew point formula', 'dew point temperature calculator', 'calculate dew point temperature', 'dew point from temperature and humidity', 'magnus formula calculator', 'dew point humidity calculator', 'dew point temperature formula', 'dew point calculation', 'dew point meteorology', 'dew point HVAC', 'dew point condensation', 'dew point weather', 'dew point calculator online', 'dew point temperature conversion', 'dew point relative humidity', 'dew point calculator celsius', 'dew point calculator fahrenheit', 'dew point psychrometrics', 'dew point thermodynamics', 'dew point condensation temperature', 'dew point calculator formula'],
+    href: '/physics/dew-point-calculator',
+    embedHref: '/embed/physics/dew-point-calculator',
+    icon: '💧',
+    color: 'purple'
+  },
+  {
     id: 'density-mass-volume-calculator',
     name: 'Density Mass Volume Calculator',
     description: 'Calculate density, mass, or volume using the formula ρ = m/V. Free online physics calculator for material properties, fluid mechanics, and engineering calculations.',
