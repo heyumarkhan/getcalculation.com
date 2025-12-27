@@ -1156,6 +1156,19 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'water-density-calculator',
+    name: 'Water Density Calculator',
+    description: 'Calculate water density at any temperature using accurate polynomial formulas. Free online physics calculator for fluid mechanics, chemistry, and engineering with multiple unit support.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['water density calculator', 'calculate water density', 'water density temperature', 'density of water calculator', 'water density formula', 'water density by temperature', 'calculate water density from temperature', 'water density at temperature', 'water density kg/m³', 'water density g/cm³', 'water density physics', 'fluid mechanics calculator', 'water properties calculator', 'water density table', 'temperature dependent density', 'water density equation', 'water density calculation', 'liquid water density', 'pure water density', 'water density chemistry', 'water density engineering', 'water thermal expansion'],
+    href: '/physics/water-density-calculator',
+    embedHref: '/embed/physics/water-density-calculator',
+    icon: '💧',
+    color: 'blue'
+  },
+
+  {
     id: 'terminal-velocity-calculator',
     name: 'Terminal Velocity Calculator',
     description: 'Calculate terminal velocity, mass, cross-sectional area, or drag coefficient using v = √(2mg/(ρAC_d)). Free online fluid mechanics calculator for physics and engineering with drag force calculations.',
