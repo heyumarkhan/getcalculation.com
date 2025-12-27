@@ -1106,6 +1106,19 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'watts-to-amps-calculator',
+    name: 'Watts to Amps Calculator',
+    description: 'Convert watts (power) to amperes (current) using voltage. Free online calculator for DC and AC circuits with power factor support. Use I = P/V for DC or I = P/(V×PF) for AC.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['watts to amps calculator', 'convert watts to amps', 'watts to amperes calculator', 'power to current calculator', 'watts to amps conversion', 'I = P/V', 'calculate amps from watts', 'watts volts amps calculator', 'electrical current calculator', 'power current calculator', 'watts to amps formula', 'convert power to current', 'electrical calculator', 'DC current calculator', 'AC current calculator', 'circuit current calculator', 'ampere calculator', 'current from power voltage', 'watts amps voltage calculator', 'electrical engineering calculator', 'power factor calculator', 'circuit breaker sizing calculator'],
+    href: '/physics/watts-to-amps-calculator',
+    embedHref: '/embed/physics/watts-to-amps-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+
+  {
     id: 'friction-loss-calculator',
     name: 'Friction Loss Calculator',
     description: 'Calculate head loss and pressure drop in pipes using Darcy-Weisbach or Hazen-Williams equations. Free online fluid mechanics calculator for pipe sizing and pump selection.',
