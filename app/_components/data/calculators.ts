@@ -37,6 +37,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'evaporation-rate-calculator',
+    name: 'Evaporation Rate Calculator',
+    description: 'Calculate evaporation rate from mass, volume, or area and time. Free online thermodynamics calculator for water evaporation, pool maintenance, HVAC, and environmental analysis.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['evaporation rate calculator', 'calculate evaporation rate', 'evaporation rate formula', 'water evaporation calculator', 'evaporation rate from mass', 'evaporation rate from volume', 'evaporation rate area', 'evaporation rate time', 'pool evaporation calculator', 'water loss calculator', 'evaporation rate thermodynamics', 'evaporation rate HVAC', 'evaporation rate meteorology', 'evaporation rate environmental', 'evaporation rate physics', 'calculate water evaporation', 'evaporation rate kg/h', 'evaporation rate L/h', 'evaporation rate per area', 'evaporation rate calculation', 'evaporation rate formula', 'evaporation rate units', 'evaporation rate calculator online', 'evaporation rate thermodynamics calculator'],
+    href: '/physics/evaporation-rate-calculator',
+    embedHref: '/embed/physics/evaporation-rate-calculator',
+    icon: '💨',
+    color: 'blue'
+  },
+  {
     id: 'area',
     name: 'Area Calculator',
     description: 'Calculate the area of rectangles, squares, circles, and triangles',
