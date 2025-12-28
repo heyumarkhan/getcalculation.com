@@ -61,6 +61,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'heat-transfer-calculator',
+    name: 'Heat Transfer Calculator',
+    description: 'Calculate heat transfer rate for conduction (Q = k×A×(T₁-T₂)/d), convection (Q = h×A×(T_surface-T_fluid)), or radiation (Q = ε×σ×A×(T₁⁴-T₂⁴)). Free online thermodynamics calculator.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['heat transfer calculator', 'calculate heat transfer', 'heat transfer rate calculator', 'conduction calculator', 'convection calculator', 'radiation calculator', 'Q = k×A×(T₁-T₂)/d', 'Q = h×A×(T_surface-T_fluid)', 'Q = ε×σ×A×(T₁⁴-T₂⁴)', 'thermal conductivity calculator', 'convection coefficient calculator', 'emissivity calculator', 'heat transfer formula', 'heat transfer equation', 'thermal physics calculator', 'thermodynamics calculator', 'heat transfer rate formula', 'conduction heat transfer', 'convection heat transfer', 'radiation heat transfer', 'heat transfer calculation', 'thermal transfer calculator', 'heat flow calculator', 'heat transfer physics', 'heat transfer engineering calculator'],
+    href: '/physics/heat-transfer-calculator',
+    embedHref: '/embed/physics/heat-transfer-calculator',
+    icon: '🔥',
+    color: 'red'
+  },
+  {
     id: 'evaporation-rate-calculator',
     name: 'Evaporation Rate Calculator',
     description: 'Calculate evaporation rate from mass, volume, or area and time. Free online thermodynamics calculator for water evaporation, pool maintenance, HVAC, and environmental analysis.',
