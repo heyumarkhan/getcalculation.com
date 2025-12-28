@@ -421,6 +421,18 @@ export const calculators: Calculator[] = [
     color: 'red'
   },
   {
+    id: 'bullet-energy-calculator',
+    name: 'Bullet Energy Calculator',
+    description: 'Calculate bullet kinetic energy, mass, or velocity using E = ½mv². Free online ballistics calculator for firearms with grains, fps, and ft-lb units.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['bullet energy calculator', 'calculate bullet energy', 'bullet kinetic energy calculator', 'E = ½mv²', 'bullet energy formula', 'bullet energy ft-lb', 'bullet energy calculator grains fps', 'bullet energy from velocity', 'bullet energy from mass', 'ballistics calculator', 'firearms calculator', 'bullet energy calculation', 'kinetic energy bullet', 'bullet energy physics', 'bullet energy equation', 'bullet energy grains', 'bullet energy fps', 'bullet energy foot pounds', 'bullet energy calculator online', 'bullet energy ballistics', 'bullet energy mechanics calculator', 'bullet energy physics calculator', 'bullet energy from mass and velocity', 'calculate bullet energy from fps', 'bullet energy grains fps calculator'],
+    href: '/physics/bullet-energy-calculator',
+    embedHref: '/embed/physics/bullet-energy-calculator',
+    icon: '🎯',
+    color: 'red'
+  },
+  {
     id: 'magnitude-of-acceleration-calculator',
     name: 'Magnitude of Acceleration Calculator',
     description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |Δv|/Δt, |a| = |F|/m, or |a| = √(aₓ²+aᵧ²+a_z²). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
