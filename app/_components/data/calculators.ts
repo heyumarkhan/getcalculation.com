@@ -1143,6 +1143,18 @@ export const calculators: Calculator[] = [
     color: 'yellow'
   },
   {
+    id: 'wave-speed-calculator',
+    name: 'Wave Speed Calculator',
+    description: 'Calculate wave speed from frequency and wavelength (v = f × λ) or from distance and time (v = d / t). Free online physics calculator for waves, sound, light, and electromagnetic waves.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['wave speed calculator', 'calculate wave speed', 'wave speed formula', 'v = f × λ', 'wave velocity calculator', 'wave speed frequency wavelength', 'wave speed distance time', 'v = d / t', 'wave speed physics', 'wave velocity formula', 'calculate wave velocity', 'wave speed equation', 'sound wave speed calculator', 'light wave speed calculator', 'electromagnetic wave speed', 'wave propagation speed', 'wave speed frequency', 'wave speed wavelength', 'waves calculator', 'physics calculator', 'wave physics calculator', 'wave speed units', 'wave speed m/s'],
+    href: '/physics/wave-speed-calculator',
+    embedHref: '/embed/physics/wave-speed-calculator',
+    icon: '〰️',
+    color: 'purple'
+  },
+  {
     id: 'wavelength-to-frequency-calculator',
     name: 'Wavelength to Frequency Calculator',
     description: 'Convert between wavelength and frequency using f = c/λ for electromagnetic waves or f = v/λ for general waves. Free online wave calculator with support for multiple units.',
