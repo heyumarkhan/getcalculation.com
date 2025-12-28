@@ -37,6 +37,18 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'normal-force-calculator',
+    name: 'Normal Force Calculator',
+    description: 'Calculate normal force from mass and gravity using N = m × g (horizontal) or N = m × g × cos(θ) (inclined plane). Free online mechanics calculator for physics problems.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['normal force calculator', 'calculate normal force', 'normal force formula', 'N = m × g', 'N = m × g × cos(θ)', 'normal force physics', 'normal force horizontal surface', 'normal force inclined plane', 'normal force calculator online', 'normal force equation', 'normal force from mass', 'normal force from weight', 'normal force mechanics', 'physics calculator', 'mechanics calculator', 'normal force calculation', 'normal force horizontal', 'normal force angle', 'normal force gravity', 'normal force mass', 'normal force calculator physics', 'normal force formula calculator', 'calculate normal force from mass', 'normal force inclined surface calculator'],
+    href: '/physics/normal-force-calculator',
+    embedHref: '/embed/physics/normal-force-calculator',
+    icon: '⬆️',
+    color: 'blue'
+  },
+  {
     id: 'kilogram-to-newtons-calculator',
     name: 'Kilogram to Newtons Calculator',
     description: 'Convert mass in kilograms to weight (force) in Newtons using F = m × g. Free online physics calculator for converting kg to N with standard gravity (g = 9.80665 m/s²).',
