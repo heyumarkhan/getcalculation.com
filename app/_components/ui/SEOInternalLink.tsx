@@ -129,6 +129,7 @@ export const INTERNAL_LINKS = {
   'dc-wire-size-calculator': { href: '/physics/dc-wire-size-calculator', title: 'DC Wire Size Calculator' },
   'parallel-resistor-calculator': { href: '/physics/parallel-resistor-calculator', title: 'Parallel Resistor Calculator' },
   'force-calculator': { href: '/physics/force-calculator', title: 'Force Calculator' },
+  'g-force-calculator': { href: '/physics/g-force-calculator', title: 'G Force Calculator' },
   'centrifugal-force-calculator': { href: '/physics/centrifugal-force-calculator', title: 'Centrifugal Force Calculator' },
   'wind-load-calculator': { href: '/physics/wind-load-calculator', title: 'Wind Load Calculator' },
   'reynolds-number-calculator': { href: '/physics/reynolds-number-calculator', title: 'Reynolds Number Calculator' },

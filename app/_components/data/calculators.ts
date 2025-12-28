@@ -25,6 +25,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'kilogram-to-newtons-calculator',
+    name: 'Kilogram to Newtons Calculator',
+    description: 'Convert mass in kilograms to weight (force) in Newtons using F = m × g. Free online physics calculator for converting kg to N with standard gravity (g = 9.80665 m/s²).',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['kilogram to newtons calculator', 'kg to newtons calculator', 'convert kg to newtons', 'kg to N calculator', 'mass to weight calculator', 'kilogram to newtons conversion', 'kg to newtons formula', 'F = m × g', 'weight calculator', 'mass weight conversion', 'kilogram newtons converter', 'kg newtons conversion', 'convert mass to force', 'weight from mass calculator', 'gravity weight calculator', 'standard gravity calculator', 'earth gravity calculator', 'mass to force calculator', 'physics calculator', 'mechanics calculator', 'kg to N conversion', 'kilogram newtons', 'weight force calculator'],
+    href: '/physics/kilogram-to-newtons-calculator',
+    embedHref: '/embed/physics/kilogram-to-newtons-calculator',
+    icon: '⚖️',
+    color: 'purple'
+  },
+  {
     id: 'area',
     name: 'Area Calculator',
     description: 'Calculate the area of rectangles, squares, circles, and triangles',
