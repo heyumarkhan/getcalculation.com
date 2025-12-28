@@ -25,6 +25,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'friction-calculator',
+    name: 'Friction Calculator',
+    description: 'Calculate friction force, coefficient of friction, or normal force using F_friction = μ × N. Free online mechanics calculator for physics problems with static and kinetic friction calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['friction calculator', 'calculate friction force', 'friction force formula', 'F_friction = μ × N', 'coefficient of friction calculator', 'friction force physics', 'static friction calculator', 'kinetic friction calculator', 'friction coefficient calculator', 'normal force calculator', 'friction formula', 'friction equation', 'calculate coefficient of friction', 'friction force calculation', 'mechanics calculator', 'physics calculator', 'friction physics', 'friction force equation', 'friction calculator online', 'friction force from coefficient', 'coefficient of friction from force', 'normal force from friction', 'friction mechanics calculator'],
+    href: '/physics/friction-calculator',
+    embedHref: '/embed/physics/friction-calculator',
+    icon: '🔧',
+    color: 'orange'
+  },
+  {
     id: 'kilogram-to-newtons-calculator',
     name: 'Kilogram to Newtons Calculator',
     description: 'Convert mass in kilograms to weight (force) in Newtons using F = m × g. Free online physics calculator for converting kg to N with standard gravity (g = 9.80665 m/s²).',
