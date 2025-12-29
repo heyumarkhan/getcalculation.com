@@ -118,7 +118,7 @@ export default function PneumaticCylinderForceCalculator({
     let calcStr = `F = P × A\n`;
     calcStr += `Extension: F = ${formatValue(pressureInPa)} Pa × ${formatValue(pistonArea)} m² = ${formatValue(extensionForce)} N = ${formatValue(extensionForceInUnit)} ${forceUnit}`;
     
-    if (cylinderType === 'double' && retractionForceInUnit !== undefined) {
+    if (cylinderType === 'double' && retractionForce !== undefined && retractionForceInUnit !== undefined) {
       calcStr += `\nRetraction: F = ${formatValue(pressureInPa)} Pa × ${formatValue(effectiveArea)} m² = ${formatValue(retractionForce)} N = ${formatValue(retractionForceInUnit)} ${forceUnit}`;
     }
 
