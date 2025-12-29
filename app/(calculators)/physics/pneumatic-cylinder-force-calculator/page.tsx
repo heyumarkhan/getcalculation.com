@@ -8,7 +8,7 @@ export default function PneumaticCylinderForceCalculatorPage() {
     <CalculatorPageTemplate
       title="Pneumatic Cylinder Force Calculator: Calculate F = P × A"
       description="Calculate extension and retraction force for pneumatic cylinders using F = P × A. Free online physics calculator for single-acting and double-acting cylinders with comprehensive unit support for pressure, diameter, and force."
-      calculator={<PneumaticCylinderForceCalculator />}
+      calculator={<PneumaticCylinderForceCalculator primaryColor="#820ECC" />}
       slug="physics/pneumatic-cylinder-force-calculator"
       category="Mechanics"
       features={[
@@ -20,7 +20,6 @@ export default function PneumaticCylinderForceCalculatorPage() {
         "Mobile-friendly interface",
         "Free to use"
       ]}
-      primaryColor="#820ECC"
     >
       <SEOSection title="Understanding Pneumatic Cylinder Force">
         <p>
