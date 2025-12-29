@@ -234,7 +234,7 @@ export default function AccelerationDueToGravityCalculatorPage() {
           Understanding gravity is essential for space exploration, engineering, and physics education. Use this calculator to explore how gravity varies across the solar system and beyond, and discover the fascinating physics behind one of nature&apos;s fundamental forces.
         </p>
         <p>
-          Ready to explore more physics concepts? Check out our other {createInternalLink('physics', 'Physics calculators')} for related topics in mechanics, kinematics, and gravitational physics.
+          Ready to explore more physics concepts? Check out our other physics calculators like the {createInternalLink('gravitational-force-calculator', 'Gravitational Force Calculator')}, {createInternalLink('free-fall-calculator', 'Free Fall Calculator')}, and {createInternalLink('projectile-motion-calculator', 'Projectile Motion Calculator')} for related topics in mechanics, kinematics, and gravitational physics.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
