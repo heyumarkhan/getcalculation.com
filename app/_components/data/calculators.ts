@@ -97,6 +97,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'luminosity-calculator',
+    name: 'Luminosity Calculator',
+    description: 'Calculate stellar luminosity using the Stefan-Boltzmann law: L = 4πR²σT⁴. Free online physics calculator for astronomy and astrophysics. Calculate luminosity, radius, or temperature of stars with preset values for Sun, Sirius, Vega, and more.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['luminosity calculator', 'stellar luminosity calculator', 'star luminosity calculator', 'L = 4πR²σT⁴', 'stefan boltzmann law calculator', 'stellar luminosity formula', 'luminosity formula calculator', 'calculate star luminosity', 'stellar radius calculator', 'stellar temperature calculator', 'astronomy calculator', 'astrophysics calculator', 'black body radiation calculator', 'stefan boltzmann constant calculator', 'luminosity physics calculator', 'star properties calculator', 'stellar evolution calculator', 'solar luminosity calculator', 'stellar luminosity equation', 'luminosity calculation', 'star temperature from luminosity', 'star radius from luminosity', 'luminosity to temperature calculator', 'luminosity to radius calculator', 'stefan boltzmann equation calculator', 'stellar physics calculator', 'astronomy physics calculator'],
+    href: '/physics/luminosity-calculator',
+    embedHref: '/embed/physics/luminosity-calculator',
+    icon: '⭐',
+    color: 'purple'
+  },
+  {
     id: 'heat-transfer-calculator',
     name: 'Heat Transfer Calculator',
     description: 'Calculate heat transfer rate for conduction (Q = k×A×(T1-T2)/d), convection (Q = h×A×(T_surface-T_fluid)), or radiation (Q = e×s×A×(T14-T24)). Free online thermodynamics calculator.',
