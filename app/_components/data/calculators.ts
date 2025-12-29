@@ -156,6 +156,18 @@ export const calculators: Calculator[] = [
     icon: '📊',
     color: 'purple'
   },
+  {
+    id: 'wiens-law-calculator',
+    name: 'Wien\'s Law Calculator',
+    description: 'Calculate peak wavelength or temperature using Wien\'s displacement law: λ_max × T = b. Free online physics calculator for black body radiation, thermal physics, and astrophysics. Calculate the wavelength of maximum emission from temperature or vice versa.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['wiens law calculator', 'wien displacement law calculator', 'peak wavelength calculator', 'black body radiation calculator', 'thermal radiation calculator', 'λ_max × T = b calculator', 'wien constant calculator', 'peak wavelength from temperature', 'temperature from peak wavelength', 'black body temperature calculator', 'thermal physics calculator', 'astrophysics calculator', 'stellar temperature calculator', 'wien displacement constant', 'black body spectrum calculator', 'thermal emission calculator', 'radiation physics calculator', 'wien law formula', 'peak wavelength formula', 'black body calculator', 'thermal imaging calculator', 'stellar physics calculator', 'radiation temperature calculator', 'wien law physics', 'thermal radiation physics'],
+    href: '/physics/wiens-law-calculator',
+    embedHref: '/embed/physics/wiens-law-calculator',
+    icon: '🌡️',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
