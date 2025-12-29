@@ -73,6 +73,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'pneumatic-cylinder-force-calculator',
+    name: 'Pneumatic Cylinder Force Calculator',
+    description: 'Calculate extension and retraction force for pneumatic cylinders using F = P × A. Free online physics calculator for single-acting and double-acting cylinders with comprehensive unit support for pressure, diameter, and force.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['pneumatic cylinder force calculator', 'cylinder force calculator', 'pneumatic force calculator', 'F = P × A', 'pneumatic cylinder calculator', 'air cylinder force calculator', 'cylinder force formula', 'pneumatic actuator force', 'single acting cylinder calculator', 'double acting cylinder calculator', 'extension force calculator', 'retraction force calculator', 'pneumatic pressure force', 'cylinder sizing calculator', 'pneumatic system calculator', 'air pressure force calculator', 'cylinder force calculation', 'pneumatic engineering calculator', 'mechanics calculator', 'physics calculator', 'pneumatic cylinder force formula', 'calculate cylinder force', 'pneumatic cylinder force from pressure', 'cylinder force PSI calculator', 'pneumatic actuator sizing', 'cylinder force bar calculator', 'pneumatic cylinder force equation', 'F = PA calculator', 'pneumatic cylinder force physics'],
+    href: '/physics/pneumatic-cylinder-force-calculator',
+    embedHref: '/embed/physics/pneumatic-cylinder-force-calculator',
+    icon: '⚙️',
+    color: 'purple'
+  },
+  {
     id: 'heat-transfer-calculator',
     name: 'Heat Transfer Calculator',
     description: 'Calculate heat transfer rate for conduction (Q = k×A×(T1-T2)/d), convection (Q = h×A×(T_surface-T_fluid)), or radiation (Q = e×s×A×(T14-T24)). Free online thermodynamics calculator.',
