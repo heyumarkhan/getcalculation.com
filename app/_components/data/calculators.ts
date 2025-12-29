@@ -120,6 +120,18 @@ export const calculators: Calculator[] = [
     icon: '⚡',
     color: 'purple'
   },
+  {
+    id: 'mach-number-calculator',
+    name: 'Mach Number Calculator',
+    description: 'Calculate Mach number, velocity, or speed of sound using M = v/c. Free online physics calculator for aerodynamics and fluid dynamics. Calculate Mach number from velocity and speed of sound, or use temperature to find speed of sound in air.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['mach number calculator', 'M = v/c calculator', 'mach number formula calculator', 'calculate mach number', 'mach number physics calculator', 'speed of sound calculator', 'supersonic calculator', 'aerodynamics calculator', 'mach number from velocity', 'velocity from mach number', 'speed of sound from temperature', 'mach number equation', 'mach number calculation', 'compressible flow calculator', 'fluid dynamics calculator', 'aerospace calculator', 'sonic speed calculator', 'mach number converter', 'mach speed calculator', 'mach number physics', 'mach number engineering', 'mach number formula', 'calculate speed of sound', 'mach number aerodynamics', 'supersonic speed calculator'],
+    href: '/physics/mach-number-calculator',
+    embedHref: '/embed/physics/mach-number-calculator',
+    icon: '✈️',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
