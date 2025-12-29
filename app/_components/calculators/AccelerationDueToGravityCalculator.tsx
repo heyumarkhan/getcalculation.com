@@ -127,8 +127,8 @@ export default function AccelerationDueToGravityCalculator() {
     setSelectedBody(bodyKey);
     if (bodyKey) {
       const body = celestialBodies[bodyKey as keyof typeof celestialBodies];
-      setMass((body.mass / massUnits[massUnit].factor).toString());
-      setRadius((body.radius / distanceUnits[radiusUnit].factor).toString());
+      setMass((body.mass / massUnits[massUnit as keyof typeof massUnits].factor).toString());
+      setRadius((body.radius / distanceUnits[radiusUnit as keyof typeof distanceUnits].factor).toString());
     } else {
       setMass('');
       setRadius('');
