@@ -132,6 +132,18 @@ export const calculators: Calculator[] = [
     icon: '✈️',
     color: 'purple'
   },
+  {
+    id: 'sound-wavelength-calculator',
+    name: 'Sound Wavelength Calculator',
+    description: 'Calculate sound wavelength, velocity, or frequency using λ = v/f. Free online physics calculator for acoustics and wave physics. Calculate wavelength from frequency and speed of sound, or use temperature to find speed of sound in air.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['sound wavelength calculator', 'wavelength calculator', 'λ = v/f calculator', 'sound wavelength formula', 'calculate sound wavelength', 'wavelength frequency velocity calculator', 'acoustics calculator', 'wave physics calculator', 'sound wave calculator', 'wavelength from frequency', 'frequency from wavelength', 'speed of sound calculator', 'sound wave physics', 'acoustic wavelength calculator', 'wave equation calculator', 'sound frequency calculator', 'wavelength formula calculator', 'calculate wavelength', 'sound physics calculator', 'wave calculator', 'acoustics physics', 'sound wave wavelength', 'wavelength frequency calculator', 'sound wave equation', 'wave physics'],
+    href: '/physics/sound-wavelength-calculator',
+    embedHref: '/embed/physics/sound-wavelength-calculator',
+    icon: '🔊',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
