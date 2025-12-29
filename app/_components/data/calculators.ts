@@ -168,6 +168,18 @@ export const calculators: Calculator[] = [
     icon: '🌡️',
     color: 'purple'
   },
+  {
+    id: 'newtons-law-of-cooling-calculator',
+    name: 'Newton\'s Law of Cooling Calculator',
+    description: 'Calculate temperature, time, or cooling constant using Newton\'s law of cooling: T(t) = T_s + (T₀ - T_s) × e^(-kt). Free online physics calculator for thermal physics, heat transfer, and thermodynamics. Perfect for analyzing cooling and heating processes.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['newtons law of cooling calculator', 'newton cooling calculator', 'cooling law calculator', 'T(t) = T_s + (T₀ - T_s) × e^(-kt)', 'cooling constant calculator', 'temperature cooling calculator', 'thermal cooling calculator', 'heat transfer calculator', 'cooling rate calculator', 'exponential cooling calculator', 'newton cooling law formula', 'cooling physics calculator', 'thermal physics calculator', 'thermodynamics calculator', 'cooling time calculator', 'temperature decay calculator', 'exponential decay calculator', 'heat loss calculator', 'cooling process calculator', 'thermal decay calculator', 'newton cooling equation', 'cooling formula calculator', 'temperature change calculator', 'thermal physics', 'cooling physics'],
+    href: '/physics/newtons-law-of-cooling-calculator',
+    embedHref: '/embed/physics/newtons-law-of-cooling-calculator',
+    icon: '❄️',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
