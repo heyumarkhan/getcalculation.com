@@ -165,7 +165,8 @@ export const INTERNAL_LINKS = {
   'normal-force-calculator': { href: '/physics/normal-force-calculator', title: 'Normal Force Calculator' },
   'acceleration-due-to-gravity-calculator': { href: '/physics/acceleration-due-to-gravity-calculator', title: 'Acceleration due to Gravity Calculator' },
   'pneumatic-cylinder-force-calculator': { href: '/physics/pneumatic-cylinder-force-calculator', title: 'Pneumatic Cylinder Force Calculator' },
-  'standard-cubic-feet-per-minute-calculator': { href: '/physics/standard-cubic-feet-per-minute-calculator', title: 'Standard Cubic Feet per Minute Calculator' }
+  'standard-cubic-feet-per-minute-calculator': { href: '/physics/standard-cubic-feet-per-minute-calculator', title: 'Standard Cubic Feet per Minute Calculator' },
+  'luminosity-calculator': { href: '/physics/luminosity-calculator', title: 'Luminosity Calculator' }
 } as const;
 
 // Helper function to create internal links (returns React component)
