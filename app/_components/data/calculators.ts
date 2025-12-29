@@ -144,6 +144,18 @@ export const calculators: Calculator[] = [
     icon: '🔊',
     color: 'purple'
   },
+  {
+    id: 'db-gain-calculator',
+    name: 'dB Gain Calculator',
+    description: 'Calculate decibel (dB) gain from power or voltage ratios using dB = 10×log₁₀(P₂/P₁) for power and dB = 20×log₁₀(V₂/V₁) for voltage. Free online physics calculator for electronics, audio engineering, and signal processing.',
+    category: 'Electronics',
+    subject: 'physics',
+    keywords: ['db gain calculator', 'decibel gain calculator', 'dB calculator', 'dB gain formula', 'calculate dB gain', 'power ratio to dB', 'voltage ratio to dB', 'dB from power', 'dB from voltage', 'decibel calculator', 'gain calculator', 'amplifier gain calculator', 'signal gain calculator', 'audio gain calculator', 'electronics calculator', 'dB power calculator', 'dB voltage calculator', 'logarithmic gain calculator', 'signal processing calculator', 'amplifier calculator', 'dB ratio calculator', 'decibel formula', 'gain ratio calculator', 'electronics physics calculator', 'signal strength calculator'],
+    href: '/physics/db-gain-calculator',
+    embedHref: '/embed/physics/db-gain-calculator',
+    icon: '📊',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
