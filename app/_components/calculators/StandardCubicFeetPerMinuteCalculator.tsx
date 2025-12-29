@@ -82,7 +82,7 @@ export default function StandardCubicFeetPerMinuteCalculator({
     const unitData = pressureUnits[unit as keyof typeof pressureUnits];
     const pressureInPSI = value * unitData.factor;
     // If gauge pressure, add atmospheric pressure
-    if (unitData.isGauge) {
+    if ('isGauge' in unitData && unitData.isGauge) {
       return pressureInPSI + STANDARD_PRESSURE_PSIA;
     }
     return pressureInPSI;
