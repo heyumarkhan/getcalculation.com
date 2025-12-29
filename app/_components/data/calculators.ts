@@ -180,6 +180,18 @@ export const calculators: Calculator[] = [
     icon: '❄️',
     color: 'purple'
   },
+  {
+    id: 'polar-moment-of-inertia-calculator',
+    name: 'Polar Moment of Inertia Calculator',
+    description: 'Calculate polar moment of inertia (J) for solid and hollow circular cross-sections using J = πr⁴/2 and J = π(R⁴-r⁴)/2. Free online physics calculator for mechanical engineering, structural analysis, and torsional calculations.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['polar moment of inertia calculator', 'J calculator', 'polar moment calculator', 'J = πr⁴/2', 'torsional moment of inertia calculator', 'circular cross section calculator', 'shaft design calculator', 'torsional stress calculator', 'polar moment of inertia formula', 'J formula calculator', 'circular moment of inertia', 'annulus moment of inertia', 'hollow circle moment of inertia', 'solid circle moment of inertia', 'torsional resistance calculator', 'mechanical engineering calculator', 'shaft calculator', 'torsion calculator', 'circular section calculator', 'polar inertia calculator', 'J value calculator', 'moment of inertia physics', 'torsional analysis calculator', 'structural mechanics calculator', 'engineering physics calculator'],
+    href: '/physics/polar-moment-of-inertia-calculator',
+    embedHref: '/embed/physics/polar-moment-of-inertia-calculator',
+    icon: '⚙️',
+    color: 'purple'
+  },
 
   {
     id: 'heat-transfer-calculator',
