@@ -172,7 +172,8 @@ export const INTERNAL_LINKS = {
   'mach-number-calculator': { href: '/physics/mach-number-calculator', title: 'Mach Number Calculator' },
   'sound-wavelength-calculator': { href: '/physics/sound-wavelength-calculator', title: 'Sound Wavelength Calculator' },
   'db-gain-calculator': { href: '/physics/db-gain-calculator', title: 'dB Gain Calculator' },
-  'wiens-law-calculator': { href: '/physics/wiens-law-calculator', title: 'Wien\'s Law Calculator' }
+  'wiens-law-calculator': { href: '/physics/wiens-law-calculator', title: 'Wien\'s Law Calculator' },
+  'newtons-law-of-cooling-calculator': { href: '/physics/newtons-law-of-cooling-calculator', title: 'Newton\'s Law of Cooling Calculator' }
 } as const;
 
 // Helper function to create internal links (returns React component)
