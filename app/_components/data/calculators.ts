@@ -85,6 +85,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'standard-cubic-feet-per-minute-calculator',
+    name: 'Standard Cubic Feet per Minute Calculator',
+    description: 'Convert between SCFM (Standard Cubic Feet per Minute) and ACFM (Actual Cubic Feet per Minute) using pressure and temperature corrections. Free online physics calculator for compressed air systems, HVAC, and pneumatic applications.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['standard cubic feet per minute calculator', 'SCFM calculator', 'ACFM calculator', 'SCFM to ACFM', 'ACFM to SCFM', 'scfm conversion calculator', 'standard cfm calculator', 'actual cfm calculator', 'compressed air flow calculator', 'pneumatic flow calculator', 'air flow calculator', 'scfm pressure temperature correction', 'scfm formula calculator', 'acfm to scfm conversion', 'scfm to acfm conversion', 'compressed air calculator', 'pneumatic system calculator', 'HVAC flow calculator', 'air compressor calculator', 'flow rate calculator scfm', 'standard conditions calculator', 'gas flow calculator', 'fluid mechanics calculator', 'physics calculator', 'scfm calculation', 'acfm calculation', 'air flow rate calculator', 'compressed air flow rate'],
+    href: '/physics/standard-cubic-feet-per-minute-calculator',
+    embedHref: '/embed/physics/standard-cubic-feet-per-minute-calculator',
+    icon: '💨',
+    color: 'purple'
+  },
+  {
     id: 'heat-transfer-calculator',
     name: 'Heat Transfer Calculator',
     description: 'Calculate heat transfer rate for conduction (Q = k×A×(T1-T2)/d), convection (Q = h×A×(T_surface-T_fluid)), or radiation (Q = e×s×A×(T14-T24)). Free online thermodynamics calculator.',
