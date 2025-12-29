@@ -16,10 +16,10 @@ const lengthUnits = {
 
 const momentOfInertiaUnits = {
   'm⁴': { name: 'm⁴ (Meters⁴)', factor: 1 },
-  'cm⁴': { name: 'cm⁴ (Centimeters⁴)', factor: 0.0001 },
-  'mm⁴': { name: 'mm⁴ (Millimeters⁴)', factor: 0.000000000001 },
-  'in⁴': { name: 'in⁴ (Inches⁴)', factor: 0.0004162314256 },
-  'ft⁴': { name: 'ft⁴ (Feet⁴)', factor: 0.008630974841 }
+  'cm⁴': { name: 'cm⁴ (Centimeters⁴)', factor: 0.00000001 }, // 1 cm⁴ = 0.00000001 m⁴ (1 m = 100 cm, so 1 m⁴ = 100⁴ cm⁴)
+  'mm⁴': { name: 'mm⁴ (Millimeters⁴)', factor: 0.000000000000000001 }, // 1 mm⁴ = 0.000000000000000001 m⁴ (1 m = 1000 mm, so 1 m⁴ = 1000⁴ mm⁴)
+  'in⁴': { name: 'in⁴ (Inches⁴)', factor: 0.0004162314256 }, // 1 in = 0.0254 m, so 1 in⁴ = (0.0254 m)⁴ = 0.0004162314256 m⁴
+  'ft⁴': { name: 'ft⁴ (Feet⁴)', factor: 0.008630974841 } // 1 ft = 0.3048 m, so 1 ft⁴ = (0.3048 m)⁴ = 0.008630974841 m⁴
 };
 
 interface PolarMomentOfInertiaCalculatorProps {
