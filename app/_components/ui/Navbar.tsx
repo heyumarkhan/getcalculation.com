@@ -13,17 +13,13 @@ export default function Navbar() {
             >
               <div className="flex items-center gap-3">
                 <Image
-                  src="/logo-icon.png"
+                  src="/logo.png"
                   alt="GetCalculation Logo"
-                  width={40}
-                  height={40}
-                  className="w-10 h-10"
+                  width={200}
+                  height={50}
+                  className="h-10 w-auto"
                   priority
                 />
-                <div className="font-bold text-2xl">
-                  <span style={{ color: '#820ecc' }}>Get</span>
-                  <span style={{ color: '#820ecc' }}>Calculation</span>
-                </div>
               </div>
             </Link>
           </div>

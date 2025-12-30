@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     title: 'Percentage Calculator - Free Online Math Calculator',
     description: 'Calculate percentages, percentage changes, and percentage relationships. Free online percentage calculator with step-by-step solutions and explanations.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
 };
 

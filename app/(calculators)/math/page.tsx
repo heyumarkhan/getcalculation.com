@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     description: 'Browse our collection of free online math calculators for geometry, algebra, trigonometry, calculus, statistics, and more.',
     type: 'website',
     url: 'https://getcalculation.com/math',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://getcalculation.com/math',

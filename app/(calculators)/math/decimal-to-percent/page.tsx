@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     title: 'Decimal to Percent Calculator - Free Online Math Calculator',
     description: 'Convert between decimals, percentages, and fractions. Free online decimal to percent calculator with step-by-step solutions and explanations.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
 };
 

@@ -2140,13 +2140,26 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/twos-complement',
     icon: '🌍',
     color: 'purple'
+  },
+  {
+    id: 'overtime-calculator',
+    name: 'Overtime Calculator',
+    description: 'Calculate overtime pay with time and a half (1.5x), double time (2x), or custom multipliers. Free online finance calculator for accurate overtime pay calculations.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['overtime calculator', 'calculate overtime pay', 'overtime pay calculator', 'time and a half calculator', 'overtime pay formula', 'overtime hours calculator', 'overtime rate calculator', 'calculate overtime', 'overtime pay calculation', 'overtime calculator online', 'overtime pay rate', 'overtime hours', 'overtime multiplier', '1.5x overtime calculator', 'double time calculator', 'overtime pay per hour', 'overtime calculation', 'overtime pay formula calculator', 'calculate overtime hours', 'overtime pay rate calculator', 'finance calculator', 'payroll calculator', 'wage calculator', 'hourly pay calculator'],
+    href: '/finance/overtime-calculator',
+    embedHref: '/embed/finance/overtime-calculator',
+    icon: '💰',
+    color: 'green'
   }
 ];
 
 export const subjects = [
   'All',
   'math',
-  'Physics'
+  'Physics',
+  'finance'
 ];
 
 export const categories = [
@@ -2157,5 +2170,6 @@ export const categories = [
   'Statistics',
   'Calculus',
   'Kinematics',
-  'Combinatorics'
+  'Combinatorics',
+  'Finance'
 ];

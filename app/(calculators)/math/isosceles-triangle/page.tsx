@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: 'Isosceles Triangle Calculator - Find Sides, Angles, Area & Height',
     description: 'Calculate all properties of an isosceles triangle including sides, angles, area, perimeter, and height. Step-by-step solutions for any combination of known values.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
 };
 

@@ -70,7 +70,9 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
       'Optics': 'bg-purple-100 text-purple-800 border-purple-200',
       'Quantum Mechanics': 'bg-pink-100 text-pink-800 border-pink-200',
       'Waves': 'bg-teal-100 text-teal-800 border-teal-200',
-      'Fluid Mechanics': 'bg-blue-100 text-blue-800 border-blue-200'
+      'Fluid Mechanics': 'bg-blue-100 text-blue-800 border-blue-200',
+      // Finance Categories
+      'Finance': 'bg-emerald-100 text-emerald-800 border-emerald-200'
     };
     return colors[category] || 'bg-gray-100 text-gray-800 border-gray-200';
   };

@@ -134,7 +134,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/impact-energy-calculator', priority: 0.8 },
     { slug: 'physics/impulse-momentum-calculator', priority: 0.8 },
     { slug: 'physics/coulombs-law-calculator', priority: 0.8 },
-    { slug: 'physics/time-dilation-calculator', priority: 0.8 }
+    { slug: 'physics/time-dilation-calculator', priority: 0.8 },
+    { slug: 'finance/overtime-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries
@@ -160,6 +161,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/physics`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/finance`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: 'Pythagorean Theorem Calculator - Find Missing Side of Right Triangle',
     description: 'Calculate the length of any side of a right triangle using the Pythagorean theorem. Step-by-step solutions, triangle properties, and angle calculations.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
 };
 

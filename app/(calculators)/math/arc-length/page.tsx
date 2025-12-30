@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     title: 'Arc Length Calculator - Free Online Math Calculator',
     description: 'Calculate the length of an arc using radius and central angle. Free online arc length calculator with step-by-step solutions and explanations.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GetCalculation - Free Online Math Calculators',
+      },
+    ],
   },
 };
 
