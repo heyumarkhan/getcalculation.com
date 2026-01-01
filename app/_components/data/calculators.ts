@@ -422,6 +422,19 @@ export const calculators: Calculator[] = [
     color: 'orange'
   },
   {
+    id: 'slope-percentage',
+    name: 'Slope Percentage Calculator',
+    description: 'Calculate slope percentage from rise/run, two points, or slope value. Convert slope to percentage grade for construction, engineering, and surveying applications with step-by-step solutions.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['slope percentage calculator', 'slope percentage', 'gradient percentage calculator', 'slope to percentage', 'percentage grade calculator', 'slope percent calculator', 'grade percentage calculator', 'slope percentage formula', 'calculate slope percentage', 'rise over run percentage', 'slope percentage converter', 'gradient percentage', 'slope percentage tool'],
+    href: '/math/slope-percentage',
+    embedHref: '/embed/math/slope-percentage',
+    icon: '⛰️',
+    color: 'purple'
+  },
+
+  {
     id: 'triangular-prism-surface-area',
     name: 'Triangular Prism Surface Area Calculator',
     description: 'Calculate the surface area of a triangular prism from its dimensions',
@@ -1556,14 +1569,14 @@ export const calculators: Calculator[] = [
   {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
-    description: 'Calculate exponential functions, growth, decay, and compound interest',
+    description: 'Calculate exponential functions, growth, decay, and compound interest with our free exponential function calculator. Get instant results for exponential equations, exponential growth and decay, and financial calculations.',
     category: 'Algebra',
     subject: 'math',
-    keywords: ['exponential', 'function', 'growth', 'decay', 'compound interest', 'e', 'logarithm', 'algebra'],
+    keywords: ['exponential function calculator', 'exponential calculator', 'exponential function', 'exponential growth calculator', 'exponential decay calculator', 'compound interest calculator', 'exponential equation calculator', 'e^x calculator', 'exponential formula calculator', 'exponential function solver', 'exponential growth decay', 'exponential functions', 'exponential math calculator', 'calculate exponential', 'exponential equations'],
     href: '/math/exponential-function',
     embedHref: '/embed/math/exponential-function',
     icon: '🌟',
-    color: 'green'
+    color: 'purple'
   },
   {
     id: 'standard-notation',
@@ -1589,6 +1602,19 @@ export const calculators: Calculator[] = [
     icon: '💰',
     color: 'green'
   },
+  {
+    id: 'round-to-nearest-thousand',
+    name: 'Round to the Nearest Thousand Calculator',
+    description: 'Round numbers to the nearest thousand with different rounding methods. Calculate rounded values for population, sales, statistics, and large numbers.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['round to the nearest thousand calculator', 'round to nearest thousand', 'rounding to nearest thousand calculator', 'round numbers to thousand', 'thousand rounding calculator', 'round to 1000 calculator', 'nearest thousand calculator', 'round thousand calculator', 'rounding calculator thousand', 'round numbers calculator', 'rounding to thousand'],
+    href: '/math/round-to-nearest-thousand',
+    embedHref: '/embed/math/round-to-nearest-thousand',
+    icon: '🔟',
+    color: 'purple'
+  },
+
   {
     id: 'inverse-modulo',
     name: 'inverse modulo Calculator',
@@ -1794,6 +1820,19 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'special-right-triangles',
+    name: 'Special Right Triangles Calculator',
+    description: 'Calculate sides, area, and perimeter for 45-45-90 and 30-60-90 special right triangles. Find missing sides using special right triangle ratios with step-by-step solutions for both triangle types.',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['special right triangles calculator', 'special right triangle calculator', '45-45-90 calculator', '30-60-90 calculator', 'special right triangle', 'right triangle calculator', '45 45 90 triangle calculator', '30 60 90 triangle calculator', 'isosceles right triangle calculator', 'special triangle calculator', 'right triangle solver', 'special right triangle solver', 'geometry calculator', 'triangle side calculator'],
+    href: '/math/special-right-triangles',
+    embedHref: '/embed/math/special-right-triangles',
+    icon: '▲',
+    color: 'purple'
+  },
+
+  {
     id: 'geometric-sequence',
     name: 'Geometric Sequence Calculator',
     description: 'Calculate the nth term and sum of a geometric sequence with step-by-step solutions and sequence visualization',
@@ -1805,6 +1844,19 @@ export const calculators: Calculator[] = [
     icon: '☃️',
     color: 'purple'
   },
+  {
+    id: 'arithmetic-sequence',
+    name: 'Arithmetic Sequence Calculator',
+    description: 'Calculate the nth term and sum of an arithmetic sequence. Find any term using the common difference with step-by-step solutions and sequence visualization.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['arithmetic sequence calculator', 'arithmetic sequence', 'arithmetic progression calculator', 'common difference calculator', 'nth term calculator', 'arithmetic sequence formula', 'arithmetic series calculator', 'calculate arithmetic sequence', 'arithmetic sequence sum', 'arithmetic progression', 'sequence calculator', 'arithmetic sequence solver', 'arithmetic sequence finder'],
+    href: '/math/arithmetic-sequence',
+    embedHref: '/embed/math/arithmetic-sequence',
+    icon: '🔁',
+    color: 'purple'
+  },
+
   {
     id: 'point-slope-form',
     name: 'Point Slope Form Calculator',
@@ -2141,6 +2193,19 @@ export const calculators: Calculator[] = [
     icon: '☄️',
     color: 'blue'
   },
+  {
+    id: 'common-denominator',
+    name: 'Common Denominator Calculator',
+    description: 'Find the least common denominator (LCD) for two or more fractions. Calculate common denominators and convert fractions to equivalent fractions with step-by-step solutions.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['common denominator calculator', 'LCD calculator', 'least common denominator', 'common denominator finder', 'find common denominator', 'LCD finder', 'common denominator of fractions', 'equivalent fractions calculator', 'common denominator math', 'fraction denominator calculator', 'LCD math calculator', 'common denominator tool', 'find LCD', 'lowest common denominator calculator'],
+    href: '/math/common-denominator',
+    embedHref: '/embed/math/common-denominator',
+    icon: '🧩',
+    color: 'purple'
+  },
+
   {
     id: 'twos-complement',
     name: 'Two\'s Complement Calculator',
