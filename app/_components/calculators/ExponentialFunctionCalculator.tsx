@@ -5,7 +5,15 @@ import Card from '../ui/Card';
 import Input from '../ui/Input';
 import Button from '../ui/Button';
 
-export default function ExponentialFunctionCalculator() {
+interface ExponentialFunctionCalculatorProps {
+  showTitle?: boolean;
+  primaryColor?: string;
+}
+
+export default function ExponentialFunctionCalculator({ 
+  showTitle = true, 
+  primaryColor = '#820ECC' 
+}: ExponentialFunctionCalculatorProps) {
   const [base, setBase] = useState('');
   const [exponent, setExponent] = useState('');
   const [result, setResult] = useState<number | null>(null);
@@ -124,12 +132,71 @@ export default function ExponentialFunctionCalculator() {
 
   const labels = getInputLabels();
 
+  const getColorClasses = (color: string) => {
+    const hexColor = color.startsWith('#') ? color : `#${color}`;
+    
+    return {
+      button: '',
+      result: '',
+      resultBg: '',
+      resultBorder: '',
+      resultText: '',
+      customStyles: {
+        button: {
+          backgroundColor: hexColor,
+          '--hover-color': hexColor,
+          '--focus-color': hexColor
+        } as React.CSSProperties,
+        result: {
+          color: hexColor
+        } as React.CSSProperties,
+        resultBg: {
+          backgroundColor: `${hexColor}10`,
+          borderColor: `${hexColor}30`
+        } as React.CSSProperties,
+        resultText: {
+          color: hexColor
+        } as React.CSSProperties
+      }
+    };
+  };
+
+  const colors = getColorClasses(primaryColor);
+
   return (
-    <Card className="p-6">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Exponential Function Calculator</h2>
-        <p className="text-gray-600">Calculate exponential functions, growth, decay, and compound interest</p>
-      </div>
+    <>
+      {colors.customStyles && (
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .custom-color-button:hover {
+              background-color: ${primaryColor}dd !important;
+            }
+            .custom-color-button:focus {
+              box-shadow: 0 0 0 3px ${primaryColor}40 !important;
+            }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            .animate-fadeIn {
+              animation: fadeIn 0.3s ease-out;
+            }
+          `
+        }} />
+      )}
+      <Card className="max-w-md mx-auto">
+        {showTitle && (
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Exponential Function Calculator</h2>
+            <p className="text-gray-600">Calculate exponential functions, growth, decay, and compound interest</p>
+          </div>
+        )}
 
       <div className="space-y-4">
         {/* Function Type Selector */}
@@ -182,7 +249,12 @@ export default function ExponentialFunctionCalculator() {
         </div>
 
         <div className="flex gap-3">
-          <Button onClick={calculate} className="flex-1">
+          <Button 
+            onClick={calculate} 
+            className={`flex-1 ${colors.button} ${colors.customStyles ? 'custom-color-button' : ''}`}
+            style={colors.customStyles?.button}
+            size="lg"
+          >
             Calculate
           </Button>
           <Button onClick={clearAll} variant="outline" className="flex-1">
@@ -191,13 +263,24 @@ export default function ExponentialFunctionCalculator() {
         </div>
 
         {result !== null && (
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <h3 className="text-lg font-semibold text-blue-900 mb-2">Result</h3>
-            <p className="text-2xl font-bold text-blue-700">
+          <div 
+            className={`mt-6 p-4 ${colors.resultBg} border ${colors.resultBorder} rounded-lg animate-fadeIn`}
+            style={colors.customStyles?.resultBg}
+          >
+            <h3 
+              className={`text-lg font-semibold ${colors.resultText} mb-2`}
+              style={colors.customStyles?.resultText}
+            >
+              Result
+            </h3>
+            <p 
+              className="text-2xl font-bold"
+              style={colors.customStyles?.result}
+            >
               {formatValue(result)}
             </p>
             {calculation && (
-              <p className="text-sm text-blue-600 mt-2 font-mono">
+              <p className={`text-sm mt-2 font-mono`} style={colors.customStyles?.result}>
                 {calculation}
               </p>
             )}
@@ -225,6 +308,7 @@ export default function ExponentialFunctionCalculator() {
           </div>
         </div>
       </div>
-    </Card>
+      </Card>
+    </>
   );
 }

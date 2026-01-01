@@ -6,8 +6,8 @@ import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function ExponentialFunctionCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Exponential Function Calculator: Calculate Growth, Decay & Compound Interest"
-      description="Calculate exponential functions, growth, decay, and compound interest with our free calculator. Get instant results for exponential equations and financial calculations."
+      title="Exponential Function Calculator - Calculate Growth, Decay & Compound Interest"
+      description="Calculate exponential functions, growth, decay, and compound interest with our free exponential function calculator. Get instant results for exponential equations, exponential growth and decay, and financial calculations."
       calculator={<ExponentialFunctionCalculator />}
       slug="math/exponential-function"
       category="Algebra"
@@ -22,7 +22,7 @@ export default function ExponentialFunctionCalculatorPage() {
     >
       <SEOSection title="Understanding Exponential Functions: The Power of Growth">
         <p>
-          Exponential functions are among the most powerful and widely-used mathematical concepts, appearing everywhere from population growth to financial investments, radioactive decay to computer algorithms. Our Exponential Function Calculator makes it easy to calculate exponential functions, growth, decay, and compound interest with instant results.
+          Exponential functions are among the most powerful and widely-used mathematical concepts, appearing everywhere from population growth to financial investments, radioactive decay to computer algorithms. Our <strong>Exponential Function Calculator</strong> makes it easy to calculate exponential functions, growth, decay, and compound interest with instant results.
         </p>
         <p>
           An exponential function has the form <strong>f(x) = a^x</strong>, where &apos;a&apos; is a positive constant called the base, and &apos;x&apos; is the exponent. These functions grow (or decay) at rates proportional to their current value, making them essential for modeling real-world phenomena that change exponentially over time.
@@ -31,7 +31,7 @@ export default function ExponentialFunctionCalculatorPage() {
 
       <SEOSection title="How to Use Our Exponential Function Calculator">
         <p>
-          Our calculator supports multiple types of exponential calculations:
+          Our <strong>exponential function calculator</strong> supports multiple types of exponential calculations:
         </p>
         <ol>
           <li><strong>Select Function Type:</strong> Choose from basic exponential, growth, decay, or compound interest</li>
@@ -183,7 +183,7 @@ export default function ExponentialFunctionCalculatorPage() {
 
       <SEOSection title="Conclusion">
         <p>
-          Exponential functions are fundamental to understanding growth, decay, and many natural phenomena. Our Exponential Function Calculator simplifies these calculations, making it easy to work with exponential equations in mathematics, finance, science, and everyday life.
+          Exponential functions are fundamental to understanding growth, decay, and many natural phenomena. Our <strong>Exponential Function Calculator</strong> simplifies these calculations, making it easy to work with exponential equations in mathematics, finance, science, and everyday life. Whether you need to calculate exponential growth, exponential decay, or compound interest, our calculator provides accurate results instantly.
         </p>
         <p>
           Ready to explore more mathematical concepts? Check out our {createInternalLink('slope')} for linear functions, or use our {createInternalLink('area')} for geometric calculations that often complement exponential modeling.
