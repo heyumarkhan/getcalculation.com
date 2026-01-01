@@ -6,8 +6,8 @@ import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function Triangle454590Page() {
   return (
     <CalculatorPageTemplate
-      title="45-45-90 Triangle Calculator: Isosceles Right Triangle - Free Online Tool"
-      description="Calculate sides, area, and perimeter of a 45-45-90 triangle (isosceles right triangle). Find missing sides using the special right triangle ratios with step-by-step solutions."
+      title="45 45 90 Triangle Calculator - Isosceles Right Triangle Calculator - Free Online Tool"
+      description="Calculate sides, area, and perimeter of a 45 45 90 triangle (isosceles right triangle). Find missing sides using the special right triangle ratios with step-by-step solutions. Perfect for geometry homework and triangle calculations."
       calculator={<Triangle454590Calculator />}
       slug="math/triangle-45-45-90"
       category="Geometry"
@@ -21,18 +21,18 @@ export default function Triangle454590Page() {
         "Free to use"
       ]}
     >
-      <SEOSection title="Understanding 45-45-90 Triangles: The Special Right Triangle">
+      <SEOSection title="Understanding 45 45 90 Triangles: The Special Right Triangle">
         <p>
-          The 45-45-90 triangle is one of the most important special right triangles in geometry. Whether you&apos;re studying trigonometry, working on geometry problems, or solving real-world applications, understanding <strong>45-45-90 triangles</strong> is essential for mathematical success. This comprehensive guide will walk you through everything you need to know about these special triangles, from basic concepts to practical applications.
+          The <strong>45 45 90 triangle</strong> is one of the most important special right triangles in geometry. Whether you&apos;re studying trigonometry, working on geometry problems, or solving real-world applications, understanding <strong>45-45-90 triangles</strong> (also written as 45 45 90 triangle) is essential for mathematical success. This comprehensive guide will walk you through everything you need to know about these special triangles, from basic concepts to practical applications.
         </p>
         <p>
-          At its core, a 45-45-90 triangle is an isosceles right triangle with two equal sides (legs) and angles of 45°, 45°, and 90°. Our 45-45-90 Triangle Calculator at the top of this page makes these calculations instant and accurate, but understanding the underlying principles will help you solve complex geometric problems and make informed decisions. We&apos;ll explore the mathematical concepts, provide practical examples, and clarify common points of confusion.
+          At its core, a <strong>45 45 90 triangle</strong> is an isosceles right triangle with two equal sides (legs) and angles of 45°, 45°, and 90°. Our <strong>45 45 90 Triangle Calculator</strong> at the top of this page makes these calculations instant and accurate, but understanding the underlying principles will help you solve complex geometric problems and make informed decisions. We&apos;ll explore the mathematical concepts, provide practical examples, and clarify common points of confusion.
         </p>
       </SEOSection>
       
-      <SEOSection title="How to Use Our 45-45-90 Triangle Calculator">
+      <SEOSection title="How to Use Our 45 45 90 Triangle Calculator">
         <p>
-          Our 45-45-90 Triangle Calculator is designed for simplicity and accuracy. Follow these steps to calculate triangle properties:
+          Our <strong>45 45 90 Triangle Calculator</strong> is designed for simplicity and accuracy. Follow these steps to calculate triangle properties:
         </p>
         <ol>
           <li><strong>Choose Input Type:</strong> Select whether you know the leg length or hypotenuse length.</li>
@@ -45,9 +45,9 @@ export default function Triangle454590Page() {
         </p>
       </SEOSection>
 
-      <SEOSection title="Understanding 45-45-90 Triangle Properties">
+      <SEOSection title="Understanding 45 45 90 Triangle Properties">
         <p>
-          The 45-45-90 triangle has several unique mathematical properties:
+          The <strong>45 45 90 triangle</strong> has several unique mathematical properties:
         </p>
         
         <h3>Side Relationships</h3>
@@ -71,9 +71,9 @@ export default function Triangle454590Page() {
         </div>
       </SEOSection>
 
-      <SEOSection title="Key Properties of 45-45-90 Triangles">
+      <SEOSection title="Key Properties of 45 45 90 Triangles">
         <p>
-          The 45-45-90 triangle has several important mathematical properties:
+          The <strong>45 45 90 triangle</strong> has several important mathematical properties:
         </p>
         
         <h3>Special Right Triangle Ratios</h3>
@@ -92,17 +92,17 @@ export default function Triangle454590Page() {
         
         <h3>Pythagorean Theorem Verification</h3>
         <p>
-          For a 45-45-90 triangle with legs of length 1:
+          For a <strong>45 45 90 triangle</strong> with legs of length 1:
         </p>
         <div className="bg-gray-50 p-4 rounded-lg mb-4">
           <p className="font-mono text-center">1² + 1² = (√2)²</p>
           <p className="font-mono text-center">1 + 1 = 2 ✓</p>
         </div>
       </SEOSection>
-
-      <SEOSection title="Practical Applications of 45-45-90 Triangles">
+      
+      <SEOSection title="Practical Applications of 45 45 90 Triangles">
         <p>
-          The 45-45-90 triangle is used in numerous real-world scenarios:
+          The <strong>45 45 90 triangle</strong> is used in numerous real-world scenarios:
         </p>
         <SEOList items={[
           "Architecture: Designing square buildings and diagonal supports",
@@ -116,15 +116,15 @@ export default function Triangle454590Page() {
         ]} />
       </SEOSection>
 
-      <SEOSection title="Common 45-45-90 Triangle Scenarios">
+      <SEOSection title="Common 45 45 90 Triangle Scenarios">
         <h3>Finding Missing Sides</h3>
         <p>
-          If you know one side of a 45-45-90 triangle, you can find the other two sides using the special ratios.
+          If you know one side of a <strong>45 45 90 triangle</strong>, you can find the other two sides using the special ratios.
         </p>
         
         <h3>Area Calculations</h3>
         <p>
-          The area of a 45-45-90 triangle is always half the square of one leg: Area = (leg²) ÷ 2.
+          The area of a <strong>45 45 90 triangle</strong> is always half the square of one leg: Area = (leg²) ÷ 2.
         </p>
         
         <h3>Perimeter Calculations</h3>
@@ -134,16 +134,16 @@ export default function Triangle454590Page() {
         
         <h3>Diagonal Measurements</h3>
         <p>
-          When measuring diagonals of squares, you&apos;re working with 45-45-90 triangles.
+          When measuring diagonals of squares, you&apos;re working with <strong>45 45 90 triangles</strong>.
         </p>
       </SEOSection>
-
-      <SEOSection title="45-45-90 vs. Other Special Right Triangles">
+      
+      <SEOSection title="45 45 90 vs. Other Special Right Triangles">
         <p>
-          It&apos;s important to understand how 45-45-90 triangles compare to other special right triangles:
+          It&apos;s important to understand how <strong>45 45 90 triangles</strong> compare to other special right triangles:
         </p>
         
-        <h3>45-45-90 Triangle</h3>
+        <h3>45 45 90 Triangle</h3>
         <SEOList items={[
           "Angles: 45°, 45°, 90°",
           "Sides: 1 : 1 : √2",
@@ -168,7 +168,7 @@ export default function Triangle454590Page() {
         ]} />
       </SEOSection>
 
-      <SEOSection title="Advanced 45-45-90 Triangle Concepts">
+      <SEOSection title="Advanced 45 45 90 Triangle Concepts">
         <h3>Coordinate Geometry</h3>
         <p>
           In coordinate geometry, 45-45-90 triangles appear when working with points that form right angles with equal distances.
@@ -187,7 +187,7 @@ export default function Triangle454590Page() {
 
       <SEOSection title="Computational Considerations">
         <p>
-          When working with 45-45-90 triangles, consider these computational aspects:
+          When working with <strong>45 45 90 triangles</strong>, consider these computational aspects:
         </p>
         <SEOList items={[
           "√2 ≈ 1.4142135623730951 (use calculator for precision)",
@@ -197,42 +197,42 @@ export default function Triangle454590Page() {
           "Check that your triangle actually has 45° angles"
         ]} />
       </SEOSection>
-
+      
       <SEOSection title="Frequently Asked Questions (FAQ)">
         <SEOFAQ questions={[
           {
-            question: "What is the ratio of sides in a 45-45-90 triangle?",
+            question: "What is the ratio of sides in a 45 45 90 triangle?",
             answer: "The ratio is 1 : 1 : √2, where the two legs are equal and the hypotenuse is √2 times the length of each leg."
           },
           {
-            question: "How do you find the hypotenuse if you know the leg?",
+            question: "How do you find the hypotenuse if you know the leg in a 45 45 90 triangle?",
             answer: "Multiply the leg length by √2. For example, if the leg is 5, the hypotenuse is 5√2 ≈ 7.07."
           },
           {
-            question: "How do you find the leg if you know the hypotenuse?",
+            question: "How do you find the leg if you know the hypotenuse in a 45 45 90 triangle?",
             answer: "Divide the hypotenuse by √2. For example, if the hypotenuse is 10, each leg is 10/√2 ≈ 7.07."
           },
           {
-            question: "What is the area of a 45-45-90 triangle?",
+            question: "What is the area of a 45 45 90 triangle?",
             answer: "The area is (leg²) ÷ 2. Since both legs are equal, you can use either leg in the formula."
           },
           {
-            question: "Can a 45-45-90 triangle be scalene?",
-            answer: "No, a 45-45-90 triangle is always isosceles because it has two equal angles (45°) and therefore two equal sides."
+            question: "Can a 45 45 90 triangle be scalene?",
+            answer: "No, a 45 45 90 triangle is always isosceles because it has two equal angles (45°) and therefore two equal sides."
           },
           {
-            question: "What is the perimeter of a 45-45-90 triangle?",
+            question: "What is the perimeter of a 45 45 90 triangle?",
             answer: "The perimeter is 2 × leg + hypotenuse. Since hypotenuse = leg × √2, this equals leg × (2 + √2)."
           }
         ]} />
       </SEOSection>
-
+      
       <SEOSection title="Conclusion">
         <p>
-          Mastering <strong>45-45-90 triangles</strong> is essential for solving geometry problems and understanding special right triangles. Whether you&apos;re working with coordinate geometry, trigonometry, or real-world applications, understanding the principles of 45-45-90 triangles helps you approach problems with confidence and accuracy.
+          Mastering <strong>45 45 90 triangles</strong> is essential for solving geometry problems and understanding special right triangles. Whether you&apos;re working with coordinate geometry, trigonometry, or real-world applications, understanding the principles of <strong>45 45 90 triangles</strong> helps you approach problems with confidence and accuracy.
         </p>
         <p>
-          Our 45-45-90 Triangle Calculator provides instant, accurate results for any triangle problem, but the mathematical concepts behind it are equally important. By understanding both the calculator and the underlying principles, you&apos;ll be well-equipped to solve complex geometric problems in any context.
+          Our <strong>45 45 90 Triangle Calculator</strong> provides instant, accurate results for any triangle problem, but the mathematical concepts behind it are equally important. By understanding both the calculator and the underlying principles, you&apos;ll be well-equipped to solve complex geometric problems in any context.
         </p>
         <p>
           Ready to explore more geometric concepts? Check out our {createInternalLink('area')} for general area calculations, or use our {createInternalLink('heronsFormula')} for triangles with known side lengths.
