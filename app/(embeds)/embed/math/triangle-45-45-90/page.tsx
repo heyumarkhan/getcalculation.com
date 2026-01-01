@@ -1,9 +1,12 @@
-import Triangle454590Calculator from '../../../../_components/calculators/Triangle454590Calculator';
+import Triangle454590Calculator from '@/app/_components/calculators/Triangle454590Calculator';
 
-export default function Triangle454590EmbedPage() {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <Triangle454590Calculator showTitle={false} primaryColor="#3B82F6" />
-    </div>
-  );
+interface Triangle454590EmbedPageProps {
+  searchParams: Promise<{ color?: string }>;
+}
+
+export default async function Triangle454590EmbedPage({ searchParams }: Triangle454590EmbedPageProps) {
+  const params = await searchParams;
+  const color = params.color || '#820ECC';
+  
+  return <Triangle454590Calculator showTitle={false} primaryColor={color} />;
 }
