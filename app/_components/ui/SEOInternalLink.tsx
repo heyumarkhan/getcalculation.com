@@ -66,6 +66,8 @@ export const INTERNAL_LINKS = {
   'volume-of-hemisphere': { href: '/math/volume-of-hemisphere', title: 'Volume of Hemisphere Calculator' },
   'cylinder-volume': { href: '/math/cylinder-volume', title: 'Cylinder Volume Calculator' },
   proportion: { href: '/math/proportion', title: 'Proportion Calculator' },
+  fraction: { href: '/math/fraction', title: 'Fraction Calculator' },
+  gcf: { href: '/math/gcf', title: 'GCF Calculator' },
   average: { href: '/math/average', title: 'Average Calculator' },
   percentage: { href: '/math/percentage', title: 'Percentage Calculator' },
   multiplication: { href: '/math/multiplication', title: 'Multiplication Calculator' },
