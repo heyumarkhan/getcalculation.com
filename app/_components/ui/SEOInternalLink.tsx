@@ -48,6 +48,7 @@ export const INTERNAL_LINKS = {
   midpoint: { href: '/math/midpoint', title: 'Midpoint Calculator' },
   triangularPrism: { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
   'triangular-prism': { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Calculator' },
+  'triangular-prism-surface-area': { href: '/math/triangular-prism-surface-area', title: 'Triangular Prism Surface Area Calculator' },
   standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' },
   averageRateOfChange: { href: '/math/average-rate-of-change', title: 'Average Rate of Change Calculator' },
   binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' },
