@@ -52,6 +52,7 @@ export const INTERNAL_LINKS = {
   standardForm: { href: '/math/standard-form-to-slope-intercept', title: 'Standard Form to Slope Intercept Calculator' },
   averageRateOfChange: { href: '/math/average-rate-of-change', title: 'Average Rate of Change Calculator' },
   binomialCoefficient: { href: '/math/binomial-coefficient', title: 'Binomial Coefficient Calculator' },
+  'square-of-binomial': { href: '/math/square-of-binomial', title: 'Square of a Binomial Calculator' },
   exponentialFunction: { href: '/math/exponential-function', title: 'Exponential Function Calculator' },
   leastSquaresRegression: { href: '/math/least-squares-regression', title: 'Least Squares Regression Calculator' },
   quotient: { href: '/math/quotient', title: 'Quotient Calculator' },
@@ -72,6 +73,7 @@ export const INTERNAL_LINKS = {
   'cylinder-volume': { href: '/math/cylinder-volume', title: 'Cylinder Volume Calculator' },
   proportion: { href: '/math/proportion', title: 'Proportion Calculator' },
   fraction: { href: '/math/fraction', title: 'Fraction Calculator' },
+  'simplify-fractions': { href: '/math/simplify-fractions', title: 'Simplify Fractions Calculator' },
   gcf: { href: '/math/gcf', title: 'GCF Calculator' },
   average: { href: '/math/average', title: 'Average Calculator' },
   percentage: { href: '/math/percentage', title: 'Percentage Calculator' },
@@ -99,6 +101,7 @@ export const INTERNAL_LINKS = {
   inverseModulo: { href: '/math/inverse-modulo', title: 'Inverse Modulo Calculator' },
   log: { href: '/math/log', title: 'Log Calculator' },
   'percent-error': { href: '/math/percent-error', title: 'Percent Error Calculator' },
+  'scientific-notation-equation': { href: '/math/scientific-notation-equation', title: 'Scientific Notation Equation Calculator' },
   // Physics calculators
   'velocity-calculator': { href: '/physics/velocity-calculator', title: 'Velocity Calculator' },
   'acceleration-calculator': { href: '/physics/acceleration-calculator', title: 'Acceleration Calculator' },

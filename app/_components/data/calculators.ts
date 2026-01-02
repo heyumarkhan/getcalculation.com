@@ -1591,6 +1591,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'scientific-notation-equation',
+    name: 'Scientific Notation Equation Calculator',
+    description: 'Convert numbers to scientific notation and perform arithmetic operations. Free online scientific notation calculator with support for converting to/from decimal form and calculating with scientific notation equations.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['scientific notation calculator', 'scientific notation equation', 'scientific notation converter', 'scientific notation arithmetic', 'convert to scientific notation', 'scientific notation calculator with steps', 'exponential notation calculator', 'standard form to scientific notation', 'scientific notation solver', 'scientific notation formula calculator', 'scientific notation problems', 'scientific notation math', 'scientific notation help', 'calculate with scientific notation', 'scientific notation operations'],
+    href: '/math/scientific-notation-equation',
+    embedHref: '/embed/math/scientific-notation-equation',
+    icon: '10ⁿ',
+    color: 'purple'
+  },
+  {
     id: 'round-to-nearest-cent',
     name: 'Round to Nearest Cent Calculator',
     description: 'Round decimal numbers to the nearest cent (2 decimal places) for currency calculations',
@@ -1745,6 +1757,18 @@ export const calculators: Calculator[] = [
     href: '/math/binomial-coefficient',
     embedHref: '/embed/math/binomial-coefficient',
     icon: '🔣',
+    color: 'purple'
+  },
+  {
+    id: 'square-of-binomial',
+    name: 'Square of a Binomial Calculator',
+    description: 'Calculate the square of a binomial expression using the formula (a+b)² = a² + 2ab + b². Free online algebra calculator with step-by-step solutions and detailed explanations.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['square of binomial', 'binomial square calculator', '(a+b)² calculator', 'expand binomial', 'polynomial expansion', 'algebra calculator', 'binomial expansion', 'perfect square trinomial', 'FOIL method', 'algebraic expansion', 'binomial formula', 'square formula', 'polynomial calculator', 'algebra expansion calculator', 'binomial perfect square'],
+    href: '/math/square-of-binomial',
+    embedHref: '/embed/math/square-of-binomial',
+    icon: '²',
     color: 'purple'
   },
   {
@@ -2216,6 +2240,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/math/fraction',
     icon: '☄️',
     color: 'blue'
+  },
+  {
+    id: 'simplify-fractions',
+    name: 'Simplify Fractions Calculator',
+    description: 'Reduce fractions to their lowest terms instantly. Free online simplify fractions calculator with step-by-step calculations, GCD finder, and decimal conversions. Perfect for learning how to simplify 4/8 and other fractions.',
+    category: 'Algebra',
+    subject: 'math',
+    keywords: ['simplify fractions', 'simplify fractions calculator', 'reduce fractions', 'fraction simplifier', 'lowest terms calculator', 'GCD calculator', 'reduce fraction to lowest terms', 'simplify 4/8', 'fraction reducer', 'simplify fractions tool', 'how to simplify fractions', 'fraction simplification', 'reduce to lowest terms', 'simplest form calculator', 'greatest common divisor calculator'],
+    href: '/math/simplify-fractions',
+    embedHref: '/embed/math/simplify-fractions',
+    icon: '✂️',
+    color: 'purple'
   },
   {
     id: 'common-denominator',
