@@ -1978,6 +1978,30 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'surface-area',
+    name: 'Surface Area Calculator',
+    description: 'Calculate surface area for cube, rectangular prism, cylinder, sphere, cone, and triangular prism with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['surface area calculator', 'calculate surface area', 'surface area formula', 'cube surface area', 'cylinder surface area', 'sphere surface area', 'cone surface area', 'rectangular prism surface area', '3d shape surface area', 'geometry calculator'],
+    href: '/math/surface-area',
+    embedHref: '/embed/math/surface-area',
+    icon: '📦',
+    color: 'purple'
+  },
+  {
+    id: 'triangle-height',
+    name: 'Height of a Triangle Calculator',
+    description: 'Calculate the height of any triangle using multiple methods: from base and area, three sides (Heron\'s formula), or trigonometry with step-by-step solutions',
+    category: 'Geometry',
+    subject: 'math',
+    keywords: ['height of a triangle calculator', 'triangle height calculator', 'how to find triangle height', 'triangle height formula', 'calculate triangle height', 'height from area and base', 'heron formula height', 'triangle altitude calculator', 'geometry calculator', 'triangle calculator'],
+    href: '/math/triangle-height',
+    embedHref: '/embed/math/triangle-height',
+    icon: '⬆️',
+    color: 'purple'
+  },
+  {
     id: 'significant-figures',
     name: 'Significant Figures Calculator - Sig Fig',
     description: 'Calculate significant figures, round numbers, and perform arithmetic operations while maintaining proper precision',
