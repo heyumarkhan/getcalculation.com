@@ -135,7 +135,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: 'physics/impulse-momentum-calculator', priority: 0.8 },
     { slug: 'physics/coulombs-law-calculator', priority: 0.8 },
     { slug: 'physics/time-dilation-calculator', priority: 0.8 },
-    { slug: 'finance/overtime-calculator', priority: 0.8 }
+    { slug: 'finance/overtime-calculator', priority: 0.8 },
+    { slug: 'finance/time-and-a-half-calculator', priority: 0.8 },
+    { slug: 'finance/pay-raise-calculator', priority: 0.8 },
+    { slug: 'finance/markup-calculator', priority: 0.8 },
+    { slug: 'finance/yield-to-maturity-calculator', priority: 0.8 },
+    { slug: 'finance/appreciation-calculator', priority: 0.8 },
+    { slug: 'finance/expense-ratio-calculator', priority: 0.8 },
+    { slug: 'finance/price-elasticity-of-demand-calculator', priority: 0.8 },
+    { slug: 'finance/year-over-year-growth-calculator', priority: 0.8 }
   ]
 
   // Generate sitemap entries

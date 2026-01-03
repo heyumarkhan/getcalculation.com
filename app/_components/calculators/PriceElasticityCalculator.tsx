@@ -1,0 +1,181 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Button from '../ui/Button';
+import Input from '../ui/Input';
+
+interface PriceElasticityCalculatorProps {
+  showTitle?: boolean;
+  primaryColor?: string;
+}
+
+export default function PriceElasticityCalculator({ showTitle = true, primaryColor = '#820ECC' }: PriceElasticityCalculatorProps) {
+  const [initialQuantity, setInitialQuantity] = useState<string>('');
+  const [finalQuantity, setFinalQuantity] = useState<string>('');
+  const [initialPrice, setInitialPrice] = useState<string>('');
+  const [finalPrice, setFinalPrice] = useState<string>('');
+  const [result, setResult] = useState<null | { ped: number; quantityChange: number; priceChange: number; elasticity: string }>(null);
+  const [calculation, setCalculation] = useState('');
+
+  const parse = (v: string) => parseFloat(v) || 0;
+
+  const getElasticityType = (value: number): string => {
+    const abs = Math.abs(value);
+    if (abs > 1) return 'Elastic (Price Sensitive)';
+    if (abs < 1) return 'Inelastic (Price Insensitive)';
+    return 'Unit Elastic';
+  };
+
+  const calculate = () => {
+    const initQty = parse(initialQuantity);
+    const finalQty = parse(finalQuantity);
+    const initPrice = parse(initialPrice);
+    const finalPriceVal = parse(finalPrice);
+
+    if (!initQty || !finalQty || !initPrice || !finalPriceVal || initQty <= 0 || initPrice <= 0) {
+      setResult(null);
+      setCalculation('');
+      return;
+    }
+
+    const qtyChange = ((finalQty - initQty) / initQty) * 100;
+    const priceChange = ((finalPriceVal - initPrice) / initPrice) * 100;
+    const ped = qtyChange / priceChange;
+
+    setResult({ ped, quantityChange: qtyChange, priceChange: priceChange, elasticity: getElasticityType(ped) });
+
+    const steps = [];
+    steps.push(`Initial Quantity: ${initQty.toFixed(2)} units`);
+    steps.push(`Final Quantity: ${finalQty.toFixed(2)} units`);
+    steps.push(`Initial Price: $${initPrice.toFixed(2)}`);
+    steps.push(`Final Price: $${finalPriceVal.toFixed(2)}`);
+    steps.push('');
+    steps.push(`% Change in Quantity = ((Final Qty - Initial Qty) / Initial Qty) × 100`);
+    steps.push(`= ((${finalQty.toFixed(2)} - ${initQty.toFixed(2)}) / ${initQty.toFixed(2)}) × 100`);
+    steps.push(`= ${qtyChange.toFixed(4)}%`);
+    steps.push('');
+    steps.push(`% Change in Price = ((Final Price - Initial Price) / Initial Price) × 100`);
+    steps.push(`= ((${finalPriceVal.toFixed(2)} - ${initPrice.toFixed(2)}) / ${initPrice.toFixed(2)}) × 100`);
+    steps.push(`= ${priceChange.toFixed(4)}%`);
+    steps.push('');
+    steps.push(`Price Elasticity = % Change in Quantity / % Change in Price`);
+    steps.push(`= ${qtyChange.toFixed(4)}% / ${priceChange.toFixed(4)}%`);
+    steps.push(`= ${ped.toFixed(4)}`);
+    steps.push('');
+    steps.push(`Type: ${getElasticityType(ped)}`);
+
+    setCalculation(steps.join('\n'));
+  };
+
+  useEffect(() => {
+    if (initialQuantity && finalQuantity && initialPrice && finalPrice) calculate();
+  }, [initialQuantity, finalQuantity, initialPrice, finalPrice]);
+
+  const getColorClasses = (color: string) => {
+    const hexColor = color.startsWith('#') ? color : `#${color}`;
+    return {
+      customStyles: {
+        button: { backgroundColor: hexColor, '--hover-color': hexColor, '--focus-color': hexColor } as React.CSSProperties,
+        resultBg: { backgroundColor: `${hexColor}10`, borderColor: `${hexColor}30` } as React.CSSProperties,
+        resultText: { color: hexColor } as React.CSSProperties
+      }
+    };
+  };
+
+  const colors = getColorClasses(primaryColor);
+
+  return (
+    <>
+      {colors.customStyles && (
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .custom-color-button:hover { background-color: ${primaryColor}dd !important; }
+            .custom-color-button:focus { box-shadow: 0 0 0 3px ${primaryColor}40 !important; }
+            @keyframes fadeIn { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: translateY(0);} }
+            .animate-fadeIn { animation: fadeIn 0.3s ease-out; }
+          `
+        }} />
+      )}
+
+      <div className="w-full">
+        {showTitle && (
+          <>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Price Elasticity of Demand Calculator</h2>
+            <p className="text-gray-600 mb-6">Calculate price elasticity of demand (PED) based on quantity and price changes.</p>
+          </>
+        )}
+
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0">
+          <div className="w-full max-w-lg mx-auto lg:max-w-md lg:mx-0 space-y-4">
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-700 mb-4">Initial Values</h3>
+              <div className="space-y-3">
+                <Input label="Initial Quantity (units)" type="number" value={initialQuantity} onChange={(e) => setInitialQuantity(e.target.value)} placeholder="e.g., 100" step="0.01" min="0" autoFocus />
+                <Input label="Initial Price ($)" type="number" value={initialPrice} onChange={(e) => setInitialPrice(e.target.value)} placeholder="e.g., 10" step="0.01" min="0" />
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-700 mb-4">Final Values</h3>
+              <div className="space-y-3">
+                <Input label="Final Quantity (units)" type="number" value={finalQuantity} onChange={(e) => setFinalQuantity(e.target.value)} placeholder="e.g., 80" step="0.01" min="0" />
+                <Input label="Final Price ($)" type="number" value={finalPrice} onChange={(e) => setFinalPrice(e.target.value)} placeholder="e.g., 12" step="0.01" min="0" />
+              </div>
+            </div>
+
+            <div className="flex gap-3 pt-2">
+              <Button onClick={calculate} className={`flex-1 ${colors.customStyles ? 'custom-color-button' : ''}`} style={colors.customStyles.button} size="lg">Calculate</Button>
+              <Button onClick={() => { setInitialQuantity(''); setFinalQuantity(''); setInitialPrice(''); setFinalPrice(''); setResult(null); setCalculation(''); }} variant="outline" size="lg">Clear</Button>
+            </div>
+          </div>
+
+          <div className="hidden lg:block w-px bg-gray-200 mx-4"></div>
+
+          <div>
+            <div className="p-4 rounded-md min-h-[400px] transition-all duration-300" style={colors.customStyles.resultBg}>
+              <h3 className="text-lg font-semibold mb-4" style={colors.customStyles.resultText}>Elasticity Results</h3>
+
+              {result ? (
+                <div className="animate-fadeIn">
+                  <div className="bg-white rounded-lg border p-6 space-y-4">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700">Qty Change:</span>
+                      <span className="font-mono font-semibold text-gray-900">{result.quantityChange.toFixed(4)}%</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="font-medium text-gray-700">Price Change:</span>
+                      <span className="font-mono font-semibold text-gray-900">{result.priceChange.toFixed(4)}%</span>
+                    </div>
+                    <div className="flex justify-between items-center py-3 border-t-2 border-gray-300 mt-2">
+                      <span className="font-bold text-lg text-gray-900">Price Elasticity:</span>
+                      <span className="font-mono font-bold text-xl" style={colors.customStyles.resultText}>{result.ped.toFixed(4)}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 bg-gray-50 px-3 rounded">
+                      <span className="font-medium text-gray-700">Type:</span>
+                      <span className="font-semibold text-gray-900">{result.elasticity}</span>
+                    </div>
+
+                    {calculation && (
+                      <div className="mt-6 pt-4 border-t border-gray-200">
+                        <h4 className="font-semibold text-gray-700 mb-2 text-sm">Calculation Steps:</h4>
+                        <pre className="text-xs text-gray-600 whitespace-pre-wrap font-mono bg-gray-50 p-3 rounded">{calculation}</pre>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-center h-full min-h-[300px]">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-4">📊</div>
+                    <p className="text-lg font-medium mb-2">Ready to Calculate</p>
+                    <p className="text-sm">Enter initial and final quantity and price values</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
