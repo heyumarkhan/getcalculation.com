@@ -2290,6 +2290,104 @@ export const calculators: Calculator[] = [
     icon: '💛',
     color: 'green'
   }
+  ,
+  {
+    id: 'time-and-a-half-calculator',
+    name: 'Time and a Half Calculator',
+    description: 'Compute overtime pay at time and a half (1.5×) quickly and accurately. Ideal for payroll, budgeting, and paycheck verification.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['time and a half calculator', '1.5x overtime calculator', 'time and a half pay calculator', 'overtime pay calculator', 'calculate time and a half', 'overtime calculator', 'overtime pay 1.5x', 'payroll calculator'],
+    href: '/finance/time-and-a-half-calculator',
+    embedHref: '/embed/finance/time-and-a-half-calculator',
+    icon: '🕒',
+    color: 'purple'
+  }
+  ,
+  {
+    id: 'pay-raise-calculator',
+    name: 'Pay Raise Calculator',
+    description: 'Calculate your salary or hourly pay after a raise. Supports percentage or fixed amount raises with a step-by-step breakdown.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['pay raise calculator', 'salary raise calculator', 'salary raise percentage', 'raise percentage calculator', 'calculate salary raise', 'pay raise percent', 'salary increase calculator'],
+    href: '/finance/pay-raise-calculator',
+    embedHref: '/embed/finance/pay-raise-calculator',
+    icon: '💸',
+    color: 'purple'
+  },
+  {
+    id: 'markup-calculator',
+    name: 'Markup Calculator',
+    description: 'Calculate selling price based on cost price and markup. Supports percentage or fixed amount markup with step-by-step breakdown.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['markup calculator', 'selling price calculator', 'markup percentage calculator', 'cost price calculator', 'profit margin calculator', 'markup formula calculator'],
+    href: '/finance/markup-calculator',
+    embedHref: '/embed/finance/markup-calculator',
+    icon: '📈',
+    color: 'purple'
+  },
+  {
+    id: 'yield-to-maturity-calculator',
+    name: 'Yield to Maturity Calculator',
+    description: 'Calculate yield to maturity (YTM) for bonds. Free online YTM calculator to determine bond returns based on face value, coupon rate, current price, and maturity date.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['yield to maturity calculator', 'YTM calculator', 'bond calculator', 'bond yield calculator', 'calculate YTM', 'bond return calculator', 'YTM formula calculator'],
+    href: '/finance/yield-to-maturity-calculator',
+    embedHref: '/embed/finance/yield-to-maturity-calculator',
+    icon: '💰',
+    color: 'purple'
+  },
+  {
+    id: 'appreciation-calculator',
+    name: 'Appreciation Calculator',
+    description: 'Calculate asset appreciation based on initial and final values or appreciation rate. Track property, investment, and asset value growth over time.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['appreciation calculator', 'asset appreciation calculator', 'property appreciation calculator', 'investment appreciation calculator', 'value growth calculator', 'asset growth calculator'],
+    href: '/finance/appreciation-calculator',
+    embedHref: '/embed/finance/appreciation-calculator',
+    icon: '💹',
+    color: 'purple'
+  },
+  {
+    id: 'expense-ratio-calculator',
+    name: 'Expense Ratio Calculator',
+    description: 'Calculate the expense ratio of mutual funds and investment funds. Determine the percentage of fund assets spent on annual expenses to evaluate fund costs.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['expense ratio calculator', 'fund expense ratio', 'ER calculator', 'mutual fund expense ratio', 'investment fund costs', 'expense ratio formula calculator'],
+    href: '/finance/expense-ratio-calculator',
+    embedHref: '/embed/finance/expense-ratio-calculator',
+    icon: '⚖️',
+    color: 'purple'
+  },
+  {
+    id: 'price-elasticity-of-demand-calculator',
+    name: 'Price Elasticity of Demand Calculator',
+    description: 'Calculate price elasticity of demand (PED) to understand how quantity demanded changes with price changes. Determine if demand is elastic, inelastic, or unit elastic.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['price elasticity of demand calculator', 'elasticity calculator', 'PED calculator', 'demand elasticity', 'price elasticity', 'elasticity of demand', 'price sensitivity calculator', 'demand elasticity calculator'],
+    href: '/finance/price-elasticity-of-demand-calculator',
+    embedHref: '/embed/finance/price-elasticity-of-demand-calculator',
+    icon: '📉',
+    color: 'purple'
+  },
+  {
+    id: 'year-over-year-growth-calculator',
+    name: 'Year Over Year Growth Calculator',
+    description: 'Calculate year-over-year growth (YoY) to measure business performance, revenue growth, and annual metrics changes. Track growth rate for financial analysis.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['year over year growth calculator', 'YoY growth calculator', 'annual growth rate calculator', 'year-over-year growth rate', 'business growth calculator', 'revenue growth calculator', 'growth rate calculator', 'YoY calculator'],
+    href: '/finance/year-over-year-growth-calculator',
+    embedHref: '/embed/finance/year-over-year-growth-calculator',
+    icon: '📊',
+    color: 'purple'
+  }
 ];
 
 export const subjects = [
