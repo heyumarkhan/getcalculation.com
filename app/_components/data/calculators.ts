@@ -2329,6 +2329,91 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'price-per-square-foot-calculator',
+    name: 'Price Per Square Foot Calculator',
+    description: 'Calculate price per square foot for real estate, flooring, and construction. Determine unit pricing by dividing total price by square footage. Essential for property valuation and cost estimation.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['price per square foot calculator', 'cost per square foot', 'price per sq ft calculator', 'real estate calculator', 'property price calculator', 'square footage price calculator', 'cost per unit area calculator', 'home price per square foot', 'construction cost calculator', 'flooring cost calculator'],
+    href: '/finance/price-per-square-foot-calculator',
+    embedHref: '/embed/finance/price-per-square-foot-calculator',
+    icon: '🏠',
+    color: 'purple'
+  },
+  {
+    id: 'real-estate-commission-calculator',
+    name: 'Real Estate Commission Calculator',
+    description: 'Calculate real estate agent commission and seller net proceeds from a property sale using sale price and commission rate.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['real estate commission calculator', 'commission calculator', 'agent commission calculator', 'seller net proceeds calculator', 'real estate fees', 'calculate commission percent', 'real estate commission rate'],
+    href: '/finance/real-estate-commission-calculator',
+    embedHref: '/embed/finance/real-estate-commission-calculator',
+    icon: '🧾',
+    color: 'purple'
+  },
+  {
+    id: 'cash-back-calculator',
+    name: 'Cash Back Calculator',
+    description: 'Calculate cashback earned from purchases using a cashback percentage. Determine dollar rewards and effective return for credit card offers and promotions.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['cash back calculator', 'cashback calculator', 'cash back rewards calculator', 'credit card cashback', 'calculate cashback', 'cashback rate calculator'],
+    href: '/finance/cash-back-calculator',
+    embedHref: '/embed/finance/cash-back-calculator',
+    icon: '💳',
+    color: 'purple'
+  },
+  {
+    id: 'dividend-yield-calculator',
+    name: 'Dividend Yield Calculator',
+    description: 'Calculate dividend yield percentage to evaluate the income return on stock investments based on stock price and annual dividend.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['dividend yield calculator', 'dividend yield', 'calculate dividend yield', 'stock dividend yield calculator', 'dividend calculator', 'yield calculator', 'dividend income calculator'],
+    href: '/finance/dividend-yield-calculator',
+    embedHref: '/embed/finance/dividend-yield-calculator',
+    icon: '💵',
+    color: 'purple'
+  },
+  {
+    id: 'ctr-calculator',
+    name: 'CTR Calculator',
+    description: 'Calculate click-through rate (CTR) from clicks and impressions. Analyze digital marketing campaign performance with CTR formula. Essential for PPC, email, and social media marketing analytics.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['CTR calculator', 'click-through rate calculator', 'CTR formula', 'how to calculate CTR', 'CTR percentage calculator', 'Google Ads CTR calculator', 'email marketing CTR calculator', 'social media CTR calculator', 'CTR benchmarks', 'improve CTR'],
+    href: '/finance/ctr-calculator',
+    embedHref: '/embed/finance/ctr-calculator',
+    icon: '📊',
+    color: 'purple'
+  },
+  {
+    id: 'roas-calculator',
+    name: 'ROAS Calculator',
+    description: 'Calculate return on ad spend (ROAS) from revenue and ad costs. Measure advertising profitability for Google Ads, Facebook, and digital marketing campaigns. Essential for evaluating campaign ROI.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['ROAS calculator', 'return on ad spend calculator', 'ROAS formula', 'how to calculate ROAS', 'ROAS benchmarks', 'Google Ads ROAS calculator', 'Facebook ROAS calculator', 'calculate ROAS', 'improve ROAS', 'ROAS vs ROI'],
+    href: '/finance/roas-calculator',
+    embedHref: '/embed/finance/roas-calculator',
+    icon: '💰',
+    color: 'purple'
+  },
+  {
+    id: 'cpm-calculator',
+    name: 'CPM Calculator',
+    description: 'Calculate cost per mille (CPM) from ad spend and impressions. Analyze display and social media advertising pricing efficiency. Essential for evaluating impression-based campaign costs.',
+    category: 'Finance',
+    subject: 'finance',
+    keywords: ['CPM calculator', 'cost per mille calculator', 'CPM formula', 'how to calculate CPM', 'CPM benchmarks', 'average CPM rates', 'Google display CPM', 'Facebook CPM calculator', 'cost per impression', 'display advertising CPM'],
+    href: '/finance/cpm-calculator',
+    embedHref: '/embed/finance/cpm-calculator',
+    icon: '📢',
+    color: 'purple'
+  },
+  
+  {
     id: 'yield-to-maturity-calculator',
     name: 'Yield to Maturity Calculator',
     description: 'Calculate yield to maturity (YTM) for bonds. Free online YTM calculator to determine bond returns based on face value, coupon rate, current price, and maturity date.',
