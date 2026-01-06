@@ -833,13 +833,25 @@ export const calculators: Calculator[] = [
   {
     id: 'angular-velocity-calculator',
     name: 'Angular Velocity Calculator',
-    description: 'Calculate angular velocity using angle/time (? = ?/t), frequency (? = 2pf), or linear velocity/radius (? = v/r). Free online Mechanics calculator for rotational motion and circular motion.',
+    description: 'Calculate angular velocity using angle/time (θ = θ/t), frequency (θ = 2πf), or linear velocity/radius (θ = v/r). Free online Mechanics calculator for rotational motion and circular motion.',
     category: 'Mechanics',
     subject: 'physics',
-    keywords: ['angular velocity calculator', 'calculate angular velocity', 'angular velocity formula', 'rotational speed calculator', 'angular speed calculator', '? = ?/t', '? = 2pf', '? = v/r', 'rad/s calculator', 'rpm to rad/s', 'rotational motion calculator', 'circular motion calculator', 'angular velocity physics', 'rotational Mechanics', 'angular velocity units', 'radians per second', 'angular velocity equation', 'Mechanics calculator', 'physics calculator', 'rotational dynamics', 'angular velocity conversion'],
+    keywords: ['angular velocity calculator', 'calculate angular velocity', 'angular velocity formula', 'rotational speed calculator', 'angular speed calculator', 'θ = θ/t', 'θ = 2πf', 'θ = v/r', 'rad/s calculator', 'rpm to rad/s', 'rotational motion calculator', 'circular motion calculator', 'angular velocity physics', 'rotational Mechanics', 'angular velocity units', 'radians per second', 'angular velocity equation', 'Mechanics calculator', 'physics calculator', 'rotational dynamics', 'angular velocity conversion'],
     href: '/physics/angular-velocity-calculator',
     embedHref: '/embed/physics/angular-velocity-calculator',
     icon: '🏃',
+    color: 'purple'
+  },
+  {
+    id: 'polar-moment-of-inertia-calculator',
+    name: 'Polar Moment of Inertia Calculator',
+    description: 'Calculate polar moment of inertia (J) for circles, rectangles, hollow circles, and I-beams using J = Ix + Iy. Free online mechanics calculator with step-by-step solutions and multiple unit support (mm⁴, cm⁴, in⁴, m⁴).',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['polar moment of inertia calculator', 'calculate polar moment of inertia', 'polar moment of inertia formula', 'J = Ix + Iy', 'torsional inertia calculator', 'second polar moment calculator', 'moment of inertia torsion', 'polar moment of inertia', 'J calculator', 'torsional constant calculator', 'shaft design calculator', 'circular moment of inertia', 'polar moment of inertia for circle', 'polar moment of inertia for rectangle', 'hollow circle inertia calculator', 'I-beam moment of inertia', 'section property calculator', 'structural mechanics calculator', 'torsion calculator', 'angle of twist calculator', 'shear stress calculator', 'polar moment of inertia mm4', 'polar moment of inertia cm4', 'polar moment of inertia in4', 'mechanics calculator', 'physics calculator', 'engineering calculator', 'free polar moment calculator', 'polar moment online calculator'],
+    href: '/physics/polar-moment-of-inertia-calculator',
+    embedHref: '/embed/physics/polar-moment-of-inertia-calculator',
+    icon: '⭐',
     color: 'purple'
   },
   {
@@ -2471,6 +2483,57 @@ export const calculators: Calculator[] = [
     href: '/finance/year-over-year-growth-calculator',
     embedHref: '/embed/finance/year-over-year-growth-calculator',
     icon: '📊',
+    color: 'purple'
+  },
+  {
+    id: 'temperature-at-altitude-calculator',
+    name: 'Temperature at Altitude Calculator',
+    description: 'Calculate temperature at any altitude using ICAO Standard Atmosphere or custom lapse rate method. Free online physics calculator with multiple unit support (°C, °F, K) for temperature and (m, km, ft) for altitude. Perfect for aviation, weather, and atmospheric science.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['temperature at altitude calculator', 'calculate temperature altitude', 'altitude temperature calculator', 'ICAO standard atmosphere calculator', 'lapse rate calculator', 'temperature lapse rate', 'atmospheric temperature calculator', 'air temperature altitude', 'altitude effect temperature', 'temperature decrease altitude', 'aviation altitude temperature', 'weather calculator altitude', 'troposphere temperature calculator', 'density altitude calculator', 'aircraft temperature calculator', 'mountain altitude temperature', 'weather balloon calculator', 'atmospheric science calculator', 'physics calculator thermodynamics', 'temperature conversion calculator', 'altitude effects calculator', 'air density altitude', 'atmospheric physics calculator', 'free temperature calculator', 'online altitude calculator'],
+    href: '/physics/temperature-at-altitude-calculator',
+    embedHref: '/embed/physics/temperature-at-altitude-calculator',
+    icon: '🌡️',
+    color: 'purple'
+  }
+  ,
+  {
+    id: 'wire-resistance-calculator',
+    name: 'Wire Resistance Calculator',
+    description: 'Calculate wire resistance, length, diameter, or resistivity using R = ρ × L / A formula. Free online physics calculator with support for 11 materials, temperature correction, and multiple unit systems (Ω, mΩ, kΩ, MΩ).',
+    category: 'Electricity',
+    subject: 'physics',
+    keywords: ['wire resistance calculator', 'electrical resistance calculator', 'calculate wire resistance', 'R = ρ × L / A', 'resistivity calculator', 'wire diameter calculator', 'conductor resistance calculator', 'Ohm\'s law calculator', 'copper wire resistance', 'aluminum wire resistance', 'wire gauge calculator', 'resistance formula calculator', 'electrical conductivity calculator', 'wire resistance formula', 'resistance calculation', 'resistivity formula', 'wire temperature coefficient', 'electrical resistance physics', 'power dissipation calculator', 'voltage drop calculator', 'heating element calculator', 'wire size calculator', 'electrical wire calculator', 'copper resistivity calculator', 'material resistivity calculator'],
+    href: '/physics/wire-resistance-calculator',
+    embedHref: '/embed/physics/wire-resistance-calculator',
+    icon: '⚡',
+    color: 'purple'
+  }
+  ,
+  {
+    id: 'rydberg-equation-calculator',
+    name: 'Rydberg Equation Calculator',
+    description: 'Calculate wavelength, frequency, or photon energy for hydrogen-like transitions using the Rydberg equation. Supports custom Rydberg constant and multiple units for spectroscopy and physics applications.',
+    category: 'Quantum Mechanics',
+    subject: 'physics',
+    keywords: ['rydberg equation calculator', 'Rydberg formula calculator', 'calculate wavelength from quantum levels', 'rydberg constant calculator', 'spectral line calculator', 'photon energy calculator', 'frequency calculator', 'hydrogen spectrum calculator', 'balmer series calculator', 'rydberg wavelength calculator', 'atomic spectra calculator', 'physics calculator rydberg', 'rydberg equation online', 'rydberg constant', 'calculate photon energy eV', 'spectroscopy calculator', 'hydrogen-like ions calculator', 'quantum transition calculator', 'rydberg formula wavelengths', 'spectral line wavelengths'],
+    href: '/physics/rydberg-equation-calculator',
+    embedHref: '/embed/physics/rydberg-equation-calculator',
+    icon: '🔭',
+    color: 'purple'
+  }
+  ,
+  {
+    id: 'youngs-modulus-calculator',
+    name: "Young's Modulus Calculator",
+    description: "Calculate Young's modulus (E), stress, strain, required force, or required cross-sectional area using standard elasticity formulas. Ideal for materials engineering and mechanics problems.",
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ["young's modulus calculator", "youngs modulus calculator", "elastic modulus calculator", "stress strain calculator", "E modulus calculator", "calculate Young's modulus", "material stiffness calculator", "stress calculator", "strain calculator", "force area calculator", "mechanics calculator", "materials engineering calculator", "young modulus gpa calculator"],
+    href: '/physics/youngs-modulus-calculator',
+    embedHref: '/embed/physics/youngs-modulus-calculator',
+    icon: '📐',
     color: 'purple'
   }
 ];
