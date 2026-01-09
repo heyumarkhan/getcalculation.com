@@ -30,6 +30,8 @@ app/
 
 **File:** `app/_components/data/calculators.ts`
 
+**⚠️ IMPORTANT:** Before adding a calculator, review `ICON_REFERENCE.md` to select the appropriate icon based on the calculator's category and function. Always follow the established icon theme.
+
 Add your calculator to the `calculators` array:
 
 ```typescript
@@ -42,7 +44,7 @@ Add your calculator to the `calculators` array:
   keywords: ['keyword1', 'keyword2', 'keyword3'],
   href: '/math/your-calculator-id',
   embedHref: '/embed/math/your-calculator-id',
-  icon: '🔢', // Choose appropriate emoji
+  icon: '🔢', // **IMPORTANT:** Choose icon from ICON_REFERENCE.md - always follow the established theme
   color: 'blue' // Choose from: blue, green, orange, purple, pink
 }
 ```
