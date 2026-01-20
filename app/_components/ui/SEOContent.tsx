@@ -111,7 +111,7 @@ export function SEOFAQ({
   questions, 
   className = '' 
 }: { 
-  questions: Array<{ question: string; answer: string }>; 
+  questions: Array<{ question: string; answer: React.ReactNode }>; 
   className?: string; 
 }) {
   return (
