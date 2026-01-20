@@ -164,8 +164,8 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
               className={`cursor-pointer group ${getCardColor(calculator.color)}`}
               onClick={() => window.location.href = calculator.href}
             >
-              <Card className="p-6 transition-all duration-200 h-full">
-              <div className="text-center">
+              <Card className="p-6 transition-all duration-200 h-full flex flex-col">
+              <div className="text-center flex-1 flex flex-col">
                 {/* Icon */}
                 <div className="text-4xl mb-4">{calculator.icon}</div>
                 
@@ -175,7 +175,7 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-1">
                   {calculator.description}
                 </p>
                 
@@ -183,9 +183,10 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
                 <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${getCategoryColor(calculator.category)}`}>
                   {calculator.category}
                 </div>
+              </div>
                 
-                {/* Action Buttons */}
-                <div className="mt-4 space-y-2">
+                {/* Action Buttons - Sticky to Bottom */}
+                <div className="mt-6 space-y-2">
                   <Button 
                     className="w-full"
                     onClick={(e) => {
@@ -208,7 +209,6 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
                     Copy Embed Code
                   </Button>
                 </div>
-              </div>
               </Card>
             </div>
           ))}

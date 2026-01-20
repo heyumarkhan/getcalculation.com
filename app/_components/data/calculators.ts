@@ -1,4 +1,4 @@
-export interface Calculator {
+﻿export interface Calculator {
   id: string;
   name: string;
   description: string;
@@ -27,7 +27,7 @@ export const calculators: Calculator[] = [
   {
     id: 'friction-calculator',
     name: 'Friction Calculator',
-    description: 'Calculate friction force, coefficient of friction, or normal force using F_friction = ? ? N. Free online Mechanics calculator for physics problems with static and kinetic friction calculations.',
+    description: 'Calculate friction force, coefficient, or normal force using static and kinetic friction formulas.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['friction calculator', 'calculate friction force', 'friction force formula', 'F_friction = ? ? N', 'coefficient of friction calculator', 'friction force physics', 'static friction calculator', 'kinetic friction calculator', 'friction coefficient calculator', 'normal force calculator', 'friction formula', 'friction equation', 'calculate coefficient of friction', 'friction force calculation', 'Mechanics calculator', 'physics calculator', 'friction physics', 'friction force equation', 'friction calculator online', 'friction force from coefficient', 'coefficient of friction from force', 'normal force from friction', 'friction Mechanics calculator'],
@@ -39,7 +39,7 @@ export const calculators: Calculator[] = [
   {
     id: 'normal-force-calculator',
     name: 'Normal Force Calculator',
-    description: 'Calculate normal force from mass and gravity using N = m ? g (horizontal) or N = m ? g ? cos(?) (inclined plane). Free online Mechanics calculator for physics problems.',
+    description: 'Calculate normal force using N = m × g for horizontal or inclined plane surfaces.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['normal force calculator', 'calculate normal force', 'normal force formula', 'N = m ? g', 'N = m ? g ? cos(?)', 'normal force physics', 'normal force horizontal surface', 'normal force inclined plane', 'normal force calculator online', 'normal force equation', 'normal force from mass', 'normal force from weight', 'normal force Mechanics', 'physics calculator', 'Mechanics calculator', 'normal force calculation', 'normal force horizontal', 'normal force angle', 'normal force gravity', 'normal force mass', 'normal force calculator physics', 'normal force formula calculator', 'calculate normal force from mass', 'normal force inclined surface calculator'],
@@ -51,7 +51,7 @@ export const calculators: Calculator[] = [
   {
     id: 'kilogram-to-newtons-calculator',
     name: 'Kilogram to Newtons Calculator',
-    description: 'Convert mass in kilograms to weight (force) in Newtons using F = m � g. Free online physics calculator for converting kg to N with standard gravity (g = 9.80665 m/s�).',
+    description: 'Convert mass in kilograms to weight in Newtons using F = m × g.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['kilogram to newtons calculator', 'kg to newtons calculator', 'convert kg to newtons', 'kg to N calculator', 'mass to weight calculator', 'kilogram to newtons conversion', 'kg to newtons formula', 'F = m � g', 'weight calculator', 'mass weight conversion', 'kilogram newtons converter', 'kg newtons conversion', 'convert mass to force', 'weight from mass calculator', 'gravity weight calculator', 'standard gravity calculator', 'earth gravity calculator', 'mass to force calculator', 'physics calculator', 'Mechanics calculator', 'kg to N conversion', 'kilogram newtons', 'weight force calculator'],
@@ -63,7 +63,7 @@ export const calculators: Calculator[] = [
   {
     id: 'acceleration-due-to-gravity-calculator',
     name: 'Acceleration due to Gravity Calculator',
-    description: 'Calculate acceleration due to gravity using g = Gm/r� for any celestial body. Free online physics calculator with preset values for Earth, moon, mars, Jupiter, and other planets. Supports custom mass and radius inputs.',
+    description: 'Calculate gravity acceleration using g = Gm/r² with presets for Earth, Moon, Mars, Jupiter, planets.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['acceleration due to gravity calculator', 'gravity calculator', 'calculate gravity acceleration', 'g = Gm/r�', 'gravitational acceleration calculator', 'gravity formula calculator', 'acceleration due to gravity formula', 'calculate g', 'gravity acceleration physics', 'gravitational constant calculator', 'earth gravity calculator', 'moon gravity calculator', 'mars gravity calculator', 'jupiter gravity calculator', 'planet gravity calculator', 'celestial body gravity', 'gravity from mass and radius', 'Newton gravity calculator', 'universal gravitation calculator', 'gravity physics calculator', 'Mechanics calculator', 'physics calculator', 'gravitational acceleration formula', 'calculate acceleration due to gravity', 'gravity constant calculator', 'g force calculator', 'standard gravity', 'free fall acceleration', 'gravity value calculator', 'gravity calculation'],
@@ -75,7 +75,7 @@ export const calculators: Calculator[] = [
   {
     id: 'pneumatic-cylinder-force-calculator',
     name: 'Pneumatic Cylinder Force Calculator',
-    description: 'Calculate extension and retraction force for pneumatic cylinders using F = P � A. Free online physics calculator for single-acting and double-acting cylinders with comprehensive unit support for pressure, diameter, and force.',
+    description: 'Calculate pneumatic cylinder force using F = P × A for single and double-acting cylinders.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['pneumatic cylinder force calculator', 'cylinder force calculator', 'pneumatic force calculator', 'F = P � A', 'pneumatic cylinder calculator', 'air cylinder force calculator', 'cylinder force formula', 'pneumatic actuator force', 'single acting cylinder calculator', 'double acting cylinder calculator', 'extension force calculator', 'retraction force calculator', 'pneumatic pressure force', 'cylinder sizing calculator', 'pneumatic system calculator', 'air pressure force calculator', 'cylinder force calculation', 'pneumatic engineering calculator', 'Mechanics calculator', 'physics calculator', 'pneumatic cylinder force formula', 'calculate cylinder force', 'pneumatic cylinder force from pressure', 'cylinder force PSI calculator', 'pneumatic actuator sizing', 'cylinder force bar calculator', 'pneumatic cylinder force equation', 'F = PA calculator', 'pneumatic cylinder force physics'],
@@ -87,7 +87,7 @@ export const calculators: Calculator[] = [
   {
     id: 'standard-cubic-feet-per-minute-calculator',
     name: 'Standard Cubic Feet per minute Calculator',
-    description: 'Convert between SCFm (Standard Cubic Feet per minute) and ACFm (Actual Cubic Feet per minute) using pressure and temperature corrections. Free online physics calculator for compressed air systems, HVAC, and pneumatic applications.',
+    description: 'Convert between SCFM and ACFM using pressure and temperature corrections for compressed air systems.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['standard cubic feet per minute calculator', 'SCFm calculator', 'ACFm calculator', 'SCFm to ACFm', 'ACFm to SCFm', 'scfm conversion calculator', 'standard cfm calculator', 'actual cfm calculator', 'compressed air flow calculator', 'pneumatic flow calculator', 'air flow calculator', 'scfm pressure temperature correction', 'scfm formula calculator', 'acfm to scfm conversion', 'scfm to acfm conversion', 'compressed air calculator', 'pneumatic system calculator', 'HVAC flow calculator', 'air compressor calculator', 'flow rate calculator scfm', 'standard conditions calculator', 'gas flow calculator', 'fluid Mechanics calculator', 'physics calculator', 'scfm calculation', 'acfm calculation', 'air flow rate calculator', 'compressed air flow rate'],
@@ -99,7 +99,7 @@ export const calculators: Calculator[] = [
   {
     id: 'luminosity-calculator',
     name: 'Luminosity Calculator',
-    description: 'Calculate stellar luminosity using the Stefan-Boltzmann law: L = 4pR�sT4. Free online physics calculator for astronomy and astrophysics. Calculate luminosity, radius, or temperature of stars with preset values for Sun, Sirius, Vega, and more.',
+    description: 'Calculate stellar luminosity using Stefan-Boltzmann law with presets for Sun, Sirius, Vega and more stars.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['luminosity calculator', 'stellar luminosity calculator', 'star luminosity calculator', 'L = 4pR�sT4', 'stefan boltzmann law calculator', 'stellar luminosity formula', 'luminosity formula calculator', 'calculate star luminosity', 'stellar radius calculator', 'stellar temperature calculator', 'astronomy calculator', 'astrophysics calculator', 'black body radiation calculator', 'stefan boltzmann constant calculator', 'luminosity physics calculator', 'star properties calculator', 'stellar evolution calculator', 'solar luminosity calculator', 'stellar luminosity equation', 'luminosity calculation', 'star temperature from luminosity', 'star radius from luminosity', 'luminosity to temperature calculator', 'luminosity to radius calculator', 'stefan boltzmann equation calculator', 'stellar physics calculator', 'astronomy physics calculator'],
@@ -111,7 +111,7 @@ export const calculators: Calculator[] = [
   {
         id: 'pressure-calculator',
     name: 'Pressure Calculator',
-    description: 'Calculate pressure, force, or area using the fundamental formula P = F/A. Free online physics calculator with comprehensive unit support for pressure (Pa, PSI, bar, atm), force (N, lbf), and area (m�, in�, cm�). Perfect for engineering, physics, and fluid mechanics applications.',
+    description: 'Calculate pressure, force, or area using P = F/A for engineering and fluid mechanics.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['pressure calculator', 'P = F/A calculator', 'pressure force area calculator', 'calculate pressure', 'pressure formula calculator', 'force to pressure calculator', 'area to pressure calculator', 'pressure physics calculator', 'pressure engineering calculator', 'pascal calculator', 'PSI calculator', 'pressure unit converter', 'pressure calculation', 'fluid pressure calculator', 'hydraulic pressure calculator', 'pneumatic pressure calculator', 'pressure force area formula', 'pressure equation calculator', 'calculate force from pressure', 'calculate area from pressure', 'pressure converter', 'pressure unit calculator', 'mechanics calculator', 'physics calculator', 'pressure physics', 'pressure engineering'],
@@ -123,7 +123,7 @@ export const calculators: Calculator[] = [
   {
     id: 'hydrostatic-pressure-calculator',
     name: 'Hydrostatic Pressure Calculator',
-    description: 'Calculate hydrostatic pressure, depth, or fluid density using the fundamental formula P = ? � g � h. Free online physics calculator with comprehensive unit support for pressure (Pa, kPa, bar, PSI, atm), depth (m, cm, ft), and fluid density (kg/m�, g/cm�, lb/ft�). Perfect for diving, fluid mechanics, engineering, and physics applications.',
+    description: 'Calculate hydrostatic pressure, depth, or fluid density using P = ρ × g × h formula.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['hydrostatic pressure calculator', 'P = ? � g � h', 'hydrostatic pressure formula', 'calculate hydrostatic pressure', 'depth pressure calculator', 'fluid density calculator', 'pressure depth calculator', 'water pressure calculator', 'diving pressure calculator', 'underwater pressure calculator', 'hydrostatic pressure physics', 'fluid mechanics calculator', 'pressure from density depth', 'calculate pressure at depth', 'water pressure depth', 'hydrostatic pressure equation', 'fluid pressure calculator', 'pressure formula calculator', 'physics calculator', 'mechanics calculator', 'hydrostatic pressure', 'fluid pressure depth', 'hydrostatic pressure conversion', 'pressure at depth calculator', 'diving depth pressure'],
@@ -135,7 +135,7 @@ export const calculators: Calculator[] = [
   {
     id: 'lc-filter-calculator',
     name: 'LC Filter Calculator',
-    description: 'Calculate LC filter resonant frequency, inductance, capacitance, or characteristic impedance using fundamental formulas f = 1/(2pvLC) and Z0 = v(L/C). Free online electronics calculator with comprehensive unit support. Perfect for electrical engineering, circuit design, RF applications, and signal processing.',
+    description: 'Calculate LC filter resonant frequency, inductance, capacitance, or impedance using standard formulas for electronics.',
     category: 'Electronics',
     subject: 'physics',
     keywords: ['LC filter calculator', 'resonant frequency calculator', 'LC circuit calculator', 'f = 1/(2pvLC)', 'inductance capacitance calculator', 'characteristic impedance calculator', 'Z0 = v(L/C)', 'LC filter design', 'RLC circuit calculator', 'bandpass filter calculator', 'filter frequency calculator', 'LC resonance calculator', 'electronics calculator', 'RF filter calculator', 'signal processing calculator', 'circuit design calculator', 'frequency response calculator', 'LC oscillator calculator', 'tuned circuit calculator', 'matching network calculator', 'impedance matching calculator', 'filter design calculator', 'electrical engineering calculator', 'LC filter impedance', 'quality factor calculator'],
@@ -147,7 +147,7 @@ export const calculators: Calculator[] = [
   {
     id: 'capacitive-reactance-calculator',
     name: 'Capacitive Reactance Calculator',
-    description: 'Calculate capacitive reactance (Xc), frequency (f), or capacitance (C) using the formula Xc = 1/(2pfC). Free online electronics calculator with comprehensive unit support. Perfect for AC circuit analysis, filter design, impedance matching, and signal processing applications.',
+    description: 'Calculate capacitive reactance, frequency, or capacitance using Xc = 1/(2πfC) for AC circuits.',
     category: 'Electronics',
     subject: 'physics',
     keywords: ['capacitive reactance calculator', 'Xc calculator', 'capacitive reactance formula', 'Xc = 1/(2pfC)', 'frequency calculator', 'capacitance calculator', 'AC circuit calculator', 'reactance calculation', 'impedance calculator', 'RC circuit calculator', 'frequency response calculator', 'capacitor calculator online', 'electronic impedance calculator', 'alternating current calculator', 'phase angle calculator', 'filter frequency calculator', 'cutoff frequency calculator', 'circuit analysis tool', 'electronics calculator', 'reactance converter', 'AC impedance calculator', 'capacitive reactance electronics'],
@@ -159,7 +159,7 @@ export const calculators: Calculator[] = [
   {
     id: 'fpe-calculator',
     name: 'FPE Calculator',
-    description: 'Calculate foot-pounds of energy (FPE), force, distance, or convert energy units using FPE = Force � Distance. Free online physics and mechanics calculator with comprehensive unit support for Imperial and metric systems. Perfect for ballistics, engineering, and mechanics calculations.',
+    description: 'Calculate foot-pounds of energy using FPE = Force × Distance for ballistics and mechanics.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['FPE calculator', 'foot-pounds calculator', 'foot-pounds of energy', 'ft-lbf calculator', 'energy calculator', 'work calculation', 'force distance calculator', 'joule to foot-pounds converter', 'energy unit converter', 'kinetic energy calculator', 'ballistics calculator', 'physics energy calculator', 'mechanics calculator', 'foot-pound converter', 'imperial energy units', 'BTU to foot-pounds', 'joule converter', 'work energy formula', 'foot-pounds energy calculator', 'mechanics work calculator'],
@@ -171,7 +171,7 @@ export const calculators: Calculator[] = [
   {
     id: 'distance-to-horizon-calculator',
     name: 'Distance to Horizon Calculator',
-    description: 'Calculate distance to horizon from any height using the formula d = v(2Rh + h�). Free online physics calculator for aviation, maritime, geography, and observation applications. Determine how far you can see based on altitude above sea level.',
+    description: 'Calculate horizon distance from height using d = √(2Rh + h²) for aviation and maritime.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['distance to horizon calculator', 'how far to horizon', 'horizon distance calculator', 'line of sight calculator', 'visibility distance calculator', 'altitude horizon distance', 'horizon calculation formula', 'how far can I see calculator', 'horizon viewing distance', 'geographic horizon calculator', 'nautical horizon distance', 'height above sea level calculator', 'earth horizon distance', 'optical horizon calculator', 'sight distance calculator', 'horizon distance geometry', 'altitude visibility calculator', 'horizon range calculator', 'earth curvature calculator', 'line of sight distance'],
@@ -183,7 +183,7 @@ export const calculators: Calculator[] = [
   {
     id: 'series-resistor-calculator',
     name: 'Series Resistor Calculator',
-    description: 'Calculate total resistance, voltage drop, and current in series circuits using R_total = R1 + R2 + R3. Free online electronics calculator with comprehensive unit support and Ohm\'s Law analysis. Perfect for circuit design, analysis, and education.',
+    description: 'Calculate total resistance, voltage drop, and current in series circuits using R_total = ΣR.',
     category: 'Electronics',
     subject: 'physics',
     keywords: ['series resistor calculator', 'total resistance calculator', 'resistor calculator', 'series circuit calculator', 'R_total = R1 + R2', 'voltage drop calculator', 'circuit resistance calculator', 'ohms law calculator', 'resistor value calculator', 'series circuit analysis', 'electronic circuit calculator', 'resistance addition calculator', 'electrical circuit calculator', 'voltage distribution calculator', 'current calculator', 'ohm calculator', 'resistor series combination', 'circuit solver', 'electronics calculator', 'electrical engineering calculator'],
@@ -195,7 +195,7 @@ export const calculators: Calculator[] = [
   {
     id: 'low-pass-filter-calculator',
     name: 'Low Pass Filter Calculator',
-    description: 'Calculate low pass filter cutoff frequency, resistance, capacitance, and inductance for RC and RL filters. Free online electronics calculator with support for Hz, kHz, MHz, GHz frequencies. Perfect for audio, signal processing, and power supply design.',
+    description: 'Calculate low pass filter cutoff frequency, resistance, and capacitance for RC and RL filters.',
     category: 'Electronics',
     subject: 'physics',
     keywords: ['low pass filter calculator', 'cutoff frequency calculator', 'RC filter calculator', 'RL filter calculator', 'low pass filter frequency', 'filter cutoff frequency calculator', 'RC low pass filter', 'RL low pass filter', 'filter design calculator', 'electronics filter calculator', 'resistance capacitance filter', 'resistance inductance filter', 'frequency response calculator', 'signal processing calculator', 'anti-aliasing filter calculator', 'audio filter calculator', 'power supply filter calculator', 'corner frequency calculator', 'break frequency calculator', 'first order filter calculator', 'passive filter calculator', 'filter rolloff calculator', 'attenuation calculator', 'transfer function calculator'],
@@ -207,7 +207,7 @@ export const calculators: Calculator[] = [
   {
     id: 'friction-factor-calculator',
     name: 'Friction Factor Calculator',
-    description: 'Calculate friction factor, Reynolds number, and pressure drop in pipe flow using Hagen-Poiseuille, Blasius, and Colebrook-White equations. Free online fluid dynamics calculator supporting laminar and turbulent flow analysis with step-by-step calculations for pipeline design and pump sizing.',
+    description: 'Calculate friction factor, Reynolds number, and pressure drop using Hagen-Poiseuille, Blasius, and Colebrook-White equations.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['friction factor calculator', 'reynolds number calculator', 'pressure drop calculator', 'darcy-weisbach equation', 'friction factor formula', 'pipe flow calculator', 'hagen-poiseuille equation', 'blasius equation', 'colebrook-white equation', 'fluid dynamics calculator', 'laminar flow calculator', 'turbulent flow calculator', 'pipe friction loss', 'friction loss calculator', 'flow resistance calculator', 'darcy friction factor', 'moody diagram calculator', 'relative roughness calculator', 'head loss calculator', 'pressure drop in pipes', 'fluid mechanics calculator', 'hydraulic engineering calculator', 'pipeline design calculator', 'flow analysis calculator'],
@@ -219,7 +219,7 @@ export const calculators: Calculator[] = [
   {
     id: 'rc-circuit-calculator',
     name: 'RC Circuit Calculator',
-    description: 'Calculate RC circuit time constant (t = R � C), charging voltage, cutoff frequency, and impedance. Free online electronics calculator for resistor-capacitor circuits with support for signal filtering, timing, and AC analysis.',
+    description: 'Calculate RC circuit time constant, charging voltage, cutoff frequency, and impedance for timing applications.',
     category: 'Electronics',
     subject: 'physics',
     keywords: ['rc circuit calculator', 'time constant calculator', 'charging voltage calculator', 'capacitor charging calculator', 'rc time constant formula', 'tau calculation', 'rc filter calculator', 'cutoff frequency calculator', 'impedance calculator', 'capacitive reactance calculator', 'circuit analysis calculator', 'electronics calculator', 'resistor capacitor calculator', 'charge time calculator', 'discharge calculator', 'exponential decay calculator', 'low pass filter calculator', 'rc decay calculator', 'circuit design calculator', 'signal filtering calculator', 'coupling circuit calculator', 'decoupling circuit calculator', 'integrator circuit calculator', 'differentiator circuit calculator'],
@@ -231,7 +231,7 @@ export const calculators: Calculator[] = [
   {
     id: 'stress-calculator',
     name: 'Stress Calculator',
-    description: 'Calculate stress (s = F/A), force, or cross-sectional area for tensile, compressive, and shear stress analysis. Free online engineering calculator for structural design, materials science, and mechanical engineering with support for multiple stress units (Pa, MPa, psi).',
+    description: 'Calculate stress, force, or area for tensile, compressive, and shear stress using σ = F/A.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['stress calculator', 'calculate stress', 'tensile stress calculator', 'compressive stress calculator', 'shear stress calculator', 'stress formula calculator', 'force area calculator', 'stress from force', 'pressure calculator', 'material stress calculator', 'engineering stress calculator', 'structural stress calculator', 'stress analysis calculator', 'stress conversion calculator', 'pascal converter', 'psi to mpa converter', 'stress strength calculator', 'yield strength calculator', 'stress strain calculator', 'mechanical stress calculator', 'stress mechanics calculator', 'stress failure calculator', 'bearing stress calculator', 'bending stress calculator'],
@@ -243,7 +243,7 @@ export const calculators: Calculator[] = [
   {
     id: 'weight-on-other-planets-calculator',
     name: 'Weight on Other Planets Calculator',
-    description: 'Calculate your weight on different planets, moons, and celestial bodies using W = m � g. Free online physics calculator comparing weight across Mercury, Venus, Earth, Moon, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, and the Sun. Perfect for space exploration, education, and planetary science.',
+    description: 'Calculate your weight on different planets, moons, and celestial bodies using W = m × g.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['weight on other planets calculator', 'planetary weight calculator', 'W = m � g', 'weight on moon calculator', 'weight on mars calculator', 'weight on jupiter calculator', 'gravity calculator', 'planetary gravity calculator', 'weight comparison calculator', 'moon weight calculator', 'mars weight calculator', 'solar system weight calculator', 'gravitational acceleration calculator', 'weight force calculator', 'space exploration calculator', 'astronaut weight calculator', 'planetary science calculator', 'physics weight calculator', 'celestial body gravity calculator', 'how much do I weigh on mars', 'how much do I weigh on the moon', 'weight different planets', 'gravity different planets calculator'],
@@ -255,7 +255,7 @@ export const calculators: Calculator[] = [
   {
     id: 'mach-number-calculator',
     name: 'Mach Number Calculator',
-    description: 'Calculate Mach number, velocity, or speed of sound using M = v/c. Free online physics calculator for aerodynamics and fluid dynamics. Calculate Mach number from velocity and speed of sound, or use temperature to find speed of sound in air.',
+    description: 'Calculate Mach number, velocity, or speed of sound using M = v/c for aerodynamics.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['mach number calculator', 'M = v/c calculator', 'mach number formula calculator', 'calculate mach number', 'mach number physics calculator', 'speed of sound calculator', 'supersonic calculator', 'aerodynamics calculator', 'mach number from velocity', 'velocity from mach number', 'speed of sound from temperature', 'mach number equation', 'mach number calculation', 'compressible flow calculator', 'fluid dynamics calculator', 'aerospace calculator', 'sonic speed calculator', 'mach number converter', 'mach speed calculator', 'mach number physics', 'mach number engineering', 'mach number formula', 'calculate speed of sound', 'mach number aerodynamics', 'supersonic speed calculator'],
@@ -267,7 +267,7 @@ export const calculators: Calculator[] = [
   {
     id: 'sound-wavelength-calculator',
     name: 'Sound Wavelength Calculator',
-    description: 'Calculate sound wavelength, velocity, or frequency using ? = v/f. Free online physics calculator for acoustics and wave physics. Calculate wavelength from frequency and speed of sound, or use temperature to find speed of sound in air.',
+    description: 'Calculate sound wavelength, velocity, or frequency using λ = v/f for acoustics and waves.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['sound wavelength calculator', 'wavelength calculator', '? = v/f calculator', 'sound wavelength formula', 'calculate sound wavelength', 'wavelength frequency velocity calculator', 'acoustics calculator', 'wave physics calculator', 'sound wave calculator', 'wavelength from frequency', 'frequency from wavelength', 'speed of sound calculator', 'sound wave physics', 'acoustic wavelength calculator', 'wave equation calculator', 'sound frequency calculator', 'wavelength formula calculator', 'calculate wavelength', 'sound physics calculator', 'wave calculator', 'acoustics physics', 'sound wave wavelength', 'wavelength frequency calculator', 'sound wave equation', 'wave physics'],
@@ -291,7 +291,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wiens-law-calculator',
     name: 'Wien\'s Law Calculator',
-    description: 'Calculate peak wavelength or temperature using Wien\'s displacement law: ?_max � T = b. Free online physics calculator for black body radiation, thermal physics, and astrophysics. Calculate the wavelength of maximum emission from temperature or vice versa.',
+    description: 'Calculate peak wavelength or temperature using Wien\'s displacement law for black body radiation.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['wiens law calculator', 'wien displacement law calculator', 'peak wavelength calculator', 'black body radiation calculator', 'thermal radiation calculator', '?_max � T = b calculator', 'wien constant calculator', 'peak wavelength from temperature', 'temperature from peak wavelength', 'black body temperature calculator', 'thermal physics calculator', 'astrophysics calculator', 'stellar temperature calculator', 'wien displacement constant', 'black body spectrum calculator', 'thermal emission calculator', 'radiation physics calculator', 'wien law formula', 'peak wavelength formula', 'black body calculator', 'thermal imaging calculator', 'stellar physics calculator', 'radiation temperature calculator', 'wien law physics', 'thermal radiation physics'],
@@ -303,7 +303,7 @@ export const calculators: Calculator[] = [
   {
     id: 'newtons-law-of-cooling-calculator',
     name: 'Newton\'s Law of Cooling Calculator',
-    description: 'Calculate temperature, time, or cooling constant using Newton\'s law of cooling: T(t) = T_s + (T0 - T_s) � e^(-kt). Free online physics calculator for thermal physics, heat transfer, and thermodynamics. Perfect for analyzing cooling and heating processes.',
+    description: 'Calculate temperature, time, or cooling constant using Newton\'s law of cooling for heat transfer.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['newtons law of cooling calculator', 'newton cooling calculator', 'cooling law calculator', 'T(t) = T_s + (T0 - T_s) � e^(-kt)', 'cooling constant calculator', 'temperature cooling calculator', 'thermal cooling calculator', 'heat transfer calculator', 'cooling rate calculator', 'exponential cooling calculator', 'newton cooling law formula', 'cooling physics calculator', 'thermal physics calculator', 'thermodynamics calculator', 'cooling time calculator', 'temperature decay calculator', 'exponential decay calculator', 'heat loss calculator', 'cooling process calculator', 'thermal decay calculator', 'newton cooling equation', 'cooling formula calculator', 'temperature change calculator', 'thermal physics', 'cooling physics'],
@@ -316,7 +316,7 @@ export const calculators: Calculator[] = [
   {
     id: 'heat-transfer-calculator',
     name: 'Heat Transfer Calculator',
-    description: 'Calculate heat transfer rate for conduction (Q = k�A�(T1-T2)/d), convection (Q = h�A�(T_surface-T_fluid)), or radiation (Q = e�s�A�(T14-T24)). Free online thermodynamics calculator.',
+    description: 'Calculate heat transfer rate for conduction, convection, or radiation using thermodynamics formulas for engineering.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['heat transfer calculator', 'calculate heat transfer', 'heat transfer rate calculator', 'conduction calculator', 'convection calculator', 'radiation calculator', 'Q = k�A�(T1-T2)/d', 'Q = h�A�(T_surface-T_fluid)', 'Q = e�s�A�(T14-T24)', 'thermal conductivity calculator', 'convection coefficient calculator', 'emissivity calculator', 'heat transfer formula', 'heat transfer equation', 'thermal physics calculator', 'thermodynamics calculator', 'heat transfer rate formula', 'conduction heat transfer', 'convection heat transfer', 'radiation heat transfer', 'heat transfer calculation', 'thermal transfer calculator', 'heat flow calculator', 'heat transfer physics', 'heat transfer engineering calculator'],
@@ -328,7 +328,7 @@ export const calculators: Calculator[] = [
   {
     id: 'evaporation-rate-calculator',
     name: 'Evaporation Rate Calculator',
-    description: 'Calculate evaporation rate from mass, volume, or area and time. Free online thermodynamics calculator for water evaporation, pool maintenance, HVAC, and environmental analysis.',
+    description: 'Calculate evaporation rate from mass, volume, or area for water and HVAC applications.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['evaporation rate calculator', 'calculate evaporation rate', 'evaporation rate formula', 'water evaporation calculator', 'evaporation rate from mass', 'evaporation rate from volume', 'evaporation rate area', 'evaporation rate time', 'pool evaporation calculator', 'water loss calculator', 'evaporation rate thermodynamics', 'evaporation rate HVAC', 'evaporation rate meteorology', 'evaporation rate environmental', 'evaporation rate physics', 'calculate water evaporation', 'evaporation rate kg/h', 'evaporation rate L/h', 'evaporation rate per area', 'evaporation rate calculation', 'evaporation rate formula', 'evaporation rate units', 'evaporation rate calculator online', 'evaporation rate thermodynamics calculator'],
@@ -448,7 +448,7 @@ export const calculators: Calculator[] = [
   {
     id: 'rectangular-prism',
     name: 'Rectangular Prism Calculator',
-    description: 'Calculate volume, surface area, lateral surface area, and diagonal of a rectangular prism (cuboid) with step-by-step solutions',
+    description: 'Calculate volume, surface area, lateral area, and diagonal of rectangular prisms with solutions.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['rectangular prism calculator', 'cuboid calculator', 'rectangular prism volume', 'rectangular prism surface area', 'prism calculator', 'cuboid volume', 'box calculator', 'rectangular prism diagonal', 'calculate rectangular prism', '3d shape calculator'],
@@ -472,7 +472,7 @@ export const calculators: Calculator[] = [
   {
     id: 'triangle-angle',
     name: 'Triangle Angle Calculator',
-    description: 'Calculate all angles of a triangle using multiple methods: Law of Cosines, Law of Sines, coordinates, or area formula. Supports SSS, SAS, SSA, ASA, AAS cases, coordinate-based calculation, and area-based calculation with step-by-step solutions.',
+    description: 'Calculate triangle angles using Law of Cosines, Law of Sines, coordinates, or area formulas.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['triangle angle calculator', 'calculate triangle angles', 'law of cosines', 'law of sines', 'triangle angles', 'SSS triangle', 'SAS triangle', 'SSA triangle', 'ASA triangle', 'AAS triangle', 'find triangle angles', 'triangle angle finder', 'geometry calculator', 'triangle calculator', 'coordinate triangle', 'triangle from coordinates', 'area triangle calculator'],
@@ -532,7 +532,7 @@ export const calculators: Calculator[] = [
   {
     id: 'vertex-form-calculator',
     name: 'Vertex Form Calculator',
-    description: 'Convert quadratic equations from standard form (ax� + bx + c) to vertex form (a(x-h)� + k). Includes standard form to vertex form conversion with step-by-step completing the square method.',
+    description: 'Convert quadratic equations from standard to vertex form using completing the square method.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['vertex form calculator', 'standard form to vertex form', 'vertex form converter', 'completing the square calculator', 'quadratic vertex form', 'convert to vertex form', 'vertex form equation', 'parabola vertex form', 'quadratic form converter', 'vertex form from standard form', 'a(x-h)� + k calculator', 'vertex form converter online', 'standard form to vertex form calculator', 'quadratic equation vertex form', 'completing the square', 'vertex form calculator online', 'convert quadratic to vertex form', 'vertex form conversion', 'standard form vertex form', 'parabola calculator vertex form'],
@@ -556,7 +556,7 @@ export const calculators: Calculator[] = [
   {
     id: 'slope-percentage',
     name: 'Slope Percentage Calculator',
-    description: 'Calculate slope percentage from rise/run, two points, or slope value. Convert slope to percentage grade for construction, engineering, and surveying applications with step-by-step solutions.',
+    description: 'Calculate slope percentage from rise/run, two points, or slope value for construction and surveying.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['slope percentage calculator', 'slope percentage', 'gradient percentage calculator', 'slope to percentage', 'percentage grade calculator', 'slope percent calculator', 'grade percentage calculator', 'slope percentage formula', 'calculate slope percentage', 'rise over run percentage', 'slope percentage converter', 'gradient percentage', 'slope percentage tool'],
@@ -653,7 +653,7 @@ export const calculators: Calculator[] = [
   {
     id: 'acceleration-calculator',
     name: 'Acceleration Calculator',
-    description: 'Calculate acceleration, initial velocity, final velocity, and time using the formula a = (v - u) / t. Free online physics calculator for kinematics problems.',
+    description: 'Calculate acceleration, initial velocity, final velocity, and time using a = (v - u) / t.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['acceleration calculator', 'calculate acceleration', 'acceleration formula', 'kinematics calculator', 'physics calculator', 'velocity acceleration', 'acceleration physics', 'motion calculator', 'constant acceleration', 'acceleration time', 'initial velocity', 'final velocity', 'acceleration equation', 'physics kinematics', 'acceleration units'],
@@ -665,7 +665,7 @@ export const calculators: Calculator[] = [
   {
     id: 'free-fall-calculator',
     name: 'Free Fall Calculator',
-    description: 'Calculate free fall motion: velocity, time, and height using gravity acceleration. Free online physics calculator for kinematics problems with step-by-step solutions.',
+    description: 'Calculate free fall motion velocity, time, and height using gravity acceleration for kinematics.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['free fall calculator', 'calculate free fall', 'free fall formula', 'free fall physics', 'gravity calculator', 'falling object calculator', 'v = v0 + gt', 'h = (1/2)gt?', 'free fall velocity', 'free fall time', 'free fall height', 'kinematics calculator', 'physics calculator', 'motion under gravity', 'free fall equation', 'gravity motion', 'falling object physics', 'free fall acceleration', 'free fall distance', 'free fall kinematics'],
@@ -677,7 +677,7 @@ export const calculators: Calculator[] = [
   {
     id: 'projectile-motion-calculator',
     name: 'Projectile motion Calculator',
-    description: 'Calculate projectile motion parameters: range, maximum height, time of flight, and velocity components. Free online physics calculator using R = (v0?sin(2?))/g and h = (v0?sin?(?))/(2g).',
+    description: 'Calculate projectile motion range, maximum height, time of flight, and velocity using physics formulas.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['projectile motion calculator', 'calculate projectile motion', 'projectile motion formula', 'range calculator', 'maximum height calculator', 'time of flight calculator', 'R = (v0?sin(2?))/g', 'h = (v0?sin?(?))/(2g)', 'projectile trajectory', 'ballistics calculator', 'launch angle calculator', 'projectile range', 'projectile height', 'kinematics calculator', 'physics calculator', 'trajectory calculator', 'projectile motion physics', 'launch velocity calculator', 'projectile motion equation', 'ballistic motion'],
@@ -689,7 +689,7 @@ export const calculators: Calculator[] = [
   {
     id: 'horizontal-projectile-motion-calculator',
     name: 'Horizontal Projectile motion Calculator',
-    description: 'Calculate horizontal projectile motion parameters: range, time of flight, and final velocity. Free online physics calculator using t = v(2h/g) and R = v0 ? t for horizontally launched projectiles.',
+    description: 'Calculate horizontal projectile motion range, time of flight, and final velocity for launched projectiles.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['horizontal projectile motion calculator', 'horizontal projectile calculator', 'calculate horizontal projectile motion', 'horizontal projectile motion formula', 'horizontal projectile range calculator', 'horizontal projectile time of flight', 'horizontal launch calculator', 'projectile motion horizontal velocity', 'horizontal projectile physics', 'calculate range horizontal projectile', 'horizontal projectile motion equation', 'horizontal projectile distance calculator', 'horizontal projectile motion t = sqrt(2h/g)', 'horizontal projectile R = v0*t', 'horizontal projectile motion calculator online', 'horizontal projectile motion physics calculator', 'horizontal projectile final velocity', 'horizontal projectile motion examples', 'horizontal launch physics calculator', 'horizontal projectile motion kinematics', 'horizontal projectile motion range formula', 'horizontal projectile motion time formula', 'horizontal projectile calculator free', 'horizontal projectile motion step by step'],
@@ -701,7 +701,7 @@ export const calculators: Calculator[] = [
   {
     id: 'arrow-speed-calculator',
     name: 'Arrow Speed Calculator',
-    description: 'Calculate arrow speed from distance/time or kinetic energy/mass. Free online physics calculator for archery using v = d/t or v = v(2KE/m) with multiple unit support.',
+    description: 'Calculate arrow speed from distance/time or kinetic energy/mass using archery physics formulas.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['arrow speed calculator', 'calculate arrow speed', 'arrow velocity calculator', 'arrow speed formula', 'v = d/t', 'v = v(2KE/m)', 'archery calculator', 'arrow speed fps', 'arrow speed m/s�', 'arrow kinetic energy', 'arrow velocity', 'bow arrow speed', 'projectile speed calculator', 'ballistics calculator', 'archery physics', 'arrow speed measurement', 'chronograph calculator', 'arrow speed equation', 'kinematics calculator', 'physics calculator', 'arrow ballistics'],
@@ -713,7 +713,7 @@ export const calculators: Calculator[] = [
   {
     id: 'stopping-distance-calculator',
     name: 'Stopping Distance Calculator',
-    description: 'Calculate stopping distance including reaction distance and braking distance. Free online physics calculator for vehicle safety using d = v?t + v?/(2a).',
+    description: 'Calculate stopping distance including reaction distance and braking distance for vehicle safety analysis.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['stopping distance calculator', 'calculate stopping distance', 'stopping distance formula', 'reaction distance calculator', 'braking distance calculator', 'vehicle stopping distance', 'd = v?t + v?/(2a)', 'car stopping distance', 'braking distance formula', 'reaction distance formula', 'total stopping distance', 'safe following distance', 'vehicle safety calculator', 'kinematics calculator', 'physics calculator', 'traffic safety calculator', 'braking distance physics', 'reaction time calculator', 'stopping distance equation', 'vehicle deceleration'],
@@ -725,7 +725,7 @@ export const calculators: Calculator[] = [
   {
     id: 'bullet-energy-calculator',
     name: 'Bullet Energy Calculator',
-    description: 'Calculate bullet kinetic energy, mass, or velocity using E = ?mv?. Free online ballistics calculator for firearms with grains, fps, and ft-lb units.',
+    description: 'Calculate bullet kinetic energy, mass, or velocity using E = ½mv² for firearms ballistics.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['bullet energy calculator', 'calculate bullet energy', 'bullet kinetic energy calculator', 'E = ?mv?', 'bullet energy formula', 'bullet energy ft-lb', 'bullet energy calculator grains fps', 'bullet energy from velocity', 'bullet energy from mass', 'ballistics calculator', 'firearms calculator', 'bullet energy calculation', 'kinetic energy bullet', 'bullet energy physics', 'bullet energy equation', 'bullet energy grains', 'bullet energy fps', 'bullet energy foot pounds', 'bullet energy calculator online', 'bullet energy ballistics', 'bullet energy Mechanics calculator', 'bullet energy physics calculator', 'bullet energy from mass and velocity', 'calculate bullet energy from fps', 'bullet energy grains fps calculator'],
@@ -737,7 +737,7 @@ export const calculators: Calculator[] = [
   {
     id: 'magnitude-of-acceleration-calculator',
     name: 'magnitude of Acceleration Calculator',
-    description: 'Calculate the magnitude (absolute value) of acceleration using |a| = |?v|/?t, |a| = |F|/m, or |a| = v(a??+a??+a_z?). Free online kinematics calculator for physics and engineering with multiple calculation methods.',
+    description: 'Calculate the magnitude of acceleration using velocity change, force, or vector components for kinematics.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['magnitude of acceleration calculator', 'acceleration magnitude calculator', 'calculate acceleration magnitude', '|a| calculator', 'acceleration absolute value', 'magnitude acceleration formula', 'acceleration magnitude formula', '|a| = |?v|/?t', 'acceleration from force', 'acceleration components', 'acceleration vector magnitude', 'kinematics calculator', 'physics calculator', 'acceleration magnitude physics', 'absolute acceleration', 'acceleration magnitude calculation', 'vector magnitude calculator', 'acceleration kinematics', 'motion magnitude calculator'],
@@ -749,7 +749,7 @@ export const calculators: Calculator[] = [
   {
     id: 'g-force-calculator',
     name: 'G Force Calculator',
-    description: 'Calculate G-force from acceleration (G = a/g) or circular motion (G = v?/(r?g)). Free online physics calculator for aviation, motorsports, and engineering.',
+    description: 'Calculate G-force from acceleration or circular motion for aviation, motorsports, and engineering applications.',
     category: 'Dynamics',
     subject: 'physics',
     keywords: ['g force calculator', 'calculate g force', 'g force formula', 'G = a/g', 'G = v?/(r?g)', 'gravitational force calculator', 'acceleration g force', 'circular motion g force', 'aviation g force', 'fighter jet g force', 'centripetal g force', 'g force physics', 'dynamics calculator', 'physics calculator', 'acceleration relative to gravity', 'g force calculation', 'standard gravity calculator', 'g force aviation', 'g force motorsports', 'human g force tolerance', 'g force engineering'],
@@ -773,7 +773,7 @@ export const calculators: Calculator[] = [
   {
     id: 'electrical-power-calculator',
     name: 'Electrical Power Calculator',
-    description: 'Calculate electrical power, voltage, current, or resistance using electrical power formulas P = V ? I, P = V?/R, and P = I?R. Free online electrical power calculator for circuit design and energy calculations.',
+    description: 'Calculate electrical power, voltage, current, or resistance using P = VI and Ohm\'s law formulas.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['electrical power calculator', 'calculate electrical power', 'electrical power formula', 'P = VI calculator', 'P = V?/R calculator', 'P = I?R calculator', 'electrical power equation', 'power voltage current calculator', 'electrical power calculation', 'electrical engineering calculator', 'circuit power calculator', 'electrical power physics', 'electrical power formula calculator', 'calculate power from voltage current', 'electrical power watts calculator', 'electrical power resistance calculator', 'DC power calculator', 'AC power calculator', 'electrical power consumption calculator', 'electrical power rating calculator'],
@@ -785,7 +785,7 @@ export const calculators: Calculator[] = [
   {
     id: 'power-factor-calculator',
     name: 'Power Factor Calculator',
-    description: 'Calculate power factor (PF), real power (active power), or apparent power in AC circuits using PF = P/S. Free online electrical calculator for power factor correction, energy efficiency, and electrical engineering.',
+    description: 'Calculate power factor, real power, or apparent power in AC circuits using PF = P/S.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['power factor calculator', 'calculate power factor', 'power factor formula', 'PF calculator', 'power factor correction calculator', 'real power calculator', 'apparent power calculator', 'active power calculator', 'AC power calculator', 'power factor correction', 'PF = P/S', 'electrical power factor', 'energy efficiency calculator', 'reactive power', 'phase angle calculator', 'volt-amperes calculator', 'electrical engineering calculator', 'power factor improvement', 'electrical efficiency', 'AC circuit calculator'],
@@ -797,7 +797,7 @@ export const calculators: Calculator[] = [
   {
     id: 'contact-lens-vertex-calculator',
     name: 'Contact Lens Vertex Calculator',
-    description: 'Calculate contact lens power from spectacle power using vertex distance formula. Free online contact lens vertex calculator for optometry, converting spectacle lens power to contact lens power with vertex distance compensation.',
+    description: 'Calculate contact lens power from spectacle power using vertex distance formula for optometry.',
     category: 'Optics',
     subject: 'physics',
     keywords: ['contact lens vertex calculator', 'vertex distance calculator', 'spectacle to contact lens conversion', 'contact lens power calculator', 'vertex distance formula', 'convert spectacle power to contact lens', 'contact lens prescription calculator', 'optometry calculator', 'lens power conversion', 'vertex distance conversion', 'Fc = Fs / (1 - d ? Fs)', 'contact lens fitting calculator', 'spectacle power calculator', 'diopter conversion calculator', 'contact lens prescription conversion', 'optical vertex calculator', 'lens vertex distance', 'optics calculator', 'vision correction calculator', 'prescription conversion calculator'],
@@ -809,7 +809,7 @@ export const calculators: Calculator[] = [
   {
     id: 'speed-of-light-calculator',
     name: 'Speed of Light Calculator',
-    description: 'Calculate distance traveled by light or time for light to travel a distance using the speed of light constant (c = 299,792,458 m/s�). Free online physics calculator for optics, relativity, and electromagnetic calculations.',
+    description: 'Calculate distance traveled by light or time for light using speed of light constant.',
     category: 'Optics',
     subject: 'physics',
     keywords: ['speed of light calculator', 'light speed calculator', 'calculate light distance', 'light travel time calculator', 'speed of light formula', 'c = 299792458 m/s�', 'light distance calculator', 'light time calculator', 'speed of light constant', 'light year calculator', 'light second calculator', 'electromagnetic speed calculator', 'optics calculator', 'relativity calculator', 'light propagation calculator', 'calculate distance light travels', 'light speed distance', 'light speed time', 'physics calculator', 'electromagnetic radiation calculator', 'speed of light units', 'light speed conversion'],
@@ -821,7 +821,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wet-bulb-calculator',
     name: 'Wet Bulb Calculator',
-    description: 'Calculate wet bulb temperature from dry bulb temperature and relative humidity using psychrometric formulas. Essential for HVAC, meteorology, and thermal comfort analysis.',
+    description: 'Calculate wet bulb temperature from dry bulb and humidity for HVAC and meteorology.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['wet bulb calculator', 'wet bulb temperature', 'dry bulb temperature', 'relative humidity', 'psychrometric calculator', 'thermodynamics', 'HVAC calculator', 'humidity calculator', 'temperature calculator', 'dew point', 'heat index', 'thermal comfort', 'air conditioning', 'meteorology', 'psychrometrics'],
@@ -833,7 +833,7 @@ export const calculators: Calculator[] = [
   {
     id: 'dew-point-calculator',
     name: 'Dew Point Calculator',
-    description: 'Calculate dew point temperature from air temperature and relative humidity using the magnus formula. Free online thermodynamics calculator for HVAC, meteorology, weather forecasting, and environmental analysis.',
+    description: 'Calculate dew point temperature from air temperature and humidity using Magnus formula for HVAC.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['dew point calculator', 'calculate dew point', 'dew point temperature', 'dew point from humidity', 'dew point formula', 'dew point temperature calculator', 'calculate dew point temperature', 'dew point from temperature and humidity', 'magnus formula calculator', 'dew point humidity calculator', 'dew point temperature formula', 'dew point calculation', 'dew point meteorology', 'dew point HVAC', 'dew point condensation', 'dew point weather', 'dew point calculator online', 'dew point temperature conversion', 'dew point relative humidity', 'dew point calculator celsius', 'dew point calculator fahrenheit', 'dew point psychrometrics', 'dew point thermodynamics', 'dew point condensation temperature', 'dew point calculator formula'],
@@ -845,7 +845,7 @@ export const calculators: Calculator[] = [
   {
     id: 'density-mass-volume-calculator',
     name: 'Density mass Volume Calculator',
-    description: 'Calculate density, mass, or volume using the formula ? = m/V. Free online physics calculator for material properties, fluid Mechanics, and engineering calculations.',
+    description: 'Calculate density, mass, or volume using ρ = m/V for material properties.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['density calculator', 'mass calculator', 'volume calculator', 'density mass volume', 'density formula', 'mass density', 'volume density', 'physics calculator', 'material density', 'fluid density', 'density equation', 'calculate density', 'find density', 'density units', 'kg/m?', 'g/cm?', 'density physics', 'Mechanics calculator', 'material properties', 'density mass volume formula', '? = m/V'],
@@ -857,7 +857,7 @@ export const calculators: Calculator[] = [
   {
     id: 'volume-to-mass-calculator',
     name: 'Volume to mass Calculator',
-    description: 'Calculate mass from volume and density, or volume from mass and density using m = ? ? V. Free online physics calculator for material properties, chemistry, and engineering calculations.',
+    description: 'Calculate mass from volume and density using m = ρ × V for material properties.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['volume to mass calculator', 'convert volume to mass', 'mass from volume calculator', 'volume mass conversion', 'm = ? ? V', 'density mass volume calculator', 'convert volume to weight', 'calculate mass from volume', 'volume to weight converter', 'density converter', 'mass volume calculator', 'physics calculator', 'material density calculator', 'chemistry calculator', 'engineering calculator', 'volume mass density', 'calculate weight from volume', 'material properties calculator', 'volume mass conversion formula', 'density calculation'],
@@ -869,7 +869,7 @@ export const calculators: Calculator[] = [
   {
     id: 'specific-gravity-calculator',
     name: 'Specific Gravity Calculator',
-    description: 'Calculate specific gravity (relative density) using substance density and reference density. Free online physics calculator for material properties, fluid Mechanics, and engineering with multiple reference options.',
+    description: 'Calculate specific gravity using substance density and reference density for material properties analysis.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['specific gravity calculator', 'calculate specific gravity', 'specific gravity formula', 'relative density calculator', 'SG calculator', 'SG = ?/?_ref', 'specific gravity physics', 'density ratio calculator', 'relative density formula', 'calculate relative density', 'specific gravity units', 'material specific gravity', 'fluid specific gravity', 'specific gravity equation', 'SG calculation', 'physics calculator', 'fluid Mechanics calculator', 'material properties calculator', 'specific gravity water', 'density ratio', 'specific gravity temperature'],
@@ -881,7 +881,7 @@ export const calculators: Calculator[] = [
   {
     id: 'buoyancy-calculator',
     name: 'Buoyancy Calculator',
-    description: 'Calculate buoyant force, fluid density, or displaced volume using Archimedes\' principle (F_b = ? ? V ? g). Free online buoyancy calculator for physics, engineering, and fluid Mechanics calculations.',
+    description: 'Calculate buoyant force, fluid density, or displaced volume using Archimedes\' principle formula.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['buoyancy calculator', 'buoyant force calculator', 'archimedes principle calculator', 'calculate buoyant force', 'buoyancy formula', 'F_b = ? ? V ? g', 'buoyant force formula', 'archimedes principle formula', 'fluid Mechanics calculator', 'buoyancy physics', 'calculate buoyancy', 'displaced volume calculator', 'floating calculator', 'sink or float calculator', 'buoyant force equation', 'buoyancy calculation', 'archimedes calculator', 'fluid density calculator', 'physics buoyancy', 'engineering buoyancy calculator'],
@@ -893,7 +893,7 @@ export const calculators: Calculator[] = [
   {
     id: 'specific-heat-calculator',
     name: 'Specific Heat Calculator',
-    description: 'Calculate heat energy, mass, specific heat capacity, or temperature change using Q = m ? c ? ?T. Free online thermodynamics calculator for physics and engineering.',
+    description: 'Calculate heat energy, mass, specific heat capacity, or temperature change using Q = mcΔT.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['specific heat calculator', 'heat capacity calculator', 'heat energy calculator', 'specific heat capacity', 'heat transfer calculator', 'thermodynamics calculator', 'Q = mc?T', 'heat equation', 'thermal energy', 'specific heat formula', 'calculate specific heat', 'heat capacity formula', 'thermal physics', 'calorimetry calculator', 'heat energy formula', 'specific heat capacity formula', 'temperature change calculator', 'physics calculator', 'thermodynamics', 'heat calculation', 'thermal calculation'],
@@ -905,7 +905,7 @@ export const calculators: Calculator[] = [
   {
     id: 'calorimetry-calculator',
     name: 'Calorimetry Calculator',
-    description: 'Calculate heat energy, mass, specific heat, or temperature change using calorimetry formula Q = m ? c ? ?T. Free online physics calculator for thermodynamics and chemistry with comprehensive unit support.',
+    description: 'Calculate heat energy, mass, specific heat, or temperature change using calorimetry formula Q = mcΔT.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['calorimetry calculator', 'calorimetry formula', 'heat transfer calculator', 'Q = mc?T calculator', 'calorimetry equation', 'heat energy calculator', 'calorimetry physics calculator', 'calculate heat transfer', 'calorimetry chemistry calculator', 'heat of reaction calculator', 'enthalpy calculator', 'thermal energy calculator', 'calorimetry experiment calculator', 'heat capacity calculator', 'temperature change calculator', 'calorimetry calculation', 'heat transfer formula', 'calorimetry thermodynamics', 'physics calculator', 'thermodynamics calculator', 'heat measurement calculator', 'calorimetry lab calculator', 'chemical calorimetry calculator', 'heat flow calculator'],
@@ -917,7 +917,7 @@ export const calculators: Calculator[] = [
   {
     id: 'flow-rate-calculator',
     name: 'Flow Rate Calculator',
-    description: 'Calculate volumetric flow rate, area, velocity, volume, or time using Q = A ? v or Q = V/t. Free online fluid Mechanics calculator for physics and engineering.',
+    description: 'Calculate volumetric flow rate, area, velocity, volume, or time using Q = A × v formulas.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['flow rate calculator', 'volumetric flow rate', 'flow rate formula', 'fluid flow calculator', 'flow velocity calculator', 'Q = Av', 'flow rate equation', 'fluid Mechanics calculator', 'volume flow rate', 'calculate flow rate', 'flow rate units', 'm?/s', 'L/s', 'gal/min', 'flow velocity', 'cross-sectional area', 'fluid dynamics', 'pipe flow', 'flow measurement', 'fluid flow rate', 'flow rate physics'],
@@ -929,7 +929,7 @@ export const calculators: Calculator[] = [
   {
     id: 'pipe-flow-calculator',
     name: 'Pipe Flow Calculator',
-    description: 'Calculate pipe flow rate, velocity, diameter, or cross-sectional area using Q = A ? v = p ? (D/2)? ? v. Free online fluid Mechanics calculator for plumbing, HVAC, and engineering.',
+    description: 'Calculate pipe flow rate, velocity, diameter, or area using fluid mechanics formulas for plumbing.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['pipe flow calculator', 'pipe flow rate calculator', 'calculate pipe flow', 'pipe velocity calculator', 'pipe diameter calculator', 'pipe flow formula', 'Q = A?v', 'pipe flow rate', 'pipe velocity', 'pipe sizing calculator', 'fluid flow calculator', 'pipe flow rate formula', 'circular pipe flow', 'pipe flow velocity', 'pipe diameter sizing', 'flow rate pipe', 'pipe flow calculations', 'fluid Mechanics calculator', 'pipe flow engineering', 'hydraulic calculator'],
@@ -941,7 +941,7 @@ export const calculators: Calculator[] = [
   {
     id: 'hydraulic-radius-calculator',
     name: 'Hydraulic Radius Calculator',
-    description: 'Calculate hydraulic radius, cross-sectional area, or wetted perimeter using R = A / P. Free online fluid Mechanics calculator for open channel flow, manning equation, and engineering with comprehensive unit support.',
+    description: 'Calculate hydraulic radius, area, or wetted perimeter using R = A/P for open channel flow.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['hydraulic radius calculator', 'calculate hydraulic radius', 'R = A/P calculator', 'hydraulic radius formula', 'wetted perimeter calculator', 'open channel flow calculator', 'manning equation calculator', 'hydraulic radius equation', 'R = A/P', 'calculate wetted perimeter', 'cross-sectional area calculator', 'channel flow calculator', 'hydraulic radius physics calculator', 'fluid Mechanics calculator', 'open channel hydraulics', 'drainage calculator', 'canal flow calculator', 'hydraulic radius calculation', 'wetted perimeter formula', 'channel design calculator', 'hydraulic engineering calculator', 'flow efficiency calculator', 'manning formula calculator'],
@@ -953,7 +953,7 @@ export const calculators: Calculator[] = [
   {
     id: 'torque-calculator',
     name: 'Torque Calculator',
-    description: 'Calculate torque, force, or lever arm distance using t = F ? r. Free online Mechanics calculator for physics and engineering with multiple unit support.',
+    description: 'Calculate torque, force, or lever arm distance using t = F × r.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['torque calculator', 'calculate torque', 'torque formula', 'torque equation', 't = Fr', 'rotational force', 'moment calculator', 'lever arm calculator', 'Mechanics calculator', 'physics calculator', 'torque units', 'N?m', 'lb?ft', 'pound-feet', 'newton-meters', 'rotational Mechanics', 'angular force', 'torque physics', 'force distance', 'lever calculator', 'torque calculation'],
@@ -965,7 +965,7 @@ export const calculators: Calculator[] = [
   {
     id: 'angular-velocity-calculator',
     name: 'Angular Velocity Calculator',
-    description: 'Calculate angular velocity using angle/time (? = ?/t), frequency (? = 2pf), or linear velocity/radius (? = v/r). Free online Mechanics calculator for rotational motion and circular motion.',
+    description: 'Calculate angular velocity using angle/time, frequency, or linear velocity/radius for rotational motion physics.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['angular velocity calculator', 'calculate angular velocity', 'angular velocity formula', 'rotational speed calculator', 'angular speed calculator', '? = ?/t', '? = 2pf', '? = v/r', 'rad/s calculator', 'rpm to rad/s', 'rotational motion calculator', 'circular motion calculator', 'angular velocity physics', 'rotational Mechanics', 'angular velocity units', 'radians per second', 'angular velocity equation', 'Mechanics calculator', 'physics calculator', 'rotational dynamics', 'angular velocity conversion'],
@@ -977,7 +977,7 @@ export const calculators: Calculator[] = [
   {
     id: 'polar-moment-of-inertia-calculator',
     name: 'Polar Moment of Inertia Calculator',
-    description: 'Calculate polar moment of inertia (J) for circles, rectangles, hollow circles, and I-beams using J = Ix + Iy. Free online mechanics calculator with step-by-step solutions and multiple unit support (mm4, cm4, in4, m4).',
+    description: 'Calculate polar moment of inertia for circles, rectangles, hollow circles, and I-beams using J formula.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['polar moment of inertia calculator', 'calculate polar moment of inertia', 'polar moment of inertia formula', 'J = Ix + Iy', 'torsional inertia calculator', 'second polar moment calculator', 'moment of inertia torsion', 'polar moment of inertia', 'J calculator', 'torsional constant calculator', 'shaft design calculator', 'circular moment of inertia', 'polar moment of inertia for circle', 'polar moment of inertia for rectangle', 'hollow circle inertia calculator', 'I-beam moment of inertia', 'section property calculator', 'structural mechanics calculator', 'torsion calculator', 'angle of twist calculator', 'shear stress calculator', 'polar moment of inertia mm4', 'polar moment of inertia cm4', 'polar moment of inertia in4', 'mechanics calculator', 'physics calculator', 'engineering calculator', 'free polar moment calculator', 'polar moment online calculator'],
@@ -989,7 +989,7 @@ export const calculators: Calculator[] = [
   {
     id: 'power-to-weight-ratio-calculator',
     name: 'Power-to-Weight Ratio Calculator',
-    description: 'Calculate power, weight, or power-to-weight ratio using P/W = Power / Weight. Free online Mechanics calculator for automotive, aerospace, and engineering applications.',
+    description: 'Calculate power, weight, or power-to-weight ratio for automotive and aerospace engineering applications.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['power to weight ratio calculator', 'power-to-weight ratio', 'power weight ratio', 'P/W ratio calculator', 'calculate power to weight ratio', 'power per weight', 'performance ratio calculator', 'automotive calculator', 'hp per lb', 'watts per kg', 'power density', 'specific power', 'power-to-weight', 'P/W formula', 'Mechanics calculator', 'physics calculator', 'vehicle performance', 'engine performance', 'power weight ratio formula'],
@@ -1001,7 +1001,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wavelength-calculator',
     name: 'Wavelength Calculator',
-    description: 'Calculate wavelength, velocity, or frequency using ? = v/f or ? = c/f for electromagnetic waves. Free online waves calculator for physics and engineering.',
+    description: 'Calculate wavelength, velocity, or frequency using λ = v/f for electromagnetic and sound waves.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['wavelength calculator', 'calculate wavelength', 'wavelength formula', '? = v/f', 'wavelength frequency', 'wave calculator', 'electromagnetic waves', 'light wavelength', 'sound wavelength', 'frequency wavelength', 'wave velocity', 'speed of light', 'wavelength equation', 'wave physics', 'optics calculator', 'waves calculator', 'physics calculator', 'wavelength units', 'nm wavelength', 'wavelength frequency calculator'],
@@ -1013,7 +1013,7 @@ export const calculators: Calculator[] = [
   {
     id: 'relative-humidity-calculator',
     name: 'Relative Humidity Calculator',
-    description: 'Calculate relative humidity, dry bulb temperature, or dew point temperature using psychrometric formulas. Free online thermodynamics calculator for HVAC, meteorology, and environmental analysis.',
+    description: 'Calculate relative humidity, dry bulb, or dew point temperature using psychrometric formulas for HVAC.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['relative humidity calculator', 'calculate relative humidity', 'humidity calculator', 'RH calculator', 'dew point calculator', 'dry bulb temperature', 'psychrometric calculator', 'humidity formula', 'relative humidity formula', 'RH formula', 'humidity percentage', 'dew point temperature', 'thermodynamics calculator', 'HVAC calculator', 'meteorology calculator', 'air humidity', 'moisture calculator', 'vapor pressure', 'saturation vapor pressure', 'humidity physics'],
@@ -1025,7 +1025,7 @@ export const calculators: Calculator[] = [
   {
     id: 'gravitational-force-calculator',
     name: 'Gravitational Force Calculator',
-    description: 'Calculate gravitational force, mass, or distance using F = G ? (m1 ? m2) / r?. Free online Mechanics calculator for physics and astronomy with Newton\'s law of universal gravitation.',
+    description: 'Calculate gravitational force, mass, or distance using Newton\'s law of universal gravitation formula.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['gravitational force calculator', 'calculate gravitational force', 'gravity calculator', 'Newton\'s law of gravitation', 'universal gravitation', 'F = Gm1m2/r?', 'gravitational force formula', 'gravity formula', 'law of universal gravitation calculator', 'gravitational constant', 'gravitational force equation', 'physics calculator', 'Mechanics calculator', 'gravity force', 'gravitational attraction', 'mass gravity', 'distance gravity', 'gravitational force physics', 'Newton gravity'],
@@ -1037,7 +1037,7 @@ export const calculators: Calculator[] = [
   {
     id: 'gear-ratio-calculator',
     name: 'Gear Ratio Calculator',
-    description: 'Calculate gear ratio from number of teeth or speeds using GR = Driven/Driving or GR = input Speed/Output Speed. Free online Mechanics calculator for mechanical engineering and physics.',
+    description: 'Calculate gear ratio from teeth count or speeds using mechanical advantage formulas for engineering.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['gear ratio calculator', 'calculate gear ratio', 'gear ratio formula', 'gear calculator', 'mechanical gear ratio', 'gear ratio equation', 'driving gear', 'driven gear', 'gear teeth calculator', 'speed ratio calculator', 'mechanical advantage', 'gear reduction', 'transmission ratio', 'gear ratio physics', 'Mechanics calculator', 'engineering calculator', 'gear ratio calculation', 'rpm � gear ratio', 'angular velocity gear'],
@@ -1049,7 +1049,7 @@ export const calculators: Calculator[] = [
   {
     id: 'belt-length-calculator',
     name: 'Belt Length Calculator',
-    description: 'Calculate belt length for open belt drive systems using center distance and pulley sizes. Free online mechanical engineering calculator with formula L = 2C + p(R1 + R2) + (R1 - R2)?/C.',
+    description: 'Calculate belt length for open belt drive systems using center distance and pulley sizes.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['belt length calculator', 'calculate belt length', 'belt length formula', 'pulley belt calculator', 'belt drive calculator', 'L = 2C + p(R1 + R2)', 'belt length equation', 'open belt calculator', 'pulley system calculator', 'belt drive length', 'mechanical belt calculator', 'belt sizing calculator', 'pulley belt length', 'belt drive design', 'Mechanics calculator', 'engineering calculator', 'belt length calculation', 'conveyor belt length', 'timing belt length', 'V-belt length calculator'],
@@ -1061,7 +1061,7 @@ export const calculators: Calculator[] = [
   {
     id: 'charles-law-calculator',
     name: 'Charles\'s Law Calculator',
-    description: 'Calculate volume or temperature using Charles\'s Law: V1/T1 = V2/T2. Free online thermodynamics calculator for ideal gas law calculations with temperature and volume relationships.',
+    description: 'Calculate volume or temperature using Charles\'s Law V1/T1 = V2/T2 for ideal gas calculations.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['charles law calculator', 'charles\'s law calculator', 'charles law formula', 'V1/T1 = V2/T2', 'gas law calculator', 'volume temperature relationship', 'ideal gas law', 'thermodynamics calculator', 'charles law equation', 'gas volume calculator', 'temperature volume calculator', 'charles law physics', 'gas laws', 'volume temperature calculator', 'charles law formula calculator', 'calculate volume charles law', 'calculate temperature charles law', 'thermodynamics', 'gas physics calculator'],
@@ -1073,7 +1073,7 @@ export const calculators: Calculator[] = [
   {
     id: 'boyles-law-calculator',
     name: 'Boyle\'s Law Calculator',
-    description: 'Calculate pressure or volume using Boyle\'s Law: P1V1 = P2V2. Free online thermodynamics calculator for ideal gas law calculations with pressure and volume relationships at constant temperature.',
+    description: 'Calculate pressure or volume using Boyle\'s Law P1V1 = P2V2 at constant temperature conditions.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['boyles law calculator', 'boyle\'s law calculator', 'boyles law formula', 'P1V1 = P2V2', 'pressure volume calculator', 'gas law calculator', 'boyles law pressure volume', 'ideal gas law', 'thermodynamics calculator', 'boyles law equation', 'gas pressure calculator', 'gas volume calculator', 'boyles law physics', 'gas laws', 'pressure volume relationship', 'boyles law formula calculator', 'calculate pressure boyles law', 'calculate volume boyles law', 'thermodynamics', 'gas physics calculator', 'inverse pressure volume relationship'],
@@ -1085,7 +1085,7 @@ export const calculators: Calculator[] = [
   {
     id: 'gay-lussacs-law-calculator',
     name: 'Gay-Lussac\'s Law Calculator',
-    description: 'Calculate pressure or temperature using Gay-Lussac\'s Law: P1/T1 = P2/T2. Free online thermodynamics calculator for ideal gas law calculations with pressure and temperature relationships at constant volume.',
+    description: 'Calculate pressure or temperature using Gay-Lussac\'s Law P1/T1 = P2/T2 at constant volume.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['gay lussacs law calculator', 'gay-lussac\'s law calculator', 'gay lussac law calculator', 'gay lussacs law formula', 'P1/T1 = P2/T2', 'pressure temperature calculator', 'gas law calculator', 'gay lussac law pressure temperature', 'ideal gas law', 'thermodynamics calculator', 'gay lussac law equation', 'gas pressure calculator', 'gas temperature calculator', 'gay lussac law physics', 'gas laws', 'pressure temperature relationship', 'gay lussac law formula calculator', 'calculate pressure gay lussac law', 'calculate temperature gay lussac law', 'thermodynamics', 'gas physics calculator', 'pressure temperature relationship constant volume', 'gay-lussac calculator', 'gay lussac\'s law', 'pressure temperature gas law'],
@@ -1099,7 +1099,7 @@ export const calculators: Calculator[] = [
 
 
     name: 'Enthalpy Calculator',
-    description: 'Calculate enthalpy change using multiple methods: ?H = ?U + P?V, ?H = Q (at constant pressure), or ?H = m ? c ? ?T. Free online thermodynamics calculator for physics, chemistry, and engineering.',
+    description: 'Calculate enthalpy change using ΔH = ΔU + PΔV or heat formulas for thermodynamics applications.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['enthalpy calculator', 'calculate enthalpy', 'enthalpy change calculator', '?H calculator', 'enthalpy formula', 'enthalpy change formula', '?H = ?U + P?V', 'enthalpy thermodynamics', 'heat content calculator', 'enthalpy calculation', 'thermodynamics calculator', 'enthalpy physics', 'enthalpy chemistry', 'enthalpy change', 'calculate ?H', 'enthalpy energy', 'enthalpy equation', 'H = U + PV', 'enthalpy thermodynamics calculator', 'enthalpy heat transfer', 'constant pressure enthalpy', 'specific heat enthalpy'],
@@ -1111,7 +1111,7 @@ export const calculators: Calculator[] = [
   {
     id: 'efficiency-calculator',
     name: 'Efficiency Calculator',
-    description: 'Calculate efficiency percentage, output, or input for any system or process. Free online efficiency calculator for engines, machines, energy systems, and more. Works with energy, power, and work calculations.',
+    description: 'Calculate efficiency percentage, output, or input for engines, machines, and energy systems processes.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['efficiency calculator', 'calculate efficiency', 'efficiency formula', 'energy efficiency calculator', 'thermal efficiency calculator', 'mechanical efficiency calculator', 'efficiency percentage calculator', 'output input efficiency', 'system efficiency calculator', 'engine efficiency calculator', 'efficiency calculation', 'efficiency physics', 'efficiency thermodynamics', 'calculate output from efficiency', 'calculate input from efficiency', 'energy conversion efficiency', 'efficiency percentage', 'work efficiency calculator', 'power efficiency calculator', 'efficiency ratio calculator'],
@@ -1123,7 +1123,7 @@ export const calculators: Calculator[] = [
   {
     id: 'ideal-gas-law-calculator',
     name: 'Ideal Gas Law Calculator',
-    description: 'Calculate pressure, volume, moles, or temperature using the ideal gas law: PV = nRT. Free online thermodynamics calculator for physics, chemistry, and engineering with multiple unit support.',
+    description: 'Calculate pressure, volume, moles, or temperature using ideal gas law PV = nRT formula.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['ideal gas law calculator', 'PV = nRT calculator', 'ideal gas law', 'gas law calculator', 'PV nRT calculator', 'ideal gas equation', 'gas law formula', 'calculate pressure volume temperature moles', 'ideal gas law formula', 'thermodynamics calculator', 'gas physics calculator', 'chemistry calculator', 'ideal gas constant', 'gas law equation', 'PV equals nRT', 'ideal gas law physics', 'gas calculations', 'molar volume calculator', 'gas pressure calculator', 'ideal gas thermodynamics'],
@@ -1135,7 +1135,7 @@ export const calculators: Calculator[] = [
   {
     id: 'air-density-calculator',
     name: 'Air Density Calculator',
-    description: 'Calculate air density, pressure, or temperature using the ideal gas law ? = P/(R?T). Free online thermodynamics calculator for aviation, meteorology, HVAC, and engineering with multiple unit support.',
+    description: 'Calculate air density, pressure, or temperature using ideal gas law for aviation and meteorology.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['air density calculator', 'calculate air density', 'air density formula', 'density of air calculator', 'air density temperature pressure', '? = P/(R?T)', 'atmospheric density calculator', 'air density at altitude', 'air density aviation', 'air density thermodynamics', 'calculate air density from temperature', 'air density pressure temperature', 'density altitude calculator', 'air density physics', 'thermodynamics calculator', 'air properties calculator', 'atmospheric properties', 'air density engineering', 'ideal gas law density', 'air density formula calculator'],
@@ -1147,7 +1147,7 @@ export const calculators: Calculator[] = [
   {
     id: 'frequency-calculator',
     name: 'Frequency Calculator',
-    description: 'Calculate frequency from period (f = 1/T), wavelength and velocity (f = v/?), or electromagnetic waves (f = c/?). Free online waves calculator for physics and engineering.',
+    description: 'Calculate frequency from period, wavelength/velocity, or electromagnetic waves using standard wave formulas.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['frequency calculator', 'calculate frequency', 'frequency formula', 'f = 1/T', 'frequency period calculator', 'frequency wavelength calculator', 'f = v/?', 'frequency velocity wavelength', 'frequency waves calculator', 'hertz calculator', 'wave frequency', 'electromagnetic frequency', 'frequency physics', 'waves calculator', 'frequency equation', 'calculate frequency from period', 'frequency wavelength velocity', 'frequency speed of light', 'frequency calculator physics', 'wave frequency formula'],
@@ -1159,7 +1159,7 @@ export const calculators: Calculator[] = [
   {
     id: 'resonant-frequency-calculator',
     name: 'Resonant Frequency Calculator',
-    description: 'Calculate resonant frequency for LC circuits (f = 1/(2pv(LC))) or mechanical systems (f = (1/(2p))v(k/m)). Free online physics calculator for electronics and Mechanics.',
+    description: 'Calculate resonant frequency for LC circuits or mechanical systems using electronics and mechanics formulas.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['resonant frequency calculator', 'calculate resonant frequency', 'resonant frequency formula', 'LC circuit calculator', 'f = 1/(2pv(LC))', 'mechanical resonance calculator', 'natural frequency calculator', 'resonance frequency', 'LC resonant frequency', 'spring mass frequency', 'f = (1/(2p))v(k/m)', 'resonant frequency LC', 'resonant frequency mechanical', 'electronics calculator', 'resonance calculator', 'LC circuit resonance', 'mechanical resonance', 'natural frequency formula', 'resonant frequency physics', 'oscillation frequency calculator'],
@@ -1171,7 +1171,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wire-size-calculator',
     name: 'Wire Size Calculator',
-    description: 'Calculate wire gauge (AWG), maximum current capacity, or voltage drop for electrical wiring. Free online electrical engineering calculator with support for copper and aluminum wires.',
+    description: 'Calculate wire gauge, maximum current capacity, or voltage drop for electrical wiring with copper/aluminum.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['wire size calculator', 'AWG calculator', 'wire gauge calculator', 'calculate wire size', 'wire size AWG', 'electrical wire calculator', 'voltage drop calculator', 'wire current capacity', 'AWG wire size', 'wire gauge size', 'electrical wire sizing', 'wire diameter calculator', 'copper wire calculator', 'aluminum wire calculator', 'wire resistance calculator', 'electrical calculator', 'wire ampacity calculator', 'wire size for current', 'voltage drop wire size', 'electrical engineering calculator'],
@@ -1183,7 +1183,7 @@ export const calculators: Calculator[] = [
   {
     id: 'dc-wire-size-calculator',
     name: 'DC Wire Size Calculator',
-    description: 'Calculate wire gauge (AWG), maximum current capacity, or voltage drop for DC electrical circuits. Free online DC wire size calculator with support for copper and aluminum wires. Perfect for solar panels, batteries, and DC power systems.',
+    description: 'Calculate wire gauge, maximum current capacity, or voltage drop for DC circuits and solar panels.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['dc wire size calculator', 'DC wire gauge calculator', 'DC AWG calculator', 'calculate DC wire size', 'DC wire sizing', 'DC voltage drop calculator', 'solar panel wire size calculator', 'battery wire size calculator', '12V wire size calculator', '24V wire size calculator', 'DC current capacity calculator', 'DC wire ampacity', 'automotive wire size calculator', 'DC electrical calculator', 'low voltage wire size', 'DC circuit wire sizing', 'DC wire resistance calculator', 'DC power wire calculator', 'solar wire size', 'battery bank wire size'],
@@ -1195,7 +1195,7 @@ export const calculators: Calculator[] = [
   {
     id: 'parallel-resistor-calculator',
     name: 'Parallel Resistor Calculator',
-    description: 'Calculate equivalent resistance for resistors connected in parallel. Free online electrical circuit calculator with support for multiple resistors using 1/R_total = 1/R1 + 1/R2 + ...',
+    description: 'Calculate equivalent resistance for resistors connected in parallel using 1/R_total = 1/R1 + 1/R2 formula.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['parallel resistor calculator', 'parallel resistance calculator', 'resistors in parallel', 'calculate parallel resistance', 'equivalent resistance parallel', 'parallel circuit calculator', '1/R total formula', 'parallel resistor formula', 'resistor parallel calculator', 'parallel resistance formula', 'electrical circuit calculator', 'resistance in parallel', 'parallel resistors', 'equivalent resistance calculator', 'parallel circuit resistance', 'resistor calculator', 'parallel resistor equation', 'calculate parallel resistors', 'parallel resistance equation', 'circuit resistance calculator'],
@@ -1205,9 +1205,21 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'work-calculator',
+    name: 'Work Calculator',
+    description: 'Calculate work, force, or distance using W = F × d. Physics calculator for mechanics.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['work calculator', 'calculate work', 'work formula', 'W = F × d', 'work physics calculator', 'force distance calculator', 'work-energy theorem', 'calculate work from force', 'calculate force from work', 'calculate distance from work', 'Mechanics calculator', 'physics calculator', 'work equation', 'work physics', 'work calculation', 'energy transfer calculator', 'work force distance', 'mechanical work calculator', 'work done calculator', 'force displacement calculator'],
+    href: '/physics/work-calculator',
+    embedHref: '/embed/physics/work-calculator',
+    icon: '💪',
+    color: 'purple'
+  },
+  {
     id: 'force-calculator',
     name: 'Force Calculator',
-    description: 'Calculate force, mass, or acceleration using Newton\'s second law: F = m ? a. Free online physics calculator for Mechanics problems with comprehensive unit support.',
+    description: 'Calculate force, mass, or acceleration using Newton\'s second law F = m × a formula.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['force calculator', 'calculate force', 'force formula', 'F = ma', 'Newton\'s second law calculator', 'force mass acceleration', 'calculate force from mass and acceleration', 'force physics calculator', 'Mechanics calculator', 'Newton force calculator', 'force equation', 'F = m ? a', 'force calculation', 'physics force calculator', 'calculate acceleration from force', 'calculate mass from force', 'force mass acceleration calculator', 'Newton\'s law calculator', 'force physics', 'Mechanics force calculator'],
@@ -1219,7 +1231,7 @@ export const calculators: Calculator[] = [
   {
     id: 'centrifugal-force-calculator',
     name: 'Centrifugal Force Calculator',
-    description: 'Calculate centrifugal force, mass, velocity, or radius using F = m ? v?/r. Free online physics calculator for circular motion, rotating systems, and centrifugal force calculations.',
+    description: 'Calculate centrifugal force, mass, velocity, or radius using F = m × v²/r for circular motion.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['centrifugal force calculator', 'calculate centrifugal force', 'centrifugal force formula', 'F = mv?/r', 'circular motion calculator', 'rotating force calculator', 'centrifugal force equation', 'centripetal force calculator', 'rotating systems calculator', 'circular motion force', 'F = m?v?/r', 'centrifugal force physics', 'rotating reference frame', 'fictitious force calculator', 'circular path force', 'Mechanics calculator', 'physics calculator', 'rotational dynamics', 'centrifugal force calculation', 'circular motion physics'],
@@ -1231,7 +1243,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wind-load-calculator',
     name: 'Wind Load Calculator',
-    description: 'Calculate wind load, wind velocity, area, or drag coefficient using F = 0.5 ? ? ? v? � A ? Cd. Free online physics calculator for structural engineering, building design, and wind force calculations.',
+    description: 'Calculate wind load, wind velocity, area, or drag coefficient for structural engineering applications.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['wind load calculator', 'calculate wind load', 'wind force calculator', 'wind load formula', 'F = 0.5 ? ? ? v? � A ? Cd', 'structural wind load', 'building wind load calculator', 'wind pressure calculator', 'drag coefficient calculator', 'wind load engineering', 'wind force on structures', 'structural engineering calculator', 'wind load calculation', 'wind velocity calculator', 'aerodynamic force calculator', 'wind load design', 'building codes wind load', 'wind load physics', 'wind load equation', 'structural wind force'],
@@ -1243,7 +1255,7 @@ export const calculators: Calculator[] = [
   {
     id: 'absolute-humidity-calculator',
     name: 'Absolute Humidity Calculator',
-    description: 'Calculate absolute humidity, temperature, or relative humidity using psychrometric formulas. Free online physics calculator for HVAC, meteorology, and atmospheric science.',
+    description: 'Calculate absolute humidity, temperature, or relative humidity using psychrometric formulas for HVAC applications.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['absolute humidity calculator', 'calculate absolute humidity', 'absolute humidity formula', 'AH = (RH/100) ? (e_s ? m_w) / (R ? T)', 'psychrometric calculator', 'humidity calculator', 'absolute humidity from temperature', 'absolute humidity from relative humidity', 'water vapor density calculator', 'atmospheric humidity calculator', 'HVAC humidity calculator', 'moisture content calculator', 'absolute humidity g/m?', 'absolute humidity calculation', 'humidity physics calculator', 'psychrometric calculations', 'atmospheric science calculator', 'indoor air quality calculator', 'absolute humidity equation'],
@@ -1255,7 +1267,7 @@ export const calculators: Calculator[] = [
   {
     id: 'dipole-calculator',
     name: 'Dipole Calculator',
-    description: 'Calculate electric dipole moment, charge, or distance between charges using p = q ? d. Free online physics calculator for electrostatics, molecular physics, and electromagnetism.',
+    description: 'Calculate electric dipole moment, charge, or distance using p = q × d for electrostatics.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['dipole calculator', 'dipole moment calculator', 'calculate dipole moment', 'electric dipole calculator', 'dipole moment formula', 'p = q ? d', 'molecular dipole calculator', 'dipole moment calculation', 'electric dipole moment', 'dipole moment physics', 'dipole moment chemistry', 'Debye calculator', 'dipole moment units', 'charge separation calculator', 'dipole moment C?m', 'dipole moment Debye', 'electric dipole formula', 'dipole moment equation', 'calculate charge from dipole', 'calculate distance from dipole', 'electrostatics calculator', 'molecular polarity calculator'],
@@ -1267,7 +1279,7 @@ export const calculators: Calculator[] = [
   {
     id: 'antenna-length-calculator',
     name: 'Antenna Length Calculator',
-    description: 'Calculate antenna length from frequency or frequency from antenna length for half-wave dipole, quarter-wave monopole, and full-wave antennas. Free online RF calculator for antenna design.',
+    description: 'Calculate antenna length from frequency for half-wave dipole, quarter-wave monopole, and full-wave antennas design.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['antenna length calculator', 'calculate antenna length', 'antenna length from frequency', 'half-wave dipole calculator', 'quarter-wave monopole calculator', 'antenna length formula', 'antenna design calculator', 'RF antenna calculator', 'dipole antenna length', 'monopole antenna length', 'antenna frequency calculator', 'antenna length mHz', '468 divided by frequency', 'antenna length calculation', 'radio antenna calculator', 'ham radio antenna calculator', 'wire antenna calculator', 'antenna tuning calculator', 'antenna resonant frequency', 'velocity factor antenna', 'antenna wavelength calculator', 'antenna length feet', 'antenna length meters'],
@@ -1279,7 +1291,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wavelength-to-energy-calculator',
     name: 'Wavelength to Energy Calculator',
-    description: 'Convert between photon wavelength and energy using E = hc/?. Free online physics calculator for quantum Mechanics, spectroscopy, and electromagnetic radiation calculations.',
+    description: 'Convert between photon wavelength and energy using E = hc/λ for quantum mechanics calculations.',
     category: 'Quantum Mechanics',
     subject: 'physics',
     keywords: ['wavelength to energy calculator', 'energy to wavelength calculator', 'photon energy calculator', 'wavelength energy conversion', 'E = hc/?', 'photon wavelength to energy', 'convert wavelength to energy', 'photon energy formula', 'Planck constant calculator', 'wavelength energy relationship', 'quantum energy calculator', 'spectroscopy calculator', 'photon energy eV', 'wavelength to eV calculator', 'photon wavelength calculator', 'electromagnetic energy calculator', 'light energy calculator', 'quantum Mechanics calculator', 'wavelength energy formula', 'hc over lambda', 'photon energy wavelength', 'wavelength energy conversion calculator'],
@@ -1291,7 +1303,7 @@ export const calculators: Calculator[] = [
   {
     id: 'capacitance-calculator',
     name: 'Capacitance Calculator',
-    description: 'Calculate capacitance, charge, or voltage using C = Q/V. Free online physics calculator for capacitors, electronics, and electrical circuits with comprehensive unit support.',
+    description: 'Calculate capacitance, charge, or voltage using C = Q/V for capacitors and electrical circuits.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['capacitance calculator', 'calculate capacitance', 'capacitor calculator', 'capacitance formula', 'C = Q/V', 'capacitor charge calculator', 'capacitor voltage calculator', 'capacitance charge voltage', 'calculate capacitor charge', 'calculate capacitor voltage', 'capacitor energy calculator', 'capacitance calculation', 'capacitor formula', 'capacitor charge formula', 'electronics calculator', 'electrical circuit calculator', 'capacitance unit converter', 'farad calculator', 'microfarad calculator', 'nanofarad calculator', 'picofarad calculator', 'capacitor calculations'],
@@ -1315,7 +1327,7 @@ export const calculators: Calculator[] = [
   {
     id: 'schwarzschild-radius-calculator',
     name: 'Schwarzschild Radius Calculator',
-    description: 'Calculate Schwarzschild radius or mass using Rs = 2Gm/c?. Free online physics calculator for black holes, event horizons, general relativity, and astrophysics with comprehensive unit support.',
+    description: 'Calculate Schwarzschild radius or mass using Rs = 2Gm/c² for black holes and event horizons.',
     category: 'Quantum Mechanics',
     subject: 'physics',
     keywords: ['schwarzschild radius calculator', 'black hole radius calculator', 'event horizon calculator', 'schwarzschild radius formula', 'Rs = 2Gm/c?', 'calculate schwarzschild radius', 'black hole event horizon', 'schwarzschild radius of sun', 'schwarzschild radius of earth', 'calculate black hole mass', 'event horizon radius', 'general relativity calculator', 'astrophysics calculator', 'black hole calculator', 'schwarzschild metric calculator', 'gravitational radius calculator', 'black hole size calculator', 'event horizon size', 'schwarzschild radius equation', 'black hole physics calculator', 'general relativity physics', 'astrophysics radius calculator'],
@@ -1327,7 +1339,7 @@ export const calculators: Calculator[] = [
   {
     id: 'drag-equation-calculator',
     name: 'Drag Equation Calculator',
-    description: 'Calculate drag force, velocity, area, drag coefficient, or density using F = 0.5 ? ? ? v? � A ? Cd. Free online physics calculator for fluid dynamics, aerodynamics, and engineering.',
+    description: 'Calculate drag force, velocity, area, drag coefficient, or density for fluid dynamics and aerodynamics.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['drag equation calculator', 'drag force calculator', 'drag coefficient calculator', 'drag equation formula', 'F = 0.5 ? ? ? v? � A ? Cd', 'calculate drag force', 'fluid dynamics calculator', 'aerodynamics calculator', 'drag force formula', 'air resistance calculator', 'drag coefficient formula', 'calculate drag coefficient', 'velocity drag calculator', 'area drag calculator', 'density drag calculator', 'fluid resistance calculator', 'aerodynamic drag calculator', 'drag equation physics', 'drag force equation', 'fluid Mechanics calculator', 'drag calculation', 'aerodynamic force calculator'],
@@ -1339,7 +1351,7 @@ export const calculators: Calculator[] = [
   {
     id: 'maximum-height-calculator-for-projectile-motion',
     name: 'maximum Height Calculator for Projectile motion',
-    description: 'Calculate maximum height, initial velocity, or launch angle for projectile motion using h_max = (v0? ? sin?(?)) / (2g). Free online physics calculator for kinematics and projectile motion problems.',
+    description: 'Calculate maximum height, initial velocity, or launch angle for projectile motion using kinematics formulas.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['maximum height calculator', 'projectile motion calculator', 'maximum height formula', 'h_max = (v0? ? sin?(?)) / (2g)', 'calculate maximum height', 'projectile height calculator', 'launch angle calculator', 'initial velocity calculator', 'kinematics calculator', 'projectile motion maximum height', 'calculate projectile height', 'maximum height physics', 'projectile trajectory calculator', 'ballistics calculator', 'projectile motion formula', 'maximum altitude calculator', 'trajectory height calculator', 'projectile motion height', 'kinematics height calculator', 'physics projectile calculator', 'maximum height equation', 'projectile motion equations'],
@@ -1351,7 +1363,7 @@ export const calculators: Calculator[] = [
   {
     id: 'mechanical-advantage-calculator',
     name: 'mechanical Advantage Calculator',
-    description: 'Calculate mechanical advantage, output force, input force, or distances using mA = F_out/F_in = D_in/D_out. Free online physics calculator for simple machines, levers, pulleys, and engineering.',
+    description: 'Calculate mechanical advantage, output force, input force, or distances for simple machines and levers.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['mechanical advantage calculator', 'calculate mechanical advantage', 'mechanical advantage formula', 'mA = F_out/F_in', 'simple machine calculator', 'lever calculator', 'pulley calculator', 'mechanical advantage formula', 'force multiplier calculator', 'calculate output force', 'calculate input force', 'simple machines calculator', 'lever mechanical advantage', 'pulley mechanical advantage', 'inclined plane calculator', 'mechanical advantage physics', 'simple machine physics', 'mA calculator', 'mechanical advantage equation', 'force advantage calculator', 'Mechanics calculator', 'simple machines physics'],
@@ -1363,7 +1375,7 @@ export const calculators: Calculator[] = [
   {
     id: 'btu-to-tons-converter',
     name: 'BTU to Tons Converter',
-    description: 'Convert between BTU (British Thermal Units) and tons of refrigeration instantly. Free online unit converter for HVAC, refrigeration, and cooling capacity calculations.',
+    description: 'Convert between BTU and tons of refrigeration instantly for HVAC and cooling capacity calculations.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['btu to tons converter', 'tons to btu converter', 'btu to tons', 'tons to btu', 'btu tons conversion', 'refrigeration ton calculator', 'cooling capacity converter', 'hvac unit converter', 'btu converter', 'tons of refrigeration calculator', 'air conditioning capacity converter', 'cooling ton calculator', 'btu to tons calculator', 'tons to btu calculator', 'refrigeration capacity converter', 'hvac calculator', 'cooling capacity calculator', 'btu tons conversion factor', '12000 btu to tons', 'btu to refrigeration tons', 'tons refrigeration to btu', 'cooling capacity btu tons'],
@@ -1387,7 +1399,7 @@ export const calculators: Calculator[] = [
   {
     id: 'orbital-period-calculator',
     name: 'Orbital Period Calculator',
-    description: 'Calculate orbital period from semi-major axis and mass using Kepler\'s Third Law: T = v[(4p?/Gm) ? a?]. Free online physics calculator for orbital Mechanics, planetary motion, and astrophysics with comprehensive unit support.',
+    description: 'Calculate orbital period from semi-major axis and mass using Kepler\'s Third Law for planetary motion.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['orbital period calculator', 'calculate orbital period', 'orbital period formula', 'orbital period from semi-major axis', 'orbital period from mass', 'kepler third law calculator', 'orbital period kepler', 'calculate orbital period from distance', 'orbital period from radius', 'orbital period physics', 'orbital period astronomy', 'orbital period formula calculator', 'orbital period equation', 'orbital period calculation', 'satellite orbital period', 'planet orbital period', 'orbital period calculator online', 'orbital period from semi-major axis calculator', 'orbital Mechanics calculator', 'orbital period kepler law', 'orbital period T squared', 'orbital period semi-major axis', 'orbital period mass', 'orbital period gravitational constant', 'orbital period astrophysics'],
@@ -1399,7 +1411,7 @@ export const calculators: Calculator[] = [
   {
     id: 'section-modulus-calculator',
     name: 'Section modulus Calculator',
-    description: 'Calculate section modulus (Z) or dimensions for rectangular and circular cross-sections. Free online physics calculator for structural engineering, beam design, and stress analysis.',
+    description: 'Calculate section modulus or dimensions for rectangular and circular cross-sections in structural engineering.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['section modulus calculator', 'calculate section modulus', 'section modulus formula', 'Z = (b ? h?) / 6', 'section modulus rectangle', 'section modulus circle', 'beam design calculator', 'bending stress calculator', 'structural engineering calculator', 'cross-section calculator', 'moment of inertia calculator', 'beam sizing calculator', 'section modulus Z', 'rectangular section modulus', 'circular section modulus', 'structural design calculator', 'stress analysis calculator', 'beam analysis calculator', 'engineering calculator', 'Mechanics calculator'],
@@ -1411,7 +1423,7 @@ export const calculators: Calculator[] = [
   {
     id: 'inverse-square-law-calculator',
     name: 'inverse Square Law Calculator',
-    description: 'Calculate intensity, distance, or source strength using the inverse square law: I = k/r?. Free online physics calculator for light, sound, radiation, and electromagnetic fields.',
+    description: 'Calculate intensity, distance, or source strength using inverse square law for light and radiation.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['inverse square law calculator', 'calculate intensity', 'inverse square law formula', 'I = k/r?', 'light intensity calculator', 'sound intensity calculator', 'radiation intensity calculator', 'intensity distance calculator', 'source strength calculator', 'inverse square law physics', 'light intensity distance', 'sound level distance calculator', 'radiation distance calculator', 'electromagnetic field calculator', 'photography light calculator', 'acoustics calculator', 'radiation safety calculator', 'intensity formula', 'distance intensity relationship', 'physics calculator'],
@@ -1423,7 +1435,7 @@ export const calculators: Calculator[] = [
   {
     id: 'displacement-calculator',
     name: 'Displacement Calculator',
-    description: 'Calculate displacement from initial and final positions, velocity, acceleration, and time. Free online physics calculator for kinematics, motion analysis, and physics problems.',
+    description: 'Calculate displacement from initial/final positions, velocity, acceleration, and time for kinematics motion analysis.',
     category: 'Kinematics',
     subject: 'physics',
     keywords: ['displacement calculator', 'calculate displacement', 'displacement formula', '?x = x - x0', 's = v0t + (1/2)at?', 'displacement physics', 'position calculator', 'motion calculator', 'kinematics calculator', 'displacement from velocity', 'displacement from acceleration', 'change in position calculator', 'displacement vs distance', 'vector displacement', 'physics displacement', 'motion analysis calculator', 'displacement equation', 'calculate change in position', 'displacement kinematics', 'physics calculator'],
@@ -1435,7 +1447,7 @@ export const calculators: Calculator[] = [
   {
     id: 'net-force-calculator',
     name: 'Net Force Calculator',
-    description: 'Calculate net force (resultant force) magnitude and direction from force components or multiple forces with angles. Free online physics calculator using F_net = v(Fx? + Fy?).',
+    description: 'Calculate net force magnitude and direction from force components or multiple forces with angles.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['net force calculator', 'calculate net force', 'resultant force calculator', 'net force formula', 'F_net = v(Fx? + Fy?)', 'net force magnitude', 'net force direction', 'vector force calculator', 'force components calculator', 'resultant force formula', 'net force physics', 'force vector addition', 'calculate resultant force', 'net force equation', 'force magnitude calculator', 'force direction calculator', 'Mechanics calculator', 'physics calculator', 'net force calculation', 'vector sum of forces'],
@@ -1447,7 +1459,7 @@ export const calculators: Calculator[] = [
   {
     id: 'tension-calculator',
     name: 'Tension Calculator',
-    description: 'Calculate tension in ropes, cables, and strings using mass/acceleration (T = m(g ? a)) or force (T = F). Free online Mechanics calculator for physics problems with multiple calculation methods.',
+    description: 'Calculate tension in ropes, cables, and strings using mass/acceleration or force for mechanics problems.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['tension calculator', 'calculate tension', 'tension formula', 'tension in rope calculator', 'tension physics calculator', 'T = mg', 'T = m(g + a)', 'tension force calculator', 'rope tension calculator', 'cable tension calculator', 'string tension calculator', 'tension equation', 'calculate tension from mass', 'tension acceleration calculator', 'Mechanics calculator', 'physics calculator', 'tension force', 'tension calculation', 'tension physics', 'tension in cables', 'tension in strings', 'elevator tension calculator', 'pulley tension calculator'],
@@ -1459,7 +1471,7 @@ export const calculators: Calculator[] = [
   {
     id: 'hookes-law-calculator',
     name: 'Hooke\'s Law Calculator',
-    description: 'Calculate force, spring constant, or displacement using Hooke\'s Law: F = k ? x. Free online physics calculator for elastic materials and springs with comprehensive unit support.',
+    description: 'Calculate force, spring constant, or displacement using Hooke\'s Law F = k × x formula.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['hookes law calculator', 'Hooke\'s law calculator', 'calculate hookes law', 'F = kx calculator', 'spring constant calculator', 'spring force calculator', 'elastic force calculator', 'hookes law formula', 'F = k ? x', 'spring constant formula', 'calculate spring constant', 'calculate force from spring', 'spring displacement calculator', 'elasticity calculator', 'Mechanics calculator', 'physics calculator', 'hookes law physics', 'spring physics calculator', 'elastic materials calculator', 'restoring force calculator', 'spring stiffness calculator', 'hookes law equation', 'spring constant from force', 'displacement from force', 'elastic limit calculator'],
@@ -1471,7 +1483,7 @@ export const calculators: Calculator[] = [
   {
     id: 'engine-displacement-calculator',
     name: 'Engine Displacement Calculator',
-    description: 'Calculate engine displacement (engine size) from bore, stroke, and number of cylinders using V = p ? (Bore/2)? ? Stroke ? Cylinders. Free online automotive calculator with support for cc, liters, and cubic inches.',
+    description: 'Calculate engine displacement from bore, stroke, and cylinder count for automotive applications and racing.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['engine displacement calculator', 'calculate engine displacement', 'engine size calculator', 'displacement calculator', 'engine cc calculator', 'bore stroke calculator', 'cylinder displacement calculator', 'engine displacement formula', 'V = p ? (Bore/2)? ? Stroke ? Cylinders', 'calculate engine size', 'engine volume calculator', 'automotive calculator', 'engine displacement cc', 'engine displacement liters', 'engine displacement cubic inches', 'engine bore stroke calculator', 'engine capacity calculator', 'motor displacement calculator', 'engine displacement physics', 'Mechanics calculator', 'automotive engineering calculator', 'engine specs calculator', 'cylinder volume calculator'],
@@ -1483,7 +1495,7 @@ export const calculators: Calculator[] = [
   {
     id: 'conservation-of-momentum-calculator',
     name: 'Conservation of momentum Calculator',
-    description: 'Calculate final velocities or masses in collisions using conservation of momentum. Free online physics calculator for elastic and inelastic collisions using m1v1? + m2v2? = m1v1f + m2v2f.',
+    description: 'Calculate final velocities or masses in collisions using conservation of momentum for elastic/inelastic collisions.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['conservation of momentum calculator', 'momentum calculator', 'collision calculator', 'calculate final velocity', 'momentum conservation', 'elastic collision calculator', 'inelastic collision calculator', 'conservation of momentum formula', 'm1v1? + m2v2? = m1v1f + m2v2f', 'collision physics calculator', 'momentum physics', 'final velocity calculator', 'collision velocity calculator', 'physics collision calculator', 'momentum conservation physics', 'calculate momentum', 'two object collision', 'Mechanics calculator', 'physics calculator', 'collision analysis calculator'],
@@ -1497,7 +1509,7 @@ export const calculators: Calculator[] = [
   {
     id: 'reynolds-number-calculator',
     name: 'Reynolds Number Calculator',
-    description: 'Calculate Reynolds number or any variable using Re = (? ? v ? D) / ?. Free online fluid Mechanics calculator with flow regime determination (laminar, transitional, turbulent).',
+    description: 'Calculate Reynolds number or variables using Re formula with flow regime determination for fluid mechanics.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['reynolds number calculator', 'calculate reynolds number', 'reynolds number formula', 'Re = ?vD/?', 'fluid Mechanics calculator', 'reynolds number equation', 'laminar flow calculator', 'turbulent flow calculator', 'flow regime calculator', 'reynolds number Re', 'calculate flow regime', 'fluid flow calculator', 'reynolds number physics', 'reynolds number formula calculator', 'fluid dynamics calculator', 'reynolds number calculation', 'pipe flow calculator', 'reynolds number engineering', 'fluid Mechanics reynolds number'],
@@ -1509,7 +1521,7 @@ export const calculators: Calculator[] = [
   {
     id: 'watt-hour-calculator',
     name: 'Watt-hour Calculator',
-    description: 'Calculate energy (watt-hours), power, or time using E = P ? t. Free online energy calculator with support for multiple units including kWh, Wh, Joules, and BTU.',
+    description: 'Calculate energy, power, or time using E = P × t with support for kWh, Joules, and BTU.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['watt hour calculator', 'watt-hour calculator', 'calculate watt hours', 'energy calculator', 'E = P ? t', 'power time calculator', 'energy consumption calculator', 'kWh calculator', 'watt hour formula', 'energy power time', 'calculate energy from power', 'calculate power from energy', 'calculate time from energy', 'battery capacity calculator', 'electrical energy calculator', 'energy formula calculator', 'power consumption calculator', 'watt hour equation', 'energy calculation', 'physics energy calculator'],
@@ -1521,7 +1533,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wave-speed-calculator',
     name: 'Wave Speed Calculator',
-    description: 'Calculate wave speed from frequency and wavelength (v = f ? ?) or from distance and time (v = d / t). Free online physics calculator for waves, sound, light, and electromagnetic waves.',
+    description: 'Calculate wave speed from frequency/wavelength or distance/time for waves, sound, and electromagnetic radiation.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['wave speed calculator', 'calculate wave speed', 'wave speed formula', 'v = f ? ?', 'wave velocity calculator', 'wave speed frequency wavelength', 'wave speed distance time', 'v = d / t', 'wave speed physics', 'wave velocity formula', 'calculate wave velocity', 'wave speed equation', 'sound wave speed calculator', 'light wave speed calculator', 'electromagnetic wave speed', 'wave propagation speed', 'wave speed frequency', 'wave speed wavelength', 'waves calculator', 'physics calculator', 'wave physics calculator', 'wave speed units', 'wave speed m/s�'],
@@ -1533,7 +1545,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wavelength-to-frequency-calculator',
     name: 'Wavelength to Frequency Calculator',
-    description: 'Convert between wavelength and frequency using f = c/? for electromagnetic waves or f = v/? for general waves. Free online wave calculator with support for multiple units.',
+    description: 'Convert between wavelength and frequency using f = c/λ for electromagnetic or general waves.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['wavelength to frequency calculator', 'frequency to wavelength calculator', 'wavelength frequency converter', 'calculate frequency from wavelength', 'calculate wavelength from frequency', 'f = c/?', 'wavelength frequency formula', 'electromagnetic wave calculator', 'light frequency calculator', 'radio frequency calculator', 'wave calculator', 'wavelength calculator', 'frequency calculator', 'c = ?f', 'wave equation calculator', 'electromagnetic spectrum calculator', 'photon energy calculator', 'wave physics calculator', 'wavelength frequency relationship', 'light wavelength frequency'],
@@ -1545,7 +1557,7 @@ export const calculators: Calculator[] = [
   {
     id: 'photon-energy-calculator',
     name: 'Photon Energy Calculator',
-    description: 'Calculate photon energy from frequency (E = hf) or wavelength (E = hc/?). Free online quantum physics calculator with Planck\'s constant and speed of light.',
+    description: 'Calculate photon energy from frequency or wavelength using Planck\'s constant and speed of light.',
     category: 'Quantum Physics',
     subject: 'physics',
     keywords: ['photon energy calculator', 'calculate photon energy', 'photon energy formula', 'E = hf', 'E = hc/?', 'photon energy wavelength', 'photon energy frequency', 'Planck constant calculator', 'quantum energy calculator', 'photon calculator', 'light energy calculator', 'photon energy eV', 'photon energy joules', 'quantum physics calculator', 'photon energy equation', 'Planck\'s constant calculator', 'photon energy from wavelength', 'photon energy from frequency', 'electromagnetic energy calculator', 'quantum Mechanics calculator', 'photon energy physics'],
@@ -1557,7 +1569,7 @@ export const calculators: Calculator[] = [
   {
     id: 'lightning-distance-calculator',
     name: 'Lightning Distance Calculator',
-    description: 'Calculate distance to lightning strike from time delay between flash and thunder. Free online physics calculator using d = v ? t with speed of sound calculations.',
+    description: 'Calculate distance to lightning strike from flash-thunder delay using speed of sound calculations.',
     category: 'Waves',
     subject: 'physics',
     keywords: ['lightning distance calculator', 'calculate lightning distance', 'lightning distance formula', 'thunder distance calculator', 'lightning strike distance', 'd = v ? t', 'lightning flash thunder', 'storm distance calculator', 'lightning calculator', 'thunder delay calculator', 'lightning safety calculator', 'speed of sound calculator', 'lightning distance physics', 'weather calculator', 'storm distance', 'lightning time delay', 'thunder time calculator', 'lightning distance equation', 'waves calculator', 'physics calculator', 'sound speed calculator'],
@@ -1569,7 +1581,7 @@ export const calculators: Calculator[] = [
   {
     id: 'hp-to-amps-calculator',
     name: 'HP to Amps Calculator',
-    description: 'Convert horsepower to amperes using I = (hp ? 746) / (V ? efficiency). Free online motor current calculator for sizing circuit breakers and wire gauges.',
+    description: 'Convert horsepower to amperes using voltage and efficiency for sizing circuit breakers and wires.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['hp to amps calculator', 'horsepower to amps calculator', 'hp to amperes', 'motor current calculator', 'calculate amps from hp', 'horsepower amps conversion', 'motor amps calculator', 'electrical motor calculator', 'hp amps formula', 'I = hp ? 746 / V', 'motor current calculation', 'circuit breaker sizing', 'wire gauge calculator', 'motor power calculator', 'electrical engineering calculator', 'hp to watts to amps', 'motor efficiency calculator', 'electrical calculator', 'hp amps voltage', 'motor sizing calculator'],
@@ -1581,7 +1593,7 @@ export const calculators: Calculator[] = [
   {
     id: 'watts-to-amps-calculator',
     name: 'Watts to Amps Calculator',
-    description: 'Convert watts (power) to amperes (current) using voltage. Free online calculator for DC and AC circuits with power factor support. Use I = P/V for DC or I = P/(V?PF) for AC.',
+    description: 'Convert watts to amperes using voltage for DC and AC circuits with power factor support.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['watts to amps calculator', 'convert watts to amps', 'watts to amperes calculator', 'power to current calculator', 'watts to amps conversion', 'I = P/V', 'calculate amps from watts', 'watts volts amps calculator', 'electrical current calculator', 'power current calculator', 'watts to amps formula', 'convert power to current', 'electrical calculator', 'DC current calculator', 'AC current calculator', 'circuit current calculator', 'ampere calculator', 'current from power voltage', 'watts amps voltage calculator', 'electrical engineering calculator', 'power factor calculator', 'circuit breaker sizing calculator'],
@@ -1594,7 +1606,7 @@ export const calculators: Calculator[] = [
   {
     id: 'friction-loss-calculator',
     name: 'Friction Loss Calculator',
-    description: 'Calculate head loss and pressure drop in pipes using Darcy-Weisbach or Hazen-Williams equations. Free online fluid Mechanics calculator for pipe sizing and pump selection.',
+    description: 'Calculate head loss and pressure drop in pipes using Darcy-Weisbach or Hazen-Williams equations.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['friction loss calculator', 'head loss calculator', 'pressure drop calculator', 'pipe friction calculator', 'darcy weisbach calculator', 'hazen williams calculator', 'pipe head loss', 'friction loss in pipes', 'pressure loss calculator', 'fluid Mechanics calculator', 'pipe flow calculator', 'pump sizing calculator', 'pipe sizing calculator', 'friction factor calculator', 'hydraulic head loss', 'pipe pressure drop', 'fluid friction calculator', 'pipe flow resistance', 'head loss formula', 'pressure drop formula'],
@@ -1606,7 +1618,7 @@ export const calculators: Calculator[] = [
   {
     id: 'water-viscosity-calculator',
     name: 'Water Viscosity Calculator',
-    description: 'Calculate dynamic and kinematic viscosity of water at any temperature using ? = A ? 10^(B/(T - C)). Free online fluid Mechanics calculator for physics and engineering with temperature-dependent viscosity calculations.',
+    description: 'Calculate dynamic and kinematic viscosity of water at any temperature for fluid mechanics applications.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['water viscosity calculator', 'water viscosity', 'dynamic viscosity calculator', 'kinematic viscosity calculator', 'water viscosity temperature', 'calculate water viscosity', 'viscosity of water', 'water viscosity formula', 'water viscosity by temperature', 'fluid viscosity calculator', 'water viscosity at temperature', 'dynamic viscosity water', 'kinematic viscosity water', 'water viscosity table', 'temperature dependent viscosity', 'water viscosity physics', 'fluid Mechanics calculator', 'viscosity temperature relationship', 'water properties calculator', 'water viscosity equation'],
@@ -1618,7 +1630,7 @@ export const calculators: Calculator[] = [
   {
     id: 'water-density-calculator',
     name: 'Water Density Calculator',
-    description: 'Calculate water density at any temperature using accurate polynomial formulas. Free online physics calculator for fluid Mechanics, chemistry, and engineering with multiple unit support.',
+    description: 'Calculate water density at any temperature using accurate polynomial formulas for fluid mechanics applications.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['water density calculator', 'calculate water density', 'water density temperature', 'density of water calculator', 'water density formula', 'water density by temperature', 'calculate water density from temperature', 'water density at temperature', 'water density kg/m?', 'water density g/cm?', 'water density physics', 'fluid Mechanics calculator', 'water properties calculator', 'water density table', 'temperature dependent density', 'water density equation', 'water density calculation', 'liquid water density', 'pure water density', 'water density chemistry', 'water density engineering', 'water thermal expansion'],
@@ -1631,7 +1643,7 @@ export const calculators: Calculator[] = [
   {
     id: 'terminal-velocity-calculator',
     name: 'Terminal Velocity Calculator',
-    description: 'Calculate terminal velocity, mass, cross-sectional area, or drag coefficient using v = v(2mg/(?AC_d)). Free online fluid Mechanics calculator for physics and engineering with drag force calculations.',
+    description: 'Calculate terminal velocity, mass, area, or drag coefficient using fluid mechanics and drag formulas.',
     category: 'Fluid Mechanics',
     subject: 'physics',
     keywords: ['terminal velocity calculator', 'calculate terminal velocity', 'terminal velocity formula', 'falling object velocity', 'drag force calculator', 'terminal velocity physics', 'skydiving terminal velocity', 'terminal velocity equation', 'v = sqrt(2mg/(rhoACd))', 'terminal velocity calculation', 'maximum falling speed', 'drag coefficient calculator', 'air resistance calculator', 'fluid Mechanics calculator', 'terminal velocity skydiver', 'parachute terminal velocity', 'falling object physics', 'terminal velocity air resistance', 'drag force terminal velocity'],
@@ -1643,7 +1655,7 @@ export const calculators: Calculator[] = [
   {
     id: 'earth-curvature-calculator',
     name: 'Earth Curvature Calculator',
-    description: 'Calculate Earth\'s curvature drop, distance to horizon, or hidden object height using precise formulas. Free online physics calculator for geography, astronomy, and engineering with accurate Earth radius calculations.',
+    description: 'Calculate Earth\'s curvature drop, distance to horizon, or hidden object height for geography applications.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['earth curvature calculator', 'earth curvature', 'curvature calculator', 'calculate earth curvature', 'horizon distance calculator', 'curvature drop calculator', 'distance to horizon', 'earth curve calculator', 'hidden height calculator', 'earth radius calculator', 'curvature formula', 'horizon calculation', 'earth curvature formula', 'drop calculator', 'curvature at distance', 'physics calculator', 'geography calculator', 'navigation calculator', 'earth shape calculator', 'spherical earth calculator'],
@@ -1655,7 +1667,7 @@ export const calculators: Calculator[] = [
   {
     id: 'kinetic-energy-calculator',
     name: 'Kinetic Energy Calculator',
-    description: 'Calculate kinetic energy, mass, or velocity using KE = ?mv?. Free online Mechanics calculator for physics and engineering with multiple unit support and step-by-step solutions.',
+    description: 'Calculate kinetic energy, mass, or velocity using KE = ½mv² for physics and engineering.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['kinetic energy calculator', 'calculate kinetic energy', 'KE = ?mv?', 'kinetic energy formula', 'KE formula', 'kinetic energy equation', 'energy of motion calculator', 'KE calculator', 'kinetic energy physics', 'Mechanics calculator', 'energy calculator', 'motion energy calculator', 'KE = 1/2mv2', 'calculate KE', 'kinetic energy mass velocity', 'physics energy calculator', 'work energy calculator', 'collision energy calculator', 'kinetic energy calculation', 'energy of motion'],
@@ -1667,7 +1679,7 @@ export const calculators: Calculator[] = [
   {
     id: 'impact-energy-calculator',
     name: 'Impact Energy Calculator',
-    description: 'Calculate impact energy, mass, or velocity using E = (1/2) ? m ? v?. Free online physics calculator for collisions, safety analysis, and engineering with comprehensive unit support.',
+    description: 'Calculate impact energy, mass, or velocity using E = ½mv² for collision and safety analysis.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['impact energy calculator', 'calculate impact energy', 'E = ?mv? calculator', 'impact energy formula', 'collision energy calculator', 'impact energy physics calculator', 'impact velocity calculator', 'crash energy calculator', 'impact force calculator', 'collision calculator', 'impact energy equation', 'E = 1/2mv2 calculator', 'calculate impact energy from velocity', 'impact energy from mass and velocity', 'safety analysis calculator', 'crash test calculator', 'impact physics calculator', 'collision energy formula', 'impact energy calculation', 'energy of impact calculator', 'impact kinetic energy calculator', 'automotive impact calculator', 'material impact calculator'],
@@ -1679,7 +1691,7 @@ export const calculators: Calculator[] = [
   {
     id: 'impulse-momentum-calculator',
     name: 'Impulse and momentum Calculator',
-    description: 'Calculate impulse (J = F?t) and momentum (p = m?v) with impulse-momentum theorem. Free online Mechanics calculator for collision analysis and force-time relationships.',
+    description: 'Calculate impulse and momentum with impulse-momentum theorem for collision analysis and force-time relationships.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['impulse momentum calculator', 'impulse calculator', 'momentum calculator', 'J = F?t', 'p = m?v', 'impulse momentum theorem', 'change in momentum calculator', 'collision calculator', 'force time calculator', 'momentum physics calculator', 'impulse physics', 'momentum formula', 'impulse formula', 'physics Mechanics calculator', 'momentum change calculator', 'impulse momentum relationship', 'physics calculator', 'Mechanics calculator', 'collision analysis', 'momentum impulse'],
@@ -1691,7 +1703,7 @@ export const calculators: Calculator[] = [
   {
     id: 'coulombs-law-calculator',
     name: 'Coulomb\'s Law Calculator',
-    description: 'Calculate electrostatic force using F = k ? (q1 ? q2) / r?. Free online electrostatics calculator for charge interactions and electric force calculations.',
+    description: 'Calculate electrostatic force using Coulomb\'s law for charge interactions and electric force calculations.',
     category: 'Electromagnetism',
     subject: 'physics',
     keywords: ['coulombs law calculator', 'coulomb law calculator', 'electrostatic force calculator', 'electric force calculator', 'F = kq1q2/r2', 'coulomb force calculator', 'charge force calculator', 'electrostatics calculator', 'electric charge calculator', 'coulomb constant calculator', 'electrostatic interaction', 'electric field calculator', 'charge interaction calculator', 'physics calculator', 'electromagnetism calculator', 'coulomb law formula', 'electrostatic force formula', 'electric force formula', 'charge distance calculator', 'coulomb calculator'],
@@ -1703,7 +1715,7 @@ export const calculators: Calculator[] = [
   {
     id: 'time-dilation-calculator',
     name: 'Time Dilation Calculator',
-    description: 'Calculate time dilation using special relativity: ?t = ?t0 / v(1 - v?/c?). Free online relativity calculator for proper time, dilated time, and velocity calculations.',
+    description: 'Calculate time dilation using special relativity for proper time, dilated time, and velocity calculations.',
     category: 'Relativity',
     subject: 'physics',
     keywords: ['time dilation calculator', 'relativity calculator', 'special relativity calculator', 'time dilation formula', '?t = ?t0/v(1-v?/c?)', 'lorentz factor calculator', 'proper time calculator', 'dilated time calculator', 'relativistic time calculator', 'time dilation physics', 'special relativity time', 'einstein time dilation', 'relativistic effects calculator', 'physics calculator', 'relativity physics', 'time dilation equation', 'lorentz transformation', 'gamma factor calculator', 'relativistic velocity calculator', 'time dilation effect'],
@@ -1715,7 +1727,7 @@ export const calculators: Calculator[] = [
   {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
-    description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m ? g ? h. Free online Mechanics calculator for physics and engineering with multiple unit support.',
+    description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h.',
     category: 'Mechanics',
     subject: 'physics',
     keywords: ['potential energy calculator', 'calculate potential energy', 'PE = mgh', 'gravitational potential energy', 'potential energy formula', 'mgh calculator', 'potential energy equation', 'height energy calculator', 'gravity potential energy', 'Mechanics calculator', 'physics calculator', 'energy calculator', 'potential energy physics', 'gravitational energy', 'PE formula', 'calculate PE', 'potential energy calculation', 'mgh formula', 'energy height calculator'],
@@ -1727,7 +1739,7 @@ export const calculators: Calculator[] = [
   {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
-    description: 'Calculate exponential functions, growth, decay, and compound interest with our free exponential function calculator. Get instant results for exponential equations, exponential growth and decay, and financial calculations.',
+    description: 'Calculate exponential functions, growth, decay, and compound interest with instant results for exponential equations.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['exponential function calculator', 'exponential calculator', 'exponential function', 'exponential growth calculator', 'exponential decay calculator', 'compound interest calculator', 'exponential equation calculator', 'e^x calculator', 'exponential formula calculator', 'exponential function solver', 'exponential growth decay', 'exponential functions', 'exponential math calculator', 'calculate exponential', 'exponential equations'],
@@ -1751,7 +1763,7 @@ export const calculators: Calculator[] = [
   {
     id: 'scientific-notation-equation',
     name: 'Scientific Notation Equation Calculator',
-    description: 'Convert numbers to scientific notation and perform arithmetic operations. Free online scientific notation calculator with support for converting to/from decimal form and calculating with scientific notation equations.',
+    description: 'Convert numbers to scientific notation and perform arithmetic operations with decimal form conversion support.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['scientific notation calculator', 'scientific notation equation', 'scientific notation converter', 'scientific notation arithmetic', 'convert to scientific notation', 'scientific notation calculator with steps', 'exponential notation calculator', 'standard form to scientific notation', 'scientific notation solver', 'scientific notation formula calculator', 'scientific notation problems', 'scientific notation math', 'scientific notation help', 'calculate with scientific notation', 'scientific notation operations'],
@@ -1775,7 +1787,7 @@ export const calculators: Calculator[] = [
   {
     id: 'round-to-nearest-thousand',
     name: 'Round to the Nearest Thousand Calculator',
-    description: 'Round numbers to the nearest thousand with different rounding methods. Calculate rounded values for population, sales, statistics, and large numbers.',
+    description: 'Round numbers to nearest thousand with different rounding methods for population and statistics calculations.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['round to the nearest thousand calculator', 'round to nearest thousand', 'rounding to nearest thousand calculator', 'round numbers to thousand', 'thousand rounding calculator', 'round to 1000 calculator', 'nearest thousand calculator', 'round thousand calculator', 'rounding calculator thousand', 'round numbers calculator', 'rounding to thousand'],
@@ -1920,7 +1932,7 @@ export const calculators: Calculator[] = [
   {
     id: 'square-of-binomial',
     name: 'Square of a Binomial Calculator',
-    description: 'Calculate the square of a binomial expression using the formula (a+b)� = a� + 2ab + b�. Free online algebra calculator with step-by-step solutions and detailed explanations.',
+    description: 'Calculate square of binomial expression using (a+b)² formula with step-by-step algebra solutions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['square of binomial', 'binomial square calculator', '(a+b)� calculator', 'expand binomial', 'polynomial expansion', 'algebra calculator', 'binomial expansion', 'perfect square trinomial', 'FOIL method', 'algebraic expansion', 'binomial formula', 'square formula', 'polynomial calculator', 'algebra expansion calculator', 'binomial perfect square'],
@@ -1992,7 +2004,7 @@ export const calculators: Calculator[] = [
   {
     id: 'triangle-45-45-90',
     name: '45 45 90 Triangle Calculator',
-    description: 'Calculate sides, area, and perimeter of a 45 45 90 triangle (isosceles right triangle) with step-by-step solutions. Free online 45-45-90 triangle calculator for finding missing sides, area, and perimeter.',
+    description: 'Calculate sides, area, and perimeter of 45-45-90 isosceles right triangles with step-by-step solutions.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['45 45 90 triangle', '45-45-90 triangle', '45 45 90 triangle calculator', 'isosceles right triangle', 'special right triangle', 'geometry', 'trigonometry', 'pythagorean theorem', 'triangle calculator', '45 45 90', 'right triangle calculator', 'special right triangle calculator', '45 degree triangle', 'isosceles triangle calculator', 'triangle side calculator'],
@@ -2004,7 +2016,7 @@ export const calculators: Calculator[] = [
   {
     id: 'special-right-triangles',
     name: 'Special Right Triangles Calculator',
-    description: 'Calculate sides, area, and perimeter for 45-45-90 and 30-60-90 special right triangles. Find missing sides using special right triangle ratios with step-by-step solutions for both triangle types.',
+    description: 'Calculate sides, area, and perimeter for 45-45-90 and 30-60-90 special right triangles.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['special right triangles calculator', 'special right triangle calculator', '45-45-90 calculator', '30-60-90 calculator', 'special right triangle', 'right triangle calculator', '45 45 90 triangle calculator', '30 60 90 triangle calculator', 'isosceles right triangle calculator', 'special triangle calculator', 'right triangle solver', 'special right triangle solver', 'geometry calculator', 'triangle side calculator'],
@@ -2029,7 +2041,7 @@ export const calculators: Calculator[] = [
   {
     id: 'arithmetic-sequence',
     name: 'Arithmetic Sequence Calculator',
-    description: 'Calculate the nth term and sum of an arithmetic sequence. Find any term using the common difference with step-by-step solutions and sequence visualization.',
+    description: 'Calculate nth term and sum of arithmetic sequence using common difference with step-by-step solutions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['arithmetic sequence calculator', 'arithmetic sequence', 'arithmetic progression calculator', 'common difference calculator', 'nth term calculator', 'arithmetic sequence formula', 'arithmetic series calculator', 'calculate arithmetic sequence', 'arithmetic sequence sum', 'arithmetic progression', 'sequence calculator', 'arithmetic sequence solver', 'arithmetic sequence finder'],
@@ -2174,7 +2186,7 @@ export const calculators: Calculator[] = [
   {
     id: 'triangle-height',
     name: 'Height of a Triangle Calculator',
-    description: 'Calculate the height of any triangle using multiple methods: from base and area, three sides (Heron\'s formula), or trigonometry with step-by-step solutions',
+    description: 'Calculate triangle height using base/area, three sides, or trigonometry with step-by-step solutions.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['height of a triangle calculator', 'triangle height calculator', 'how to find triangle height', 'triangle height formula', 'calculate triangle height', 'height from area and base', 'heron formula height', 'triangle altitude calculator', 'geometry calculator', 'triangle calculator'],
@@ -2258,7 +2270,7 @@ export const calculators: Calculator[] = [
   {
     id: 'slope-intercept-form',
     name: 'Slope intercept Form Calculator',
-    description: 'Work with slope-intercept form (y = mx + b) equations. Find slope, y-intercept, convert to other forms, and graph information with step-by-step solutions',
+    description: 'Work with slope-intercept form equations, find slope, y-intercept, convert forms with step-by-step solutions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['slope intercept form calculator', 'y = mx + b calculator', 'slope intercept form', 'find slope and y intercept', 'convert to slope intercept form', 'linear equation calculator', 'graphing calculator', 'algebra calculator'],
@@ -2354,7 +2366,7 @@ export const calculators: Calculator[] = [
   {
     id: 'cylinder-volume',
     name: 'Cylinder Volume Calculator',
-    description: 'Calculate the volume of a cylinder instantly using radius and height. Free online cylinder volume calculator with step-by-step calculations and formulas.',
+    description: 'Calculate cylinder volume using radius and height with step-by-step calculations and formulas.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['cylinder volume calculator', 'volume of cylinder', 'cylinder volume formula', 'calculate cylinder volume', 'cylinder calculator', 'circular cylinder volume', 'geometry calculator', '3d volume calculator'],
@@ -2390,7 +2402,7 @@ export const calculators: Calculator[] = [
   {
     id: 'fraction',
     name: 'Fraction Calculator',
-    description: 'Add, subtract, multiply, divide, and simplify fractions instantly. Free online fraction calculator with step-by-step calculations and decimal conversions.',
+    description: 'Add, subtract, multiply, divide, and simplify fractions with step-by-step calculations and decimal conversions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['fraction calculator', 'add fractions', 'subtract fractions', 'multiply fractions', 'divide fractions', 'simplify fractions', 'fraction operations', 'fraction to decimal', 'decimal to fraction', 'math calculator'],
@@ -2402,7 +2414,7 @@ export const calculators: Calculator[] = [
   {
     id: 'simplify-fractions',
     name: 'Simplify Fractions Calculator',
-    description: 'Reduce fractions to their lowest terms instantly. Free online simplify fractions calculator with step-by-step calculations, GCD finder, and decimal conversions. Perfect for learning how to simplify 4/8 and other fractions.',
+    description: 'Reduce fractions to lowest terms with step-by-step calculations, GCD finder, and decimal conversions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['simplify fractions', 'simplify fractions calculator', 'reduce fractions', 'fraction simplifier', 'lowest terms calculator', 'GCD calculator', 'reduce fraction to lowest terms', 'simplify 4/8', 'fraction reducer', 'simplify fractions tool', 'how to simplify fractions', 'fraction simplification', 'reduce to lowest terms', 'simplest form calculator', 'greatest common divisor calculator'],
@@ -2414,7 +2426,7 @@ export const calculators: Calculator[] = [
   {
     id: 'common-denominator',
     name: 'Common Denominator Calculator',
-    description: 'Find the least common denominator (LCD) for two or more fractions. Calculate common denominators and convert fractions to equivalent fractions with step-by-step solutions.',
+    description: 'Find least common denominator for fractions and convert to equivalent fractions with step-by-step solutions.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['common denominator calculator', 'LCD calculator', 'least common denominator', 'common denominator finder', 'find common denominator', 'LCD finder', 'common denominator of fractions', 'equivalent fractions calculator', 'common denominator math', 'fraction denominator calculator', 'LCD math calculator', 'common denominator tool', 'find LCD', 'lowest common denominator calculator'],
@@ -2427,7 +2439,7 @@ export const calculators: Calculator[] = [
   {
     id: 'twos-complement',
     name: 'Two\'s Complement Calculator',
-    description: 'Convert between decimal and two\'s complement binary representation. Calculate two\'s complement for signed integers with step-by-step solutions for 8-bit, 16-bit, and 32-bit formats.',
+    description: 'Convert between decimal and two\'s complement binary representation for 8-bit, 16-bit, and 32-bit formats.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['two\'s complement calculator', 'twos complement', 'two\'s complement binary', 'signed binary calculator', 'binary to decimal signed', 'decimal to two\'s complement', 'two\'s complement converter', 'signed integer calculator', 'binary arithmetic', 'two\'s complement representation', 'negative binary', 'signed number calculator'],
@@ -2439,7 +2451,7 @@ export const calculators: Calculator[] = [
   {
     id: 'overtime-calculator',
     name: 'Overtime Calculator',
-    description: 'Calculate overtime pay with time and a half (1.5x), double time (2x), or custom multipliers. Free online finance calculator for accurate overtime pay calculations.',
+    description: 'Calculate overtime pay with time and half, double time, or custom multipliers for payroll.',
     category: 'Finance',
     subject: 'finance',
     keywords: ['overtime calculator', 'calculate overtime pay', 'overtime pay calculator', 'time and a half calculator', 'overtime pay formula', 'overtime hours calculator', 'overtime rate calculator', 'calculate overtime', 'overtime pay calculation', 'overtime calculator online', 'overtime pay rate', 'overtime hours', 'overtime multiplier', '1.5x overtime calculator', 'double time calculator', 'overtime pay per hour', 'overtime calculation', 'overtime pay formula calculator', 'calculate overtime hours', 'overtime pay rate calculator', 'finance calculator', 'payroll calculator', 'wage calculator', 'hourly pay calculator'],
@@ -2489,7 +2501,7 @@ export const calculators: Calculator[] = [
   {
     id: 'price-per-square-foot-calculator',
     name: 'Price Per Square Foot Calculator',
-    description: 'Calculate price per square foot for real estate, flooring, and construction. Determine unit pricing by dividing total price by square footage. Essential for property valuation and cost estimation.',
+    description: 'Calculate price per square foot for real estate, flooring, and construction by dividing cost by area.',
     category: 'Finance',
     subject: 'finance',
     keywords: ['price per square foot calculator', 'cost per square foot', 'price per sq ft calculator', 'real estate calculator', 'property price calculator', 'square footage price calculator', 'cost per unit area calculator', 'home price per square foot', 'construction cost calculator', 'flooring cost calculator'],
@@ -2634,7 +2646,7 @@ export const calculators: Calculator[] = [
   {
     id: 'temperature-at-altitude-calculator',
     name: 'Temperature at Altitude Calculator',
-    description: 'Calculate temperature at any altitude using ICAO Standard Atmosphere or custom lapse rate method. Free online physics calculator with multiple unit support (�C, �F, K) for temperature and (m, km, ft) for altitude. Perfect for aviation, weather, and atmospheric science.',
+    description: 'Calculate temperature at altitude using ICAO Standard Atmosphere or lapse rate for aviation applications.',
     category: 'Thermodynamics',
     subject: 'physics',
     keywords: ['temperature at altitude calculator', 'calculate temperature altitude', 'altitude temperature calculator', 'ICAO standard atmosphere calculator', 'lapse rate calculator', 'temperature lapse rate', 'atmospheric temperature calculator', 'air temperature altitude', 'altitude effect temperature', 'temperature decrease altitude', 'aviation altitude temperature', 'weather calculator altitude', 'troposphere temperature calculator', 'density altitude calculator', 'aircraft temperature calculator', 'mountain altitude temperature', 'weather balloon calculator', 'atmospheric science calculator', 'physics calculator thermodynamics', 'temperature conversion calculator', 'altitude effects calculator', 'air density altitude', 'atmospheric physics calculator', 'free temperature calculator', 'online altitude calculator'],
@@ -2647,7 +2659,7 @@ export const calculators: Calculator[] = [
   {
     id: 'wire-resistance-calculator',
     name: 'Wire Resistance Calculator',
-    description: 'Calculate wire resistance, length, diameter, or resistivity using R = ? � L / A formula. Free online physics calculator with support for 11 materials, temperature correction, and multiple unit systems (O, mO, kO, MO).',
+    description: 'Calculate wire resistance, length, diameter, or resistivity using R = ρL/A for 11 different materials.',
     category: 'Electricity',
     subject: 'physics',
     keywords: ['wire resistance calculator', 'electrical resistance calculator', 'calculate wire resistance', 'R = ? � L / A', 'resistivity calculator', 'wire diameter calculator', 'conductor resistance calculator', 'Ohm\'s law calculator', 'copper wire resistance', 'aluminum wire resistance', 'wire gauge calculator', 'resistance formula calculator', 'electrical conductivity calculator', 'wire resistance formula', 'resistance calculation', 'resistivity formula', 'wire temperature coefficient', 'electrical resistance physics', 'power dissipation calculator', 'voltage drop calculator', 'heating element calculator', 'wire size calculator', 'electrical wire calculator', 'copper resistivity calculator', 'material resistivity calculator'],
@@ -2660,7 +2672,7 @@ export const calculators: Calculator[] = [
   {
     id: 'rydberg-equation-calculator',
     name: 'Rydberg Equation Calculator',
-    description: 'Calculate wavelength, frequency, or photon energy for hydrogen-like transitions using the Rydberg equation. Supports custom Rydberg constant and multiple units for spectroscopy and physics applications.',
+    description: 'Calculate wavelength, frequency, or photon energy for hydrogen-like transitions using Rydberg equation formulas.',
     category: 'Quantum Mechanics',
     subject: 'physics',
     keywords: ['rydberg equation calculator', 'Rydberg formula calculator', 'calculate wavelength from quantum levels', 'rydberg constant calculator', 'spectral line calculator', 'photon energy calculator', 'frequency calculator', 'hydrogen spectrum calculator', 'balmer series calculator', 'rydberg wavelength calculator', 'atomic spectra calculator', 'physics calculator rydberg', 'rydberg equation online', 'rydberg constant', 'calculate photon energy eV', 'spectroscopy calculator', 'hydrogen-like ions calculator', 'quantum transition calculator', 'rydberg formula wavelengths', 'spectral line wavelengths'],
