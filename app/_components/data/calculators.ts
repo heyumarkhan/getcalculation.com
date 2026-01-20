@@ -85,6 +85,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'piston-speed-calculator',
+    name: 'Piston Speed Calculator',
+    description: 'Calculate mean piston speed from RPM and stroke for engines.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['piston speed calculator', 'mean piston speed calculator', 'MPS calculator', 'piston speed formula', 'piston speed from RPM', 'calculate piston speed', 'engine stroke calculator', 'piston speed m/s', 'mean piston speed formula', 'engine piston speed calculator', 'Vs = 2NL/60000', 'piston speed engine', 'automotive engine calculator', 'mechanical engineering calculator', 'engine design calculator', 'piston displacement calculator', 'stroke length calculator', 'engine mechanics calculator', 'piston motion calculator', 'engine kinematics calculator', 'automotive mechanics calculator', 'motor speed calculator', 'machinery speed calculator', 'mechanical dynamics calculator', 'engine performance calculator', 'piston velocity calculator'],
+    href: '/physics/piston-speed-calculator',
+    embedHref: '/embed/physics/piston-speed-calculator',
+    icon: '💪',
+    color: 'purple'
+  },
+  {
     id: 'standard-cubic-feet-per-minute-calculator',
     name: 'Standard Cubic Feet per minute Calculator',
     description: 'Convert between SCFM and ACFM using pressure and temperature corrections for compressed air systems.',
@@ -274,6 +286,18 @@ export const calculators: Calculator[] = [
     href: '/physics/sound-wavelength-calculator',
     embedHref: '/embed/physics/sound-wavelength-calculator',
     icon: '🔉',
+    color: 'purple'
+  },
+  {
+    id: 'wavenumber-calculator',
+    name: 'Wavenumber Calculator',
+    description: 'Calculate wavenumber from wavelength, frequency, or energy for spectroscopy and optics.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['wavenumber calculator', 'calculate wavenumber', 'wavenumber formula', 'cm-1 calculator', 'spectroscopic wavenumber', 'wavenumber from wavelength', 'wavenumber from frequency', 'wavenumber from energy', 'reciprocal wavelength', 'wave number physics', 'IR spectroscopy wavenumber', 'Raman wavenumber', 'spectroscopy calculator', 'wavenumber conversion', 'wavenumber units', 'cm⁻¹ calculator', 'per centimeter', 'spatial frequency', 'wavenumber to wavelength', 'wavelength to wavenumber', 'frequency to wavenumber', 'energy to wavenumber', 'photon wavenumber', 'molecular spectroscopy calculator'],
+    href: '/physics/wavenumber-calculator',
+    embedHref: '/embed/physics/wavenumber-calculator',
+    icon: '〰️',
     color: 'purple'
   },
   {
@@ -795,6 +819,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'kva-calculator',
+    name: 'kVA Calculator',
+    description: 'Calculate kilovolt-amperes and apparent power for AC electrical systems.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['kVA calculator', 'kilovolt ampere calculator', 'apparent power calculator', 'kVA formula', 'calculate kVA', 'kVA from voltage current', 'three phase kVA', 'single phase kVA', 'AC power calculator', 'transformer sizing calculator', 'generator capacity calculator', 'electrical power calculations', 'kVA kW conversion', 'power factor kVA', 'apparent power kVA', 'electrical engineering calculator', '√3 kVA formula', 'industrial electrical calculator', 'AC circuit analysis', 'power distribution calculator'],
+    href: '/physics/kva-calculator',
+    embedHref: '/embed/physics/kva-calculator',
+    icon: '🔌',
+    color: 'purple'
+  },
+  {
     id: 'contact-lens-vertex-calculator',
     name: 'Contact Lens Vertex Calculator',
     description: 'Calculate contact lens power from spectacle power using vertex distance formula for optometry.',
@@ -816,6 +852,30 @@ export const calculators: Calculator[] = [
     href: '/physics/speed-of-light-calculator',
     embedHref: '/embed/physics/speed-of-light-calculator',
     icon: '📡',
+    color: 'purple'
+  },
+  {
+    id: 'snells-law-calculator',
+    name: 'Snell\'s Law Calculator',
+    description: 'Calculate refraction angle and refractive index using Snell\'s Law for light optics.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['snells law calculator', 'snells law formula', 'refraction calculator', 'light refraction', 'refractive index calculator', 'critical angle calculator', 'total internal reflection', 'Snell law n1 sin theta1', 'light bending calculator', 'optical refraction calculator', 'critical angle formula', 'Snell\'s law physics', 'light refraction optics', 'refractive index formula', 'Snell law refraction', 'angle of refraction', 'angle of incidence', 'optical medium calculator', 'water glass diamond refraction', 'optics physics calculator'],
+    href: '/physics/snells-law-calculator',
+    embedHref: '/embed/physics/snells-law-calculator',
+    icon: '🔬',
+    color: 'purple'
+  },
+  {
+    id: 'de-broglie-wavelength-calculator',
+    name: 'De Broglie Wavelength Calculator',
+    description: 'Calculate De Broglie wavelength from momentum or mass and velocity.',
+    category: 'Quantum Mechanics',
+    subject: 'physics',
+    keywords: ['de broglie wavelength calculator', 'de broglie wavelength formula', 'quantum mechanics calculator', 'particle wavelength calculator', 'momentum wavelength calculator', 'Planck constant calculator', 'electron wavelength calculator', 'particle wave duality', 'de broglie equation', 'quantum physics calculator', 'h/p calculator', 'particle momentum calculator', 'wave particle duality calculator', 'electron diffraction calculator', 'quantum wave calculator', 'Planck constant h calculator', 'electron microscope calculator', 'particle physics calculator', 'quantum mechanics wavelength', 'atomic physics calculator'],
+    href: '/physics/de-broglie-wavelength-calculator',
+    embedHref: '/embed/physics/de-broglie-wavelength-calculator',
+    icon: '⚛️',
     color: 'purple'
   },
   {
@@ -877,6 +937,30 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/specific-gravity-calculator',
     icon: '🧮',
     color: 'blue'
+  },
+  {
+    id: 'water-heating-calculator',
+    name: 'Water Heating Calculator',
+    description: 'Compute water heating energy, time, temperature rise, and mass with conversions.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['water heating calculator', 'energy to heat water', 'water heating time', 'kWh to heat water', 'BTU to heat water', 'hot water energy', 'water heater sizing', 'water heating efficiency', 'water heating ΔT', 'Q = m c ΔT water', 'water heating formula', 'heater power to time', 'heat water calculation', 'water heating cost', 'temperature rise calculator', 'specific heat of water', 'mass of water to heat', 'thermal energy calculator', 'physics water heating', 'engineering water heating'],
+    href: '/physics/water-heating-calculator',
+    embedHref: '/embed/physics/water-heating-calculator',
+    icon: '♨️',
+    color: 'purple'
+  },
+  {
+    id: 'density-of-cylinder-calculator',
+    name: 'Density of a Cylinder Calculator',
+    description: 'Calculate cylinder density from mass and volume or find mass.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['density of cylinder calculator', 'cylinder density calculator', 'density calculator cylinder', 'calculate cylinder density', 'cylinder mass calculator', 'cylinder volume calculator', 'material density calculator', 'density mass volume', 'cylinder properties calculator', 'metal cylinder density', 'dense material calculator', 'cylinder weight calculator', 'pipe density calculator', 'rod density calculator', 'structural cylinder calculator', 'material identification calculator', 'density formula calculator', 'physics cylinder calculator', 'engineering density calculator', 'material properties cylinder'],
+    href: '/physics/density-of-cylinder-calculator',
+    embedHref: '/embed/physics/density-of-cylinder-calculator',
+    icon: '🔩',
+    color: 'purple'
   },
   {
     id: 'buoyancy-calculator',
@@ -963,6 +1047,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'electric-motor-torque-calculator',
+    name: 'Electric Motor Torque Calculator',
+    description: 'Compute electric motor torque from power, speed, current, or force with unit conversions.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['electric motor torque calculator', 'motor torque from power', 'shaft torque calculator', 'torque from horsepower', 'torque from kilowatts', 'rpm to torque calculator', 'motor torque constant', 'Kt torque calculator', 'torque from current', 'electric motor efficiency torque', 'shaft power to torque', 'lb ft torque calculator', 'Nm torque calculator', 'motor speed torque', 'electric drive torque', 'industrial motor torque', 'servo motor torque', 'dc motor torque', 'ac motor torque', 'engineering torque calculator', 'physics torque calculator'],
+    href: '/physics/electric-motor-torque-calculator',
+    embedHref: '/embed/physics/electric-motor-torque-calculator',
+    icon: '🖤',
+    color: 'purple'
+  },
+  {
     id: 'angular-velocity-calculator',
     name: 'Angular Velocity Calculator',
     description: 'Calculate angular velocity using angle/time, frequency, or linear velocity/radius for rotational motion physics.',
@@ -972,6 +1068,18 @@ export const calculators: Calculator[] = [
     href: '/physics/angular-velocity-calculator',
     embedHref: '/embed/physics/angular-velocity-calculator',
     icon: '📦',
+    color: 'purple'
+  },
+  {
+    id: 'angular-acceleration-calculator',
+    name: 'Angular Acceleration Calculator',
+    description: 'Calculate angular acceleration from velocity change or torque and moment of inertia.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['angular acceleration calculator', 'calculate angular acceleration', 'angular acceleration formula', 'alpha calculator', 'rotational acceleration', 'α = Δω/t', 'α = τ/I', 'rad/s² calculator', 'deg/s² calculator', 'rpm/s calculator', 'torque to angular acceleration', 'moment of inertia calculator', 'rotational dynamics', 'angular kinematics', 'angular velocity change', 'rotational mechanics', 'physics calculator', 'angular motion', 'angular acceleration units', 'rotational acceleration physics'],
+    href: '/physics/angular-acceleration-calculator',
+    embedHref: '/embed/physics/angular-acceleration-calculator',
+    icon: '🔄',
     color: 'purple'
   },
   {
@@ -1190,6 +1298,18 @@ export const calculators: Calculator[] = [
     href: '/physics/dc-wire-size-calculator',
     embedHref: '/embed/physics/dc-wire-size-calculator',
     icon: '📺',
+    color: 'purple'
+  },
+  {
+    id: 'breaker-size-calculator',
+    name: 'Breaker Size Calculator',
+    description: 'Calculate circuit breaker size from load current with NEC derating factors.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['breaker size calculator', 'circuit breaker calculator', 'breaker sizing calculator', 'calculate breaker size', 'breaker size from current', 'circuit breaker sizing', 'wire gauge breaker calculator', 'NEC breaker sizing', 'ANSI breaker size', 'fault current calculator', 'breaker rating calculator', 'amperage breaker calculator', 'electrical breaker calculator', 'breaker amp calculator', 'overcurrent protection calculator', 'breaker derating factor', 'continuous load breaker', 'motor breaker calculator', 'electrical safety calculator', 'breaker interrupting capacity'],
+    href: '/physics/breaker-size-calculator',
+    embedHref: '/embed/physics/breaker-size-calculator',
+    icon: '🛡️',
     color: 'purple'
   },
   {
