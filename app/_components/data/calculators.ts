@@ -1845,6 +1845,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'relativistic-kinetic-energy-calculator',
+    name: 'Relativistic Kinetic Energy Calculator',
+    description: 'Calculate relativistic kinetic energy at high speeds using special relativity formulas.',
+    category: 'Relativity',
+    subject: 'physics',
+    keywords: ['relativistic kinetic energy calculator', 'special relativity energy calculator', 'relativistic energy calculator', 'kinetic energy special relativity', 'lorentz factor calculator', 'gamma factor calculator', 'relativistic velocity calculator', 'rest mass energy calculator', 'E = mc² calculator', 'relativistic kinetic energy formula', 'relativistic mechanics calculator', 'special relativity calculator', 'relativistic motion energy', 'high velocity kinetic energy', 'speed of light relativity', 'relativistic particle energy', 'physics relativity calculator', 'einstein energy formula', 'relativistic physics calculator', 'particle acceleration energy'],
+    href: '/physics/relativistic-kinetic-energy-calculator',
+    embedHref: '/embed/physics/relativistic-kinetic-energy-calculator',
+    icon: '💥',
+    color: 'purple'
+  },
+  {
     id: 'potential-energy-calculator',
     name: 'Potential Energy Calculator',
     description: 'Calculate potential energy, mass, height, or gravitational acceleration using PE = m × g × h.',
@@ -1854,6 +1866,54 @@ export const calculators: Calculator[] = [
     href: '/physics/potential-energy-calculator',
     embedHref: '/embed/physics/potential-energy-calculator',
     icon: '⚡',
+    color: 'purple'
+  },
+  {
+    id: 'sun-angle-calculator',
+    name: 'Sun Angle Calculator',
+    description: 'Calculate solar altitude, azimuth, sunrise, sunset, and declination for any location.',
+    category: 'Astronomy',
+    subject: 'physics',
+    keywords: ['sun angle calculator', 'solar altitude calculator', 'solar azimuth calculator', 'sunrise sunset calculator', 'solar noon calculator', 'day length calculator', 'solar declination calculator', 'solar position calculator', 'sun position calculator', 'solar angles', 'sunrise time calculator', 'sunset time calculator', 'solar elevation angle', 'solar azimuth angle', 'sun path calculator', 'solar energy calculation', 'astronomy sun position', 'solar radiation calculator', 'daylight hours calculator', 'location based sun angle'],
+    href: '/physics/sun-angle-calculator',
+    embedHref: '/embed/physics/sun-angle-calculator',
+    icon: '☀️',
+    color: 'purple'
+  },
+  {
+    id: 'gravitational-time-dilation-calculator',
+    name: 'Gravitational Time Dilation Calculator',
+    description: 'Calculate time dilation effects near massive objects using general relativity and Schwarzschild metric.',
+    category: 'Relativity',
+    subject: 'physics',
+    keywords: ['gravitational time dilation calculator', 'time dilation gravity', 'general relativity calculator', 'schwarzschild metric calculator', 'escape velocity time dilation', 'gravitational potential time', 'clock rate gravity calculator', 'time dilation black hole', 'earth altitude time calculator', 'GPS time correction', 'time runs slower gravity', 'relativity time calculator', 'gravitational time shift', 'schwarzschild time dilation', 'relativistic time effects', 'escape velocity relativity', 'gravity slows time', 'physics time dilation', 'einstein general relativity', 'quantum gravity time'],
+    href: '/physics/gravitational-time-dilation-calculator',
+    embedHref: '/embed/physics/gravitational-time-dilation-calculator',
+    icon: '⌛',
+    color: 'purple'
+  },
+  {
+    id: 'fulcrum-calculator',
+    name: 'Fulcrum Calculator',
+    description: 'Calculate lever forces, distances, mechanical advantage, and torque balance using fulcrum position.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['fulcrum calculator', 'lever calculator', 'mechanical advantage calculator', 'torque balance calculator', 'lever arm calculator', 'force distance calculator', 'simple machine calculator', 'lever mechanics calculator', 'fulcrum position calculator', 'effort load calculator', 'class 1 lever', 'class 2 lever', 'class 3 lever', 'torque equilibrium', 'lever force calculator', 'mechanical advantage lever', 'physics lever', 'simple machines physics', 'lever principle', 'balance point calculator'],
+    href: '/physics/fulcrum-calculator',
+    embedHref: '/embed/physics/fulcrum-calculator',
+    icon: '⚒️',
+    color: 'purple'
+  },
+  {
+    id: 'ground-speed-calculator',
+    name: 'Ground Speed Calculator',
+    description: 'Calculate ground speed, wind correction, crosswind components, and flight time with wind.',
+    category: 'Physics',
+    subject: 'physics',
+    keywords: ['ground speed calculator', 'groundspeed calculator', 'wind correction angle', 'crosswind calculator', 'headwind tailwind calculator', 'flight time calculator', 'aviation speed calculator', 'true airspeed calculator', 'ground track calculator', 'wind drift calculator', 'required heading calculator', 'pilot crosswind', 'runway crosswind', 'airspeed wind calculator', 'course correction calculator', 'navigation wind calculator', 'aviation wind components', 'time distance calculator', 'flight planning calculator', 'pilot ground speed'],
+    href: '/physics/ground-speed-calculator',
+    embedHref: '/embed/physics/ground-speed-calculator',
+    icon: '🛫',
     color: 'purple'
   },
   {
