@@ -1917,6 +1917,42 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'rlc-impedance-calculator',
+    name: 'RLC Impedance Calculator',
+    description: 'Calculate series RLC impedance, resonance, phase angle, and current with reactance and Q.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['rlc impedance calculator', 'series rlc calculator', 'rlc reactance', 'rlc resonance', 'rlc phase angle', 'reactance calculator', 'quality factor calculator', 'bandwidth calculator', 'inductive reactance', 'capacitive reactance', 'resonant frequency calculator', 'tune capacitance', 'complex impedance calculator', 'ac circuit calculator', 'electronics calculator', 'power factor phase', 'rlc current calculator', 'voltage drop rlc', 'physics electronics', 'impedance magnitude'],
+    href: '/physics/rlc-impedance-calculator',
+    embedHref: '/embed/physics/rlc-impedance-calculator',
+    icon: '🎛️',
+    color: 'purple'
+  },
+  {
+    id: 'rlc-circuit-calculator',
+    name: 'RLC Circuit Calculator',
+    description: 'Analyze RLC circuits for impedance, resonance, phase, power factor, and current.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['rlc circuit calculator', 'series rlc calculator', 'parallel rlc calculator', 'rlc impedance calculator', 'rlc resonance calculator', 'rlc reactance calculator', 'rlc phase angle calculator', 'power factor calculator', 'bandwidth calculator', 'quality factor calculator', 'tune rlc circuit', 'rlc current calculator', 'rlc voltage drop', 'ac circuit calculator', 'complex impedance calculator', 'electrical engineering calculator', 'electronics calculator', 'physics electromagnetism', 'series parallel rlc', 'impedance magnitude calculator'],
+    href: '/physics/rlc-circuit-calculator',
+    embedHref: '/embed/physics/rlc-circuit-calculator',
+    icon: '📶',
+    color: 'purple'
+  },
+  {
+    id: 'shear-stress-calculator',
+    name: 'Shear Stress Calculator',
+    description: 'Calculate shear stress from force, torque, beam loading, and principal stresses.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['shear stress calculator', 'shear stress formula', 'torsional shear stress', 'beam shear stress', 'maximum shear stress', 'shear force calculator', 'principal stress shear', 'shaft shear stress', 'mohr circle shear', 'shear stress beams', 'shear stress torque', 'structural shear calculator', 'mechanics shear stress', 'engineering shear stress', 'material shear stress', 'shear strain calculator', 'polar moment shear', 'rectangular beam shear', 'physics shear', 'structural mechanics'],
+    href: '/physics/shear-stress-calculator',
+    embedHref: '/embed/physics/shear-stress-calculator',
+    icon: '✂️',
+    color: 'purple'
+  },
+  {
     id: 'exponential-function',
     name: 'Exponential Function Calculator',
     description: 'Calculate exponential functions, growth, decay, and compound interest with instant results for exponential equations.',
@@ -2872,6 +2908,78 @@ export const calculators: Calculator[] = [
     href: '/physics/youngs-modulus-calculator',
     embedHref: '/embed/physics/youngs-modulus-calculator',
     icon: '⚙️',
+    color: 'purple'
+  },
+  {
+    id: 'combined-gas-law-calculator',
+    name: 'Combined Gas Law Calculator',
+    description: 'Calculate gas pressure, volume, temperature using combined and ideal gas laws.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['combined gas law calculator', 'gas law calculator', 'ideal gas law calculator', 'pressure volume temperature calculator', 'PVT calculator', 'gas state calculator', 'thermodynamics calculator', 'boyle charles law calculator', 'gas compression calculator', 'gas expansion calculator', 'pv=nrt calculator', 'gas equation calculator', 'physics gas calculator', 'chemistry gas law', 'pressure temperature calculator', 'volume pressure calculator', 'combined gas equation', 'gas properties calculator', 'thermodynamic state calculator', 'ideal gas state calculator'],
+    href: '/physics/combined-gas-law-calculator',
+    embedHref: '/embed/physics/combined-gas-law-calculator',
+    icon: '🧪',
+    color: 'purple'
+  },
+  {
+    id: 'kva-to-amperage-calculator',
+    name: 'kVA to Amperage Calculator',
+    description: 'Convert apparent power kVA to current amperes for AC and DC systems.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['kva to amperage calculator', 'kva to amps calculator', 'kva to current calculator', 'apparent power to current calculator', 'kva calculator', 'amperage from kva', 'single phase kva to amps', 'three phase kva to amps', 'electrical power calculator', 'voltage current calculator', 'kva conversion calculator', 'electrical current calculator', 'power to amperage calculator', 'kva to a calculator', 'calculate amps from kva', 'kva amperage conversion', 'electrical load calculator', 'transformer sizing calculator', 'circuit amperage calculator', 'ac power calculator', 'kva amp calculator', 'electrical engineering calculator'],
+    href: '/physics/kva-to-amperage-calculator',
+    embedHref: '/embed/physics/kva-to-amperage-calculator',
+    icon: '🔋',
+    color: 'purple'
+  },
+  {
+    id: 'friction-coefficient-calculator',
+    name: 'Friction Coefficient Calculator',
+    description: 'Calculate coefficient of friction, friction force, and normal force for surfaces.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['friction coefficient calculator', 'coefficient of friction calculator', 'friction calculator', 'static friction coefficient', 'kinetic friction coefficient', 'friction force calculator', 'normal force calculator', 'mu friction calculator', 'coefficient of static friction calculator', 'coefficient of kinetic friction calculator', 'friction physics calculator', 'surface friction calculator', 'sliding friction calculator', 'rolling friction calculator', 'friction equation calculator', 'calculate friction coefficient', 'friction factor calculator', 'inclined plane friction calculator', 'mechanics friction calculator', 'engineering friction calculator', 'tribology calculator'],
+    href: '/physics/friction-coefficient-calculator',
+    embedHref: '/embed/physics/friction-coefficient-calculator',
+    icon: '🛠️',
+    color: 'purple'
+  },
+  {
+    id: 'trajectory-calculator',
+    name: 'Trajectory Calculator',
+    description: 'Calculate projectile motion range, height, time, velocity, and launch angle.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['trajectory calculator', 'projectile motion calculator', 'projectile calculator', 'range calculator physics', 'projectile range calculator', 'time of flight calculator', 'maximum height projectile', 'landing velocity calculator', 'launch angle calculator', 'parabolic motion calculator', 'ballistic trajectory calculator', 'projectile physics calculator', 'kinematics calculator', 'projectile motion physics', 'trajectory equation calculator', 'ballistics calculator', 'throw distance calculator', 'projectile path calculator', 'motion calculator physics', 'horizontal projectile motion', 'vertical projectile motion'],
+    href: '/physics/trajectory-calculator',
+    embedHref: '/embed/physics/trajectory-calculator',
+    icon: '🎢',
+    color: 'purple'
+  },
+  {
+    id: 'power-dissipation-calculator',
+    name: 'Power Dissipation Calculator',
+    description: 'Calculate power dissipation in resistors, capacitors, and electrical components.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['power dissipation calculator', 'power dissipation formula', 'resistor power calculator', 'heat dissipation calculator', 'power loss calculator', 'resistor wattage calculator', 'electrical power dissipation', 'power consumption calculator', 'i2r loss calculator', 'joule heating calculator', 'thermal power calculator', 'resistor heat calculator', 'power rating calculator', 'capacitor esr power loss', 'component power calculator', 'circuit power dissipation', 'ohmic heating calculator', 'electrical heat loss', 'power dissipation resistance', 'watt dissipation calculator', 'energy dissipation calculator'],
+    href: '/physics/power-dissipation-calculator',
+    embedHref: '/embed/physics/power-dissipation-calculator',
+    icon: '💫',
+    color: 'purple'
+  },
+  {
+    id: 'hoop-stress-calculator',
+    name: 'Hoop Stress Calculator',
+    description: 'Calculate hoop stress in pressure vessels and thin-wall cylinders.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['hoop stress calculator', 'pressure vessel calculator', 'hoop stress formula', 'tangential stress calculator', 'circumferential stress calculator', 'pipe stress calculator', 'pressure vessel design calculator', 'wall thickness calculator', 'cylindrical pressure vessel', 'thin wall pressure vessel', 'thick wall pressure vessel', 'vessel stress analysis', 'maximum pressure calculator', 'pressure vessel thickness', 'cylinder stress calculator', 'longitudinal stress calculator', 'radial stress calculator', 'vessel design calculator', 'piping stress calculator', 'pressure container calculator'],
+    href: '/physics/hoop-stress-calculator',
+    embedHref: '/embed/physics/hoop-stress-calculator',
+    icon: '🔧',
     color: 'purple'
   }
 ];
