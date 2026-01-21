@@ -82,6 +82,8 @@ export function generateCalculatorBreadcrumb(calculatorName: string, category?: 
       'Fluid Mechanics': { subject: 'Physics', href: '/physics' },
       'Electronics': { subject: 'Physics', href: '/physics' },
       'Relativity': { subject: 'Physics', href: '/physics' },
+      'Physics': { subject: 'Physics', href: '/physics' },
+      'Astronomy': { subject: 'Physics', href: '/physics' },
       
       // Future Categories - easily add new subjects here
       'Chemistry': { subject: 'Chemistry', href: '/chemistry' },
