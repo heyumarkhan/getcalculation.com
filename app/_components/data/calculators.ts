@@ -193,6 +193,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'cloud-base-calculator',
+    name: 'Cloud Base Calculator',
+    description: 'Estimate cloud base height from temperature, dew point, humidity, or target base.',
+    category: 'Physics',
+    subject: 'physics',
+    keywords: ['cloud base calculator', 'cloud base height', 'convective condensation level', 'CCL calculator', 'cloud ceiling calculator', 'temperature dew point spread', 'humidity to cloud base', 'aviation cloud base', 'lifting condensation level', 'fog formation height', 'meteorology calculator', 'cloud height estimation'],
+    href: '/physics/cloud-base-calculator',
+    embedHref: '/embed/physics/cloud-base-calculator',
+    icon: '☁️',
+    color: '#820ECC'
+  },
+  {
     id: 'series-resistor-calculator',
     name: 'Series Resistor Calculator',
     description: 'Calculate total resistance, voltage drop, and current in series circuits using R_total = ΣR.',
@@ -239,6 +251,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/rc-circuit-calculator',
     icon: '⭕',
     color: 'purple'
+  },
+  {
+    id: 'rc-filter-calculator',
+    name: 'RC Filter Calculator',
+    description: 'Calculate RC filter cutoff frequency, impedance, and time constant instantly.',
+    category: 'Electronics',
+    subject: 'physics',
+    keywords: ['rc filter calculator', 'cutoff frequency calculator', 'RC low pass filter', 'capacitive reactance calculator', 'rc time constant calculator', 'RC circuit calculator', 'filter design calculator', 'corner frequency calculator', 'RC filter frequency', 'impedance calculator', 'first order filter calculator', 'fc = 1/(2πRC)', 'low pass filter RC', 'electronics calculator', 'signal filtering calculator', 'RC filter formula', 'tau = RC', 'half power frequency', 'break frequency calculator', 'filter rolloff', 'signal processing calculator', 'RC network calculator', 'rc filter impedance', 'rc filter design'],
+    href: '/physics/rc-filter-calculator',
+    embedHref: '/embed/physics/rc-filter-calculator',
+    icon: '🎚️',
+    color: '#820ECC'
   },
   {
     id: 'stress-calculator',
@@ -2980,6 +3004,114 @@ export const calculators: Calculator[] = [
     href: '/physics/hoop-stress-calculator',
     embedHref: '/embed/physics/hoop-stress-calculator',
     icon: '🔧',
+    color: 'purple'
+  },
+  {
+    id: 'momentum-calculator',
+    name: 'Momentum Calculator',
+    description: 'Calculate momentum, impulse, and collision dynamics with flexible units.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['momentum calculator', 'linear momentum calculator', 'impulse momentum calculator', 'collision calculator', 'momentum physics calculator', 'mass times velocity calculator', 'momentum change calculator', 'conservation of momentum calculator', 'kinetic energy calculator', 'impulse force time calculator', 'elastic collision calculator', 'inelastic collision calculator', 'momentum conservation calculator', 'physics momentum calculator', 'p equals mv calculator', 'momentum velocity calculator', 'momentum force calculator', 'collision momentum calculator', 'momentum analysis calculator', 'physics kinematics calculator'],
+    href: '/physics/momentum-calculator',
+    embedHref: '/embed/physics/momentum-calculator',
+    icon: '🆔',
+    color: 'purple'
+  },
+  {
+    id: 'acceleration-force-mass-calculator',
+    name: 'Acceleration Calculator',
+    description: 'Calculate acceleration from force and mass using Newton\'s Second Law.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['acceleration calculator', 'acceleration using force and mass', 'newtons second law calculator', 'force mass acceleration calculator', 'acceleration from force calculator', 'acceleration kinematics calculator', 'velocity acceleration calculator', 'physics acceleration calculator', 'f equals ma calculator', 'a equals f divided by m', 'net force acceleration calculator', 'kinematic equations calculator', 'velocity time acceleration calculator', 'distance velocity acceleration calculator', 'acceleration formula calculator', 'acceleration physics calculator', 'free fall acceleration calculator', 'motion acceleration calculator', 'constant acceleration calculator', 'acceleration magnitude calculator'],
+    href: '/physics/acceleration-force-mass-calculator',
+    embedHref: '/embed/physics/acceleration-force-mass-calculator',
+    icon: '🎓',
+    color: 'purple'
+  },
+  {
+    id: 'simple-pendulum-calculator',
+    name: 'Simple Pendulum Calculator',
+    description: 'Calculate pendulum period, frequency, length, or gravity.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['simple pendulum calculator', 'pendulum period calculator', 'pendulum frequency calculator', 'pendulum length calculator', 'pendulum gravity calculator', 'period of pendulum calculator', 'oscillation period calculator', 'simple harmonic motion calculator', 'pendulum formula calculator', 'gravity measurement calculator', 'pendulum physics calculator', 'swinging pendulum calculator', 'pendulum motion calculator', 'oscillation frequency calculator', 'pendulum time calculator', 'pendulum swing calculator', 'pendulum dynamics calculator', 'pendulum analysis calculator', 'simple harmonic oscillator', 'pendulum mechanics calculator'],
+    href: '/physics/simple-pendulum-calculator',
+    embedHref: '/embed/physics/simple-pendulum-calculator',
+    icon: '⏰',
+    color: 'purple'
+  },
+  {
+    id: 'capacitor-energy-calculator',
+    name: 'Capacitor Energy Calculator',
+    description: 'Calculate energy stored in capacitors from capacitance, voltage, and charge.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['capacitor energy calculator', 'half cv squared', 'electrostatic energy', 'stored energy calculator', 'capacitor charge', 'energy storage', 'capacitance calculator', 'voltage charge', 'electrical energy storage', 'capacitor discharge', 'joules calculator', 'capacitor power', 'dielectric energy', 'electric field energy', 'supercapacitor energy', 'energy density', 'capacitor discharge time', 'RC time constant', 'capacitor voltage', 'charge storage', 'capacitive energy', 'energy calculation'],
+    href: '/physics/capacitor-energy-calculator',
+    embedHref: '/embed/physics/capacitor-energy-calculator',
+    icon: '💾',
+    color: 'purple'
+  },
+  {
+    id: 'inductive-reactance-calculator',
+    name: 'Inductive Reactance Calculator',
+    description: 'Calculate inductive reactance, inductance, frequency, and RL circuit impedance with phase.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['inductive reactance calculator', 'xl calculator', 'inductance calculator', 'ac circuit calculator', 'impedance calculator', 'phase angle calculator', 'power factor calculator', 'rl circuit', 'inductor reactance', 'angular frequency', 'omega calculator', 'ac frequency', 'henry calculator', 'ohm calculator', 'reactance formula', 'magnetic field', 'coil reactance', 'transformer reactance', 'motor reactance', 'ac analysis', 'electrical engineering', 'circuit impedance', 'lagging power factor', '2 pi f l'],
+    href: '/physics/inductive-reactance-calculator',
+    embedHref: '/embed/physics/inductive-reactance-calculator',
+    icon: '🧲',
+    color: 'purple'
+  },
+  {
+    id: 'index-of-refraction-calculator',
+    name: 'Index of Refraction Calculator',
+    description: 'Calculate index of refraction, Snell\'s law angles, critical angles, and light speed.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['index of refraction calculator', 'refractive index calculator', 'snells law calculator', 'critical angle calculator', 'refraction calculator', 'light bending calculator', 'optical density', 'n equals c over v', 'total internal reflection', 'angle of refraction', 'incident angle', 'refracted ray', 'optical medium', 'light speed calculator', 'physics optics', 'prism calculator', 'lens refraction', 'optical constant', 'brewster angle', 'dispersion calculator', 'wavelength refraction', 'glass index', 'water refraction', 'diamond refraction'],
+    href: '/physics/index-of-refraction-calculator',
+    embedHref: '/embed/physics/index-of-refraction-calculator',
+    icon: '🌈',
+    color: 'purple'
+  },
+  {
+    id: 'angular-momentum-calculator',
+    name: 'Angular Momentum Calculator',
+    description: 'Calculate angular momentum, moment of inertia, torque, and conservation principles.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['angular momentum calculator', 'moment of inertia calculator', 'rotational motion calculator', 'conservation of angular momentum', 'torque calculator', 'angular velocity calculator', 'L equals I omega', 'L equals mvr', 'rotational dynamics', 'angular impulse calculator', 'spinning motion calculator', 'gyroscope calculator', 'circular motion physics', 'rotational kinetic energy', 'angular momentum formula', 'physics calculator', 'moment of inertia units', 'rad per s to rpm', 'rotational mechanics', 'angular momentum conservation', 'torque and angular momentum', 'ice skater physics', 'planetary orbit calculator', 'quantum angular momentum'],
+    href: '/physics/angular-momentum-calculator',
+    embedHref: '/embed/physics/angular-momentum-calculator',
+    icon: '🔃',
+    color: 'purple'
+  },
+  {
+    id: 'voltage-divider-calculator',
+    name: 'Voltage Divider Calculator',
+    description: 'Calculate voltage divider output, resistor values, and power dissipation for circuits.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['voltage divider calculator', 'resistor divider calculator', 'voltage divider formula', 'vout calculator', 'voltage divider circuit', 'resistive divider', 'voltage divider design', 'r1 r2 calculator', 'voltage division', 'voltage reducer calculator', 'potential divider calculator', 'voltage splitter', 'resistor network calculator', 'voltage divider power', 'voltage divider equation', 'voltage divider rule', 'electronics calculator', 'circuit design calculator', 'voltage scaling', 'voltage divider bias', 'adc voltage divider', 'voltage reference divider', 'sensor voltage divider', 'battery voltage divider'],
+    href: '/physics/voltage-divider-calculator',
+    embedHref: '/embed/physics/voltage-divider-calculator',
+    icon: '📉',
+    color: 'purple'
+  },
+  {
+    id: 'angular-displacement-calculator',
+    name: 'Angular Displacement Calculator',
+    description: 'Calculate angular displacement, rotation angles, revolutions, and arc length for rotational motion.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['angular displacement calculator', 'rotational displacement calculator', 'theta calculator', 'angular motion calculator', 'rotation angle calculator', 'angular distance calculator', 'theta equals omega t', 'angular kinematics calculator', 'arc length calculator rotation', 'revolutions to radians', 'rotational motion physics', 'angular position calculator', 'circular motion displacement', 'rotation calculator', 'angular displacement formula', 'omega t calculator', 'rotational kinematics', 'angular velocity displacement', 'turning angle calculator', 'rotation physics calculator', 'angular acceleration displacement', 'degrees to radians displacement', 'rotational distance', 'circular path calculator'],
+    href: '/physics/angular-displacement-calculator',
+    embedHref: '/embed/physics/angular-displacement-calculator',
+    icon: '🔁',
     color: 'purple'
   }
 ];
