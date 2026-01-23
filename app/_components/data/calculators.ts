@@ -13,6 +13,18 @@
 
 export const calculators: Calculator[] = [
   {
+    id: '220-volt-wire-size-calculator',
+    name: '220 Volt Wire Size Calculator',
+    description: 'Calculate wire gauge for 220V AC residential and commercial electrical circuits.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['220 volt wire size calculator', '220V wire gauge calculator', '220V electrical wire sizing', 'AC wire size 220 volts', 'residential 220V wire calculator', 'commercial 220V wire gauge', 'single phase 220V wire size', 'three phase 220V wire gauge', 'copper aluminum wire 220V', '220V AWG calculator', 'electrical wire sizing 220V', '220V voltage drop calculator', 'amperage wire size 220V', 'circuit breaker wire size 220V', '220V current capacity calculator', 'electrical safety wire sizing', 'home electrical wiring 220V', 'industrial power 220V cable', '220V conductor sizing', '220V electrical system calculator'],
+    href: '/physics/220-volt-wire-size-calculator',
+    embedHref: '/embed/physics/220-volt-wire-size-calculator',
+    icon: '🔦',
+    color: 'orange'
+  },
+  {
     id: 'perimeter',
     name: 'Perimeter Calculator',
     description: 'Calculate the perimeter of rectangles, squares, and other polygons',
@@ -274,6 +286,42 @@ export const calculators: Calculator[] = [
     href: '/physics/stress-calculator',
     embedHref: '/embed/physics/stress-calculator',
     icon: '⚡',
+    color: 'purple'
+  },
+  {
+    id: 'elongation-calculator',
+    name: 'Elongation Calculator',
+    description: 'Calculate elongation, strain, and percentage elongation with unit conversions.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['elongation calculator', 'strain calculator', 'material elongation', 'elongation formula', 'stress strain', 'calculate strain', 'percentage elongation', 'material properties', 'mechanical properties', 'deformation calculator', 'tensile elongation', 'elongation percent', 'strain epsilon', 'material testing calculator', 'tensile test calculator', 'ductility calculator', 'material ductility', 'elongation at break', 'elongation mechanics', 'elongation physics calculator'],
+    href: '/physics/elongation-calculator',
+    embedHref: '/embed/physics/elongation-calculator',
+    icon: '↗️',
+    color: 'purple'
+  },
+  {
+    id: 'api-gravity-calculator',
+    name: 'API Gravity Calculator',
+    description: 'Calculate API gravity, specific gravity, and petroleum oil density properties.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['API gravity calculator', 'calculate API gravity', 'specific gravity calculator', 'oil gravity', 'petroleum density', 'crude oil calculator', 'API degree', 'oil density calculator', 'petroleum properties', 'oil classification', 'oil gravity calculator', 'crude oil gravity', 'API oil calculator', 'petroleum API calculator', 'oil specific gravity', 'crude oil API', 'oil quality calculator', 'petroleum quality', 'oil type classification', 'refinery calculator'],
+    href: '/physics/api-gravity-calculator',
+    embedHref: '/embed/physics/api-gravity-calculator',
+    icon: '🛢️',
+    color: 'purple'
+  },
+  {
+    id: 'speed-of-sound-calculator',
+    name: 'Speed of Sound Calculator',
+    description: 'Calculate speed of sound, Mach number, frequency, and wavelength properties.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['speed of sound calculator', 'sound velocity calculator', 'mach number calculator', 'speed of sound air', 'sound frequency wavelength', 'acoustic calculator', 'speed of sound water', 'mach calculator', 'supersonic calculator', 'sound speed', 'sonic speed', 'sound wave calculator', 'frequency wavelength calculator', 'ultrasound calculator', 'wave speed calculator', 'sound propagation', 'acoustic speed calculator', 'temperature sound speed', 'medium sound velocity'],
+    href: '/physics/speed-of-sound-calculator',
+    embedHref: '/embed/physics/speed-of-sound-calculator',
+    icon: '🔊',
     color: 'purple'
   },
   {
@@ -795,6 +843,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'mass-moment-of-inertia-calculator',
+    name: 'Mass Moment of Inertia Calculator',
+    description: 'Calculate rotational inertia for spheres, disks, cylinders, rods, rectangles.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['Mass Moment of Inertia Calculator', 'moment of inertia calculator', 'rotational inertia', 'calculate moment of inertia', 'I = MR² calculator', 'sphere moment of inertia', 'disk moment of inertia', 'cylinder moment of inertia', 'rod moment of inertia', 'rectangular moment of inertia', 'parallel axis theorem', 'rotational dynamics calculator', 'moment of inertia formula', 'rotational physics calculator', 'angular momentum calculator', 'rotational kinematics', 'mechanics calculator', 'dynamics calculator', 'inertia physics', 'moment of inertia physics'],
+    href: '/physics/mass-moment-of-inertia-calculator',
+    embedHref: '/embed/physics/mass-moment-of-inertia-calculator',
+    icon: '🎡',
+    color: 'purple'
+  },
+  {
     id: 'g-force-calculator',
     name: 'G Force Calculator',
     description: 'Calculate G-force from acceleration or circular motion for aviation, motorsports, and engineering applications.',
@@ -987,6 +1047,30 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'cube-density-calculator',
+    name: 'Cube Density Calculator',
+    description: 'Calculate cube density, mass, or side length using density formula.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['cube density calculator', 'calculate cube density', 'cube mass calculator', 'cube side length calculator', 'density formula calculator', 'cube volume density', 'material density calculator', 'cubic density calculator', 'density mass volume cube', 'cube weight calculator', 'solid cube density', 'cube density formula', 'calculate mass from density', 'cube dimensions calculator', 'density of cube', 'cube mass from density', 'cubic material density', 'cube density physics', 'geometry density calculator'],
+    href: '/physics/cube-density-calculator',
+    embedHref: '/embed/physics/cube-density-calculator',
+    icon: '📦',
+    color: 'purple'
+  },
+  {
+    id: 'sphere-density-calculator',
+    name: 'Sphere Density Calculator',
+    description: 'Calculate sphere density, mass, radius, or volume with unit conversions.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['sphere density calculator', 'density of sphere', 'calculate sphere density', 'sphere mass calculator', 'sphere volume', 'sphere radius calculator', 'density formula', 'spherical objects', 'sphere properties calculator', 'material density sphere', 'sphere weight calculator', 'ball density calculator', 'spherical density', 'mass volume radius calculator', 'sphere physics calculator', 'engineering sphere density', 'density calculation sphere', 'material identification sphere', 'sphere size calculator'],
+    href: '/physics/sphere-density-calculator',
+    embedHref: '/embed/physics/sphere-density-calculator',
+    icon: '🧮',
+    color: 'purple'
+  },
+  {
     id: 'buoyancy-calculator',
     name: 'Buoyancy Calculator',
     description: 'Calculate buoyant force, fluid density, or displaced volume using Archimedes\' principle formula.',
@@ -1080,6 +1164,18 @@ export const calculators: Calculator[] = [
     href: '/physics/electric-motor-torque-calculator',
     embedHref: '/embed/physics/electric-motor-torque-calculator',
     icon: '🖤',
+    color: 'purple'
+  },
+  {
+    id: 'electric-field-calculator',
+    name: 'Electric Field Calculator',
+    description: 'Calculate electric field strength using point charge, force, or voltage methods.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['electric field calculator', 'calculate electric field', 'electric field strength', 'electric field formula', 'E = kQ/r²', 'coulomb law calculator', 'electric field intensity', 'electrostatics calculator', 'point charge electric field', 'electric field voltage', 'electric field force', 'field strength calculator', 'electromagnetic field calculator', 'electric field physics', 'coulomb constant calculator', 'electric field equation', 'calculate field strength', 'electrostatic field calculator', 'physics electric field'],
+    href: '/physics/electric-field-calculator',
+    embedHref: '/embed/physics/electric-field-calculator',
+    icon: '🔌',
     color: 'purple'
   },
   {
@@ -1191,6 +1287,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'bernoulli-equation-calculator',
+    name: 'Bernoulli Equation Calculator',
+    description: 'Calculate pressure, velocity, and height using Bernoulli equation for fluid dynamics.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['bernoulli equation calculator', 'bernoulli calculator', 'fluid dynamics calculator', 'bernoulli principle calculator', 'pressure velocity calculator', 'fluid flow calculator', 'bernoulli theorem calculator', 'calculate bernoulli equation', 'fluid mechanics calculator', 'bernoulli formula', 'pressure height calculator', 'velocity pressure calculator', 'fluid energy calculator', 'hydraulic calculator', 'aerodynamics calculator', 'pipe flow calculator', 'venturi calculator', 'fluid pressure calculator', 'bernoulli law calculator'],
+    href: '/physics/bernoulli-equation-calculator',
+    embedHref: '/embed/physics/bernoulli-equation-calculator',
+    icon: '🌊',
+    color: 'purple'
+  },
+  {
     id: 'charles-law-calculator',
     name: 'Charles\'s Law Calculator',
     description: 'Calculate volume or temperature using Charles\'s Law V1/T1 = V2/T2 for ideal gas calculations.',
@@ -1238,6 +1346,18 @@ export const calculators: Calculator[] = [
     href: '/physics/enthalpy-calculator',
     embedHref: '/embed/physics/enthalpy-calculator',
     icon: '🔥',
+    color: 'purple'
+  },
+  {
+    id: 'escape-velocity-calculator',
+    name: 'Escape Velocity Calculator',
+    description: 'Calculate escape velocity for planets and celestial bodies using physics formulas.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['Escape Velocity Calculator', 'escape velocity', 'calculate escape velocity', 'escape velocity formula', 'v = √(2GM/r)', 'escape speed', 'planet escape velocity', 'Earth escape velocity', 'Mars escape velocity', 'escape velocity physics', 'gravitational escape', 'space physics calculator', 'celestial body escape velocity', 'escape velocity m/s', 'escape velocity km/s', 'moon escape velocity', 'escape velocity planet', 'gravitational physics calculator', 'kinematics orbital mechanics', 'escape velocity gravitational parameter'],
+    href: '/physics/escape-velocity-calculator',
+    embedHref: '/embed/physics/escape-velocity-calculator',
+    icon: '🌍',
     color: 'purple'
   },
   {
@@ -1409,6 +1529,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'ac-wattage-calculator',
+    name: 'AC Wattage Calculator',
+    description: 'Calculate AC wattage, voltage, current, and power factor for single and three-phase systems.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['AC wattage calculator', 'calculate AC power', 'AC power calculator', 'single phase power calculator', 'three phase power calculator', 'power factor calculator', 'apparent power calculator', 'reactive power calculator', 'P = V × I × PF', 'AC voltage calculator', 'AC current calculator', 'electrical power calculator', 'three phase wattage', 'single phase wattage', 'real power calculator', 'VA to watts', 'power triangle calculator', 'AC circuit calculator', 'industrial power calculator'],
+    href: '/physics/ac-wattage-calculator',
+    embedHref: '/embed/physics/ac-wattage-calculator',
+    icon: '⚡',
+    color: 'purple'
+  },
+  {
     id: 'dipole-calculator',
     name: 'Dipole Calculator',
     description: 'Calculate electric dipole moment, charge, or distance using p = q × d for electrostatics.',
@@ -1553,6 +1685,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'orifice-flow-calculator',
+    name: 'Orifice Flow Calculator',
+    description: 'Calculate orifice flow rate, pressure drop, or diameter using discharge coefficient.',
+    category: 'Fluid Mechanics',
+    subject: 'physics',
+    keywords: ['orifice flow calculator', 'calculate orifice flow', 'orifice flow rate calculator', 'orifice equation calculator', 'Q = Cd × A × √(2ΔP/ρ)', 'orifice plate calculator', 'discharge coefficient calculator', 'pressure drop across orifice', 'orifice diameter calculator', 'flow measurement calculator', 'orifice sizing calculator', 'fluid flow through orifice', 'Bernoulli orifice equation', 'orifice meter calculator', 'flow rate from pressure drop', 'orifice flow measurement', 'sharp edge orifice', 'flow coefficient calculator', 'hydraulic orifice calculator'],
+    href: '/physics/orifice-flow-calculator',
+    embedHref: '/embed/physics/orifice-flow-calculator',
+    icon: '💧',
+    color: 'purple'
+  },
+  {
     id: 'section-modulus-calculator',
     name: 'Section modulus Calculator',
     description: 'Calculate section modulus or dimensions for rectangular and circular cross-sections in structural engineering.',
@@ -1574,6 +1718,18 @@ export const calculators: Calculator[] = [
     href: '/physics/inverse-square-law-calculator',
     embedHref: '/embed/physics/inverse-square-law-calculator',
     icon: '⭐',
+    color: 'purple'
+  },
+  {
+    id: 'speeds-and-feeds-calculator',
+    name: 'Speeds and Feeds Calculator',
+    description: 'Calculate machining RPM, feed rate, chip load and cutting speed.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['Speeds and Feeds Calculator', 'machining speeds calculator', 'feeds and speeds RPM', 'chip load calculator', 'feed rate calculator', 'cutting speed calculator', 'SFM to RPM calculator', 'CNC machining calculator', 'end mill RPM calculator', 'drilling speeds and feeds', 'milling speeds calculator', 'turning speeds and feeds', 'machining formulas RPM feed', 'metal cutting speed calculator', 'CNC chip load calculator', 'metric and imperial speeds', 'tool diameter RPM calculator'],
+    href: '/physics/speeds-and-feeds-calculator',
+    embedHref: '/embed/physics/speeds-and-feeds-calculator',
+    icon: '🛠️',
     color: 'purple'
   },
   {
@@ -2893,6 +3049,18 @@ export const calculators: Calculator[] = [
     href: '/physics/temperature-at-altitude-calculator',
     embedHref: '/embed/physics/temperature-at-altitude-calculator',
     icon: '🌡️',
+    color: 'purple'
+  },
+  {
+    id: 'thermal-expansion-calculator',
+    name: 'Thermal Expansion Calculator',
+    description: 'Calculate linear and volumetric thermal expansion for materials with temperature changes.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['Thermal Expansion Calculator', 'linear thermal expansion', 'volumetric expansion', 'coefficient of thermal expansion', 'thermal expansion formula', 'ΔL = L₀αΔT', 'ΔV = V₀βΔT', 'material expansion calculator', 'temperature expansion', 'metal expansion', 'steel expansion calculator', 'aluminum expansion', 'thermal stress calculator', 'expansion coefficient', 'thermal physics calculator', 'thermodynamics calculator', 'heat expansion', 'material property calculator', 'temperature change calculator', 'material expansion physics'],
+    href: '/physics/thermal-expansion-calculator',
+    embedHref: '/embed/physics/thermal-expansion-calculator',
+    icon: '📣',
     color: 'purple'
   }
   ,
