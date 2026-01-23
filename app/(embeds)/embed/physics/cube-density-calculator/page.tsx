@@ -1,5 +1,5 @@
-import CubeDensityCalculator from '@/_components/calculators/CubeDensityCalculator';
-import EmbedLayout from '@/(embeds)/layout';
+import CubeDensityCalculator from '../../../../_components/calculators/CubeDensityCalculator';
+import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export const metadata = {
   title: 'Cube Density Calculator',

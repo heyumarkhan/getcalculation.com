@@ -197,10 +197,10 @@ export default function Page() {
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Related 220V Electrical Calculations</h2>
           <ul className="space-y-2 text-gray-700">
             <li>• {createInternalLink('ohms-law-resistance-calculator', 'Ohm\'s Law Calculator')} - Calculate voltage, current, resistance relationships</li>
-            <li>• {createInternalLink('ac-wattage-calculator', 'AC Wattage Calculator')} - Calculate power for single and three-phase systems</li>
-            <li>• {createInternalLink('electrical-power-calculator', 'Electrical Power Calculator')} - Compute power consumption and efficiency</li>
             <li>• {createInternalLink('watts-to-amps-calculator', 'Watts to Amps Calculator')} - Convert power to current at 220V</li>
-            <li>• {createInternalLink('kva-calculator', 'kVA Calculator')} - Calculate apparent power for transformers</li>
+            <li>• {createInternalLink('parallel-resistor-calculator', 'Parallel Resistor Calculator')} - Calculate combined resistance</li>
+            <li>• {createInternalLink('watt-calculator', 'Watt Calculator')} - Calculate electrical power and efficiency</li>
+            <li>• {createInternalLink('force-calculator', 'Force Calculator')} - Fundamental physics for electrical systems</li>
           </ul>
         </section>
 

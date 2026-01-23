@@ -1,5 +1,5 @@
 import OrificeFlowCalculator from '../../../../_components/calculators/OrificeFlowCalculator';
-import EmbedLayout from '../../layout';
+import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export default function OrificeFlowCalculatorEmbed() {
   return (

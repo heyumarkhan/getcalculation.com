@@ -1,5 +1,5 @@
-import ElectricFieldCalculator from '@/_components/calculators/ElectricFieldCalculator';
-import EmbedLayout from '@/(embeds)/layout';
+import ElectricFieldCalculator from '../../../../_components/calculators/ElectricFieldCalculator';
+import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export const metadata = {
   title: 'Electric Field Calculator',

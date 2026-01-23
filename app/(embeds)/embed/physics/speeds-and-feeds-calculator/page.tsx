@@ -1,5 +1,5 @@
 import SpeedsAndFeedsCalculator from '../../../../_components/calculators/SpeedsAndFeedsCalculator';
-import EmbedLayout from '../../layout';
+import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export default function SpeedsAndFeedsEmbed() {
   return (

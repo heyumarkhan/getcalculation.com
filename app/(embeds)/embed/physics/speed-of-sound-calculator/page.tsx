@@ -1,5 +1,5 @@
-import SpeedOfSoundCalculator from '@/_components/calculators/SpeedOfSoundCalculator';
-import EmbedLayout from '@/(embeds)/layout';
+import SpeedOfSoundCalculator from '../../../../_components/calculators/SpeedOfSoundCalculator';
+import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export const metadata = {
   title: 'Speed of Sound Calculator',
