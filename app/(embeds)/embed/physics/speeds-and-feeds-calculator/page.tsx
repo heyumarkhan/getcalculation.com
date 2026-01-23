@@ -3,10 +3,7 @@ import EmbedLayout from '../../../../_components/layouts/EmbedLayout';
 
 export default function SpeedsAndFeedsEmbed() {
   return (
-    <EmbedLayout 
-      title="Speeds and Feeds Calculator"
-      description="Compute RPM, feed rate, chip load, and cutting speed (metric & imperial)."
-    >
+    <EmbedLayout title="Speeds and Feeds Calculator">
       <SpeedsAndFeedsCalculator />
     </EmbedLayout>
   );
