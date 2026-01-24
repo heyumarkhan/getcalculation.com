@@ -16,7 +16,7 @@ export const calculators: Calculator[] = [
     id: '220-volt-wire-size-calculator',
     name: '220 Volt Wire Size Calculator',
     description: 'Calculate wire gauge for 220V AC residential and commercial electrical circuits.',
-    category: 'Electromagnetism',
+    category: 'Electronics',
     subject: 'physics',
     keywords: ['220 volt wire size calculator', '220V wire gauge calculator', '220V electrical wire sizing', 'AC wire size 220 volts', 'residential 220V wire calculator', 'commercial 220V wire gauge', 'single phase 220V wire size', 'three phase 220V wire gauge', 'copper aluminum wire 220V', '220V AWG calculator', 'electrical wire sizing 220V', '220V voltage drop calculator', 'amperage wire size 220V', 'circuit breaker wire size 220V', '220V current capacity calculator', 'electrical safety wire sizing', 'home electrical wiring 220V', 'industrial power 220V cable', '220V conductor sizing', '220V electrical system calculator'],
     href: '/physics/220-volt-wire-size-calculator',
@@ -205,6 +205,18 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'radar-horizon-calculator',
+    name: 'Radar Horizon Calculator',
+    description: 'Calculate radar horizon distance from antenna heights with Earth curvature.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['radar horizon calculator', 'radio horizon', 'line of sight radar', '4/3 earth radius', 'antenna height to range', 'radar range line of sight', 'nautical mile radar range', 'ship radar horizon', 'aircraft radar horizon', 'rf line of sight'],
+    href: '/physics/radar-horizon-calculator',
+    embedHref: '/embed/physics/radar-horizon-calculator',
+    icon: '🛰️',
+    color: '#820ECC'
+  },
+  {
     id: 'cloud-base-calculator',
     name: 'Cloud Base Calculator',
     description: 'Estimate cloud base height from temperature, dew point, humidity, or target base.',
@@ -323,6 +335,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/speed-of-sound-calculator',
     icon: '🔊',
     color: 'purple'
+  },
+  {
+    id: 'e-mc2-calculator',
+    name: 'E = mc^2 Calculator',
+    description: 'Calculate energy from mass using E = mc^2 with unit conversions.',
+    category: 'Physics',
+    subject: 'physics',
+    keywords: ['e = mc2 calculator', 'mass energy calculator', 'einstein equation calculator', 'energy from mass', 'relativity calculator', 'mc2 energy converter', 'joules from mass', 'speed of light energy', 'mass to energy converter', 'physics energy calculator'],
+    href: '/physics/e-mc2-calculator',
+    embedHref: '/embed/physics/e-mc2-calculator',
+    icon: '🌠',
+    color: '#820ECC'
   },
   {
     id: 'weight-on-other-planets-calculator',
@@ -771,6 +795,18 @@ export const calculators: Calculator[] = [
     color: 'blue'
   },
   {
+    id: 'free-fall-time-calculator',
+    name: 'Free Fall Time Calculator',
+    description: 'Calculate free fall time from height using t = √(2h/g) with gravity input.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['free fall time calculator', 'fall time calculator', 't = sqrt(2h/g)', 'free fall equation', 'time of fall', 'gravity time calculator', 'drop time calculator', 'fall duration calculator', 'physics free fall time', 'kinematics time calculator'],
+    href: '/physics/free-fall-time-calculator',
+    embedHref: '/embed/physics/free-fall-time-calculator',
+    icon: '🪂',
+    color: '#820ECC'
+  },
+  {
     id: 'projectile-motion-calculator',
     name: 'Projectile motion Calculator',
     description: 'Calculate projectile motion range, maximum height, time of flight, and velocity using physics formulas.',
@@ -870,7 +906,7 @@ export const calculators: Calculator[] = [
     id: 'watt-calculator',
     name: 'Watt Calculator',
     description: 'Calculate electrical power, voltage, current, and resistance using P = V ? I, P = V?/R, and P = I?R formulas',
-    category: 'Electromagnetism',
+    category: 'Electronics',
     subject: 'physics',
     keywords: ['watt calculator', 'power calculator', 'electrical power', 'voltage', 'current', 'resistance', 'ohms law', 'electricity', 'physics', 'electromagnetism', 'watts', 'volts', 'amperes'],
     href: '/physics/watt-calculator',
@@ -889,6 +925,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/electrical-power-calculator',
     icon: '⚡',
     color: 'orange'
+  },
+  {
+    id: 'volt-to-electron-volt-calculator',
+    name: 'Volt to Electron Volt Calculator',
+    description: 'Convert voltage to electron volts or joules with charge multiples.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['volt to electron volt calculator', 'v to ev calculator', 'electron volt converter', 'voltage to energy calculator', 'eV conversion', 'joules from voltage', 'particle energy calculator', 'keV MeV converter', 'elementary charge energy', 'physics voltage energy'],
+    href: '/physics/volt-to-electron-volt-calculator',
+    embedHref: '/embed/physics/volt-to-electron-volt-calculator',
+    icon: '⚗️',
+    color: '#820ECC'
   },
   {
     id: 'power-factor-calculator',
@@ -937,6 +985,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/speed-of-light-calculator',
     icon: '📡',
     color: 'purple'
+  },
+  {
+    id: 'frequency-of-light-calculator',
+    name: 'Frequency of Light Calculator',
+    description: 'Calculate light frequency from wavelength using speed of light constant.',
+    category: 'Optics',
+    subject: 'physics',
+    keywords: ['frequency of light calculator', 'light frequency calculator', 'calculate light frequency', 'wavelength to frequency', 'frequency wavelength converter', 'speed of light calculator', 'light wave calculator', 'electromagnetic frequency', 'optics calculator', 'physics frequency calculator', 'wavelength frequency relation', 'light speed calculation', 'photon frequency calculator', 'electromagnetic spectrum', 'visible light wavelength'],
+    href: '/physics/frequency-of-light-calculator',
+    embedHref: '/embed/physics/frequency-of-light-calculator',
+    icon: '〰️',
+    color: '#820ECC'
   },
   {
     id: 'snells-law-calculator',
@@ -1395,6 +1455,54 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/air-density-calculator',
     icon: '🧮',
     color: 'blue'
+  },
+  {
+    id: 'gas-density-calculator',
+    name: 'Gas Density Calculator',
+    description: 'Calculate gas density from pressure, temperature, and molar mass with unit conversions.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['gas density calculator', 'calculate gas density', 'ideal gas density', 'gas density formula', 'gas density from pressure temperature', 'molar mass gas density', 'density of gas calculator', 'gas pressure calculator', 'gas temperature calculator', 'ideal gas equation density', 'PV = nRT density', 'gas density at pressure', 'gas density at temperature', 'gas density unit conversion', 'hydrogen density calculator', 'nitrogen density calculator', 'oxygen density calculator', 'co2 density calculator', 'thermodynamics calculator', 'engineering gas density'],
+    href: '/physics/gas-density-calculator',
+    embedHref: '/embed/physics/gas-density-calculator',
+    icon: '🧮',
+    color: '#820ECC'
+  },
+  {
+    id: 'air-pressure-at-altitude-calculator',
+    name: 'Air Pressure at Altitude Calculator',
+    description: 'Estimate air pressure at altitude using the barometric formula and custom base conditions.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['air pressure at altitude calculator', 'barometric formula calculator', 'altitude pressure calculator', 'atmospheric pressure with altitude', 'pressure vs altitude', 'sea level pressure calculator', 'atmospheric pressure drop', 'pressure at elevation', 'air pressure decrease with height', 'barometric pressure altitude', 'aviation pressure altitude calculator', 'mountain pressure calculator', 'pressure conversion altitude', 'absolute pressure altitude', 'thermodynamics pressure altitude'],
+    href: '/physics/air-pressure-at-altitude-calculator',
+    embedHref: '/embed/physics/air-pressure-at-altitude-calculator',
+    icon: '⚡',
+    color: '#820ECC'
+  },
+  {
+    id: 'capacitors-in-series-calculator',
+    name: 'Capacitors in Series Calculator',
+    description: 'Calculate equivalent capacitance for capacitors in series with unit conversions.',
+    category: 'Electronics',
+    subject: 'physics',
+    keywords: ['capacitors in series calculator', 'series capacitance calculator', 'equivalent capacitance series', '1 over C eq sum', 'series capacitor total capacitance', 'capacitor calculator series', 'electronics capacitance calculator', 'μF nF pF series', 'capacitor voltage sharing', 'series capacitor math', 'circuit design calculator'],
+    href: '/physics/capacitors-in-series-calculator',
+    embedHref: '/embed/physics/capacitors-in-series-calculator',
+    icon: '🔌',
+    color: '#820ECC'
+  },
+  {
+    id: 'distance-attenuation-calculator',
+    name: 'Distance Attenuation Calculator',
+    description: 'Calculate sound level drop with distance using the inverse square law.',
+    category: 'Waves',
+    subject: 'physics',
+    keywords: ['distance attenuation calculator', 'sound attenuation over distance', 'inverse square law sound', 'sound pressure level distance', 'spl distance calculator', '20 log10 distance', 'audio level drop with distance', 'speaker coverage calculator', 'sound propagation calculator', 'distance loss dB'],
+    href: '/physics/distance-attenuation-calculator',
+    embedHref: '/embed/physics/distance-attenuation-calculator',
+    icon: '📶',
+    color: '#820ECC'
   },
   {
     id: 'frequency-calculator',
@@ -3123,7 +3231,7 @@ export const calculators: Calculator[] = [
     keywords: ['kva to amperage calculator', 'kva to amps calculator', 'kva to current calculator', 'apparent power to current calculator', 'kva calculator', 'amperage from kva', 'single phase kva to amps', 'three phase kva to amps', 'electrical power calculator', 'voltage current calculator', 'kva conversion calculator', 'electrical current calculator', 'power to amperage calculator', 'kva to a calculator', 'calculate amps from kva', 'kva amperage conversion', 'electrical load calculator', 'transformer sizing calculator', 'circuit amperage calculator', 'ac power calculator', 'kva amp calculator', 'electrical engineering calculator'],
     href: '/physics/kva-to-amperage-calculator',
     embedHref: '/embed/physics/kva-to-amperage-calculator',
-    icon: '🔋',
+    icon: '🪫',
     color: 'purple'
   },
   {
@@ -3281,6 +3389,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/angular-displacement-calculator',
     icon: '🔁',
     color: 'purple'
+  },
+  {
+    id: 'capacitor-calculator',
+    name: 'Capacitor Calculator',
+    description: 'Calculate capacitance, charge, or voltage with unit conversions.',
+    category: 'Electronics',
+    subject: 'physics',
+    keywords: ['capacitor calculator', 'capacitance calculator', 'calculate charge Q', 'calculate voltage V', 'calculate capacitance C', 'Q = C × V', 'electronics calculator', 'circuit design', 'capacitance unit converter', 'charge unit converter', 'voltage unit converter'],
+    href: '/physics/capacitor-calculator',
+    embedHref: '/embed/physics/capacitor-calculator',
+    icon: '🔋',
+    color: '#820ECC'
   }
 ];
 
