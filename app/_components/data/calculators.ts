@@ -831,6 +831,42 @@ export const calculators: Calculator[] = [
     color: 'purple'
   },
   {
+    id: 'projectile-range-calculator',
+    name: 'Projectile Range Calculator',
+    description: 'Calculate projectile range, time, and max height with launch angle and speed.',
+    category: 'Kinematics',
+    subject: 'physics',
+    keywords: ['projectile range calculator', 'projectile motion range', 'range of projectile', 'time of flight calculator', 'projectile peak height', 'launch angle calculator', 'projectile distance calculator', 'trajectory range calculator', 'physics projectile motion', 'ballistic range calculator', 'projectile motion equations', 'range with launch height', 'projectile motion physics'],
+    href: '/physics/projectile-range-calculator',
+    embedHref: '/embed/physics/projectile-range-calculator',
+    icon: '🔔',
+    color: '#820ECC'
+  },
+  {
+    id: 'gold-weight-calculator',
+    name: 'Gold Weight Calculator',
+    description: 'Convert gold weights and calculate pure gold content by karat fineness.',
+    category: 'Mechanics & Physics',
+    subject: 'physics',
+    keywords: ['gold weight calculator', 'gold converter', 'troy ounce converter', 'karat calculator', 'gold purity calculator', 'gold fineness calculator', 'precious metal weight', 'grams to troy ounces', 'gold gram converter', '24k gold calculator', '18k gold calculator', 'gold price calculator weight', 'gold alloy calculator', 'bullion weight calculator', 'gold jewelry calculator'],
+    href: '/physics/gold-weight-calculator',
+    embedHref: '/embed/physics/gold-weight-calculator',
+    icon: '💍',
+    color: '#820ECC'
+  },
+  {
+    id: 'skin-depth-calculator',
+    name: 'Skin Depth Calculator',
+    description: 'Calculate EM wave skin depth and resistivity in conductive materials.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['skin depth calculator', 'electromagnetic skin depth', 'EM wave penetration', 'conductor skin depth', 'frequency penetration depth', 'shielding effectiveness', 'RF penetration calculator', 'eddy current skin depth', 'electromagnetic shielding', 'wave attenuation conductor', 'high frequency current distribution', 'surface impedance calculator'],
+    href: '/physics/skin-depth-calculator',
+    embedHref: '/embed/physics/skin-depth-calculator',
+    icon: '📡',
+    color: '#820ECC'
+  },
+  {
     id: 'arrow-speed-calculator',
     name: 'Arrow Speed Calculator',
     description: 'Calculate arrow speed from distance/time or kinetic energy/mass using archery physics formulas.',
@@ -865,6 +901,30 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/bullet-energy-calculator',
     icon: '🖤',
     color: 'red'
+  },
+  {
+    id: 'bend-allowance-calculator',
+    name: 'Bend Allowance Calculator',
+    description: 'Calculate bend allowance, deduction, and setback for sheet metal bending.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['bend allowance calculator', 'sheet metal bend calculator', 'bend deduction calculator', 'k factor calculator', 'outside setback calculator', 'flat pattern calculator', 'sheet metal fabrication', 'bend allowance formula', 'bend deduction formula', 'metal bending calculator', 'press brake calculator', 'sheet metal development', 'bend compensation', 'neutral axis calculator', 'fabrication calculator'],
+    href: '/physics/bend-allowance-calculator',
+    embedHref: '/embed/physics/bend-allowance-calculator',
+    icon: '🔨',
+    color: '#820ECC'
+  },
+  {
+    id: 'elastic-potential-energy-calculator',
+    name: 'Elastic Potential Energy Calculator',
+    description: 'Calculate elastic energy stored in springs using E = 1/2 kx² formula.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['elastic potential energy calculator', 'spring energy calculator', 'E = 1/2 kx^2', 'elastic energy formula', 'spring constant calculator', 'hooke law energy', 'spring displacement calculator', 'elastic energy stored', 'potential energy spring', 'spring force energy', 'elastic deformation energy', 'spring compression energy', 'spring extension energy', 'mechanical energy spring', 'elastic energy physics'],
+    href: '/physics/elastic-potential-energy-calculator',
+    embedHref: '/embed/physics/elastic-potential-energy-calculator',
+    icon: '🪀',
+    color: '#820ECC'
   },
   {
     id: 'magnitude-of-acceleration-calculator',
@@ -925,6 +985,42 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/electrical-power-calculator',
     icon: '⚡',
     color: 'orange'
+  },
+  {
+    id: 'ohms-law-power-calculator',
+    name: 'Ohm\'s Law Power Calculator',
+    description: 'Calculate power, voltage, current, or resistance using Ohm Law formulas.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['ohms law power calculator', 'ohm law calculator', 'power calculator', 'electrical power formula', 'voltage current resistance', 'P = V * I', 'V = I * R', 'electrical circuit calculator', 'ohms law formula', 'power consumption calculator', 'resistance calculator', 'current calculator', 'voltage calculator', 'electrical engineering calculator', 'DC circuit calculator', 'electrical calculations'],
+    href: '/physics/ohms-law-power-calculator',
+    embedHref: '/embed/physics/ohms-law-power-calculator',
+    icon: '🔆',
+    color: '#820ECC'
+  },
+  {
+    id: 'copper-wire-weight-calculator',
+    name: 'Copper Wire Weight Calculator',
+    description: 'Calculate copper wire weight by length, diameter, or AWG gauge.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['copper wire weight calculator', 'wire weight calculator', 'AWG wire weight', 'copper wire mass', 'wire weight by gauge', 'electrical wire weight', 'copper conductor weight', 'wire weight per foot', 'wire weight per meter', 'AWG weight chart', 'wire shipping weight', 'electrical cable weight', 'copper wire density', 'wire load calculation', 'copper wire calculator'],
+    href: '/physics/copper-wire-weight-calculator',
+    embedHref: '/embed/physics/copper-wire-weight-calculator',
+    icon: '🧵',
+    color: '#820ECC'
+  },
+  {
+    id: 'inductors-in-parallel-calculator',
+    name: 'Inductors in Parallel Calculator',
+    description: 'Calculate total inductance of inductors in parallel and branch reactance.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['inductors in parallel calculator', 'parallel inductance calculator', 'equivalent inductance', 'total inductance', 'parallel inductor reactance', 'inductor calculator', 'ac reactance calculator', 'coil in parallel', 'electromagnetism calculator', 'inductor design tool', 'filter design inductance', 'reactive impedance calculator', 'inductance converter', 'parallel coils formula', 'electronics calculator'],
+    href: '/physics/inductors-in-parallel-calculator',
+    embedHref: '/embed/physics/inductors-in-parallel-calculator',
+    icon: '🧲',
+    color: '#820ECC'
   },
   {
     id: 'volt-to-electron-volt-calculator',
@@ -996,6 +1092,42 @@ export const calculators: Calculator[] = [
     href: '/physics/frequency-of-light-calculator',
     embedHref: '/embed/physics/frequency-of-light-calculator',
     icon: '〰️',
+    color: '#820ECC'
+  },
+  {
+    id: 'angular-frequency-calculator',
+    name: 'Angular Frequency Calculator',
+    description: 'Calculate angular frequency, period, and frequency using ω = 2πf formulas.',
+    category: 'Waves & Oscillations',
+    subject: 'physics',
+    keywords: ['angular frequency calculator', 'calculate angular frequency', 'omega calculator', 'ω = 2πf', 'angular frequency formula', 'frequency to angular frequency', 'period calculator', 'oscillation frequency', 'radians per second', 'simple harmonic motion', 'SHM calculator', 'wave frequency', 'AC frequency', 'oscillator calculator', 'angular frequency physics'],
+    href: '/physics/angular-frequency-calculator',
+    embedHref: '/embed/physics/angular-frequency-calculator',
+    icon: '🎵',
+    color: '#820ECC'
+  },
+  {
+    id: 'cutoff-frequency-calculator',
+    name: 'Cutoff Frequency Calculator',
+    description: 'Calculate cutoff frequency for RC and RL filters using component values and formulas.',
+    category: 'Electronics',
+    subject: 'physics',
+    keywords: ['cutoff frequency calculator', '-3dB point calculator', 'RC filter cutoff frequency', 'RL filter cutoff frequency', 'corner frequency calculator', 'low pass filter frequency', 'high pass filter frequency', 'filter design calculator', 'fc calculator', 'filter corner frequency', 'low pass filter calculator', 'high pass filter calculator', 'RC time constant', 'RL time constant', 'filter frequency calculator', 'electronics filter calculator', 'circuit filter frequency', '3dB point frequency', 'filter cutoff point', 'frequency response calculator'],
+    href: '/physics/cutoff-frequency-calculator',
+    embedHref: '/embed/physics/cutoff-frequency-calculator',
+    icon: '🎚️',
+    color: '#820ECC'
+  },
+  {
+    id: 'wind-correction-angle-calculator',
+    name: 'Wind Correction Angle Calculator',
+    description: 'Calculate wind correction angle, heading to fly, and ground speed for navigation.',
+    category: 'Kinematics & Motion',
+    subject: 'physics',
+    keywords: ['wind correction angle calculator', 'WCA calculator', 'heading to fly', 'ground speed calculator', 'crosswind calculator', 'headwind calculator', 'aviation wind correction', 'pilot wind drift', 'navigation wind correction', 'flight planning wind', 'track made good', 'course correction wind', 'wind triangle calculator', 'aviation ground speed'],
+    href: '/physics/wind-correction-angle-calculator',
+    embedHref: '/embed/physics/wind-correction-angle-calculator',
+    icon: '🧭',
     color: '#820ECC'
   },
   {
@@ -2167,6 +2299,18 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/sun-angle-calculator',
     icon: '☀️',
     color: 'purple'
+  },
+  {
+    id: 'light-year-calculator',
+    name: 'Light Year Calculator',
+    description: 'Convert light years to kilometers, miles, AU, and parsecs for astronomy.',
+    category: 'Astronomy',
+    subject: 'physics',
+    keywords: ['light year calculator', 'light year to km', 'light year to miles', 'astronomical unit converter', 'parsec calculator', 'cosmic distance calculator', 'light year conversion', 'interstellar distance', 'astronomy distance calculator', 'ly to km converter', 'light year definition', 'astronomical distance units', 'light speed distance', 'space distance calculator', 'stellar distance converter'],
+    href: '/physics/light-year-calculator',
+    embedHref: '/embed/physics/light-year-calculator',
+    icon: '🌟',
+    color: '#820ECC'
   },
   {
     id: 'gravitational-time-dilation-calculator',

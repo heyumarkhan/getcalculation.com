@@ -202,6 +202,18 @@ export const INTERNAL_LINKS = {
   'series-resistor-calculator': { href: '/physics/series-resistor-calculator', title: 'Series Resistor Calculator' },
   'photon-energy-calculator': { href: '/physics/photon-energy-calculator', title: 'Photon Energy Calculator' },
   'frequency-of-light-calculator': { href: '/physics/frequency-of-light-calculator', title: 'Frequency of Light Calculator' },
+  'angular-frequency-calculator': { href: '/physics/angular-frequency-calculator', title: 'Angular Frequency Calculator' },
+  'wind-correction-angle-calculator': { href: '/physics/wind-correction-angle-calculator', title: 'Wind Correction Angle Calculator' },
+  'cutoff-frequency-calculator': { href: '/physics/cutoff-frequency-calculator', title: 'Cutoff Frequency Calculator' },
+  'projectile-range-calculator': { href: '/physics/projectile-range-calculator', title: 'Projectile Range Calculator' },
+  'gold-weight-calculator': { href: '/physics/gold-weight-calculator', title: 'Gold Weight Calculator' },
+  'skin-depth-calculator': { href: '/physics/skin-depth-calculator', title: 'Skin Depth Calculator' },
+  'ohms-law-power-calculator': { href: '/physics/ohms-law-power-calculator', title: 'Ohm\'s Law Power Calculator' },
+  'bend-allowance-calculator': { href: '/physics/bend-allowance-calculator', title: 'Bend Allowance Calculator' },
+  'elastic-potential-energy-calculator': { href: '/physics/elastic-potential-energy-calculator', title: 'Elastic Potential Energy Calculator' },
+  'light-year-calculator': { href: '/physics/light-year-calculator', title: 'Light Year Calculator' },
+  'copper-wire-weight-calculator': { href: '/physics/copper-wire-weight-calculator', title: 'Copper Wire Weight Calculator' },
+  'inductors-in-parallel-calculator': { href: '/physics/inductors-in-parallel-calculator', title: 'Inductors in Parallel Calculator' },
 } as const;
 
 // Helper function to create internal links (returns React component)
