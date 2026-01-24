@@ -1,5 +1,5 @@
 import CopperWireWeightCalculator from '../../../../_components/calculators/CopperWireWeightCalculator';
-import EmbedLayout from '../../layout';
+import EmbedLayout from '../../../../layout';
 
 export default function CopperWireWeightCalculatorEmbed() {
   return (

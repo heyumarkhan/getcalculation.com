@@ -1,5 +1,5 @@
 import BendAllowanceCalculator from '../../../../_components/calculators/BendAllowanceCalculator';
-import EmbedLayout from '../../layout';
+import EmbedLayout from '../../../../layout';
 
 export default function BendAllowanceCalculatorEmbed() {
   return (

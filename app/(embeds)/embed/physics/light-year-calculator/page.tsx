@@ -1,5 +1,5 @@
 import LightYearCalculator from '../../../../_components/calculators/LightYearCalculator';
-import EmbedLayout from '../../layout';
+import EmbedLayout from '../../../../layout';
 
 export default function LightYearCalculatorEmbed() {
   return (
