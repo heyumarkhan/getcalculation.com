@@ -1023,6 +1023,42 @@ export const calculators: Calculator[] = [
     color: '#820ECC'
   },
   {
+    id: 'orbital-velocity-calculator',
+    name: 'Orbital Velocity Calculator',
+    description: 'Calculate orbital velocity, period, and escape velocity for satellites.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['orbital velocity calculator', 'satellite velocity calculator', 'orbital speed calculator', 'orbital period calculator', 'escape velocity calculator', 'circular orbit velocity', 'satellite orbit calculator', 'orbital mechanics calculator', 'space orbit calculator', 'kepler orbit calculator', 'geostationary orbit velocity', 'low earth orbit velocity', 'orbital velocity formula', 'calculate orbital speed', 'physics orbital calculator'],
+    href: '/physics/orbital-velocity-calculator',
+    embedHref: '/embed/physics/orbital-velocity-calculator',
+    icon: '🪐',
+    color: '#820ECC'
+  },
+  {
+    id: '12-volt-wire-size-calculator',
+    name: '12 Volt Wire Size Calculator',
+    description: 'Calculate wire gauge for 12V DC systems based on current and length.',
+    category: 'Electromagnetism',
+    subject: 'physics',
+    keywords: ['12 volt wire size calculator', '12v wire gauge calculator', 'dc wire size calculator', 'automotive wire size', 'marine wire gauge', 'rv wire calculator', 'solar wire size', '12 volt wiring', 'voltage drop calculator 12v', 'awg wire size 12v', 'battery wire size', 'inverter wire gauge', '12v cable size calculator', 'low voltage wire sizing', '12 volt electrical calculator'],
+    href: '/physics/12-volt-wire-size-calculator',
+    embedHref: '/embed/physics/12-volt-wire-size-calculator',
+    icon: '🔌',
+    color: '#820ECC'
+  },
+  {
+    id: 'von-mises-stress-calculator',
+    name: 'Von Mises Stress Calculator',
+    description: 'Calculate Von Mises equivalent stress for 2D and 3D stress states.',
+    category: 'Mechanics',
+    subject: 'physics',
+    keywords: ['von mises stress calculator', 'equivalent stress calculator', 'von mises yield criterion', 'multiaxial stress calculator', 'effective stress calculator', 'principal stress calculator', '3d stress analysis', 'plane stress calculator', 'mechanical stress calculator', 'yield strength calculator', 'safety factor stress', 'distortion energy theory', 'von mises formula', 'fea stress analysis', 'structural mechanics calculator'],
+    href: '/physics/von-mises-stress-calculator',
+    embedHref: '/embed/physics/von-mises-stress-calculator',
+    icon: '🏭',
+    color: '#820ECC'
+  },
+  {
     id: 'volt-to-electron-volt-calculator',
     name: 'Volt to Electron Volt Calculator',
     description: 'Convert voltage to electron volts or joules with charge multiples.',
@@ -3314,8 +3350,31 @@ export const calculators: Calculator[] = [
     embedHref: '/embed/physics/thermal-expansion-calculator',
     icon: '📣',
     color: 'purple'
-  }
-  ,
+  },
+  {
+    id: 'thermal-resistance-calculator',
+    name: 'Thermal Resistance Calculator',
+    description: 'Calculate thermal resistance for insulation and heat transfer analysis.',
+    category: 'Thermodynamics',
+    subject: 'physics',
+    keywords: ['thermal resistance calculator', 'R-value calculator', 'heat transfer resistance', 'conduction resistance', 'convection resistance', 'radiation thermal resistance', 'thermal resistance formula', 'R = L/kA', 'R = 1/hA', 'thermal insulation calculator', 'building insulation R-value', 'heat flow calculator', 'thermal network calculator', 'multilayer thermal resistance', 'thermal conductivity calculator', 'insulation thickness calculator', 'U-value calculator', 'thermal analysis', 'thermodynamics calculator', 'HVAC calculator', 'materials thermal properties'],
+    href: '/physics/thermal-resistance-calculator',
+    embedHref: '/embed/physics/thermal-resistance-calculator',
+    icon: '🧊',
+    color: 'purple'
+  },
+  {
+    id: 'doppler-effect-calculator',
+    name: 'Doppler Effect Calculator',
+    description: 'Calculate frequency shift from Doppler effect with moving sources observers.',
+    category: 'Waves & Acoustics',
+    subject: 'physics',
+    keywords: ['doppler effect calculator', 'doppler frequency calculator', 'doppler shift calculator', 'sound frequency shift', 'light frequency shift', 'doppler formula calculator', 'doppler effect formula', 'doppler formula', 'doppler radar calculator', 'red shift calculator', 'blue shift calculator', 'doppler astronomy calculator', 'doppler ultrasound calculator', 'doppler physics calculator', 'frequency shift from motion', 'acoustic doppler calculator'],
+    href: '/physics/doppler-effect-calculator',
+    embedHref: '/embed/physics/doppler-effect-calculator',
+    icon: '📻',
+    color: 'purple'
+  },
   {
     id: 'wire-resistance-calculator',
     name: 'Wire Resistance Calculator',

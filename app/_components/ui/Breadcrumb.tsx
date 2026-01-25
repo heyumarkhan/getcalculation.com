@@ -79,6 +79,7 @@ export function generateCalculatorBreadcrumb(calculatorName: string, category?: 
       'Optics': { subject: 'Physics', href: '/physics' },
       'Quantum Mechanics': { subject: 'Physics', href: '/physics' },
       'Waves': { subject: 'Physics', href: '/physics' },
+      'Waves & Acoustics': { subject: 'Physics', href: '/physics' },
       'Waves & Oscillations': { subject: 'Physics', href: '/physics' },
       'Fluid Mechanics': { subject: 'Physics', href: '/physics' },
       'Electronics': { subject: 'Physics', href: '/physics' },
