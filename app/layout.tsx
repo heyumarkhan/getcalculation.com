@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./_components/ui/Navbar";
 import Footer from "./_components/ui/Footer";
@@ -60,11 +60,12 @@ export const metadata: Metadata = {
     description: "Free online math calculators for geometry, algebra, trigonometry, and more. Easy to use and embed on your own website.",
     images: ["/og-image.png"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
   themeColor: "#ffffff",
 };
 
