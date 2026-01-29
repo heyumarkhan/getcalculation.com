@@ -214,6 +214,10 @@ export const INTERNAL_LINKS = {
   'light-year-calculator': { href: '/physics/light-year-calculator', title: 'Light Year Calculator' },
   'copper-wire-weight-calculator': { href: '/physics/copper-wire-weight-calculator', title: 'Copper Wire Weight Calculator' },
   'inductors-in-parallel-calculator': { href: '/physics/inductors-in-parallel-calculator', title: 'Inductors in Parallel Calculator' },
+  // Finance calculators
+  'pay-raise-calculator': { href: '/finance/pay-raise-calculator', title: 'Pay Raise Calculator' },
+  'markup-calculator': { href: '/finance/markup-calculator', title: 'Markup Calculator' },
+  'time-and-a-half-calculator': { href: '/finance/time-and-a-half-calculator', title: 'Time and a Half Calculator' },
 } as const;
 
 // Helper function to create internal links (returns React component)
