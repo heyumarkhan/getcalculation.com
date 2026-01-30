@@ -1,101 +1,99 @@
 import ExpenseRatioCalculator from '../../../_components/calculators/ExpenseRatioCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function ExpenseRatioCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Expense Ratio Calculator: Calculate Fund Expense Ratio (ER)"
-      description="Calculate the expense ratio of mutual funds and investment funds. Use our expense ratio calculator to determine the percentage of fund assets spent on annual expenses. Essential for evaluating fund costs."
+      title="Expense Ratio Calculator: Compare Fund Costs Instantly"
+      description="Calculate expense ratio to evaluate mutual fund and ETF costs. Understand how management fees impact your investment returns with our simple, accurate expense ratio calculator."
       calculator={<ExpenseRatioCalculator />}
       slug="finance/expense-ratio-calculator"
       category="Finance"
       features={[
-        'Calculate expense ratio for funds and investments',
-        'Shows annual expenses and expense ratio percentage',
-        'Supports any fund type or asset class',
-        'Step-by-step calculation breakdown',
-        'Embeddable and mobile-friendly'
+        "Calculates expense ratio as a percentage",
+        "Compares fund costs across fund types",
+        "Shows how fees impact long-term returns",
+        "Instant Results",
+        "Free to use"
       ]}
     >
-      <SEOSection title="Expense Ratio Calculator — Fund Expense Ratio Calculator">
+      <SEOSection title="Why Understanding Expense Ratio Matters for Investors">
         <p>
-          Our <strong>Expense Ratio Calculator</strong> helps investors understand the cost of owning mutual funds, ETFs, and other investment funds. Enter the annual expenses and fund value to instantly calculate the expense ratio — the percentage of fund assets spent on operating expenses each year. This is crucial for evaluating fund costs and making informed investment decisions.
+          When you invest in mutual funds or ETFs, hidden costs can quietly erode your wealth over time. An <strong>expense ratio</strong> is the annual fee expressed as a percentage of your fund assets — and seemingly small differences compound dramatically over decades. Our {createInternalLink('year-over-year-growth-calculator')} helps you see how investments grow when fees are minimized. Understanding your fund's expense ratio is the first step to protecting your investment returns and making smarter portfolio decisions.
         </p>
       </SEOSection>
 
-      <SEOSection title="What is an Expense Ratio?">
-        <p>
-          An <strong>Expense Ratio (ER)</strong> is the annual cost of operating a mutual fund or investment fund, expressed as a percentage of the fund's total assets under management. It includes management fees, administrative costs, and other operating expenses. The expense ratio directly impacts investor returns — lower expense ratios mean more of your money stays invested.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="How to Use the Expense Ratio Calculator">
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
         <ol>
-          <li>Enter the annual expenses of the fund (total operating costs per year).</li>
-          <li>Enter the fund's or asset's total value.</li>
-          <li>Click Calculate to see the expense ratio percentage.</li>
-          <li>Use this metric to compare fund costs and evaluate investment options.</li>
+          <li><strong>Step 1:</strong> Enter the total annual expenses of the fund (management fees, administrative costs, operational expenses)</li>
+          <li><strong>Step 2:</strong> Enter the fund's total assets under management (AUM)</li>
+          <li><strong>Step 3:</strong> Click Calculate to see the expense ratio percentage</li>
         </ol>
       </SEOSection>
 
-      <SEOSection title="Understanding Expense Ratios">
+      <SEOSection title="The Core Concept: Expense Ratio Formula">
         <p>
-          Expense ratios are crucial for investors because they compound over time:
+          The expense ratio quantifies the cost of owning a mutual fund or ETF as a percentage of assets. This crucial metric appears in fund prospectuses and directly impacts your net investment returns. Lower expense ratios preserve more capital for compound growth.
         </p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">Expense Ratio = (Annual Expenses / Fund Assets) × 100</p>
+        </div>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>Suppose you're evaluating an actively managed mutual fund with $200 million in assets under management. The fund incurs $1.2 million in annual operating expenses, including management fees ($800,000), administrative costs ($300,000), and marketing expenses ($100,000).</p>
+        <ul>
+          <li>Annual Expenses: $1,200,000</li>
+          <li>Fund Assets: $200,000,000</li>
+          <li>Expense Ratio: ($1,200,000 / $200,000,000) × 100 = 0.60%</li>
+        </ul>
+        <p>This means investors collectively pay 0.60% of their assets annually to operate the fund. For a $50,000 investment, that's $300 per year in fees.</p>
+      </SEOSection>
+
+      <SEOSection title="Practical Applications">
+        <p>Expense ratios are critical in evaluating investment funds across different scenarios:</p>
         <SEOList items={[
-          "Low expense ratios (0.03%-0.50%): Index funds and passive management strategies",
-          "Moderate expense ratios (0.50%-1.50%): Actively managed funds with higher trading activity",
-          "High expense ratios (1.50%+): Specialized funds or those with higher fee structures",
-          "Impact over time: A 1% difference in expense ratio can result in thousands of dollars difference over decades"
+          "Comparing index funds (typically 0.03%–0.20%) vs. active funds (0.50%–1.50%) to understand cost-performance trade-offs",
+          "Evaluating ETF funds based on recurring expense ratios and total cost of ownership over 20+ years",
+          "Assessing how a 0.5% difference in expense ratio reduces retirement savings by $100,000+ over 30 years",
+          "Identifying low-cost fund families for tax-efficient, long-term portfolio building"
         ]} />
       </SEOSection>
 
-      <SEOSection title="Expense Ratio Examples">
-        <p>
-          Here are typical expense ratio scenarios:
-        </p>
-        <SEOList items={[
-          "Index Fund: $50,000 fund with $15 annual expenses = 0.03% expense ratio",
-          "Managed Mutual Fund: $500,000 fund with $5,000 annual expenses = 1.00% expense ratio",
-          "Specialty Fund: $1,000,000 fund with $25,000 annual expenses = 2.50% expense ratio",
-          "High-Cost Fund: $100,000 fund with $3,000 annual expenses = 3.00% expense ratio"
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "What is the difference between expense ratio and management fee?",
+            answer: "The management fee is one component of the expense ratio. The expense ratio includes management fees, administrative costs, distribution fees, and other operating expenses. The expense ratio is the total annual cost expressed as a percentage of fund assets."
+          },
+          {
+            question: "What is a good expense ratio for a mutual fund?",
+            answer: "Passive index funds typically have expense ratios below 0.20% and offer excellent value. Actively managed funds average 0.50%–1.50%. Ratios above 2.00% are considered high and significantly impact long-term returns. For ETFs, look for ratios under 0.25% for broad market exposure."
+          },
+          {
+            question: "How much do high expense ratios cost over time?",
+            answer: "The impact compounds significantly. On a $100,000 investment over 30 years assuming 7% annual returns, a 1.00% expense ratio vs. 0.10% costs you approximately $190,000 in lost wealth. This is why minimizing fund costs matters for retirement investors."
+          },
+          {
+            question: "Are there hidden costs beyond the expense ratio?",
+            answer: "Yes. The expense ratio doesn't include trading costs, bid-ask spreads, or taxes on capital gains distributions. Some funds also charge sales loads (upfront fees), 12b-1 marketing fees, or redemption fees. Always review the prospectus for complete fee disclosure."
+          },
+          {
+            question: "How often should I check my funds' expense ratios?",
+            answer: "Review fund expense ratios annually during portfolio rebalancing or if you receive updated prospectuses. If your fund's expenses increase significantly or you find lower-cost alternatives, consider switching. Many advisors review expense ratios every 2–3 years when rebalancing portfolios."
+          }
         ]} />
       </SEOSection>
 
-      <SEOSection title="Why Expense Ratios Matter">
+      <SEOSection title="Conclusion">
         <p>
-          Lower expense ratios benefit investors in several ways:
+          Mastering expense ratios is essential for long-term wealth building. By understanding and minimizing fund costs, you keep more money invested and working for you. Even small percentage differences in expense ratios compound into meaningful wealth differences over decades.
         </p>
-        <SEOList items={[
-          "More money remains invested and compounds over time",
-          "Reduces drag on investment returns year over year",
-          "Over 30+ years, expense ratio differences can result in significant wealth differences",
-          "Passive/index funds typically have much lower expense ratios than active management",
-          "Compare expense ratios before selecting investment funds"
-        ]} />
-      </SEOSection>
-
-      <SEOSection title="SEO & Embedding">
         <p>
-          This page is optimized for keywords such as "expense ratio calculator", "fund expense ratio", "ER calculator", "mutual fund expense ratio", and "investment fund costs". The calculator is embeddable and structured for automatic sitemap generation, making it perfect for financial websites and investment analysis tools.
+          Explore more finance tools: Check out our {createInternalLink('dividend-yield-calculator')} or the popular {createInternalLink('appreciation-calculator')}.
         </p>
-        <SEOList items={["expense ratio calculator", "fund expense ratio calculator", "ER calculator", "mutual fund expense ratio", "investment fund costs calculator"]} />
       </SEOSection>
-
-      <SEOFAQ questions={[{
-        question: 'What is an expense ratio?',
-        answer: 'An expense ratio is the annual cost of operating a fund, expressed as a percentage of the fund\'s total assets. It includes management fees, administrative costs, and operating expenses.'
-      }, {
-        question: 'How do I calculate expense ratio?',
-        answer: 'Expense Ratio = (Annual Expenses / Fund Value) × 100. For example, if a $500,000 fund has $5,000 in annual expenses, the ER is (5,000 / 500,000) × 100 = 1.00%.'
-      }, {
-        question: 'What is a good expense ratio?',
-        answer: 'Lower is generally better. Index funds typically have expense ratios below 0.20%. Actively managed funds average 0.50%-1.50%. Expense ratios above 2.00% are considered high.'
-      }, {
-        question: 'Why should I care about expense ratios?',
-        answer: 'Over decades of investing, expense ratio differences compound significantly. A 1% difference per year can result in tens of thousands of dollars less wealth at retirement.'
-      }]} />
     </CalculatorPageTemplate>
   );
 }

@@ -1,104 +1,99 @@
 import PriceElasticityCalculator from '../../../_components/calculators/PriceElasticityCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function PriceElasticityCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Price Elasticity of Demand Calculator: Calculate PED"
-      description="Calculate price elasticity of demand (PED) to understand how quantity demanded changes with price. Use our elasticity calculator for economic analysis, pricing strategy, and market research."
+      title="Elasticity Calculator: Price Elasticity of Demand Calculation"
+      description="Calculate price elasticity of demand (PED) to understand how consumer behavior responds to price changes. Use our elasticity calculator for smart pricing decisions and market analysis."
       calculator={<PriceElasticityCalculator />}
       slug="finance/price-elasticity-of-demand-calculator"
       category="Finance"
       features={[
-        'Calculate price elasticity of demand (PED)',
-        'Shows quantity change, price change, and elasticity coefficient',
-        'Identifies elastic, inelastic, or unit elastic demand',
-        'Step-by-step calculation breakdown',
-        'Embeddable and mobile-friendly'
+        "Calculates price elasticity of demand coefficient",
+        "Identifies elastic, inelastic, or unit elastic demand",
+        "Determines pricing power and revenue impact",
+        "Instant Results",
+        "Free to use"
       ]}
     >
-      <SEOSection title="Price Elasticity of Demand Calculator — Elasticity Calculator">
+      <SEOSection title="Why Pricing Strategy Depends on Understanding Elasticity">
         <p>
-          Our <strong>Price Elasticity of Demand Calculator</strong> (also called an <strong>elasticity calculator</strong>) helps economists, business analysts, and pricing strategists understand how demand responds to price changes. Enter the initial and final quantities and prices to instantly calculate the price elasticity coefficient and determine whether demand is elastic, inelastic, or unit elastic.
+          One of the most critical mistakes businesses make is using the same pricing approach for all products. A {createInternalLink('markup-calculator')} tells you what margin to add, but an <strong>elasticity calculator</strong> tells you whether customers will actually accept that price increase. Price elasticity of demand (PED) measures how sensitive consumer behavior is to price changes — and this insight is fundamental to maximizing revenue and market share. Without understanding elasticity, you're essentially guessing on pricing decisions that directly impact profitability.
         </p>
       </SEOSection>
 
-      <SEOSection title="What is Price Elasticity of Demand?">
-        <p>
-          <strong>Price Elasticity of Demand (PED)</strong> measures the responsiveness of quantity demanded to changes in price. It shows how sensitive customers are to price changes. A high elasticity means customers are very responsive to price changes, while low elasticity means demand is relatively stable regardless of price fluctuations.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="How to Use the Price Elasticity Calculator">
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
         <ol>
-          <li>Enter the initial quantity demanded (before price change).</li>
-          <li>Enter the initial price.</li>
-          <li>Enter the final quantity demanded (after price change).</li>
-          <li>Enter the final price.</li>
-          <li>Click Calculate to see the PED coefficient and elasticity type.</li>
+          <li><strong>Step 1:</strong> Enter the initial quantity demanded before the price change</li>
+          <li><strong>Step 2:</strong> Enter the initial price per unit</li>
+          <li><strong>Step 3:</strong> Enter the final quantity and price after the change, then calculate</li>
         </ol>
       </SEOSection>
 
-      <SEOSection title="Understanding Elasticity Types">
+      <SEOSection title="The Core Concept: Elasticity Calculator Formula">
         <p>
-          Price elasticity results reveal how demand responds to price changes:
+          Price elasticity of demand quantifies the responsiveness of consumer behavior to price changes. This metric reveals whether your customers are price-sensitive or will tolerate price increases. The elasticity coefficient tells you exactly how much quantity demanded will change for every 1% change in price.
         </p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">PED = (% Change in Quantity) / (% Change in Price)</p>
+        </div>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>A coffee shop increases the price of lattes from $4.00 to $4.50 (a 12.5% increase). Monthly sales drop from 1,000 lattes to 850 lattes (a 15% decrease).</p>
+        <ul>
+          <li>% Change in Quantity: ((850 - 1000) / 1000) × 100 = -15%</li>
+          <li>% Change in Price: ((4.50 - 4.00) / 4.00) × 100 = +12.5%</li>
+          <li>PED: -15% / 12.5% = -1.2 (elastic demand)</li>
+        </ul>
+        <p>The coefficient of -1.2 means that for every 1% price increase, quantity demanded drops by 1.2%. This is elastic demand — the price increase actually reduced total revenue despite higher unit prices.</p>
+      </SEOSection>
+
+      <SEOSection title="Practical Applications">
+        <p>Price elasticity directly impacts business decisions across industries:</p>
         <SEOList items={[
-          "Elastic (PED > 1): Demand is very responsive to price changes. A price increase leads to a larger percentage drop in quantity",
-          "Inelastic (PED < 1): Demand is not very responsive to price changes. Quantity demanded stays relatively stable",
-          "Unit Elastic (PED = 1): Quantity and price changes are proportional. A 10% price increase leads to a 10% quantity decrease",
-          "Perfectly Elastic (PED = ∞): Any price increase eliminates all demand",
-          "Perfectly Inelastic (PED = 0): Quantity demanded doesn't change regardless of price"
+          "Retail pricing: Identify which product categories can sustain price increases without losing sales volume",
+          "Dynamic pricing strategies: Use elasticity data to set different prices for different customer segments",
+          "Revenue optimization: Raise prices on inelastic goods, lower prices on elastic goods to maximize revenue",
+          "Competitive analysis: Monitor how competitors' elasticity compares to yours in the marketplace"
         ]} />
       </SEOSection>
 
-      <SEOSection title="Real-World Elasticity Examples">
-        <p>
-          Different products have different elasticity characteristics:
-        </p>
-        <SEOList items={[
-          "Gas/Fuel (Inelastic): PED ≈ 0.5 — Demand doesn't change much despite price fluctuations",
-          "Restaurant Meals (Elastic): PED ≈ 2.3 — People easily substitute or reduce dining out when prices rise",
-          "Luxury Goods (Elastic): PED ≈ 1.5+ — Higher prices significantly reduce demand for luxury items",
-          "Essential Medicines (Inelastic): PED ≈ 0.3 — People buy regardless of price due to necessity",
-          "Soft Drinks (Elastic): PED ≈ 0.9 — Consumers can easily switch brands or reduce consumption"
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "What does an elasticity coefficient of -2.0 mean?",
+            answer: "An elasticity coefficient of -2.0 indicates elastic demand. For every 1% price increase, quantity demanded drops by 2%. This is problematic for revenue — a price hike will decrease total revenue because demand is too price-sensitive. These products require volume-focused, competitive pricing strategies."
+          },
+          {
+            question: "How do I know if demand is elastic or inelastic?",
+            answer: "If the elasticity coefficient's absolute value is greater than 1 (like -1.5 or -2.0), demand is elastic — customers are price-sensitive. If it's less than 1 (like -0.5), demand is inelastic — customers are less price-sensitive and will tolerate price increases."
+          },
+          {
+            question: "Why do luxury goods have higher elasticity?",
+            answer: "Luxury and non-essential goods have higher elasticity because customers can easily reduce consumption or switch to alternatives. When prices rise, people simply buy less or choose competitors. Essential goods like medicine have lower elasticity because people must buy them regardless of price."
+          },
+          {
+            question: "How does elasticity help with profit maximization?",
+            answer: "For inelastic demand (PED < 1), raising prices increases revenue without much sales loss. For elastic demand (PED > 1), lowering prices increases total revenue by boosting volume. Understanding this prevents costly pricing mistakes that reduce profitability."
+          },
+          {
+            question: "What factors make demand more elastic?",
+            answer: "Availability of substitute products, luxury vs. necessity status, and portion of budget spent all increase elasticity. Products with many substitutes, luxury items, and products consuming a large budget percentage are more elastic. Essential goods with no substitutes are inelastic."
+          }
         ]} />
       </SEOSection>
 
-      <SEOSection title="Why Elasticity Matters for Business">
+      <SEOSection title="Conclusion">
         <p>
-          Understanding price elasticity helps businesses make better pricing decisions:
+          Mastering price elasticity is essential for strategic pricing and revenue optimization. Understanding how your customers respond to price changes transforms pricing from guesswork into data-driven decision-making that protects margins while maintaining market competitiveness.
         </p>
-        <SEOList items={[
-          "Price Optimization: Elastic goods need competitive pricing; inelastic goods can support higher margins",
-          "Revenue Strategy: Raising prices on inelastic goods increases revenue; cutting prices on elastic goods can increase revenue",
-          "Demand Forecasting: Elasticity helps predict how price changes affect customer behavior",
-          "Competitive Analysis: Understanding elasticity reveals pricing power in your market",
-          "Marketing Decisions: High elasticity products benefit from volume-focused strategies"
-        ]} />
-      </SEOSection>
-
-      <SEOSection title="SEO & Embedding">
         <p>
-          This page is optimized for keywords such as "price elasticity of demand calculator", "elasticity calculator", "PED calculator", "demand elasticity", and "elasticity of demand". The calculator is embeddable and structured for automatic sitemap generation, making it perfect for economics websites and business analysis tools.
+          Explore more finance tools: Check out our {createInternalLink('cpm-calculator')} or the popular {createInternalLink('dividend-yield-calculator')}.
         </p>
-        <SEOList items={["price elasticity of demand calculator", "elasticity calculator", "PED calculator", "demand elasticity calculator", "price elasticity formula calculator"]} />
       </SEOSection>
-
-      <SEOFAQ questions={[{
-        question: 'What is price elasticity of demand?',
-        answer: 'Price elasticity of demand (PED) measures how responsive quantity demanded is to price changes. It is calculated as: PED = (% Change in Quantity Demanded) / (% Change in Price).'
-      }, {
-        question: 'How do I interpret a PED of -1.5?',
-        answer: 'A PED of -1.5 means demand is elastic. A 1% price increase would lead to a 1.5% decrease in quantity demanded. (The negative sign indicates the inverse relationship between price and quantity.)'
-      }, {
-        question: 'Why is elasticity important for pricing?',
-        answer: 'Elasticity determines how price changes affect revenue. For elastic goods, lowering prices increases revenue. For inelastic goods, raising prices increases revenue. Understanding this helps maximize profits.'
-      }, {
-        question: 'What factors influence price elasticity?',
-        answer: 'Availability of substitutes, necessity vs. luxury status, percentage of budget spent, and consumer habits all affect elasticity. Products with many substitutes tend to be more elastic.'
-      }]} />
     </CalculatorPageTemplate>
   );
 }
