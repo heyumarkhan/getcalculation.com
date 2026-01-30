@@ -21,7 +21,7 @@ export default function CashBackCalculatorPage() {
     >
       <SEOSection title="Maximize Your Credit Card Rewards: Understanding Cash Back">
         <p>
-          Cash back is one of the most straightforward and valuable credit card benefits, allowing cardholders to earn a percentage of their spending back as cash or statement credits. Whether you're deciding between credit cards or trying to optimize your spending strategy, understanding how much cash back you'll earn on different purchases is essential. If you're comparing various reward programs and want to measure the overall return on your credit card usage, you might also want to check our {createInternalLink('roi-calculator', 'ROI calculator')} to evaluate the total financial benefit of your cards.
+          Cash back is one of the most straightforward and valuable credit card benefits, allowing cardholders to earn a percentage of their spending back as cash or statement credits. Whether you're deciding between credit cards or trying to optimize your spending strategy, understanding how much cash back you'll earn on different purchases is essential. If you're comparing various reward programs and want to measure the overall return on your credit card usage, you might also want to check our {createInternalLink('appreciation-calculator', 'wealth appreciation calculator')} to evaluate the total financial benefit of your cards.
         </p>
       </SEOSection>
 
