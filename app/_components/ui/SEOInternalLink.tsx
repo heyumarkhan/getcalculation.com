@@ -215,9 +215,19 @@ export const INTERNAL_LINKS = {
   'copper-wire-weight-calculator': { href: '/physics/copper-wire-weight-calculator', title: 'Copper Wire Weight Calculator' },
   'inductors-in-parallel-calculator': { href: '/physics/inductors-in-parallel-calculator', title: 'Inductors in Parallel Calculator' },
   // Finance calculators
+  'overtime-calculator': { href: '/finance/overtime-calculator', title: 'Overtime Calculator' },
   'pay-raise-calculator': { href: '/finance/pay-raise-calculator', title: 'Pay Raise Calculator' },
   'markup-calculator': { href: '/finance/markup-calculator', title: 'Markup Calculator' },
   'time-and-a-half-calculator': { href: '/finance/time-and-a-half-calculator', title: 'Time and a Half Calculator' },
+  'yield-to-maturity-calculator': { href: '/finance/yield-to-maturity-calculator', title: 'Yield to Maturity Calculator' },
+  'appreciation-calculator': { href: '/finance/appreciation-calculator', title: 'Appreciation Calculator' },
+  'dividend-yield-calculator': { href: '/finance/dividend-yield-calculator', title: 'Dividend Yield Calculator' },
+  'expense-ratio-calculator': { href: '/finance/expense-ratio-calculator', title: 'Expense Ratio Calculator' },
+  'year-over-year-growth-calculator': { href: '/finance/year-over-year-growth-calculator', title: 'Year Over Year Growth Calculator' },
+  'roas-calculator': { href: '/finance/roas-calculator', title: 'ROAS Calculator' },
+  'cpm-calculator': { href: '/finance/cpm-calculator', title: 'CPM Calculator' },
+  'ctr-calculator': { href: '/finance/ctr-calculator', title: 'CTR Calculator' },
+  'price-elasticity-calculator': { href: '/finance/price-elasticity-of-demand-calculator', title: 'Price Elasticity Calculator' },
 } as const;
 
 // Helper function to create internal links (returns React component)
