@@ -21,7 +21,7 @@ export default function RealEstateCommissionCalculatorPage() {
     >
       <SEOSection title="Understanding Real Estate Commission: What Sellers Need to Know">
         <p>
-          Real estate commission is one of the largest expenses sellers face when selling a property. This percentage-based fee is paid to real estate agents and brokers for their services in marketing, showing, and facilitating the sale. Understanding how commission is calculated is critical for sellers negotiating their agreement with agents and estimating their net proceeds after the sale. If you're evaluating the total cost of your property, you might also want to review the {createInternalLink('price-per-square-foot-calculator', 'price per square foot')} to understand your property's market value positioning.
+          Real estate commission is one of the largest expenses sellers face when selling a property. This percentage-based fee is paid to real estate agents and brokers for their services in marketing, showing, and facilitating the sale. Understanding how commission is calculated is critical for sellers negotiating their agreement with agents and estimating their net proceeds after the sale. If you're evaluating the overall financial impact of selling, you might also want to review the {createInternalLink('expense-ratio-calculator', 'expense analysis')} to understand your total property costs and fees.
         </p>
       </SEOSection>
 
