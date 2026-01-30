@@ -90,7 +90,7 @@ export default function PricePerSquareFootCalculatorPage() {
           Mastering price per square foot transforms real estate analysis from guesswork into data-driven decision-making. This single metric cuts through market noise and property size differences to reveal true value, enabling smarter negotiations and profitable investments.
         </p>
         <p>
-          Explore more finance tools: Check out our {createInternalLink('real-estate-commission-calculator')} or the popular {createInternalLink('appreciation-calculator')}.
+          Explore more real estate and finance tools: Check out our {createInternalLink('appreciation-calculator')} to track property value growth, or use the {createInternalLink('expense-ratio-calculator')} to analyze investment property returns.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
