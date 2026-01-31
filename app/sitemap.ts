@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://getcalculation.com'
+  const lastModDate = new Date('2026-01-31')
   
   // Define all your calculator pages
   const calculators = [
@@ -166,7 +167,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Generate sitemap entries
   const calculatorPages = calculators.map((calc) => ({
     url: `${baseUrl}/${calc.slug}`,
-    lastModified: new Date(),
+    lastModified: lastModDate,
     changeFrequency: 'weekly' as const,
     priority: calc.priority,
   }))
@@ -174,25 +175,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: lastModDate,
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/math`,
-      lastModified: new Date(),
+      lastModified: lastModDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/physics`,
-      lastModified: new Date(),
+      lastModified: lastModDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/finance`,
-      lastModified: new Date(),
+      lastModified: lastModDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
