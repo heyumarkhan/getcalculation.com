@@ -33,7 +33,7 @@ export const calculators: Calculator[] = [
     keywords: ['perimeter', 'rectangle', 'square', 'polygon', 'length', 'width'],
     href: '/math/perimeter',
     embedHref: '/embed/math/perimeter',
-    icon: '??',
+    icon: '📏',
     color: 'blue'
   },
   {
@@ -466,7 +466,7 @@ export const calculators: Calculator[] = [
     keywords: ['area', 'rectangle', 'square', 'circle', 'triangle', 'surface'],
     href: '/math/area',
     embedHref: '/embed/math/area',
-    icon: '?',
+    icon: '⬛',
     color: 'green'
   },
   {
@@ -478,7 +478,7 @@ export const calculators: Calculator[] = [
     keywords: ['circumference', 'circle', 'radius', 'diameter', 'perimeter', 'pi', 'geometry'],
     href: '/math/circumference',
     embedHref: '/embed/math/circumference',
-    icon: '?',
+    icon: '⭕',
     color: 'purple'
   },
   {
@@ -490,7 +490,7 @@ export const calculators: Calculator[] = [
     keywords: ['radius', 'circle radius', 'radius calculator', 'diameter', 'circumference', 'area', 'circle', 'geometry', 'radius formula', 'find radius'],
     href: '/math/radius-of-a-circle',
     embedHref: '/embed/math/radius-of-a-circle',
-    icon: '??',
+    icon: '📍',
     color: 'purple'
   },
   {
@@ -502,7 +502,7 @@ export const calculators: Calculator[] = [
     keywords: ['area of a circle', 'circle area', 'circle area calculator', 'area calculator', 'circle area formula', 'calculate circle area', 'pr?', 'pi r squared', 'circle surface area'],
     href: '/math/area-of-a-circle',
     embedHref: '/embed/math/area-of-a-circle',
-    icon: '?',
+    icon: 'π',
     color: 'green'
   },
   {
@@ -514,31 +514,31 @@ export const calculators: Calculator[] = [
     keywords: ['distance formula', 'distance calculator', 'distance between two points', 'coordinate geometry', 'pythagorean theorem', 'distance formula calculator', 'calculate distance', 'point distance', 'coordinate distance'],
     href: '/math/distance-formula',
     embedHref: '/embed/math/distance-formula',
-    icon: '??',
+    icon: '↔️',
     color: 'blue'
   },
   {
     id: 'angle-between-two-vectors',
     name: 'Angle Between Two Vectors Calculator',
-    description: 'Calculate the angle between two vectors in 2D or 3D space using the dot product formula',
+    description: 'Calculate angle between two vectors in 2D or 3D using dot product.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['angle between vectors', 'vector angle', 'dot product', 'vector calculator', 'angle calculator', 'vector angle calculator', 'calculate vector angle', 'angle between two vectors calculator', 'dot product angle'],
     href: '/math/angle-between-two-vectors',
     embedHref: '/embed/math/angle-between-two-vectors',
-    icon: '??',
+    icon: '∠',
     color: 'purple'
   },
   {
     id: 'direction-of-vector',
     name: 'Direction of the Vector Calculator',
-    description: 'Calculate the direction (angle) of a vector in 2D or 3D space using atan2 or direction angles',
+    description: 'Calculate vector direction angle in 2D or 3D using atan2 or direction angles.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['direction of vector', 'vector direction', 'vector angle', 'atan2', 'direction angles', 'vector direction calculator', 'calculate vector direction', 'vector orientation', 'direction cosines'],
     href: '/math/direction-of-vector',
     embedHref: '/embed/math/direction-of-vector',
-    icon: '??',
+    icon: '🧭',
     color: 'blue'
   },
   {
@@ -550,7 +550,7 @@ export const calculators: Calculator[] = [
     keywords: ['diagonal of rectangle', 'rectangle diagonal', 'diagonal calculator', 'rectangle diagonal formula', 'calculate rectangle diagonal', 'diagonal length', 'pythagorean theorem', 'rectangle calculator', 'diagonal measurement'],
     href: '/math/diagonal-of-rectangle',
     embedHref: '/embed/math/diagonal-of-rectangle',
-    icon: '??',
+    icon: '↘️',
     color: 'purple'
   },
   {
@@ -562,7 +562,7 @@ export const calculators: Calculator[] = [
     keywords: ['polygon calculator', 'regular polygon', 'polygon area', 'polygon perimeter', 'polygon angles', 'apothem calculator', 'polygon properties', 'n-sided polygon', 'polygon formula', 'calculate polygon'],
     href: '/math/polygon',
     embedHref: '/embed/math/polygon',
-    icon: '??',
+    icon: '🔷',
     color: 'purple'
   },
   {
@@ -574,7 +574,7 @@ export const calculators: Calculator[] = [
     keywords: ['rectangular prism calculator', 'cuboid calculator', 'rectangular prism volume', 'rectangular prism surface area', 'prism calculator', 'cuboid volume', 'box calculator', 'rectangular prism diagonal', 'calculate rectangular prism', '3d shape calculator'],
     href: '/math/rectangular-prism',
     embedHref: '/embed/math/rectangular-prism',
-    icon: '??',
+    icon: '🧊',
     color: 'purple'
   },
   {
@@ -586,7 +586,7 @@ export const calculators: Calculator[] = [
     keywords: ['hypotenuse calculator', 'pythagorean theorem', 'right triangle calculator', 'calculate hypotenuse', 'hypotenuse formula', 'pythagorean theorem calculator', 'find hypotenuse', 'right triangle hypotenuse', 'triangle calculator', 'geometry calculator'],
     href: '/math/hypotenuse',
     embedHref: '/embed/math/hypotenuse',
-    icon: '??',
+    icon: '√',
     color: 'purple'
   },
   {
@@ -598,19 +598,19 @@ export const calculators: Calculator[] = [
     keywords: ['triangle angle calculator', 'calculate triangle angles', 'law of cosines', 'law of sines', 'triangle angles', 'SSS triangle', 'SAS triangle', 'SSA triangle', 'ASA triangle', 'AAS triangle', 'find triangle angles', 'triangle angle finder', 'geometry calculator', 'triangle calculator', 'coordinate triangle', 'triangle from coordinates', 'area triangle calculator'],
     href: '/math/triangle-angle',
     embedHref: '/embed/math/triangle-angle',
-    icon: '??',
+    icon: '🔺',
     color: 'purple'
   },
   {
     id: 'standard-form-to-slope-intercept',
     name: 'Standard Form to Slope intercept',
-    description: 'Convert linear equations from Ax + By = C to y = mx + b format',
+    description: 'Convert Ax + By = C to slope-intercept form y = mx + b.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['standard form', 'slope intercept', 'linear equation', 'algebra', 'graphing'],
     href: '/math/standard-form-to-slope-intercept',
     embedHref: '/embed/math/standard-form-to-slope-intercept',
-    icon: '??',
+    icon: '📉',
     color: 'orange'
   },
   {
@@ -622,7 +622,7 @@ export const calculators: Calculator[] = [
     keywords: ['midpoint', 'coordinates', 'geometry', 'point', 'center', 'distance'],
     href: '/math/midpoint',
     embedHref: '/embed/math/midpoint',
-    icon: '??',
+    icon: '🎯',
     color: 'blue'
   },
   {
@@ -634,7 +634,7 @@ export const calculators: Calculator[] = [
     keywords: ['line segment', 'distance', 'coordinates', 'geometry', 'length', 'pythagorean'],
     href: '/math/line-segment-length',
     embedHref: '/embed/math/line-segment-length',
-    icon: '??',
+    icon: '🧷',
     color: 'green'
   },
   {
@@ -646,7 +646,7 @@ export const calculators: Calculator[] = [
     keywords: ['parabola', 'vertex', 'focus', 'directrix', 'quadratic', 'conic sections'],
     href: '/math/parabola',
     embedHref: '/embed/math/parabola',
-    icon: '??',
+    icon: '∪',
     color: 'purple'
   },
   {
@@ -658,7 +658,7 @@ export const calculators: Calculator[] = [
     keywords: ['vertex form calculator', 'standard form to vertex form', 'vertex form converter', 'completing the square calculator', 'quadratic vertex form', 'convert to vertex form', 'vertex form equation', 'parabola vertex form', 'quadratic form converter', 'vertex form from standard form', 'a(x-h)? + k calculator', 'vertex form converter online', 'standard form to vertex form calculator', 'quadratic equation vertex form', 'completing the square', 'vertex form calculator online', 'convert quadratic to vertex form', 'vertex form conversion', 'standard form vertex form', 'parabola calculator vertex form'],
     href: '/math/vertex-form-calculator',
     embedHref: '/embed/math/vertex-form-calculator',
-    icon: '??',
+    icon: '🔼',
     color: 'purple'
   },
   {
@@ -670,7 +670,7 @@ export const calculators: Calculator[] = [
     keywords: ['slope', 'gradient', 'line', 'coordinates', 'algebra', 'linear'],
     href: '/math/slope',
     embedHref: '/embed/math/slope',
-    icon: '??',
+    icon: '📈',
     color: 'orange'
   },
   {
@@ -682,7 +682,7 @@ export const calculators: Calculator[] = [
     keywords: ['slope percentage calculator', 'slope percentage', 'gradient percentage calculator', 'slope to percentage', 'percentage grade calculator', 'slope percent calculator', 'grade percentage calculator', 'slope percentage formula', 'calculate slope percentage', 'rise over run percentage', 'slope percentage converter', 'gradient percentage', 'slope percentage tool'],
     href: '/math/slope-percentage',
     embedHref: '/embed/math/slope-percentage',
-    icon: '??',
+    icon: '‰',
     color: 'purple'
   },
 
@@ -695,7 +695,7 @@ export const calculators: Calculator[] = [
     keywords: ['triangular prism', 'surface area', 'geometry', '3d', 'volume', 'prism'],
     href: '/math/triangular-prism-surface-area',
     embedHref: '/embed/math/triangular-prism-surface-area',
-    icon: '?',
+    icon: '🧱',
     color: 'purple'
   },
   {
@@ -707,7 +707,7 @@ export const calculators: Calculator[] = [
     keywords: ['volume', 'rectangular prism', 'triangular pyramid', '3d', 'geometry', 'cubic'],
     href: '/math/volume',
     embedHref: '/embed/math/volume',
-    icon: '?',
+    icon: '🧪',
     color: 'blue'
   },
   {
@@ -719,7 +719,7 @@ export const calculators: Calculator[] = [
     keywords: ['similar triangles', 'proportions', 'scale factor', 'geometry', 'triangles', 'ratio'],
     href: '/math/similar-triangles',
     embedHref: '/embed/math/similar-triangles',
-    icon: '??',
+    icon: '🔻',
     color: 'green'
   },
   {
@@ -731,7 +731,7 @@ export const calculators: Calculator[] = [
     keywords: ['herons formula', 'triangle area', 'geometry', 'sides', 'semi-perimeter', 'triangle'],
     href: '/math/herons-formula',
     embedHref: '/embed/math/herons-formula',
-    icon: '??',
+    icon: '✳️',
     color: 'purple'
   },
   {
@@ -743,7 +743,7 @@ export const calculators: Calculator[] = [
     keywords: ['diamond problem', 'algebra', 'quadratic', 'sum', 'product', 'factoring', 'solving'],
     href: '/math/diamond-problem',
     embedHref: '/embed/math/diamond-problem',
-    icon: '??',
+    icon: '💎',
     color: 'pink'
   },
   {
@@ -755,7 +755,7 @@ export const calculators: Calculator[] = [
     keywords: ['cross multiplication', 'proportions', 'ratios', 'algebra', 'fractions', 'solving'],
     href: '/math/cross-multiplication',
     embedHref: '/embed/math/cross-multiplication',
-    icon: '??',
+    icon: '✖️',
     color: 'orange'
   },
   {
@@ -2393,7 +2393,7 @@ export const calculators: Calculator[] = [
     keywords: ['exponential function calculator', 'exponential calculator', 'exponential function', 'exponential growth calculator', 'exponential decay calculator', 'compound interest calculator', 'exponential equation calculator', 'e^x calculator', 'exponential formula calculator', 'exponential function solver', 'exponential growth decay', 'exponential functions', 'exponential math calculator', 'calculate exponential', 'exponential equations'],
     href: '/math/exponential-function',
     embedHref: '/embed/math/exponential-function',
-    icon: '??',
+    icon: 'e',
     color: 'purple'
   },
   {
@@ -2405,7 +2405,7 @@ export const calculators: Calculator[] = [
     keywords: ['standard notation', 'scientific notation', 'expanded form', 'number conversion', 'decimal', 'exponent', 'algebra'],
     href: '/math/standard-notation',
     embedHref: '/embed/math/standard-notation',
-    icon: '??',
+    icon: '🔢',
     color: 'purple'
   },
   {
@@ -2417,7 +2417,7 @@ export const calculators: Calculator[] = [
     keywords: ['scientific notation calculator', 'scientific notation equation', 'scientific notation converter', 'scientific notation arithmetic', 'convert to scientific notation', 'scientific notation calculator with steps', 'exponential notation calculator', 'standard form to scientific notation', 'scientific notation solver', 'scientific notation formula calculator', 'scientific notation problems', 'scientific notation math', 'scientific notation help', 'calculate with scientific notation', 'scientific notation operations'],
     href: '/math/scientific-notation-equation',
     embedHref: '/embed/math/scientific-notation-equation',
-    icon: '10n',
+    icon: '10ⁿ',
     color: 'purple'
   },
   {
@@ -2429,7 +2429,7 @@ export const calculators: Calculator[] = [
     keywords: ['round to nearest cent', 'currency rounding', 'decimal rounding', 'money calculations', 'financial math', 'rounding rules'],
     href: '/math/round-to-nearest-cent',
     embedHref: '/embed/math/round-to-nearest-cent',
-    icon: '??',
+    icon: '💲',
     color: 'green'
   },
   {
@@ -2441,7 +2441,7 @@ export const calculators: Calculator[] = [
     keywords: ['round to the nearest thousand calculator', 'round to nearest thousand', 'rounding to nearest thousand calculator', 'round numbers to thousand', 'thousand rounding calculator', 'round to 1000 calculator', 'nearest thousand calculator', 'round thousand calculator', 'rounding calculator thousand', 'round numbers calculator', 'rounding to thousand'],
     href: '/math/round-to-nearest-thousand',
     embedHref: '/embed/math/round-to-nearest-thousand',
-    icon: '??',
+    icon: '🧾',
     color: 'purple'
   },
 
@@ -2454,43 +2454,43 @@ export const calculators: Calculator[] = [
     keywords: ['inverse modulo', 'modular inverse', 'extended euclidean algorithm', 'number theory', 'cryptography', 'discrete mathematics'],
     href: '/math/inverse-modulo',
     embedHref: '/embed/math/inverse-modulo',
-    icon: '??',
+    icon: '🔁',
     color: 'blue'
   },
   {
     id: 'inverse-variation',
     name: 'inverse Variation Calculator',
-    description: 'Solve inverse variation problems of the form y = k / x. Solve for y, k, or x given two values.',
+    description: 'Solve inverse variation for y, k, or x from two values.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['inverse variation', 'direct variation', 'y = k/x', 'variation', 'algebra', 'ratios'],
     href: '/math/inverse-variation',
     embedHref: '/embed/math/inverse-variation',
-    icon: '??',
+    icon: '🔄',
     color: 'green'
   },
   {
     id: 'triangular-pyramid-volume',
     name: 'Triangular Pyramid Volume Calculator',
-    description: 'Calculate the volume of a triangular pyramid (tetrahedron) from base area and height or side lengths',
+    description: 'Calculate triangular pyramid volume from base area and height or edge lengths.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['triangular pyramid', 'tetrahedron', 'volume', 'geometry', '3d shapes', 'pyramid volume', 'triangular base'],
     href: '/math/triangular-pyramid-volume',
     embedHref: '/embed/math/triangular-pyramid-volume',
-    icon: '??',
+    icon: '🗿',
     color: 'orange'
   },
   {
     id: 'average-rate-of-change',
     name: 'Average Rate of Change Calculator',
-    description: 'Calculate the average rate of change of a function between two points using the slope formula',
+    description: 'Calculate average rate of change between two points using the slope formula.',
     category: 'Calculus',
     subject: 'math',
     keywords: ['average rate of change', 'slope', 'calculus', 'derivative', 'function', 'change rate', 'secant line'],
     href: '/math/average-rate-of-change',
     embedHref: '/embed/math/average-rate-of-change',
-    icon: '??',
+    icon: '📊',
     color: 'purple'
   },
   {
@@ -2502,7 +2502,7 @@ export const calculators: Calculator[] = [
     keywords: ['quotient', 'division', 'remainder', 'dividend', 'divisor', 'algebra', 'arithmetic', 'long division'],
     href: '/math/quotient',
     embedHref: '/embed/math/quotient',
-    icon: '?',
+    icon: '➗',
     color: 'blue'
   },
   {
@@ -2514,7 +2514,7 @@ export const calculators: Calculator[] = [
     keywords: ['remainder', 'modulo', 'mod', 'division', 'dividend', 'divisor', 'algebra', 'arithmetic', 'modular arithmetic'],
     href: '/math/remainder',
     embedHref: '/embed/math/remainder',
-    icon: '??',
+    icon: '🧩',
     color: 'purple'
   },
   {
@@ -2526,7 +2526,7 @@ export const calculators: Calculator[] = [
     keywords: ['chinese remainder theorem', 'crt', 'simultaneous congruences', 'modular arithmetic', 'congruence system', 'number theory', 'algebra', 'modulo'],
     href: '/math/chinese-remainder-theorem',
     embedHref: '/embed/math/chinese-remainder-theorem',
-    icon: '??',
+    icon: '🧠',
     color: 'purple'
   },
   {
@@ -2538,7 +2538,7 @@ export const calculators: Calculator[] = [
     keywords: ['hemisphere volume', 'sphere volume', 'radius', 'geometry', '3d shapes', 'volume formula', 'semicircle'],
     href: '/math/volume-of-hemisphere',
     embedHref: '/embed/math/volume-of-hemisphere',
-    icon: '?',
+    icon: '🌓',
     color: 'purple'
   },
   {
@@ -2550,7 +2550,7 @@ export const calculators: Calculator[] = [
     keywords: ['sphere volume', 'sphere volume calculator', 'volume of sphere', 'sphere volume formula', 'calculate sphere volume', '4/3pr?', 'sphere calculator', '3d volume'],
     href: '/math/sphere-volume',
     embedHref: '/embed/math/sphere-volume',
-    icon: '?',
+    icon: '⚪',
     color: 'blue'
   },
   {
@@ -2562,19 +2562,19 @@ export const calculators: Calculator[] = [
     keywords: ['least squares regression', 'linear regression', 'correlation coefficient', 'r-squared', 'best fit line', 'statistics', 'prediction', 'data analysis'],
     href: '/math/least-squares-regression',
     embedHref: '/embed/math/least-squares-regression',
-    icon: '??',
+    icon: '📌',
     color: 'blue'
   },
   {
     id: 'binomial-coefficient',
     name: 'Binomial Coefficient Calculator',
-    description: 'Calculate binomial coefficients C(n,k) for combinations. Find the number of ways to choose k items from n items',
+    description: 'Calculate binomial coefficients C(n,k) for combinations and choosing k items.',
     category: 'Combinatorics',
     subject: 'math',
     keywords: ['binomial coefficient', 'combinations', 'factorial', 'combinatorics', 'C(n,k)', 'choose', 'counting', 'permutations'],
     href: '/math/binomial-coefficient',
     embedHref: '/embed/math/binomial-coefficient',
-    icon: '�',
+    icon: '🎲',
     color: 'purple'
   },
   {
@@ -2586,7 +2586,7 @@ export const calculators: Calculator[] = [
     keywords: ['square of binomial', 'binomial square calculator', '(a+b)? calculator', 'expand binomial', 'polynomial expansion', 'algebra calculator', 'binomial expansion', 'perfect square trinomial', 'FOIL method', 'algebraic expansion', 'binomial formula', 'square formula', 'polynomial calculator', 'algebra expansion calculator', 'binomial perfect square'],
     href: '/math/square-of-binomial',
     embedHref: '/embed/math/square-of-binomial',
-    icon: '�',
+    icon: '²',
     color: 'purple'
   },
   {
@@ -2598,7 +2598,7 @@ export const calculators: Calculator[] = [
     keywords: ['greater than', 'less than', 'equal to', 'comparison', 'inequality', 'algebra', 'numbers', 'compare'],
     href: '/math/greater-than-or-less-than',
     embedHref: '/embed/math/greater-than-or-less-than',
-    icon: '??',
+    icon: '≷',
     color: 'orange'
   },
   {
@@ -2610,7 +2610,7 @@ export const calculators: Calculator[] = [
     keywords: ['sum of series', 'arithmetic series', 'geometric series', 'series sum', 'sequence', 'algebra', 'calculus', 'mathematical series'],
     href: '/math/sum-of-series',
     embedHref: '/embed/math/sum-of-series',
-    icon: '??',
+    icon: '∑',
     color: 'purple'
   },
   {
@@ -2622,7 +2622,7 @@ export const calculators: Calculator[] = [
     keywords: ['proportion calculator', 'ratio calculator', 'scale factor', 'cross multiplication', 'algebra', 'mathematical proportions', 'solving proportions'],
     href: '/math/proportion',
     embedHref: '/embed/math/proportion',
-    icon: '??',
+    icon: '∝',
     color: 'green'
   },
   {
@@ -2634,19 +2634,19 @@ export const calculators: Calculator[] = [
     keywords: ['semicircle area', 'half circle area', 'radius', 'diameter', 'circumference', 'geometry', 'circle area', 'mathematical shapes'],
     href: '/math/semicircle-area',
     embedHref: '/embed/math/semicircle-area',
-    icon: '?',
+    icon: '◐',
     color: 'blue'
   },
   {
     id: 'gcf',
     name: 'GCF Calculator - Greatest Common Factor',
-    description: 'Find the greatest common factor of two or more numbers using the Euclidean algorithm with step-by-step solutions',
+    description: 'Find the greatest common factor using the Euclidean algorithm.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['gcf', 'greatest common factor', 'gcd', 'highest common factor', 'euclidean algorithm', 'factors', 'divisibility', 'number theory'],
     href: '/math/gcf',
     embedHref: '/embed/math/gcf',
-    icon: '??',
+    icon: '🔣',
     color: 'green'
   },
   {
@@ -2658,7 +2658,7 @@ export const calculators: Calculator[] = [
     keywords: ['45 45 90 triangle', '45-45-90 triangle', '45 45 90 triangle calculator', 'isosceles right triangle', 'special right triangle', 'geometry', 'trigonometry', 'pythagorean theorem', 'triangle calculator', '45 45 90', 'right triangle calculator', 'special right triangle calculator', '45 degree triangle', 'isosceles triangle calculator', 'triangle side calculator'],
     href: '/math/triangle-45-45-90',
     embedHref: '/embed/math/triangle-45-45-90',
-    icon: '??',
+    icon: '🟨',
     color: 'purple'
   },
   {
@@ -2670,20 +2670,20 @@ export const calculators: Calculator[] = [
     keywords: ['special right triangles calculator', 'special right triangle calculator', '45-45-90 calculator', '30-60-90 calculator', 'special right triangle', 'right triangle calculator', '45 45 90 triangle calculator', '30 60 90 triangle calculator', 'isosceles right triangle calculator', 'special triangle calculator', 'right triangle solver', 'special right triangle solver', 'geometry calculator', 'triangle side calculator'],
     href: '/math/special-right-triangles',
     embedHref: '/embed/math/special-right-triangles',
-    icon: '??',
+    icon: '△',
     color: 'purple'
   },
 
   {
     id: 'geometric-sequence',
     name: 'Geometric Sequence Calculator',
-    description: 'Calculate the nth term and sum of a geometric sequence with step-by-step solutions and sequence visualization',
+    description: 'Calculate nth term and sum of a geometric sequence.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['geometric sequence', 'geometric series', 'common ratio', 'nth term', 'sequence sum', 'algebra', 'mathematical sequences', 'series calculator'],
     href: '/math/geometric-sequence',
     embedHref: '/embed/math/geometric-sequence',
-    icon: '??',
+    icon: '♾️',
     color: 'purple'
   },
   {
@@ -2695,7 +2695,7 @@ export const calculators: Calculator[] = [
     keywords: ['arithmetic sequence calculator', 'arithmetic sequence', 'arithmetic progression calculator', 'common difference calculator', 'nth term calculator', 'arithmetic sequence formula', 'arithmetic series calculator', 'calculate arithmetic sequence', 'arithmetic sequence sum', 'arithmetic progression', 'sequence calculator', 'arithmetic sequence solver', 'arithmetic sequence finder'],
     href: '/math/arithmetic-sequence',
     embedHref: '/embed/math/arithmetic-sequence',
-    icon: '??',
+    icon: '#️⃣',
     color: 'purple'
   },
 
@@ -2708,31 +2708,31 @@ export const calculators: Calculator[] = [
     keywords: ['point slope form', 'slope intercept form', 'standard form', 'linear equation', 'slope', 'algebra', 'graphing', 'line equation'],
     href: '/math/point-slope-form',
     embedHref: '/embed/math/point-slope-form',
-    icon: '??',
+    icon: '📎',
     color: 'orange'
   },
   {
     id: 'circle-equation',
     name: 'Equation of a Circle Calculator',
-    description: 'Find the equation of a circle from center and radius, or from three points on the circle with step-by-step solutions',
+    description: 'Find equation of a circle from center and radius or three points.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['circle equation', 'equation of circle', 'standard form', 'general form', 'center radius', 'three points', 'geometry', 'conic sections'],
     href: '/math/circle-equation',
     embedHref: '/embed/math/circle-equation',
-    icon: '??',
+    icon: '🥯',
     color: 'blue'
   },
   {
     id: 'pythagorean-theorem',
     name: 'Pythagorean Theorem Calculator',
-    description: 'Calculate the length of any side of a right triangle using the Pythagorean theorem with step-by-step solutions',
+    description: 'Calculate any right triangle side using the Pythagorean theorem.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['pythagorean theorem', 'right triangle', 'hypotenuse', 'legs', 'geometry', 'triangle', 'a? + b? = c?', 'distance formula'],
     href: '/math/pythagorean-theorem',
     embedHref: '/embed/math/pythagorean-theorem',
-    icon: '??',
+    icon: '⬜',
     color: 'red'
   },
   {
@@ -2744,7 +2744,7 @@ export const calculators: Calculator[] = [
     keywords: ['arc length', 'circle', 'radius', 'central angle', 'geometry', 'circumference', 'sector', 'arc formula'],
     href: '/math/arc-length',
     embedHref: '/embed/math/arc-length',
-    icon: '??',
+    icon: '🌀',
     color: 'blue'
   },
   {
@@ -2756,7 +2756,7 @@ export const calculators: Calculator[] = [
     keywords: ['percentage calculator', 'percentage change', 'percentage increase', 'percentage decrease', 'percentage of', 'math calculator', 'algebra'],
     href: '/math/percentage',
     embedHref: '/embed/math/percentage',
-    icon: '??',
+    icon: '％',
     color: 'purple'
   },
   {
@@ -2768,7 +2768,7 @@ export const calculators: Calculator[] = [
     keywords: ['average calculator', 'arithmetic mean', 'geometric mean', 'harmonic mean', 'weighted average', 'math calculator', 'statistics'],
     href: '/math/average',
     embedHref: '/embed/math/average',
-    icon: '??',
+    icon: '🧮',
     color: 'green'
   },
   {
@@ -2780,19 +2780,19 @@ export const calculators: Calculator[] = [
     keywords: ['decimal to percent calculator', 'percent to decimal calculator', 'fraction to percent calculator', 'percent to fraction calculator', 'decimal converter', 'math calculator'],
     href: '/math/decimal-to-percent',
     embedHref: '/embed/math/decimal-to-percent',
-    icon: '??',
+    icon: '💯',
     color: 'blue'
   },
   {
     id: 'trigonometry',
     name: 'Trigonometry Calculator',
-    description: 'Calculate all six trigonometric functions (sin, cos, tan, csc, sec, cot) for any angle in degrees or radians',
+    description: 'Calculate trig functions sin, cos, tan, csc, sec, cot for angles.',
     category: 'Trigonometry',
     subject: 'math',
     keywords: ['trigonometry calculator', 'sin cos tan', 'trigonometric functions', 'angle calculator', 'sine cosine tangent', 'csc sec cot', 'radians degrees'],
     href: '/math/trigonometry',
     embedHref: '/embed/math/trigonometry',
-    icon: '??',
+    icon: '📐',
     color: 'purple'
   },
   {
@@ -2804,31 +2804,31 @@ export const calculators: Calculator[] = [
     keywords: ['right triangle calculator', 'pythagorean theorem', 'triangle sides', 'triangle angles', 'hypotenuse', 'legs', 'trigonometry', 'geometry'],
     href: '/math/right-triangle',
     embedHref: '/embed/math/right-triangle',
-    icon: '??',
+    icon: '🧿',
     color: 'green'
   },
   {
     id: 'isosceles-triangle',
     name: 'Isosceles Triangle Calculator',
-    description: 'Calculate all properties of an isosceles triangle including sides, angles, area, perimeter, and height with step-by-step solutions',
+    description: 'Calculate sides, angles, area, perimeter, and height of an isosceles triangle.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['isosceles triangle', 'triangle calculator', 'isosceles triangle calculator', 'triangle area', 'triangle height', 'base angles', 'vertex angle', 'geometry', 'triangle properties'],
     href: '/math/isosceles-triangle',
     embedHref: '/embed/math/isosceles-triangle',
-    icon: '??',
+    icon: '🪁',
     color: 'purple'
   },
   {
     id: 'surface-area',
     name: 'Surface Area Calculator',
-    description: 'Calculate surface area for cube, rectangular prism, cylinder, sphere, cone, and triangular prism with step-by-step solutions',
+    description: 'Calculate surface area of cube, prism, cylinder, sphere, cone, and triangular prism.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['surface area calculator', 'calculate surface area', 'surface area formula', 'cube surface area', 'cylinder surface area', 'sphere surface area', 'cone surface area', 'rectangular prism surface area', '3d shape surface area', 'geometry calculator'],
     href: '/math/surface-area',
     embedHref: '/embed/math/surface-area',
-    icon: '?',
+    icon: '🧫',
     color: 'purple'
   },
   {
@@ -2840,7 +2840,7 @@ export const calculators: Calculator[] = [
     keywords: ['height of a triangle calculator', 'triangle height calculator', 'how to find triangle height', 'triangle height formula', 'calculate triangle height', 'height from area and base', 'heron formula height', 'triangle altitude calculator', 'geometry calculator', 'triangle calculator'],
     href: '/math/triangle-height',
     embedHref: '/embed/math/triangle-height',
-    icon: '??',
+    icon: '🪜',
     color: 'purple'
   },
   {
@@ -2852,43 +2852,43 @@ export const calculators: Calculator[] = [
     keywords: ['significant figures calculator', 'sig fig calculator', 'rounding numbers', 'precision', 'scientific notation', 'measurement accuracy', 'chemistry', 'physics'],
     href: '/math/significant-figures',
     embedHref: '/embed/math/significant-figures',
-    icon: '??',
+    icon: '🔍',
     color: 'orange'
   },
   {
     id: 'doubling-time',
     name: 'Doubling Time Calculator',
-    description: 'Calculate how long it takes for a quantity to double at a given growth rate using Rule of 70 or natural logarithm',
+    description: 'Calculate doubling time from growth rate using Rule of 70 or logarithms.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['doubling time calculator', 'rule of 70', 'exponential growth', 'population growth', 'investment doubling', 'compound interest', 'growth rate', 'bacterial growth'],
     href: '/math/doubling-time',
     embedHref: '/embed/math/doubling-time',
-    icon: '??',
+    icon: '⏳',
     color: 'red'
   },
   {
     id: 'log',
     name: 'Log Calculator',
-    description: 'Calculate natural logarithm (ln), common logarithm (log10), or logarithm with any custom base with step-by-step solutions',
+    description: 'Calculate logarithms: ln, log10, or any base.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['log calculator', 'logarithm calculator', 'natural log', 'ln calculator', 'common log', 'log base 10', 'custom base logarithm', 'logarithmic function', 'exponential inverse'],
     href: '/math/log',
     embedHref: '/embed/math/log',
-    icon: '??',
+    icon: '㏑',
     color: 'purple'
   },
   {
     id: 'golden-ratio',
     name: 'Golden Ratio Calculator',
-    description: 'Calculate the golden ratio (f), multiply or divide by f, or find golden rectangle dimensions with step-by-step solutions',
+    description: 'Calculate golden ratio, scale values, or golden rectangle dimensions.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['golden ratio calculator', 'phi calculator', 'golden ratio', 'golden rectangle', 'divine proportion', 'fibonacci ratio', 'f calculator', 'golden section', 'mathematical constant'],
     href: '/math/golden-ratio',
     embedHref: '/embed/math/golden-ratio',
-    icon: '??',
+    icon: 'φ',
     color: 'pink'
   },
   {
@@ -2900,7 +2900,7 @@ export const calculators: Calculator[] = [
     keywords: ['hexagon calculator', 'hexagon area', 'hexagon perimeter', 'regular hexagon', 'hexagon apothem', 'hexagon diagonal', 'hexagon side length', 'polygon calculator', 'geometry calculator'],
     href: '/math/hexagon',
     embedHref: '/embed/math/hexagon',
-    icon: '??',
+    icon: '⬡',
     color: 'blue'
   },
   {
@@ -2912,7 +2912,7 @@ export const calculators: Calculator[] = [
     keywords: ['octagon calculator', 'octagon area', 'octagon perimeter', 'regular octagon', 'octagon apothem', 'octagon diagonal', 'octagon side length', 'polygon calculator', 'geometry calculator', 'stop sign shape'],
     href: '/math/octagon',
     embedHref: '/embed/math/octagon',
-    icon: '??',
+    icon: '🛑',
     color: 'purple'
   },
   {
@@ -2924,55 +2924,55 @@ export const calculators: Calculator[] = [
     keywords: ['slope intercept form calculator', 'y = mx + b calculator', 'slope intercept form', 'find slope and y intercept', 'convert to slope intercept form', 'linear equation calculator', 'graphing calculator', 'algebra calculator'],
     href: '/math/slope-intercept-form',
     embedHref: '/embed/math/slope-intercept-form',
-    icon: '??',
+    icon: 'y=',
     color: 'orange'
   },
   {
     id: 'equilateral-triangle',
     name: 'Equilateral Triangle Calculator',
-    description: 'Calculate area, perimeter, height, and side length of an equilateral triangle with step-by-step solutions. All sides equal, all angles 60?',
+    description: 'Calculate equilateral triangle area, perimeter, height, and side length.',
     category: 'Geometry',
     subject: 'math',
     keywords: ['equilateral triangle calculator', 'equilateral triangle area', 'equilateral triangle perimeter', 'equilateral triangle height', 'regular triangle', 'triangle calculator', 'geometry calculator', 'triangle properties'],
     href: '/math/equilateral-triangle',
     embedHref: '/embed/math/equilateral-triangle',
-    icon: '??',
+    icon: '▲',
     color: 'green'
   },
   {
     id: 'multiplication',
     name: 'multiplication Calculator',
-    description: 'multiply two or more numbers instantly with our free online multiplication calculator. Get accurate results with step-by-step calculations.',
+    description: 'Multiply two or more numbers with accurate results and steps.',
     category: 'Arithmetic',
     subject: 'math',
     keywords: ['multiplication calculator', 'multiply numbers', 'product calculator', 'multiplication table', 'multiply', 'times calculator', 'math calculator', 'arithmetic calculator'],
     href: '/math/multiplication',
     embedHref: '/embed/math/multiplication',
-    icon: '??',
+    icon: '×',
     color: 'purple'
   },
   {
     id: 'sinh',
     name: 'Sinh Calculator',
-    description: 'Calculate the hyperbolic sine (sinh) of any number instantly. Free online sinh calculator with step-by-step calculations and explanations.',
+    description: 'Calculate hyperbolic sine (sinh) values for any number.',
     category: 'Trigonometry',
     subject: 'math',
     keywords: ['sinh calculator', 'hyperbolic sine calculator', 'sinh function', 'hyperbolic sine', 'sinh(x)', 'hyperbolic functions', 'trigonometry calculator', 'math calculator'],
     href: '/math/sinh',
     embedHref: '/embed/math/sinh',
-    icon: '??',
+    icon: '∿',
     color: 'purple'
   },
   {
     id: 'error-function',
     name: 'Error Function Calculator',
-    description: 'Calculate the error function (erf) and complementary error function (erfc) of any number with high precision',
+    description: 'Calculate error function erf or erfc with high precision.',
     category: 'Statistics',
     subject: 'math',
     keywords: ['error function', 'erf calculator', 'erfc calculator', 'complementary error function', 'gaussian error function', 'normal distribution', 'probability', 'statistics', 'special functions'],
     href: '/math/error-function',
     embedHref: '/embed/math/error-function',
-    icon: '??',
+    icon: 'ƒ',
     color: 'purple'
   },
   {
@@ -2984,31 +2984,31 @@ export const calculators: Calculator[] = [
     keywords: ['lagrange error bound', 'taylor series error', 'taylor polynomial error', 'lagrange remainder', 'taylor remainder', 'calculus', 'approximation error', 'taylor series calculator'],
     href: '/math/lagrange-error-bound',
     embedHref: '/embed/math/lagrange-error-bound',
-    icon: '??',
+    icon: 'ε',
     color: 'purple'
   },
   {
     id: 'percent-error',
     name: 'Percent Error Calculator',
-    description: 'Calculate the percent error between measured and true values. Find accuracy of measurements and experimental results',
+    description: 'Calculate percent error between measured and true values.',
     category: 'Statistics',
     subject: 'math',
     keywords: ['percent error', 'percentage error', 'error calculation', 'measurement error', 'experimental error', 'accuracy', 'precision', 'statistics', 'error analysis'],
     href: '/math/percent-error',
     embedHref: '/embed/math/percent-error',
-    icon: '??',
+    icon: '⚠️',
     color: 'purple'
   },
   {
     id: 'percentage-difference',
     name: 'Percentage Difference Calculator',
-    description: 'Calculate the percentage difference between two values when comparing experimental results. Find relative difference between measurements',
+    description: 'Calculate percentage difference between two values for comparisons.',
     category: 'Statistics',
     subject: 'math',
     keywords: ['percentage difference', 'percent difference', 'relative difference', 'comparison calculator', 'experimental comparison', 'measurement comparison', 'difference calculator', 'statistics'],
     href: '/math/percentage-difference',
     embedHref: '/embed/math/percentage-difference',
-    icon: '??',
+    icon: '↕️',
     color: 'purple'
   },
   {
@@ -3020,31 +3020,31 @@ export const calculators: Calculator[] = [
     keywords: ['cylinder volume calculator', 'volume of cylinder', 'cylinder volume formula', 'calculate cylinder volume', 'cylinder calculator', 'circular cylinder volume', 'geometry calculator', '3d volume calculator'],
     href: '/math/cylinder-volume',
     embedHref: '/embed/math/cylinder-volume',
-    icon: '??',
+    icon: '🥫',
     color: 'blue'
   },
   {
     id: 'mean',
     name: 'mean Calculator',
-    description: 'Calculate the arithmetic mean (average) of a set of numbers instantly. Free online mean calculator with step-by-step calculations and explanations.',
+    description: 'Calculate arithmetic mean of a set of numbers.',
     category: 'Statistics',
     subject: 'math',
     keywords: ['mean calculator', 'arithmetic mean calculator', 'calculate mean', 'mean formula', 'average calculator', 'statistics calculator', 'math calculator', 'data analysis'],
     href: '/math/mean',
     embedHref: '/embed/math/mean',
-    icon: '??',
+    icon: 'μ',
     color: 'purple'
   },
   {
     id: 'time-percentage',
     name: 'Time Percentage Calculator',
-    description: 'Calculate what percentage one time period is of another. Free online time percentage calculator with support for hours, minutes, and seconds.',
+    description: 'Calculate what percentage one time period is of another.',
     category: 'Algebra',
     subject: 'math',
     keywords: ['time percentage calculator', 'calculate time percentage', 'time as percentage', 'percentage of time', 'time percentage formula', 'hours percentage', 'minutes percentage', 'time calculator'],
     href: '/math/time-percentage',
     embedHref: '/embed/math/time-percentage',
-    icon: '??',
+    icon: '⏱️',
     color: 'orange'
   },
   {
@@ -3056,7 +3056,7 @@ export const calculators: Calculator[] = [
     keywords: ['fraction calculator', 'add fractions', 'subtract fractions', 'multiply fractions', 'divide fractions', 'simplify fractions', 'fraction operations', 'fraction to decimal', 'decimal to fraction', 'math calculator'],
     href: '/math/fraction',
     embedHref: '/embed/math/fraction',
-    icon: '??',
+    icon: '½',
     color: 'blue'
   },
   {
@@ -3068,7 +3068,7 @@ export const calculators: Calculator[] = [
     keywords: ['simplify fractions', 'simplify fractions calculator', 'reduce fractions', 'fraction simplifier', 'lowest terms calculator', 'GCD calculator', 'reduce fraction to lowest terms', 'simplify 4/8', 'fraction reducer', 'simplify fractions tool', 'how to simplify fractions', 'fraction simplification', 'reduce to lowest terms', 'simplest form calculator', 'greatest common divisor calculator'],
     href: '/math/simplify-fractions',
     embedHref: '/embed/math/simplify-fractions',
-    icon: '??',
+    icon: '✂️',
     color: 'purple'
   },
   {
@@ -3080,7 +3080,7 @@ export const calculators: Calculator[] = [
     keywords: ['common denominator calculator', 'LCD calculator', 'least common denominator', 'common denominator finder', 'find common denominator', 'LCD finder', 'common denominator of fractions', 'equivalent fractions calculator', 'common denominator math', 'fraction denominator calculator', 'LCD math calculator', 'common denominator tool', 'find LCD', 'lowest common denominator calculator'],
     href: '/math/common-denominator',
     embedHref: '/embed/math/common-denominator',
-    icon: '??',
+    icon: '🔗',
     color: 'purple'
   },
 
@@ -3093,7 +3093,7 @@ export const calculators: Calculator[] = [
     keywords: ['two\'s complement calculator', 'twos complement', 'two\'s complement binary', 'signed binary calculator', 'binary to decimal signed', 'decimal to two\'s complement', 'two\'s complement converter', 'signed integer calculator', 'binary arithmetic', 'two\'s complement representation', 'negative binary', 'signed number calculator'],
     href: '/math/twos-complement',
     embedHref: '/embed/math/twos-complement',
-    icon: '??',
+    icon: '2️⃣',
     color: 'purple'
   },
   {
