@@ -1,179 +1,100 @@
-import { Metadata } from 'next';
-import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import PercentageCalculator from '../../../_components/calculators/PercentageCalculator';
-
-export const metadata: Metadata = {
-  title: 'Percentage Calculator - Free Online Math Calculator',
-  description: 'Calculate percentages, percentage changes, and percentage relationships. Free online percentage calculator with step-by-step solutions and explanations.',
-  keywords: ['percentage calculator', 'percentage change calculator', 'percentage increase calculator', 'percentage decrease calculator', 'percentage of calculator', 'math calculator'],
-  openGraph: {
-    title: 'Percentage Calculator - Free Online Math Calculator',
-    description: 'Calculate percentages, percentage changes, and percentage relationships. Free online percentage calculator with step-by-step solutions and explanations.',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'GetCalculation - Free Online Math Calculators',
-      },
-    ],
-  },
-};
+import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
+import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 export default function PercentagePage() {
   return (
     <CalculatorPageTemplate
-      title="Percentage Calculator"
-      description="Calculate percentages, percentage changes, and percentage relationships with step-by-step solutions and explanations."
+      title="Percentage Calculator - Calculate Percentages Instantly"
+      description="Free percentage calculator to find percent values, discounts, and changes. Calculate what percentage one number is of another with ease."
       calculator={<PercentageCalculator />}
       slug="math/percentage"
-      category="Algebra"
+      category="Math"
       features={[
-        "Calculate percentage of a number",
-        "Find percentage change between values",
-        "Calculate percentage increase/decrease",
-        "Step-by-step solutions with explanations",
-        "Multiple calculation types supported",
-        "Mobile-friendly interface"
+        "Calculate any percentage in seconds",
+        "Find percentage of a number",
+        "Determine percentage increase/decrease",
+        "Instant accurate results",
+        "Free to use"
       ]}
     >
-      <div className="space-y-8">
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Percentage?</h2>
-          <p className="text-lg text-gray-700 mb-4">
-            A percentage is a way of expressing a number as a fraction of 100. It&apos;s commonly used to compare values, show changes, and represent proportions. Percentages are essential in mathematics, finance, statistics, and everyday life.
-          </p>
-          <p className="text-lg text-gray-700 mb-4">
-            The basic percentage formula is: <strong>Percentage = (Part / Whole) × 100</strong>
-          </p>
-          <ul className="list-disc list-inside text-lg text-gray-700 mb-4 space-y-2">
-            <li><strong>Part</strong> = the portion you want to find the percentage of</li>
-            <li><strong>Whole</strong> = the total amount</li>
-            <li><strong>Percentage</strong> = the result expressed as a percentage</li>
-          </ul>
-        </section>
+      <SEOSection title="Understanding Percentages: Real-World Applications">
+        <p>
+          Percentages are everywhere in daily life—from calculating discounts during shopping to determining test scores and growth rates. Whether you're figuring out a 20% discount on a purchase, calculating tip percentages at restaurants, or analyzing data trends, understanding how to work with percentages is essential. If you need to compare multiple values and their relationships, explore our {createInternalLink('proportion')} for more advanced comparisons.
+        </p>
+      </SEOSection>
+      
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
+        <ol>
+          <li><strong>Step 1:</strong> Enter the part value (the number you want to find the percentage for)</li>
+          <li><strong>Step 2:</strong> Enter the whole value (the total or base number)</li>
+          <li><strong>Step 3:</strong> Click "Calculate" to see your percentage result instantly</li>
+        </ol>
+      </SEOSection>
 
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Use the Percentage Calculator</h2>
-          <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">Step 1: Select Calculation Type</h3>
-              <p className="text-blue-800">Choose from five different percentage calculations: percentage of, percentage change, percentage increase, percentage decrease, or find percentage of a number.</p>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <h3 className="text-xl font-semibold text-green-900 mb-2">Step 2: Enter Values</h3>
-              <p className="text-green-800">Input the required values based on your selected calculation type. The calculator will guide you with appropriate labels.</p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg">
-              <h3 className="text-xl font-semibold text-purple-900 mb-2">Step 3: Get Your Results</h3>
-              <p className="text-purple-800">The calculator will provide the percentage result, explanation, and step-by-step calculation process.</p>
-            </div>
-          </div>
-        </section>
+      <SEOSection title="The Core Concept: Percentage Formula">
+        <p>
+          A percentage represents a portion of 100. The percentage formula is straightforward: divide the part by the whole, then multiply by 100. This calculation tells you what fraction of the total is represented as a value out of 100. Understanding this basic percentage formula is fundamental to mastering calculations with percentages in math and real-world applications.
+        </p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">Percentage = (Part ÷ Whole) × 100</p>
+        </div>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>Imagine you scored 85 points out of 100 on a test. To find your percentage score:</p>
+        <ul>
+           <li>Part: 85 (your score)</li>
+           <li>Whole: 100 (total points)</li>
+           <li>Calculation: (85 ÷ 100) × 100 = 85%</li>
+           <li>Result: You scored 85% on the test</li>
+        </ul>
+      </SEOSection>
 
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Percentage Calculation Types</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What percentage is X of Y?</h3>
-              <p className="text-gray-700 mb-2">Finds what percentage one number is of another.</p>
-              <p className="text-sm text-gray-600">Formula: (X / Y) × 100</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What is X% of Y?</h3>
-              <p className="text-gray-700 mb-2">Finds a specific percentage of a number.</p>
-              <p className="text-sm text-gray-600">Formula: (X / 100) × Y</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Percentage Change</h3>
-              <p className="text-gray-700 mb-2">Calculates the percentage change between two values.</p>
-              <p className="text-sm text-gray-600">Formula: ((New - Old) / Old) × 100</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Percentage Increase/Decrease</h3>
-              <p className="text-gray-700 mb-2">Calculates percentage increase or decrease from one value to another.</p>
-              <p className="text-sm text-gray-600">Formula: ((New - Old) / Old) × 100</p>
-            </div>
-          </div>
-        </section>
+      <SEOSection title="Practical Applications">
+         <p>Percentage calculations are used across countless industries and everyday situations. From retail discounts and finance to education and data analysis, percentages help us understand proportions and make informed decisions about values and changes.</p>
+         <SEOList items={[
+           "Retail & Shopping: Calculate discounts and sale prices",
+           "Finance & Investment: Determine interest rates, returns, and growth",
+           "Education: Calculate test scores and grade percentages",
+           "Health & Fitness: Track progress percentages and nutritional values",
+           "Data Analysis: Interpret survey results and statistical information"
+         ]} />
+      </SEOSection>
 
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Common Percentage Examples</h2>
-          <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Example 1: What percentage is 25 of 200?</h3>
-              <p className="text-blue-800">Solution: (25 / 200) × 100 = 12.5%</p>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-green-900 mb-2">Example 2: What is 15% of 80?</h3>
-              <p className="text-green-800">Solution: (15 / 100) × 80 = 12</p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-purple-900 mb-2">Example 3: Percentage change from 50 to 75</h3>
-              <p className="text-purple-800">Solution: ((75 - 50) / 50) × 100 = 50% increase</p>
-            </div>
-          </div>
-        </section>
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "How do I calculate a percentage of a number?",
+            answer: "To find a percentage of a number, multiply the number by the percentage and divide by 100. For example, 20% of 150 is (150 × 20) ÷ 100 = 30. Our percentage calculator does this instantly for you."
+          },
+          {
+            question: "What's the difference between percentage and percentage points?",
+            answer: "A percentage is a proportion out of 100, while percentage points measure the arithmetic difference between two percentages. For example, if something increases from 30% to 35%, that's a 5 percentage point increase, but a 16.67% increase in the original percentage value."
+          },
+           {
+            question: "How do I calculate percentage increase or decrease?",
+            answer: "To find percentage change, use this formula: ((New Value - Old Value) ÷ Old Value) × 100. A positive result indicates an increase, while a negative result indicates a decrease. This is essential for tracking growth rates and value changes."
+          },
+           {
+            question: "Can I use this calculator for calculating discounts?",
+            answer: "Yes! To calculate a discount, find the percentage of the original price, then subtract it from the original price. For example, a 25% discount on $80 means you save $20 and pay $60. This is one of the most common percentage calculation uses."
+          },
+           {
+            question: "What are some common percentage values I should know?",
+            answer: "Common percentages include: 10% (one-tenth), 25% (one-quarter), 33.33% (one-third), 50% (one-half), 66.67% (two-thirds), and 75% (three-quarters). These appear frequently in discounts, tips, surveys, and conversions."
+          }
+        ]} />
+      </SEOSection>
 
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Applications of Percentages</h2>
-          <div className="space-y-4">
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 mt-1"></div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Finance</h3>
-                <p className="text-gray-700">Interest rates, discounts, taxes, and investment returns.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 bg-green-500 rounded-full flex-shrink-0 mt-1"></div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Statistics</h3>
-                <p className="text-gray-700">Data analysis, survey results, and statistical comparisons.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 bg-purple-500 rounded-full flex-shrink-0 mt-1"></div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Science</h3>
-                <p className="text-gray-700">Concentration calculations, error margins, and experimental results.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 bg-orange-500 rounded-full flex-shrink-0 mt-1"></div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Business</h3>
-                <p className="text-gray-700">Profit margins, growth rates, and performance metrics.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Percentage Tips and Tricks</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Quick Calculations</h3>
-              <ul className="text-gray-700 space-y-1">
-                <li>• 10% = divide by 10</li>
-                <li>• 25% = divide by 4</li>
-                <li>• 50% = divide by 2</li>
-                <li>• 75% = multiply by 3, divide by 4</li>
-              </ul>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Common Mistakes</h3>
-              <ul className="text-gray-700 space-y-1">
-                <li>• Forgetting to multiply by 100</li>
-                <li>• Confusing percentage increase with percentage of</li>
-                <li>• Not considering the base value correctly</li>
-                <li>• Mixing up percentage points and percentages</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
+      <SEOSection title="Conclusion">
+        <p>
+          Mastering percentage calculations is easier than you think with the right tool at your fingertips. Whether you're managing finances, shopping with discounts, or analyzing data, our percentage calculator delivers instant, accurate results every time.
+        </p>
+        <p>
+           Explore more math tools: Check out our {createInternalLink('average')} to analyze groups of numbers, or the essential {createInternalLink('fraction')} for working with fractional values.
+        </p>
+      </SEOSection>
     </CalculatorPageTemplate>
   );
 }
