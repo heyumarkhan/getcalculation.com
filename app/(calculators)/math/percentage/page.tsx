@@ -21,7 +21,7 @@ export default function PercentagePage() {
     >
       <SEOSection title="Understanding Percentages: Real-World Applications">
         <p>
-          Percentages are everywhere in daily life—from calculating discounts during shopping to determining test scores and growth rates. Whether you're figuring out a 20% discount on a purchase, calculating tip percentages at restaurants, or analyzing data trends, understanding how to work with percentages is essential. If you need to compare multiple values and their relationships, explore our {createInternalLink('standard-form-to-slope-intercept')} for more advanced comparisons.
+          Percentages are everywhere in daily life—from calculating discounts during shopping to determining test scores and growth rates. Whether you're figuring out a 20% discount on a purchase, calculating tip percentages at restaurants, or analyzing data trends, understanding how to work with percentages is essential. If you need to compare multiple values and their relationships, explore our {createInternalLink('proportion')} for more advanced comparisons.
         </p>
       </SEOSection>
       
@@ -92,7 +92,7 @@ export default function PercentagePage() {
           Mastering percentage calculations is easier than you think with the right tool at your fingertips. Whether you're managing finances, shopping with discounts, or analyzing data, our percentage calculator delivers instant, accurate results every time.
         </p>
         <p>
-           Explore more math tools: Check out our {createInternalLink('average')} to analyze groups of numbers, or the essential {createInternalLink('standard-form-to-slope-intercept')} for algebraic transformations.
+           Explore more math tools: Check out our {createInternalLink('average')} to analyze groups of numbers, or the essential {createInternalLink('fraction')} for working with fractional values.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
