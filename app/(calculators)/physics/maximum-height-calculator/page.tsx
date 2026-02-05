@@ -103,7 +103,7 @@ export default function MaximumHeightCalculatorPage() {
           Mastering maximum height calculations in projectile motion is essential for understanding kinematics, optimizing trajectories, and solving real-world physics problems. The formula h_max = (v₀² × sin²θ) / (2g) elegantly connects initial velocity, launch angle, and gravitational acceleration to predict peak altitude with precision.
         </p>
         <p>
-          Explore more physics tools: Check out our {createInternalLink('gravitational-force-calculator')} to understand gravitational effects on motion, or use the {createInternalLink('power-calculator')} to calculate energy requirements for launching projectiles.
+          Explore more physics tools: Check out our {createInternalLink('gravitational-force-calculator')} to understand gravitational effects on motion, or use our {createInternalLink('kinetic-energy-calculator')} to calculate energy requirements for launching projectiles.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
