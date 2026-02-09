@@ -6,244 +6,100 @@ import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function AntennaLengthCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Antenna Length Calculator: Calculate Antenna Length from Frequency"
-      description="Calculate antenna length from frequency or frequency from antenna length for half-wave dipole, quarter-wave monopole, and full-wave antennas. Free online RF calculator for antenna design."
+      title="Antenna Length Calculator: Calculate RF Antenna Length from Frequency"
+      description="Calculate antenna length from frequency for RF design. Supports half-wave dipole and quarter-wave monopole antennas with adjustable velocity factor. Free online calculator."
       calculator={<AntennaLengthCalculator />}
       slug="physics/antenna-length-calculator"
-      category="Electromagnetism"
+      category="Physics"
       features={[
         "Calculate antenna length from frequency",
-        "Calculate frequency from antenna length",
-        "Support for half-wave dipole, quarter-wave monopole, and full-wave antennas",
+        "Support for half-wave dipole and quarter-wave monopole antennas",
         "Adjustable velocity factor",
         "Comprehensive unit conversion",
-        "Step-by-step solutions",
-        "Mobile-friendly interface",
-        "Free to use"
+        "Step-by-step solutions with detailed explanations"
       ]}
     >
-      <SEOSection title="Understanding Antenna Length: Essential for RF Design">
+      <SEOSection title="Understanding Antenna Length in RF Design">
         <p>
-          Antenna length is a critical parameter in radio frequency (RF) design, directly determining the resonant frequency and performance characteristics of an antenna. Understanding how to calculate the correct antenna length for a given frequency is fundamental for amateur radio operators, RF engineers, and anyone working with wireless communications. Our Antenna Length Calculator simplifies these calculations, allowing you to determine the optimal antenna length from frequency, or the resonant frequency from antenna length, using the fundamental relationship between wavelength and frequency.
+          Antenna length directly determines the resonant {createInternalLink('frequency-calculator')} and performance of any antenna system. The relationship between antenna length and frequency is governed by the wavelength of the electromagnetic wave. For RF design, calculating the correct antenna length is essential for ensuring proper impedance matching, radiation efficiency, and optimal signal transmission and reception.
         </p>
         <p>
-          The relationship between antenna length and frequency is governed by the speed of light and the wavelength of the electromagnetic wave. Different antenna types (half-wave dipole, quarter-wave monopole, full-wave) require different length calculations based on their design principles. This calculator accounts for velocity factor, which adjusts for the actual propagation speed in the antenna material compared to free space, ensuring accurate results for real-world antenna construction.
+          The antenna length formula depends on the wavelength and the antenna type. A half-wave dipole requires length = λ/2, while a quarter-wave monopole requires length = λ/4. This calculator simplifies the calculation by automatically computing antenna length from your operating frequency, accounting for velocity factor to ensure real-world accuracy.
         </p>
       </SEOSection>
 
-      <SEOSection title="How to Use Our Antenna Length Calculator">
-        <p>
-          Our Antenna Length Calculator offers two calculation modes:
-        </p>
+      <SEOSection title="How to Use the Antenna Length Calculator">
         <ol>
-          <li><strong>Calculate Antenna Length from Frequency:</strong> Enter the operating frequency and select the antenna type. The calculator determines the required antenna length, accounting for velocity factor.</li>
-          <li><strong>Calculate Frequency from Antenna Length:</strong> Enter the antenna length and select the antenna type. The calculator determines the resonant frequency.</li>
+          <li><strong>Enter Operating Frequency:</strong> Input your desired frequency in MHz and select your preferred units for the result.</li>
+          <li><strong>Select Antenna Type:</strong> Choose between half-wave dipole (most common) or quarter-wave monopole based on your application.</li>
+          <li><strong>Calculate and Adjust:</strong> The calculator provides antenna length with velocity factor adjustment (default 0.95). Review the step-by-step solution for detailed calculations.</li>
         </ol>
-        <p>
-          Select your antenna type (half-wave dipole, quarter-wave monopole, or full-wave), choose your calculation mode, enter the known values with your preferred units, adjust the velocity factor if needed (default: 0.95 for wire antennas), and click Calculate to get instant results with detailed step-by-step solutions.
-        </p>
       </SEOSection>
 
-      <SEOSection title="The Antenna Length Formula Explained">
+      <SEOSection title="Antenna Length Formula and Calculation">
         <p>
-          The fundamental relationship between antenna length and frequency is based on the wavelength:
+          Antenna length is calculated using the fundamental relationship between wavelength and frequency:
         </p>
         <SEOFormula
-          formula="L = (λ/n) × vf = (c/(n×f)) × vf"
-          description="Where: L = Antenna Length, λ = Wavelength, n = Fraction (2 for half-wave, 4 for quarter-wave, 1 for full-wave), vf = Velocity Factor, c = Speed of Light (299,792,458 m/s), f = Frequency"
+          formula="L = (c / (n × f)) × vf"
+          description="Where: L = Antenna Length, c = Speed of Light (299,792,458 m/s), f = Frequency (Hz), n = 2 for half-wave dipole, 4 for quarter-wave monopole, vf = Velocity Factor (typically 0.95)"
         />
-
-        <h3>Antenna Type Formulas:</h3>
-        <SEOList items={[
-          "<strong>Half-Wave Dipole:</strong> L = (λ/2) × vf = (c/(2×f)) × vf. This is the most common antenna type, consisting of two equal-length elements. Each element is λ/4 long, with the total length being λ/2.",
-          "<strong>Quarter-Wave Monopole:</strong> L = (λ/4) × vf = (c/(4×f)) × vf. A single-element antenna that requires a ground plane to function properly. The ground plane acts as a mirror, effectively creating a half-wave dipole.",
-          "<strong>Full-Wave:</strong> L = λ × vf = (c/f) × vf. An antenna that is one complete wavelength long, used in specific applications where a longer antenna is beneficial."
-        ]} />
-
-        <h3>Key Components:</h3>
-        <SEOList items={[
-          "<strong>Wavelength (λ):</strong> The distance over which the wave's shape repeats, calculated as λ = c/f, where c is the speed of light and f is the frequency.",
-          "<strong>Velocity Factor (vf):</strong> A correction factor that accounts for the actual propagation speed of electromagnetic waves in the antenna material. For wire antennas, typical values are 0.95-0.98. For free space (theoretical), vf = 1.0.",
-          "<strong>Speed of Light (c):</strong> 299,792,458 m/s - the speed at which electromagnetic waves travel in free space.",
-          "<strong>Frequency (f):</strong> The operating frequency of the antenna, typically measured in MHz for radio frequencies, Hz for general use."
-        ]} />
-
-        <h3>Common Approximation Formulas:</h3>
         <p>
-          For quick calculations, many antenna builders use simplified formulas:
+          <strong>Example:</strong> Calculate the antenna length for a half-wave dipole at 144 MHz with velocity factor 0.95:
         </p>
         <ul>
-          <li><strong>Half-Wave Dipole (in feet):</strong> L = 468 / f (MHz) - This uses a velocity factor of approximately 0.95</li>
-          <li><strong>Half-Wave Dipole (in meters):</strong> L = 142.5 / f (MHz) - Simplified metric version</li>
-          <li><strong>Quarter-Wave Monopole (in feet):</strong> L = 234 / f (MHz)</li>
+          <li>L = (299,792,458 / (2 × 144,000,000)) × 0.95</li>
+          <li>L = (299,792,458 / 288,000,000) × 0.95</li>
+          <li>L = 1.040 × 0.95 = 0.988 meters ≈ 39 inches</li>
         </ul>
         <p>
-          Note: These simplified formulas are approximations and may require fine-tuning in practice.
+          For quick calculations, use L = 468 / f(MHz) in feet for half-wave dipoles, or L = 142.5 / f(MHz) in meters. Velocity factor adjustments may be needed for real-world applications.
         </p>
       </SEOSection>
 
-      <SEOSection title="Real-World Applications of Antenna Length Calculations">
-        <p>
-          Antenna length calculations are essential in numerous applications:
-        </p>
+      <SEOSection title="Practical Applications of Antenna Length Calculations">
         <SEOList items={[
-          "<strong>Amateur Radio (Ham Radio):</strong> Designing and building antennas for various frequency bands. Operators need to calculate antenna lengths for optimal performance at their operating frequencies.",
-          "<strong>Broadcast Engineering:</strong> Designing antennas for AM/FM radio, television, and other broadcast applications where precise length calculations ensure proper coverage and compliance.",
-          "<strong>Wireless Communications:</strong> Designing antennas for Wi-Fi, cellular networks, Bluetooth, and other wireless technologies where antenna size directly affects performance and form factor.",
-          "<strong>RF Circuit Design:</strong> Integrating antennas into electronic circuits and ensuring proper impedance matching at the calculated resonant frequency.",
-          "<strong>Aerospace and Satellite Communications:</strong> Designing antennas for aircraft, satellites, and space applications where size and weight are critical constraints.",
-          "<strong>IoT and Embedded Systems:</strong> Designing compact antennas for Internet of Things devices where space is limited and precise calculations are essential.",
-          "<strong>Antenna Tuning and Optimization:</strong> Adjusting existing antennas for optimal performance by calculating required lengths for desired frequencies.",
-          "<strong>Education and Research:</strong> Teaching electromagnetic theory, antenna design principles, and RF engineering concepts."
+          "<strong>Amateur Radio:</strong> Ham radio operators calculate antenna lengths for specific frequency bands to ensure optimal radiation efficiency and impedance matching.",
+          "<strong>Wireless Communications:</strong> Wi-Fi, cellular, and Bluetooth devices require precise antenna sizing to achieve required performance and comply with regulatory standards.",
+          "<strong>Broadcast Engineering:</strong> Radio and television stations design antennas using precise length calculations for proper coverage and signal strength.",
+          "<strong>RF Circuit Design:</strong> PCB-mounted antennas and RF modules require accurate length calculations for the intended operating frequency.",
+          "<strong>Aerospace Applications:</strong> Aircraft and satellite communications systems depend on properly calculated antenna dimensions for reliable signal transmission."
         ]} />
       </SEOSection>
 
-      <SEOSection title="Antenna Types and Their Characteristics">
-        <p>
-          Understanding different antenna types helps in choosing the right design:
-        </p>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Antenna Type</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Length</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Characteristics</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Applications</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800"><strong>Half-Wave Dipole</strong></td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">λ/2</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Balanced, bidirectional radiation pattern, 73Ω impedance</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Most common for general-purpose RF, amateur radio, base stations</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800"><strong>Quarter-Wave Monopole</strong></td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">λ/4</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Requires ground plane, omnidirectional, 36.5Ω impedance (with ideal ground)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Mobile applications, portable devices, compact installations</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800"><strong>Full-Wave</strong></td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">λ</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Longer length, different radiation pattern, used in specific designs</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">Specialized applications, certain array configurations</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </SEOSection>
 
-      <SEOSection title="Velocity Factor: Why It Matters">
-        <p>
-          The velocity factor is a crucial parameter that accounts for the difference between the theoretical speed of light in free space and the actual propagation speed in the antenna material:
-        </p>
-        <SEOList items={[
-          "<strong>Wire Antennas:</strong> Typically have a velocity factor of 0.95-0.98. This means electromagnetic waves travel 95-98% of the speed of light in the wire material.",
-          "<strong>Coaxial Cable:</strong> Has velocity factors ranging from 0.66 to 0.85, depending on the dielectric material used in the cable construction.",
-          "<strong>Free Space (Theoretical):</strong> Velocity factor of 1.0, representing the speed of light in vacuum (299,792,458 m/s).",
-          "<strong>Practical Considerations:</strong> Using the correct velocity factor ensures your antenna resonates at the intended frequency. Ignoring this factor can result in antennas that are too long or too short, requiring trimming and adjustment.",
-          "<strong>Material Effects:</strong> Different materials and construction methods affect the velocity factor. Thick wire, insulation, and nearby objects can all influence the effective velocity factor."
-        ]} />
-        <p className="text-sm text-gray-600 mt-4">
-          <strong>Tip:</strong> For wire antennas, start with a velocity factor of 0.95. After construction, you can fine-tune the length by measuring the actual resonant frequency and adjusting accordingly.
-        </p>
-      </SEOSection>
 
-      <SEOSection title="Common Frequency Bands and Antenna Lengths">
-        <p>
-          Here are approximate antenna lengths for common frequency bands (half-wave dipole, vf = 0.95):
-        </p>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Frequency Band</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Frequency (MHz)</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Half-Wave Length (m)</th>
-                <th className="py-2 px-4 border-b text-left text-sm font-semibold text-gray-700">Quarter-Wave Length (m)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">2.4 GHz (Wi-Fi)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">2400</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~0.06 m (6 cm)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~0.03 m (3 cm)</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">144 MHz (2m Amateur)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">144</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~1.0 m</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~0.5 m</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">FM Radio</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">88-108</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~1.4-1.7 m</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~0.7-0.9 m</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">27 MHz (CB Radio)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">27</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~5.3 m</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~2.6 m</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">3.5 MHz (80m Amateur)</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">3.5</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~40.6 m</td>
-                <td className="py-2 px-4 border-b text-sm text-gray-800">~20.3 m</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="text-sm text-gray-600 mt-4">
-          *Values are approximate and use velocity factor of 0.95. Actual lengths may vary based on construction and tuning.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Frequently Asked Questions (FAQ)">
+      <SEOSection title="Frequently Asked Questions">
         <SEOFAQ questions={[
           {
             question: "How do you calculate antenna length from frequency?",
-            answer: "Antenna length is calculated using L = (λ/n) × vf = (c/(n×f)) × vf, where L is length, λ is wavelength, n is the fraction (2 for half-wave, 4 for quarter-wave, 1 for full-wave), vf is velocity factor (typically 0.95 for wire antennas), c is the speed of light (299,792,458 m/s), and f is frequency. For a half-wave dipole, the simplified formula L = 468 / f(MHz) in feet is commonly used."
-          },
-          {
-            question: "What is the formula for half-wave dipole antenna length?",
-            answer: "For a half-wave dipole, L = (λ/2) × vf = (c/(2×f)) × vf, where L is the total length (both elements combined), λ is wavelength, vf is velocity factor (~0.95), c is speed of light, and f is frequency. The simplified approximation in feet is L = 468 / f(MHz), and in meters is L = 142.5 / f(MHz)."
+            answer: "Use the formula L = (c / (n × f)) × vf, where c is the speed of light (299,792,458 m/s), n is 2 for half-wave or 4 for quarter-wave, f is frequency in Hz, and vf is velocity factor (typically 0.95). The simplified formula for feet is L = 468 / f(MHz) for half-wave dipoles."
           },
           {
             question: "What is velocity factor and why is it important?",
-            answer: "Velocity factor (vf) accounts for the actual propagation speed of electromagnetic waves in the antenna material compared to free space. It's typically 0.95-0.98 for wire antennas and 0.66-0.85 for coaxial cable. Using the correct velocity factor ensures your antenna resonates at the intended frequency, preventing the need for excessive trimming or adjustment."
+            answer: "Velocity factor (vf) accounts for how fast electromagnetic waves travel in the antenna material versus free space. Wire antennas typically have vf = 0.95-0.98, meaning waves travel at 95-98% of light speed. Using the correct velocity factor ensures your antenna resonates at the intended frequency, avoiding performance problems."
           },
           {
-            question: "What is the difference between half-wave dipole and quarter-wave monopole?",
-            answer: "A half-wave dipole consists of two equal elements (each λ/4 long, total λ/2) and is balanced. A quarter-wave monopole is a single element (λ/4 long) that requires a ground plane to function effectively. The ground plane acts as a mirror, making the monopole effectively a half-wave dipole. Monopoles are more compact but require proper grounding."
+            question: "What is the difference between half-wave and quarter-wave antennas?",
+            answer: "A half-wave dipole (λ/2 long) has a balanced design and works well for general RF use. A quarter-wave monopole (λ/4 long) is more compact but requires a ground plane to operate effectively. Half-wave antennas have ~73Ω impedance, while quarter-wave monopoles present ~36.5Ω impedance with an ideal ground plane."
           },
           {
             question: "How do I tune an antenna after building it?",
-            answer: "After constructing an antenna using calculated dimensions, measure its actual resonant frequency using an antenna analyzer or SWR meter. If the resonant frequency is higher than desired, the antenna is too short (add length). If lower, it's too long (remove length). Fine-tune in small increments until the antenna resonates at your target frequency."
+            answer: "Measure the antenna's resonant frequency with an antenna analyzer or SWR meter. If resonance is higher than desired, the antenna is too short and needs lengthening. If lower, it's too long and needs shortening. Make small adjustments and re-measure until resonance matches your target frequency."
           },
           {
-            question: "Can I use the same antenna for different frequencies?",
-            answer: "Antennas are typically resonant at a specific frequency or narrow band. While an antenna will work (with reduced efficiency) at frequencies other than its resonant frequency, for optimal performance, you should design the antenna for your specific operating frequency. Some antennas are designed to work over a range of frequencies (broadband antennas) but still have optimal frequencies."
-          },
-          {
-            question: "What happens if my antenna is too long or too short?",
-            answer: "If the antenna is too long, it will resonate at a lower frequency than intended. If too short, it will resonate at a higher frequency. This affects the antenna's impedance, radiation pattern, and efficiency. The antenna will still radiate but with reduced performance and potential impedance mismatch issues."
+            question: "What happens if my antenna is the wrong length?",
+            answer: "If too long, the antenna resonates at a lower frequency than intended. If too short, it resonates higher. Wrong length causes impedance mismatch, reduced efficiency, poor radiation pattern, and suboptimal performance. The antenna will still work but with significantly reduced effectiveness."
           }
         ]} />
       </SEOSection>
 
       <SEOSection title="Conclusion">
         <p>
-          Accurate antenna length calculations are fundamental to successful RF design and antenna construction. Our Antenna Length Calculator provides a powerful and accurate tool for determining antenna length from frequency or frequency from antenna length, supporting multiple antenna types and accounting for velocity factor.
+          Accurate antenna length calculations are essential for RF design, wireless communications, and amateur radio applications. Our Antenna Length Calculator simplifies the complex relationship between frequency, wavelength, and antenna length, accounting for velocity factor to ensure real-world accuracy. Whether you're designing a simple dipole for amateur radio or engineering a compact monopole for a wireless device, precise antenna length calculations determine overall system performance.
         </p>
         <p>
-          By simplifying complex wavelength and frequency calculations and offering comprehensive unit support with detailed step-by-step solutions, this calculator empowers amateur radio operators, RF engineers, and electronics enthusiasts to design and build antennas with confidence. For related calculations, explore our {createInternalLink('wavelength-calculator')} for wavelength calculations or our {createInternalLink('frequency-calculator')} for frequency-related calculations.
+          Start your antenna design project today with our free calculator. For additional RF and physics calculations, explore our {createInternalLink('wavelength-calculator')} to understand light propagation or our {createInternalLink('displacement-calculator')} for related physics applications.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
