@@ -21,7 +21,7 @@ export default function CapacitanceCalculatorPage() {
     >
       <SEOSection title="Understanding Capacitance in Electronics">
         <p>
-          Capacitance is the ability of a component to store electrical charge, fundamental to electronics and circuit design. Understanding the relationship between capacitance, charge, and {createInternalLink('voltage-calculator')} is essential for engineers and students working with capacitors. Capacitors are crucial passive components used for energy storage, filtering, timing, and signal coupling in virtually every electronic device.
+          Capacitance is the ability of a component to store electrical charge, fundamental to electronics and circuit design. Understanding the relationship between capacitance, charge, and {createInternalLink('ohms-law-power-calculator')} is essential for engineers and students working with capacitors. Capacitors are crucial passive components used for energy storage, filtering, timing, and signal coupling in virtually every electronic device.
         </p>
         <p>
           Whether designing circuits, selecting capacitor values, or analyzing electrical systems, you need to quickly calculate capacitance from charge and voltage. Our calculator eliminates tedious manual calculations, providing instant results with detailed explanations.

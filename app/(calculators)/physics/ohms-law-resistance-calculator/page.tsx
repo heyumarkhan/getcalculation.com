@@ -21,7 +21,7 @@ export default function OhmsLawResistanceCalculatorPage() {
     >
       <SEOSection title="Understanding Ohm's Law and Electrical Resistance">
         <p>
-          Ohm's Law is one of the most fundamental principles in electrical engineering, describing the relationship between {createInternalLink('voltage-calculator')}, current, and resistance. This foundational equation (V = I × R) is essential for anyone working with electrical circuits, from hobbyists to professional engineers. Understanding how these three quantities interact is crucial for designing safe, efficient electrical systems.
+          Ohm's Law is one of the most fundamental principles in electrical engineering, describing the relationship between {createInternalLink('ohms-law-power-calculator')}, current, and resistance. This foundational equation (V = I × R) is essential for anyone working with electrical circuits, from hobbyists to professional engineers. Understanding how these three quantities interact is crucial for designing safe, efficient electrical systems.
         </p>
         <p>
           Resistance opposes the flow of electric current, and calculating its value from voltage and current is one of the most common tasks in circuit analysis. Whether troubleshooting electronics, selecting resistor values, or verifying circuit behavior, our calculator eliminates tedious manual conversions.
