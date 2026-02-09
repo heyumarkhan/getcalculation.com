@@ -64,7 +64,7 @@ export default function MechanicalAdvantageCalculatorPage() {
       <SEOSection title="Practical Applications of Mechanical Advantage">
         <p>Mechanical advantage calculations are essential in numerous engineering and everyday applications:</p>
         <SEOList items={[
-          "Automotive Engineering: Mechanics calculate mechanical advantage for hydraulic brake systems, steering mechanisms, and transmission gear ratios to optimize {createInternalLink('power-calculator')} and control systems.",
+          "Automotive Engineering: Mechanics calculate mechanical advantage for hydraulic brake systems, steering mechanisms, and transmission gear ratios to optimize {createInternalLink('watt-calculator')} and control systems.",
           "Construction Equipment: Engineers design crane pulley systems, excavator arms, and hydraulic lifts using mechanical advantage principles to move heavy materials efficiently.",
           "Manufacturing and Robotics: Designers optimize robotic arm configurations, assembly line tools, and material handling equipment to maximize force output while minimizing actuator requirements.",
           "Home Tools and Hardware: Manufacturers design bottle openers, nutcrackers, wrenches, and car jacks with specific mechanical advantages to make common tasks easier for users.",

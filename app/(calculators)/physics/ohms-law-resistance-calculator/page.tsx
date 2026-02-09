@@ -89,7 +89,7 @@ export default function OhmsLawResistanceCalculatorPage() {
             answer: "According to Ohm's Law (I = V / R), at constant voltage, current and resistance are inversely proportional. If you double the resistance, current is cut in half. This inverse relationship is why larger resistor values limit current in circuits."
           },
           {
-            question: "How does {createInternalLink('power-calculator')} relate to Ohm's Law?",
+            question: "How does {createInternalLink('ohms-law-power-calculator')} relate to Ohm's Law?",
             answer: "Power (P) and Ohm's Law are related through: P = V × I. You can also express power as P = I² × R or P = V² / R by substituting Ohm's Law relationships. This allows you to calculate power dissipation and energy usage in circuits once you know voltage, current, or resistance."
           }
         ]} />

@@ -102,7 +102,7 @@ export default function DragEquationCalculatorPage() {
           Mastering drag force calculations is essential for optimizing performance in aerodynamics, vehicle design, sports, and fluid mechanics. The drag equation reveals the powerful effect of velocity on resistance and highlights why aerodynamic optimization matters across engineering disciplines and everyday applications. Accurate drag force predictions enable engineers to design more efficient systems and athletes to improve performance.
         </p>
         <p>
-          Explore more physics tools: Check out our {createInternalLink('pressure-calculator')} to understand pressure differences in fluid flow, or use the {createInternalLink('power-calculator')} to determine energy requirements for overcoming drag resistance.
+          Explore more physics tools: Check out our {createInternalLink('pressure-calculator')} to understand pressure differences in fluid flow, or use the {createInternalLink('watt-calculator')} to determine energy requirements for overcoming drag resistance.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

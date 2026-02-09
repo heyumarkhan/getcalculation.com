@@ -21,7 +21,7 @@ export default function AbsoluteHumidityCalculatorPage() {
     >
       <SEOSection title="Why Absolute Humidity Matters">
         <p>
-          From designing comfortable indoor spaces to forecasting weather patterns, understanding the actual water vapor content in air is critical. Unlike relative humidity percentages that change with temperature, absolute humidity measures the true mass of water in the air—essential for HVAC engineers, meteorologists, and climate scientists. Our absolute humidity calculator instantly computes water vapor content from temperature and relative humidity, helping you make informed decisions about air quality and system design. For related weather measurements, explore our {createInternalLink('temperature-calculator')} for thermal energy conversions.
+          From designing comfortable indoor spaces to forecasting weather patterns, understanding the actual water vapor content in air is critical. Unlike relative humidity percentages that change with temperature, absolute humidity measures the true mass of water in the air—essential for HVAC engineers, meteorologists, and climate scientists. Our absolute humidity calculator instantly computes water vapor content from temperature and relative humidity, helping you make informed decisions about air quality and system design. For related weather measurements, explore our {createInternalLink('dew-point-calculator')} for thermal energy conversions.
         </p>
       </SEOSection>
 

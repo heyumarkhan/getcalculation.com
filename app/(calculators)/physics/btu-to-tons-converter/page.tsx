@@ -21,7 +21,7 @@ export default function BTUToTonsConverterPage() {
     >
       <SEOSection title="Understanding BTU to Tons Conversion in HVAC Systems">
         <p>
-          BTU (British Thermal Unit) and tons of refrigeration are the two most common units for measuring cooling capacity in air conditioning and refrigeration systems. HVAC professionals, homeowners, and engineers need to convert between these units to properly size equipment, compare system specifications, and calculate energy requirements. Understanding this conversion is essential when selecting air conditioners, designing cooling systems, or evaluating {createInternalLink('power-calculator')} consumption for climate control applications.
+          BTU (British Thermal Unit) and tons of refrigeration are the two most common units for measuring cooling capacity in air conditioning and refrigeration systems. HVAC professionals, homeowners, and engineers need to convert between these units to properly size equipment, compare system specifications, and calculate energy requirements. Understanding this conversion is essential when selecting air conditioners, designing cooling systems, or evaluating {createInternalLink('electrical-power-calculator')} consumption for climate control applications.
         </p>
         <p>
           Whether you&apos;re installing a residential AC unit, designing commercial refrigeration, or comparing cooling equipment specifications, our BTU to Tons Converter makes these critical calculations instant and accurate, helping you make informed decisions about cooling capacity.
@@ -67,7 +67,7 @@ export default function BTUToTonsConverterPage() {
         <SEOList items={[
           "Residential Air Conditioning: Homeowners and contractors use this conversion to properly size AC units for homes. A typical home requires 1-5 tons (12,000-60,000 BTU/hr) depending on square footage, insulation, and climate zone.",
           "Commercial HVAC Design: Engineers convert between BTU and tons when designing cooling systems for offices, retail spaces, and industrial facilities. Large commercial systems often range from 10-100+ tons of cooling capacity.",
-          "Refrigeration Equipment: Food service, grocery stores, and cold storage facilities specify refrigeration equipment in tons, requiring {createInternalLink('temperature-calculator')} and BTU conversions for proper system sizing.",
+          "Refrigeration Equipment: Food service, grocery stores, and cold storage facilities specify refrigeration equipment in tons, requiring {createInternalLink('heat-transfer-calculator')} and BTU conversions for proper system sizing.",
           "Energy Efficiency Analysis: HVAC professionals calculate energy consumption and operating costs by converting between cooling capacity units and comparing Energy Efficiency Ratio (EER) or Seasonal Energy Efficiency Ratio (SEER) ratings.",
           "Equipment Specification Comparison: When comparing air conditioners from different manufacturers or regions, converting between BTU/hr (common in North America) and tons helps make apples-to-apples comparisons of cooling performance."
         ]} />
