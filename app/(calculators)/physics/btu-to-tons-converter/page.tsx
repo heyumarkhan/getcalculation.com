@@ -103,7 +103,7 @@ export default function BTUToTonsConverterPage() {
           Mastering BTU to tons conversion is essential for anyone working with air conditioning, refrigeration, or HVAC systems. The simple 12,000 BTU/hr per ton relationship enables quick equipment sizing, specification comparison, and capacity calculations for residential and commercial cooling applications.
         </p>
         <p>
-          Explore more physics tools: Check out our {createInternalLink('energy-calculator')} to understand heat transfer and energy consumption, or use our {createInternalLink('density-calculator')} for fluid properties in refrigeration systems.
+          Explore more physics tools: Check out our {createInternalLink('kinetic-energy-calculator')} to understand heat transfer and energy consumption, or use our {createInternalLink('density-mass-volume-calculator')} for fluid properties in refrigeration systems.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
