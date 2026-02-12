@@ -23,7 +23,7 @@ export default function SeriesResistorCalculatorPage() {
         <p>
           In real wiring, LED strings, and sensor chains, resistor values stack up and shift current and voltage levels. A reliable series
           circuit calculator helps you avoid dim LEDs, overheated parts, and unexpected voltage drops. If you are validating current flow or
-          supply requirements, pairing results with {createInternalLink('physics/ohms-law-calculator')} keeps your design checks consistent.
+          supply requirements, pairing results with {createInternalLink('ohms-law-resistance-calculator')} keeps your design checks consistent.
         </p>
       </SEOSection>
       
@@ -73,7 +73,7 @@ export default function SeriesResistorCalculatorPage() {
           },
           {
             question: "How do I estimate voltage drop across one resistor?",
-            answer: "Use the series current and multiply by the resistor value. The {createInternalLink('physics/voltage-drop-calculator')} is helpful for that step."
+            answer: "Use the series current and multiply by the resistor value. The {createInternalLink('ohms-law-resistance-calculator')} is helpful for that step."
           },
           {
             question: "What happens if I add more resistors in series?",
@@ -91,7 +91,7 @@ export default function SeriesResistorCalculatorPage() {
           Mastering series resistance is easy with the right tools, helping you size components, predict current, and prevent errors.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('physics/resistor-color-code-calculator')} or the popular {createInternalLink('physics/ohms-law-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('parallel-resistor-calculator')} or the popular {createInternalLink('ohms-law-resistance-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

@@ -23,7 +23,7 @@ export default function LowPassFilterCalculatorPage() {
         <p>
           Low-pass filters tame high-frequency noise in audio, sensors, and control loops. A fast Low Pass Filter Calculator helps you
           validate cutoff choices before you solder or simulate. If you are comparing related circuit behaviors, the
-          {createInternalLink('physics/rc-time-constant-calculator')} can help confirm timing response alongside bandwidth.
+          {createInternalLink('cutoff-frequency-calculator')} can help confirm timing response alongside bandwidth.
         </p>
       </SEOSection>
       
@@ -69,7 +69,7 @@ export default function LowPassFilterCalculatorPage() {
           },
           {
             question: "Can I target a specific cutoff by choosing R and C?",
-            answer: "Yes. Choose R and C so that f_c = 1/(2πRC). The {createInternalLink('physics/capacitor-calculator')} can help with component selection." 
+            answer: "Yes. Choose R and C so that f_c = 1/(2πRC). The {createInternalLink('capacitor-calculator')} can help with component selection." 
           },
           {
             question: "Does this apply to all low-pass filters?",
@@ -81,7 +81,7 @@ export default function LowPassFilterCalculatorPage() {
           },
           {
             question: "Is there a related way to estimate charge timing?",
-            answer: "Yes. The {createInternalLink('physics/rc-time-constant-calculator')} estimates the time response that complements cutoff frequency." 
+            answer: "Yes. The {createInternalLink('cutoff-frequency-calculator')} estimates the frequency behavior that complements time response planning." 
           }
         ]} />
       </SEOSection>
@@ -91,7 +91,7 @@ export default function LowPassFilterCalculatorPage() {
           Mastering low-pass filter design is easy with the right tools, helping you stabilize signals and control bandwidth confidently.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('physics/ohms-law-calculator')} or the popular {createInternalLink('physics/rc-time-constant-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('ohms-law-resistance-calculator')} or the popular {createInternalLink('cutoff-frequency-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

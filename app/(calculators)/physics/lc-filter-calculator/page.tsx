@@ -92,7 +92,7 @@ export default function LCFilterCalculatorPage() {
           Mastering LC filter design is easy with the right tools, giving you clean signal paths and predictable resonance in real hardware.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('ohms-law-calculator')} or the popular {createInternalLink('electrical-power-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('ohms-law-resistance-calculator')} or the popular {createInternalLink('electrical-power-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

@@ -23,7 +23,7 @@ export default function DistanceToHorizonCalculatorPage() {
         <p>
           Whether you are flying, sailing, or hiking a ridge, the horizon calculator answers a practical question: how far can you
           actually see before Earth’s curvature blocks the line of sight. This distance-to-horizon estimate helps plan observation ranges,
-          route visibility, and coastal spotting. If you also compare motion limits, the {createInternalLink('physics/kinetic-energy-calculator')}
+          route visibility, and coastal spotting. If you also compare motion limits, the {createInternalLink('kinetic-energy-calculator')}
           can complement visibility planning for fast-moving targets.
         </p>
       </SEOSection>
@@ -92,7 +92,7 @@ export default function DistanceToHorizonCalculatorPage() {
           Mastering horizon distance is easy with the right tools, helping you plan visibility, navigation, and observation ranges with confidence.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('physics/work-calculator')} or the popular {createInternalLink('physics/acceleration-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('potential-energy-calculator')} or the popular {createInternalLink('acceleration-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

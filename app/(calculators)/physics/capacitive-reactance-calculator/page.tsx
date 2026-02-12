@@ -21,7 +21,7 @@ export default function CapacitiveReactanceCalculatorPage() {
     >
       <SEOSection title="Why Capacitive Reactance Matters in AC Circuits">
         <p>
-          Capacitive reactance describes how a capacitor resists AC current depending on frequency, which is essential for filter design, signal coupling, and impedance control. Designers rely on Xc to shape frequency response, reduce noise, and protect sensitive stages in analog circuits. When combining reactance with resistive effects, understanding {createInternalLink('ohms-law-calculator')} helps verify expected current flow and voltage drops in real components.
+          Capacitive reactance describes how a capacitor resists AC current depending on frequency, which is essential for filter design, signal coupling, and impedance control. Designers rely on Xc to shape frequency response, reduce noise, and protect sensitive stages in analog circuits. When combining reactance with resistive effects, understanding {createInternalLink('ohms-law-resistance-calculator')} helps verify expected current flow and voltage drops in real components.
         </p>
       </SEOSection>
 
@@ -92,7 +92,7 @@ export default function CapacitiveReactanceCalculatorPage() {
             Mastering capacitive reactance is easy with the right tools, helping you tune filters, shape AC signals, and validate circuit behavior.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('electrical-power-calculator')} or the popular {createInternalLink('voltage-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('electrical-power-calculator')} or the popular {createInternalLink('watt-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

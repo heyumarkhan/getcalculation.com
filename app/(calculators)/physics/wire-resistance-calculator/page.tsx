@@ -21,7 +21,7 @@ export default function WireResistanceCalculatorPage() {
     >
       <SEOSection title="Understanding Wire Resistance in Electrical Circuits">
         <p>
-          Wire resistance is a fundamental property that affects every electrical circuit and power distribution system. The opposition that a conductor provides to the flow of electrical current depends on several factors: the material composition, the wire's length, and its cross-sectional area. This relationship is critical for designing safe and efficient electrical systems, from household wiring to industrial power transmission. Engineers, electricians, and hobbyists must accurately calculate wire resistance to prevent voltage drop, heat generation, and energy loss. Understanding how {createInternalLink('ohms-law-calculator')} relates to wire resistance helps predict circuit behavior and ensure proper component selection.
+          Wire resistance is a fundamental property that affects every electrical circuit and power distribution system. The opposition that a conductor provides to the flow of electrical current depends on several factors: the material composition, the wire's length, and its cross-sectional area. This relationship is critical for designing safe and efficient electrical systems, from household wiring to industrial power transmission. Engineers, electricians, and hobbyists must accurately calculate wire resistance to prevent voltage drop, heat generation, and energy loss. Understanding how {createInternalLink('ohms-law-resistance-calculator')} relates to wire resistance helps predict circuit behavior and ensure proper component selection.
         </p>
       </SEOSection>
 
