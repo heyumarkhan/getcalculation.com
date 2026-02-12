@@ -64,7 +64,7 @@ export default function FPECalculatorPage() {
         <SEOList items={[
           "Ballistics and impact testing to compare energy transfer between projectiles",
           "Mechanical systems to estimate work done by actuators and tools",
-          `Energy comparisons alongside ${createInternalLink('work-calculator')} to validate force-distance results`,
+          `Energy comparisons alongside ${createInternalLink('kinetic-energy-calculator')} to validate force-distance results`,
           "Material testing to quantify energy required for deformation",
           "Field calculations for equipment efficiency and power requirements"
         ]} />

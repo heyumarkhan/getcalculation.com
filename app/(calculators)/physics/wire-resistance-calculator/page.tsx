@@ -101,7 +101,7 @@ export default function WireResistanceCalculatorPage() {
           Mastering wire resistance calculations is essential for anyone working with electrical systems, from circuit designers to installation technicians. Accurate calculations prevent voltage drops, reduce heating losses, improve safety, and ensure optimal performance of electrical equipment and systems.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('current-calculator')} to analyze electrical current flow, or use our {createInternalLink('voltage-calculator')} for voltage measurements and analysis.
+          Explore more Physics tools: Check out our {createInternalLink('ohms-law-resistance-calculator')} to analyze electrical resistance relationships, or use our {createInternalLink('electrical-power-calculator')} for power calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
