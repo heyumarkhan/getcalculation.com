@@ -95,7 +95,7 @@ export default function DipoleCalculatorPage() {
           Mastering dipole moment calculations is essential for understanding molecular behavior and designing materials. Our calculator provides instant, accurate results for analyzing charge separation and electrical polarity.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('charge-calculator')} for electrical charge analysis or discover the {createInternalLink('electrostatic-force-calculator')} for force calculations between charges.
+          Explore more Physics tools: Check out our {createInternalLink('coulombs-law-calculator')} for electrical force analysis or discover the {createInternalLink('electric-field-calculator')} for field calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
