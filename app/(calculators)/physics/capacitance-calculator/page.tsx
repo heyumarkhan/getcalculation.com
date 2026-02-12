@@ -89,7 +89,7 @@ export default function CapacitanceCalculatorPage() {
             answer: "One Farad is an enormous capacitance value. Most practical capacitors have values in the microfarad (μF = 10⁻⁶ F) or nanofarad (nF = 10⁻⁹ F) range. Using these smaller units makes numbers manageable; for example, 1 μF is much easier to work with than 0.000001 F."
           },
           {
-            question: "How does voltage affect the charge stored in a {createInternalLink('charge-calculator')}?",
+            question: "How does voltage affect the charge stored in a capacitor?",
             answer: "The charge stored is directly proportional to voltage according to Q = CV. Doubling the voltage doubles the stored charge (for a fixed capacitance). This linear relationship is fundamental to capacitor operation in circuits."
           }
         ]} />
@@ -100,7 +100,7 @@ export default function CapacitanceCalculatorPage() {
           Mastering capacitance calculations is essential for electronics design, circuit analysis, and understanding how capacitors work in practical applications. The simple formula C = Q/V relates all three fundamental variables and enables quick, accurate capacitor value selection and verification.
         </p>
         <p>
-          Our Capacitance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits or troubleshooting electronics, use our calculator for reliable capacitance values. Explore more physics tools: Check out our {createInternalLink('ohms-law-calculator')} or our {createInternalLink('current-calculator')} for complete circuit analysis.
+          Our Capacitance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits or troubleshooting electronics, use our calculator for reliable capacitance values. Explore more physics tools: Check out our {createInternalLink('ohms-law-resistance-calculator')} or our {createInternalLink('watt-calculator')} for complete circuit analysis.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
