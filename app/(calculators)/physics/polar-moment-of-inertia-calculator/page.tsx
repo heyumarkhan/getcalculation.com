@@ -1,29 +1,26 @@
 import PolarMomentOfInertiaCalculator from '../../../_components/calculators/PolarMomentOfInertiaCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
-
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 export default function PolarMomentOfInertiaCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Polar Moment of Inertia Calculator: Calculate J = Ix + Iy"
-      description="Calculate polar moment of inertia for circles, rectangles, hollow circles, and I-beams. Free online mechanics calculator with step-by-step solutions and multiple unit support (mm⁴, cm⁴, in⁴, m⁴)."
+      title="Polar Moment of Inertia Calculator: Torsional Rigidity Analysis"
+      description="Calculate polar moment of inertia for circular shafts and cross-sections. Determine torsional stiffness with instant results. Free engineering calculator."
       calculator={<PolarMomentOfInertiaCalculator />}
       slug="physics/polar-moment-of-inertia-calculator"
-      category="Mechanics"
+      category="Physics"
       features={[
-        "Calculate polar moment of inertia from shape dimensions",
-        "Support for multiple cross-sections (circle, rectangle, hollow circle, I-beam)",
-        "Calculate from principal moments of inertia",
-        "Instant mechanics calculations",
-        "Multiple unit support (mm⁴, cm⁴, in⁴, m⁴)",
-        "Step-by-step solutions",
-        "Mobile-friendly interface",
-        "Free to use"
+        "Calculate polar moment of inertia for circular and hollow sections",
+        "Precise torsional stiffness measurements for engineering design",
+        "Support for multiple shaft geometries and configurations",
+        "Instant results with detailed calculation steps",
+        "Free and no registration required"
       ]}
     >
       <SEOSection title="Understanding Polar Moment of Inertia: Essential for Torsion and Rotation">
         <p>
-          The polar moment of inertia (also called torsional constant or second polar moment of area) is a fundamental concept in mechanics and structural engineering. It measures an object&apos;s resistance to torsional (twisting) stress and is crucial for analyzing rotating shafts, circular cross-sections, and structural members subject to torque. Whether you&apos;re studying mechanics, designing mechanical systems, analyzing shaft design, or solving engineering problems involving torsion, understanding polar moment of inertia is essential.
+          The polar moment of inertia (also called torsional constant or second polar moment of area) is a fundamental concept in mechanics and structural engineering. It measures an object's resistance to torsional (twisting) stress and is crucial for analyzing rotating shafts, circular cross-sections, and structural members subject to torque. The polar moment of inertia directly determines how much {createInternalLink('torque-calculator')} stress develops in a shaft and is essential for safe mechanical design.
         </p>
         <p>
           Our Polar Moment of Inertia Calculator makes it easy to calculate J from various cross-sectional shapes using the fundamental relationship: <strong>J = Ix + Iy</strong> (polar moment of inertia equals the sum of the two principal moments of inertia). This tool supports circles, rectangles, hollow circles, and I-beams, with instant calculations and multiple unit systems.
@@ -168,7 +165,7 @@ export default function PolarMomentOfInertiaCalculatorPage() {
           <p className="text-sm text-gray-600 text-center mt-2">Where: τ = shear stress, T = applied torque, r = distance from center, J = polar moment of inertia</p>
         </div>
         <p>
-          This shows that the maximum shear stress occurs at the outer surface (r = c) and decreases linearly toward the center. This is why larger diameters (larger J) result in lower stresses for the same torque.
+          This shows that the maximum shear stress occurs at the outer surface (r = c) and decreases linearly toward the center. Engineers use {createInternalLink('angular-velocity-calculator')} to analyze rotational dynamics alongside these torsional stress calculations to ensure safe operation across various speed ranges.
         </p>
       </SEOSection>
 
@@ -290,32 +287,13 @@ export default function PolarMomentOfInertiaCalculatorPage() {
         ]}
       />
 
-      <SEOSection title="Related Calculators and Resources">
+      <SEOSection title="Conclusion">
         <p>
-          Our suite of mechanics calculators can help you with related calculations:
+          Mastering polar moment of inertia calculations is essential for mechanical engineers, structural designers, and anyone working with rotating shafts or torsionally loaded components. This fundamental geometric property directly impacts shaft sizing, material selection, and system reliability in countless industrial applications.
         </p>
-        <ul>
-          <li>Torque Calculator - Calculate force, torque, or lever arm distance</li>
-          <li>Moment of Inertia Calculator - Calculate bending resistance for different shapes</li>
-          <li>Section Modulus Calculator - Calculate bending stress resistance</li>
-          <li>Stress Calculator - Calculate shear and normal stresses in beams and shafts</li>
-        </ul>
-      </SEOSection>
-
-      <SEOSection title="Why Choose Our Polar Moment of Inertia Calculator?">
         <p>
-          Our free online calculator provides several advantages:
+          Explore more Physics tools: Check out our {createInternalLink('torque-calculator')} for torque and rotational force analysis, or discover the {createInternalLink('kinetic-energy-calculator')} for comprehensive energy calculations in rotating systems.
         </p>
-        <ul>
-          <li><strong>Multiple Calculation Methods:</strong> Calculate from shape dimensions or from principal moments of inertia</li>
-          <li><strong>Multiple Cross-Sections:</strong> Support for circles, rectangles, hollow circles, and I-beams</li>
-          <li><strong>Comprehensive Unit Support:</strong> Work with mm⁴, cm⁴, in⁴, m⁴, and distance units in mm, cm, m, in, and ft</li>
-          <li><strong>Step-by-Step Solutions:</strong> See the formula and calculation for every result</li>
-          <li><strong>Instant Results:</strong> No delays or complicated steps - just enter values and calculate</li>
-          <li><strong>Educational:</strong> Learn about polar moment of inertia with detailed explanations and examples</li>
-          <li><strong>Always Free:</strong> No registration, subscriptions, or hidden fees</li>
-          <li><strong>Mobile-Friendly:</strong> Use on any device with a web browser</li>
-        </ul>
       </SEOSection>
     </CalculatorPageTemplate>
   );
