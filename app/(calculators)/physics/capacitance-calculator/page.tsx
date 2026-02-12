@@ -100,7 +100,7 @@ export default function CapacitanceCalculatorPage() {
           Mastering capacitance calculations is essential for electronics design, circuit analysis, and understanding how capacitors work in practical applications. The simple formula C = Q/V relates all three fundamental variables and enables quick, accurate capacitor value selection and verification.
         </p>
         <p>
-          Our Capacitance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits or troubleshooting electronics, use our calculator for reliable capacitance values. Explore more physics tools: Check out our {createInternalLink('resistance-calculator')} or our {createInternalLink('current-calculator')} for complete circuit analysis.
+          Our Capacitance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits or troubleshooting electronics, use our calculator for reliable capacitance values. Explore more physics tools: Check out our {createInternalLink('ohms-law-calculator')} or our {createInternalLink('current-calculator')} for complete circuit analysis.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
