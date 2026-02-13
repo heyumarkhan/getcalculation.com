@@ -21,7 +21,7 @@ export default function SchwarzschildRadiusCalculatorPage() {
     >
       <SEOSection title="Understanding the Schwarzschild Radius in Astrophysics">
         <p>
-          The Schwarzschild radius is the critical radius at which any {createInternalLink('mass-calculator')} becomes a black hole, creating an event horizon from which nothing can escape. This fundamental concept in general relativity governs the behavior of the most extreme objects in the universe. Understanding how to calculate this critical value helps physicists and astronomers determine the conditions under which stellar collapse occurs and analyze black hole properties.
+          The Schwarzschild radius is the critical radius at which any massive object becomes a black hole, creating an event horizon from which nothing can escape. This fundamental concept in general relativity governs the behavior of the most extreme objects in the universe. Understanding how to calculate this critical value helps physicists and astronomers determine the conditions under which stellar collapse occurs and analyze black hole properties. Explore our {createInternalLink('gravitational-force-calculator')} to understand the gravity effects that influence this process.
         </p>
         <p>
           Named after Karl Schwarzschild, who derived this solution in 1916, the Schwarzschild radius reveals the deep connection between gravity, spacetime, and the ultimate fate of massive stars. Whether you're studying astrophysics, cosmology, or curious about black holes, our calculator provides instant insights into the extreme physics governing these phenomena.
