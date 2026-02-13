@@ -101,7 +101,7 @@ export default function SchwarzschildRadiusCalculatorPage() {
           The Schwarzschild radius is one of the most profound concepts in physics, revealing the extreme conditions where spacetime curvature becomes so severe that event horizons form. Understanding this calculation is essential for anyone studying black holes, general relativity, or modern astrophysics. The simple formula Rs = 2GM/c² encodes the relationship between mass and the ultimate cosmic fate.
         </p>
         <p>
-          Our Schwarzschild Radius Calculator makes these complex relativistic calculations instant and accessible. Explore more physics tools: Check out our {createInternalLink('density-calculator')} to understand object compression or our {createInternalLink('acceleration-calculator')} for gravitational physics concepts.
+          Our Schwarzschild Radius Calculator makes these complex relativistic calculations instant and accessible. Explore more physics tools: Check out our {createInternalLink('gravitational-force-calculator')} to understand gravitational effects or our {createInternalLink('acceleration-calculator')} for gravitational physics concepts.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
