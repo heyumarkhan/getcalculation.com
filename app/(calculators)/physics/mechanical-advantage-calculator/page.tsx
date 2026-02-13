@@ -102,7 +102,7 @@ export default function MechanicalAdvantageCalculatorPage() {
           Mastering mechanical advantage calculations is fundamental to understanding how simple machines transform force and enable humans to accomplish seemingly impossible tasks. Whether optimizing tool design, analyzing machine efficiency, or solving physics problems, the MA formula provides essential insights into force multiplication principles.
         </p>
         <p>
-          Explore more physics tools: Check out our {createInternalLink('torque-calculator')} to understand rotational force applications, or use the {createInternalLink('work-calculator')} to calculate energy transfer in mechanical systems.
+          Explore more physics tools: Check out our {createInternalLink('torque-calculator')} to understand rotational force applications, or use the {createInternalLink('kinetic-energy-calculator')} to calculate energy transfer in mechanical systems.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
