@@ -97,7 +97,7 @@ export default function WindLoadCalculatorPage() {
           Mastering wind load calculations is essential for safe structural design and engineering. Our calculator provides instant, accurate wind force calculations for buildings, signs, and structures of any size.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('force-calculator')} for general force calculations or discover the {createInternalLink('density-calculator')} for air density determinations at various altitudes.
+          Explore more Physics tools: Check out our {createInternalLink('force-calculator')} for general force calculations or discover the {createInternalLink('air-density-calculator')} for air density determinations at various altitudes.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
