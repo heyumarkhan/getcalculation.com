@@ -95,7 +95,7 @@ export default function VolumeToMassCalculatorPage() {
           Mastering volume to mass conversion is essential for accurate project planning, material estimation, and scientific calculations. Our calculator provides instant, precise results for converting any volume to its corresponding mass.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('weight-calculator')} for mass-to-weight conversion or discover the {createInternalLink('pressure-calculator')} for related physical property calculations.
+          Explore more Physics tools: Check out our {createInternalLink('kilogram-to-newtons-calculator')} for mass-to-weight conversion or discover the {createInternalLink('pressure-calculator')} for related physical property calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
