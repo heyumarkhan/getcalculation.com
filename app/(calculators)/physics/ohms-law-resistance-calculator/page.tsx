@@ -100,7 +100,7 @@ export default function OhmsLawResistanceCalculatorPage() {
           Mastering Ohm's Law is essential for anyone working with electrical circuits and electronics. The simple relationship R = V / I connects three fundamental quantities and enables accurate circuit analysis, design, and troubleshooting. Understanding how voltage, current, and resistance interact is the foundation of electrical engineering.
         </p>
         <p>
-          Our Ohm's Law Resistance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits, selecting components, or verifying measurements, trust our calculator for accurate values. Explore more physics tools: Check out our {createInternalLink('current-calculator')} or our {createInternalLink('capacitance-calculator')} for comprehensive circuit analysis.
+          Our Ohm's Law Resistance Calculator eliminates manual calculations, providing instant results with detailed explanations. Whether designing circuits, selecting components, or verifying measurements, trust our calculator for accurate values. Explore more physics tools: Check out our {createInternalLink('watt-calculator')} or our {createInternalLink('capacitance-calculator')} for comprehensive circuit analysis.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

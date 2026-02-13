@@ -21,7 +21,7 @@ export default function VolumeToMassCalculatorPage() {
     >
       <SEOSection title="Why Converting Volume to Mass Matters">
         <p>
-          From construction projects to chemical manufacturing, converting volume to mass is essential for practical applications across industries. Whether you're calculating material quantities for a building, determining shipping weights, or working in a laboratory, understanding the relationship between volume and density is crucial. Our volume to mass calculator instantly converts any volume into its corresponding mass when you provide the material's density, eliminating calculation errors and saving time. For related property measurements, explore our {createInternalLink('density-calculator')} to determine material density quickly.
+          From construction projects to chemical manufacturing, converting volume to mass is essential for practical applications across industries. Whether you're calculating material quantities for a building, determining shipping weights, or working in a laboratory, understanding the relationship between volume and density is crucial. Our volume to mass calculator instantly converts any volume into its corresponding mass when you provide the material's density, eliminating calculation errors and saving time. For related property measurements, explore our {createInternalLink('density-mass-volume-calculator')} to understand material properties quickly.
         </p>
       </SEOSection>
 
@@ -95,7 +95,7 @@ export default function VolumeToMassCalculatorPage() {
           Mastering volume to mass conversion is essential for accurate project planning, material estimation, and scientific calculations. Our calculator provides instant, precise results for converting any volume to its corresponding mass.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('weight-calculator')} for mass-to-weight conversion or discover the {createInternalLink('pressure-calculator')} for related physical property calculations.
+          Explore more Physics tools: Check out our {createInternalLink('kilogram-to-newtons-calculator')} for mass-to-weight conversion or discover the {createInternalLink('pressure-calculator')} for related physical property calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
