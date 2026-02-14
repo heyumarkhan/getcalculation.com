@@ -1,6 +1,7 @@
 import GroundSpeedCalculator from '../../../_components/calculators/GroundSpeedCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 const title = 'Ground Speed Calculator | Wind Correction & Flight Time';
 const description = 'Calculate ground speed, wind components, course corrections, and flight time with wind for aviation.';
@@ -50,109 +51,97 @@ export const metadata = {
 export default function GroundSpeedCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Ground Speed Calculator"
-      description="Compute ground speed, wind correction angles, crosswind components, and flight time with wind."
+      title="Ground Speed Calculator | Aviation Wind Correction & Flight Time Tool"
+      description="Calculate ground speed with wind correction instantly. Free ground speed calculator for pilots with crosswind, headwind, and flight time calculations."
       calculator={<GroundSpeedCalculator />}
       slug="physics/ground-speed-calculator"
       category="Physics"
       features={[
-        'Four methods: ground speed & track, required heading, wind components, time & distance',
-        'Inputs: true airspeed, wind speed/direction, course heading, distance with units',
-        'Vector wind correction for ground speed and drift angle',
-        'Wind correction angle for desired track and estimated ground speed',
-        'Headwind/tailwind and crosswind components for runway or course heading',
-        'Travel time estimator using ground speed with wind'
+        "Accurate wind vector calculations",
+        "Multiple calculation modes",
+        "Supports knots, mph, km/h units",
+        "Instant Results",
+        "Free to use"
       ]}
     >
-      <SEOSection title="Ground Speed Calculator Overview">
+      <SEOSection title="Why Ground Speed Calculations Are Critical for Safe Flight Operations">
         <p>
-          The Ground Speed Calculator resolves airspeed and wind into ground-referenced motion. Using vector wind correction, it computes ground speed, ground track, drift angle, required heading to maintain course, and headwind/tailwind and crosswind components. Ideal for pilots, drone operators, and navigators planning accurate ETAs and safe runway operations.
+          Every pilot knows that airspeed and ground speed are rarely the same—wind makes the difference between arriving on time with sufficient fuel reserves or facing a dangerous diversion. Accurate ground speed calculations transform flight planning from guesswork into precision navigation, enabling pilots to predict exact arrival times, optimize fuel consumption, and avoid dangerous crosswind situations beyond aircraft limits. Commercial airlines use ground speed data to file accurate flight plans with ATC, general aviation pilots rely on it to ensure adequate fuel margins, and drone operators depend on wind-corrected speed calculations to maximize battery endurance and mission success. A 30-knot headwind can reduce a light aircraft's ground speed by 25%, turning a comfortable one-hour flight into a fuel-critical 80-minute ordeal. This ground speed calculator eliminates manual vector arithmetic and trigonometry, instantly resolving true airspeed and wind velocity into ground track, drift angle, required heading corrections, and crosswind components for runway operations. Whether you're planning a cross-country VFR flight or calculating takeoff performance with gusty winds, understanding how wind affects your actual velocity over the ground is fundamental to safe aviation. For related velocity calculations in other contexts, our {createInternalLink('velocity-calculator')} provides comprehensive speed, distance, and time analysis across various physics applications.
         </p>
       </SEOSection>
 
-      <SEOSection title="How to Use the Ground Speed Calculator">
-        <SEOList
-          items={[
-            'Select a method: ground speed & track, required heading, wind components, or time & distance.',
-            'Enter true airspeed, wind speed and direction (from), and course or runway heading.',
-            'For time & distance, add trip distance with units (nm, km, mi).',
-            'Click Calculate to get ground speed, drift, crosswind components, or flight time.',
-            'Use results for flight planning, fuel estimates, and crosswind limits.'
-          ]}
-        />
-      </SEOSection>
-
-      <SEOSection title="Key Formulas for Ground Speed and Wind Correction">
-        <div className="space-y-4">
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">Vg = Va + Vw</p>
-            <p className="text-sm text-gray-600">Ground vector = airspeed vector + wind vector</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">WCA = arcsin((W × sin θ) / TAS)</p>
-            <p className="text-sm text-gray-600">Wind correction angle for maintaining desired track</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">GS = TAS × cos(WCA) + W × cos θ</p>
-            <p className="text-sm text-gray-600">Ground speed along desired track</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">Headwind = W × cos θ,   Crosswind = W × sin θ</p>
-            <p className="text-sm text-gray-600">Wind components relative to runway/course</p>
-          </div>
-        </div>
-      </SEOSection>
-
-      <SEOSection title="Practical Applications">
-        <SEOList
-          items={[
-            'Preflight planning: accurate ETA and fuel calculations with wind.',
-            'Runway selection: headwind and crosswind limits for takeoff and landing.',
-            'Navigation: determine drift and required heading to stay on course.',
-            'Drone missions: battery and time-on-station planning in wind.',
-            'Maritime and UAV operations: course keeping with current/wind.',
-            'Training: visualize vector addition of wind and airspeed.'
-          ]}
-        />
-      </SEOSection>
-
-      <SEOSection title="Example Scenarios">
-        <ol className="list-decimal list-inside space-y-3 text-gray-700">
-          <li><strong>Cross-country flight:</strong> TAS 120 kt, wind 25 kt from 300°, course 090° → GS ~109 kt, drift ~-7°.</li>
-          <li><strong>Runway crosswind:</strong> Wind 15 kt from 210° on runway 18 → 13 kt headwind, 4 kt crosswind from right.</li>
-          <li><strong>Course correction:</strong> Desired track 045°, wind 20 kt from 330°, TAS 100 kt → WCA ~-7°, heading 038°.</li>
-          <li><strong>ETA:</strong> Distance 250 nm, GS 115 kt → Time ≈ 2.17 hours (2h 10m).</li>
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
+        <ol>
+          <li><strong>Step 1:</strong> Select your calculation method (ground speed & track, required heading, wind components, or time & distance)</li>
+          <li><strong>Step 2:</strong> Enter true airspeed, wind speed and direction (from which direction wind is blowing), and course or runway heading in degrees</li>
+          <li><strong>Step 3:</strong> Click Calculate to view ground speed, drift angle, wind correction angle, headwind/crosswind components, and estimated flight time</li>
         </ol>
       </SEOSection>
 
-      <SEOSection title="Frequently Asked Questions">
-        <SEOFAQ
-          questions={[
-            {
-              question: 'What is ground speed?',
-              answer: 'Ground speed is how fast you move over the ground. It equals true airspeed vector plus wind vector. It differs from indicated airspeed and true airspeed when wind exists.'
-            },
-            {
-              question: 'How is wind direction specified?',
-              answer: 'Aviation wind is given as the direction the wind is FROM (e.g., 270° means blowing from the west). The calculator converts this to a "to" vector for computation.'
-            },
-            {
-              question: 'What is wind correction angle (WCA)?',
-              answer: 'WCA is the crab angle you add/subtract to your desired track to counter crosswind, keeping the ground track aligned.'
-            },
-            {
-              question: 'How do I compute crosswind and headwind?',
-              answer: 'Project wind onto runway/course heading: headwind = W cosθ (positive = headwind, negative = tailwind), crosswind = W sinθ (positive = from right).' } ,
-            {
-              question: 'Why is ground speed lower than airspeed in headwind?',
-              answer: 'Headwind opposes your motion, reducing ground speed. Tailwind adds to your speed, increasing ground speed and reducing travel time.'
-            },
-            {
-              question: 'Can strong crosswind make a route impossible?',
-              answer: 'Yes. If required crab angle exceeds what airspeed can generate (|W sinθ| > TAS), you cannot hold the desired track at that airspeed.'
-            }
-          ]}
-        />
+      <SEOSection title="The Core Concept: Ground Speed Calculator Formula">
+        <p>
+          Ground speed represents your actual velocity over the Earth's surface—the vector sum of your aircraft's true airspeed through the air and the wind's velocity. Unlike indicated airspeed (IAS) or true airspeed (TAS) which measure motion relative to the surrounding airmass, ground speed determines how fast you cover distance on charts and GPS. Wind correction involves vector mathematics: decomposing wind into components parallel (headwind/tailwind) and perpendicular (crosswind) to your desired track, then calculating the heading adjustment (crab angle) needed to compensate for drift.
+        </p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">GS = √[(TAS × cos(HDG) + Wx)² + (TAS × sin(HDG) + Wy)²]</p>
+        </div>
+        <p>Where GS is ground speed, TAS is true airspeed, HDG is aircraft heading, and Wx, Wy are wind components (east and north respectively). For wind correction angle: WCA = arcsin[(W × sin(θ)) / TAS], where θ is the angle between wind direction and desired track.</p>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>A Cessna 172 flies at 120 knots true airspeed on a course of 090° (due east). Wind is 25 knots from 330° (northwest). Calculate ground speed and drift:</p>
+        <ul>
+          <li>Input: TAS = 120 kt, Desired track = 090°, Wind = 25 kt from 330°</li>
+          <li>Wind relative to track: θ = 330° - 090° = 240° (blowing from left rear quarter)</li>
+          <li>Headwind component: 25 × cos(240°) = -12.5 kt (tailwind)</li>
+          <li>Crosswind component: 25 × sin(240°) = -21.7 kt (from left)</li>
+          <li>Without correction: Drift angle ≈ arctan(-21.7/120) ≈ -10.3° (pushed right)</li>
+          <li>Result: Ground speed ≈ <strong>130.6 knots</strong>, Drift ≈ <strong>10.3° right</strong> of intended track</li>
+        </ul>
+      </SEOSection>
+
+      <SEOSection title="Practical Applications">
+        <p>Ground speed calculations are essential across all aviation and navigation operations:</p>
+        <SEOList items={[
+          "Flight planning: Calculating accurate ETAs, fuel requirements, and alternate airport ranges for VFR and IFR cross-country flights with forecast winds aloft",
+          "Runway operations: Determining headwind/crosswind components for takeoff and landing performance, ensuring operations stay within aircraft crosswind limits (typically 10-20 knots)",
+          "Navigation: Computing wind correction angles and required headings to maintain desired ground track using pilotage, dead reckoning, or GPS navigation systems",
+          "Commercial aviation: Filing accurate flight plans with ATC, optimizing cruise altitudes for tailwind advantage, and managing fuel reserves for ETOPS operations",
+          "Drone operations: Maximizing battery endurance by calculating optimal headings and ground speeds, planning return-to-home margins in varying wind conditions"
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "What's the difference between airspeed, true airspeed, and ground speed?",
+            answer: "Indicated airspeed (IAS) is what the airspeed indicator shows—uncorrected for altitude and temperature. True airspeed (TAS) is actual speed through the airmass, corrected for density altitude (roughly 2% faster per 1,000 ft altitude increase). Ground speed (GS) is velocity over the ground, equal to TAS plus wind vector. Example: At 10,000 ft, IAS might be 100 kt, TAS 120 kt, but with 20 kt tailwind, GS = 140 kt."
+          },
+          {
+            question: "How do I calculate wind correction angle for cross-country navigation?",
+            answer: "Wind correction angle (WCA) is the heading adjustment needed to compensate for crosswind drift and maintain your desired track. Formula: WCA = arcsin[(Wind speed × sin(angle between wind and track)) / TAS]. For example, with 30 kt wind from 45° off your nose and TAS of 150 kt: WCA = arcsin[(30 × sin(45°)) / 150] ≈ 8.1°. Turn into the wind by this angle to maintain track."
+          },
+          {
+            question: "Why does wind direction use 'from' instead of 'to' in aviation?",
+            answer: "Aviation convention reports wind direction as where it's blowing FROM, not toward. A '270° wind' blows FROM the west (270°) TOWARD the east. This standardizes runway operations—a 'runway 27 with 270° wind' means a headwind for landing. The calculator automatically handles this convention when computing wind vectors and components."
+          },
+          {
+            question: "How much crosswind can different aircraft handle?",
+            answer: "Crosswind limits vary by aircraft type and pilot experience. Light aircraft (Cessna 172): ~15 kt demonstrated crosswind. Regional jets: 30-35 kt. Large commercial jets (Boeing 737): 35-40 kt. Military fighters: 50+ kt. Actual limits depend on runway width, surface conditions (dry/wet/icy), gust factors, and whether it's takeoff or landing. Always check your POH/AFM for demonstrated crosswind values."
+          },
+          {
+            question: "Can strong headwinds make a flight impossible even with full fuel?",
+            answer: "Yes. Ground speed determines fuel consumption rate per nautical mile, not airspeed. With severe headwinds, ground speed can drop below economical cruise, requiring more fuel than tank capacity allows. Example: A light aircraft with 4-hour endurance at 120 kt TAS (480 nm range) facing 50 kt headwind has only 70 kt GS—just 280 nm range. Flight planning requires calculating ground speed for entire route including forecast winds aloft."
+          }
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Conclusion">
+        <p>
+          Mastering ground speed calculations is fundamental for every pilot, from student aviators learning navigation to airline captains optimizing transatlantic routes. This calculator eliminates manual vector math, delivering instant wind correction data essential for safe, efficient flight operations.
+        </p>
+        <p>
+          Explore more Physics tools: Check out our {createInternalLink('acceleration-calculator')} or the popular {createInternalLink('distance-calculator')} for comprehensive motion and navigation calculations across aviation and ground-based applications.
+        </p>
       </SEOSection>
     </CalculatorPageTemplate>
   );

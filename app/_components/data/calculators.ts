@@ -1139,7 +1139,7 @@ export const calculators: Calculator[] = [
     keywords: ['snells law calculator', 'snells law formula', 'refraction calculator', 'light refraction', 'refractive index calculator', 'critical angle calculator', 'total internal reflection', 'Snell law n1 sin theta1', 'light bending calculator', 'optical refraction calculator', 'critical angle formula', 'Snell\'s law physics', 'light refraction optics', 'refractive index formula', 'Snell law refraction', 'angle of refraction', 'angle of incidence', 'optical medium calculator', 'water glass diamond refraction', 'optics physics calculator'],
     href: '/physics/snells-law-calculator',
     embedHref: '/embed/physics/snells-law-calculator',
-    icon: '??',
+    icon: '🔭',
     color: 'purple'
   },
   {
@@ -1523,7 +1523,7 @@ export const calculators: Calculator[] = [
     keywords: ['gay lussacs law calculator', 'gay-lussac\'s law calculator', 'gay lussac law calculator', 'gay lussacs law formula', 'P1/T1 = P2/T2', 'pressure temperature calculator', 'gas law calculator', 'gay lussac law pressure temperature', 'ideal gas law', 'thermodynamics calculator', 'gay lussac law equation', 'gas pressure calculator', 'gas temperature calculator', 'gay lussac law physics', 'gas laws', 'pressure temperature relationship', 'gay lussac law formula calculator', 'calculate pressure gay lussac law', 'calculate temperature gay lussac law', 'thermodynamics', 'gas physics calculator', 'pressure temperature relationship constant volume', 'gay-lussac calculator', 'gay lussac\'s law', 'pressure temperature gas law'],
     href: '/physics/gay-lussacs-law-calculator',
     embedHref: '/embed/physics/gay-lussacs-law-calculator',
-    icon: '???',
+    icon: '🌡️',
     color: 'purple'
   },
   {
