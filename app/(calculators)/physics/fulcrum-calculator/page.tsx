@@ -139,7 +139,7 @@ export default function FulcrumCalculatorPage() {
           Mastering lever mechanics is fundamental for anyone working with tools, machinery, or physical systems requiring force multiplication or precise motion control. This calculator simplifies complex torque balance equations, delivering instant results for design, troubleshooting, and educational purposes.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('torque-calculator')} or the popular {createInternalLink('moment-of-inertia-calculator')} for comprehensive rotational mechanics analysis and engineering calculations.
+          Explore more Physics tools: Check out our {createInternalLink('torque-calculator')} or the popular {createInternalLink('mass-moment-of-inertia-calculator')} for comprehensive rotational mechanics analysis and engineering calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
