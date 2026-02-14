@@ -139,7 +139,7 @@ export default function RelativisticKineticEnergyPage() {
           Mastering relativistic kinetic energy calculations is essential for anyone working in high-energy physics, radiation science, or advanced astrophysics. This calculator bridges the gap between theoretical equations and practical applications, delivering accurate results instantly without manual Lorentz factor computation.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('momentum-calculator')} or the popular {createInternalLink('gravitational-force-calculator')} for comprehensive mechanics analysis across classical and modern physics domains.
+          Explore more Physics tools: Check out our {createInternalLink('conservation-of-momentum-calculator')} or the popular {createInternalLink('gravitational-force-calculator')} for comprehensive mechanics analysis across classical and modern physics domains.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
