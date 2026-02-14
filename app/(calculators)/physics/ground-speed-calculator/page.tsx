@@ -140,7 +140,7 @@ export default function GroundSpeedCalculatorPage() {
           Mastering ground speed calculations is fundamental for every pilot, from student aviators learning navigation to airline captains optimizing transatlantic routes. This calculator eliminates manual vector math, delivering instant wind correction data essential for safe, efficient flight operations.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('acceleration-calculator')} or the popular {createInternalLink('distance-calculator')} for comprehensive motion and navigation calculations across aviation and ground-based applications.
+          Explore more Physics tools: Check out our {createInternalLink('acceleration-calculator')} or the popular {createInternalLink('velocity-calculator')} for comprehensive motion and navigation calculations across aviation and ground-based applications.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
