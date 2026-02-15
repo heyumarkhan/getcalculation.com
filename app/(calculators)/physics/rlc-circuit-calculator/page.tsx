@@ -141,7 +141,7 @@ export default function RLCCircuitCalculatorPage() {
           Mastering RLC circuit analysis is essential for anyone designing or troubleshooting AC circuits, from student electronics labs to professional RF engineering. This calculator transforms tedious impedance calculations into instant results, accelerating design iterations and educational understanding.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('rc-time-constant-calculator')} for time-constant analysis, the {createInternalLink('lc-filter-calculator')} for comprehensive filter design, or the {createInternalLink('inductance-calculator')} for precise coil inductance calculations.
+          Explore more Physics tools: Check out our {createInternalLink('rc-filter-calculator')} for time-constant analysis, the {createInternalLink('lc-filter-calculator')} for comprehensive filter design, or the {createInternalLink('capacitance-calculator')} for precise capacitance calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
