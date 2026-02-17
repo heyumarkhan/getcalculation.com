@@ -52,127 +52,94 @@ export const metadata = {
 export default function ElectricMotorTorquePage() {
   return (
     <CalculatorPageTemplate
-      title="Electric Motor Torque Calculator"
-      description="Find electric motor shaft torque from power, speed, efficiency, torque constant, or force-radius with instant unit conversions."
+      title="Motor Torque Calculator | Calculate Electric Motor Shaft Torque Instantly"
+      description="Calculate motor torque from power, speed, current, or force. Instant results in N·m and lb·ft. Free motor torque calculator for engineers and technicians."
       calculator={<ElectricMotorTorqueCalculator />}
       slug="physics/electric-motor-torque-calculator"
       category="Mechanics"
       features={[
-        'Four methods: power-speed, power-efficiency-speed, torque constant-current, force-radius',
-        'Supports kW, W, HP input power with rpm or rad/s speeds',
-        'Outputs torque in newton-meters and pound-feet',
-        'Includes torque constant conversion (N·m/A, oz-in/A, lb·ft/A)',
-        'Step-by-step calculation details',
-        'Mobile-friendly and ready to embed'
+        "Instant motor torque calculation",
+        "Multiple input methods (power, current, force)",
+        "Supports N·m and lb·ft outputs",
+        "Mobile-optimized interface",
+        "Free to use"
       ]}
     >
-      <SEOSection title="Electric Motor Torque Calculator Overview">
+      <SEOSection title="Why Motor Torque Matters in Real-World Engineering">
         <p>
-          Torque is the turning force produced at a motor shaft. This Electric Motor Torque Calculator converts power, speed, current, or mechanical force into shaft torque with automatic unit handling for N·m and lb·ft. It is useful for sizing motors, checking drive requirements, and validating nameplate values.
+          Every electric motor application—from industrial conveyors to robotic arms—depends on accurate torque calculations to ensure reliable operation. Whether you're sizing a motor for a new pump installation, verifying nameplate specifications, or troubleshooting underperforming equipment, understanding shaft torque is essential. This motor torque calculator simplifies complex conversions and provides instant results for power-speed relationships, efficiency-adjusted calculations, torque constant evaluations, and force-radius scenarios. If you're working with related mechanical calculations like {createInternalLink('angular-velocity-calculator')}, you'll find our comprehensive physics toolkit invaluable for design and validation work.
         </p>
       </SEOSection>
 
-      <SEOSection title="How to Use the Calculator">
-        <SEOList
-          items={[
-            'Power + Speed: Enter output power (kW, W, HP) and shaft speed (rpm or rad/s) to compute τ = P / ω.',
-            'Input Power + Efficiency + Speed: Enter input power, efficiency (%), and speed to get load torque with losses accounted.',
-            'Torque Constant + Current: Enter motor torque constant Kt and armature current to calculate electromagnetic torque.',
-            'Force + Radius: Enter tangential force and pulley radius to find torque using τ = F × r.'
-          ]}
-        />
-        <p>
-          Choose a method, fill in the fields, and click Calculate. Results show N·m plus lb·ft with the applied formula.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Key Formulas for Motor Torque">
-        <div className="space-y-4">
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">τ = P / ω</p>
-            <p className="text-sm text-gray-600">Torque from mechanical output power and angular speed</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">τ = (P_in × η) / ω</p>
-            <p className="text-sm text-gray-600">Torque from input power, efficiency, and speed</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">τ = Kt × I</p>
-            <p className="text-sm text-gray-600">Torque from motor torque constant and current</p>
-          </div>
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
-            <p className="font-mono font-bold text-lg">τ = F × r</p>
-            <p className="text-sm text-gray-600">Torque from tangential force and radius</p>
-          </div>
-        </div>
-      </SEOSection>
-
-      <SEOSection title="Units and Conversions">
-        <SEOList
-          items={[
-            'Torque: N·m (SI), lb·ft (imperial)',
-            'Power: W, kW, HP',
-            'Speed: rpm converted to rad/s automatically',
-            'Torque constant: N·m/A, oz-in/A, lb·ft/A',
-            'Force: N, lbf, kgf',
-            'Radius: m, cm, mm, in, ft'
-          ]}
-        />
-        <p>
-          The calculator handles all conversions internally so you can mix inputs. The output always shows N·m with a helpful lb·ft equivalent.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Applications">
-        <SEOList
-          items={[
-            'Sizing electric motors for conveyors, pumps, and fans',
-            'Validating nameplate horsepower against required torque',
-            'Checking servo motor torque with Kt and current',
-            'Estimating startup torque for belts and pulleys',
-            'Comparing AC and DC motor torque at different speeds',
-            'Designing gearboxes and couplings for required torque capacity'
-          ]}
-        />
-      </SEOSection>
-
-      <SEOSection title="Worked Examples">
-        <ol className="list-decimal list-inside space-y-3 text-gray-700">
-          <li><strong>Power & Speed:</strong> A 5 kW motor at 1800 rpm delivers τ = 5 kW × 60 / (2π × 1800) ≈ 26.5 N·m.</li>
-          <li><strong>Input Power & Efficiency:</strong> A 4 kW input, 90% efficient motor at 1500 rpm gives τ ≈ (4000 × 0.9) / (2π × 1500/60) ≈ 22.9 N·m.</li>
-          <li><strong>Kt & Current:</strong> Kt = 0.65 N·m/A with 10 A yields τ = 6.5 N·m (≈ 4.79 lb·ft).</li>
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
+        <ol>
+          <li><strong>Step 1:</strong> Select your calculation method (power-speed, power-efficiency-speed, torque constant-current, or force-radius)</li>
+          <li><strong>Step 2:</strong> Enter your known values with appropriate units (kW, HP, rpm, rad/s, current in A, etc.)</li>
+          <li><strong>Step 3:</strong> Click Calculate to instantly view torque output in both newton-meters and pound-feet with detailed formulas</li>
         </ol>
       </SEOSection>
 
-      <SEOSection title="Frequently Asked Questions">
-        <SEOFAQ
-          questions={[
-            {
-              question: 'How do I get torque from horsepower and rpm?',
-              answer: 'Use τ = (HP × 745.7) / ω, where ω = 2π × rpm / 60. The calculator handles this automatically.'
-            },
-            {
-              question: 'What is motor torque constant Kt?',
-              answer: 'Kt links current to torque (N·m/A). Enter Kt and current to get electromagnetic torque directly.'
-            },
-            {
-              question: 'Do I need efficiency?',
-              answer: 'If you know input power and efficiency, you can estimate shaft torque. If you only know output power, use the basic power-speed method.'
-            },
-            {
-              question: 'Can I mix units like HP and rpm?',
-              answer: 'Yes. The calculator converts HP to watts and rpm to rad/s before solving for torque.'
-            },
-            {
-              question: 'Is lb·ft shown?',
-              answer: 'Yes. Results show N·m plus lb·ft for quick imperial referencing.'
-            },
-            {
-              question: 'Where can I learn more about torque?',
-              answer: `See the ${createInternalLink('torque-calculator', 'torque calculator')} for basic lever-arm torque calculations.`
-            }
-          ]}
-        />
+      <SEOSection title="The Core Concept: Motor Torque Calculator Formula">
+        <p>
+          Electric motor torque represents rotational force at the shaft. The fundamental relationship connects mechanical power (P) and angular velocity (ω) through the equation below. This formula applies universally across AC motors, DC motors, servo drives, and stepper systems.
+        </p>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">τ = P / ω</p>
+        </div>
+        <p>Where τ is torque (N·m), P is power (Watts), and ω is angular velocity (rad/s). For rpm inputs, convert using ω = 2π × rpm / 60.</p>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>A 3-phase induction motor delivers 5.5 kW at 1750 rpm. Calculate shaft torque:</p>
+        <ul>
+          <li>Input: P = 5500 W, Speed = 1750 rpm</li>
+          <li>Convert speed: ω = 2π × 1750 / 60 = 183.26 rad/s</li>
+          <li>Result: τ = 5500 / 183.26 = <strong>30.0 N·m</strong> (22.1 lb·ft)</li>
+        </ul>
+      </SEOSection>
+
+      <SEOSection title="Practical Applications">
+        <p>Motor torque calculations are critical across diverse industries and engineering disciplines:</p>
+        <SEOList items={[
+          "Industrial automation: Sizing motors for conveyor belts, robotic joints, and CNC machine tools",
+          "HVAC systems: Selecting fan and pump motors with adequate starting and running torque",
+          "Automotive engineering: Evaluating electric vehicle drive motors and regenerative braking systems",
+          "Aerospace: Designing actuators for flight control surfaces and landing gear mechanisms",
+          "Manufacturing: Specifying servo motors for precision positioning and torque-limited assembly operations"
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
+          {
+            question: "What's the difference between starting torque and running torque?",
+            answer: "Starting torque (breakaway torque) is the initial rotational force needed to overcome static friction and inertia. Running torque is the continuous force required to maintain constant speed under load. Most motors produce 150-300% of rated torque during startup."
+          },
+          {
+            question: "How do I convert horsepower to motor torque?",
+            answer: "Use the formula τ = (HP × 5252) / rpm for imperial units, or convert HP to watts first (1 HP = 745.7 W) then apply τ = P / ω. The calculator handles both conversions automatically for accurate results."
+          },
+          {
+            question: "What is torque constant (Kt) in DC motors?",
+            answer: "Torque constant Kt defines the relationship between armature current and electromagnetic torque (τ = Kt × I). Typical values range from 0.01 to 1.0 N·m/A depending on motor size. This parameter is critical for servo motor selection and control system design."
+          },
+          {
+            question: "Why does torque decrease with motor speed?",
+            answer: "For constant power applications, torque and speed have an inverse relationship (τ = P / ω). As rpm increases, available torque decreases proportionally. This is fundamental to understanding motor performance curves and selecting appropriate gear ratios."
+          },
+          {
+            question: "Can I calculate torque if I only know motor efficiency?",
+            answer: "Yes—use input power multiplied by efficiency to find output power, then divide by angular velocity. For example, 10 kW input at 92% efficiency and 1500 rpm yields τ = (10000 × 0.92) / (2π × 1500/60) ≈ 58.6 N·m."
+          }
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Conclusion">
+        <p>
+          Mastering motor torque calculations is essential for anyone working with electric drives, from equipment selection to performance troubleshooting. This calculator eliminates manual conversion errors and provides immediate, accurate results for critical engineering decisions.
+        </p>
+        <p>
+          Explore more Physics tools: Check out our {createInternalLink('electrical-power-calculator')} or the popular {createInternalLink('torque-calculator')} for complementary rotational mechanics calculations.
+        </p>
       </SEOSection>
     </CalculatorPageTemplate>
   );
