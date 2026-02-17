@@ -140,7 +140,7 @@ export default function RLCImpedanceCalculatorPage() {
           Mastering impedance calculations is fundamental for anyone working with AC circuits, from hobbyists building audio equipment to professional RF engineers designing communication systems. This calculator transforms complex phasor mathematics into accessible results, accelerating design work and troubleshooting.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('capacitance-calculator')} or the popular {createInternalLink('inductance-calculator')} for comprehensive reactive component analysis and circuit design calculations.
+          Explore more Physics tools: Check out our {createInternalLink('capacitance-calculator')} or the popular {createInternalLink('ohms-law-resistance-calculator')} for comprehensive reactive component analysis and circuit design calculations.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
