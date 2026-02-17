@@ -137,7 +137,7 @@ export default function WaterHeatingPage() {
           Mastering water heating calculations is essential for anyone working with thermal systems, from homeowners optimizing energy bills to engineers designing industrial processes. This calculator eliminates tedious manual calculations and unit conversions, delivering accurate results for real-world applications.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('specific-heat-calculator')} or the popular {createInternalLink('thermal-expansion-calculator')} for comprehensive thermal analysis and design work.
+          Explore more Physics tools: Check out our {createInternalLink('specific-heat-calculator')} or the popular {createInternalLink('heat-transfer-calculator')} for comprehensive thermal analysis and design work.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
