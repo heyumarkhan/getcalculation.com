@@ -133,7 +133,7 @@ export default function CapacitorEnergyCalculatorPage() {
           Mastering capacitor energy calculations is easy with the right tools. This Capacitor Energy Calculator turns key inputs into reliable Joule values so you can design safer, more efficient circuits.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('voltage-calculator')} or the popular {createInternalLink('electrical-power-calculator')}.
+          Explore more Physics tools: Check out our {createInternalLink('capacitor-calculator')} or the popular {createInternalLink('electrical-power-calculator')}.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
