@@ -176,7 +176,7 @@ export default function AngularMomentumCalculatorPage() {
           Mastering angular momentum is essential for understanding rotational motion in physics, from everyday phenomena like spinning wheels to complex systems like planetary orbits and quantum mechanics. This calculator provides instant, accurate results for all your angular momentum calculations, whether you're solving conservation problems, analyzing torque effects, or computing rotational dynamics.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('physics/rotational-kinetic-energy-calculator')} or the {createInternalLink('physics/centripetal-force-calculator')} to complement your rotational motion analysis.
+          Explore more Physics tools: Check out our {createInternalLink('rotational-kinetic-energy-calculator')} or the {createInternalLink('centripetal-force-calculator')} to complement your rotational motion analysis.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
