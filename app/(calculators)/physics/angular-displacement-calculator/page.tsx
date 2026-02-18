@@ -74,7 +74,7 @@ export default function AngularDisplacementCalculatorPage() {
           Angular displacement is a fundamental concept in rotational kinematics that describes how far an object has rotated about an axis. Whether you're calculating wheel rotations for vehicle distance traveled, designing gear systems for machinery, analyzing planetary orbits, or programming robotic arm movements, understanding angular displacement is essential. This calculator helps engineers, physics students, and designers quickly determine rotation angles, convert between units, and solve complex rotational motion problems with instant, accurate results.
         </p>
         <p>
-          From motors and turbines spinning thousands of revolutions per minute to Earth's daily rotation and satellite orbital mechanics, angular displacement calculations are everywhere in physics and engineering. Our tool integrates seamlessly with related calculations like {createInternalLink('angular-velocity-calculator')} for determining rotation rates, {createInternalLink('angular-acceleration-calculator')} for analyzing changing rotation speeds, and {createInternalLink('centripetal-force-calculator')} for circular motion dynamics, providing a comprehensive rotational motion analysis toolkit.
+          From motors and turbines spinning thousands of revolutions per minute to Earth's daily rotation and satellite orbital mechanics, angular displacement calculations are everywhere in physics and engineering. Our tool integrates seamlessly with related calculations like {createInternalLink('angular-velocity-calculator')} for determining rotation rates, {createInternalLink('angular-frequency-calculator')} for analyzing oscillation and rotation frequencies, and {createInternalLink('torque-calculator')} for rotational force dynamics, providing a comprehensive rotational motion analysis toolkit.
         </p>
       </SEOSection>
 
@@ -380,7 +380,7 @@ export default function AngularDisplacementCalculatorPage() {
           Mastering angular displacement calculations is essential for understanding rotational motion in physics and engineering. Whether you're designing machinery, analyzing planetary orbits, or programming robotic systems, this calculator provides instant, accurate results for all your angular displacement needs.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('angular-frequency-calculator')} or the {createInternalLink('rotational-kinetic-energy-calculator')} to complete your rotational motion analysis toolkit.
+          Explore more Physics tools: Check out our {createInternalLink('angular-velocity-calculator')} or the {createInternalLink('kinetic-energy-calculator')} to complete your rotational motion analysis toolkit.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

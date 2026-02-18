@@ -74,7 +74,7 @@ export default function VoltageDividerCalculatorPage() {
           Voltage dividers are among the most fundamental building blocks in electronics, found in virtually every circuit from simple hobbyist projects to sophisticated industrial equipment. Whether you're scaling battery voltage for microcontroller ADC inputs, interfacing sensors, creating reference voltages, or biasing amplifiers, the voltage divider circuit provides a simple, reliable solution. This calculator helps engineers, students, and makers quickly determine resistor values, analyze power dissipation, and verify circuit performance before breadboarding or PCB layout.
         </p>
         <p>
-          Understanding voltage dividers is critical because they underpin many essential circuit functions. From potentiometer-based volume controls to thermistor temperature sensors, from level shifters converting 5V logic to 3.3V to battery monitoring circuits protecting lithium cells—mastering voltage division enables you to design robust analog and mixed-signal systems. Our calculator supports all common scenarios including {createInternalLink('physics/ohms-law-calculator')} verification, {createInternalLink('physics/power-calculator')} analysis for resistor selection, and complements {createInternalLink('physics/series-resistance-calculator')} for total resistance determination.
+          Understanding voltage dividers is critical because they underpin many essential circuit functions. From potentiometer-based volume controls to thermistor temperature sensors, from level shifters converting 5V logic to 3.3V to battery monitoring circuits protecting lithium cells—mastering voltage division enables you to design robust analog and mixed-signal systems. Our calculator supports all common scenarios including {createInternalLink('ohms-law-resistance-calculator')} verification, {createInternalLink('electrical-power-calculator')} analysis for resistor selection, and complements {createInternalLink('series-resistor-calculator')} for total resistance determination.
         </p>
       </SEOSection>
 
@@ -422,7 +422,7 @@ export default function VoltageDividerCalculatorPage() {
           Mastering voltage dividers is essential for electronics design, from simple sensor circuits to complex analog systems. This calculator provides instant, accurate results for resistor selection, power analysis, and circuit verification, helping you design reliable voltage divider circuits for any application.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('current-calculator')} or the {createInternalLink('resistance-calculator')} to complete your circuit analysis toolkit.
+          Explore more Physics tools: Check out our {createInternalLink('watts-to-amps-calculator')} or the {createInternalLink('parallel-resistor-calculator')} to complete your circuit analysis toolkit.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>

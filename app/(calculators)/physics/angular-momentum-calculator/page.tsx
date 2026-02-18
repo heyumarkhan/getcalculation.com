@@ -74,7 +74,7 @@ export default function AngularMomentumCalculatorPage() {
           Angular momentum is one of the most fundamental concepts in rotational dynamics, describing how objects resist changes to their rotational motion. Whether you're analyzing a spinning figure skater, calculating satellite trajectories, or studying atomic electron orbitals, understanding angular momentum is essential. This calculator helps you quickly compute angular momentum using multiple methods, apply conservation laws, and analyze how torque affects rotating systems—critical for physics students, engineers, and researchers working with rotational motion.
         </p>
         <p>
-          From determining the stability of gyroscopes to predicting planetary orbits, angular momentum calculations are indispensable in both classical and quantum mechanics. Our tool supports various input methods including {createInternalLink('moment-of-inertia-calculator')} calculations, {createInternalLink('angular-velocity-calculator')} conversions, and {createInternalLink('torque-calculator')} relationships, making complex rotational dynamics accessible with instant, accurate results.
+          From determining the stability of gyroscopes to predicting planetary orbits, angular momentum calculations are indispensable in both classical and quantum mechanics. Our tool supports various input methods including {createInternalLink('angular-frequency-calculator')} calculations, {createInternalLink('angular-velocity-calculator')} conversions, and {createInternalLink('torque-calculator')} relationships, making complex rotational dynamics accessible with instant, accurate results.
         </p>
       </SEOSection>
 
@@ -176,7 +176,7 @@ export default function AngularMomentumCalculatorPage() {
           Mastering angular momentum is essential for understanding rotational motion in physics, from everyday phenomena like spinning wheels to complex systems like planetary orbits and quantum mechanics. This calculator provides instant, accurate results for all your angular momentum calculations, whether you're solving conservation problems, analyzing torque effects, or computing rotational dynamics.
         </p>
         <p>
-          Explore more Physics tools: Check out our {createInternalLink('rotational-kinetic-energy-calculator')} or the {createInternalLink('centripetal-force-calculator')} to complement your rotational motion analysis.
+          Explore more Physics tools: Check out our {createInternalLink('kinetic-energy-calculator')} or the {createInternalLink('displacement-calculator')} to complement your rotational motion analysis.
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
