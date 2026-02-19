@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { calculators, categories } from './data/calculators';
+import { calculators } from './data/calculators';
 import { useRouter } from 'next/navigation';
 import Card from './ui/Card';
 import Input from './ui/Input';
@@ -15,6 +15,7 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [hasSearched, setHasSearched] = useState(false);
 
   // Get available major subjects (Math, Physics, etc.)
   const majorSubjects = useMemo(() => {
@@ -52,6 +53,16 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
       return matchesSearch && matchesCategory && matchesSubject;
     });
   }, [searchTerm, selectedCategory, subject]);
+
+  // Handle search input change
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    setHasSearched(value.length > 0);
+  };
+
+  // On homepage, only show results if user has searched
+  const shouldShowResults = subject || hasSearched;
 
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
@@ -108,7 +119,7 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
             type="text"
             placeholder="Search calculators..."
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={handleSearchChange}
             className="text-lg py-4 px-6"
           />
         </div>
@@ -149,86 +160,100 @@ export default function CalculatorGrid({ subject }: CalculatorGridProps = {}) {
           )}
         </div>
 
-        {/* Results Count */}
-        <p className="text-gray-600">
-          {filteredCalculators.length} calculator{filteredCalculators.length !== 1 ? 's' : ''} found
-        </p>
+        {/* Results Count - Only show if results are displayed */}
+        {shouldShowResults && (
+          <p className="text-gray-600">
+            {filteredCalculators.length} calculator{filteredCalculators.length !== 1 ? 's' : ''} found
+          </p>
+        )}
       </div>
 
-      {/* Calculator Grid */}
-      {filteredCalculators.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredCalculators.map((calculator) => (
-            <div
-              key={calculator.id}
-              className={`cursor-pointer group ${getCardColor(calculator.color)}`}
-              onClick={() => window.location.href = calculator.href}
-            >
-              <Card className="p-6 transition-all duration-200 h-full flex flex-col">
-              <div className="text-center flex-1 flex flex-col">
-                {/* Icon */}
-                <div className="text-4xl mb-4">{calculator.icon}</div>
-                
-                {/* Title */}
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#820ECC] transition-colors">
-                  {calculator.name}
-                </h3>
-                
-                {/* Description */}
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-1">
-                  {calculator.description}
-                </p>
-                
-                {/* Category Badge */}
-                <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${getCategoryColor(calculator.category)}`}>
-                  {calculator.category}
+      {/* Calculator Grid - Only show if on subject page or user has searched */}
+      {shouldShowResults ? (
+        filteredCalculators.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredCalculators.map((calculator) => (
+              <div
+                key={calculator.id}
+                className={`cursor-pointer group ${getCardColor(calculator.color)}`}
+                onClick={() => window.location.href = calculator.href}
+              >
+                <Card className="p-6 transition-all duration-200 h-full flex flex-col">
+                <div className="text-center flex-1 flex flex-col">
+                  {/* Icon */}
+                  <div className="text-4xl mb-4">{calculator.icon}</div>
+                  
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#820ECC] transition-colors">
+                    {calculator.name}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-1">
+                    {calculator.description}
+                  </p>
+                  
+                  {/* Category Badge */}
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${getCategoryColor(calculator.category)}`}>
+                    {calculator.category}
+                  </div>
                 </div>
+                  
+                  {/* Action Buttons - Sticky to Bottom */}
+                  <div className="mt-6 space-y-2">
+                    <Button 
+                      className="w-full"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.href = calculator.href;
+                      }}
+                    >
+                      Use Calculator
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="w-full"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const embedCode = `<iframe src="${window.location.origin}${calculator.embedHref}" width="100%" height="100%" frameborder="0" style="background: transparent;"></iframe>`;
+                        navigator.clipboard.writeText(embedCode);
+                      }}
+                    >
+                      Copy Embed Code
+                    </Button>
+                  </div>
+                </Card>
               </div>
-                
-                {/* Action Buttons - Sticky to Bottom */}
-                <div className="mt-6 space-y-2">
-                  <Button 
-                    className="w-full"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.location.href = calculator.href;
-                    }}
-                  >
-                    Use Calculator
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="w-full"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      const embedCode = `<iframe src="${window.location.origin}${calculator.embedHref}" width="100%" height="100%" frameborder="0" style="background: transparent;"></iframe>`;
-                      navigator.clipboard.writeText(embedCode);
-                    }}
-                  >
-                    Copy Embed Code
-                  </Button>
-                </div>
-              </Card>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <div className="text-6xl mb-4">🔍</div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">No calculators found</h3>
+            <p className="text-gray-600 mb-6">
+              Try adjusting your search terms or category filter
+            </p>
+            <Button 
+              onClick={() => {
+                setSearchTerm('');
+                setSelectedCategory('All');
+                setHasSearched(false);
+              }}
+              variant="outline"
+            >
+              Clear Filters
+            </Button>
+          </div>
+        )
       ) : (
+        // Homepage view: Show intro message instead of calculators
         <div className="text-center py-12">
-          <div className="text-6xl mb-4">🔍</div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-2">No calculators found</h3>
-          <p className="text-gray-600 mb-6">
-            Try adjusting your search terms or category filter
+          <div className="text-6xl mb-4">🧮</div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Click on a category above to explore calculators, or use the search box to find a specific calculator.
           </p>
-          <Button 
-            onClick={() => {
-              setSearchTerm('');
-              setSelectedCategory('All');
-            }}
-            variant="outline"
-          >
-            Clear Filters
-          </Button>
         </div>
       )}
     </div>
