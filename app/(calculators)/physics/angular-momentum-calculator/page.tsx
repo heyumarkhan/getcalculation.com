@@ -1,6 +1,7 @@
 import AngularMomentumCalculator from '../../../_components/calculators/AngularMomentumCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 const title = 'Angular Momentum Calculator | L = Iω, mvr, Torque & Conservation';
 const description = 'Calculate angular momentum for rotating objects and particles. Find L = Iω, mvr, apply conservation laws, and analyze torque effects with instant results.';
@@ -68,245 +69,79 @@ export default function AngularMomentumCalculatorPage() {
         'Step-by-step calculations with detailed results'
       ]}
     >
-      <SEOSection title="What is Angular Momentum?">
+      <SEOSection title="Why Angular Momentum Matters in Physics">
         <p>
-          Angular momentum (L) is a fundamental quantity in rotational motion that measures the rotational inertia and angular velocity of a rotating object or particle moving in a curved path. It is the rotational analog of linear momentum (p = mv) and is conserved in isolated systems, making it crucial for understanding everything from spinning tops to planetary orbits.
+          Angular momentum is one of the most fundamental concepts in rotational dynamics, describing how objects resist changes to their rotational motion. Whether you're analyzing a spinning figure skater, calculating satellite trajectories, or studying atomic electron orbitals, understanding angular momentum is essential. This calculator helps you quickly compute angular momentum using multiple methods, apply conservation laws, and analyze how torque affects rotating systems—critical for physics students, engineers, and researchers working with rotational motion.
         </p>
         <p>
-          For a rigid body rotating about a fixed axis, angular momentum is given by <strong>L = Iω</strong>, where I is the moment of inertia and ω is the angular velocity. For a point mass or particle in circular motion, it's expressed as <strong>L = mvr</strong> or more generally as the cross product <strong>L = r × p</strong>, where r is the position vector and p is linear momentum.
-        </p>
-        <p>
-          Angular momentum is a vector quantity directed along the axis of rotation (using the right-hand rule) and is measured in kg·m²/s or J·s in SI units. Its conservation is one of the most powerful principles in physics, explaining phenomena from ice skaters spinning faster when they pull their arms in to the stability of gyroscopes.
+          From determining the stability of gyroscopes to predicting planetary orbits, angular momentum calculations are indispensable in both classical and quantum mechanics. Our tool supports various input methods including {createInternalLink('angular-frequency-calculator')} calculations, {createInternalLink('angular-velocity-calculator')} conversions, and {createInternalLink('torque-calculator')} relationships, making complex rotational dynamics accessible with instant, accurate results.
         </p>
       </SEOSection>
 
-      <SEOSection title="Angular Momentum Formulas">
-        <p><strong>Rotational Angular Momentum:</strong></p>
-        <ul>
-          <li><strong>L = Iω</strong> - Basic rotational formula (moment of inertia × angular velocity)</li>
-          <li><strong>ω = L/I</strong> - Angular velocity from angular momentum</li>
-          <li><strong>I = L/ω</strong> - Moment of inertia from angular momentum</li>
-        </ul>
-
-        <p className="mt-4"><strong>Particle Angular Momentum:</strong></p>
-        <ul>
-          <li><strong>L = mvr</strong> - For circular motion (perpendicular case)</li>
-          <li><strong>L = r × p = rp sin θ</strong> - General vector cross product</li>
-          <li><strong>L = mr²ω</strong> - Alternative form using angular velocity</li>
-        </ul>
-
-        <p className="mt-4"><strong>Conservation of Angular Momentum:</strong></p>
-        <ul>
-          <li><strong>L₁ = L₂</strong> - Total angular momentum remains constant</li>
-          <li><strong>I₁ω₁ = I₂ω₂</strong> - Conservation for changing moment of inertia</li>
-          <li><strong>ω₂ = ω₁(I₁/I₂)</strong> - Final angular velocity after inertia change</li>
-        </ul>
-
-        <p className="mt-4"><strong>Torque and Angular Momentum:</strong></p>
-        <ul>
-          <li><strong>τ = dL/dt</strong> - Torque is the rate of change of angular momentum</li>
-          <li><strong>ΔL = τ·Δt</strong> - Angular impulse (change in angular momentum)</li>
-          <li><strong>τ = Iα</strong> - Torque from angular acceleration (alternative form)</li>
-        </ul>
-
-        <p className="mt-4"><strong>Related Quantities:</strong></p>
-        <ul>
-          <li><strong>KE = ½Iω² = L²/(2I)</strong> - Rotational kinetic energy</li>
-          <li><strong>p = mv</strong> - Linear momentum</li>
-          <li><strong>ω = v/r</strong> - Angular velocity for circular motion</li>
-        </ul>
-      </SEOSection>
-
-      <SEOSection title="Moment of Inertia for Common Objects">
-        <p>The moment of inertia depends on the object's mass distribution and axis of rotation:</p>
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse border border-gray-300 mt-2">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-left">Object</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Axis of Rotation</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Moment of Inertia (I)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Point mass</td>
-                <td className="border border-gray-300 px-4 py-2">Distance r from axis</td>
-                <td className="border border-gray-300 px-4 py-2">I = mr²</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Solid disk/cylinder</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = ½mr²</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Hollow cylinder/hoop</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = mr²</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Solid sphere</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = (2/5)mr²</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Hollow sphere</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = (2/3)mr²</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Thin rod</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = (1/12)mL²</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Thin rod</td>
-                <td className="border border-gray-300 px-4 py-2">Through end</td>
-                <td className="border border-gray-300 px-4 py-2">I = (1/3)mL²</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Rectangular plate</td>
-                <td className="border border-gray-300 px-4 py-2">Through center</td>
-                <td className="border border-gray-300 px-4 py-2">I = (1/12)m(a² + b²)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="mt-2 text-sm text-gray-600">
-          where m is mass, r is radius, L is length, and a, b are the dimensions of the rectangular plate.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Understanding Conservation of Angular Momentum">
-        <p>
-          The law of conservation of angular momentum states that if no external torque acts on a system, the total angular momentum remains constant. This is expressed as:
-        </p>
-        <p className="font-semibold mt-2">L₁ = L₂ or I₁ω₁ = I₂ω₂</p>
-        <p className="mt-2">
-          This principle explains many fascinating phenomena:
-        </p>
-
-        <p className="mt-4"><strong>Ice Skater Effect:</strong></p>
-        <p>
-          When a figure skater pulls their arms inward during a spin, their moment of inertia decreases (I₂ &lt; I₁). To conserve angular momentum, their angular velocity must increase (ω₂ &gt; ω₁), causing them to spin faster. When they extend their arms, the opposite occurs.
-        </p>
-
-        <p className="mt-4"><strong>Diver's Somersault:</strong></p>
-        <p>
-          A diver can control their rotation speed in mid-air by changing body position. Tucking into a ball reduces moment of inertia and increases rotation speed, while extending the body slows rotation for a clean water entry.
-        </p>
-
-        <p className="mt-4"><strong>Planetary Orbits:</strong></p>
-        <p>
-          Planets move faster when closer to the sun (perihelion) and slower when farther away (aphelion). As the orbital radius decreases, angular velocity increases to conserve angular momentum, explaining Kepler's second law.
-        </p>
-
-        <p className="mt-4"><strong>Energy Considerations:</strong></p>
-        <p>
-          While angular momentum is conserved, rotational kinetic energy may change. When a skater pulls in their arms, work is done against centrifugal effects, increasing their kinetic energy even though angular momentum stays constant. The energy comes from muscular work.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Torque and Angular Momentum Relationship">
-        <p>
-          Torque (τ) is the rotational analog of force and represents the rate of change of angular momentum:
-        </p>
-        <p className="font-semibold mt-2">τ = dL/dt</p>
-        <p className="mt-2">
-          This relationship is Newton's second law for rotation. Just as force causes a change in linear momentum (F = dp/dt), torque causes a change in angular momentum. For a finite time interval:
-        </p>
-        <p className="font-semibold mt-2">ΔL = τ·Δt (Angular Impulse)</p>
-
-        <p className="mt-4"><strong>Applications of Torque-Angular Momentum:</strong></p>
-        
-        <p className="mt-3"><strong>1. Gyroscopes:</strong></p>
-        <p>
-          When a torque is applied to a spinning gyroscope, it doesn't tilt in the expected direction. Instead, the change in angular momentum is perpendicular to both the torque and the existing angular momentum, causing precession. This principle is used in navigation systems and stability control.
-        </p>
-
-        <p className="mt-3"><strong>2. Braking Systems:</strong></p>
-        <p>
-          Friction brakes apply a torque opposite to the wheel's rotation, reducing angular momentum over time. The stopping distance depends on the magnitude of the braking torque and the initial angular momentum.
-        </p>
-
-        <p className="mt-3"><strong>3. Motor Acceleration:</strong></p>
-        <p>
-          Electric motors produce torque to increase the angular momentum of rotating parts. The time required to reach operating speed depends on the motor torque and the total moment of inertia of all rotating components.
-        </p>
-
-        <p className="mt-3"><strong>4. Satellite Attitude Control:</strong></p>
-        <p>
-          Satellites use reaction wheels or control moment gyroscopes to change their orientation. By applying internal torques to spin up or slow down these wheels, they can alter their angular momentum without external forces.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Applications of Angular Momentum">
+      <SEOSection title="How to Use the Angular Momentum Calculator">
         <SEOList
           items={[
-            '<strong>Figure Skating and Gymnastics:</strong> Athletes manipulate their moment of inertia to control rotation speed during spins, jumps, and aerial maneuvers, demonstrating conservation of angular momentum.',
-            '<strong>Gyroscopes and Navigation:</strong> Gyroscopes maintain orientation due to conservation of angular momentum, used in aircraft instruments, smartphones, and inertial navigation systems for ships and spacecraft.',
-            '<strong>Planetary Motion:</strong> Angular momentum explains planetary and satellite orbits, Kepler\'s laws of planetary motion, and why planets sweep out equal areas in equal times (Kepler\'s second law).',
-            '<strong>Atomic and Quantum Physics:</strong> Electrons in atoms possess quantized angular momentum, fundamental to atomic structure, spectroscopy, and understanding chemical bonding and electron orbitals.',
-            '<strong>Rotational Machinery:</strong> Flywheels store energy in rotational form using high angular momentum, providing smooth power delivery in engines and energy storage systems.',
-            '<strong>Helicopter and Drone Stability:</strong> Counter-rotating rotors or tail rotors balance angular momentum to prevent unwanted rotation of the aircraft body, essential for stable flight control.',
-            '<strong>Astronomy and Astrophysics:</strong> Angular momentum explains galaxy rotation, black hole formation, pulsar spin, and the formation of planetary systems from rotating gas clouds.',
-            '<strong>Sports Equipment:</strong> Spinning balls (football spirals, golf ball backspin) use angular momentum for stability and trajectory control; spinning wheels on bicycles provide gyroscopic stability.'
+            '<strong>Select Calculation Mode:</strong> Choose between rotational angular momentum (L = Iω), particle angular momentum (L = mvr), conservation problems, or torque-related calculations based on your specific problem.',
+            '<strong>Enter Known Values:</strong> Input the required parameters such as moment of inertia, angular velocity, mass, velocity, radius, or torque depending on the selected mode. The calculator accepts various unit systems.',
+            '<strong>Apply Unit Conversions:</strong> Select appropriate units for each parameter (kg·m² for moment of inertia, rad/s or rpm for angular velocity, m/s for linear velocity). The calculator automatically handles conversions.',
+            '<strong>Review Results:</strong> Get instant angular momentum values in kg·m²/s or J·s, along with step-by-step calculations showing the formula applied and intermediate values for verification.',
+            '<strong>Explore Related Calculations:</strong> Use conservation mode to solve problems where moment of inertia changes, or torque mode to find how angular momentum changes over time with applied torque.'
           ]}
         />
       </SEOSection>
 
-      <SEOSection title="Calculation Examples">
-        <p><strong>Example 1: Rotating Disk</strong></p>
-        <p className="mt-2">
-          A solid disk with mass m = 5 kg and radius r = 0.4 m rotates at ω = 20 rad/s. Calculate its angular momentum.
+      <SEOSection title="Core Concept: Angular Momentum Formula and Conservation">
+        <p>
+          Angular momentum (L) quantifies the rotational motion of objects and is calculated using different formulas depending on the situation. For rigid bodies rotating about a fixed axis, the fundamental formula is:
         </p>
-        <p className="mt-2">
-          For a solid disk: I = ½mr² = ½(5)(0.4)² = 0.4 kg·m²<br />
-          Angular momentum: L = Iω = 0.4 × 20 = <strong>8 kg·m²/s</strong>
+        <p className="font-semibold text-center my-4 text-lg">L = Iω</p>
+        <p>
+          Where <strong>L</strong> is angular momentum (kg·m²/s), <strong>I</strong> is moment of inertia (kg·m²), and <strong>ω</strong> is angular velocity (rad/s). For a point particle in circular motion, the formula becomes:
         </p>
-
-        <p className="mt-4"><strong>Example 2: Particle in Circular Motion</strong></p>
-        <p className="mt-2">
-          A 2 kg mass moves in a circle of radius 3 m at speed 10 m/s. Find its angular momentum.
+        <p className="font-semibold text-center my-4 text-lg">L = mvr</p>
+        <p>
+          Where <strong>m</strong> is mass (kg), <strong>v</strong> is tangential velocity (m/s), and <strong>r</strong> is radius from the axis (m). The most general form uses the cross product:
         </p>
-        <p className="mt-2">
-          L = mvr = 2 × 10 × 3 = <strong>60 kg·m²/s</strong><br />
-          Angular velocity: ω = v/r = 10/3 = 3.33 rad/s<br />
-          Verification: L = mr²ω = 2(3²)(3.33) = 60 kg·m²/s ✓
+        <p className="font-semibold text-center my-4 text-lg">L = r × p = rp sin θ</p>
+        <p>
+          Where <strong>r</strong> is the position vector, <strong>p</strong> is linear momentum (mv), and <strong>θ</strong> is the angle between them. Angular momentum is a vector quantity directed perpendicular to the plane of rotation (using the right-hand rule).
         </p>
 
-        <p className="mt-4"><strong>Example 3: Ice Skater (Conservation)</strong></p>
-        <p className="mt-2">
-          A skater with I₁ = 3 kg·m² spins at ω₁ = 5 rad/s. She pulls in her arms, reducing I to I₂ = 1.5 kg·m². Find her new angular velocity.
+        <p className="mt-4"><strong>Conservation of Angular Momentum:</strong></p>
+        <p>
+          One of the most powerful principles in physics states that if no external torque acts on a system, total angular momentum remains constant:
         </p>
-        <p className="mt-2">
-          Initial L: L = I₁ω₁ = 3 × 5 = 15 kg·m²/s<br />
-          Final velocity: ω₂ = L/I₂ = 15/1.5 = <strong>10 rad/s</strong><br />
-          She spins twice as fast! Initial KE = ½(3)(5²) = 37.5 J<br />
-          Final KE = ½(1.5)(10²) = 75 J (energy increased due to work done)
+        <p className="font-semibold text-center my-4 text-lg">L₁ = L₂  or  I₁ω₁ = I₂ω₂</p>
+        <p>
+          This explains why ice skaters spin faster when pulling their arms in (decreasing I increases ω), why planets move faster near the sun, and how divers control somersault speed by changing body position.
         </p>
 
-        <p className="mt-4"><strong>Example 4: Torque Application</strong></p>
-        <p className="mt-2">
-          A torque of 12 N·m is applied to a wheel for 3 seconds. If the wheel initially has L₀ = 20 kg·m²/s, find its final angular momentum.
+        <p className="mt-4"><strong>Torque and Angular Momentum Relationship:</strong></p>
+        <p>
+          Torque (τ) represents the rate of change of angular momentum, analogous to how force changes linear momentum:
         </p>
-        <p className="mt-2">
-          Change in L: ΔL = τΔt = 12 × 3 = 36 kg·m²/s<br />
-          Final L: Lf = L₀ + ΔL = 20 + 36 = <strong>56 kg·m²/s</strong>
+        <p className="font-semibold text-center my-4 text-lg">τ = dL/dt  or  ΔL = τ·Δt</p>
+        <p>
+          This relationship is fundamental for analyzing how forces affect rotational motion, from braking systems to motor acceleration and gyroscopic precession.
+        </p>
+
+        <p className="mt-4"><strong>Example Calculation:</strong></p>
+        <p>
+          A solid disk with mass 5 kg and radius 0.4 m rotates at 20 rad/s. Its moment of inertia is I = ½mr² = ½(5)(0.4)² = 0.4 kg·m². Therefore, angular momentum L = Iω = 0.4 × 20 = <strong>8 kg·m²/s</strong>. If external torque is negligible and the disk contracts to radius 0.3 m, new I = 0.225 kg·m², so conservation gives ω₂ = L/I₂ = 8/0.225 = <strong>35.6 rad/s</strong>.
         </p>
       </SEOSection>
 
-      <SEOSection title="Tips for Angular Momentum Calculations">
+      <SEOSection title="Real-World Applications of Angular Momentum">
         <SEOList
           items={[
-            '<strong>Use Consistent Units:</strong> Convert all quantities to SI units (kg, m, rad/s) before calculating. Angular velocity must be in radians per second, not RPM or degrees per second.',
-            '<strong>Identify the Correct Formula:</strong> Use L = Iω for rigid rotating bodies and L = mvr for point particles in circular motion. For general cases, use L = r × p (cross product).',
-            '<strong>Direction Matters:</strong> Angular momentum is a vector. Use the right-hand rule: curl fingers in the direction of rotation, thumb points in L direction. Counterclockwise is typically positive.',
-            '<strong>Check Conservation Conditions:</strong> Angular momentum is only conserved when net external torque is zero. Internal forces (like pulling arms in) don\'t affect total angular momentum.',
-            '<strong>Calculate Moment of Inertia Correctly:</strong> Use the appropriate formula for the object\'s shape and axis. For complex objects, sum individual contributions: I_total = I₁ + I₂ + ...',
-            '<strong>Watch for Sign Conventions:</strong> Positive torque increases angular momentum; negative torque (braking) decreases it. Ensure torque direction aligns with your coordinate system.',
-            '<strong>Energy vs. Momentum:</strong> Remember that angular momentum can be conserved while rotational kinetic energy changes (or vice versa). They are independent conservation laws.',
-            '<strong>Verify with Alternative Methods:</strong> For particles, check that L = mvr = Iω where I = mr². Both methods should give the same result for circular motion.'
+            '<strong>Figure Skating and Gymnastics:</strong> Athletes manipulate their moment of inertia during spins and aerial maneuvers. By pulling arms or legs closer to the body, they decrease I and increase ω (conservation of L), spinning faster. Extending limbs slows rotation for controlled landings.',
+            '<strong>Gyroscopes and Navigation Systems:</strong> Gyroscopes maintain orientation due to conservation of angular momentum, resisting external torques. Used in aircraft instruments, spacecraft attitude control, smartphone orientation sensors, and inertial navigation for ships and submarines.',
+            '<strong>Planetary Motion and Astrophysics:</strong> Angular momentum explains planetary orbits, Kepler\'s laws, and why planets sweep equal areas in equal times. Conservation governs galaxy rotation, black hole accretion disks, pulsar spin rates, and planetary system formation from rotating gas clouds.',
+            '<strong>Automotive Engineering:</strong> Flywheels store rotational energy using high angular momentum, providing smooth power delivery in engines. Braking systems apply torque to reduce angular momentum of wheels. Vehicle stability control systems monitor and adjust angular momentum during turns.',
+            '<strong>Helicopter and Drone Stability:</strong> Counter-rotating rotors or tail rotors balance angular momentum to prevent unwanted aircraft body rotation. Reaction wheels in satellites change angular momentum without external forces, enabling precise attitude control.',
+            '<strong>Quantum Mechanics and Atomic Physics:</strong> Electrons possess quantized angular momentum in atomic orbitals, fundamental to understanding atomic structure, chemical bonding, spectroscopy, and magnetic properties of materials. Spin angular momentum is intrinsic to elementary particles.',
+            '<strong>Sports Physics:</strong> Spinning footballs maintain stable flight (spiral), golf ball backspin increases lift, and baseball curve balls exploit Magnus effect. Bicycle wheels provide gyroscopic stability at speed. Discus and hammer throw techniques maximize angular momentum for distance.',
+            '<strong>Industrial Machinery:</strong> Turbines, motors, and rotating equipment are designed considering angular momentum for efficiency and safety. Sudden load changes can cause dangerous torques. Balancing rotating parts minimizes vibration and bearing wear.'
           ]}
         />
       </SEOSection>
@@ -314,31 +149,36 @@ export default function AngularMomentumCalculatorPage() {
       <SEOFAQ
         questions={[
           {
-            question: 'What is the difference between angular momentum and linear momentum?',
-            answer: 'Linear momentum (p = mv) describes translational motion in a straight line, while angular momentum (L = Iω or L = r × p) describes rotational motion. Linear momentum depends on mass and velocity; angular momentum depends on moment of inertia (or position) and angular velocity. Both are conserved quantities but apply to different types of motion. Angular momentum is a vector perpendicular to the plane of rotation, while linear momentum is along the direction of motion.'
+            question: 'What is angular momentum and how is it calculated?',
+            answer: 'Angular momentum (L) measures the rotational motion of objects and is the rotational analog of linear momentum. For rigid bodies rotating about a fixed axis, it\'s calculated as L = Iω, where I is moment of inertia (kg·m²) and ω is angular velocity (rad/s). For point particles in circular motion, use L = mvr, where m is mass, v is tangential velocity, and r is radius. The general vector form is L = r × p. Angular momentum is measured in kg·m²/s or J·s and is directed along the rotation axis using the right-hand rule.'
           },
           {
             question: 'Why does an ice skater spin faster when pulling their arms in?',
-            answer: 'When an ice skater pulls their arms inward, their moment of inertia (I) decreases because mass is brought closer to the axis of rotation. According to conservation of angular momentum (L = Iω = constant), if I decreases, angular velocity (ω) must increase proportionally to keep L constant. Since external torque from ice friction is minimal, L remains nearly constant, causing the skater to spin faster. The increased kinetic energy comes from muscular work done while pulling arms in.'
+            answer: 'When an ice skater pulls their arms inward, their moment of inertia (I) decreases because mass moves closer to the rotation axis. According to conservation of angular momentum (L = Iω = constant), if I decreases while no external torque acts, angular velocity (ω) must increase proportionally to keep L constant. Since ice friction provides minimal torque, L remains nearly constant, causing the skater to spin faster. The increased rotational kinetic energy comes from muscular work done pulling arms in against centrifugal effects.'
           },
           {
-            question: 'How is torque related to angular momentum?',
-            answer: 'Torque (τ) is the rate of change of angular momentum: τ = dL/dt. This is Newton\'s second law for rotation, analogous to F = dp/dt for linear motion. A net torque causes angular momentum to change over time. If no external torque acts on a system (τ = 0), then dL/dt = 0, meaning angular momentum is conserved. The angular impulse (change in L) equals torque multiplied by time: ΔL = τ·Δt.'
+            question: 'What is the relationship between torque and angular momentum?',
+            answer: 'Torque (τ) is the rate of change of angular momentum, expressed as τ = dL/dt. This is Newton\'s second law for rotation, analogous to F = dp/dt for linear motion. A net torque causes angular momentum to change over time—positive torque increases L, negative torque (like braking) decreases it. For a finite time interval, the angular impulse equals change in angular momentum: ΔL = τ·Δt. If no external torque acts (τ = 0), then dL/dt = 0, meaning angular momentum is conserved.'
           },
           {
-            question: 'What are the units of angular momentum?',
-            answer: 'In SI units, angular momentum is measured in kg·m²/s (kilogram-meter squared per second) or equivalently J·s (joule-seconds). From L = Iω: I is in kg·m² and ω is in rad/s (radians per second are dimensionless), giving kg·m²/s. From L = mvr: mass (kg) × velocity (m/s) × radius (m) also gives kg·m²/s. In quantum mechanics, angular momentum is often expressed in units of ℏ (reduced Planck constant) = 1.055 × 10⁻³⁴ J·s.'
+            question: 'How do you calculate moment of inertia for different objects?',
+            answer: 'Moment of inertia (I) depends on mass distribution and rotation axis. Common formulas include: solid disk I = ½mr², hollow cylinder I = mr², solid sphere I = (2/5)mr², hollow sphere I = (2/3)mr², thin rod through center I = (1/12)mL², and rod through end I = (1/3)mL². For complex objects, use the parallel axis theorem: I = I_cm + md², where I_cm is moment about center of mass and d is distance to new axis. For composite objects, sum individual contributions: I_total = I₁ + I₂ + I₃...'
           },
           {
-            question: 'Can angular momentum be negative?',
-            answer: 'Yes, angular momentum can be negative depending on the direction of rotation and your chosen coordinate system. By convention, counterclockwise rotation (when viewed from above) is typically positive, and clockwise is negative. The sign indicates the direction of the angular momentum vector along the axis of rotation (using the right-hand rule). In conservation problems, opposite rotations can cancel: if two objects rotate in opposite directions, their angular momenta have opposite signs and the total L is the algebraic sum.'
-          },
-          {
-            question: 'How do you calculate moment of inertia for different shapes?',
-            answer: 'Moment of inertia (I) depends on both mass distribution and axis of rotation. Common formulas: solid disk (I = ½mr²), hollow cylinder (I = mr²), solid sphere (I = 2/5mr²), thin rod through center (I = 1/12mL²), and point mass (I = mr²). For complex objects, use the parallel axis theorem: I = I_cm + md², where I_cm is moment of inertia about the center of mass and d is the distance to the new axis. For composite objects, sum individual moments of inertia.'
+            question: 'What are the units of angular momentum and can it be negative?',
+            answer: 'Angular momentum is measured in kg·m²/s (kilogram-meter squared per second) or equivalently J·s (joule-seconds) in SI units. From L = Iω: moment of inertia (kg·m²) times angular velocity (rad/s) gives kg·m²/s. Yes, angular momentum can be negative depending on rotation direction and chosen coordinate system. By convention, counterclockwise rotation is typically positive, clockwise is negative. The sign indicates the direction of the L vector along the rotation axis (right-hand rule). In conservation problems, opposite rotations have opposite signs and algebraically sum.'
           }
         ]}
       />
+
+      <SEOSection title="Conclusion">
+        <p>
+          Mastering angular momentum is essential for understanding rotational motion in physics, from everyday phenomena like spinning wheels to complex systems like planetary orbits and quantum mechanics. This calculator provides instant, accurate results for all your angular momentum calculations, whether you're solving conservation problems, analyzing torque effects, or computing rotational dynamics.
+        </p>
+        <p>
+          Explore more Physics tools: Check out our {createInternalLink('kinetic-energy-calculator')} or the {createInternalLink('displacement-calculator')} to complement your rotational motion analysis.
+        </p>
+      </SEOSection>
     </CalculatorPageTemplate>
   );
 }
