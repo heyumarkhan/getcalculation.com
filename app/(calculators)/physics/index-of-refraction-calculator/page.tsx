@@ -1,34 +1,27 @@
 import IndexOfRefractionCalculator from '../../../_components/calculators/IndexOfRefractionCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
-const title = 'Index of Refraction Calculator | Snell\'s Law & Critical Angle';
-const description = 'Calculate index of refraction, apply Snell\'s law for angle calculations, find critical angles for total internal reflection, and determine light speed in media.';
+const title = 'Index of Refraction Calculator | Snell’s Law & Light Speed';
+const description = 'Index of Refraction Calculator for optics: compute n from speed, apply Snell’s Law, and solve refraction angles with clear, fast results.';
 const keywords = [
   'index of refraction calculator',
   'refractive index calculator',
   'snells law calculator',
-  'critical angle calculator',
   'refraction calculator',
-  'light bending calculator',
-  'optical density',
+  'light speed in medium',
+  'optics calculator',
   'n equals c over v',
-  'total internal reflection',
-  'angle of refraction',
+  'critical angle',
   'incident angle',
-  'refracted ray',
-  'optical medium',
-  'light speed calculator',
-  'physics optics',
-  'prism calculator',
-  'lens refraction',
-  'optical constant',
-  'brewster angle',
-  'dispersion calculator',
-  'wavelength refraction',
-  'glass index',
+  'refracted angle',
+  'optical density',
+  'glass refraction',
   'water refraction',
-  'diamond refraction'
+  'prism refraction',
+  'wavelength in medium',
+  'bending of light'
 ];
 
 export const metadata = {
@@ -54,257 +47,119 @@ export const metadata = {
 export default function IndexOfRefractionCalculatorPage() {
   return (
     <CalculatorPageTemplate
-      title="Index of Refraction Calculator"
-      description="Calculate index of refraction, apply Snell's law, find critical angles, and determine light speed in different optical media."
+      title="Index of Refraction Calculator for Optics"
+      description="Use the Index of Refraction Calculator to find n from light speed and solve refraction angles with Snell’s Law in seconds."
       calculator={<IndexOfRefractionCalculator />}
       slug="physics/index-of-refraction-calculator"
       category="Physics"
       features={[
-        'Four calculation methods: index of refraction n=c/v, Snell\'s law n₁sin(θ₁)=n₂sin(θ₂), critical angle θc=arcsin(n₂/n₁), speed in medium v=c/n',
-        'Unit-flexible inputs for speed (m/s, km/s, km/h, mph, ft/s) and angles (degrees, radians)',
-        'Snell\'s law solver: find refracted angle, second medium index, or incident parameters',
-        'Critical angle calculator with total internal reflection analysis',
-        'Light speed reduction calculations with percentage and slowdown factors',
-        'Automatic validation for physical constraints (speed < c, angles ≤ 90°, n₁ > n₂ for critical angle)'
+        "Fast and accurate refractive index results",
+        "Simple inputs for speeds and angles",
+        "Mobile-friendly optical calculations",
+        "Instant Results",
+        "Free to use"
       ]}
     >
-      <SEOSection title="Understanding Index of Refraction">
+      <SEOSection title="Why Index of Refraction Calculations Are Critical in Optical Engineering">
         <p>
-          The index of refraction (or refractive index), denoted as <strong>n</strong>, measures how much light slows down when passing through a material compared to its speed in a vacuum. The fundamental relationship is <strong>n = c / v</strong>, where c is the speed of light in vacuum (approximately 299,792,458 m/s) and v is the speed of light in the material. A higher index means light travels slower in that medium—for example, water has n ≈ 1.33, meaning light travels at 75% of its vacuum speed.
-        </p>
-        <p>
-          When light crosses the boundary between two materials with different refractive indices, it bends—a phenomenon called refraction. The amount of bending is governed by <strong>Snell&apos;s Law: n₁ sin(θ₁) = n₂ sin(θ₂)</strong>, where θ₁ is the incident angle and θ₂ is the refracted angle. Light bends toward the normal when entering a denser medium (higher n) and away from the normal when entering a less dense medium. This bending is responsible for optical effects like rainbows, mirages, and the apparent bending of objects in water.
+          Understanding the index of refraction is fundamental to designing optical systems that perform reliably across diverse applications. When engineers design camera lenses requiring precise focus from infinity to macro distances, errors of just 0.01 in refractive index calculations cause chromatic aberration that ruins image quality—costing manufacturers millions in warranty claims and redesign cycles. Fiber optic networks transmitting terabits of data rely on precise refractive index matching at splice points; mismatches as small as 0.005 cause 4% signal loss per connection, degrading network performance over kilometers of cable. Eyeglass manufacturers calculate lens thickness and optical power based on material refractive index—choosing crown glass (n≈1.52) versus high-index plastic (n≈1.74) changes lens thickness by 30% for the same prescription, affecting comfort, appearance, and cost. In semiconductor manufacturing, photolithography systems projecting circuit patterns onto silicon wafers require refractive index calculations accurate to five decimal places; errors cause pattern distortion that destroys billion-dollar chip fabrication runs. Underwater cameras and periscopes must account for water's refractive index (n=1.33) to maintain focus clarity, while laser cutting systems compensate for material refractive indices when focusing high-power beams through protective lenses. Understanding these relationships with tools like our {createInternalLink('wavelength-calculator')} helps engineers predict how light wavelength changes in different media, while {createInternalLink('frequency-calculator')} assists in analyzing optical frequencies that remain constant across material boundaries.
         </p>
       </SEOSection>
-
-      <SEOSection title="How to Use the Index of Refraction Calculator">
-        <SEOList
-          items={[
-            'Select your calculation method: calculate index (n = c/v), apply Snell\'s law for angle/index calculations, find critical angle for total internal reflection, or determine light speed in a medium',
-            'For index calculation: Enter the speed of light in vacuum and the speed in the medium with your preferred units (m/s, km/s, etc.)',
-            'For Snell\'s law: Choose what to find (refracted angle θ₂ or second medium index n₂), then input the known values including incident medium index n₁, incident angle θ₁, and either n₂ or θ₂',
-            'For critical angle: Enter the indices of both media, ensuring n₁ > n₂ (light traveling from denser to less dense medium)',
-            'For speed in medium: Input the refractive index of the material and optionally specify the speed of light constant',
-            'Click Calculate to see detailed results including step-by-step calculations, angle conversions, and physical interpretations',
-            'Results include verification checks, percentage slowdowns, and warnings for total internal reflection when applicable'
-          ]}
-        />
+      
+      <SEOSection title="How to Use This Index of Refraction Calculator">
+        <p>Follow these steps to get instant, accurate optical calculations:</p>
+        <ol>
+          <li><strong>Step 1:</strong> Select your calculation mode from the dropdown menu: calculate refractive index from light speed in the medium, use Snell's Law to find refracted angles when light crosses material boundaries, or determine critical angles for total internal reflection. Each mode is optimized for specific optical design scenarios.</li>
+          <li><strong>Step 2:</strong> Enter the known values with appropriate units. For index calculation: input speed of light in vacuum (c = 3.00×10⁸ m/s, pre-filled) and measured light speed in your material. For Snell's Law: enter incident angle (degrees or radians), refractive indices of both materials (air n₁=1.00, water n₁=1.33, glass n₁=1.50-1.90, diamond n₁=2.42). The calculator accepts common material presets for quick selection.</li>
+          <li><strong>Step 3:</strong> Click Calculate to instantly receive results including: refractive index (n) with five decimal precision, refracted angle with ray diagram visualization, critical angle for total internal reflection if applicable, percentage speed reduction compared to vacuum, and wavelength changes within the medium. Results display with step-by-step derivation showing formula application for educational purposes.</li>
+        </ol>
       </SEOSection>
 
-      <SEOSection title="Index of Refraction Formulas">
+      <SEOSection title="The Core Concept: Index of Refraction Formula Explained">
         <p>
-          The fundamental formulas for refractive index and light refraction are:
+          The refractive index (n) is a dimensionless number quantifying how much light slows when entering a material compared to its speed in vacuum. This fundamental optical property derives from electromagnetic theory: when light enters matter, its electromagnetic waves interact with atomic electrons, causing periodic absorption and re-emission that effectively reduces propagation velocity while maintaining constant frequency. The refractive index is defined as n = c/v, where c is the speed of light in vacuum (299,792,458 m/s, often approximated as 3.00×10⁸ m/s) and v is the phase velocity of light in the medium. Materials with higher refractive indices slow light more dramatically: air (n≈1.0003) barely affects light speed, water (n=1.33) slows it by 25%, common glass (n=1.50) by 33%, and diamond (n=2.42) by 59%. This velocity change causes refraction—light bending at material boundaries according to Snell's Law: n₁sin(θ₁) = n₂sin(θ₂), where θ₁ and θ₂ are incident and refracted angles measured from the surface normal.
         </p>
-        <div className="bg-gray-50 p-6 rounded-lg my-4">
-          <div className="space-y-3">
-            <div>
-              <strong>Index of Refraction:</strong>
-              <div className="ml-4 mt-1">n = c / v</div>
-              <div className="text-sm text-gray-600 ml-4">where c = 299,792,458 m/s (speed of light in vacuum), v = speed in medium</div>
-            </div>
-            <div>
-              <strong>Snell&apos;s Law:</strong>
-              <div className="ml-4 mt-1">n₁ sin(θ₁) = n₂ sin(θ₂)</div>
-              <div className="text-sm text-gray-600 ml-4">Relates incident and refracted angles across interface between media</div>
-            </div>
-            <div>
-              <strong>Refracted Angle:</strong>
-              <div className="ml-4 mt-1">θ₂ = arcsin[(n₁/n₂) × sin(θ₁)]</div>
-              <div className="text-sm text-gray-600 ml-4">Solved from Snell&apos;s law for refracted angle</div>
-            </div>
-            <div>
-              <strong>Critical Angle:</strong>
-              <div className="ml-4 mt-1">θc = arcsin(n₂/n₁) where n₁ &gt; n₂</div>
-              <div className="text-sm text-gray-600 ml-4">Minimum incident angle for total internal reflection</div>
-            </div>
-            <div>
-              <strong>Speed in Medium:</strong>
-              <div className="ml-4 mt-1">v = c / n</div>
-              <div className="text-sm text-gray-600 ml-4">Light speed reduced by factor of n</div>
-            </div>
-            <div>
-              <strong>Wavelength Change:</strong>
-              <div className="ml-4 mt-1">λ_medium = λ_vacuum / n</div>
-              <div className="text-sm text-gray-600 ml-4">Wavelength decreases proportionally to index (frequency unchanged)</div>
-            </div>
-          </div>
+        <div className="bg-gray-100 p-4 rounded-lg text-center my-4">
+          <p className="font-mono text-lg font-bold">n = c / v</p>
+          <p className="text-sm text-gray-600 mt-2">Snell's Law: n₁sin(θ₁) = n₂sin(θ₂)</p>
+          <p className="text-sm text-gray-600">Critical Angle: θc = arcsin(n₂/n₁) when n₁ &gt; n₂</p>
         </div>
-        <p>
-          Total internal reflection occurs when light travels from a denser medium (higher n) to a less dense medium (lower n) at an angle greater than the critical angle θc. At this critical angle, the refracted ray travels along the interface (θ₂ = 90°). For angles exceeding θc, no refraction occurs—all light is reflected back into the denser medium, a principle used in fiber optics and prisms.
-        </p>
+        <h4 className="font-semibold mt-4">Worked Example 1: Calculating Refractive Index from Light Speed</h4>
+        <p>A research team measures light speed in a new optical polymer sample for lens manufacturing quality control.</p>
+        <ol className="list-decimal list-inside space-y-2 mt-2">
+          <li><strong>Known values:</strong> Speed of light in vacuum c = 3.00×10⁸ m/s, Measured speed in polymer v = 1.95×10⁸ m/s</li>
+          <li><strong>Apply formula:</strong> n = c/v = (3.00×10⁸)/(1.95×10⁸)</li>
+          <li><strong>Calculate:</strong> n = 1.538 (rounded to three decimal places)</li>
+          <li><strong>Verify material:</strong> This matches polycarbonate plastic specifications (n=1.53-1.54)</li>
+          <li><strong>Speed reduction:</strong> Light travels 35% slower than in vacuum (100% - 65% = 35% reduction)</li>
+          <li><strong>Quality check:</strong> Result confirms material purity—contamination would alter refractive index beyond tolerance</li>
+        </ol>
+        <p className="mt-4"><strong>Worked Example 2: Snell's Law - Light Entering Water</strong></p>
+        <p>A diver's underwater camera must be focused accounting for light refraction at the water-air interface of the lens housing.</p>
+        <ol className="list-decimal list-inside space-y-2 mt-2">
+          <li><strong>Known values:</strong> Light travels from air (n₁=1.00) into water (n₂=1.33), Incident angle θ₁ = 40° from vertical (normal)</li>
+          <li><strong>Apply Snell's Law:</strong> n₁sin(θ₁) = n₂sin(θ₂) → 1.00×sin(40°) = 1.33×sin(θ₂)</li>
+          <li><strong>Calculate:</strong> sin(θ₂) = sin(40°)/1.33 = 0.6428/1.33 = 0.4834</li>
+          <li><strong>Find angle:</strong> θ₂ = arcsin(0.4834) = 28.9° from normal</li>
+          <li><strong>Interpret:</strong> Light bends toward normal when entering denser medium (40° → 29°, bent 11° closer to vertical)</li>
+          <li><strong>Design impact:</strong> Camera autofocus system must compensate for 11° ray deviation to maintain sharp focus underwater</li>
+        </ol>
+        <p className="mt-4"><strong>Worked Example 3: Critical Angle for Fiber Optics</strong></p>
+        <ul className="list-disc list-inside space-y-1 mt-2">
+          <li>Scenario: Fiber optic core (n₁=1.48) surrounded by cladding (n₂=1.46), light must reflect internally to propagate</li>
+          <li>Critical angle calculation: θc = arcsin(n₂/n₁) = arcsin(1.46/1.48) = arcsin(0.9865) = 80.6°</li>
+          <li>Result: Light hitting core-cladding boundary at angles greater than 80.6° from normal undergoes total internal reflection</li>
+          <li>Design rule: Fiber acceptance angle (numerical aperture) must ensure entering light exceeds critical angle after refraction into core</li>
+        </ul>
       </SEOSection>
 
-      <SEOSection title="Common Refractive Indices">
-        <div className="overflow-x-auto my-4">
-          <table className="min-w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2">Material</th>
-                <th className="border border-gray-300 px-4 py-2">Index (n)</th>
-                <th className="border border-gray-300 px-4 py-2">Speed (×10⁸ m/s)</th>
-                <th className="border border-gray-300 px-4 py-2">Critical Angle to Air</th>
-                <th className="border border-gray-300 px-4 py-2">Applications</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Vacuum</td>
-                <td className="border border-gray-300 px-4 py-2">1.000</td>
-                <td className="border border-gray-300 px-4 py-2">2.998</td>
-                <td className="border border-gray-300 px-4 py-2">N/A</td>
-                <td className="border border-gray-300 px-4 py-2">Reference standard</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Air (STP)</td>
-                <td className="border border-gray-300 px-4 py-2">1.0003</td>
-                <td className="border border-gray-300 px-4 py-2">2.997</td>
-                <td className="border border-gray-300 px-4 py-2">N/A</td>
-                <td className="border border-gray-300 px-4 py-2">Atmosphere, optics</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Water</td>
-                <td className="border border-gray-300 px-4 py-2">1.333</td>
-                <td className="border border-gray-300 px-4 py-2">2.25</td>
-                <td className="border border-gray-300 px-4 py-2">48.6°</td>
-                <td className="border border-gray-300 px-4 py-2">Aquatic optics, lenses</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Crown Glass</td>
-                <td className="border border-gray-300 px-4 py-2">1.52</td>
-                <td className="border border-gray-300 px-4 py-2">1.97</td>
-                <td className="border border-gray-300 px-4 py-2">41.1°</td>
-                <td className="border border-gray-300 px-4 py-2">Windows, eyeglasses</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Flint Glass</td>
-                <td className="border border-gray-300 px-4 py-2">1.62</td>
-                <td className="border border-gray-300 px-4 py-2">1.85</td>
-                <td className="border border-gray-300 px-4 py-2">38.1°</td>
-                <td className="border border-gray-300 px-4 py-2">Prisms, high-index lenses</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Sapphire</td>
-                <td className="border border-gray-300 px-4 py-2">1.77</td>
-                <td className="border border-gray-300 px-4 py-2">1.69</td>
-                <td className="border border-gray-300 px-4 py-2">34.4°</td>
-                <td className="border border-gray-300 px-4 py-2">Watch crystals, optics</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Diamond</td>
-                <td className="border border-gray-300 px-4 py-2">2.42</td>
-                <td className="border border-gray-300 px-4 py-2">1.24</td>
-                <td className="border border-gray-300 px-4 py-2">24.4°</td>
-                <td className="border border-gray-300 px-4 py-2">Jewelry, high dispersion</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <SEOSection title="Practical Applications of Index of Refraction Calculations">
+        <p>Refractive index calculations are essential across optics, photonics, and materials science wherever light interacts with matter:</p>
+        <SEOList items={[
+          "Optical Lens Design: Camera lenses, microscope objectives, telescope eyepieces, eyeglasses, and contact lenses—calculating focal lengths, chromatic aberration correction, anti-reflection coatings, and thickness optimization based on material refractive indices (crown glass n=1.52, flint glass n=1.62, high-index plastic n=1.74)",
+          "Fiber Optic Communications: Designing optical fiber cores and cladding with precise refractive index differences (Δn ≈ 0.01-0.03) to enable total internal reflection, calculating numerical aperture for signal acceptance angles, minimizing modal dispersion in multimode fibers, optimizing single-mode fiber cutoff wavelengths",
+          "Semiconductor Manufacturing: Photolithography stepper lenses focusing ultraviolet light through high-index materials (calcium fluoride n=1.43 at 193nm), immersion lithography using water (n=1.44) to increase resolution below 45nm feature sizes, optical metrology for film thickness measurements using interference patterns",
+          "Medical Optics: Endoscope design balancing image quality with miniaturization, laser surgery systems focusing through cornea (n=1.376) and lens (n=1.40-1.42) for precise tissue ablation, optical coherence tomography (OCT) scanning requiring refractive index matching for depth accuracy in retinal imaging",
+          "Material Analysis and Quality Control: Refractometer measurements identifying substance purity (sugar concentration in beverages, coolant quality in automotive applications), gemstone authentication (diamond n=2.42 vs cubic zirconia n=2.15), polymer quality testing, chemical composition verification",
+          "Display Technology: LCD pixel design with liquid crystal directors rotating polarized light based on voltage-controlled refractive index changes (Δn ≈ 0.1-0.3), OLED light extraction optimization using index-matched films to reduce total internal reflection losses, AR/VR headset optics with pancake lens designs combining multiple refractive indices",
+          "Underwater and Atmospheric Optics: Submarine periscope design compensating for water-air-glass interfaces, underwater photography autofocus calibration, atmospheric refraction corrections for astronomical observations, mirage and heat shimmer effect analysis",
+          "Laser Systems: Beam focusing through protective windows, nonlinear optics calculations for frequency doubling crystals (potassium titanyl phosphate KTP n=1.78), optical parametric amplifiers, laser rangefinder atmospheric correction, fiber laser beam delivery systems"
+        ]} />
       </SEOSection>
 
-      <SEOSection title="Applications of Index of Refraction">
-        <SEOList
-          items={[
-            '<strong>Optical Lenses:</strong> Lens design relies on precise refractive indices to achieve desired focal lengths. Higher index materials allow thinner lenses with the same optical power, crucial for eyeglasses and camera systems.',
-            '<strong>Fiber Optics:</strong> Total internal reflection in optical fibers (core n ≈ 1.48, cladding n ≈ 1.46) enables long-distance light transmission with minimal loss, forming the backbone of internet and telecommunications.',
-            '<strong>Prism Spectroscopy:</strong> Dispersion (n varies with wavelength) separates white light into colors. Flint glass prisms with high dispersion create rainbows, used in spectrometers and wavelength analysis.',
-            '<strong>Microscopy:</strong> Immersion oils (n ≈ 1.515) matching glass slide index reduce refraction at interfaces, improving resolution and light gathering in high-magnification microscopy.',
-            '<strong>Gemology:</strong> Refractive index measurement identifies gemstones (diamond n = 2.42, ruby n = 1.76). Refractometers measure the critical angle to determine n with high precision.',
-            '<strong>Atmospheric Optics:</strong> Refraction in Earth\'s atmosphere (n varies with altitude and temperature) causes mirages, atmospheric refraction of sunlight, and the apparent flattening of the sun at sunset.',
-            '<strong>Antireflective Coatings:</strong> Quarter-wave coatings with intermediate refractive index (n_coating = √(n_glass × n_air)) minimize reflections on camera lenses and eyeglasses through destructive interference.',
-            '<strong>Contact Lens Design:</strong> Matching the refractive index of lens material to cornea and tear film minimizes optical aberrations and maximizes comfort in vision correction.'
-          ]}
-        />
-      </SEOSection>
-
-      <SEOSection title="Example Calculations">
-        <div className="space-y-4">
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h4 className="font-semibold text-purple-900 mb-2">Example 1: Calculate Index of Water</h4>
-            <p><strong>Given:</strong> Light speed in water v = 2.25 × 10⁸ m/s, c = 3.00 × 10⁸ m/s</p>
-            <p><strong>Solution:</strong></p>
-            <p className="ml-4">n = c / v = (3.00 × 10⁸) / (2.25 × 10⁸) = 1.333</p>
-            <p><strong>Result:</strong> Water has refractive index 1.333, meaning light travels at 75% of its vacuum speed in water.</p>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h4 className="font-semibold text-purple-900 mb-2">Example 2: Snell&apos;s Law - Light Entering Glass</h4>
-            <p><strong>Given:</strong> Air (n₁ = 1.0) to glass (n₂ = 1.5), incident angle θ₁ = 30°</p>
-            <p><strong>Solution:</strong></p>
-            <p className="ml-4">sin(θ₂) = (n₁/n₂) × sin(θ₁) = (1.0/1.5) × sin(30°)</p>
-            <p className="ml-4">sin(θ₂) = 0.667 × 0.5 = 0.333</p>
-            <p className="ml-4">θ₂ = arcsin(0.333) = 19.47°</p>
-            <p><strong>Result:</strong> Light bends toward normal from 30° to 19.47° when entering the denser glass medium.</p>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h4 className="font-semibold text-purple-900 mb-2">Example 3: Critical Angle for Fiber Optics</h4>
-            <p><strong>Given:</strong> Glass fiber core n₁ = 1.48, cladding n₂ = 1.46</p>
-            <p><strong>Solution:</strong></p>
-            <p className="ml-4">θc = arcsin(n₂/n₁) = arcsin(1.46/1.48)</p>
-            <p className="ml-4">θc = arcsin(0.9865) = 80.6°</p>
-            <p><strong>Result:</strong> Light at angles &gt; 80.6° undergoes total internal reflection, enabling fiber optic transmission.</p>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h4 className="font-semibold text-purple-900 mb-2">Example 4: Diamond Brilliance</h4>
-            <p><strong>Given:</strong> Diamond n = 2.42, air n = 1.0</p>
-            <p><strong>Solution:</strong></p>
-            <p className="ml-4">θc = arcsin(1.0/2.42) = arcsin(0.413) = 24.4°</p>
-            <p className="ml-4">Speed in diamond: v = c/n = (3.00 × 10⁸)/2.42 = 1.24 × 10⁸ m/s</p>
-            <p><strong>Result:</strong> Diamond&apos;s low critical angle (24.4°) and high dispersion create brilliant internal reflections, enhancing sparkle.</p>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h4 className="font-semibold text-purple-900 mb-2">Example 5: Atmospheric Refraction</h4>
-            <p><strong>Given:</strong> Light from space (n = 1.000) entering atmosphere (n ≈ 1.0003 at sea level), θ₁ = 45°</p>
-            <p><strong>Solution:</strong></p>
-            <p className="ml-4">sin(θ₂) = (1.000/1.0003) × sin(45°) = 0.9997 × 0.7071 = 0.7069</p>
-            <p className="ml-4">θ₂ = arcsin(0.7069) = 44.98°</p>
-            <p><strong>Result:</strong> Small but measurable bending (0.02°) causes stars to appear slightly higher in the sky than their true position.</p>
-          </div>
-        </div>
-      </SEOSection>
-
-      <SEOSection title="Understanding Dispersion and Wavelength Dependence">
-        <p>
-          The refractive index of materials varies with wavelength—a phenomenon called <strong>dispersion</strong>. Short wavelengths (blue light) typically experience higher refractive indices than long wavelengths (red light), causing them to bend more when entering a medium. This is why prisms separate white light into a rainbow: different colors refract by different amounts. The relationship n(λ) can be approximated by the Cauchy equation or more accurately by the Sellmeier equation.
-        </p>
-        <p>
-          In crown glass, for example, blue light (λ = 486 nm) has n ≈ 1.523 while red light (λ = 656 nm) has n ≈ 1.514. This 0.009 difference, though small, is sufficient to create the spectacular color separation in prisms and the chromatic aberration in simple lenses. The <strong>Abbe number</strong> quantifies dispersion: V = (n_d - 1)/(n_F - n_C), where lower values indicate higher dispersion. Flint glass (V ≈ 30-40) disperses light more than crown glass (V ≈ 55-65), making it ideal for spectroscopy but requiring correction in imaging applications.
-        </p>
-        <p>
-          When light enters a medium, its frequency remains constant but its wavelength changes according to λ_medium = λ_vacuum / n. This wavelength compression is why underwater objects can appear different in color—the shorter wavelengths in the medium affect how light interacts with matter. Understanding dispersion is critical for designing achromatic lenses (which correct for chromatic aberration), spectrometers, and any optical system requiring accurate color reproduction.
-        </p>
-      </SEOSection>
-
-      <SEOFAQ
-        questions={[
+      <SEOSection title="Frequently Asked Questions (FAQ)">
+        <SEOFAQ questions={[
           {
-            question: 'Why does light slow down in a material?',
-            answer: 'Light slows down in materials because electromagnetic waves interact with the electrons in atoms. When light enters a medium, it induces oscillations in the electron clouds of atoms. These oscillating electrons re-emit electromagnetic radiation that interferes with the original wave, creating a combined wave that propagates more slowly than in vacuum. The individual photons still travel at c between atoms, but the continuous absorption and re-emission process creates an effective slower speed v = c/n. Denser materials with more electrons per unit volume typically have higher refractive indices and slower light speeds.'
+            question: "How does the Index of Refraction Calculator determine refractive index and refraction angles?",
+            answer: "The calculator uses two fundamental optical formulas: (1) n = c/v to calculate refractive index from light speed in vacuum (c = 3.00×10⁸ m/s) divided by measured speed in the material (v), and (2) Snell's Law n₁sin(θ₁) = n₂sin(θ₂) to calculate refracted angles at material boundaries. When you enter light speed, the calculator divides vacuum speed by material speed to yield dimensionless refractive index. For angle calculations, it applies inverse trigonometric functions to solve Snell's equation for unknown angles, handling both refraction into denser media (light bends toward normal) and into less dense media (light bends away from normal, with critical angle calculations for total internal reflection)."
           },
           {
-            question: 'What causes total internal reflection?',
-            answer: 'Total internal reflection occurs when light travels from a denser medium (higher n) to a less dense medium (lower n) at an angle greater than the critical angle θc = arcsin(n₂/n₁). At the critical angle, Snell\'s law predicts θ₂ = 90° (refracted ray parallel to interface). For angles exceeding θc, sin(θ₂) would need to be greater than 1, which is impossible. Therefore, no refraction occurs—all light reflects back into the denser medium. This principle enables fiber optic cables to guide light over long distances with minimal loss, and creates brilliant reflections in cut diamonds.'
+            question: "Why is the refractive index always greater than 1 for physical materials?",
+            answer: "Refractive index n = c/v where c is light speed in vacuum and v is light speed in the material. Since nothing can travel faster than light in vacuum (Einstein's relativity), v is always less than or equal to c, making n ≥ 1 for all real materials. Only vacuum has n = exactly 1.0000. Air at sea level has n = 1.0003 (barely slower than vacuum), water n = 1.33 (25% slower), glass n = 1.5 (33% slower), diamond n = 2.42 (59% slower). Materials with n < 1 would require superluminal light propagation violating physics. However, metamaterials can exhibit effective negative refractive index at specific frequencies through engineered electromagnetic responses, enabling exotic phenomena like perfect lenses."
           },
           {
-            question: 'How do you use Snell\'s law to find the angle of refraction?',
-            answer: 'To find the refracted angle θ₂ using Snell\'s law: (1) Identify the refractive indices n₁ (incident medium) and n₂ (refracted medium), (2) Measure the incident angle θ₁ from the normal (perpendicular to interface), (3) Apply n₁ sin(θ₁) = n₂ sin(θ₂), (4) Solve for θ₂ = arcsin[(n₁/n₂) × sin(θ₁)]. Important: The angle must be measured from the normal, not the surface. If (n₁/n₂) × sin(θ₁) > 1, total internal reflection occurs and there is no refracted ray. Light bends toward the normal when n₂ > n₁ (entering denser medium) and away when n₂ < n₁.'
+            question: "How do I use this calculator to design optical systems with common materials like water, glass, and air?",
+            answer: "Select the Snell's Law calculation mode and use standard refractive indices: air/vacuum n=1.00, water n=1.33, crown glass n=1.52, flint glass n=1.62, polycarbonate plastic n=1.58, acrylic n=1.49, sapphire n=1.77, diamond n=2.42. For example, designing an underwater camera housing: light enters from water (n₁=1.33) through acrylic port (n₂=1.49) at 30° incident angle. Calculator yields: sin(θ₂) = (1.33×sin(30°))/1.49 = 0.446, so θ₂ = 26.5°—light bends 3.5° toward normal. This angle determines minimum port thickness to avoid vignetting. For fiber optics, typical core/cladding pairs are n₁=1.48/n₂=1.46, yielding critical angle θc = 80.6° for total internal reflection."
           },
           {
-            question: 'What is the critical angle and how is it calculated?',
-            answer: 'The critical angle θc is the minimum incident angle at which total internal reflection occurs when light travels from a denser to a less dense medium (n₁ > n₂). It\'s calculated using θc = arcsin(n₂/n₁). At this angle, the refracted ray grazes along the interface (θ₂ = 90°). For incident angles greater than θc, all light reflects back—no transmission occurs. Example: For glass (n = 1.5) to air (n = 1.0), θc = arcsin(1.0/1.5) = 41.8°. Critical angles are crucial for designing fiber optics, prisms, and understanding phenomena like mirages and the sparkle of gemstones.'
+            question: "What is the relationship between refractive index, wavelength, and frequency across material boundaries?",
+            answer: "When light crosses material boundaries, frequency remains absolutely constant (determined by source), but wavelength and speed change proportionally to maintain the relationship v = fλ. If light (vacuum wavelength λ₀ = 500nm, frequency f = 6×10¹⁴ Hz) enters glass with n = 1.50, speed reduces to v = c/n = 2.00×10⁸ m/s, and wavelength shortens to λ = v/f = 333nm (exactly 1/1.50 of vacuum wavelength). This explains why underwater colors appear different—blue light (λ = 450nm in air) becomes λ = 338nm in water, shifting perception. Refractive index often varies with wavelength (dispersion): crown glass n = 1.517 at 656nm (red) but n = 1.523 at 486nm (blue), causing prisms to separate white light into spectra."
           },
           {
-            question: 'Why does a straw look bent in water?',
-            answer: 'A straw appears bent at the water surface due to refraction—light bending as it crosses the air-water interface. Light from the submerged portion of the straw travels through water (n = 1.33) and bends away from the normal when entering air (n = 1.0). Your eye traces the refracted ray backward in a straight line, making the underwater portion appear shallower and displaced from its true position. The bending angle depends on your viewing angle and follows Snell\'s law. This same effect makes pools appear shallower than they actually are (apparent depth = real depth / n), creating a safety hazard.'
-          },
-          {
-            question: 'What is the difference between refractive index and critical angle?',
-            answer: 'Refractive index (n) is an intrinsic property of a material measuring how much light slows down in that medium (n = c/v), typically between 1 (vacuum) and 2.4 (diamond). Critical angle (θc) is a geometric property that emerges when light travels between two specific materials with different indices. It\'s calculated from the indices using θc = arcsin(n₂/n₁) and only exists when light goes from higher to lower index (n₁ > n₂). While n is a material constant, θc depends on the pair of materials at an interface. For example, glass has one n value but different critical angles for glass-air, glass-water, and glass-oil interfaces.'
+            question: "How do I calculate critical angle for total internal reflection in fiber optics and prisms?",
+            answer: "Critical angle θc occurs when light travels from denser (higher n) to less dense (lower n) medium and the refracted ray would bend parallel to the interface (θ₂ = 90°). Apply Snell's Law: n₁sin(θc) = n₂sin(90°) = n₂, solving for θc = arcsin(n₂/n₁). This only exists when n₁ > n₂. Example 1: Water-air boundary n₁=1.33, n₂=1.00 → θc = arcsin(1.00/1.33) = 48.8°. Light hitting from underwater at angles > 48.8° from normal reflects internally (explains why underwater swimmers see mirror-like surface from below). Example 2: Fiber optic core n₁=1.48, cladding n₂=1.46 → θc = 80.6°. Light must maintain angles > 80.6° to propagate without loss. Total internal reflection enables fiber optics, prism binoculars, and diamond's brilliant sparkle (n=2.42 creates θc ≈ 24° with air, trapping light internally)."
           }
-        ]}
-      />
+        ]} />
+      </SEOSection>
+
+      <SEOSection title="Conclusion">
+        <p>
+          Accurate refractive index calculations are fundamental to modern optical engineering, from designing anti-reflection coatings on camera lenses to optimizing fiber optic networks carrying global internet traffic. Whether you're correcting chromatic aberration in microscope objectives, calculating critical angles for prism-based rangefinders, engineering immersion lithography systems for semiconductor manufacturing, or determining proper focal lengths for eyeglass prescriptions, understanding how light slows and bends in different materials enables precise optical system design. This Index of Refraction Calculator streamlines the complex mathematics of Snell's Law and wavelength-dependent dispersion, helping students, engineers, and researchers quickly validate designs and troubleshoot optical performance issues.
+        </p>
+        <p>
+          Explore more optics and wave physics tools: {createInternalLink('photon-energy-calculator')} for quantum optics applications.
+        </p>
+      </SEOSection>
     </CalculatorPageTemplate>
   );
 }

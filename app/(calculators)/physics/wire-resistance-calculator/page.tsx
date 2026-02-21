@@ -91,7 +91,7 @@ export default function WireResistanceCalculatorPage() {
           },
           {
             question: "How can I reduce voltage drop in long wire runs?",
-            answer: "To minimize voltage drop, you can increase wire diameter (which decreases resistance), use materials with lower resistivity, or reduce the current being transmitted. The voltage drop is proportional to both resistance and current (V = IR). In practice, electricians often use thicker wire for long runs or choose materials like copper over aluminum for better conductivity. Understanding {createInternalLink('voltage-drop-calculator')} helps determine if your wire size is adequate for specific applications."
+            answer: "To minimize voltage drop, you can increase wire diameter (which decreases resistance), use materials with lower resistivity, or reduce the current being transmitted. The voltage drop is proportional to both resistance and current (V = IR). In practice, electricians often use thicker wire for long runs or choose materials like copper over aluminum for better conductivity. Understanding {createInternalLink('wire-size-calculator')} helps determine if your wire size is adequate for specific applications."
           }
         ]} />
       </SEOSection>
