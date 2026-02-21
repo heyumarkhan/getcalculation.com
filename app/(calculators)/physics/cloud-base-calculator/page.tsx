@@ -1,6 +1,7 @@
 import CloudBaseCalculator from '../../../_components/calculators/CloudBaseCalculator';
 import CalculatorPageTemplate from '../../../_components/layouts/CalculatorPageTemplate';
 import { SEOSection, SEOList, SEOFAQ } from '../../../_components/ui/SEOContent';
+import { createInternalLink } from '../../../_components/ui/SEOInternalLink';
 
 const title = 'Cloud Base Calculator | Estimate Convective Condensation Level (CCL) Height';
 const description = 'Estimate cloud base height from temperature, dew point, humidity, and target bases. Includes CCL formulas, conversions, and aviation-ready outputs.';
@@ -68,33 +69,53 @@ export default function CloudBaseCalculatorPage() {
         'Rule-of-thumb factors: 125 m/°C and 222 ft/°F'
       ]}
     >
-      <SEOSection title="What is Cloud Base?">
+      <SEOSection title="Why Cloud Base Calculations Are Critical for Aviation and Meteorology">
         <p>
-          Cloud base is the height above ground where rising air cools to its dew point and condensation begins, forming the lowest visible part of a cloud layer. For surface-based convection, this level is commonly approximated by the convective condensation level (CCL), estimated from surface temperature and dew point. Accurate cloud base estimates are important for aviation ceilings, flight visibility, wildfire smoke dispersion, and outdoor planning.
+          Cloud base height determines whether pilots can fly VFR, whether smoke from wildfires will mix or stagnate, and whether fog will form at dawn. Every hour, thousands of aviation decisions—from pattern work at local airports to airliner diversions—depend on accurate cloud ceiling estimates. Pilots use the temperature–{createInternalLink('dew-point-calculator', 'dew point')} spread to anticipate bases in real time when ceilometers are unavailable. Emergency services, outdoor event coordinators, and solar forecasters all rely on cloud base predictions to plan operations, route aircraft, and optimize energy production.
         </p>
         <p>
-          The classic rule of thumb uses the surface temperature–dew point spread: multiply the spread in °C by 125 to get meters, or in °F by 222 to get feet. This calculator automates those conversions, supports humidity-derived dew points, and lets you solve backwards for the dew point needed to achieve a target cloud base.
+          The classic rule of thumb multiplies the spread in °C by 125 to get meters, or in °F by 222 to get feet. This calculator automates those conversions, derives dew point from {createInternalLink('relative-humidity-calculator', 'relative humidity')} using the Magnus formula, and solves backward for the dew point needed to achieve a target cloud base. Whether you're planning a cross-country flight, forecasting fog formation, or teaching atmospheric thermodynamics, understanding how temperature and moisture converge with altitude is fundamental to safe operations and informed decision-making.
         </p>
       </SEOSection>
 
-      <SEOSection title="Cloud Base Formulas">
-        <ul>
-          <li><strong>Base (m) ≈ (T - Td) × 125</strong> using temperature and dew point in °C</li>
-          <li><strong>Base (ft) ≈ (T - Td) × 222</strong> using temperature and dew point in °F</li>
-          <li><strong>Spread (°C) = Base (m) / 125</strong> (inverse for target base)</li>
-          <li><strong>Spread (°F) = Base (ft) / 222</strong> (inverse for target base)</li>
-          <li><strong>Dew point (C) from RH:</strong> Magnus formula Td = (b·γ)/(a-γ), γ = ln(RH/100)+ aT/(b+T), a=17.625, b=243.04</li>
-          <li><strong>Arc factor:</strong> Base (m) × 3.28084 = Base (ft) for conversion</li>
-        </ul>
+      <SEOSection title="How to Use This Calculator">
+        <ol>
+          <li><strong>Select your calculation mode:</strong> Choose between temperature and dew point, spread only, relative humidity, or target base height to determine which inputs you'll provide.</li>
+          <li><strong>Enter the required parameters:</strong> Input surface temperature, dew point (or humidity), and select your preferred units (°C/°F for temperature, % for humidity, m/ft for base height).</li>
+          <li><strong>Read the cloud base estimate:</strong> The calculator instantly displays the estimated cloud base height in both meters and feet, along with any derived values such as dew point from humidity or required dew point for a target base.</li>
+        </ol>
       </SEOSection>
 
-      <SEOSection title="Why 125 m per Degree?">
+      <SEOSection title="The Core Concept: Cloud Base Formula">
+        <p>
+          Cloud base height is estimated from the surface temperature–dew point spread using the empirical relationship:
+        </p>
+        <div className="bg-gray-100 p-4 rounded-lg my-4">
+          <p className="font-semibold">Cloud Base Formula:</p>
+          <p className="mt-2"><strong>Base (m) ≈ (T − Td) × 125</strong> when T and Td are in °C</p>
+          <p><strong>Base (ft) ≈ (T − Td) × 222</strong> when T and Td are in °F</p>
+          <p className="mt-2 text-sm">For inverse calculations (target base):</p>
+          <p><strong>Spread (°C) = Base (m) / 125</strong></p>
+          <p><strong>Spread (°F) = Base (ft) / 222</strong></p>
+          <p className="mt-2 text-sm">Magnus formula for dew point from RH:</p>
+          <p><strong>Td = (b·γ)/(a−γ)</strong>, where γ = ln(RH/100) + aT/(b+T), a=17.625, b=243.04</p>
+        </div>
         <p>
           The 125 m/°C (or 222 ft/°F) factor is an empirical approximation derived from typical dry adiabatic cooling and dew point lapse behavior in the boundary layer. As unsaturated air rises, temperature decreases roughly 9.8 °C/km. Dew point decreases more slowly, about 1.5–2 °C/km. The difference narrows with height until saturation occurs; the net effect produces about 125 m of lift per degree Celsius of surface temperature–dew point spread. Though simplified, this approximation aligns well for many convective daytime situations.
         </p>
+        <p className="mt-4">
+          <strong>Worked Example:</strong> A weather station reports T = 28°C and Td = 18°C at the surface. Calculate the estimated cloud base height.
+        </p>
+        <ol className="mt-2">
+          <li><strong>Step 1 – Identify the spread:</strong> Spread = T − Td = 28°C − 18°C = 10°C</li>
+          <li><strong>Step 2 – Apply the 125 m/°C rule:</strong> Base (m) = 10°C × 125 = 1250 meters</li>
+          <li><strong>Step 3 – Convert to feet (optional):</strong> Base (ft) = 1250 m × 3.28084 ≈ 4101 feet</li>
+          <li><strong>Step 4 – Alternatively, use the °F rule directly:</strong> T = 82.4°F, Td = 64.4°F, spread = 18°F → Base (ft) = 18°F × 222 ≈ 3996 feet (≈1250 m)</li>
+          <li><strong>Result:</strong> The estimated cloud base is approximately <strong>1250 meters (4101 feet)</strong> above ground level, indicating broken cumulus clouds would form at that height if parcels lift from the surface.</li>
+        </ol>
       </SEOSection>
 
-      <SEOSection title="Applications of Cloud Base Estimation">
+      <SEOSection title="Practical Applications">
         <SEOList
           items={[
             '<strong>Aviation and Flight Planning:</strong> Estimate ceiling heights for VFR/IFR decisions, pattern work, and alternate planning. Quick situational awareness without a ceilometer.',
@@ -103,54 +124,6 @@ export default function CloudBaseCalculatorPage() {
             '<strong>Gliding, Paragliding, and Soaring:</strong> Gauge usable thermal tops and cloud streets to plan cross-country routes.',
             '<strong>Energy and Solar Forecasting:</strong> Anticipate cloud onset heights that reduce solar irradiance and photovoltaic output.',
             '<strong>Meteorology Education:</strong> Demonstrate the link between surface moisture, lapse rates, and condensation levels in boundary layer physics.'
-          ]}
-        />
-      </SEOSection>
-
-      <SEOSection title="Inputs and Units Supported">
-        <ul>
-          <li>Temperature and dew point in °C or °F</li>
-          <li>Spread-only mode in °C or °F</li>
-          <li>Relative humidity (0–100%) with Magnus dew point estimation</li>
-          <li>Target cloud base in meters or feet with required dew point output</li>
-          <li>Automatic output in both meters and feet for every calculation</li>
-        </ul>
-      </SEOSection>
-
-      <SEOSection title="Assumptions and Limitations">
-        <ul>
-          <li>Assumes well-mixed surface layer and dry adiabatic lifting to saturation</li>
-          <li>Best for convective daytime conditions; frontal or layered clouds may differ</li>
-          <li>Surface observations must represent the near-surface mixed layer</li>
-          <li>Local lapse rates, moisture flux, and inversions can shift actual bases</li>
-          <li>Use ceilometers or pilot reports when available for operational decisions</li>
-        </ul>
-      </SEOSection>
-
-      <SEOSection title="Worked Examples">
-        <p><strong>Example 1: Temperature and Dew Point</strong><br />
-          T = 28 °C, Td = 18 °C → spread = 10 °C → base ≈ 10 × 125 = 1250 m (4101 ft)
-        </p>
-        <p className="mt-3"><strong>Example 2: Fahrenheit Spread</strong><br />
-          T = 86 °F, Td = 64 °F → spread = 22 °F → base ≈ 22 × 222 = 4884 ft (1489 m)
-        </p>
-        <p className="mt-3"><strong>Example 3: From Relative Humidity</strong><br />
-          T = 24 °C, RH = 55%. Magnus Td ≈ 14.8 °C; spread ≈ 9.2 °C → base ≈ 1150 m (3773 ft)
-        </p>
-        <p className="mt-3"><strong>Example 4: Target Base</strong><br />
-          Target base = 900 m, surface T = 22 °C → spread = 900/125 = 7.2 °C → required Td ≈ 14.8 °C
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Tips for Better Accuracy">
-        <SEOList
-          items={[
-            '<strong>Use Recent Surface Observations:</strong> Ensure temperature and dew point are current and from a representative location (not shaded vs sunlit differences).',
-            '<strong>Watch for Inversions:</strong> Strong nocturnal inversions or marine layers can lower cloud bases below rule-of-thumb estimates.',
-            '<strong>Consider Moisture Advection:</strong> Rapidly increasing dew points can drop cloud bases quickly; monitor trends, not just snapshots.',
-            '<strong>Account for Terrain:</strong> Elevation changes alter pressure and lapse profiles; use local station data near the site of interest.',
-            '<strong>Use Ceilometers When Available:</strong> Automated ceiling measurements provide ground truth; use this calculator as a quick planning tool.',
-            '<strong>High Humidity Near 100%:</strong> When RH is above ~95%, expect very low bases or fog formation near the surface.'
           ]}
         />
       </SEOSection>
@@ -176,13 +149,15 @@ export default function CloudBaseCalculatorPage() {
           {
             question: 'What is the difference between cloud base and ceiling?',
             answer: 'Cloud base is the lowest part of the cloud layer. Ceiling (for aviation) is the lowest broken/overcast layer reported in METARs. A scattered layer does not set the ceiling, but the cloud base height still describes where condensation begins.'
-          },
-          {
-            question: 'How do I lower the cloud base?',
-            answer: 'Increase near-surface moisture (raise dew point) or reduce temperature to shrink the spread. For a target base, required dew point Td = T - Base/125 (in °C). If the atmosphere moistens, cloud bases drop; if it dries, they rise.'
           }
         ]}
       />
+
+      <SEOSection title="Conclusion">
+        <p>
+          Cloud base estimation bridges temperature, moisture, and altitude in a single rule-of-thumb calculation that supports aviation safety, wildfire management, and meteorological forecasting. By understanding how the surface temperature–dew point spread translates to condensation height, you can anticipate ceiling changes, plan flight operations, and teach atmospheric boundary layer physics with confidence. This calculator automates the arithmetic, converts units instantly, and handles humidity-based dew points using the Magnus formula. For deeper exploration of atmospheric conditions, explore our {createInternalLink('air-pressure-at-altitude-calculator', 'Air Pressure at Altitude Calculator')} to understand how pressure profiles influence lapse rates and cloud formation. Master cloud base calculations today to enhance flight planning, operational safety, and atmospheric insight.
+        </p>
+      </SEOSection>
     </CalculatorPageTemplate>
   );
 }

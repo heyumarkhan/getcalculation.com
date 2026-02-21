@@ -24,230 +24,103 @@ export default function SphereDensityCalculatorPage() {
       description="Calculate sphere density, mass, radius, or volume using ρ = m/V formula. Supports multiple units for comprehensive sphere calculations."
       calculator={<SphereDensityCalculator />}
       slug="physics/sphere-density-calculator"
-      category="Mechanics"
+      category="Physics"
       features={[
-        "Calculate density from mass and volume",
-        "Calculate mass from density and volume",
-        "Calculate radius and volume from known properties",
-        "Multiple unit support for density, mass, and radius",
-        "Step-by-step calculation breakdown",
-        "Instant results with formula explanations",
-        "Mobile-friendly design"
+        "Calculate density, mass, radius, or volume instantly",
+        "Multiple unit support (kg/m³, g/cm³, lb/ft³)",
+        "Step-by-step formula breakdown",
+        "Instant results with accurate conversions",
+        "Free and easy to use"
       ]}
     >
-      <SEOSection title="Understanding Sphere Density: Complete Guide">
+      <SEOSection title="Why Calculating the Density of a Sphere Matters">
         <p>
-          Sphere density is a fundamental property in physics and materials science, representing how much mass is packed into a spherical volume. Whether you&apos;re analyzing astronomical bodies, designing spherical containers, or studying material properties, understanding sphere density is essential. Our Sphere Density Calculator makes it easy to calculate any property of a sphere using the fundamental formula: <strong>ρ = m/V</strong>, where ρ (rho) is density, m is mass, and V is volume.
+          Every day, engineers designing pressure vessels, materials scientists verifying alloy composition, and students studying physics face the same challenge: determining the density of spherical objects from limited measurements. When you hold a solid steel ball bearing, a hollow plastic sphere, or a marble, how do you calculate its density without specialized lab equipment? The answer lies in the fundamental relationship between mass, volume, and density—but for spheres, the volume calculation V = (4/3)πr³ adds mathematical complexity that stops many people in their tracks.
         </p>
         <p>
-          Density plays a crucial role in determining whether objects float or sink, how they interact with their environment, and their structural properties. Different materials have different densities - for example, iron is much denser than aluminum, which affects their weight and load-bearing capacity. Understanding these relationships is essential for engineers, scientists, and students.
-        </p>
-        <p>
-          For spherical objects specifically, the volume formula V = (4/3)πr³ allows us to relate density directly to the radius of the sphere. This calculator handles all the complex unit conversions and calculations for you, supporting various measurement systems used worldwide.
+          Sphere density calculations are critical for real-world applications: aerospace engineers need to verify the density of spherical fuel tanks to ensure weight budgets, {createInternalLink('buoyancy-calculator', 'buoyancy calculations')} rely on accurate density to predict whether submersible floats will sink or rise, and quality control inspectors use density measurements to detect manufacturing defects in ball bearings and spherical components. When pharmaceutical companies develop gel capsules or food manufacturers design spherical candies, knowing the exact {createInternalLink('density-mass-volume-calculator', 'relationship between density, mass, and volume')} determines whether products meet specifications. Our calculator eliminates the tedious arithmetic, unit conversions, and formula rearrangements, giving you instant results for any combination of known parameters.
         </p>
       </SEOSection>
 
-      <SEOSection title="How to Use the Sphere Density Calculator">
-        <p>
-          Our Sphere Density Calculator is designed for ease of use with powerful functionality:
-        </p>
+      <SEOSection title="How to Use This Calculator">
+        <p>Follow these steps to get instant results:</p>
         <ol>
-          <li><strong>Enter Values:</strong> Input any two of the four values (density, mass, radius, or volume)</li>
-          <li><strong>Select Units:</strong> Choose appropriate units for each measurement from the dropdown menus</li>
-          <li><strong>Click Calculate:</strong> The calculator instantly computes missing values and volume</li>
-          <li><strong>Review Results:</strong> See all calculated properties with step-by-step solution breakdown</li>
+          <li><strong>Step 1:</strong> Enter any two known values—choose from density, mass, radius, or volume—and select the appropriate units from the dropdown menus (kg/m³, g/cm³, lb/ft³ for density; kg, g, lb for mass; m, cm, mm, in for radius).</li>
+          <li><strong>Step 2:</strong> Click the Calculate button and the calculator automatically solves the sphere volume formula V = (4/3)πr³ and applies ρ = m/V to find all missing properties.</li>
+          <li><strong>Step 3:</strong> Review your results including density, mass, radius, volume, diameter, and surface area—all displayed with proper units and ready for your engineering, science, or educational applications.</li>
         </ol>
-        <p>
-          The calculator handles the complex mathematics automatically, including sphere volume calculation and unit conversions, giving you accurate results instantly.
-        </p>
       </SEOSection>
 
-      <SEOSection title="Sphere Density Formula and Related Equations">
+      <SEOSection title="The Core Concept: Density of a Sphere Formula">
         <p>
-          The fundamental relationship for calculating sphere density is:
+          The density of a sphere combines two fundamental physics formulas: the definition of density (ρ = m/V) and the volume of a sphere (V = (4/3)πr³). Density measures how much mass is packed into each unit of volume, expressed in kg/m³, g/cm³, or lb/ft³. For any solid sphere, once you know two parameters—such as mass and radius—you can calculate all other properties.
         </p>
-        <div className="bg-gray-100 p-4 rounded-lg text-center">
-          <p className="font-mono text-lg font-bold">ρ = m / V</p>
-          <p className="text-sm text-gray-600 mt-2">Where: ρ = density, m = mass, V = volume</p>
+        <div className="bg-gray-100 p-4 rounded-lg my-4">
+          <p className="font-semibold text-center">Sphere Density Formulas:</p>
+          <p className="font-mono text-lg font-bold text-center mt-2">ρ = m / V</p>
+          <p className="font-mono text-lg font-bold text-center">V = (4/3)πr³</p>
+          <p className="text-sm text-gray-600 text-center mt-2">Where: ρ = density, m = mass, V = volume, r = radius</p>
+          <p className="text-sm mt-3"><strong>Rearranged forms:</strong></p>
+          <p className="text-sm">• Mass: m = ρ × V = ρ × (4/3)πr³</p>
+          <p className="text-sm">• Radius: r = ∛(3m / 4πρ)</p>
+          <p className="text-sm">• Volume: V = m / ρ</p>
         </div>
-
-        <h3>Related Formulas</h3>
+        <h4 className="font-semibold mt-4">Worked Example:</h4>
+        <p>
+          A solid aluminum sphere has a radius of 5 cm and a mass of 1.413 kg. Calculate its density and verify the material composition.
+        </p>
         <ul>
-          <li><strong>Density:</strong> ρ = m / V</li>
-          <li><strong>Mass:</strong> m = ρ × V</li>
-          <li><strong>Volume (Sphere):</strong> V = (4/3)πr³</li>
-          <li><strong>Radius from Volume:</strong> r = ∛(3V / 4π)</li>
-          <li><strong>Diameter:</strong> d = 2r</li>
-          <li><strong>Surface Area:</strong> A = 4πr²</li>
-        </ul>
-
-        <h3>Key Concepts</h3>
-        <ul>
-          <li><strong>Density (ρ):</strong> Mass per unit volume, typically measured in kg/m³, g/cm³, or lb/ft³. It indicates how tightly packed the material is.</li>
-          <li><strong>Mass (m):</strong> The amount of matter in the object, typically measured in kilograms, grams, or pounds.</li>
-          <li><strong>Volume (V):</strong> The amount of three-dimensional space occupied by the sphere, calculated using the radius.</li>
-          <li><strong>Radius (r):</strong> The distance from the center of the sphere to its surface, critical for volume calculations.</li>
+          <li><strong>Given:</strong> Radius r = 5 cm = 0.05 m; Mass m = 1.413 kg</li>
+          <li><strong>Step 1 – Calculate volume:</strong> V = (4/3)πr³ = (4/3) × π × (0.05)³ = (4/3) × π × 0.000125 = 0.0005236 m³</li>
+          <li><strong>Step 2 – Calculate density:</strong> ρ = m / V = 1.413 kg / 0.0005236 m³ = 2,698 kg/m³</li>
+          <li><strong>Step 3 – Convert to common units:</strong> 2,698 kg/m³ = 2.698 g/cm³</li>
+          <li><strong>Result:</strong> The calculated density of <strong>2,698 kg/m³ (2.7 g/cm³)</strong> matches the known density of aluminum (2,700 kg/m³), confirming the sphere is pure aluminum. This technique is used daily in quality control to verify material composition and detect counterfeit metals.</li>
         </ul>
       </SEOSection>
 
-      <SEOSection title="Common Sphere Density Values">
-        <p>
-          Different materials have vastly different densities. Here are typical density values for common materials:
-        </p>
-
-        <h3>Metals and Minerals</h3>
+      <SEOSection title="Practical Applications">
+        <p>Sphere density calculations are essential across multiple industries:</p>
         <SEOList items={[
-          "Aluminum: 2,700 kg/m³ - Lightweight metal used in aerospace",
-          "Iron: 7,874 kg/m³ - Heavy metal used in construction and machinery",
-          "Copper: 8,960 kg/m³ - Dense metal used in electrical applications",
-          "Lead: 11,340 kg/m³ - Very dense metal used in radiation shielding",
-          "Gold: 19,300 kg/m³ - Precious metal with highest density among common metals",
-          "Platinum: 21,450 kg/m³ - Extremely dense noble metal"
+          "<strong>Material Science & Quality Control:</strong> Verify composition and purity of metal spheres, ball bearings, and spherical components by comparing measured density to reference values—detect counterfeits, alloy errors, or internal voids.",
+          "<strong>Aerospace & Marine Engineering:</strong> Calculate weight budgets for spherical fuel tanks, design buoyant floats for oceanographic instruments, and optimize mass distribution in spherical satellites and deep-sea pressure vessels.",
+          "<strong>Pharmaceutical & Food Manufacturing:</strong> Ensure gel capsules, spherical tablets, and candy coatings meet density specifications for dissolution rates, flotation in liquids, and consistent dosing.",
+          "<strong>Sports Equipment Design:</strong> Engineer balls (golf, bowling, basketball) with precise density profiles to achieve desired bounce, flight characteristics, and regulatory compliance.",
+          "<strong>Planetary Science & Astronomy:</strong> Estimate internal composition of planets, moons, and asteroids by measuring mass (from orbital mechanics) and radius (from telescopic observations) to calculate bulk density.",
+          "<strong>Educational Physics Labs:</strong> Teach students the relationship between mass, volume, and density through hands-on measurements of spheres made from different materials."
         ]} />
-
-        <h3>Common Materials</h3>
-        <SEOList items={[
-          "Water: 1,000 kg/m³ - Standard reference density at 4°C",
-          "Ice: 917 kg/m³ - Less dense than water, which is why it floats",
-          "Wood: 400-900 kg/m³ - Varies by type (pine to oak)",
-          "Concrete: 2,300-2,400 kg/m³ - Heavy construction material",
-          "Plastic: 900-1,200 kg/m³ - Lightweight polymer material",
-          "Glass: 2,500-2,800 kg/m³ - Dense silicate material"
-        ]} />
-
-        <h3>Gases (at standard conditions)</h3>
-        <SEOList items={[
-          "Air: 1.225 kg/m³ - Standard atmosphere at sea level",
-          "Hydrogen: 0.0899 kg/m³ - Lightest known gas",
-          "Helium: 0.1785 kg/m³ - Noble gas, lighter than air",
-          "Nitrogen: 1.251 kg/m³ - Main component of air",
-          "Carbon Dioxide: 1.977 kg/m³ - Denser than air"
-        ]} />
-      </SEOSection>
-
-      <SEOSection title="Practical Applications of Sphere Density">
-        <p>
-          Understanding sphere density is crucial in numerous real-world applications:
-        </p>
-        <SEOList items={[
-          "Material Science: Determining purity and composition of materials",
-          "Aerospace Engineering: Calculating weight and balance of spherical tanks and components",
-          "Marine Engineering: Designing buoyant spheres and understanding flotation",
-          "Planetary Science: Estimating composition of planets and stars",
-          "Oil and Gas Industry: Designing spherical pressure vessels",
-          "Manufacturing: Quality control and material verification",
-          "Medical Physics: Calculating radiation absorption in spherical tissues",
-          "Environmental Science: Understanding settling rates of particles in water",
-          "Sports Engineering: Designing balls with specific density requirements",
-          "Architecture: Structural analysis of spherical domes and shells"
-        ]} />
-      </SEOSection>
-
-      <SEOSection title="Unit Conversions for Sphere Density">
-        <p>
-          The calculator supports multiple unit systems for maximum flexibility:
-        </p>
-
-        <h3>Density Units</h3>
-        <ul>
-          <li><strong>kg/m³</strong> - International standard unit (SI)</li>
-          <li><strong>g/cm³</strong> - Common in chemistry and materials science</li>
-          <li><strong>lb/ft³</strong> - Imperial system, common in USA</li>
-          <li><strong>lb/in³</strong> - Used in compact materials and precision engineering</li>
-        </ul>
-
-        <h3>Mass Units</h3>
-        <ul>
-          <li><strong>kg</strong> - Kilogram (SI base unit)</li>
-          <li><strong>g</strong> - Gram (1/1000 kilogram)</li>
-          <li><strong>lb</strong> - Pound mass (imperial)</li>
-          <li><strong>oz</strong> - Ounce (imperial)</li>
-        </ul>
-
-        <h3>Radius Units</h3>
-        <ul>
-          <li><strong>m</strong> - Meters (SI base unit)</li>
-          <li><strong>cm</strong> - Centimeters (1/100 meter)</li>
-          <li><strong>mm</strong> - Millimeters (1/1000 meter)</li>
-          <li><strong>in</strong> - Inches (imperial)</li>
-          <li><strong>ft</strong> - Feet (imperial)</li>
-        </ul>
-      </SEOSection>
-
-      <SEOSection title="Why Density Matters for Spheres">
-        <p>
-          Sphere density is important because it determines:
-        </p>
-        <ul>
-          <li><strong>Buoyancy:</strong> Objects denser than a fluid sink; less dense objects float</li>
-          <li><strong>Weight Distribution:</strong> Affects how forces are distributed in spherical structures</li>
-          <li><strong>Heat Capacity:</strong> Denser materials typically have different thermal properties</li>
-          <li><strong>Structural Integrity:</strong> Density affects strength and durability of materials</li>
-          <li><strong>Collisions:</strong> Density affects impact force and energy absorption</li>
-          <li><strong>Pressure Vessels:</strong> Critical for designing safe spherical containers</li>
-        </ul>
       </SEOSection>
 
       <SEOFAQ
         questions={[
           {
-            question: "How do I calculate the volume of a sphere?",
-            answer: "The volume of a sphere is calculated using V = (4/3)πr³, where r is the radius. Our calculator handles this automatically once you input the radius."
+            question: "How do you calculate the density of a sphere?",
+            answer: "Calculate the sphere's volume using V = (4/3)πr³, measure or obtain the mass, then divide: density ρ = mass / volume. For example, a sphere with radius 10 cm (0.1 m) has volume 0.00419 m³. If its mass is 11.3 kg, the density is 11.3 / 0.00419 = 2,698 kg/m³ (aluminum)."
           },
           {
-            question: "What are common sphere density values?",
-            answer: "Common materials: Water (1,000 kg/m³), Aluminum (2,700 kg/m³), Iron (7,874 kg/m³), Copper (8,960 kg/m³), and Gold (19,300 kg/m³). The calculator shows how mass and volume relate for any density."
+            question: "What is the formula for sphere density?",
+            answer: "The sphere density formula combines ρ = m/V with the sphere volume V = (4/3)πr³, giving ρ = m / [(4/3)πr³] or equivalently ρ = 3m / (4πr³). This relates density directly to mass and radius."
           },
           {
-            question: "Can I use different units in the calculator?",
-            answer: "Yes! The calculator supports multiple units for density (kg/m³, g/cm³, lb/ft³, lb/in³), mass (kg, g, lb, oz), and radius (m, cm, mm, in, ft). Select your preferred units from the dropdowns."
+            question: "Can I calculate sphere radius if I know density and mass?",
+            answer: "Yes. Rearrange the formulas to get r = ∛(3m / 4πρ). For example, an iron sphere (ρ = 7,874 kg/m³) with mass 10 kg has radius r = ∛(3×10 / 4π×7874) = ∛(0.000302) = 0.0671 m = 6.71 cm."
           },
           {
-            question: "What is the difference between density and specific gravity?",
-            answer: "Density is mass per unit volume. Specific gravity is the ratio of a material's density to the density of water. Specific gravity is dimensionless, while density has units."
+            question: "What are typical sphere density values for common materials?",
+            answer: "Common densities: aluminum 2,700 kg/m³, steel 7,850 kg/m³, copper 8,960 kg/m³, lead 11,340 kg/m³, gold 19,300 kg/m³, water 1,000 kg/m³, and plastics 900-1,400 kg/m³. These values help identify unknown sphere materials."
           },
           {
-            question: "How do I find the radius if I know density and mass?",
-            answer: "Use the formula: r = ∛(3m / 4πρ). Simply enter density and mass into the calculator, and it automatically calculates the radius and volume."
-          },
-          {
-            question: "Why would I need a sphere density calculator?",
-            answer: "It's useful for engineering design, material verification, scientific research, educational purposes, and any application involving spherical objects where you need to relate density, mass, radius, and volume."
+            question: "Why does sphere density matter for buoyancy?",
+            answer: "A sphere floats if its density is less than the fluid's density (e.g., wood sphere in water: 600 kg/m³ < 1,000 kg/m³ floats). A steel sphere (7,850 kg/m³) sinks because it's denser than water. Buoyancy force equals the weight of displaced fluid."
           }
         ]}
       />
 
-      <SEOSection title="Advanced Topics in Sphere Density">
-        <h3>Composite Spheres</h3>
-        <p>
-          Some spheres have multiple layers with different densities. For example, the Earth has a dense iron core, rocky mantle, and thin crust. For composite spheres, the overall density depends on the relative volumes and densities of each layer. This calculator handles homogeneous (single-material) spheres.
-        </p>
-
-        <h3>Density and Temperature</h3>
-        <p>
-          Most materials change density with temperature. As materials heat up, they usually expand, decreasing density. This thermal expansion is critical in applications like thermal stress analysis and precision manufacturing.
-        </p>
-
-        <h3>Apparent vs. Bulk Density</h3>
-        <p>
-          Bulk density includes any air gaps or pores in a material. Material density (or true density) is calculated without these voids. Porous materials have lower bulk density than their true material density. This calculator uses the bulk density approach for practical applications.
-        </p>
-      </SEOSection>
-
-      <SEOSection title="Related Calculators and Resources">
-        <p>
-          For comprehensive physics calculations, explore related tools:
-        </p>
-        <ul>
-          <li>{createInternalLink('volume-of-hemisphere')} - Calculate volume from radius</li>
-          <li>{createInternalLink('density-mass-volume-calculator')} - General density calculations</li>
-          <li>{createInternalLink('water-density-calculator')} - Specific to water at various temperatures</li>
-        </ul>
-      </SEOSection>
-
       <SEOSection title="Conclusion">
         <p>
-          The Sphere Density Calculator is an essential tool for anyone working with spherical objects, from students learning physics to engineers designing precision equipment. By understanding the relationship between density, mass, radius, and volume, you can solve complex problems and make informed decisions about material selection and design. Whether you're calculating the properties of a solid sphere or analyzing material characteristics, this calculator provides accurate, instant results with complete step-by-step breakdown of calculations. Try it today and explore the fascinating world of sphere density!
+          Mastering the density of a sphere is straightforward with the right tools—our calculator handles the complex volume formula V = (4/3)πr³ and density relationship ρ = m/V so you can focus on your engineering, research, or educational goals. Whether you're verifying material composition in quality control, designing spherical pressure vessels, or teaching physics concepts, instant accurate calculations save time and eliminate arithmetic errors. The ability to work backward from any two known parameters—finding radius from density and mass, or calculating mass from radius and density—makes this tool invaluable for real-world problem-solving.
+        </p>
+        <p>
+          Explore more Physics tools: Check out our {createInternalLink('volume-to-mass-calculator', 'Volume to Mass Calculator')} for converting between volume and mass using density, perfect for complementing your sphere density calculations. Start calculating sphere density today and unlock precise material insights!
         </p>
       </SEOSection>
     </CalculatorPageTemplate>
